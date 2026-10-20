@@ -429,19 +429,13 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 
 .compare { display: grid; gap: 1.5rem; margin-top: 3rem; }
 @media (min-width: 900px) { .compare { grid-template-columns: 1fr 1fr; gap: 0; } }
-.compare-col { padding-top: 1.25rem; border-top: 2px solid var(--ink); }
+.compare-col { padding-top: 1.25rem; border-top: 2px solid var(--grid-strong); }
 @media (min-width: 900px) {
   .compare-col:first-child { padding-right: 3rem; }
   .compare-col + .compare-col { padding-left: 3rem; border-left: 1px solid var(--grid-strong); }
 }
-.compare-col + .compare-col { border-top-color: var(--grid-strong); }
 .compare-col .icon { display: block; width: 3rem; height: 3rem; margin-bottom: 1rem; }
 .compare-col .icon-brand { width: auto; height: 2.75rem; margin-top: .125rem; margin-bottom: 1.125rem; }
-.tag {
-  display: inline-block; vertical-align: .25em; margin-left: .4rem;
-  font-size: .8125rem; font-weight: 600; letter-spacing: 0;
-  color: var(--red-ink); border: 1.5px solid var(--red); border-radius: 3px; padding: .1rem .45rem;
-}
 .compare dl { margin-top: 1.5rem; }
 .compare dt { font-weight: 600; font-size: 1rem; margin-top: 1.25rem; }
 .compare dd { color: var(--pencil); margin-top: .25rem; max-width: 32rem; }
