@@ -453,3 +453,5 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 .page h1 { font-size: var(--t-h2); font-weight: 760; letter-spacing: -0.03em; line-height: 1.05; }
 .page h2 { font-size: var(--t-h3); margin-top: 2.5rem; }
 .page p { margin-top: .75rem; max-width: 42rem; color: var(--pencil); }
+
+.quote-table .ht { font-size: .5em; font-weight: 600; letter-spacing: 0; color: var(--pencil); }
