@@ -9,6 +9,16 @@
     window.setTimeout(placeLeader, reduce ? 0 : 550);
   }, reduce ? 0 : 1400);
 
+  // Icônes des garanties : l'animation se rejoue au toucher (mobile) ou au clic
+  document.querySelectorAll(".assurances > div").forEach(function (card) {
+    card.addEventListener("click", function () {
+      card.classList.remove("is-anim");
+      void card.offsetWidth;
+      card.classList.add("is-anim");
+      window.setTimeout(function () { card.classList.remove("is-anim"); }, 1300);
+    });
+  });
+
   // Dates de la liste d'exemple, relatives à aujourd'hui
   var en = (root.lang || "fr").slice(0, 2) === "en";
   var T = en ? {

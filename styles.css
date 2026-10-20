@@ -457,6 +457,36 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 .assurances .icon { display: block; width: 3rem; height: 3rem; margin-bottom: 1rem; }
 .assurances p { margin-top: .75rem; color: var(--pencil); max-width: 34rem; }
 
+/* Animation des icônes au survol ou au toucher : chacune raconte son engagement */
+.assurances > div { cursor: default; }
+.assurances .icon * { transform-box: fill-box; }
+.assurances .shackle { transform-origin: 100% 100%; }
+.assurances .bar { transform-origin: 50% 100%; }
+.assurances .seal { transform-origin: 50% 50%; }
+.assurances .flap { transform-origin: 50% 0%; }
+
+.assurances > div:hover .chk, .assurances > div.is-anim .chk { animation: ic-draw .45s ease-out both; }
+.assurances > div:hover .chk2, .assurances > div.is-anim .chk2 { animation-delay: .25s; }
+.assurances > div:hover .shackle, .assurances > div.is-anim .shackle { animation: ic-unlock .9s ease-in-out both; }
+.assurances > div:hover .key, .assurances > div.is-anim .key { animation: ic-blink .9s ease-in-out both; }
+.assurances > div:hover .bar, .assurances > div.is-anim .bar { animation: ic-grow .5s cubic-bezier(.2,.7,.2,1) both; }
+.assurances > div:hover .bar2, .assurances > div.is-anim .bar2 { animation-delay: .1s; }
+.assurances > div:hover .bar3, .assurances > div.is-anim .bar3 { animation-delay: .2s; }
+.assurances > div:hover .trend path:first-child, .assurances > div.is-anim .trend path:first-child { animation: ic-draw .5s .3s ease-out both; }
+.assurances > div:hover .flap, .assurances > div.is-anim .flap { animation: ic-flap .7s ease-in-out both; }
+.assurances > div:hover .seal, .assurances > div.is-anim .seal { animation: ic-stamp .5s .35s cubic-bezier(.3,1.6,.5,1) both; }
+
+@keyframes ic-draw { from { stroke-dasharray: 1; stroke-dashoffset: 1; } to { stroke-dasharray: 1; stroke-dashoffset: 0; } }
+@keyframes ic-unlock { 0%, 100% { transform: translateY(0) rotate(0); } 35%, 60% { transform: translateY(-4px) rotate(18deg); } }
+@keyframes ic-blink { 0%, 100% { opacity: 1; } 45% { opacity: .2; } }
+@keyframes ic-grow { from { transform: scaleY(.2); } to { transform: scaleY(1); } }
+@keyframes ic-flap { 0%, 100% { transform: scaleY(1); } 40% { transform: scaleY(-.6); } }
+@keyframes ic-stamp { from { transform: scale(2.2); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .assurances .icon * { animation: none !important; }
+}
+
 /* ---------- Refus ---------- */
 
 .refusals li {
