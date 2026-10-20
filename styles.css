@@ -449,6 +449,7 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
   .compare-col + .compare-col { padding-left: 3rem; border-left: 1px solid var(--grid-strong); }
 }
 .compare-col + .compare-col { border-top-color: var(--grid-strong); }
+.compare-col .icon { display: block; width: 3rem; height: 3rem; margin-bottom: 1rem; }
 .tag {
   display: inline-block; vertical-align: .25em; margin-left: .4rem;
   font-size: .8125rem; font-weight: 600; letter-spacing: 0;
