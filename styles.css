@@ -419,10 +419,18 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
   max-width: 20rem;
   border: 1px solid var(--grid-strong);
   border-radius: 4px;
-  overflow: hidden;
   padding: 1.5rem 1.5rem 0;
+  position: relative;
 }
 .portrait img { display: block; width: 100%; height: auto; }
+/* Le logo, posé comme un tampon, dépasse du cadre en bas à droite */
+.portrait .badge {
+  position: absolute;
+  right: -2.25rem; bottom: -2.25rem;
+  width: 8rem; height: auto;
+  transform: rotate(-10deg);
+}
+@media (max-width: 420px) { .portrait .badge { width: 6.5rem; right: -1rem; bottom: -1.75rem; } }
 
 /* ---------- Comparaison ---------- */
 
