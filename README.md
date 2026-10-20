@@ -11,5 +11,4 @@ Site statique, sans étape de build : Vercel le sert tel quel.
 
 ## À compléter avant diffusion
 
-- Remplacer `contact@maniaque.fr` par la vraie adresse (index.html et mentions-legales.html)
 - Compléter les champs `[À compléter]` des mentions légales
