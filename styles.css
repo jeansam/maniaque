@@ -236,6 +236,13 @@ a { color: inherit; }
   .js .target, .js .target::after, .js .note-done, .js .note-next { transition: none; }
 }
 
+.star {
+  color: var(--red); text-decoration: none; font-weight: 700;
+  font-size: .45em; vertical-align: super; line-height: 0; margin-left: .08em;
+}
+.meaning { margin-top: 1.5rem; font-size: 1rem; color: var(--pencil); max-width: 36rem; }
+.meaning em { font-style: italic; color: var(--ink); }
+.star-ref { color: var(--red); font-weight: 700; margin-right: .2rem; }
 .hero-foot {
   display: grid;
   gap: 2rem;
