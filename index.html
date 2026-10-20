@@ -69,17 +69,17 @@
             <tr><th scope="col">Demande</th><th scope="col">Statut</th><th scope="col">Date</th></tr>
           </thead>
           <tbody id="backlog-body">
-            <tr class="is-done"><td>Le logo est flou sur l'écran d'accueil</td><td><span class="status">Livré</span></td><td data-offset="-9"></td></tr>
-            <tr class="is-done"><td>Ajouter un export Excel des devis</td><td><span class="status">Livré</span></td><td data-offset="-3"></td></tr>
-            <tr class="is-doing"><td>Envoyer un SMS au technicien la veille de l'intervention</td><td><span class="status">En cours</span></td><td data-offset="4"></td></tr>
-            <tr><td>Renommer « Prospect » en « Contact » partout</td><td><span class="status">Prévu</span></td><td data-offset="11"></td></tr>
-            <tr><td>Trier le planning par secteur, puis par heure</td><td><span class="status">Prévu</span></td><td data-offset="18"></td></tr>
+            <tr class="is-done"><td>Synchroniser les factures avec le logiciel de comptabilité</td><td><span class="status">Livré</span></td><td data-offset="-9"></td></tr>
+            <tr class="is-done"><td>Relancer automatiquement les factures impayées toutes les deux semaines</td><td><span class="status">Livré</span></td><td data-offset="-3"></td></tr>
+            <tr class="is-doing"><td>Ajouter un assistant IA qui trie les demandes entrantes et les transmet au bon service</td><td><span class="status">En cours</span></td><td data-offset="4"></td></tr>
+            <tr><td>Créer un espace client pour suivre ses commandes et télécharger ses factures</td><td><span class="status">Prévu</span></td><td data-offset="11"></td></tr>
+            <tr><td>Envoyer chaque lundi à la direction un tableau de bord des ventes</td><td><span class="status">Prévu</span></td><td data-offset="18"></td></tr>
           </tbody>
         </table>
         <form class="backlog-form" id="backlog-form">
           <label for="demande">Essayez : ajoutez votre propre demande</label>
           <div class="backlog-row">
-            <input id="demande" name="demande" type="text" maxlength="90" placeholder="Ex. : dupliquer une commande" autocomplete="off">
+            <input id="demande" name="demande" type="text" maxlength="90" placeholder="Ex. : un planning partagé pour les techniciens" autocomplete="off">
             <button class="btn btn-ink" type="submit">Ajouter</button>
           </div>
           <p class="backlog-msg" id="backlog-msg" role="status" aria-live="polite"></p>
