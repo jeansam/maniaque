@@ -1,6 +1,6 @@
 # Maniaque
 
-Site vitrine de l'offre Maniaque : outils sur mesure pour PME, retouches illimitées par abonnement.
+Site vitrine de l'offre Maniaque : outils sur mesure pour PME, demandes illimitées par abonnement.
 
 Site statique, sans étape de build : Vercel le sert tel quel.
 

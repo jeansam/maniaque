@@ -69,7 +69,7 @@
     req.textContent = text;
     var via = document.createElement("span");
     via.className = "via";
-    via.textContent = "Depuis le tableau de bord";
+    via.textContent = "Fonctionnalité, depuis le tableau de bord";
     td1.append(req, via);
     var td2 = document.createElement("td");
     td2.innerHTML = '<span class="status">Prévu</span>';

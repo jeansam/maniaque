@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Maniaque, outils sur mesure pour PME</title>
-<meta name="description" content="Votre outil interne ou client sur mesure, puis toutes les retouches que vous voulez, pour 490 € HT par mois. Audit gratuit.">
+<meta name="description" content="Un outil sur mesure pour votre entreprise, puis tout ce que vous imaginez : du petit détail à la grosse fonctionnalité. 490 € HT par mois. Audit gratuit.">
 <meta property="og:title" content="Maniaque, soyez aussi maniaque que vous voulez">
-<meta property="og:description" content="Outils sur mesure pour PME. Une demande à la fois, livrée en une semaine environ. 490 € HT par mois.">
+<meta property="og:description" content="Outils sur mesure pour PME. Bugs et retouches traités sous 2 heures, nouvelles fonctionnalités testées à fond. 490 € HT par mois.">
 <meta name="theme-color" content="#F6F8FA">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -42,11 +42,12 @@
         </h1>
         <div class="note" aria-hidden="true">
           <p class="note-ask">« Plus gras. Et 2&nbsp;px à gauche. »</p>
-          <p class="note-done">Fait. Livré mardi.</p>
+          <p class="note-done">Fait. En ligne 1&nbsp;h&nbsp;40 plus tard.</p>
+          <p class="note-next">« Maintenant, un espace client complet. »</p>
         </div>
       </div>
       <div class="hero-foot">
-        <p class="lede">Un outil sur mesure pour votre entreprise, puis toutes les retouches que vous voulez, pour <strong>490&nbsp;€&nbsp;HT par mois</strong>. Vous demandez, on livre, une demande après l'autre.</p>
+        <p class="lede">Un outil sur mesure pour votre entreprise, qui grandit aussi vite que vos idées. Le détail qui vous agace comme la fonctionnalité qui change tout : vous demandez, on livre, et vous pouvez toujours demander plus. Pour <strong>490&nbsp;€&nbsp;HT par mois</strong>.</p>
         <div class="hero-actions">
           <a class="btn" href="#audit">Réserver mon audit gratuit</a>
           <a class="link" href="#tarifs">Voir les tarifs</a>
@@ -58,8 +59,13 @@
   <section class="section" id="fonctionnement" aria-labelledby="t-backlog">
     <div class="wrap split">
       <div class="split-text">
-        <h2 id="t-backlog">Une liste sans fin. Traitée une demande à la fois.</h2>
-        <p>Vous ajoutez autant de demandes que vous voulez, quand vous voulez, comme ça vous arrange : un message WhatsApp, un email, ou directement depuis votre tableau de bord. On les traite dans l'ordre que vous choisissez, une à la fois, chacune livrée en une semaine environ.</p>
+        <h2 id="t-backlog">Une liste sans fin. Du petit bug au grand projet.</h2>
+        <p>Vous ajoutez autant de demandes que vous voulez, quand vous voulez, comme ça vous arrange : un message WhatsApp, un email, ou directement depuis votre tableau de bord. Chaque demande entre dans l'une de ces trois catégories :</p>
+        <dl class="kinds">
+          <div><dt>Bug</dt><dd>Quelque chose ne marche pas comme prévu. Corrigé sous 2&nbsp;heures ouvrées.</dd></div>
+          <div><dt>Retouche</dt><dd>Un détail à changer sur l'existant : un texte, un champ, un affichage. Fait sous 2&nbsp;heures ouvrées.</dd></div>
+          <div><dt>Fonctionnalité</dt><dd>Quelque chose de nouveau. Le délai dépend de sa taille, parce qu'elle est testée à fond avant d'être mise en ligne. Vous connaissez la date à l'avance.</dd></div>
+        </dl>
         <p>Vous suivez tout en temps réel : ce qui est livré, ce qui est en cours, et la date prévue pour la suite.</p>
       </div>
       <div class="backlog" aria-label="Exemple de liste de demandes">
@@ -69,11 +75,12 @@
             <tr><th scope="col">Demande</th><th scope="col">Statut</th><th scope="col">Date</th></tr>
           </thead>
           <tbody id="backlog-body">
-            <tr class="is-done"><td><span class="req">Synchroniser les factures avec le logiciel de comptabilité</span><span class="via">Par email</span></td><td><span class="status">Livré</span></td><td data-offset="-9"></td></tr>
-            <tr class="is-done"><td><span class="req">Relancer automatiquement les factures impayées toutes les deux semaines</span><span class="via">Par WhatsApp</span></td><td><span class="status">Livré</span></td><td data-offset="-3"></td></tr>
-            <tr class="is-doing"><td><span class="req">Ajouter un assistant IA qui trie les demandes entrantes et les transmet au bon service</span><span class="via">Depuis le tableau de bord</span></td><td><span class="status">En cours</span></td><td data-offset="4"></td></tr>
-            <tr><td><span class="req">Créer un espace client pour suivre ses commandes et télécharger ses factures</span><span class="via">Par WhatsApp</span></td><td><span class="status">Prévu</span></td><td data-offset="11"></td></tr>
-            <tr><td><span class="req">Envoyer chaque lundi à la direction un tableau de bord des ventes</span><span class="via">Par email</span></td><td><span class="status">Prévu</span></td><td data-offset="18"></td></tr>
+            <tr class="is-done"><td><span class="req">Relancer automatiquement les factures impayées toutes les deux semaines</span><span class="via">Fonctionnalité, par WhatsApp</span></td><td><span class="status">Livré</span></td><td data-offset="-9"></td></tr>
+            <tr class="is-done"><td><span class="req">Afficher le téléphone du client sur la fiche d'intervention</span><span class="via">Retouche, par email</span></td><td><span class="status">Livré</span></td><td data-offset="-2"></td></tr>
+            <tr class="is-done"><td><span class="req">Corriger le total des devis quand une remise est appliquée</span><span class="via">Bug, par WhatsApp</span></td><td><span class="status">Livré</span></td><td data-offset="0"></td></tr>
+            <tr class="is-doing"><td><span class="req">Ajouter un assistant IA qui trie les demandes entrantes et les transmet au bon service</span><span class="via">Fonctionnalité, depuis le tableau de bord</span></td><td><span class="status">En cours</span></td><td data-offset="4"></td></tr>
+            <tr><td><span class="req">Créer un espace client pour suivre ses commandes et télécharger ses factures</span><span class="via">Fonctionnalité, par WhatsApp</span></td><td><span class="status">Prévu</span></td><td data-offset="11"></td></tr>
+            <tr><td><span class="req">Envoyer chaque lundi à la direction un tableau de bord des ventes</span><span class="via">Fonctionnalité, par email</span></td><td><span class="status">Prévu</span></td><td data-offset="18"></td></tr>
           </tbody>
         </table>
         <form class="backlog-form" id="backlog-form">
@@ -151,9 +158,9 @@
         <ul class="promises">
           <li><strong>Un seul interlocuteur.</strong> La personne qui vous répond est celle qui construit votre outil.</li>
           <li><strong>Réponse sous 24&nbsp;h ouvrées.</strong> À chaque message, même si c'est pour vous donner une date le lendemain.</li>
-          <li><strong>Une semaine par demande, environ.</strong> Une grosse demande est découpée en étapes, chacune avec sa date.</li>
+          <li><strong>Bugs et retouches sous 2&nbsp;heures.</strong> Quelque chose ne marche pas, ou un détail est à changer : c'est fait dans les 2&nbsp;heures ouvrées.</li>
+          <li><strong>Nouvelles fonctionnalités selon leur taille.</strong> Chacune est testée à fond avant d'être mise en ligne. Vous connaissez la date à l'avance, et les gros projets sont découpés en étapes.</li>
           <li><strong>Un point par mois.</strong> Un compte rendu écrit, reçu dans les trois jours avant 30 minutes ensemble pour fixer les priorités.</li>
-          <li><strong>Les bugs bloquants passent devant.</strong> Si l'outil ne fait plus son travail, on s'en occupe tout de suite.</li>
         </ul>
         <div class="guarantee">
           <p class="guarantee-title">Notre garantie</p>
@@ -212,8 +219,8 @@
           <p>L'intelligence artificielle écrit aujourd'hui une grande partie du code. Notre temps va donc à ce qui compte : comprendre votre métier, vous répondre et vérifier chaque livraison.</p>
         </details>
         <details>
-          <summary>Je peux vraiment demander autant de retouches que je veux ?</summary>
-          <p>Oui. Votre liste n'a pas de limite. La seule règle : on traite une demande à la fois, dans l'ordre que vous choisissez. Les grosses demandes sont découpées en étapes d'environ une semaine.</p>
+          <summary>Je peux vraiment tout demander, même les gros projets ?</summary>
+          <p>Oui. Un détail d'affichage ou un module complet, votre liste n'a pas de limite. Les bugs et les retouches sont traités sous 2&nbsp;heures ouvrées. Les nouvelles fonctionnalités passent une à la fois, dans l'ordre que vous choisissez : leur délai dépend de leur taille, parce que chacune est testée à fond avant d'être mise en ligne. La date vous est toujours annoncée à l'avance.</p>
         </details>
         <details>
           <summary>Que se passe-t-il si j'arrête l'abonnement ?</summary>

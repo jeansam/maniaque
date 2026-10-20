@@ -192,16 +192,18 @@ a { color: inherit; }
 }
 .note-ask { font-style: italic; font-weight: 500; }
 .note-done { font-weight: 700; margin-top: .25rem; }
+.note-next { font-style: italic; font-weight: 500; margin-top: .6rem; }
 
-@media (min-width: 900px) {
+@media (min-width: 1200px) {
   .note {
     position: absolute;
     right: 0;
     /* centré sur la 2e ligne du titre */
-    top: calc(var(--t-hero) * .94 * 1.5);
-    transform: translateY(-50%);
+    top: calc(var(--t-hero) * .94 * 1.5 - .7em);
     margin: 0;
-    width: 16.5rem;
+    width: max-content;
+    max-width: none;
+    white-space: nowrap;
     border-left: 0;
     padding-left: 0;
   }
@@ -218,15 +220,16 @@ a { color: inherit; }
 }
 
 /* Animation unique : la retouche demandée est appliquée */
-.js .note-done { opacity: 0; }
+.js .note-done, .js .note-next { opacity: 0; }
 .js.is-fixed .target { transform: translateX(0); font-weight: 900; }
 .js.is-fixed .target::after { border-style: solid; border-width: 1.5px; border-color: rgba(210, 37, 27, .4); }
-.js.is-fixed .note-done { opacity: 1; }
+.js.is-fixed .note-done, .js.is-fixed .note-next { opacity: 1; }
 .js .target { transition: transform .5s cubic-bezier(.2, .7, .2, 1), font-weight .5s; }
 .js .target::after { transition: border-color .4s .5s; }
 .js .note-done { transition: opacity .3s .7s; }
+.js .note-next { transition: opacity .4s 1.8s; }
 @media (prefers-reduced-motion: reduce) {
-  .js .target, .js .target::after, .js .note-done { transition: none; }
+  .js .target, .js .target::after, .js .note-done, .js .note-next { transition: none; }
 }
 
 .hero-foot {
@@ -264,6 +267,12 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
   .split-text { position: sticky; top: 6rem; }
 }
 .split-text p { margin-top: 1.25rem; max-width: 34rem; color: var(--pencil); }
+
+.kinds { margin-top: 1.5rem; max-width: 34rem; border-top: 1px solid var(--grid-strong); }
+.kinds div { display: grid; grid-template-columns: 8.5rem 1fr; gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--grid-strong); }
+.kinds dt { font-weight: 700; }
+.kinds dd { margin: 0; color: var(--pencil); font-size: 1rem; }
+@media (max-width: 420px) { .kinds div { grid-template-columns: 1fr; gap: .2rem; } }
 
 /* ---------- Liste de demandes ---------- */
 
