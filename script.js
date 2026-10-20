@@ -67,10 +67,10 @@
     var req = document.createElement("span");
     req.className = "req";
     req.textContent = text;
-    var via = document.createElement("span");
-    via.className = "via";
-    via.textContent = "Fonctionnalité, depuis le tableau de bord";
-    td1.append(req, via);
+    var pill = document.createElement("span");
+    pill.className = "pill pill-feature";
+    pill.textContent = "Fonctionnalité";
+    td1.append(req, pill);
     var td2 = document.createElement("td");
     td2.innerHTML = '<span class="status">Prévu</span>';
     var td3 = document.createElement("td");

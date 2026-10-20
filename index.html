@@ -62,9 +62,9 @@
         <h2 id="t-backlog">Une liste sans fin. Du petit bug au grand projet.</h2>
         <p>Vous ajoutez autant de demandes que vous voulez, quand vous voulez, comme ça vous arrange : un message WhatsApp, un email, ou directement depuis votre tableau de bord. Chaque demande entre dans l'une de ces trois catégories :</p>
         <dl class="kinds">
-          <div><dt>Bug</dt><dd>Quelque chose ne marche pas comme prévu. Corrigé sous 2&nbsp;heures ouvrées.</dd></div>
-          <div><dt>Retouche</dt><dd>Un détail à changer sur l'existant : un texte, un champ, un affichage. Fait sous 2&nbsp;heures ouvrées.</dd></div>
-          <div><dt>Fonctionnalité</dt><dd>Quelque chose de nouveau. Le délai dépend de sa taille, parce qu'elle est testée à fond avant d'être mise en ligne. Vous connaissez la date à l'avance.</dd></div>
+          <div><dt><span class="pill pill-bug">Bug</span></dt><dd>Quelque chose ne marche pas comme prévu. Corrigé sous 2&nbsp;heures ouvrées.</dd></div>
+          <div><dt><span class="pill pill-tweak">Retouche</span></dt><dd>Un détail à changer sur l'existant : un texte, un champ, un affichage. Fait sous 2&nbsp;heures ouvrées.</dd></div>
+          <div><dt><span class="pill pill-feature">Fonctionnalité</span></dt><dd>Quelque chose de nouveau. Le délai dépend de sa taille, parce qu'elle est testée à fond avant d'être mise en ligne. Vous connaissez la date à l'avance.</dd></div>
         </dl>
         <p>Vous suivez tout en temps réel : ce qui est livré, ce qui est en cours, et la date prévue pour la suite.</p>
       </div>
@@ -75,12 +75,12 @@
             <tr><th scope="col">Demande</th><th scope="col">Statut</th><th scope="col">Date</th></tr>
           </thead>
           <tbody id="backlog-body">
-            <tr class="is-done"><td><span class="req">Relancer automatiquement les factures impayées toutes les deux semaines</span><span class="via">Fonctionnalité, par WhatsApp</span></td><td><span class="status">Livré</span></td><td data-offset="-9"></td></tr>
-            <tr class="is-done"><td><span class="req">Afficher le téléphone du client sur la fiche d'intervention</span><span class="via">Retouche, par email</span></td><td><span class="status">Livré</span></td><td data-offset="-2"></td></tr>
-            <tr class="is-done"><td><span class="req">Corriger le total des devis quand une remise est appliquée</span><span class="via">Bug, par WhatsApp</span></td><td><span class="status">Livré</span></td><td data-offset="0"></td></tr>
-            <tr class="is-doing"><td><span class="req">Ajouter un assistant IA qui trie les demandes entrantes et les transmet au bon service</span><span class="via">Fonctionnalité, depuis le tableau de bord</span></td><td><span class="status">En cours</span></td><td data-offset="4"></td></tr>
-            <tr><td><span class="req">Créer un espace client pour suivre ses commandes et télécharger ses factures</span><span class="via">Fonctionnalité, par WhatsApp</span></td><td><span class="status">Prévu</span></td><td data-offset="11"></td></tr>
-            <tr><td><span class="req">Envoyer chaque lundi à la direction un tableau de bord des ventes</span><span class="via">Fonctionnalité, par email</span></td><td><span class="status">Prévu</span></td><td data-offset="18"></td></tr>
+            <tr class="is-done"><td><span class="req">Relancer automatiquement les factures impayées toutes les deux semaines</span><span class="pill pill-feature">Fonctionnalité</span></td><td><span class="status">Livré</span></td><td data-offset="-9"></td></tr>
+            <tr class="is-done"><td><span class="req">Afficher le téléphone du client sur la fiche d'intervention</span><span class="pill pill-tweak">Retouche</span></td><td><span class="status">Livré</span></td><td data-offset="-2"></td></tr>
+            <tr class="is-done"><td><span class="req">Corriger le total des devis quand une remise est appliquée</span><span class="pill pill-bug">Bug</span></td><td><span class="status">Livré</span></td><td data-offset="0"></td></tr>
+            <tr class="is-doing"><td><span class="req">Ajouter un assistant IA qui trie les demandes entrantes et les transmet au bon service</span><span class="pill pill-feature">Fonctionnalité</span></td><td><span class="status">En cours</span></td><td data-offset="4"></td></tr>
+            <tr><td><span class="req">Créer un espace client pour suivre ses commandes et télécharger ses factures</span><span class="pill pill-feature">Fonctionnalité</span></td><td><span class="status">Prévu</span></td><td data-offset="11"></td></tr>
+            <tr><td><span class="req">Envoyer chaque lundi à la direction un tableau de bord des ventes</span><span class="pill pill-feature">Fonctionnalité</span></td><td><span class="status">Prévu</span></td><td data-offset="18"></td></tr>
           </tbody>
         </table>
         <form class="backlog-form" id="backlog-form">
