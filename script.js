@@ -44,7 +44,10 @@
   var note = document.querySelector(".note");
   function placeLeader() {
     if (!target || !note) return;
-    var gap = note.getBoundingClientRect().left - target.getBoundingClientRect().right;
+    // Le trait part après l'astérisque quand il y en a une (version anglaise)
+    var star = document.querySelector(".star");
+    var right = star ? Math.max(star.getBoundingClientRect().right, target.getBoundingClientRect().right) : target.getBoundingClientRect().right;
+    var gap = note.getBoundingClientRect().left - right;
     note.style.setProperty("--leader", Math.max(0, gap - 28) + "px");
   }
   placeLeader();

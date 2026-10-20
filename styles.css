@@ -240,7 +240,8 @@ a { color: inherit; }
 
 .star {
   color: var(--red); text-decoration: none; font-weight: 700;
-  font-size: .45em; vertical-align: super; line-height: 0; margin-left: .08em;
+  font-size: 1.35em; line-height: 0; margin-left: .02em;
+  position: relative; top: .12em;
 }
 .meaning { margin-top: 1.5rem; font-size: 1rem; color: var(--pencil); max-width: 36rem; }
 .meaning em { font-style: italic; color: var(--ink); }
@@ -453,7 +454,16 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 
 .assurances { display: grid; gap: 2.5rem; margin-top: 3rem; }
 @media (min-width: 760px) { .assurances { grid-template-columns: 1fr 1fr; gap: 3rem 4rem; } }
-.assurances > div { border-top: 2px solid var(--ink); padding-top: 1.25rem; }
+.assurances > div {
+  --pad: min(1.25rem, var(--gutter));
+  border-top: 2px solid var(--ink);
+  padding: 1.25rem var(--pad) 1.5rem;
+  margin-inline: calc(-1 * var(--pad));
+  border-radius: 0 0 4px 4px;
+  transition: background-color .2s ease;
+}
+/* Au survol ou au toucher, le bloc passe sur fond blanc pour le mettre au premier plan */
+.assurances > div:hover, .assurances > div.is-anim { background-color: #fff; }
 .assurances .icon { display: block; width: 3rem; height: 3rem; margin-bottom: 1rem; }
 .assurances p { margin-top: .75rem; color: var(--pencil); max-width: 34rem; }
 
