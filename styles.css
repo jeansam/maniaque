@@ -112,6 +112,8 @@ a { color: inherit; }
   text-decoration-color: var(--grid-strong);
 }
 .link:hover { text-decoration-color: var(--ink); }
+.inline-link { color: var(--ink); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: .2em; }
+.inline-link:hover { color: var(--red-ink); }
 
 /* ---------- Barre du haut ---------- */
 
