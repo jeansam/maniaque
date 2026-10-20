@@ -423,6 +423,13 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 .compare dd { color: var(--pencil); margin-top: .25rem; max-width: 32rem; }
 .fine { margin-top: 2.5rem; font-size: 1rem; color: var(--pencil); max-width: 46rem; }
 
+/* ---------- Garanties techniques ---------- */
+
+.assurances { display: grid; gap: 2.5rem; margin-top: 3rem; }
+@media (min-width: 760px) { .assurances { grid-template-columns: 1fr 1fr; gap: 3rem 4rem; } }
+.assurances > div { border-top: 2px solid var(--ink); padding-top: 1.25rem; }
+.assurances p { margin-top: .75rem; color: var(--pencil); max-width: 34rem; }
+
 /* ---------- Refus ---------- */
 
 .refusals li {
