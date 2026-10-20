@@ -145,8 +145,12 @@ a { color: inherit; }
   font-size: .9375rem; font-weight: 500; text-decoration: none; color: var(--pencil);
 }
 .bar-nav a:not(.btn):hover { color: var(--ink); }
+.bar-nav .lang {
+  font-weight: 700; color: var(--ink);
+  padding: .2rem .45rem; border: 1.5px solid var(--grid-strong); border-radius: 3px;
+}
 @media (max-width: 760px) {
-  .bar-nav a:not(.btn) { display: none; }
+  .bar-nav a:not(.btn):not(.lang) { display: none; }
 }
 
 /* ---------- Hero ---------- */

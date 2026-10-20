@@ -10,8 +10,24 @@
   }, reduce ? 0 : 1400);
 
   // Dates de la liste d'exemple, relatives à aujourd'hui
-  var fmt = new Intl.DateTimeFormat("fr-FR", { day: "numeric", month: "short" });
-  var longFmt = new Intl.DateTimeFormat("fr-FR", { weekday: "long", day: "numeric", month: "long" });
+  var en = (root.lang || "fr").slice(0, 2) === "en";
+  var T = en ? {
+    locale: "en-GB",
+    empty: "Write a request, even a tiny one.",
+    limit: "This is a demo: the real list has no limit.",
+    feature: "Feature",
+    planned: "Planned",
+    added: "Added. Delivery planned for "
+  } : {
+    locale: "fr-FR",
+    empty: "Écrivez une demande, même toute petite.",
+    limit: "C'est une démo : la vraie liste, elle, n'a pas de limite.",
+    feature: "Fonctionnalité",
+    planned: "Prévu",
+    added: "Ajouté. Livraison prévue le "
+  };
+  var fmt = new Intl.DateTimeFormat(T.locale, { day: "numeric", month: "short" });
+  var longFmt = new Intl.DateTimeFormat(T.locale, { weekday: "long", day: "numeric", month: "long" });
 
   // Le trait de renvoi de l'annotation rejoint exactement le mot encadré
   var target = document.getElementById("target");
@@ -49,12 +65,12 @@
     e.preventDefault();
     var text = input.value.trim();
     if (!text) {
-      msg.textContent = "Écrivez une demande, même toute petite.";
+      msg.textContent = T.empty;
       input.focus();
       return;
     }
     if (added >= 5) {
-      msg.textContent = "C'est une démo : la vraie liste, elle, n'a pas de limite.";
+      msg.textContent = T.limit;
       return;
     }
     lastOffset += 7;
@@ -69,16 +85,19 @@
     req.textContent = text;
     var pill = document.createElement("span");
     pill.className = "pill pill-feature";
-    pill.textContent = "Fonctionnalité";
+    pill.textContent = T.feature;
     td1.append(req, pill);
     var td2 = document.createElement("td");
-    td2.innerHTML = '<span class="status">Prévu</span>';
+    var st = document.createElement("span");
+    st.className = "status";
+    st.textContent = T.planned;
+    td2.appendChild(st);
     var td3 = document.createElement("td");
     td3.textContent = date;
     tr.append(td1, td2, td3);
     body.appendChild(tr);
 
     input.value = "";
-    msg.textContent = "Ajouté. Livraison prévue le " + longFmt.format(inDays(lastOffset)) + ".";
+    msg.textContent = T.added + longFmt.format(inDays(lastOffset)) + ".";
   });
 })();
