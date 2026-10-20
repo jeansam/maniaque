@@ -415,7 +415,11 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 .founder p { font-size: var(--t-lead); line-height: 1.5; max-width: 38rem; }
 .founder p + p { margin-top: 1.25rem; }
 .founder .founder-sign { margin-top: 2rem; font-size: 1.0625rem; font-style: italic; color: var(--pencil); }
-.li-link { display: inline-block; margin-top: 1rem; color: var(--ink); line-height: 0; }
+.founder .founder-prev { margin-top: .75rem; font-size: 1.0625rem; color: var(--pencil); }
+.founder-meta { display: flex; align-items: center; gap: 1.5rem; margin-top: 1.25rem; }
+.li-link { display: inline-block; color: var(--ink); line-height: 0; }
+.place { display: inline-flex; align-items: center; gap: .4rem; font-weight: 600; font-size: 1rem; color: var(--ink); }
+.pin-icon { width: 1.5rem; height: 1.5rem; flex: none; }
 .li-link:hover { color: var(--red-ink); }
 .li-icon { width: 1.75rem; height: 1.75rem; }
 
