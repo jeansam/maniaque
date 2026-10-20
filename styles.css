@@ -132,6 +132,14 @@ a { color: inherit; }
   text-decoration: none;
 }
 .wordmark-small { font-size: 1.25rem; }
+
+/* Il y a de l'IA dans maniaque : les deux lettres portent le rouge de correction */
+.ia { color: var(--red); }
+.split-text .ia { font-weight: 700; }
+/* Dans le titre, elles ne rougissent qu'une fois la retouche livrée */
+.js .target .ia { color: inherit; transition: color .4s .6s; }
+.js.is-fixed .target .ia { color: var(--red); }
+@media (prefers-reduced-motion: reduce) { .js .target .ia { transition: none; } }
 .bar-nav { display: flex; align-items: center; gap: 1.75rem; }
 .bar-nav a:not(.btn) {
   font-size: .9375rem; font-weight: 500; text-decoration: none; color: var(--pencil);
