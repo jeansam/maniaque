@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maniaque, outils sur mesure pour PME</title>
+<meta name="description" content="Votre outil interne ou client sur mesure, puis toutes les retouches que vous voulez, pour 490 € HT par mois. Audit gratuit.">
+<meta property="og:title" content="Maniaque, soyez aussi maniaque que vous voulez">
+<meta property="og:description" content="Outils sur mesure pour PME. Une demande à la fois, livrée en une semaine environ. 490 € HT par mois.">
+<meta name="theme-color" content="#F6F8FA">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="bar">
+  <div class="wrap bar-inner">
+    <a class="wordmark" href="/" aria-label="Maniaque, accueil">maniaque</a>
+    <nav class="bar-nav" aria-label="Navigation principale">
+      <a href="#fonctionnement">Fonctionnement</a>
+      <a href="#tarifs">Tarifs</a>
+      <a href="#engagements">Engagements</a>
+      <a class="btn btn-small" href="#audit">Réserver un audit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <section class="hero grid-paper">
+    <div class="wrap">
+      <div class="hero-head">
+        <h1 class="hero-title">
+          <span class="line">Soyez aussi</span>
+          <span class="line"><span class="target" id="target">maniaque</span></span>
+          <span class="line">que vous voulez.</span>
+        </h1>
+        <div class="note" aria-hidden="true">
+          <p class="note-ask">« Plus gras. Et 2&nbsp;px à gauche. »</p>
+          <p class="note-done">Fait. Livré mardi.</p>
+        </div>
+      </div>
+      <div class="hero-foot">
+        <p class="lede">Un outil sur mesure pour votre entreprise, puis toutes les retouches que vous voulez, pour <strong>490&nbsp;€&nbsp;HT par mois</strong>. Vous demandez, on livre, une demande après l'autre.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#audit">Réserver mon audit gratuit</a>
+          <a class="link" href="#tarifs">Voir les tarifs</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="fonctionnement" aria-labelledby="t-backlog">
+    <div class="wrap split">
+      <div class="split-text">
+        <h2 id="t-backlog">Une liste sans fin. Traitée une demande à la fois.</h2>
+        <p>Vous ajoutez autant de demandes que vous voulez, quand vous voulez. On les traite dans l'ordre que vous choisissez, une à la fois, chacune livrée en une semaine environ.</p>
+        <p>Vous suivez tout en temps réel : ce qui est livré, ce qui est en cours, et la date prévue pour la suite.</p>
+      </div>
+      <div class="backlog" aria-label="Exemple de liste de demandes">
+        <table class="backlog-table">
+          <caption class="visually-hidden">Exemple de liste de demandes d'un client</caption>
+          <thead>
+            <tr><th scope="col">Demande</th><th scope="col">Statut</th><th scope="col">Date</th></tr>
+          </thead>
+          <tbody id="backlog-body">
+            <tr class="is-done"><td>Le logo est flou sur l'écran d'accueil</td><td><span class="status">Livré</span></td><td data-offset="-9"></td></tr>
+            <tr class="is-done"><td>Ajouter un export Excel des devis</td><td><span class="status">Livré</span></td><td data-offset="-3"></td></tr>
+            <tr class="is-doing"><td>Envoyer un SMS au technicien la veille de l'intervention</td><td><span class="status">En cours</span></td><td data-offset="4"></td></tr>
+            <tr><td>Renommer « Prospect » en « Contact » partout</td><td><span class="status">Prévu</span></td><td data-offset="11"></td></tr>
+            <tr><td>Trier le planning par secteur, puis par heure</td><td><span class="status">Prévu</span></td><td data-offset="18"></td></tr>
+          </tbody>
+        </table>
+        <form class="backlog-form" id="backlog-form">
+          <label for="demande">Essayez : ajoutez votre propre demande</label>
+          <div class="backlog-row">
+            <input id="demande" name="demande" type="text" maxlength="90" placeholder="Ex. : dupliquer une commande" autocomplete="off">
+            <button class="btn btn-ink" type="submit">Ajouter</button>
+          </div>
+          <p class="backlog-msg" id="backlog-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" aria-labelledby="t-etapes">
+    <div class="wrap">
+      <h2 id="t-etapes">Comment on démarre</h2>
+      <ol class="steps">
+        <li>
+          <h3>Audit gratuit</h3>
+          <p class="step-meta">45 minutes</p>
+          <p>On parle de votre activité et de ce qui vous fait perdre du temps. Vous recevez ensuite une page claire : le problème, ce que ferait la première version, le coût mensuel total, et notre avis franc sur l'intérêt d'y aller.</p>
+        </li>
+        <li>
+          <h3>Première version</h3>
+          <p class="step-meta">Environ 3 semaines</p>
+          <p>On construit l'outil sur le périmètre écrit à l'audit. Vous l'utilisez pour de vrai, avec vos équipes et vos données.</p>
+        </li>
+        <li>
+          <h3>Abonnement</h3>
+          <p class="step-meta">490 € HT par mois</p>
+          <p>Votre outil évolue avec vous. Nouvelles fonctions, corrections, détails : tout passe par votre liste de demandes, sans devis à chaque fois.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" id="tarifs" aria-labelledby="t-tarifs">
+    <div class="wrap">
+      <h2 id="t-tarifs">Deux formules. Aucun frais caché.</h2>
+      <p class="section-lede">Choisissez de payer la première version ou de vous engager plus longtemps. L'abonnement est le même.</p>
+      <div class="quote">
+        <table class="quote-table">
+          <caption class="visually-hidden">Comparaison des deux formules</caption>
+          <thead>
+            <tr>
+              <td></td>
+              <th scope="col">Première version payée</th>
+              <th scope="col">Première version offerte</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Audit</th><td>Gratuit</td><td>Gratuit</td></tr>
+            <tr><th scope="row">Première version</th><td class="num">2&nbsp;500&nbsp;€</td><td class="num">0&nbsp;€</td></tr>
+            <tr><th scope="row">Abonnement mensuel</th><td class="num">490&nbsp;€</td><td class="num">490&nbsp;€</td></tr>
+            <tr><th scope="row">Engagement minimum</th><td>6 mois</td><td>12 mois</td></tr>
+            <tr><th scope="row">Ensuite</th><td>Sans engagement, résiliable chaque mois</td><td>Sans engagement, résiliable chaque mois</td></tr>
+          </tbody>
+        </table>
+        <div class="quote-notes">
+          <p>Prix hors taxes. La première version se règle moitié à la commande, moitié à la mise en service. L'abonnement est prélevé en début de mois.</p>
+          <p>Formule offerte : si vous arrêtez avant 12 mois, la première version devient payable au prorata des mois restants.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="engagements" aria-labelledby="t-engagements">
+    <div class="wrap split split-wide">
+      <div class="split-text">
+        <h2 id="t-engagements">L'IA écrit le code. Nous, on tient parole.</h2>
+        <p>Construire un logiciel n'a jamais été aussi rapide. Ce qui reste rare, c'est quelqu'un qui répond, qui prévient et qui livre à la date dite. C'est ça que vous payez.</p>
+      </div>
+      <div>
+        <ul class="promises">
+          <li><strong>Un seul interlocuteur.</strong> La personne qui vous répond est celle qui construit votre outil.</li>
+          <li><strong>Réponse sous 24&nbsp;h ouvrées.</strong> À chaque message, même si c'est pour vous donner une date le lendemain.</li>
+          <li><strong>Une semaine par demande, environ.</strong> Une grosse demande est découpée en étapes, chacune avec sa date.</li>
+          <li><strong>Un point par mois.</strong> Un compte rendu écrit, reçu dans les trois jours avant 30 minutes ensemble pour fixer les priorités.</li>
+          <li><strong>Les bugs bloquants passent devant.</strong> Si l'outil ne fait plus son travail, on s'en occupe tout de suite.</li>
+        </ul>
+        <div class="guarantee">
+          <p class="guarantee-title">Notre garantie</p>
+          <p>Si on rate une date qu'on vous a donnée, le mois suivant est à moitié prix.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="t-tech">
+    <div class="wrap">
+      <h2 id="t-tech">Deux façons de construire votre outil</h2>
+      <p class="section-lede">Même prix, même suivi. On vous conseille l'une ou l'autre à l'audit.</p>
+      <div class="compare">
+        <article class="compare-col">
+          <h3>Code sur mesure <span class="tag">Recommandé</span></h3>
+          <dl>
+            <dt>Pour qui</dt><dd>La plupart des entreprises. Aucune limite technique, et rien à payer en plus pour l'outil.</dd>
+            <dt>Hébergement</dt><dd>Chez nous, en Europe, sauvegardé chaque jour et inclus jusqu'à 50&nbsp;€ de coûts par mois. Ou chez vous si vous préférez.</dd>
+            <dt>Propriété</dt><dd>Vos données sont à vous dès le premier jour. Le code vous est transféré à la fin de l'engagement, ou dès le départ s'il est hébergé chez vous.</dd>
+          </dl>
+        </article>
+        <article class="compare-col">
+          <h3>Bubble</h3>
+          <dl>
+            <dt>Pour qui</dt><dd>Vous voulez pouvoir modifier l'outil vous-même, ou vous utilisez déjà Bubble.</dd>
+            <dt>Hébergement</dt><dd>Sur votre propre compte Bubble. L'abonnement Bubble est à votre charge, et on vous l'annonce dès l'audit.</dd>
+            <dt>Propriété</dt><dd>Tout est à vous dès le premier jour.</dd>
+          </dl>
+        </article>
+      </div>
+      <p class="fine">Les services payants à l'usage (SMS, emails en grand volume, intelligence artificielle) sont refacturés au coût réel, sans marge.</p>
+    </div>
+  </section>
+
+  <section class="section section-alt" aria-labelledby="t-non">
+    <div class="wrap split">
+      <div class="split-text">
+        <h2 id="t-non">Quand on vous dira non</h2>
+        <p>On préfère vous le dire à l'audit plutôt qu'au bout de trois mois.</p>
+      </div>
+      <ul class="refusals">
+        <li>Votre besoin est ponctuel et n'évoluera pas. Un abonnement ne vous servirait à rien.</li>
+        <li>Votre projet dépasse ce que les outils qu'on utilise savent faire de façon fiable.</li>
+        <li>Personne chez vous ne peut prendre une heure par semaine pour tester et valider ce qu'on livre.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="t-faq">
+    <div class="wrap faq-wrap">
+      <h2 id="t-faq">Questions fréquentes</h2>
+      <div class="faq">
+        <details>
+          <summary>Comment est-ce possible à ce prix ?</summary>
+          <p>L'intelligence artificielle écrit aujourd'hui une grande partie du code. Notre temps va donc à ce qui compte : comprendre votre métier, vous répondre et vérifier chaque livraison.</p>
+        </details>
+        <details>
+          <summary>Je peux vraiment demander autant de retouches que je veux ?</summary>
+          <p>Oui. Votre liste n'a pas de limite. La seule règle : on traite une demande à la fois, dans l'ordre que vous choisissez. Les grosses demandes sont découpées en étapes d'environ une semaine.</p>
+        </details>
+        <details>
+          <summary>Que se passe-t-il si j'arrête l'abonnement ?</summary>
+          <p>Vous gardez vos données et votre outil. Avec Bubble, tout est déjà sur votre compte. En code sur mesure, on vous transfère le code et la base de données, ou on vous aide à les installer chez vous.</p>
+        </details>
+        <details>
+          <summary>Où sont stockées mes données ?</summary>
+          <p>En Europe. Un contrat de traitement des données conforme au RGPD est joint à votre contrat.</p>
+        </details>
+        <details>
+          <summary>Quel type d'outil pouvez-vous construire ?</summary>
+          <p>Des outils internes (suivi clients, devis, planning d'interventions, gestion de stock, tableaux de bord) comme des outils pour vos clients (espace client, prise de rendez-vous, commandes en ligne).</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta grid-paper" id="audit" aria-labelledby="t-audit">
+    <div class="wrap">
+      <h2 id="t-audit">Parlons de ce qui vous agace au quotidien.</h2>
+      <p>45 minutes, gratuites et sans engagement. Vous repartez avec un avis franc, même si c'est pour nous dire non.</p>
+      <a class="btn" id="audit-link" href="mailto:contact@maniaque.fr?subject=Audit%20gratuit">Réserver mon audit gratuit</a>
+      <p class="cta-alt">Ou écrivez-nous à <a href="mailto:contact@maniaque.fr">contact@maniaque.fr</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span class="wordmark wordmark-small">maniaque</span>
+    <p>Outils sur mesure pour PME. Prix hors taxes.</p>
+    <a href="mentions-legales.html">Mentions légales</a>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
