@@ -64,7 +64,13 @@
     var tr = document.createElement("tr");
     tr.className = "is-new";
     var td1 = document.createElement("td");
-    td1.textContent = text;
+    var req = document.createElement("span");
+    req.className = "req";
+    req.textContent = text;
+    var via = document.createElement("span");
+    via.className = "via";
+    via.textContent = "Depuis le tableau de bord";
+    td1.append(req, via);
     var td2 = document.createElement("td");
     td2.innerHTML = '<span class="status">Prévu</span>';
     var td3 = document.createElement("td");

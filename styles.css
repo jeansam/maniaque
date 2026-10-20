@@ -286,7 +286,9 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
   content: ""; display: inline-block; width: .55rem; height: .55rem; margin-right: .45rem;
   border: 2px solid var(--pencil); border-radius: 50%; vertical-align: .02em;
 }
-.is-done td:first-child { color: var(--pencil); text-decoration: line-through; text-decoration-color: var(--grid-strong); }
+.req { display: block; }
+.via { display: block; margin-top: .2rem; font-size: var(--t-small); color: var(--pencil); }
+.is-done .req { color: var(--pencil); text-decoration: line-through; text-decoration-color: var(--grid-strong); }
 .is-done .status::before { background: var(--ink); border-color: var(--ink); }
 .is-doing .status { color: var(--red-ink); }
 .is-doing .status::before { border-color: var(--red); background: linear-gradient(90deg, var(--red) 50%, transparent 50%); }
