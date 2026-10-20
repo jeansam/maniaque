@@ -423,14 +423,21 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
   position: relative;
 }
 .portrait img { display: block; width: 100%; height: auto; }
-/* Le logo, posé comme un tampon, dépasse du cadre en bas à droite */
-.portrait .badge {
-  position: absolute;
-  right: -2.25rem; bottom: -2.25rem;
-  width: 8rem; height: auto;
+/* Le logo, posé comme un tampon en bas à droite de la section */
+.section-founder { position: relative; }
+.section-founder .badge {
+  display: block;
+  width: 6.5rem; height: auto;
+  margin: 2.5rem 0 0 auto;
   transform: rotate(-10deg);
 }
-@media (max-width: 420px) { .portrait .badge { width: 6.5rem; right: -1rem; bottom: -1.75rem; } }
+@media (min-width: 900px) {
+  .section-founder .badge {
+    position: absolute; margin: 0;
+    right: calc(var(--gutter) + 1rem); bottom: 2.5rem;
+    width: 8rem;
+  }
+}
 
 /* ---------- Comparaison ---------- */
 
