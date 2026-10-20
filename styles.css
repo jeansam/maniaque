@@ -415,6 +415,13 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 .founder p { font-size: var(--t-lead); line-height: 1.5; max-width: 38rem; }
 .founder p + p { margin-top: 1.25rem; }
 .founder .founder-sign { margin-top: 2rem; font-size: 1.0625rem; font-style: italic; color: var(--pencil); }
+.li-link {
+  display: inline-flex; align-items: center; gap: .5rem;
+  margin-top: 1rem; font-weight: 600; font-size: 1rem; color: var(--ink);
+  text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: .2em;
+}
+.li-link:hover { color: var(--red-ink); }
+.li-icon { width: 1.125rem; height: 1.125rem; flex: none; }
 
 .portrait {
   margin: 2rem 0 0;
