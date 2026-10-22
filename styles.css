@@ -623,5 +623,4 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 }
 
 /* Point de départ de l'abonnement, à côté du prix */
-.quote-table .when { display: inline-block; margin-left: .6rem; font-size: 1rem; font-weight: 500; letter-spacing: 0; color: var(--pencil); vertical-align: .15em; }
-@media (max-width: 900px) { .quote-table .when { display: block; margin: .3rem 0 0; font-size: .875rem; } }
+.quote-table .when { display: block; margin-top: .35rem; font-size: .8125rem; font-weight: 500; line-height: 1.3; letter-spacing: 0; color: var(--pencil); }
