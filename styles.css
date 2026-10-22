@@ -295,9 +295,15 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 
 .backlog {
   background: #fff;
-  border: 1px solid var(--grid-strong);
-  border-radius: 4px;
+  border: 1px solid rgba(20, 40, 80, .12);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow:
+    0 1px 2px rgba(20, 40, 80, .06),
+    0 8px 20px -6px rgba(20, 40, 80, .14),
+    0 28px 56px -18px rgba(20, 40, 80, .22);
 }
+.backlog-table thead th { background: var(--paper); }
 .backlog-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
 .backlog-table th {
   text-align: left; font-weight: 600; font-size: var(--t-small); color: var(--pencil);
@@ -583,3 +589,6 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 .references h2 { margin-top: 0; font-size: 1.25rem; }
 .references ol { font-size: 1rem; color: var(--pencil); }
 .references ol li { font-size: 1rem; }
+
+/* Champ et bouton assortis au module arrondi de la liste de demandes */
+.backlog-row input, .backlog-row .btn { border-radius: 8px; }
