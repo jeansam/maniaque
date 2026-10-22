@@ -365,7 +365,8 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
   display: grid; gap: 2.5rem;
   margin-top: 3rem;
 }
-@media (min-width: 900px) { .steps { grid-template-columns: repeat(3, 1fr); gap: 3rem; } }
+@media (min-width: 700px) { .steps { grid-template-columns: repeat(2, 1fr); gap: 2.5rem 3rem; } }
+@media (min-width: 1100px) { .steps { grid-template-columns: repeat(4, 1fr); gap: 2.5rem; } }
 .steps li { counter-increment: step; border-top: 2px solid var(--ink); padding-top: 1.25rem; }
 .steps li::before {
   content: counter(step);
@@ -373,7 +374,8 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
   font-variant-numeric: tabular-nums; color: var(--grid-strong);
 }
 .step-meta { color: var(--red-ink); font-weight: 600; font-size: 1rem; margin-top: .3rem; }
-.steps li p:last-child { margin-top: .9rem; color: var(--pencil); }
+.steps li p:not(.step-meta) { margin-top: .9rem; color: var(--pencil); }
+.steps .step-btn { margin-top: 1.25rem; }
 
 /* ---------- Devis ---------- */
 
