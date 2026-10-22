@@ -592,3 +592,32 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 
 /* Champ et bouton assortis au module arrondi de la liste de demandes */
 .backlog-row input, .backlog-row .btn { border-radius: 8px; }
+
+/* Onglets de filtre de la liste de demandes */
+.backlog-tabs {
+  display: flex; flex-wrap: wrap; gap: .5rem;
+  padding: .875rem 1rem; background: var(--paper);
+  border-bottom: 1px solid var(--grid);
+}
+.tab {
+  display: inline-flex; align-items: center; gap: .4rem;
+  min-height: 2.25rem; padding: 0 .875rem;
+  font: 600 .875rem/1 var(--font); color: var(--ink);
+  background: #fff; border: 1.5px solid var(--grid-strong); border-radius: 999px;
+  cursor: pointer; transition: background-color .15s, border-color .15s, color .15s;
+}
+.tab:hover { border-color: var(--ink); }
+.tab-count {
+  min-width: 1.35rem; padding: .15rem .35rem; border-radius: 999px;
+  background: var(--paper-alt); font-size: .75rem; text-align: center;
+}
+.tab-bug[aria-pressed="true"] { background: #FDEDEC; border-color: #E8A39E; color: var(--red-ink); }
+.tab-tweak[aria-pressed="true"] { background: var(--paper-alt); border-color: var(--ink); }
+.tab-feature[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+.tab[aria-pressed="true"] .tab-count { background: rgba(255,255,255,.7); color: var(--ink); }
+.backlog-table tr[hidden] { display: none; }
+@media (prefers-reduced-motion: reduce) { .tab { transition: none; } }
+@media (max-width: 420px) {
+  .backlog-tabs { gap: .375rem; padding: .75rem; }
+  .tab { padding: 0 .6rem; font-size: .8125rem; gap: .3rem; }
+}

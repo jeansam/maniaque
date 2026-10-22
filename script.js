@@ -66,6 +66,33 @@
     cell.textContent = fmt.format(inDays(parseInt(cell.getAttribute("data-offset"), 10)));
   });
 
+  // Onglets de filtre par type : un clic filtre, un second clic sur le même onglet réaffiche tout
+  var tabs = document.querySelectorAll(".backlog-tabs .tab");
+  var current = null;
+  function updateCounts() {
+    tabs.forEach(function (tab) {
+      var n = document.querySelectorAll('#backlog-body tr[data-kind="' + tab.getAttribute("data-filter") + '"]').length;
+      tab.querySelector(".tab-count").textContent = n;
+    });
+  }
+  function setFilter(kind) {
+    current = kind;
+    tabs.forEach(function (tab) {
+      tab.setAttribute("aria-pressed", tab.getAttribute("data-filter") === kind ? "true" : "false");
+    });
+    document.querySelectorAll("#backlog-body tr").forEach(function (row) {
+      row.hidden = !!kind && row.getAttribute("data-kind") !== kind;
+    });
+    updateCounts();
+  }
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      var kind = tab.getAttribute("data-filter");
+      setFilter(current === kind ? null : kind);
+    });
+  });
+  updateCounts();
+
   // Ajout d'une demande : elle prend sa place en fin de liste, une semaine après la précédente
   var form = document.getElementById("backlog-form");
   var input = document.getElementById("demande");
@@ -92,6 +119,7 @@
 
     var tr = document.createElement("tr");
     tr.className = "is-new";
+    tr.setAttribute("data-kind", "feature");
     var td1 = document.createElement("td");
     var req = document.createElement("span");
     req.className = "req";
@@ -109,6 +137,7 @@
     td3.textContent = date;
     tr.append(td1, td2, td3);
     body.appendChild(tr);
+    setFilter(null);
 
     input.value = "";
     msg.textContent = T.added + longFmt.format(inDays(lastOffset)) + ".";

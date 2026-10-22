@@ -73,24 +73,29 @@
         <p>You follow everything in real time: what's delivered, what's in progress, and when the next thing lands.</p>
       </div>
       <div class="backlog" aria-label="Example request list">
+        <div class="backlog-tabs" role="group" aria-label="Filter by type">
+          <button type="button" class="tab tab-bug" data-filter="bug" aria-pressed="false">Bug <span class="tab-count"></span></button>
+          <button type="button" class="tab tab-tweak" data-filter="tweak" aria-pressed="false">Tweak <span class="tab-count"></span></button>
+          <button type="button" class="tab tab-feature" data-filter="feature" aria-pressed="false">Feature <span class="tab-count"></span></button>
+        </div>
         <table class="backlog-table">
           <caption class="visually-hidden">Example of a client's request list</caption>
           <thead>
             <tr><th scope="col">Request</th><th scope="col">Status</th><th scope="col">Date</th></tr>
           </thead>
           <tbody id="backlog-body">
-            <tr class="is-done"><td><span class="req">Automatically chase unpaid invoices every two weeks</span><span class="pill pill-feature">Feature</span></td><td><span class="status">Delivered</span></td><td data-offset="-9"></td></tr>
-            <tr class="is-done"><td><span class="req">Show the client's phone number on the job sheet</span><span class="pill pill-tweak">Tweak</span></td><td><span class="status">Delivered</span></td><td data-offset="-2"></td></tr>
-            <tr class="is-done"><td><span class="req">Fix the quote total when a discount is applied</span><span class="pill pill-bug">Bug</span></td><td><span class="status">Delivered</span></td><td data-offset="0"></td></tr>
-            <tr class="is-doing"><td><span class="req">Add an AI assistant that sorts incoming requests and routes them to the right team</span><span class="pill pill-feature">Feature</span></td><td><span class="status">In progress</span></td><td data-offset="4"></td></tr>
-            <tr><td><span class="req">Build a customer portal to track orders and download invoices</span><span class="pill pill-feature">Feature</span></td><td><span class="status">Planned</span></td><td data-offset="11"></td></tr>
-            <tr><td><span class="req">Email management a sales dashboard every Monday</span><span class="pill pill-feature">Feature</span></td><td><span class="status">Planned</span></td><td data-offset="18"></td></tr>
+            <tr data-kind="feature" class="is-done"><td><span class="req">Automatically chase unpaid invoices every two weeks</span><span class="pill pill-feature">Feature</span></td><td><span class="status">Delivered</span></td><td data-offset="-9"></td></tr>
+            <tr data-kind="tweak" class="is-done"><td><span class="req">Show the client's phone number on the job sheet</span><span class="pill pill-tweak">Tweak</span></td><td><span class="status">Delivered</span></td><td data-offset="-2"></td></tr>
+            <tr data-kind="bug" class="is-done"><td><span class="req">Fix the quote total when a discount is applied</span><span class="pill pill-bug">Bug</span></td><td><span class="status">Delivered</span></td><td data-offset="0"></td></tr>
+            <tr data-kind="feature" class="is-doing"><td><span class="req">Add an AI assistant that sorts incoming requests and routes them to the right team</span><span class="pill pill-feature">Feature</span></td><td><span class="status">In progress</span></td><td data-offset="4"></td></tr>
+            <tr data-kind="feature"><td><span class="req">Build a customer portal to track orders and download invoices</span><span class="pill pill-feature">Feature</span></td><td><span class="status">Planned</span></td><td data-offset="11"></td></tr>
+            <tr data-kind="feature"><td><span class="req">Email management a sales dashboard every Monday</span><span class="pill pill-feature">Feature</span></td><td><span class="status">Planned</span></td><td data-offset="18"></td></tr>
           </tbody>
         </table>
         <form class="backlog-form" id="backlog-form">
           <label for="demande">Try it: add your own request</label>
           <div class="backlog-row">
-            <input id="demande" name="demande" type="text" maxlength="90" placeholder="E.g. a shared schedule for technicians" autocomplete="off">
+            <input id="demande" name="demande" type="text" maxlength="90" placeholder="E.g. a shared schedule" autocomplete="off">
             <button class="btn btn-ink" type="submit">Add</button>
           </div>
           <p class="backlog-msg" id="backlog-msg" role="status" aria-live="polite"></p>

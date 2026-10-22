@@ -72,24 +72,29 @@
         <p>Vous suivez tout en temps réel : ce qui est livré, ce qui est en cours, et la date prévue pour la suite.</p>
       </div>
       <div class="backlog" aria-label="Exemple de liste de demandes">
+        <div class="backlog-tabs" role="group" aria-label="Filtrer par type">
+          <button type="button" class="tab tab-bug" data-filter="bug" aria-pressed="false">Bug <span class="tab-count"></span></button>
+          <button type="button" class="tab tab-tweak" data-filter="tweak" aria-pressed="false">Retouche <span class="tab-count"></span></button>
+          <button type="button" class="tab tab-feature" data-filter="feature" aria-pressed="false">Fonctionnalité <span class="tab-count"></span></button>
+        </div>
         <table class="backlog-table">
           <caption class="visually-hidden">Exemple de liste de demandes d'un client</caption>
           <thead>
             <tr><th scope="col">Demande</th><th scope="col">Statut</th><th scope="col">Date</th></tr>
           </thead>
           <tbody id="backlog-body">
-            <tr class="is-done"><td><span class="req">Relancer automatiquement les factures impayées toutes les deux semaines</span><span class="pill pill-feature">Fonctionnalité</span></td><td><span class="status">Livré</span></td><td data-offset="-9"></td></tr>
-            <tr class="is-done"><td><span class="req">Afficher le téléphone du client sur la fiche d'intervention</span><span class="pill pill-tweak">Retouche</span></td><td><span class="status">Livré</span></td><td data-offset="-2"></td></tr>
-            <tr class="is-done"><td><span class="req">Corriger le total des devis quand une remise est appliquée</span><span class="pill pill-bug">Bug</span></td><td><span class="status">Livré</span></td><td data-offset="0"></td></tr>
-            <tr class="is-doing"><td><span class="req">Ajouter un assistant IA qui trie les demandes entrantes et les transmet au bon service</span><span class="pill pill-feature">Fonctionnalité</span></td><td><span class="status">En cours</span></td><td data-offset="4"></td></tr>
-            <tr><td><span class="req">Créer un espace client pour suivre ses commandes et télécharger ses factures</span><span class="pill pill-feature">Fonctionnalité</span></td><td><span class="status">Prévu</span></td><td data-offset="11"></td></tr>
-            <tr><td><span class="req">Envoyer chaque lundi à la direction un tableau de bord des ventes</span><span class="pill pill-feature">Fonctionnalité</span></td><td><span class="status">Prévu</span></td><td data-offset="18"></td></tr>
+            <tr data-kind="feature" class="is-done"><td><span class="req">Relancer automatiquement les factures impayées toutes les deux semaines</span><span class="pill pill-feature">Fonctionnalité</span></td><td><span class="status">Livré</span></td><td data-offset="-9"></td></tr>
+            <tr data-kind="tweak" class="is-done"><td><span class="req">Afficher le téléphone du client sur la fiche d'intervention</span><span class="pill pill-tweak">Retouche</span></td><td><span class="status">Livré</span></td><td data-offset="-2"></td></tr>
+            <tr data-kind="bug" class="is-done"><td><span class="req">Corriger le total des devis quand une remise est appliquée</span><span class="pill pill-bug">Bug</span></td><td><span class="status">Livré</span></td><td data-offset="0"></td></tr>
+            <tr data-kind="feature" class="is-doing"><td><span class="req">Ajouter un assistant IA qui trie les demandes entrantes et les transmet au bon service</span><span class="pill pill-feature">Fonctionnalité</span></td><td><span class="status">En cours</span></td><td data-offset="4"></td></tr>
+            <tr data-kind="feature"><td><span class="req">Créer un espace client pour suivre ses commandes et télécharger ses factures</span><span class="pill pill-feature">Fonctionnalité</span></td><td><span class="status">Prévu</span></td><td data-offset="11"></td></tr>
+            <tr data-kind="feature"><td><span class="req">Envoyer chaque lundi à la direction un tableau de bord des ventes</span><span class="pill pill-feature">Fonctionnalité</span></td><td><span class="status">Prévu</span></td><td data-offset="18"></td></tr>
           </tbody>
         </table>
         <form class="backlog-form" id="backlog-form">
           <label for="demande">Essayez : ajoutez votre propre demande</label>
           <div class="backlog-row">
-            <input id="demande" name="demande" type="text" maxlength="90" placeholder="Ex. : un planning partagé pour les techniciens" autocomplete="off">
+            <input id="demande" name="demande" type="text" maxlength="90" placeholder="Ex. : un planning partagé" autocomplete="off">
             <button class="btn btn-ink" type="submit">Ajouter</button>
           </div>
           <p class="backlog-msg" id="backlog-msg" role="status" aria-live="polite"></p>
