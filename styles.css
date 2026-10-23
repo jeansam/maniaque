@@ -489,21 +489,6 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
   .assurances .icon * { animation: none !important; }
 }
 
-/* ---------- Refus ---------- */
-
-.refusals li {
-  position: relative;
-  padding: 1.1rem 0 1.1rem 2.25rem;
-  border-bottom: 1px solid var(--grid-strong);
-  font-size: 1.25rem; line-height: 1.4;
-}
-.refusals li:first-child { padding-top: 0; }
-.refusals li::before {
-  content: ""; position: absolute; left: 0; top: 1.55rem; width: 1.1rem; height: 2px; background: var(--red);
-  transform: rotate(-12deg);
-}
-.refusals li:first-child::before { top: .45rem; }
-
 /* ---------- FAQ ---------- */
 
 .faq-wrap { display: grid; gap: 2.5rem; }
