@@ -105,6 +105,16 @@
     });
   }
 
+  // Étapes « Comment ça marche » : sur mobile, toucher un titre affiche ou masque sa description
+  document.querySelectorAll(".step-toggle").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var li = btn.closest("li");
+      var open = !li.classList.contains("is-open");
+      li.classList.toggle("is-open", open);
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
+
   // Ajout d'une demande : elle prend sa place en fin de liste, une semaine après la précédente
   var form = document.getElementById("backlog-form");
   var input = document.getElementById("demande");

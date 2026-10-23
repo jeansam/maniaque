@@ -660,3 +660,22 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
   .js .backlog.is-shown { display: block; }
 }
 #backlog-demo { scroll-margin-top: 5.5rem; }
+
+/* Étapes : sur mobile, la description s'ouvre en touchant le titre */
+.step-toggle {
+  font: inherit; color: inherit; letter-spacing: inherit; text-align: left;
+  background: none; border: 0; padding: 0; cursor: default; pointer-events: none;
+}
+@media (max-width: 699px) {
+  .step-toggle {
+    pointer-events: auto; cursor: pointer;
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem; width: 100%;
+  }
+  .step-toggle::after {
+    content: "+"; font-weight: 400; font-size: 1.5rem; line-height: 1; color: var(--pencil);
+    transition: transform .2s;
+  }
+  .steps li.is-open .step-toggle::after { transform: rotate(45deg); color: var(--red); }
+  .js .steps li:not(.is-open) .step-desc { display: none; }
+}
+@media (max-width: 699px) and (prefers-reduced-motion: reduce) { .step-toggle::after { transition: none; } }
