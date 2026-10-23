@@ -643,3 +643,20 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 /* Page À propos */
 .about { padding-top: clamp(3rem, 2rem + 4vw, 5.5rem); }
 .about-title { font-size: var(--t-h2); font-weight: 760; line-height: 1.04; letter-spacing: -0.03em; }
+
+/* « Tableau de bord » : simple mot sur ordinateur, bouton qui révèle la démo sur mobile */
+.dash-toggle {
+  font: inherit; color: inherit; background: none; border: 0; padding: 0;
+  cursor: default; pointer-events: none;
+}
+@media (max-width: 899px) {
+  .dash-toggle {
+    pointer-events: auto; cursor: pointer;
+    color: var(--ink); font-weight: 700;
+    text-decoration: underline; text-decoration-color: var(--red);
+    text-decoration-thickness: 2px; text-underline-offset: .2em;
+  }
+  .js .backlog { display: none; }
+  .js .backlog.is-shown { display: block; }
+}
+#backlog-demo { scroll-margin-top: 5.5rem; }

@@ -93,6 +93,18 @@
   });
   updateCounts();
 
+  // Sur mobile, la démo du tableau de bord est cachée : le mot « tableau de bord » l'affiche ou la masque
+  var dashBtn = document.querySelector(".dash-toggle");
+  var demo = document.getElementById("backlog-demo");
+  if (dashBtn && demo) {
+    dashBtn.addEventListener("click", function () {
+      var show = !demo.classList.contains("is-shown");
+      demo.classList.toggle("is-shown", show);
+      dashBtn.setAttribute("aria-expanded", show ? "true" : "false");
+      if (show) demo.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+    });
+  }
+
   // Ajout d'une demande : elle prend sa place en fin de liste, une semaine après la précédente
   var form = document.getElementById("backlog-form");
   var input = document.getElementById("demande");
