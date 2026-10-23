@@ -7,6 +7,8 @@ Site statique, sans étape de build : Vercel le sert tel quel.
 - `index.html` : la page d'accueil (toute l'offre)
 - `styles.css` : la charte (papier millimétré, encre bleue, rouge de correction)
 - `script.js` : l'animation du titre et la liste de demandes interactive
+- `a-propos/` (et `en/about/`) : la page À propos, avec la présentation du fondateur
+- `nav.js` : le menu hamburger sur mobile et tablette
 - `articles/` : la liste des articles (`articles/index.html`) et un dossier par article, avec son illustration
 - `en/` : la version anglaise
 - `mentions-legales.html` : à compléter (identité, SIRET, adresse)
