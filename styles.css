@@ -148,14 +148,16 @@ a { color: inherit; }
 }
 .bar-nav a:not(.btn):hover { color: var(--ink); }
 .bar-nav .lang {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 2.75rem; height: 2.5rem; padding: 0 .6rem;
   font-weight: 700; color: var(--ink);
-  padding: .2rem .45rem; border: 1.5px solid var(--grid-strong); border-radius: 3px;
+  border: 1.5px solid var(--grid-strong); border-radius: 3px;
 }
 /* Menu « plus » sur ordinateur : Cas d'usage, À propos et Articles derrière un hamburger */
-.nav-more { position: relative; }
+.nav-more { position: relative; display: flex; }
 .more-btn {
   display: inline-flex; flex-direction: column; justify-content: center; gap: 4px;
-  width: 2.5rem; height: 2.25rem; padding: 0 .6rem;
+  width: 2.75rem; height: 2.5rem; padding: 0 .7rem;
   background: transparent; border: 1.5px solid var(--grid-strong); border-radius: 3px; cursor: pointer;
 }
 .more-btn span { display: block; height: 2px; background: var(--ink); border-radius: 2px; transition: transform .2s, opacity .2s; }
