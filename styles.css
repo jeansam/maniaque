@@ -479,7 +479,7 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 .faq details p { padding-bottom: 1.25rem; color: var(--pencil); max-width: 40rem; }
 @media (prefers-reduced-motion: reduce) { .faq summary::after { transition: none; } }
 
-/* ---------- Cas d'usage ---------- */
+/* ---------- Page Cas d'usage ---------- */
 
 .uses { display: grid; gap: 1rem; margin-top: 3rem; }
 @media (min-width: 640px) { .uses { grid-template-columns: repeat(2, 1fr); } }
@@ -488,8 +488,12 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
   padding: 1.5rem 1.5rem 1.75rem;
   background: #fff; border: 1px solid var(--grid); border-radius: 12px;
 }
-.uses h3 { font-size: 1.1875rem; }
+.uses h2 { font-size: 1.1875rem; line-height: 1.25; letter-spacing: -0.01em; max-width: none; }
 .uses p { margin-top: .5rem; font-size: 1rem; color: var(--pencil); }
+/* La phrase entendue à l'audit, au stylo rouge comme l'annotation du titre */
+.uses .uses-quote { margin-top: .6rem; color: var(--red-ink); font-style: italic; font-weight: 500; }
+.uses-page { padding-top: clamp(3rem, 2rem + 4vw, 5.5rem); }
+.uses-page .about-title { max-width: 18ch; }
 .uses-more { margin-top: 2rem; font-size: var(--t-lead); }
 
 /* ---------- Appel final ---------- */
