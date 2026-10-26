@@ -479,6 +479,19 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 .faq details p { padding-bottom: 1.25rem; color: var(--pencil); max-width: 40rem; }
 @media (prefers-reduced-motion: reduce) { .faq summary::after { transition: none; } }
 
+/* ---------- Cas d'usage ---------- */
+
+.uses { display: grid; gap: 1rem; margin-top: 3rem; }
+@media (min-width: 640px) { .uses { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .uses { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; } }
+.uses li {
+  padding: 1.5rem 1.5rem 1.75rem;
+  background: #fff; border: 1px solid var(--grid); border-radius: 12px;
+}
+.uses h3 { font-size: 1.1875rem; }
+.uses p { margin-top: .5rem; font-size: 1rem; color: var(--pencil); }
+.uses-more { margin-top: 2rem; font-size: var(--t-lead); }
+
 /* ---------- Appel final ---------- */
 
 .cta { padding-block: var(--space); border-top: 1px solid var(--grid-strong); }
