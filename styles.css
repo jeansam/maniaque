@@ -768,7 +768,13 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 .uc-hero .btn { margin-top: 2rem; }
 .uc-facts { display: flex; flex-wrap: wrap; gap: .5rem 0; margin-top: 2rem; color: var(--pencil); font-size: 1rem; }
 .uc-facts li + li::before { content: ""; display: inline-block; width: 1px; height: 1em; margin: 0 1rem; vertical-align: -.15em; background: var(--grid-strong); }
-.uses-link { display: inline-block; margin-top: .9rem; font-size: .9375rem; font-weight: 600; color: var(--ink); text-decoration: underline; text-decoration-color: var(--red); text-decoration-thickness: 2px; text-underline-offset: .2em; }
+/* Tuile avec exemple : cliquable en entier, le lien se souligne en rouge au survol */
+.uses li:has(.uses-link) { position: relative; transition: border-color .15s; }
+.uses li:has(.uses-link):hover { border-color: var(--grid-strong); }
+.uses-link { display: inline-block; margin-top: .9rem; font-size: .9375rem; font-weight: 600; color: var(--ink); text-decoration: none; text-decoration-thickness: 2px; text-underline-offset: .2em; }
+.uses-link::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.uses li:hover .uses-link, .uses-link:focus-visible { text-decoration: underline; text-decoration-color: var(--red); }
+@media (prefers-reduced-motion: reduce) { .uses li { transition: none; } }
 
 /* Maquette d'un devis : catalogue, lignes, marge et aperçu du document */
 .uc-visual { padding-bottom: var(--space); }
