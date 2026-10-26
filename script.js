@@ -34,6 +34,21 @@
   window.addEventListener("resize", placeLeader);
   if (document.fonts) document.fonts.ready.then(placeLeader);
 
+  // FAQ : le profil choisi (« Je suis… ») filtre les questions, dirigeant par défaut
+  var roles = document.querySelectorAll(".role");
+  function setRole(role) {
+    roles.forEach(function (b) {
+      b.setAttribute("aria-pressed", b.getAttribute("data-role") === role ? "true" : "false");
+    });
+    document.querySelectorAll(".faq details").forEach(function (d) {
+      d.hidden = d.getAttribute("data-roles").split(" ").indexOf(role) < 0;
+    });
+  }
+  roles.forEach(function (b) {
+    b.addEventListener("click", function () { setRole(b.getAttribute("data-role")); });
+  });
+  if (roles.length) setRole("ceo");
+
   // Étapes « Comment ça marche » : sur mobile, toucher un titre affiche ou masque sa description
   document.querySelectorAll(".step-toggle").forEach(function (btn) {
     btn.addEventListener("click", function () {

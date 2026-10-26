@@ -446,8 +446,25 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 
 .faq-wrap { display: grid; gap: 2.5rem; }
 @media (min-width: 900px) { .faq-wrap { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 4rem; } }
+.faq { border-top: 1px solid var(--grid-strong); }
 .faq details { border-bottom: 1px solid var(--grid-strong); }
-.faq details:first-child { border-top: 1px solid var(--grid-strong); }
+.faq details[hidden] { display: none; }
+
+/* « Je suis… » : un profil choisi ne montre que ses questions */
+.roles { display: none; margin-top: 2rem; }
+.js .roles { display: block; }
+.roles-label { font-weight: 600; color: var(--pencil); margin-bottom: .75rem; }
+.roles-list { display: flex; flex-wrap: wrap; gap: .5rem; }
+.role {
+  min-height: 2.75rem; padding: 0 1.1rem;
+  font: 600 1rem/1 var(--font); color: var(--ink);
+  background: #fff; border: 1.5px solid var(--grid-strong); border-radius: 999px;
+  cursor: pointer; transition: background-color .15s, border-color .15s, color .15s;
+}
+.role:hover { border-color: var(--ink); }
+.role[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+@media (min-width: 900px) { .faq-head { position: sticky; top: 6rem; } }
+@media (prefers-reduced-motion: reduce) { .role { transition: none; } }
 .faq summary {
   cursor: pointer; list-style: none;
   display: flex; justify-content: space-between; gap: 1rem; align-items: baseline;

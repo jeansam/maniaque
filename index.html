@@ -181,35 +181,97 @@
 
   <section class="section section-alt" id="faq" aria-labelledby="t-faq">
     <div class="wrap faq-wrap">
-      <h2 id="t-faq">Questions fréquentes</h2>
+      <div class="faq-head">
+        <h2 id="t-faq">Vos questions, nos réponses.</h2>
+        <div class="roles" role="group" aria-labelledby="faq-who">
+          <p class="roles-label" id="faq-who">Je suis…</p>
+          <div class="roles-list"><button type="button" class="role" data-role="ceo" aria-pressed="false">Dirigeant</button><button type="button" class="role" data-role="ai" aria-pressed="false">Responsable IA</button><button type="button" class="role" data-role="it" aria-pressed="false">Responsable informatique</button><button type="button" class="role" data-role="pm" aria-pressed="false">Chef de projet</button></div>
+        </div>
+      </div>
       <div class="faq">
-        <details>
+        <details data-roles="ceo pm">
+          <summary>Dans combien de temps aurons-nous un outil utilisable ?</summary>
+          <p>La première version est livrée en 2 à 8&nbsp;semaines, une fois le périmètre validé ensemble. Vous l'utilisez pour de vrai, avec vos équipes et vos données. Ensuite, elle évolue au fil de vos demandes.</p>
+        </details>
+        <details data-roles="ceo">
+          <summary>Quand commence-t-on à payer ?</summary>
+          <p>L'audit est gratuit. Avec la première version payée, vous réglez 2&nbsp;500&nbsp;€&nbsp;HT, moitié à la commande et moitié à la mise en service, puis l'abonnement de 490&nbsp;€&nbsp;HT par mois démarre à la livraison. Avec la première version offerte, l'abonnement démarre dès le départ, avec un engagement de 6&nbsp;mois.</p>
+        </details>
+        <details data-roles="ceo pm">
+          <summary>Combien de notre temps cela demande-t-il ?</summary>
+          <p>Environ une heure par semaine d'une personne de votre équipe, pour tester et valider ce qu'on livre. Plus 30&nbsp;minutes par mois pour faire le point et fixer les priorités.</p>
+        </details>
+        <details data-roles="ceo">
           <summary>Comment est-ce possible à ce prix ?</summary>
           <p>L'intelligence artificielle écrit aujourd'hui une grande partie du code. Notre temps va donc à ce qui compte : comprendre votre métier, vous répondre et vérifier chaque livraison.</p>
         </details>
-        <details>
+        <details data-roles="ceo">
+          <summary>Y a-t-il un engagement minimum ?</summary>
+          <p>Aucun si vous payez la première version. Six mois si elle vous est offerte. Dans les deux cas, l'abonnement est ensuite résiliable chaque mois.</p>
+        </details>
+        <details data-roles="ceo it">
+          <summary>Qu'est-ce qui n'est pas compris dans l'abonnement ?</summary>
+          <p>L'hébergement est inclus jusqu'à 50&nbsp;€&nbsp;HT de coûts par mois. Les services payants à l'usage (SMS, emails en grand volume, intelligence artificielle dans votre outil, comptes développeur Apple et Android pour une app native) sont refacturés au coût réel, sans marge.</p>
+        </details>
+        <details data-roles="ceo pm">
           <summary>Je peux vraiment tout demander, même les gros projets ?</summary>
           <p>Vous serez étonnés de tout ce que l'on peut faire avec notre formule. Cependant, si votre projet est particulièrement ambitieux et que notre cadence de développement s'avère insuffisante, nous pouvons créer une offre sur mesure, pour un outil sur mesure (toujours).</p>
         </details>
-        <details>
-          <summary>Que se passe-t-il si j'arrête l'abonnement ?</summary>
-          <p>Vous gardez vos données et votre outil. On vous transfère le code et la base de données, ou on vous aide à les installer chez vous.</p>
+        <details data-roles="ceo ai">
+          <summary>En quoi est-ce différent de ChatGPT, Claude ou Copilot ?</summary>
+          <p>Ces assistants vous aident à écrire, mais ne livrent pas un outil fini, testé, hébergé et maintenu. Nous les utilisons pour aller vite, et nous restons responsables du résultat : une personne qui comprend votre métier, vous répond sous 24&nbsp;h et s'engage sur les dates.</p>
         </details>
-        <details>
-          <summary>Où sont stockées mes données ?</summary>
-          <p>On en discute ensemble pendant la phase de cadrage. Il existe des solutions d'hébergement en Europe comme en France, et on s'adapte à vos besoins.</p>
+        <details data-roles="ceo it">
+          <summary>Que se passe-t-il si on arrête l'abonnement ?</summary>
+          <p>Vous gardez vos données et votre outil. On vous transfère le code et la base de données, ou on vous aide à les installer chez vous. Si nous hébergeons l'outil, nous pouvons d'ailleurs vous donner la propriété du code à tout moment.</p>
         </details>
-        <details>
+        <details data-roles="ceo">
+          <summary>Quel type d'outil pouvez-vous construire ?</summary>
+          <p>Des outils internes (suivi clients, devis, planning d'interventions, gestion de stock, tableaux de bord) comme des outils pour vos clients (espace client, prise de rendez-vous, commandes en ligne), en application web ou en application native.</p>
+        </details>
+        <details data-roles="ai it">
           <summary>Avec quelles technologies travaillez-vous ?</summary>
           <p>On fait une veille régulière sur les outils de développement à l'ère de l'IA, pour vous proposer à l'audit la combinaison la plus performante et la plus fiable du moment. Selon votre besoin, c'est du code sur mesure, ou <a class="inline-link" href="https://bubble.io/" target="_blank" rel="noopener">Bubble</a> si vous voulez pouvoir modifier l'outil vous-même.</p>
         </details>
-        <details>
-          <summary>Quel type d'outil pouvez-vous construire ?</summary>
-          <p>Des outils internes (suivi clients, devis, planning d'interventions, gestion de stock, tableaux de bord) comme des outils pour vos clients (espace client, prise de rendez-vous, commandes en ligne).</p>
+        <details data-roles="ai it pm">
+          <summary>Comment évitez-vous les erreurs de l'IA ?</summary>
+          <p>L'IA écrit le code, mais rien n'arrive chez vous sans vérification. Chaque fonctionnalité passe par des tests automatiques, puis par une vérification à la main, et n'est mise en ligne qu'une fois validée.</p>
         </details>
-        <details>
-          <summary>De quoi avez-vous besoin de notre côté ?</summary>
-          <p>D'une personne disponible environ une heure par semaine pour tester et valider ce qu'on livre.</p>
+        <details data-roles="ai">
+          <summary>Peut-on ajouter de l'IA dans notre outil ?</summary>
+          <p>Oui : trier des demandes entrantes, résumer des documents, préremplir des fiches, répondre à des questions sur vos données… L'usage des services d'IA est refacturé au coût réel, sans marge.</p>
+        </details>
+        <details data-roles="it">
+          <summary>Où sont stockées nos données ?</summary>
+          <p>On en discute ensemble pendant la phase de cadrage. Il existe des solutions d'hébergement en Europe comme en France, et on s'adapte à vos besoins. L'outil peut aussi être hébergé chez vous.</p>
+        </details>
+        <details data-roles="it">
+          <summary>Comment nos données sont-elles protégées ?</summary>
+          <p>Connexion protégée, droits d'accès selon le rôle de chacun, données chiffrées pendant leurs échanges. Les mises à jour de sécurité sont faites au fil de l'eau, et votre outil passe un test de sécurité complet chaque mois.</p>
+        </details>
+        <details data-roles="it">
+          <summary>Les données sont-elles sauvegardées ?</summary>
+          <p>Oui, chaque jour.</p>
+        </details>
+        <details data-roles="it">
+          <summary>Signez-vous un accord de confidentialité ?</summary>
+          <p>Oui, dès l'audit si vous le souhaitez. Vos données et vos méthodes de travail restent les vôtres.</p>
+        </details>
+        <details data-roles="it pm">
+          <summary>Que se passe-t-il si quelque chose ne marche plus ?</summary>
+          <p>Vous nous le signalez, et c'est corrigé sous 2&nbsp;heures ouvrées.</p>
+        </details>
+        <details data-roles="pm">
+          <summary>Comment demande-t-on des modifications ?</summary>
+          <p>Comme ça vous arrange : un message WhatsApp, un email, ou directement depuis votre tableau de bord, où vous suivez en temps réel ce qui est livré, en cours et prévu.</p>
+        </details>
+        <details data-roles="pm">
+          <summary>En combien de temps les changements sont-ils livrés ?</summary>
+          <p>Bugs et retouches sous 2&nbsp;heures ouvrées. Les nouvelles fonctionnalités selon leur taille, avec une date connue à l'avance, et les gros projets découpés en étapes. Si on rate une date, le mois suivant est à moitié prix.</p>
+        </details>
+        <details data-roles="pm ceo">
+          <summary>Qui est notre interlocuteur ?</summary>
+          <p>Une seule personne : celle qui construit votre outil. Elle répond à chaque message sous 24&nbsp;h ouvrées, même si c'est pour vous donner une date le lendemain.</p>
         </details>
       </div>
     </div>
