@@ -26,9 +26,14 @@
       <a href="/#fonctionnement">Fonctionnement</a>
       <a href="/#tarifs">Tarifs</a>
       <a href="/#faq">FAQ</a>
-      <a href="/cas-d-usage/" aria-current="page">Cas d'usage</a>
-      <a href="/a-propos/">À propos</a>
-      <a href="/articles/">Articles</a>
+      <div class="nav-more">
+        <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-menu" aria-label="Plus de liens"><span></span><span></span><span></span></button>
+        <div class="more-menu" id="more-menu">
+          <a href="/cas-d-usage/" aria-current="page">Cas d'usage</a>
+          <a href="/a-propos/">À propos</a>
+          <a href="/articles/">Articles</a>
+        </div>
+      </div>
       <a class="lang" href="/en/use-cases/" hreflang="en" lang="en" aria-label="English version">EN</a>
       <a class="btn btn-small" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Réserver un audit</a>
     </nav>
@@ -42,21 +47,21 @@
       <h1 class="about-title" id="t-uses">Chaque métier a ses manies. Votre outil aussi.</h1>
       <p class="section-lede">Voici les outils qu'on nous demande le plus souvent. Chacun part d'une phrase qu'on entend à l'audit, et chacun est construit autour de votre façon de travailler, pas l'inverse. La plupart commencent petit, puis grandissent demande après demande.</p>
       <ul class="uses">
-        <li><h2>CRM</h2><p class="uses-quote">«&nbsp;Qui devait rappeler le garage Leroy&nbsp;?&nbsp;»</p><p>Vos contacts, vos affaires et vos relances au même endroit, rangés comme vous vendez. Pas de licence par utilisateur : toute l'équipe y a accès.</p></li>
+        <li><h2>CRM</h2><p class="uses-quote">«&nbsp;Qui devait rappeler le garage Leroy&nbsp;?&nbsp;»</p><p>Vos contacts, vos affaires et vos relances au même endroit, rangés comme vous vendez. Pas de licence par utilisateur : toute l'équipe y a accès.</p><a class="uses-link" href="/cas-d-usage/crm/">Voir l'exemple →</a></li>
         <li><h2>Devis et chiffrages</h2><p class="uses-quote">«&nbsp;Il me faut deux heures par devis.&nbsp;»</p><p>Vos tarifs, vos marges et vos options sont déjà enregistrés. Le devis se monte en quelques minutes et part au bon format.</p><a class="uses-link" href="/cas-d-usage/devis-et-chiffrages/">Voir l'exemple →</a></li>
-        <li><h2>Planning des interventions</h2><p class="uses-quote">«&nbsp;Le technicien est arrivé sans la pièce.&nbsp;»</p><p>Qui va où, quand, avec quoi. Chaque intervention arrive sur le téléphone du bon technicien, avec l'adresse, l'historique et le matériel à prévoir.</p></li>
-        <li><h2>Espace client</h2><p class="uses-quote">«&nbsp;Où en est ma commande&nbsp;? (troisième appel de la journée)&nbsp;»</p><p>Vos clients suivent leurs commandes, téléchargent leurs factures et vous écrivent au même endroit, à vos couleurs.</p></li>
-        <li><h2>Gestion de stock</h2><p class="uses-quote">«&nbsp;On a encore des vis de 6&nbsp;?&nbsp;»</p><p>Entrées, sorties, seuils d'alerte et fournisseurs. Vous savez ce qu'il reste, ce qu'il faut commander et ce que ça vous coûte.</p></li>
-        <li><h2>Tableaux de bord</h2><p class="uses-quote">«&nbsp;J'attends la fin du mois pour savoir si on gagne de l'argent.&nbsp;»</p><p>Chiffre d'affaires, marges, carnet de commandes : vos chiffres à jour chaque matin, sans tableur à consolider.</p></li>
-        <li><h2>Suivi de projets</h2><p class="uses-quote">«&nbsp;On a dépassé le budget sans s'en rendre compte.&nbsp;»</p><p>Tâches, temps passé, budget et facturation réunis sur chaque projet. Vous voyez la dérive avant qu'elle coûte cher.</p></li>
-        <li><h2>Lecture de documents</h2><p class="uses-quote">«&nbsp;Je recopie les bons de commande à la main.&nbsp;»</p><p>L'IA lit vos factures, bons de commande et formulaires, et remplit les bonnes cases. Vous vérifiez, vous validez.</p></li>
-        <li><h2>Feuilles de temps</h2><p class="uses-quote">«&nbsp;Chacun remplit ses heures le vendredi soir, de mémoire.&nbsp;»</p><p>Une saisie en quelques secondes depuis le téléphone. Les heures partent directement vers la paie et la facturation.</p></li>
-        <li><h2>Propositions commerciales</h2><p class="uses-quote">«&nbsp;Chaque proposition repart d'un vieux fichier Word.&nbsp;»</p><p>L'IA rédige un premier jet à partir de vos propositions passées, mis en page à votre image. Il ne vous reste qu'à relire.</p></li>
-        <li><h2>Arrivée d'un client</h2><p class="uses-quote">«&nbsp;On saisit ses coordonnées dans cinq logiciels.&nbsp;»</p><p>Un seul formulaire, rempli une seule fois. Le client est créé partout où il doit l'être, et son dossier est prêt le jour même.</p></li>
-        <li><h2>Support client</h2><p class="uses-quote">«&nbsp;La boîte mail déborde.&nbsp;»</p><p>Les demandes sont triées, attribuées et accompagnées d'un brouillon de réponse. Vos clients sont servis plus vite, et votre équipe respire.</p></li>
-        <li><h2>Contrats et échéances</h2><p class="uses-quote">«&nbsp;Le contrat s'est encore renouvelé tout seul.&nbsp;»</p><p>Chaque contrat avec ses dates clés. Vous êtes prévenu à temps pour renégocier ou résilier.</p></li>
-        <li><h2>Conformité</h2><p class="uses-quote">«&nbsp;L'attestation a expiré la semaine dernière.&nbsp;»</p><p>Certifications, habilitations, contrôles obligatoires : l'outil relance avant l'échéance, pas après.</p></li>
-        <li><h2>Arrivée d'un salarié</h2><p class="uses-quote">«&nbsp;Le nouveau a attendu ses accès toute la matinée.&nbsp;»</p><p>Comptes, matériel, documents à signer, formations : tout est prêt avant le premier jour, et rien n'est oublié.</p></li>
+        <li><h2>Planning des interventions</h2><p class="uses-quote">«&nbsp;Le technicien est arrivé sans la pièce.&nbsp;»</p><p>Qui va où, quand, avec quoi. Chaque intervention arrive sur le téléphone du bon technicien, avec l'adresse, l'historique et le matériel à prévoir.</p><a class="uses-link" href="/cas-d-usage/planning-des-interventions/">Voir l'exemple →</a></li>
+        <li><h2>Espace client</h2><p class="uses-quote">«&nbsp;Où en est ma commande&nbsp;? (troisième appel de la journée)&nbsp;»</p><p>Vos clients suivent leurs commandes, téléchargent leurs factures et vous écrivent au même endroit, à vos couleurs.</p><a class="uses-link" href="/cas-d-usage/espace-client/">Voir l'exemple →</a></li>
+        <li><h2>Gestion de stock</h2><p class="uses-quote">«&nbsp;On a encore des vis de 6&nbsp;?&nbsp;»</p><p>Entrées, sorties, seuils d'alerte et fournisseurs. Vous savez ce qu'il reste, ce qu'il faut commander et ce que ça vous coûte.</p><a class="uses-link" href="/cas-d-usage/gestion-de-stock/">Voir l'exemple →</a></li>
+        <li><h2>Tableaux de bord</h2><p class="uses-quote">«&nbsp;J'attends la fin du mois pour savoir si on gagne de l'argent.&nbsp;»</p><p>Chiffre d'affaires, marges, carnet de commandes : vos chiffres à jour chaque matin, sans tableur à consolider.</p><a class="uses-link" href="/cas-d-usage/tableaux-de-bord/">Voir l'exemple →</a></li>
+        <li><h2>Suivi de projets</h2><p class="uses-quote">«&nbsp;On a dépassé le budget sans s'en rendre compte.&nbsp;»</p><p>Tâches, temps passé, budget et facturation réunis sur chaque projet. Vous voyez la dérive avant qu'elle coûte cher.</p><a class="uses-link" href="/cas-d-usage/suivi-de-projets/">Voir l'exemple →</a></li>
+        <li><h2>Lecture de documents</h2><p class="uses-quote">«&nbsp;Je recopie les bons de commande à la main.&nbsp;»</p><p>L'IA lit vos factures, bons de commande et formulaires, et remplit les bonnes cases. Vous vérifiez, vous validez.</p><a class="uses-link" href="/cas-d-usage/lecture-de-documents/">Voir l'exemple →</a></li>
+        <li><h2>Feuilles de temps</h2><p class="uses-quote">«&nbsp;Chacun remplit ses heures le vendredi soir, de mémoire.&nbsp;»</p><p>Une saisie en quelques secondes depuis le téléphone. Les heures partent directement vers la paie et la facturation.</p><a class="uses-link" href="/cas-d-usage/feuilles-de-temps/">Voir l'exemple →</a></li>
+        <li><h2>Propositions commerciales</h2><p class="uses-quote">«&nbsp;Chaque proposition repart d'un vieux fichier Word.&nbsp;»</p><p>L'IA rédige un premier jet à partir de vos propositions passées, mis en page à votre image. Il ne vous reste qu'à relire.</p><a class="uses-link" href="/cas-d-usage/propositions-commerciales/">Voir l'exemple →</a></li>
+        <li><h2>Arrivée d'un client</h2><p class="uses-quote">«&nbsp;On saisit ses coordonnées dans cinq logiciels.&nbsp;»</p><p>Un seul formulaire, rempli une seule fois. Le client est créé partout où il doit l'être, et son dossier est prêt le jour même.</p><a class="uses-link" href="/cas-d-usage/arrivee-d-un-client/">Voir l'exemple →</a></li>
+        <li><h2>Support client</h2><p class="uses-quote">«&nbsp;La boîte mail déborde.&nbsp;»</p><p>Les demandes sont triées, attribuées et accompagnées d'un brouillon de réponse. Vos clients sont servis plus vite, et votre équipe respire.</p><a class="uses-link" href="/cas-d-usage/support-client/">Voir l'exemple →</a></li>
+        <li><h2>Contrats et échéances</h2><p class="uses-quote">«&nbsp;Le contrat s'est encore renouvelé tout seul.&nbsp;»</p><p>Chaque contrat avec ses dates clés. Vous êtes prévenu à temps pour renégocier ou résilier.</p><a class="uses-link" href="/cas-d-usage/contrats-et-echeances/">Voir l'exemple →</a></li>
+        <li><h2>Conformité</h2><p class="uses-quote">«&nbsp;L'attestation a expiré la semaine dernière.&nbsp;»</p><p>Certifications, habilitations, contrôles obligatoires : l'outil relance avant l'échéance, pas après.</p><a class="uses-link" href="/cas-d-usage/conformite/">Voir l'exemple →</a></li>
+        <li><h2>Arrivée d'un salarié</h2><p class="uses-quote">«&nbsp;Le nouveau a attendu ses accès toute la matinée.&nbsp;»</p><p>Comptes, matériel, documents à signer, formations : tout est prêt avant le premier jour, et rien n'est oublié.</p><a class="uses-link" href="/cas-d-usage/arrivee-d-un-salarie/">Voir l'exemple →</a></li>
       </ul>
       <p class="uses-more">Le vôtre n'est pas dans la liste ? Tant mieux : le sur mesure, c'est justement ça.</p>
     </div>

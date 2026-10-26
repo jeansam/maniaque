@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lecture de documents, Maniaque</title>
+<meta name="description" content="L'IA extrait les informations, les range au bon endroit et signale ce qui semble anormal.">
+<meta name="theme-color" content="#F6F8FA">
+<link rel="alternate" hreflang="fr" href="/cas-d-usage/lecture-de-documents/">
+<link rel="alternate" hreflang="en" href="/en/use-cases/document-reading/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="bar">
+  <div class="wrap bar-inner">
+    <a class="wordmark" href="/" aria-label="Maniaque, accueil">man<span class="ia">ia</span>que</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    <nav class="bar-nav" id="main-nav" aria-label="Navigation principale">
+      <a href="/#fonctionnement">Fonctionnement</a>
+      <a href="/#tarifs">Tarifs</a>
+      <a href="/#faq">FAQ</a>
+      <div class="nav-more">
+        <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-menu" aria-label="Plus de liens"><span></span><span></span><span></span></button>
+        <div class="more-menu" id="more-menu">
+          <a href="/cas-d-usage/">Cas d'usage</a>
+          <a href="/a-propos/">À propos</a>
+          <a href="/articles/">Articles</a>
+        </div>
+      </div>
+      <a class="lang" href="/en/use-cases/document-reading/" hreflang="en" lang="en" aria-label="English version">EN</a>
+      <a class="btn btn-small" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Réserver un audit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <section class="section uc-hero" aria-labelledby="t-uc">
+    <div class="wrap">
+      <a class="uc-back" href="/cas-d-usage/">← Cas d'usage</a>
+      <h1 class="uc-title" id="t-uc">Une IA qui lit vos documents, <span>et remplit les bonnes cases.</span></h1>
+      <p class="uc-lede">Nous construisons des outils qui lisent pour vous les factures fournisseurs, les bons de commande et les formulaires, qu'ils arrivent par email ou en photo. L'IA extrait les informations, les range au bon endroit et signale ce qui semble anormal. Vous vérifiez, vous validez : la saisie à la main disparaît.</p>
+      <a class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Réserver mon audit gratuit</a>
+      <ul class="uc-facts"><li>Première version en 2 à 8&nbsp;semaines</li><li>490&nbsp;€&nbsp;HT par mois</li><li>Audit gratuit</li></ul>
+    </div>
+  </section>
+
+  <section class="uc-visual" aria-label="Exemple d'écran : lecture de documents">
+    <div class="wrap">
+      <figure class="qt-figure">
+        <div class="qt" role="img" aria-label="Exemple d'écran : lecture de documents">
+          <div class="qt-chrome"><i></i><i></i><i></i></div>
+          <div class="qt-app qt-app-2">
+            <aside class="qt-side"><p class="qt-brand"><em></em>Documents</p><ul><li class=on>À valider</li><li>Validés</li><li>Fournisseurs</li></ul></aside>
+            <div class="qt-main">
+              <div class="qt-head"><div><p class="qt-num">Facture reçue par email</p><p class="qt-client">Lue par l'IA en 4 secondes</p></div><span class="mk-pill mk-warn">1 point à vérifier</span></div>
+              <div class="mk-row"><div class="mk-grow"><div class="mk-doc"><p class="mk-doc-t">FACTURE n° 88412</p><p>Quincaillerie Morel</p><p>12 rue des Forges, Lyon</p><div class=mk-doc-l><span>Charnière 110° × 200</span><span>640 €</span></div><div class=mk-doc-l><span>Poignée inox × 100</span><span>520 €</span></div><div class=mk-doc-l><span>Joint EPDM × 20</span><span>300 €</span></div><div class="mk-doc-l mk-doc-tot"><span>Total TTC</span><span>1 752 €</span></div></div></div><div class="mk-grow"><p class="mk-h">Informations extraites</p><div class="mk-field"><span>Fournisseur</span><b>Quincaillerie Morel</b><span class="mk-pill mk-ok">✓</span></div><div class="mk-field"><span>N° de facture</span><b>88412</b><span class="mk-pill mk-ok">✓</span></div><div class="mk-field"><span>Date</span><b>24/10/2026</b><span class="mk-pill mk-ok">✓</span></div><div class="mk-field"><span>Total HT</span><b>1 460 €</b><span class="mk-pill mk-ok">✓</span></div><div class="mk-field"><span>TVA</span><b>292 €</b><span class="mk-pill mk-ok">✓</span></div><div class="mk-field"><span>Bon de commande</span><b>BC-0312</b><span class="mk-pill mk-warn">À vérifier</span></div><div class="mk-alert">Le bon BC-0312 prévoyait 180 charnières, la facture en compte 200.</div><span class="mk-btn">Valider et envoyer en compta</span></div></div>
+            </div>
+          </div>
+        </div>
+        <figcaption>Exemple : une facture lue en quelques secondes, et l'écart repéré avec le bon de commande.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cta grid-paper" aria-labelledby="t-audit">
+    <div class="wrap">
+      <h2 id="t-audit">Dites-nous quels documents vous recopiez aujourd'hui.</h2>
+      <p>45 minutes, gratuites et sans engagement. On repère où vous perdez le plus de temps, et ce qu'on construirait en premier.</p>
+      <a class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Choisir un créneau</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span class="wordmark wordmark-small" aria-label="Maniaque">man<span class="ia">ia</span>que</span>
+    <p>Outils sur mesure pour PME. Prix hors taxes.</p>
+    <a href="/mentions-legales.html">Mentions légales</a>
+  </div>
+</footer>
+
+<script src="/nav.js" defer></script>
+</body>
+</html>

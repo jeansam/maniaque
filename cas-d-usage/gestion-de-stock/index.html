@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gestion de stock, Maniaque</title>
+<meta name="description" content="Entrées, sorties, inventaires et fournisseurs sont suivis au même endroit, lecture de codes-barres comprise.">
+<meta name="theme-color" content="#F6F8FA">
+<link rel="alternate" hreflang="fr" href="/cas-d-usage/gestion-de-stock/">
+<link rel="alternate" hreflang="en" href="/en/use-cases/inventory/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="bar">
+  <div class="wrap bar-inner">
+    <a class="wordmark" href="/" aria-label="Maniaque, accueil">man<span class="ia">ia</span>que</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
+    <nav class="bar-nav" id="main-nav" aria-label="Navigation principale">
+      <a href="/#fonctionnement">Fonctionnement</a>
+      <a href="/#tarifs">Tarifs</a>
+      <a href="/#faq">FAQ</a>
+      <div class="nav-more">
+        <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-menu" aria-label="Plus de liens"><span></span><span></span><span></span></button>
+        <div class="more-menu" id="more-menu">
+          <a href="/cas-d-usage/">Cas d'usage</a>
+          <a href="/a-propos/">À propos</a>
+          <a href="/articles/">Articles</a>
+        </div>
+      </div>
+      <a class="lang" href="/en/use-cases/inventory/" hreflang="en" lang="en" aria-label="English version">EN</a>
+      <a class="btn btn-small" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Réserver un audit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <section class="section uc-hero" aria-labelledby="t-uc">
+    <div class="wrap">
+      <a class="uc-back" href="/cas-d-usage/">← Cas d'usage</a>
+      <h1 class="uc-title" id="t-uc">Une gestion de stock qui sait ce qu'il reste, <span>et ce qu'il faut commander.</span></h1>
+      <p class="uc-lede">Nous construisons des outils de stock pour les ateliers, les grossistes et les commerces. Entrées, sorties, inventaires et fournisseurs sont suivis au même endroit, lecture de codes-barres comprise. Quand un article passe sous son seuil, l'outil prépare la commande fournisseur. Vous savez à tout moment ce que vous avez, et ce que ça vous coûte.</p>
+      <a class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Réserver mon audit gratuit</a>
+      <ul class="uc-facts"><li>Première version en 2 à 8&nbsp;semaines</li><li>490&nbsp;€&nbsp;HT par mois</li><li>Audit gratuit</li></ul>
+    </div>
+  </section>
+
+  <section class="uc-visual" aria-label="Exemple d'écran : gestion de stock">
+    <div class="wrap">
+      <figure class="qt-figure">
+        <div class="qt" role="img" aria-label="Exemple d'écran : gestion de stock">
+          <div class="qt-chrome"><i></i><i></i><i></i></div>
+          <div class="qt-app">
+            <aside class="qt-side"><p class="qt-brand"><em></em>Stock</p><ul><li class=on>Articles</li><li>Mouvements</li><li>Fournisseurs</li><li>Inventaires</li></ul></aside>
+            <div class="qt-main">
+              <div class="qt-head"><div><p class="qt-num">Articles</p><p class="qt-client">Entrepôt principal</p></div></div>
+              <div class="mk-kpis"><div class="mk-kpi"><span>Articles suivis</span><b>1 284</b></div><div class="mk-kpi"><span>Sous le seuil</span><b>12</b><i class=mk-bad>+3 cette semaine</i></div><div class="mk-kpi"><span>Valeur du stock</span><b>214 300 €</b></div></div><div class="mk-table" style="--tpl:1.6fr .7fr 1fr .9fr"><div class="mk-tr mk-th"><span>Article</span><span>En stock</span><span>Niveau</span><span>Statut</span></div><div class="mk-tr"><span>Vis inox M6 × 40</span><span>1 240</span><span><span class="mk-bar mk-bar-ink"><i style="width:90%"></i></span></span><span><span class="mk-pill mk-ok">OK</span></span></div><div class="mk-tr"><span>Charnière 110°</span><span>86</span><span><span class="mk-bar mk-bar-bad"><i style="width:28%"></i></span></span><span><span class="mk-pill mk-bad">À commander</span></span></div><div class="mk-tr"><span>Joint EPDM 10 m</span><span>42</span><span><span class="mk-bar mk-bar-warn"><i style="width:45%"></i></span></span><span><span class="mk-pill mk-warn">Bas</span></span></div><div class="mk-tr"><span>Profilé alu 6 m</span><span>318</span><span><span class="mk-bar mk-bar-ink"><i style="width:80%"></i></span></span><span><span class="mk-pill mk-ok">OK</span></span></div><div class="mk-tr"><span>Poignée inox</span><span>19</span><span><span class="mk-bar mk-bar-bad"><i style="width:15%"></i></span></span><span><span class="mk-pill mk-bad">À commander</span></span></div></div>
+            </div><div class="mk-aside"><p class="mk-h">Commande proposée</p><p class="mk-sub">Quincaillerie Morel · livraison 48 h</p><div class="mk-line"><span>Charnière 110°</span><b>× 200</b></div><div class="mk-line"><span>Poignée inox</span><b>× 100</b></div><div class="mk-line"><span>Joint EPDM 10 m</span><b>× 20</b></div><div class="mk-line mk-total"><span>Total HT</span><b>1 460 €</b></div><span class="mk-btn">Envoyer au fournisseur</span></div>
+          </div>
+        </div>
+        <figcaption>Exemple : les articles à surveiller, et la commande fournisseur déjà prête.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cta grid-paper" aria-labelledby="t-audit">
+    <div class="wrap">
+      <h2 id="t-audit">Dites-nous comment vous suivez votre stock aujourd'hui.</h2>
+      <p>45 minutes, gratuites et sans engagement. On repère où vous perdez le plus de temps, et ce qu'on construirait en premier.</p>
+      <a class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Choisir un créneau</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span class="wordmark wordmark-small" aria-label="Maniaque">man<span class="ia">ia</span>que</span>
+    <p>Outils sur mesure pour PME. Prix hors taxes.</p>
+    <a href="/mentions-legales.html">Mentions légales</a>
+  </div>
+</footer>
+
+<script src="/nav.js" defer></script>
+</body>
+</html>

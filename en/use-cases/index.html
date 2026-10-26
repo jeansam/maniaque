@@ -26,9 +26,14 @@
       <a href="/en/#how-it-works">How it works</a>
       <a href="/en/#pricing">Pricing</a>
       <a href="/en/#faq">FAQ</a>
-      <a href="/en/use-cases/" aria-current="page">Use cases</a>
-      <a href="/en/about/">About</a>
-      <a href="/en/articles/">Articles</a>
+      <div class="nav-more">
+        <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-menu" aria-label="More links"><span></span><span></span><span></span></button>
+        <div class="more-menu" id="more-menu">
+          <a href="/en/use-cases/" aria-current="page">Use cases</a>
+          <a href="/en/about/">About</a>
+          <a href="/en/articles/">Articles</a>
+        </div>
+      </div>
       <a class="lang" href="/cas-d-usage/" hreflang="fr" lang="fr" aria-label="Version française">FR</a>
       <a class="btn btn-small" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Book an audit</a>
     </nav>
@@ -42,21 +47,21 @@
       <h1 class="about-title" id="t-uses">Every trade has its quirks. So does your tool.</h1>
       <p class="section-lede">These are the tools we're asked for most often. Each one starts from a sentence we hear at the audit, and each one is built around the way you work, not the other way round. Most start small, then grow one request at a time.</p>
       <ul class="uses">
-        <li><h2>CRM</h2><p class="uses-quote">“Who was supposed to call Leroy Garage back?”</p><p>Your contacts, deals and follow-ups in one place, organised the way you sell. No per-user licences: the whole team gets access.</p></li>
+        <li><h2>CRM</h2><p class="uses-quote">“Who was supposed to call Leroy Garage back?”</p><p>Your contacts, deals and follow-ups in one place, organised the way you sell. No per-user licences: the whole team gets access.</p><a class="uses-link" href="/en/use-cases/crm/">See the example →</a></li>
         <li><h2>Quotes and estimates</h2><p class="uses-quote">“Every quote takes me two hours.”</p><p>Your rates, margins and options are already stored. A quote comes together in minutes and goes out in the right format.</p><a class="uses-link" href="/en/use-cases/quotes-and-estimates/">See the example →</a></li>
-        <li><h2>Job scheduling</h2><p class="uses-quote">“The technician turned up without the part.”</p><p>Who goes where, when, with what. Each job lands on the right technician's phone, with the address, the history and the parts to bring.</p></li>
-        <li><h2>Customer portal</h2><p class="uses-quote">“Where's my order? (third call today)”</p><p>Your customers track their orders, download their invoices and message you in one place, in your colours.</p></li>
-        <li><h2>Inventory</h2><p class="uses-quote">“Do we still have size 6 screws?”</p><p>Stock in, stock out, alert thresholds and suppliers. You know what's left, what to order and what it costs you.</p></li>
-        <li><h2>Dashboards</h2><p class="uses-quote">“I wait until month end to find out if we're making money.”</p><p>Revenue, margins, order book: your figures up to date every morning, with no spreadsheet to pull together.</p></li>
-        <li><h2>Project tracking</h2><p class="uses-quote">“We went over budget without noticing.”</p><p>Tasks, time spent, budget and invoicing together on every project. You see the drift before it gets expensive.</p></li>
-        <li><h2>Document reading</h2><p class="uses-quote">“I copy purchase orders by hand.”</p><p>AI reads your invoices, purchase orders and forms, and fills in the right fields. You check, you approve.</p></li>
-        <li><h2>Timesheets</h2><p class="uses-quote">“Everyone fills in their hours on Friday night, from memory.”</p><p>Logging time takes seconds, from a phone. Hours go straight to payroll and invoicing.</p></li>
-        <li><h2>Sales proposals</h2><p class="uses-quote">“Every proposal starts from an old Word file.”</p><p>AI drafts a first version from your past proposals, laid out in your brand. All that's left is to proofread.</p></li>
-        <li><h2>New client setup</h2><p class="uses-quote">“We type their details into five systems.”</p><p>One form, filled in once. The client is created everywhere they need to be, and their file is ready the same day.</p></li>
-        <li><h2>Customer support</h2><p class="uses-quote">“The inbox is overflowing.”</p><p>Requests are sorted, assigned and come with a draft reply. Your customers hear back faster, and your team can breathe.</p></li>
-        <li><h2>Contracts and deadlines</h2><p class="uses-quote">“The contract renewed itself again.”</p><p>Every contract with its key dates. You're warned in time to renegotiate or cancel.</p></li>
-        <li><h2>Compliance</h2><p class="uses-quote">“The certificate expired last week.”</p><p>Certifications, permits, mandatory inspections: the tool chases them before the deadline, not after.</p></li>
-        <li><h2>New hires</h2><p class="uses-quote">“The new starter waited all morning for their logins.”</p><p>Accounts, equipment, documents to sign, training: everything is ready before day one, and nothing is forgotten.</p></li>
+        <li><h2>Job scheduling</h2><p class="uses-quote">“The technician turned up without the part.”</p><p>Who goes where, when, with what. Each job lands on the right technician's phone, with the address, the history and the parts to bring.</p><a class="uses-link" href="/en/use-cases/job-scheduling/">See the example →</a></li>
+        <li><h2>Customer portal</h2><p class="uses-quote">“Where's my order? (third call today)”</p><p>Your customers track their orders, download their invoices and message you in one place, in your colours.</p><a class="uses-link" href="/en/use-cases/customer-portal/">See the example →</a></li>
+        <li><h2>Inventory</h2><p class="uses-quote">“Do we still have size 6 screws?”</p><p>Stock in, stock out, alert thresholds and suppliers. You know what's left, what to order and what it costs you.</p><a class="uses-link" href="/en/use-cases/inventory/">See the example →</a></li>
+        <li><h2>Dashboards</h2><p class="uses-quote">“I wait until month end to find out if we're making money.”</p><p>Revenue, margins, order book: your figures up to date every morning, with no spreadsheet to pull together.</p><a class="uses-link" href="/en/use-cases/dashboards/">See the example →</a></li>
+        <li><h2>Project tracking</h2><p class="uses-quote">“We went over budget without noticing.”</p><p>Tasks, time spent, budget and invoicing together on every project. You see the drift before it gets expensive.</p><a class="uses-link" href="/en/use-cases/project-tracking/">See the example →</a></li>
+        <li><h2>Document reading</h2><p class="uses-quote">“I copy purchase orders by hand.”</p><p>AI reads your invoices, purchase orders and forms, and fills in the right fields. You check, you approve.</p><a class="uses-link" href="/en/use-cases/document-reading/">See the example →</a></li>
+        <li><h2>Timesheets</h2><p class="uses-quote">“Everyone fills in their hours on Friday night, from memory.”</p><p>Logging time takes seconds, from a phone. Hours go straight to payroll and invoicing.</p><a class="uses-link" href="/en/use-cases/timesheets/">See the example →</a></li>
+        <li><h2>Sales proposals</h2><p class="uses-quote">“Every proposal starts from an old Word file.”</p><p>AI drafts a first version from your past proposals, laid out in your brand. All that's left is to proofread.</p><a class="uses-link" href="/en/use-cases/sales-proposals/">See the example →</a></li>
+        <li><h2>New client setup</h2><p class="uses-quote">“We type their details into five systems.”</p><p>One form, filled in once. The client is created everywhere they need to be, and their file is ready the same day.</p><a class="uses-link" href="/en/use-cases/new-client-setup/">See the example →</a></li>
+        <li><h2>Customer support</h2><p class="uses-quote">“The inbox is overflowing.”</p><p>Requests are sorted, assigned and come with a draft reply. Your customers hear back faster, and your team can breathe.</p><a class="uses-link" href="/en/use-cases/customer-support/">See the example →</a></li>
+        <li><h2>Contracts and deadlines</h2><p class="uses-quote">“The contract renewed itself again.”</p><p>Every contract with its key dates. You're warned in time to renegotiate or cancel.</p><a class="uses-link" href="/en/use-cases/contracts-and-deadlines/">See the example →</a></li>
+        <li><h2>Compliance</h2><p class="uses-quote">“The certificate expired last week.”</p><p>Certifications, permits, mandatory inspections: the tool chases them before the deadline, not after.</p><a class="uses-link" href="/en/use-cases/compliance/">See the example →</a></li>
+        <li><h2>New hires</h2><p class="uses-quote">“The new starter waited all morning for their logins.”</p><p>Accounts, equipment, documents to sign, training: everything is ready before day one, and nothing is forgotten.</p><a class="uses-link" href="/en/use-cases/new-hires/">See the example →</a></li>
       </ul>
       <p class="uses-more">Yours isn't on the list? Good: that's exactly what custom means.</p>
     </div>
