@@ -170,6 +170,8 @@ a { color: inherit; }
 }
 /* Sélecteur de langue : les deux autres langues côte à côte */
 .langs { display: flex; gap: .5rem; }
+/* Pied des mentions légales : retour à l'accueil et autres langues groupés */
+.foot-links { display: flex; flex-wrap: wrap; gap: 1.25rem; }
 /* Menu « plus » sur ordinateur : Cas d'usage, À propos et Articles derrière un hamburger */
 .nav-more { position: relative; display: flex; }
 .more-btn {
