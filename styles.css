@@ -168,6 +168,8 @@ a { color: inherit; }
   font-weight: 700; color: var(--ink);
   border: 1.5px solid var(--grid-strong); border-radius: 3px;
 }
+/* Sélecteur de langue : les deux autres langues côte à côte */
+.langs { display: flex; gap: .5rem; }
 /* Menu « plus » sur ordinateur : Cas d'usage, À propos et Articles derrière un hamburger */
 .nav-more { position: relative; display: flex; }
 .more-btn {
@@ -224,7 +226,7 @@ a { color: inherit; }
     padding: .9rem 0; font-size: 1.125rem; color: var(--ink);
     border-bottom: 1px solid var(--grid);
   }
-  .bar-nav .lang { align-self: flex-start; margin-top: 1rem; }
+  .bar-nav .langs { align-self: flex-start; margin-top: 1rem; }
   .bar-nav .btn { margin-top: 1rem; min-height: 3rem; font-size: 1rem; }
 }
 @media (max-width: 1080px) and (prefers-reduced-motion: reduce) { .menu-btn span { transition: none; } }

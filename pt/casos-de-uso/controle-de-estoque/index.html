@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Controle de estoque, Maniaque</title>
+<meta name="description" content="Entradas, saídas, inventários e fornecedores ficam no mesmo lugar, com leitura de código de barras.">
+<meta name="theme-color" content="#F6F8FA">
+<link rel="alternate" hreflang="fr" href="/cas-d-usage/gestion-de-stock/">
+<link rel="alternate" hreflang="en" href="/en/use-cases/inventory/">
+<link rel="alternate" hreflang="pt-BR" href="/pt/casos-de-uso/controle-de-estoque/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<a class="skip" href="#conteudo">Ir para o conteúdo</a>
+
+<header class="bar">
+  <div class="wrap bar-inner">
+    <div class="brand">
+      <a class="wordmark" href="/pt/" aria-label="Maniaque, início">man<span class="ia">ia</span>que</a>
+      <p class="tagline"><svg class="tagline-pin" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Seu parceiro de IA de confiança em Marselha.</p>
+    </div>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir o menu"><span></span><span></span><span></span></button>
+    <nav class="bar-nav" id="main-nav" aria-label="Navegação principal">
+      <a href="/pt/#como-funciona">Como funciona</a>
+      <a href="/pt/#precos">Preços</a>
+      <a href="/pt/#faq">FAQ</a>
+      <div class="nav-more">
+        <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-menu" aria-label="Mais links"><span></span><span></span><span></span></button>
+        <div class="more-menu" id="more-menu">
+          <a href="/pt/casos-de-uso/">Casos de uso</a>
+          <a href="/pt/sobre/">Sobre</a>
+          <a href="/pt/artigos/">Artigos</a>
+        </div>
+      </div>
+      <span class="langs"><a class="lang" href="/cas-d-usage/gestion-de-stock/" hreflang="fr" lang="fr" aria-label="Version française">FR</a><a class="lang" href="/en/use-cases/inventory/" hreflang="en" lang="en" aria-label="English version">EN</a></span>
+      <a class="btn btn-small" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Agendar diagnóstico</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo">
+
+  <section class="section uc-hero" aria-labelledby="t-uc">
+    <div class="wrap">
+      <a class="uc-back" href="/pt/casos-de-uso/">← Casos de uso</a>
+      <h1 class="uc-title" id="t-uc">Um controle de estoque que sabe o que resta, <span>e o que precisa ser comprado.</span></h1>
+      <p class="uc-lede">Construímos ferramentas de estoque para oficinas, atacadistas e lojas. Entradas, saídas, inventários e fornecedores ficam no mesmo lugar, com leitura de código de barras. Quando um item fica abaixo do mínimo, a ferramenta prepara o pedido ao fornecedor. Você sabe a qualquer momento o que tem, e quanto isso custa.</p>
+      <a class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Agendar meu diagnóstico gratuito</a>
+      <ul class="uc-facts"><li>Primeira versão em 2 a 8&nbsp;semanas</li><li>€&nbsp;490 por mês, sem impostos</li><li>Diagnóstico gratuito</li></ul>
+    </div>
+  </section>
+
+  <section class="uc-visual" aria-label="Exemplo de tela: controle de estoque">
+    <div class="wrap">
+      <figure class="qt-figure">
+        <div class="qt" role="img" aria-label="Exemplo de tela: controle de estoque">
+          <div class="qt-chrome"><i></i><i></i><i></i></div>
+          <div class="qt-app">
+            <aside class="qt-side"><p class="qt-brand"><em></em>Estoque</p><ul><li class=on>Itens</li><li>Movimentações</li><li>Fornecedores</li><li>Inventários</li></ul></aside>
+            <div class="qt-main">
+              <div class="qt-head"><div><p class="qt-num">Itens</p><p class="qt-client">Depósito principal</p></div></div>
+              <div class="mk-kpis"><div class="mk-kpi"><span>Itens acompanhados</span><b>1.284</b></div><div class="mk-kpi"><span>Abaixo do mínimo</span><b>12</b><i class=mk-bad>+3 esta semana</i></div><div class="mk-kpi"><span>Valor do estoque</span><b>€ 214.300</b></div></div><div class="mk-table" style="--tpl:1.6fr .7fr 1fr .9fr"><div class="mk-tr mk-th"><span>Item</span><span>Em estoque</span><span>Nível</span><span>Status</span></div><div class="mk-tr"><span>Parafuso inox M6 × 40</span><span>1.240</span><span><span class="mk-bar mk-bar-ink"><i style="width:90%"></i></span></span><span><span class="mk-pill mk-ok">OK</span></span></div><div class="mk-tr"><span>Dobradiça 110°</span><span>86</span><span><span class="mk-bar mk-bar-bad"><i style="width:28%"></i></span></span><span><span class="mk-pill mk-bad">Comprar</span></span></div><div class="mk-tr"><span>Vedação EPDM 10 m</span><span>42</span><span><span class="mk-bar mk-bar-warn"><i style="width:45%"></i></span></span><span><span class="mk-pill mk-warn">Baixo</span></span></div><div class="mk-tr"><span>Perfil de alumínio 6 m</span><span>318</span><span><span class="mk-bar mk-bar-ink"><i style="width:80%"></i></span></span><span><span class="mk-pill mk-ok">OK</span></span></div><div class="mk-tr"><span>Puxador inox</span><span>19</span><span><span class="mk-bar mk-bar-bad"><i style="width:15%"></i></span></span><span><span class="mk-pill mk-bad">Comprar</span></span></div></div>
+            </div><div class="mk-aside"><p class="mk-h">Pedido sugerido</p><p class="mk-sub">Ferragens Morel · entrega em 48h</p><div class="mk-line"><span>Dobradiça 110°</span><b>× 200</b></div><div class="mk-line"><span>Puxador inox</span><b>× 100</b></div><div class="mk-line"><span>Vedação EPDM 10 m</span><b>× 20</b></div><div class="mk-line mk-total"><span>Total s/ impostos</span><b>€ 1.460</b></div><span class="mk-btn">Enviar ao fornecedor</span></div>
+          </div>
+        </div>
+        <figcaption>Exemplo: os itens que merecem atenção, e o pedido ao fornecedor já pronto.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cta grid-paper" aria-labelledby="t-audit">
+    <div class="wrap">
+      <h2 id="t-audit">Conte para nós como você acompanha o seu estoque hoje.</h2>
+      <p>45 minutos, gratuitos e sem compromisso. Identificamos onde você perde mais tempo e o que construiríamos primeiro.</p>
+      <a class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Escolher um horário</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span class="wordmark wordmark-small" aria-label="Maniaque">man<span class="ia">ia</span>que</span>
+    <p>Softwares sob medida para PMEs. Preços sem impostos.</p>
+    <a href="/mentions-legales.html">Aviso legal (em francês)</a>
+  </div>
+</footer>
+
+<script src="/nav.js" defer></script>
+</body>
+</html>
