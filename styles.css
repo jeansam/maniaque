@@ -536,7 +536,7 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 }
 .uses h2 { font-size: 1.1875rem; line-height: 1.25; letter-spacing: -0.01em; max-width: none; }
 .uses p { margin-top: .5rem; font-size: 1rem; color: var(--pencil); }
-/* La phrase entendue à l'audit, au stylo rouge comme l'annotation du titre */
+/* La phrase type du client, au stylo rouge comme l'annotation du titre */
 .uses .uses-quote { margin-top: .6rem; color: var(--red-ink); font-style: italic; font-weight: 500; }
 .uses-page { padding-top: clamp(3rem, 2rem + 4vw, 5.5rem); }
 .uses-page .about-title { max-width: 18ch; }
