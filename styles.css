@@ -135,6 +135,21 @@ a { color: inherit; }
 }
 .wordmark-small { font-size: 1.25rem; }
 
+/* Mention locale à côté du logo (version française) */
+.brand { display: flex; align-items: center; gap: .9rem; min-width: 0; }
+.tagline {
+  display: flex; align-items: center; gap: .3rem;
+  padding-left: .9rem; border-left: 1px solid var(--grid-strong);
+  font-size: .875rem; font-weight: 500; color: var(--pencil); white-space: nowrap;
+}
+.tagline-pin { flex: none; color: var(--red); }
+@media (max-width: 1300px) {
+  .brand { flex-direction: column; align-items: flex-start; gap: .1rem; }
+  .bar-inner:has(.tagline) { padding-block: .45rem; }
+  .tagline { padding-left: 0; border-left: 0; font-size: .8125rem; }
+}
+@media (max-width: 420px) { .tagline { font-size: .75rem; white-space: normal; } }
+
 /* Il y a de l'IA dans maniaque : les deux lettres portent le rouge de correction */
 .ia { color: var(--red); }
 .split-text .ia { font-weight: 700; }
