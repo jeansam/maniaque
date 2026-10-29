@@ -382,10 +382,10 @@ html[data-city="johannesburg"] [data-city-only]:not([data-city-only~="johannesbu
 /* Sous le bouton d'audit : la personne qui répond dans la ville choisie */
 .hero-cta { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
 .who {
-  display: inline-flex; align-items: center; gap: .6rem;
-  font-size: 1.0625rem; font-weight: 600; color: var(--ink); text-decoration: none;
+  display: inline-flex; align-items: center; gap: .45rem;
+  font-size: .875rem; font-weight: 400; color: var(--pencil); text-decoration: none;
 }
-.who img { width: 2.5rem; height: 2.5rem; border-radius: 50%; border: 1px solid var(--grid-strong); background: #fff; }
+.who img { width: 2rem; height: 2rem; border-radius: 50%; border: 1px solid var(--grid-strong); background: #fff; }
 .who:hover span { text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---------- Sections ---------- */
