@@ -6,6 +6,7 @@
   var CITIES = {
     marseille: {
       name: { fr: "Marseille", en: "Marseille", pt: "Marselha" },
+      person: { name: "Jean-Sam", photo: "/images/avatar-jean-samuel.webp" },
       lang: "fr",
       book: "https://calendar.app.google/vFyLbndCK2tUXYibA",
       currency: "EUR",
@@ -13,6 +14,7 @@
     },
     "sao-paulo": {
       name: { fr: "São Paulo", en: "São Paulo", pt: "São Paulo" },
+      person: { name: "Eliakim", photo: "/images/avatar-eliakim-oliveira.webp" },
       lang: "pt",
       book: "https://wa.me/5511936207406", // WhatsApp, en attendant un agenda
       currency: "BRL",
@@ -20,6 +22,7 @@
     },
     johannesburg: {
       name: { fr: "Johannesbourg", en: "Johannesburg", pt: "Joanesburgo" },
+      person: { name: "Nthuseni", photo: "/images/avatar-nthuseni-mathaga.webp" },
       lang: "en",
       book: "https://www.linkedin.com/in/nmathaga/", // LinkedIn de Nthuseni, en attendant un agenda
       currency: "ZAR",
@@ -67,6 +70,9 @@
       a.href = url.pathname + url.search + url.hash;
     });
     document.querySelectorAll("[data-city-name]").forEach(function (el) { el.textContent = city.name[pageLang]; });
+    // La personne qui répond dans cette ville, au-dessus de la phrase d'accroche
+    document.querySelectorAll("[data-person-name]").forEach(function (el) { el.textContent = city.person.name; });
+    document.querySelectorAll("img[data-person-photo]").forEach(function (img) { img.src = city.person.photo; });
     document.querySelectorAll("[data-set-city]").forEach(function (a) {
       var current = a.getAttribute("data-set-city") === id;
       if (current) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");

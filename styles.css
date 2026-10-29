@@ -137,16 +137,27 @@ a { color: inherit; }
 
 /* Mention locale à côté du logo (version française) */
 .brand { display: flex; align-items: center; gap: .9rem; min-width: 0; }
+/* La personne qui répond dans la ville choisie, puis la phrase d'accroche */
+.brand-meta {
+  display: flex; flex-direction: column; align-items: flex-start; gap: .2rem;
+  padding-left: .9rem; border-left: 1px solid var(--grid-strong);
+}
+.who {
+  display: inline-flex; align-items: center; gap: .4rem;
+  font-size: .8125rem; font-weight: 700; color: var(--ink); text-decoration: none;
+}
+.who img { width: 1.5rem; height: 1.5rem; border-radius: 50%; border: 1px solid var(--grid-strong); object-fit: cover; background: #fff; }
+.who:hover span { text-decoration: underline; text-underline-offset: 2px; }
 .tagline {
   display: flex; align-items: center; gap: .3rem;
-  padding-left: .9rem; border-left: 1px solid var(--grid-strong);
   font-size: .875rem; font-weight: 500; color: var(--pencil); white-space: nowrap;
 }
 .tagline-pin { flex: none; color: var(--red); }
 @media (max-width: 1300px) {
   .brand { flex-direction: column; align-items: flex-start; gap: .1rem; }
   .bar-inner:has(.tagline) { padding-block: .45rem; }
-  .tagline { padding-left: 0; border-left: 0; font-size: .8125rem; }
+  .brand-meta { padding-left: 0; border-left: 0; gap: .1rem; }
+  .tagline { font-size: .8125rem; }
 }
 @media (max-width: 420px) { .tagline { font-size: .75rem; white-space: normal; } }
 /* La ville soulignée ouvre le choix de la ville */
