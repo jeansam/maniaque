@@ -149,6 +149,8 @@ a { color: inherit; }
   .tagline { padding-left: 0; border-left: 0; font-size: .8125rem; }
 }
 @media (max-width: 420px) { .tagline { font-size: .75rem; white-space: normal; } }
+/* La ville et le point final passent à la ligne ensemble */
+.tagline-city { white-space: nowrap; }
 /* La ville soulignée ouvre le choix de la ville */
 .city-btn {
   font: inherit; font-weight: 700; color: var(--ink); background: none; border: 0; padding: 0; cursor: pointer;
