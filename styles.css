@@ -188,6 +188,8 @@ html[data-city="johannesburg"] [data-city-only]:not([data-city-only~="johannesbu
 /* Menus flottants : la ville et la langue */
 .picker { position: relative; display: inline-flex; }
 .picker-city .picker-menu { left: -.75rem; right: auto; top: calc(100% + .5rem); z-index: 30; }
+/* Sur ordinateur, le bouton de langue se rapproche du menu « plus » (moitié de l'espace habituel) */
+@media (min-width: 1081px) { .nav-more + .picker-lang { margin-left: -.875rem; } }
 /* Sur petit écran, le menu des villes part du bord gauche de la phrase pour ne pas déborder */
 @media (max-width: 640px) {
   .tagline { position: relative; }
