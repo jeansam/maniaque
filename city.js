@@ -73,6 +73,12 @@
     // La personne qui répond dans cette ville, au-dessus de la phrase d'accroche
     document.querySelectorAll("[data-person-name]").forEach(function (el) { el.textContent = city.person.name; });
     document.querySelectorAll("img[data-person-photo]").forEach(function (img) { img.src = city.person.photo; });
+    // Sur la carte de l'accueil, chaque ville montre sa propre personne
+    document.querySelectorAll("[data-person-of]").forEach(function (el) {
+      var person = (CITIES[el.getAttribute("data-person-of")] || city).person;
+      el.querySelectorAll("[data-person-name]").forEach(function (n) { n.textContent = person.name; });
+      el.querySelectorAll("img[data-person-photo]").forEach(function (img) { img.src = person.photo; });
+    });
     document.querySelectorAll("[data-set-city]").forEach(function (a) {
       var current = a.getAttribute("data-set-city") === id;
       if (current) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
