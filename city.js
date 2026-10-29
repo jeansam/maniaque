@@ -45,6 +45,8 @@
   var stored = read();
   var id = CITIES[asked] ? asked : CITIES[stored] ? stored : root.getAttribute("data-city");
   if (!CITIES[id]) id = "marseille";
+  // La langue ne fixe la ville qu'à la première page vue ; ensuite, seul le menu des villes la change
+  if (id !== stored) save(id);
   var city = CITIES[id];
   // Posé tout de suite : les blocs propres à une autre ville ne s'affichent jamais, même un instant
   root.setAttribute("data-city", id);
@@ -58,6 +60,12 @@
       if (amount !== undefined) el.textContent = fmt.format(amount);
     });
     document.querySelectorAll("a[data-book]").forEach(function (a) { a.href = city.book; });
+    // Changer de langue garde la ville, même si le navigateur n'a pas pu l'enregistrer
+    document.querySelectorAll(".picker-lang .picker-menu a").forEach(function (a) {
+      var url = new URL(a.href, location.href);
+      url.searchParams.set("ville", id);
+      a.href = url.pathname + url.search + url.hash;
+    });
     document.querySelectorAll("[data-city-name]").forEach(function (el) { el.textContent = city.name[pageLang]; });
     document.querySelectorAll("[data-set-city]").forEach(function (a) {
       var current = a.getAttribute("data-set-city") === id;
