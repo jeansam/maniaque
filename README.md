@@ -24,6 +24,5 @@ Site statique, sans étape de build : Vercel le sert tel quel.
 
 - Liens d'audit de São Paulo (WhatsApp pour l'instant) et de Johannesbourg (LinkedIn de Nthuseni pour l'instant), dans `city.js`
 - Prix en rands de Johannesbourg (conversion approximative), dans `city.js`
-- Photos et présentations d'Eliakim Oliveira et de Nthuseni Mathaga dans les pages À propos (initiales pour l'instant)
 
 - Compléter les champs `[À compléter]` des mentions légales, dans les trois langues (`[To be completed]`, `[A preencher]`)

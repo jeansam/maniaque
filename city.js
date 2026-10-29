@@ -51,7 +51,7 @@
 
   function apply() {
     var fmt = new Intl.NumberFormat(root.lang || "fr", {
-      style: "currency", currency: city.currency, currencyDisplay: "narrowSymbol", maximumFractionDigits: 0
+      style: "currency", currency: city.currency, currencyDisplay: city.currency === "ZAR" ? "code" : "narrowSymbol", maximumFractionDigits: 0
     });
     document.querySelectorAll("[data-price]").forEach(function (el) {
       var amount = city.prices[el.getAttribute("data-price")];
