@@ -379,7 +379,7 @@ html[data-city="johannesburg"] [data-city-only]:not([data-city-only~="johannesbu
 .lede { font-size: var(--t-lead); line-height: 1.45; max-width: 36rem; }
 .lede strong { font-weight: 700; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.75rem; }
-/* Au-dessus du bouton d'audit : la personne qui répond dans la ville choisie */
+/* Sous le bouton d'audit : la personne qui répond dans la ville choisie */
 .hero-cta { display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; }
 .who {
   display: inline-flex; align-items: center; gap: .6rem;

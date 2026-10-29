@@ -9,7 +9,7 @@ Site statique, sans étape de build : Vercel le sert tel quel.
 - `script.js` : l'animation du titre, le filtre de la FAQ par profil et les étapes repliables sur mobile
 - `cas-d-usage/` (et `en/use-cases/`, `pt/casos-de-uso/`) : la page Cas d'usage, avec un dossier par exemple détaillé (`crm/`, `devis-et-chiffrages/`…)
 - `a-propos/` (et `en/about/`, `pt/sobre/`) : la page À propos, avec la personne qui répond dans chaque ville
-- `city.js` : la ville choisie dans l'en-tête (Marseille, São Paulo, Johannesbourg). **C'est le seul endroit où changer, par ville, le lien du bouton d'audit, les prix, et le prénom et la photo (`images/avatar-…webp`) de la personne affichée au-dessus du bouton d'audit de l'accueil** (liste `CITIES`). La ville est gardée dans le navigateur et ne change pas quand on change de langue ; choisir une ville ouvre la page dans sa langue (français, portugais, anglais). Dans le HTML :
+- `city.js` : la ville choisie dans l'en-tête (Marseille, São Paulo, Johannesbourg). **C'est le seul endroit où changer, par ville, le lien du bouton d'audit, les prix, et le prénom et la photo (`images/avatar-…webp`) de la personne affichée sous le bouton d'audit de l'accueil** (liste `CITIES`). La ville est gardée dans le navigateur et ne change pas quand on change de langue ; choisir une ville ouvre la page dans sa langue (français, portugais, anglais). Dans le HTML :
   - `data-book` sur un lien : il pointe vers le lien d'audit de la ville
   - `data-price="monthly|first|maintenance|hosting|none"` : le montant, dans la devise de la ville
   - `data-city-only="sao-paulo"` (etc.) : le bloc ne s'affiche que pour cette ville (FAQ sur l'hébergement, personne de l'À propos)
