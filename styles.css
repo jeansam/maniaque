@@ -610,8 +610,8 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 .foot { border-top: 1px solid var(--grid-strong); padding-block: 2rem; font-size: .9375rem; color: var(--pencil); }
 .foot-inner { display: flex; flex-wrap: wrap; align-items: baseline; gap: .75rem 2rem; }
 .foot .wordmark { color: var(--ink); }
-.foot-inner a { margin-left: auto; }
-@media (max-width: 560px) { .foot-inner a { margin-left: 0; } }
+.foot-inner a:not(.wordmark) { margin-left: auto; }
+@media (max-width: 560px) { .foot-inner a:not(.wordmark) { margin-left: 0; } }
 
 /* ---------- Page simple (mentions légales) ---------- */
 
