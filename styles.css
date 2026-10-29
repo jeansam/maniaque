@@ -1118,6 +1118,7 @@ i.mk-ok, i.mk-bad, i.mk-warn { background: none; font-style: normal; font-size: 
 .city-card img { flex: none; width: 56px; height: 56px; border-radius: 50%; object-fit: cover; }
 .city-card strong { display: block; font-size: 1.125rem; font-weight: 700; }
 .city-card strong + span { display: block; font-size: var(--t-small); color: var(--pencil); }
+.city-card .city-name { display: block; font-size: var(--t-small); font-weight: 600; color: var(--ink); }
 /* Le trait de renvoi, du bas de la fiche au point de la ville */
 .city-card::after {
   content: ""; position: absolute; top: 100%; left: 50%; width: 1.5px; height: 22px;
