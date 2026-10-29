@@ -1126,10 +1126,22 @@ i.mk-ok, i.mk-bad, i.mk-warn { background: none; font-style: normal; font-size: 
 }
 /* Pont invisible : la souris peut aller du point à la fiche sans la refermer */
 .city-card::before { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 36px; }
-.city a:hover .city-card, .city a:focus-visible .city-card, .city.is-open .city-card {
+.city a:hover .city-card, .city a:focus-visible .city-card, .city.is-open .city-card, .city.is-going .city-card {
   opacity: 1; pointer-events: auto; transform: translate(-50%, 0);
 }
 .city a:focus-visible { outline-offset: -6px; }
+/* Le chevron dit que la fiche s'ouvre ; survol et appui la font réagir */
+.city-go { flex: none; margin-left: .25rem; color: var(--red); transition: transform .15s; }
+.city-card { transition: opacity .18s, transform .18s, background-color .15s, box-shadow .15s; }
+.city-card:hover { background: var(--paper-alt); box-shadow: 0 10px 24px -14px rgba(20, 40, 80, .45); }
+.city-card:hover .city-go { transform: translateX(3px); }
+.city a:active .city-card { background: var(--grid); box-shadow: none; }
+.city a:active .city-go { transform: translateX(5px); }
+/* Une fois cliquée, la fiche reste enfoncée le temps que la page arrive */
+.city.is-going a { cursor: progress; }
+.city.is-going .city-card { background: var(--grid); box-shadow: none; }
+.city.is-going .city-go { animation: city-go .7s ease-in-out infinite alternate; }
+@keyframes city-go { from { transform: translateX(0); } to { transform: translateX(5px); } }
 
 .map-foot { padding: 0 var(--gutter) 1.25rem; text-align: center; font-size: .8125rem; }
 .map-foot a { color: var(--pencil); text-decoration: none; }
@@ -1146,11 +1158,11 @@ i.mk-ok, i.mk-bad, i.mk-warn { background: none; font-style: normal; font-size: 
   .city[data-anchor="end"] .city-card { left: auto; right: -6px; transform: translate(0, 4px); }
   .city[data-anchor="start"] .city-card::after { left: 28px; }
   .city[data-anchor="end"] .city-card::after { left: auto; right: 28px; }
-  .city[data-anchor="start"].is-open .city-card, .city[data-anchor="start"] a:hover .city-card, .city[data-anchor="start"] a:focus-visible .city-card,
-  .city[data-anchor="end"].is-open .city-card, .city[data-anchor="end"] a:hover .city-card, .city[data-anchor="end"] a:focus-visible .city-card { transform: none; }
+  .city[data-anchor="start"].is-open .city-card, .city[data-anchor="start"].is-going .city-card, .city[data-anchor="start"] a:hover .city-card, .city[data-anchor="start"] a:focus-visible .city-card,
+  .city[data-anchor="end"].is-open .city-card, .city[data-anchor="end"].is-going .city-card, .city[data-anchor="end"] a:hover .city-card, .city[data-anchor="end"] a:focus-visible .city-card { transform: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .city-dot, .city-dot::after, .city-card { transition: none; }
-  .city-dot::after { animation: none; }
+  .city-dot, .city-dot::after, .city-card, .city-go { transition: none; }
+  .city-dot::after, .city.is-going .city-go { animation: none; }
 }
