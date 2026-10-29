@@ -1070,13 +1070,19 @@ i.mk-ok, i.mk-bad, i.mk-warn { background: none; font-style: normal; font-size: 
 .bar-min .picker-lang .picker-menu a[aria-current]::after { content: " ✓"; }
 
 .map-stage {
-  flex: 1; display: flex; align-items: center; justify-content: center;
+  flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: clamp(1rem, .5rem + 2vw, 2rem);
   padding: 1rem var(--gutter) 2rem;
   overflow-x: clip;
 }
+.map-title {
+  max-width: 32ch; text-align: center; text-wrap: balance;
+  font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em;
+}
+.map-scroll { width: 100%; display: flex; justify-content: center; }
 .world {
   position: relative; flex: none;
-  width: min(100%, 80rem, calc((100svh - 9rem) * 360 / 142));
+  width: min(100%, 80rem, calc((100svh - 14rem) * 360 / 142));
   aspect-ratio: 360 / 142;
 }
 .world-land { display: block; width: 100%; height: 100%; }
@@ -1148,7 +1154,6 @@ i.mk-ok, i.mk-bad, i.mk-warn { background: none; font-style: normal; font-size: 
   transition: transform .35s cubic-bezier(.3, 1.4, .5, 1);
 }
 .city-card > span, .city-go { opacity: calc(1 - var(--p) * 1.6); }
-.city-hint { display: block; margin-top: .2rem; font-size: .75rem; font-weight: 700; color: var(--red-ink); }
 .city-go { flex: none; margin-left: .25rem; color: var(--red); }
 .city-go path { opacity: .25; animation: city-chev 1.2s ease-in-out infinite; }
 .city-go path:nth-child(2) { animation-delay: .15s; }
@@ -1157,11 +1162,6 @@ i.mk-ok, i.mk-bad, i.mk-warn { background: none; font-style: normal; font-size: 
 /* Fiche ouverte : la photo esquisse le geste, de temps en temps */
 .city a:hover .city-card > img, .city.is-open .city-card > img { animation: city-nudge 2.6s ease-in-out .4s infinite; }
 @keyframes city-nudge { 0%, 55%, 100% { translate: 0; } 68% { translate: 14px; } 80% { translate: 0; } 88% { translate: 5px; } }
-/* Un clic sans glisser : la photo insiste, la consigne passe en avant */
-.city.is-hint .city-card > img { animation: city-hint .6s ease-in-out; }
-@keyframes city-hint { 0%, 100% { translate: 0; } 35% { translate: 26px; } 65% { translate: -3px; } }
-.city.is-hint .city-hint { animation: city-hint-text .6s ease-in-out; }
-@keyframes city-hint-text { 30%, 70% { color: var(--red); transform: scale(1.06); transform-origin: left; } }
 .city.is-dragging .city-card > img { cursor: grabbing; transition: none; animation: none; }
 /* Arrivée au bout : la fiche reste ouverte le temps que la page arrive */
 .city.is-going a, .city.is-going .city-card > img { cursor: progress; }
@@ -1171,8 +1171,18 @@ i.mk-ok, i.mk-bad, i.mk-warn { background: none; font-style: normal; font-size: 
 .map-foot a { color: var(--pencil); text-decoration: none; }
 .map-foot a:hover { color: var(--ink); text-decoration: underline; }
 
-/* Sur mobile, le monde déborde de l'écran pour que les trois villes restent lisibles */
+/* Sur mobile, le monde déborde de l'écran pour que les trois villes restent lisibles :
+   on le fait défiler du doigt, et les bords en fondu disent qu'il continue */
 @media (max-width: 700px) {
+  .map-stage { padding-inline: 0; }
+  .map-title { padding-inline: var(--gutter); }
+  .map-scroll {
+    justify-content: flex-start; overflow-x: auto; padding-top: 2.5rem;
+    overscroll-behavior-x: contain; scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 1.5rem, #000 calc(100% - 1.5rem), transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 1.5rem, #000 calc(100% - 1.5rem), transparent);
+  }
+  .map-scroll::-webkit-scrollbar { display: none; }
   .world { width: 220vw; max-width: none; }
   .city-card { gap: .6rem; padding-right: 1rem; }
   .city-card img { width: 44px; height: 44px; }
@@ -1188,6 +1198,6 @@ i.mk-ok, i.mk-bad, i.mk-warn { background: none; font-style: normal; font-size: 
 
 @media (prefers-reduced-motion: reduce) {
   .city-dot, .city-dot::after, .city-card, .city-card > img { transition: none; }
-  .city-dot::after, .city-go path, .city-card > img, .city.is-hint .city-hint { animation: none !important; }
+  .city-dot::after, .city-go path, .city-card > img { animation: none !important; }
   .city-go path { opacity: 1; }
 }

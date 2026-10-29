@@ -1,5 +1,5 @@
-// Carte de l'accueil : on ouvre la page d'une ville en faisant glisser la photo de la fiche vers la droite.
-// Au toucher, un premier appui sur la ville ouvre sa fiche. Au clavier, Entrée ouvre directement la page.
+// Carte de l'accueil : un clic sur la fiche d'une ville ouvre sa page, faire glisser la photo vers la droite aussi.
+// Au toucher, un premier appui sur la ville ouvre sa fiche. Sur mobile, la carte défile du doigt.
 (function () {
   var cities = document.querySelectorAll(".city");
   var touch = window.matchMedia("(hover: none)").matches;
@@ -10,29 +10,21 @@
     var a = city.querySelector("a");
     var card = city.querySelector(".city-card");
     var knob = card.querySelector("img");
-    var start = 0, max = 0, p = 0, dragging = false, dragged = false, hintTimer;
+    var start = 0, max = 0, p = 0, dragging = false, dragged = false;
 
     function set(v) {
       p = v;
       card.style.setProperty("--dx", (v * max) + "px");
       card.style.setProperty("--p", v);
     }
-    function hint() {
-      city.classList.remove("is-hint");
-      void city.offsetWidth;
-      city.classList.add("is-hint");
-      clearTimeout(hintTimer);
-      hintTimer = setTimeout(function () { city.classList.remove("is-hint"); }, 700);
-    }
-
     a.addEventListener("click", function (e) {
       if (going()) { e.preventDefault(); return; }
-      if (e.detail === 0) { city.classList.add("is-going"); return; }
+      if (dragged) { dragged = false; e.preventDefault(); return; }
       if (e.metaKey || e.ctrlKey || e.shiftKey || e.button) return;
-      e.preventDefault();
-      if (dragged) { dragged = false; return; }
-      if (touch && !city.classList.contains("is-open")) { closeAll(); city.classList.add("is-open"); return; }
-      hint();
+      if (touch && e.detail && !city.classList.contains("is-open")) {
+        e.preventDefault(); closeAll(); city.classList.add("is-open"); return;
+      }
+      city.classList.add("is-going");
     });
 
     // Sans cela, le navigateur tire le lien entier au lieu de la photo et annule le geste
@@ -76,6 +68,11 @@
       c.querySelector(".city-card").style.cssText = "";
     });
   });
+  // La carte plus large que l'écran s'ouvre sur son centre, entre Marseille et Johannesbourg
+  var scroller = document.querySelector(".map-scroll");
+  if (scroller && scroller.scrollWidth > scroller.clientWidth) {
+    scroller.scrollLeft = (scroller.scrollWidth - scroller.clientWidth) / 2;
+  }
   if (!touch) return;
   document.addEventListener("click", function (e) {
     if (e.target.closest && e.target.closest(".city")) return;
