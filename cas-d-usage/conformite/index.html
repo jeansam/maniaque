@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-city="marseille">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
+<script src="/city.js"></script>
 </head>
 <body>
 
@@ -23,7 +24,7 @@
   <div class="wrap bar-inner">
     <div class="brand">
       <a class="wordmark" href="/" aria-label="Maniaque, accueil">man<span class="ia">ia</span>que</a>
-      <p class="tagline"><svg class="tagline-pin" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Votre partenaire IA de confiance à Marseille.</p>
+      <p class="tagline"><svg class="tagline-pin" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Votre partenaire IA de confiance à <span class="picker picker-city"><button type="button" class="picker-btn city-btn" aria-expanded="false" aria-controls="city-menu" aria-label="Choisir la ville"><span data-city-name>Marseille</span></button><span class="picker-menu" id="city-menu"><a href="/cas-d-usage/conformite/?ville=marseille" data-set-city="marseille" aria-current="true">Marseille</a><a href="/pt/casos-de-uso/conformidade/?ville=sao-paulo" data-set-city="sao-paulo">São Paulo</a><a href="/en/use-cases/compliance/?ville=johannesburg" data-set-city="johannesburg">Johannesbourg</a></span></span>.</span></p>
     </div>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
     <nav class="bar-nav" id="main-nav" aria-label="Navigation principale">
@@ -38,8 +39,8 @@
           <a href="/articles/">Articles</a>
         </div>
       </div>
-      <span class="langs"><a class="lang" href="/en/use-cases/compliance/" hreflang="en" lang="en" aria-label="English version">EN</a><a class="lang" href="/pt/casos-de-uso/conformidade/" hreflang="pt-BR" lang="pt-BR" aria-label="Versão em português">PT</a></span>
-      <a class="btn btn-small" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Réserver un audit</a>
+      <div class="picker picker-lang"><button type="button" class="lang picker-btn" aria-expanded="false" aria-controls="lang-menu" aria-label="Langue : Français">FR</button><div class="picker-menu" id="lang-menu"><a href="/cas-d-usage/conformite/" hreflang="fr" lang="fr" aria-current="true">Français</a><a href="/en/use-cases/compliance/" hreflang="en" lang="en">English</a><a href="/pt/casos-de-uso/conformidade/" hreflang="pt-BR" lang="pt-BR">Português</a></div></div>
+      <a data-book class="btn btn-small" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Réserver un audit</a>
     </nav>
   </div>
 </header>
@@ -51,8 +52,8 @@
       <a class="uc-back" href="/cas-d-usage/">← Cas d'usage</a>
       <h1 class="uc-title" id="t-uc">Votre conformité suivie de près, <span>avant l'échéance, pas après.</span></h1>
       <p class="uc-lede">Nous construisons des outils de suivi de conformité pour les entreprises soumises à des certifications, des habilitations ou des contrôles obligatoires. Chaque document a sa date de validité. L'outil relance la bonne personne avant l'échéance, garde les justificatifs et vous donne une vue claire de ce qui est à jour.</p>
-      <a class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Réserver mon audit gratuit</a>
-      <ul class="uc-facts"><li>Première version en 2 à 8&nbsp;semaines</li><li>490&nbsp;€&nbsp;HT par mois</li><li>Audit gratuit</li></ul>
+      <a data-book class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Réserver mon audit gratuit</a>
+      <ul class="uc-facts"><li>Première version en 2 à 8&nbsp;semaines</li><li><span data-price="monthly">490 €</span>&nbsp;HT par mois</li><li>Audit gratuit</li></ul>
     </div>
   </section>
 
@@ -78,7 +79,7 @@
     <div class="wrap">
       <h2 id="t-audit">Dites-nous ce que vous devez tenir à jour aujourd'hui.</h2>
       <p>45 minutes, gratuites et sans engagement. On repère où vous perdez le plus de temps, et ce qu'on construirait en premier.</p>
-      <a class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Choisir un créneau</a>
+      <a data-book class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Choisir un créneau</a>
     </div>
   </section>
 

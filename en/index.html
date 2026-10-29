@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-city="johannesburg">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Maniaque, custom software for small businesses</title>
-<meta name="description" content="Custom software for your business, then everything you can think of: from the smallest detail to the biggest feature. €490 excl. VAT per month. Free audit.">
+<meta name="description" content="Custom software for your business, then everything you can think of: from the smallest detail to the biggest feature. R 9,900 excl. VAT per month. Free audit.">
 <meta property="og:title" content="Maniaque, be as maniaque as you want">
-<meta property="og:description" content="Custom software for small businesses. Bugs and tweaks handled within 2 hours, new features fully tested. €490 excl. VAT per month.">
+<meta property="og:description" content="Custom software for small businesses. Bugs and tweaks handled within 2 hours, new features fully tested. R 9,900 excl. VAT per month.">
 <meta name="theme-color" content="#F6F8FA">
 <link rel="alternate" hreflang="fr" href="/">
 <link rel="alternate" hreflang="en" href="/en/">
@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../styles.css">
+<script src="/city.js"></script>
 </head>
 <body>
 
@@ -23,7 +24,10 @@
 
 <header class="bar">
   <div class="wrap bar-inner">
-    <a class="wordmark" href="/en/" aria-label="Maniaque, home">man<span class="ia">ia</span>que</a>
+    <div class="brand">
+      <a class="wordmark" href="/en/" aria-label="Maniaque, home">man<span class="ia">ia</span>que</a>
+      <p class="tagline"><svg class="tagline-pin" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Your trusted AI partner in <span class="picker picker-city"><button type="button" class="picker-btn city-btn" aria-expanded="false" aria-controls="city-menu" aria-label="Choose your city"><span data-city-name>Johannesburg</span></button><span class="picker-menu" id="city-menu"><a href="/?ville=marseille" data-set-city="marseille">Marseille</a><a href="/pt/?ville=sao-paulo" data-set-city="sao-paulo">São Paulo</a><a href="/en/?ville=johannesburg" data-set-city="johannesburg" aria-current="true">Johannesburg</a></span></span>.</span></p>
+    </div>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
     <nav class="bar-nav" id="main-nav" aria-label="Main navigation">
       <a href="/en/#how-it-works">How it works</a>
@@ -37,8 +41,8 @@
           <a href="/en/articles/">Articles</a>
         </div>
       </div>
-      <span class="langs"><a class="lang" href="/" hreflang="fr" lang="fr" aria-label="Version française">FR</a><a class="lang" href="/pt/" hreflang="pt-BR" lang="pt-BR" aria-label="Versão em português">PT</a></span>
-      <a class="btn btn-small" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Book an audit</a>
+      <div class="picker picker-lang"><button type="button" class="lang picker-btn" aria-expanded="false" aria-controls="lang-menu" aria-label="Language: English">EN</button><div class="picker-menu" id="lang-menu"><a href="/" hreflang="fr" lang="fr">Français</a><a href="/en/" hreflang="en" lang="en" aria-current="true">English</a><a href="/pt/" hreflang="pt-BR" lang="pt-BR">Português</a></div></div>
+      <a data-book class="btn btn-small" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Book an audit</a>
     </nav>
   </div>
 </header>
@@ -60,9 +64,9 @@
       </div>
       <p class="meaning" id="meaning"><span class="star-ref" aria-hidden="true">*</span><em lang="fr">Maniaque</em> is French for fussy, not maniac 😅. And yes, there's AI in it.</p>
       <div class="hero-foot">
-        <p class="lede">Instead of a whole team, <strong>one dedicated Product and AI specialist builds a new custom digital tool</strong> for your business. Their strength? Shaping your ideas and bringing them to life from start to finish. For <strong>€490 excl. VAT per month</strong>.</p>
+        <p class="lede">Instead of a whole team, <strong>one dedicated Product and AI specialist builds a new custom digital tool</strong> for your business. Their strength? Shaping your ideas and bringing them to life from start to finish. For <strong><span data-price="monthly">R 9,900</span> excl. VAT per month</strong>.</p>
         <div class="hero-actions">
-          <a class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Book my free audit</a>
+          <a data-book class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Book my free audit</a>
           <a class="link" href="#pricing">See pricing</a>
         </div>
       </div>
@@ -82,7 +86,7 @@
           <h3><button type="button" class="step-toggle" aria-expanded="false" aria-controls="step-desc-1">Free audit</button></h3>
           <p class="step-meta">45 minutes</p>
           <p class="step-desc" id="step-desc-1">We talk about your business and what's wasting your time. You then get one clear page: the problem, what the first version would do, the total monthly cost, and our honest opinion on whether it's worth it.</p>
-          <a class="btn btn-small step-btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Book my free audit</a>
+          <a data-book class="btn btn-small step-btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Book my free audit</a>
         </li>
         <li>
           <h3><button type="button" class="step-toggle" aria-expanded="false" aria-controls="step-desc-2">Scoping</button></h3>
@@ -96,7 +100,7 @@
         </li>
         <li>
           <h3><button type="button" class="step-toggle" aria-expanded="false" aria-controls="step-desc-4">Continuous iterations</button></h3>
-          <p class="step-meta">€490 excl. VAT per month</p>
+          <p class="step-meta"><span data-price="monthly">R 9,900</span> excl. VAT per month</p>
           <p class="step-desc" id="step-desc-4">Your tool evolves with you. New features, fixes, details: everything goes through your request list, with no quote each time.</p>
         </li>
       </ol>
@@ -119,11 +123,11 @@
           </thead>
           <tbody>
             <tr><th scope="row">Audit</th><td>Free</td><td>Free</td></tr>
-            <tr><th scope="row">First version</th><td class="num">€2,500</td><td class="num">€0</td></tr>
-            <tr><th scope="row">Monthly subscription</th><td class="num">€490<span class="when">from delivery of the first version</span></td><td class="num">€490<span class="when">from day one</span></td></tr>
+            <tr><th scope="row">First version</th><td class="num"><span data-price="first">R 50,000</span></td><td class="num"><span data-price="none">R 0</span></td></tr>
+            <tr><th scope="row">Monthly subscription</th><td class="num"><span data-price="monthly">R 9,900</span><span class="when">from delivery of the first version</span></td><td class="num"><span data-price="monthly">R 9,900</span><span class="when">from day one</span></td></tr>
             <tr><th scope="row">Minimum term</th><td>None</td><td>6 months</td></tr>
-            <tr><th scope="row">Hosting</th><td>Included up to €50 of costs per month</td><td>Included up to €50 of costs per month</td></tr>
-            <tr><th scope="row">After that</th><td>No commitment, cancel any month, or switch to a maintenance-only plan at €49 excl. VAT per month, hosting not included</td><td>No commitment, cancel any month, or switch to a maintenance-only plan at €49 excl. VAT per month, hosting not included</td></tr>
+            <tr><th scope="row">Hosting</th><td>Included up to <span data-price="hosting">R 1,000</span> of costs per month</td><td>Included up to <span data-price="hosting">R 1,000</span> of costs per month</td></tr>
+            <tr><th scope="row">After that</th><td>No commitment, cancel any month, or switch to a maintenance-only plan at <span data-price="maintenance">R 990</span> excl. VAT per month, hosting not included</td><td>No commitment, cancel any month, or switch to a maintenance-only plan at <span data-price="maintenance">R 990</span> excl. VAT per month, hosting not included</td></tr>
           </tbody>
         </table>
         <div class="quote-notes">
@@ -238,11 +242,13 @@
         </details>
         <details data-roles="ceo it">
           <summary>What happens if I cancel the subscription?</summary>
-          <p>It's up to you. You can switch to a maintenance-only plan, at €49 excl. VAT per month, hosting not included: your tool stays maintained, with no new requests. Or you leave, and you keep your data and your tool: we hand over the code and the database, or help you install them on your side.</p>
+          <p>It's up to you. You can switch to a maintenance-only plan, at <span data-price="maintenance">R 990</span> excl. VAT per month, hosting not included: your tool stays maintained, with no new requests. Or you leave, and you keep your data and your tool: we hand over the code and the database, or help you install them on your side.</p>
         </details>
         <details data-roles="it">
           <summary>Where is my data stored?</summary>
-          <p>We discuss it together during the scoping phase. There are hosting options in Europe and in France, and we adapt to your needs.</p>
+          <p data-city-only="marseille">We discuss it together during the scoping phase. There are hosting options in Europe and in France, and we adapt to your needs.</p>
+          <p data-city-only="sao-paulo">We discuss it together during the scoping phase. Your data can be hosted in Brazil, and we adapt to your needs.</p>
+          <p data-city-only="johannesburg">We discuss it together during the scoping phase. There are hosting options in Africa, and we adapt to your needs.</p>
         </details>
         <details data-roles="ai it">
           <summary>Which technologies do you use?</summary>
@@ -256,7 +262,7 @@
     <div class="wrap">
       <h2 id="t-audit">Let's talk about what bugs you every day.</h2>
       <p>45 minutes, free and with no commitment. You leave with an honest opinion, even if it's to tell you no.</p>
-      <a class="btn" id="audit-link" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Pick a time slot</a>
+      <a data-book class="btn" id="audit-link" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Pick a time slot</a>
       <p class="cta-alt">Or email us at <a href="mailto:hello@maniaque.xyz">hello@maniaque.xyz</a></p>
     </div>
   </section>

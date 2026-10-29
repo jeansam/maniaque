@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-city="sao-paulo">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
+<script src="/city.js"></script>
 </head>
 <body>
 
@@ -23,7 +24,7 @@
   <div class="wrap bar-inner">
     <div class="brand">
       <a class="wordmark" href="/pt/" aria-label="Maniaque, início">man<span class="ia">ia</span>que</a>
-      <p class="tagline"><svg class="tagline-pin" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Seu parceiro de IA de confiança em Marselha.</p>
+      <p class="tagline"><svg class="tagline-pin" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Seu parceiro de IA de confiança em <span class="picker picker-city"><button type="button" class="picker-btn city-btn" aria-expanded="false" aria-controls="city-menu" aria-label="Escolher a cidade"><span data-city-name>São Paulo</span></button><span class="picker-menu" id="city-menu"><a href="/a-propos/?ville=marseille" data-set-city="marseille">Marselha</a><a href="/pt/sobre/?ville=sao-paulo" data-set-city="sao-paulo" aria-current="true">São Paulo</a><a href="/en/about/?ville=johannesburg" data-set-city="johannesburg">Joanesburgo</a></span></span>.</span></p>
     </div>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir o menu"><span></span><span></span><span></span></button>
     <nav class="bar-nav" id="main-nav" aria-label="Navegação principal">
@@ -38,8 +39,8 @@
           <a href="/pt/artigos/">Artigos</a>
         </div>
       </div>
-      <span class="langs"><a class="lang" href="/a-propos/" hreflang="fr" lang="fr" aria-label="Version française">FR</a><a class="lang" href="/en/about/" hreflang="en" lang="en" aria-label="English version">EN</a></span>
-      <a class="btn btn-small" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Agendar diagnóstico</a>
+      <div class="picker picker-lang"><button type="button" class="lang picker-btn" aria-expanded="false" aria-controls="lang-menu" aria-label="Idioma: Português">PT</button><div class="picker-menu" id="lang-menu"><a href="/a-propos/" hreflang="fr" lang="fr">Français</a><a href="/en/about/" hreflang="en" lang="en">English</a><a href="/pt/sobre/" hreflang="pt-BR" lang="pt-BR" aria-current="true">Português</a></div></div>
+      <a data-book class="btn btn-small" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Agendar diagnóstico</a>
     </nav>
   </div>
 </header>
@@ -50,11 +51,13 @@
     <div class="wrap split">
       <div class="split-text">
         <h1 class="about-title" id="t-fondateur">Quem responde a você</h1>
-        <figure class="portrait grid-paper">
+        <figure class="portrait grid-paper" data-city-only="marseille">
           <img src="/images/jean-samuel.webp" width="640" height="723" alt="Retrato de Jean-Samuel Jéquier, fundador da Maniaque" loading="lazy">
         </figure>
+        <figure class="portrait grid-paper portrait-pending" data-city-only="sao-paulo"><span class="portrait-initials" role="img" aria-label="Eliakim Oliveira">EO</span></figure>
+        <figure class="portrait grid-paper portrait-pending" data-city-only="johannesburg"><span class="portrait-initials" role="img" aria-label="Nthuseni Mathaga">NM</span></figure>
       </div>
-      <div class="founder">
+      <div class="founder" data-city-only="marseille">
         <p>Desde 2019, Jean-Samuel Jéquier cria aplicativos tanto para empreendedores quanto para grandes empresas: cerca de cem no total, em turismo, terceiro setor, comércio, saúde, fintech, contabilidade e muitos outros setores.</p>
         <p>Ele fundou a Maniaque porque a IA finalmente permite oferecer esse nível de personalização a todas as empresas, não só às maiores. O que não muda: alguém que escuta, que responde e que cumpre os prazos.</p>
         <p class="founder-sign">Jean-Samuel Jéquier, fundador</p>
@@ -64,6 +67,24 @@
           <span class="place" aria-label="Baseado em Marselha"><svg class="pin-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="#D2251B" stroke="#D2251B"/></svg><span>Marselha</span></span>
         </div>
       </div>
+      <div class="founder" data-city-only="sao-paulo">
+        <p>Em São Paulo, quem responde a você é Eliakim Oliveira: a pessoa que escuta você é a mesma que constrói a sua ferramenta e se compromete com os prazos.</p>
+        <p>O mesmo método de Marselha: a IA escreve o código, rápido, e alguém continua responsável pelo resultado, do diagnóstico a cada entrega.</p>
+        <p class="founder-sign">Eliakim Oliveira, Maniaque São Paulo</p>
+        <div class="founder-meta">
+          <a class="li-link" aria-label="Perfil de Eliakim Oliveira no LinkedIn" href="https://www.linkedin.com/in/eliakim-oliveira/" target="_blank" rel="noopener"><svg class="li-icon" viewBox="0 0 448 512" width="18" height="20" aria-hidden="true" fill="currentColor"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+          <span class="place" aria-label="Baseado em São Paulo"><svg class="pin-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="#D2251B" stroke="#D2251B"/></svg><span>São Paulo</span></span>
+        </div>
+      </div>
+      <div class="founder" data-city-only="johannesburg">
+        <p>Em Joanesburgo, quem responde a você é Nthuseni Mathaga: a pessoa que escuta você é a mesma que constrói a sua ferramenta e se compromete com os prazos.</p>
+        <p>O mesmo método de Marselha: a IA escreve o código, rápido, e alguém continua responsável pelo resultado, do diagnóstico a cada entrega.</p>
+        <p class="founder-sign">Nthuseni Mathaga, Maniaque Joanesburgo</p>
+        <div class="founder-meta">
+          <a class="li-link" aria-label="Perfil de Nthuseni Mathaga no LinkedIn" href="https://www.linkedin.com/in/nmathaga/" target="_blank" rel="noopener"><svg class="li-icon" viewBox="0 0 448 512" width="18" height="20" aria-hidden="true" fill="currentColor"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+          <span class="place" aria-label="Baseado em Joanesburgo"><svg class="pin-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="#D2251B" stroke="#D2251B"/></svg><span>Joanesburgo</span></span>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -71,7 +92,7 @@
     <div class="wrap">
       <h2 id="t-audit">Vamos falar do que irrita você no dia a dia.</h2>
       <p>45 minutos, gratuitos e sem compromisso. Você sai com uma opinião franca, mesmo que seja para nos dizer não.</p>
-      <a class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Escolher um horário</a>
+      <a data-book class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Escolher um horário</a>
     </div>
   </section>
 

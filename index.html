@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-city="marseille">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Maniaque, outils sur mesure pour PME</title>
-<meta name="description" content="Un outil sur mesure pour votre entreprise, puis tout ce que vous imaginez : du petit détail à la grosse fonctionnalité. 490 € HT par mois. Audit gratuit.">
+<meta name="description" content="Un outil sur mesure pour votre entreprise, puis tout ce que vous imaginez : du petit détail à la grosse fonctionnalité. 490 € HT par mois. Audit gratuit.">
 <meta property="og:title" content="Maniaque, soyez aussi maniaque que vous voulez">
-<meta property="og:description" content="Outils sur mesure pour PME. Bugs et retouches traités sous 2 heures, nouvelles fonctionnalités testées à fond. 490 € HT par mois.">
+<meta property="og:description" content="Outils sur mesure pour PME. Bugs et retouches traités sous 2 heures, nouvelles fonctionnalités testées à fond. 490 € HT par mois.">
 <meta name="theme-color" content="#F6F8FA">
 <link rel="alternate" hreflang="fr" href="/">
 <link rel="alternate" hreflang="en" href="/en/">
@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="/city.js"></script>
 </head>
 <body>
 
@@ -25,7 +26,7 @@
   <div class="wrap bar-inner">
     <div class="brand">
       <a class="wordmark" href="/" aria-label="Maniaque, accueil">man<span class="ia">ia</span>que</a>
-      <p class="tagline"><svg class="tagline-pin" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Votre partenaire IA de confiance à Marseille.</p>
+      <p class="tagline"><svg class="tagline-pin" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Votre partenaire IA de confiance à <span class="picker picker-city"><button type="button" class="picker-btn city-btn" aria-expanded="false" aria-controls="city-menu" aria-label="Choisir la ville"><span data-city-name>Marseille</span></button><span class="picker-menu" id="city-menu"><a href="/?ville=marseille" data-set-city="marseille" aria-current="true">Marseille</a><a href="/pt/?ville=sao-paulo" data-set-city="sao-paulo">São Paulo</a><a href="/en/?ville=johannesburg" data-set-city="johannesburg">Johannesbourg</a></span></span>.</span></p>
     </div>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button>
     <nav class="bar-nav" id="main-nav" aria-label="Navigation principale">
@@ -40,8 +41,8 @@
           <a href="/articles/">Articles</a>
         </div>
       </div>
-      <span class="langs"><a class="lang" href="/en/" hreflang="en" lang="en" aria-label="English version">EN</a><a class="lang" href="/pt/" hreflang="pt-BR" lang="pt-BR" aria-label="Versão em português">PT</a></span>
-      <a class="btn btn-small" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Réserver un audit</a>
+      <div class="picker picker-lang"><button type="button" class="lang picker-btn" aria-expanded="false" aria-controls="lang-menu" aria-label="Langue : Français">FR</button><div class="picker-menu" id="lang-menu"><a href="/" hreflang="fr" lang="fr" aria-current="true">Français</a><a href="/en/" hreflang="en" lang="en">English</a><a href="/pt/" hreflang="pt-BR" lang="pt-BR">Português</a></div></div>
+      <a data-book class="btn btn-small" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Réserver un audit</a>
     </nav>
   </div>
 </header>
@@ -62,9 +63,9 @@
         </div>
       </div>
       <div class="hero-foot">
-        <p class="lede">Au lieu de toute une équipe, <strong>un spécialiste Produit et IA dédié crée un nouvel outil digital sur mesure</strong> pour votre entreprise. Sa force&nbsp;? Formaliser et donner vie à vos idées de bout en bout. Pour <strong>490&nbsp;€&nbsp;HT par mois</strong>.</p>
+        <p class="lede">Au lieu de toute une équipe, <strong>un spécialiste Produit et IA dédié crée un nouvel outil digital sur mesure</strong> pour votre entreprise. Sa force&nbsp;? Formaliser et donner vie à vos idées de bout en bout. Pour <strong><span data-price="monthly">490 €</span>&nbsp;HT par mois</strong>.</p>
         <div class="hero-actions">
-          <a class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Réserver mon audit gratuit</a>
+          <a data-book class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Réserver mon audit gratuit</a>
           <a class="link" href="#tarifs">Voir les tarifs</a>
         </div>
       </div>
@@ -84,7 +85,7 @@
           <h3><button type="button" class="step-toggle" aria-expanded="false" aria-controls="step-desc-1">Audit gratuit</button></h3>
           <p class="step-meta">45 minutes</p>
           <p class="step-desc" id="step-desc-1">On parle de votre activité et de ce qui vous fait perdre du temps. Vous recevez ensuite une page claire : le problème, ce que ferait la première version, le coût mensuel total, et notre avis franc sur l'intérêt d'y aller.</p>
-          <a class="btn btn-small step-btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Réserver mon audit gratuit</a>
+          <a data-book class="btn btn-small step-btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Réserver mon audit gratuit</a>
         </li>
         <li>
           <h3><button type="button" class="step-toggle" aria-expanded="false" aria-controls="step-desc-2">Cadrage</button></h3>
@@ -98,7 +99,7 @@
         </li>
         <li>
           <h3><button type="button" class="step-toggle" aria-expanded="false" aria-controls="step-desc-4">Itérations en continu</button></h3>
-          <p class="step-meta">490 € HT par mois</p>
+          <p class="step-meta"><span data-price="monthly">490 €</span> HT par mois</p>
           <p class="step-desc" id="step-desc-4">Votre outil évolue avec vous. Nouvelles fonctions, corrections, détails : tout passe par votre liste de demandes, sans devis à chaque fois.</p>
         </li>
       </ol>
@@ -121,11 +122,11 @@
           </thead>
           <tbody>
             <tr><th scope="row">Audit</th><td>Gratuit</td><td>Gratuit</td></tr>
-            <tr><th scope="row">Première version</th><td class="num">2&nbsp;500&nbsp;€<span class="ht">&nbsp;HT</span></td><td class="num">0&nbsp;€<span class="ht">&nbsp;HT</span></td></tr>
-            <tr><th scope="row">Abonnement mensuel</th><td class="num">490&nbsp;€<span class="ht">&nbsp;HT</span><span class="when">dès la livraison de la première version</span></td><td class="num">490&nbsp;€<span class="ht">&nbsp;HT</span><span class="when">dès le départ</span></td></tr>
+            <tr><th scope="row">Première version</th><td class="num"><span data-price="first">2 500 €</span><span class="ht">&nbsp;HT</span></td><td class="num"><span data-price="none">0 €</span><span class="ht">&nbsp;HT</span></td></tr>
+            <tr><th scope="row">Abonnement mensuel</th><td class="num"><span data-price="monthly">490 €</span><span class="ht">&nbsp;HT</span><span class="when">dès la livraison de la première version</span></td><td class="num"><span data-price="monthly">490 €</span><span class="ht">&nbsp;HT</span><span class="when">dès le départ</span></td></tr>
             <tr><th scope="row">Engagement minimum</th><td>Aucun</td><td>6 mois</td></tr>
-            <tr><th scope="row">Hébergement</th><td>Inclus jusqu'à 50&nbsp;€&nbsp;HT de coûts par mois</td><td>Inclus jusqu'à 50&nbsp;€&nbsp;HT de coûts par mois</td></tr>
-            <tr><th scope="row">Ensuite</th><td>Sans engagement, résiliable chaque mois, ou basculement sur une offre de maintenance seule à 49&nbsp;€&nbsp;HT par mois, hors hébergement</td><td>Sans engagement, résiliable chaque mois, ou basculement sur une offre de maintenance seule à 49&nbsp;€&nbsp;HT par mois, hors hébergement</td></tr>
+            <tr><th scope="row">Hébergement</th><td>Inclus jusqu'à <span data-price="hosting">50 €</span>&nbsp;HT de coûts par mois</td><td>Inclus jusqu'à <span data-price="hosting">50 €</span>&nbsp;HT de coûts par mois</td></tr>
+            <tr><th scope="row">Ensuite</th><td>Sans engagement, résiliable chaque mois, ou basculement sur une offre de maintenance seule à <span data-price="maintenance">49 €</span>&nbsp;HT par mois, hors hébergement</td><td>Sans engagement, résiliable chaque mois, ou basculement sur une offre de maintenance seule à <span data-price="maintenance">49 €</span>&nbsp;HT par mois, hors hébergement</td></tr>
           </tbody>
         </table>
         <div class="quote-notes">
@@ -240,11 +241,13 @@
         </details>
         <details data-roles="ceo it">
           <summary>Que se passe-t-il si j'arrête l'abonnement ?</summary>
-          <p>Vous avez le choix. Vous pouvez basculer sur une offre de maintenance seule, à 49&nbsp;€&nbsp;HT par mois hors hébergement : votre outil reste maintenu, sans nouvelle demande. Ou vous partez, et vous gardez vos données et votre outil : on vous transfère le code et la base de données, ou on vous aide à les installer chez vous.</p>
+          <p>Vous avez le choix. Vous pouvez basculer sur une offre de maintenance seule, à <span data-price="maintenance">49 €</span>&nbsp;HT par mois hors hébergement : votre outil reste maintenu, sans nouvelle demande. Ou vous partez, et vous gardez vos données et votre outil : on vous transfère le code et la base de données, ou on vous aide à les installer chez vous.</p>
         </details>
         <details data-roles="it">
           <summary>Où sont stockées mes données ?</summary>
-          <p>On en discute ensemble pendant la phase de cadrage. Il existe des solutions d'hébergement en Europe comme en France, et on s'adapte à vos besoins.</p>
+          <p data-city-only="marseille">On en discute ensemble pendant la phase de cadrage. Il existe des solutions d'hébergement en Europe comme en France, et on s'adapte à vos besoins.</p>
+          <p data-city-only="sao-paulo">On en discute ensemble pendant la phase de cadrage. Vos données peuvent être hébergées au Brésil, et on s'adapte à vos besoins.</p>
+          <p data-city-only="johannesburg">On en discute ensemble pendant la phase de cadrage. Il existe des solutions d'hébergement en Afrique, et on s'adapte à vos besoins.</p>
         </details>
         <details data-roles="ai it">
           <summary>Avec quelles technologies travaillez-vous ?</summary>
@@ -258,7 +261,7 @@
     <div class="wrap">
       <h2 id="t-audit">Parlons de ce qui vous agace au quotidien.</h2>
       <p>45 minutes, gratuites et sans engagement. Vous repartez avec un avis franc, même si c'est pour nous dire non.</p>
-      <a class="btn" id="audit-link" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Choisir un créneau</a>
+      <a data-book class="btn" id="audit-link" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Choisir un créneau</a>
       <p class="cta-alt">Ou écrivez-nous à <a href="mailto:hello@maniaque.xyz">hello@maniaque.xyz</a></p>
     </div>
   </section>

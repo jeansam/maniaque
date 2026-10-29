@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-city="sao-paulo">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
+<script src="/city.js"></script>
 </head>
 <body>
 
@@ -23,7 +24,7 @@
   <div class="wrap bar-inner">
     <div class="brand">
       <a class="wordmark" href="/pt/" aria-label="Maniaque, início">man<span class="ia">ia</span>que</a>
-      <p class="tagline"><svg class="tagline-pin" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Seu parceiro de IA de confiança em Marselha.</p>
+      <p class="tagline"><svg class="tagline-pin" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Seu parceiro de IA de confiança em <span class="picker picker-city"><button type="button" class="picker-btn city-btn" aria-expanded="false" aria-controls="city-menu" aria-label="Escolher a cidade"><span data-city-name>São Paulo</span></button><span class="picker-menu" id="city-menu"><a href="/cas-d-usage/arrivee-d-un-client/?ville=marseille" data-set-city="marseille">Marselha</a><a href="/pt/casos-de-uso/novo-cliente/?ville=sao-paulo" data-set-city="sao-paulo" aria-current="true">São Paulo</a><a href="/en/use-cases/new-client-setup/?ville=johannesburg" data-set-city="johannesburg">Joanesburgo</a></span></span>.</span></p>
     </div>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir o menu"><span></span><span></span><span></span></button>
     <nav class="bar-nav" id="main-nav" aria-label="Navegação principal">
@@ -38,8 +39,8 @@
           <a href="/pt/artigos/">Artigos</a>
         </div>
       </div>
-      <span class="langs"><a class="lang" href="/cas-d-usage/arrivee-d-un-client/" hreflang="fr" lang="fr" aria-label="Version française">FR</a><a class="lang" href="/en/use-cases/new-client-setup/" hreflang="en" lang="en" aria-label="English version">EN</a></span>
-      <a class="btn btn-small" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Agendar diagnóstico</a>
+      <div class="picker picker-lang"><button type="button" class="lang picker-btn" aria-expanded="false" aria-controls="lang-menu" aria-label="Idioma: Português">PT</button><div class="picker-menu" id="lang-menu"><a href="/cas-d-usage/arrivee-d-un-client/" hreflang="fr" lang="fr">Français</a><a href="/en/use-cases/new-client-setup/" hreflang="en" lang="en">English</a><a href="/pt/casos-de-uso/novo-cliente/" hreflang="pt-BR" lang="pt-BR" aria-current="true">Português</a></div></div>
+      <a data-book class="btn btn-small" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Agendar diagnóstico</a>
     </nav>
   </div>
 </header>
@@ -51,8 +52,8 @@
       <a class="uc-back" href="/pt/casos-de-uso/">← Casos de uso</a>
       <h1 class="uc-title" id="t-uc">Um novo cliente ativo em um dia, <span>sem redigitar nada.</span></h1>
       <p class="uc-lede">Construímos jornadas de entrada de clientes para empresas que copiam as mesmas informações em vários sistemas. O cliente preenche um único formulário, envia os documentos e assina online. A ferramenta cria o cadastro dele em todos os lugares necessários e prepara a pasta. Você acompanha cada entrada, etapa por etapa.</p>
-      <a class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Agendar meu diagnóstico gratuito</a>
-      <ul class="uc-facts"><li>Primeira versão em 2 a 8&nbsp;semanas</li><li>R$&nbsp;2.900 por mês, sem impostos</li><li>Diagnóstico gratuito</li></ul>
+      <a data-book class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Agendar meu diagnóstico gratuito</a>
+      <ul class="uc-facts"><li>Primeira versão em 2 a 8&nbsp;semanas</li><li><span data-price="monthly">R$ 2.900</span> por mês, sem impostos</li><li>Diagnóstico gratuito</li></ul>
     </div>
   </section>
 
@@ -78,7 +79,7 @@
     <div class="wrap">
       <h2 id="t-audit">Conte para nós como funciona hoje a entrada de um novo cliente.</h2>
       <p>45 minutos, gratuitos e sem compromisso. Identificamos onde você perde mais tempo e o que construiríamos primeiro.</p>
-      <a class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Escolher um horário</a>
+      <a data-book class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Escolher um horário</a>
     </div>
   </section>
 

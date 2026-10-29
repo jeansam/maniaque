@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-city="sao-paulo">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
+<script src="/city.js"></script>
 </head>
 <body>
 
@@ -25,7 +26,7 @@
   <div class="wrap bar-inner">
     <div class="brand">
       <a class="wordmark" href="/pt/" aria-label="Maniaque, início">man<span class="ia">ia</span>que</a>
-      <p class="tagline"><svg class="tagline-pin" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Seu parceiro de IA de confiança em Marselha.</p>
+      <p class="tagline"><svg class="tagline-pin" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>Seu parceiro de IA de confiança em <span class="picker picker-city"><button type="button" class="picker-btn city-btn" aria-expanded="false" aria-controls="city-menu" aria-label="Escolher a cidade"><span data-city-name>São Paulo</span></button><span class="picker-menu" id="city-menu"><a href="/?ville=marseille" data-set-city="marseille">Marselha</a><a href="/pt/?ville=sao-paulo" data-set-city="sao-paulo" aria-current="true">São Paulo</a><a href="/en/?ville=johannesburg" data-set-city="johannesburg">Joanesburgo</a></span></span>.</span></p>
     </div>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir o menu"><span></span><span></span><span></span></button>
     <nav class="bar-nav" id="main-nav" aria-label="Navegação principal">
@@ -40,8 +41,8 @@
           <a href="/pt/artigos/">Artigos</a>
         </div>
       </div>
-      <span class="langs"><a class="lang" href="/" hreflang="fr" lang="fr" aria-label="Version française">FR</a><a class="lang" href="/en/" hreflang="en" lang="en" aria-label="English version">EN</a></span>
-      <a class="btn btn-small" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Agendar diagnóstico</a>
+      <div class="picker picker-lang"><button type="button" class="lang picker-btn" aria-expanded="false" aria-controls="lang-menu" aria-label="Idioma: Português">PT</button><div class="picker-menu" id="lang-menu"><a href="/" hreflang="fr" lang="fr">Français</a><a href="/en/" hreflang="en" lang="en">English</a><a href="/pt/" hreflang="pt-BR" lang="pt-BR" aria-current="true">Português</a></div></div>
+      <a data-book class="btn btn-small" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Agendar diagnóstico</a>
     </nav>
   </div>
 </header>
@@ -63,9 +64,9 @@
       </div>
       <p class="meaning" id="meaning"><span class="star-ref" aria-hidden="true">*</span><em lang="fr">Maniaque</em> quer dizer “maníaco por detalhes” em francês 😅. E sim, tem IA no nome.</p>
       <div class="hero-foot">
-        <p class="lede">Em vez de uma equipe inteira, <strong>um especialista dedicado em Produto e IA cria uma nova ferramenta digital sob medida</strong> para a sua empresa. O ponto forte dele? Dar forma às suas ideias e torná-las realidade, do início ao fim. Por <strong>R$&nbsp;2.900 por mês, sem impostos</strong>.</p>
+        <p class="lede">Em vez de uma equipe inteira, <strong>um especialista dedicado em Produto e IA cria uma nova ferramenta digital sob medida</strong> para a sua empresa. O ponto forte dele? Dar forma às suas ideias e torná-las realidade, do início ao fim. Por <strong><span data-price="monthly">R$ 2.900</span> por mês, sem impostos</strong>.</p>
         <div class="hero-actions">
-          <a class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Agendar meu diagnóstico gratuito</a>
+          <a data-book class="btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Agendar meu diagnóstico gratuito</a>
           <a class="link" href="#precos">Ver os preços</a>
         </div>
       </div>
@@ -85,7 +86,7 @@
           <h3><button type="button" class="step-toggle" aria-expanded="false" aria-controls="step-desc-1">Diagnóstico gratuito</button></h3>
           <p class="step-meta">45 minutos</p>
           <p class="step-desc" id="step-desc-1">Conversamos sobre a sua atividade e sobre o que faz você perder tempo. Depois, você recebe uma página clara: o problema, o que a primeira versão faria, o custo mensal total e a nossa opinião franca sobre se vale a pena seguir em frente.</p>
-          <a class="btn btn-small step-btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Agendar meu diagnóstico gratuito</a>
+          <a data-book class="btn btn-small step-btn" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Agendar meu diagnóstico gratuito</a>
         </li>
         <li>
           <h3><button type="button" class="step-toggle" aria-expanded="false" aria-controls="step-desc-2">Escopo</button></h3>
@@ -99,7 +100,7 @@
         </li>
         <li>
           <h3><button type="button" class="step-toggle" aria-expanded="false" aria-controls="step-desc-4">Iterações contínuas</button></h3>
-          <p class="step-meta">R$ 2.900 por mês, sem impostos</p>
+          <p class="step-meta"><span data-price="monthly">R$ 2.900</span> por mês, sem impostos</p>
           <p class="step-desc" id="step-desc-4">Sua ferramenta evolui com você. Novas funções, correções, detalhes: tudo passa pela sua lista de pedidos, sem orçamento a cada vez.</p>
         </li>
       </ol>
@@ -122,11 +123,11 @@
           </thead>
           <tbody>
             <tr><th scope="row">Diagnóstico</th><td>Grátis</td><td>Grátis</td></tr>
-            <tr><th scope="row">Primeira versão</th><td class="num">R$&nbsp;15.000</td><td class="num">R$&nbsp;0</td></tr>
-            <tr><th scope="row">Assinatura mensal</th><td class="num">R$&nbsp;2.900<span class="when">a partir da entrega da primeira versão</span></td><td class="num">R$&nbsp;2.900<span class="when">desde o início</span></td></tr>
+            <tr><th scope="row">Primeira versão</th><td class="num"><span data-price="first">R$ 15.000</span></td><td class="num"><span data-price="none">R$ 0</span></td></tr>
+            <tr><th scope="row">Assinatura mensal</th><td class="num"><span data-price="monthly">R$ 2.900</span><span class="when">a partir da entrega da primeira versão</span></td><td class="num"><span data-price="monthly">R$ 2.900</span><span class="when">desde o início</span></td></tr>
             <tr><th scope="row">Fidelidade mínima</th><td>Nenhuma</td><td>6 meses</td></tr>
-            <tr><th scope="row">Hospedagem</th><td>Incluída até R$&nbsp;300 de custos por mês, sem impostos</td><td>Incluída até R$&nbsp;300 de custos por mês, sem impostos</td></tr>
-            <tr><th scope="row">Depois</th><td>Sem fidelidade, cancelável a qualquer mês, ou migração para um plano só de manutenção por R$&nbsp;290 por mês sem impostos, hospedagem não incluída</td><td>Sem fidelidade, cancelável a qualquer mês, ou migração para um plano só de manutenção por R$&nbsp;290 por mês sem impostos, hospedagem não incluída</td></tr>
+            <tr><th scope="row">Hospedagem</th><td>Incluída até <span data-price="hosting">R$ 300</span> de custos por mês, sem impostos</td><td>Incluída até <span data-price="hosting">R$ 300</span> de custos por mês, sem impostos</td></tr>
+            <tr><th scope="row">Depois</th><td>Sem fidelidade, cancelável a qualquer mês, ou migração para um plano só de manutenção por <span data-price="maintenance">R$ 290</span> por mês sem impostos, hospedagem não incluída</td><td>Sem fidelidade, cancelável a qualquer mês, ou migração para um plano só de manutenção por <span data-price="maintenance">R$ 290</span> por mês sem impostos, hospedagem não incluída</td></tr>
           </tbody>
         </table>
         <div class="quote-notes">
@@ -241,11 +242,13 @@
         </details>
         <details data-roles="ceo it">
           <summary>E se eu cancelar a assinatura?</summary>
-          <p>Você escolhe. Pode migrar para um plano só de manutenção, por R$&nbsp;290 por mês sem impostos, hospedagem não incluída: a sua ferramenta continua mantida, sem novos pedidos. Ou você sai e fica com os seus dados e a sua ferramenta: transferimos o código e o banco de dados para você, ou ajudamos a instalá-los na sua própria infraestrutura.</p>
+          <p>Você escolhe. Pode migrar para um plano só de manutenção, por <span data-price="maintenance">R$ 290</span> por mês sem impostos, hospedagem não incluída: a sua ferramenta continua mantida, sem novos pedidos. Ou você sai e fica com os seus dados e a sua ferramenta: transferimos o código e o banco de dados para você, ou ajudamos a instalá-los na sua própria infraestrutura.</p>
         </details>
         <details data-roles="it">
           <summary>Onde ficam armazenados os meus dados?</summary>
-          <p>Conversamos sobre isso juntos na fase de escopo. Os seus dados podem ficar hospedados no Brasil, e nos adaptamos às suas necessidades.</p>
+          <p data-city-only="marseille">Conversamos sobre isso juntos na fase de escopo. Existem opções de hospedagem na Europa e na França, e nos adaptamos às suas necessidades.</p>
+          <p data-city-only="sao-paulo">Conversamos sobre isso juntos na fase de escopo. Os seus dados podem ficar hospedados no Brasil, e nos adaptamos às suas necessidades.</p>
+          <p data-city-only="johannesburg">Conversamos sobre isso juntos na fase de escopo. Existem opções de hospedagem na África, e nos adaptamos às suas necessidades.</p>
         </details>
         <details data-roles="ai it">
           <summary>Com quais tecnologias vocês trabalham?</summary>
@@ -259,7 +262,7 @@
     <div class="wrap">
       <h2 id="t-audit">Vamos falar do que irrita você no dia a dia.</h2>
       <p>45 minutos, gratuitos e sem compromisso. Você sai com uma opinião franca, mesmo que seja para nos dizer não.</p>
-      <a class="btn" id="audit-link" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Escolher um horário</a>
+      <a data-book class="btn" id="audit-link" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">Escolher um horário</a>
       <p class="cta-alt">Ou escreva para <a href="mailto:hello@maniaque.xyz">hello@maniaque.xyz</a></p>
     </div>
   </section>

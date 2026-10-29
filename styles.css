@@ -149,6 +149,17 @@ a { color: inherit; }
   .tagline { padding-left: 0; border-left: 0; font-size: .8125rem; }
 }
 @media (max-width: 420px) { .tagline { font-size: .75rem; white-space: normal; } }
+/* La ville soulignée ouvre le choix de la ville */
+.city-btn {
+  font: inherit; font-weight: 700; color: var(--ink); background: none; border: 0; padding: 0; cursor: pointer;
+  text-decoration: underline; text-decoration-color: var(--red); text-decoration-thickness: 1.5px; text-underline-offset: 3px;
+}
+.city-btn:hover, .picker-city.is-open .city-btn { color: var(--red-ink); }
+
+/* Blocs propres à une ville : seuls ceux de la ville choisie s'affichent */
+html[data-city="marseille"] [data-city-only]:not([data-city-only~="marseille"]),
+html[data-city="sao-paulo"] [data-city-only]:not([data-city-only~="sao-paulo"]),
+html[data-city="johannesburg"] [data-city-only]:not([data-city-only~="johannesburg"]) { display: none; }
 
 /* Il y a de l'IA dans maniaque : les deux lettres portent le rouge de correction */
 .ia { color: var(--red); }
@@ -163,13 +174,26 @@ a { color: inherit; }
 }
 .bar-nav a:not(.btn):hover { color: var(--ink); }
 .bar-nav .lang {
-  display: inline-flex; align-items: center; justify-content: center;
+  display: inline-flex; align-items: center; justify-content: center; gap: .35rem;
   min-width: 2.75rem; height: 2.5rem; padding: 0 .6rem;
-  font-weight: 700; color: var(--ink);
+  font: inherit; font-size: .9375rem; font-weight: 700; color: var(--ink); background: transparent; cursor: pointer;
   border: 1.5px solid var(--grid-strong); border-radius: 3px;
 }
-/* Sélecteur de langue : les deux autres langues côte à côte */
-.langs { display: flex; gap: .5rem; }
+.bar-nav .lang:hover, .picker-lang.is-open .lang { border-color: var(--ink); }
+/* Petit chevron : la langue s'ouvre en menu, comme la ville */
+.bar-nav .lang::after {
+  content: ""; width: .4rem; height: .4rem; margin-top: -.2rem;
+  border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg);
+}
+/* Menus flottants : la ville et la langue */
+.picker { position: relative; display: inline-flex; }
+.picker-city .picker-menu { left: -.75rem; right: auto; top: calc(100% + .5rem); z-index: 30; }
+/* Sur petit écran, le menu des villes part du bord gauche de la phrase pour ne pas déborder */
+@media (max-width: 640px) {
+  .tagline { position: relative; }
+  .picker-city { position: static; }
+  .picker-city .picker-menu { left: 0; }
+}
 /* Pied des mentions légales : retour à l'accueil et autres langues groupés */
 .foot-links { display: flex; flex-wrap: wrap; gap: 1.25rem; }
 /* Menu « plus » sur ordinateur : Cas d'usage, À propos et Articles derrière un hamburger */
@@ -184,16 +208,19 @@ a { color: inherit; }
 .nav-more.is-open .more-btn span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
 .nav-more.is-open .more-btn span:nth-child(2) { opacity: 0; }
 .nav-more.is-open .more-btn span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
-.more-menu {
+.more-menu, .picker-menu {
   display: none; position: absolute; top: calc(100% + .6rem); right: 0; min-width: 12rem;
   flex-direction: column; padding: .4rem;
   background: var(--paper); border: 1px solid var(--grid-strong); border-radius: 6px;
   box-shadow: 0 16px 32px -16px rgba(20, 40, 80, .3);
 }
-.nav-more.is-open .more-menu { display: flex; }
-.bar-nav .more-menu a:not(.btn) { padding: .6rem .75rem; border-radius: 4px; color: var(--ink); }
-.bar-nav .more-menu a:not(.btn):hover { background: var(--paper-alt); }
-.bar-nav .more-menu a[aria-current] { font-weight: 700; }
+.nav-more.is-open .more-menu, .picker.is-open .picker-menu { display: flex; }
+.bar-nav .more-menu a:not(.btn), .picker-menu a, .bar-nav .picker-menu a {
+  padding: .6rem .75rem; border-radius: 4px; font-size: .9375rem; font-weight: 500; text-decoration: none; color: var(--ink);
+}
+.bar-nav .more-menu a:not(.btn):hover, .picker-menu a:hover { background: var(--paper-alt); }
+.bar-nav .more-menu a[aria-current], .picker-menu a[aria-current] { font-weight: 700; }
+.picker-menu a[aria-current]::after { content: " ✓"; color: var(--red); }
 @media (prefers-reduced-motion: reduce) { .more-btn span { transition: none; } }
 @media (max-width: 1080px) {
   .more-btn { display: none; }
@@ -224,11 +251,22 @@ a { color: inherit; }
     box-shadow: 0 16px 32px -16px rgba(20, 40, 80, .25);
   }
   .bar.is-open .bar-nav { display: flex; }
-  .bar-nav a:not(.btn):not(.lang) {
+  .bar-nav a:not(.btn):not(.lang):not(.picker-lang a) {
     padding: .9rem 0; font-size: 1.125rem; color: var(--ink);
     border-bottom: 1px solid var(--grid);
   }
-  .bar-nav .langs { align-self: flex-start; margin-top: 1rem; }
+  /* Dans le menu mobile, les trois langues s'affichent directement, côte à côte */
+  .bar-nav .picker-lang { align-self: flex-start; margin-top: 1rem; }
+  .picker-lang .picker-btn { display: none; }
+  .picker-lang .picker-menu {
+    display: flex; position: static; flex-direction: row; gap: .5rem; min-width: 0;
+    padding: 0; background: none; border: 0; box-shadow: none;
+  }
+  .bar-nav .picker-lang .picker-menu a {
+    padding: .5rem .75rem; border: 1.5px solid var(--grid-strong); border-radius: 3px; font-weight: 700;
+  }
+  .bar-nav .picker-lang .picker-menu a[aria-current] { border-color: var(--ink); }
+  .picker-lang .picker-menu a[aria-current]::after { content: none; }
   .bar-nav .btn { margin-top: 1rem; min-height: 3rem; font-size: 1rem; }
 }
 @media (max-width: 1080px) and (prefers-reduced-motion: reduce) { .menu-btn span { transition: none; } }
@@ -445,6 +483,12 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
   position: relative;
 }
 .portrait img { display: block; width: 100%; height: auto; }
+/* En attendant une photo : les initiales, au même format que le portrait */
+.portrait-pending { padding-bottom: 1.5rem; }
+.portrait-initials {
+  display: grid; place-items: center; aspect-ratio: 640 / 723;
+  font-size: clamp(4rem, 3rem + 4vw, 6rem); font-weight: 800; letter-spacing: -0.04em; color: var(--ink);
+}
 /* ---------- Garanties techniques ---------- */
 
 .assurances { display: grid; gap: 2.5rem; margin-top: 3rem; }
