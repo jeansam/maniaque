@@ -1134,18 +1134,38 @@ i.mk-ok, i.mk-bad, i.mk-warn { background: none; font-style: normal; font-size: 
   opacity: 1; pointer-events: auto; transform: translate(-50%, 0);
 }
 .city a:focus-visible { outline-offset: -6px; }
-/* Le chevron dit que la fiche s'ouvre ; survol et appui la font réagir */
-.city-go { flex: none; margin-left: .25rem; color: var(--red); transition: transform .15s; }
-.city-card { transition: opacity .18s, transform .18s, background-color .15s, box-shadow .15s; }
-.city-card:hover { background: var(--paper-alt); box-shadow: 0 10px 24px -14px rgba(20, 40, 80, .45); }
-.city-card:hover .city-go { transform: translateX(3px); }
-.city a:active .city-card { background: var(--grid); box-shadow: none; }
-.city a:active .city-go { transform: translateX(5px); }
-/* Une fois cliquée, la fiche reste enfoncée le temps que la page arrive */
-.city.is-going a { cursor: progress; }
-.city.is-going .city-card { background: var(--grid); box-shadow: none; }
-.city.is-going .city-go { animation: city-go .7s ease-in-out infinite alternate; }
-@keyframes city-go { from { transform: translateX(0); } to { transform: translateX(5px); } }
+/* Glisser pour ouvrir : la photo est une poignée qu'on tire vers les chevrons, à droite.
+   --dx suit le doigt, --p (de 0 à 1) efface le texte et remplit la piste derrière la photo. */
+.city-card {
+  --dx: 0px; --p: 0;
+  background: linear-gradient(90deg, var(--paper-alt) calc(var(--p) * 100%), #fff 0);
+}
+.city-card > img {
+  position: relative; z-index: 1;
+  cursor: grab; touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-touch-callout: none;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--red), 0 6px 14px -4px rgba(20, 40, 80, .45);
+  transform: translateX(var(--dx));
+  transition: transform .35s cubic-bezier(.3, 1.4, .5, 1);
+}
+.city-card > span, .city-go { opacity: calc(1 - var(--p) * 1.6); }
+.city-hint { display: block; margin-top: .2rem; font-size: .75rem; font-weight: 700; color: var(--red-ink); }
+.city-go { flex: none; margin-left: .25rem; color: var(--red); }
+.city-go path { opacity: .25; animation: city-chev 1.2s ease-in-out infinite; }
+.city-go path:nth-child(2) { animation-delay: .15s; }
+.city-go path:nth-child(3) { animation-delay: .3s; }
+@keyframes city-chev { 0%, 100% { opacity: .25; } 35% { opacity: 1; } }
+/* Fiche ouverte : la photo esquisse le geste, de temps en temps */
+.city a:hover .city-card > img, .city.is-open .city-card > img { animation: city-nudge 2.6s ease-in-out .4s infinite; }
+@keyframes city-nudge { 0%, 55%, 100% { translate: 0; } 68% { translate: 14px; } 80% { translate: 0; } 88% { translate: 5px; } }
+/* Un clic sans glisser : la photo insiste, la consigne passe en avant */
+.city.is-hint .city-card > img { animation: city-hint .6s ease-in-out; }
+@keyframes city-hint { 0%, 100% { translate: 0; } 35% { translate: 26px; } 65% { translate: -3px; } }
+.city.is-hint .city-hint { animation: city-hint-text .6s ease-in-out; }
+@keyframes city-hint-text { 30%, 70% { color: var(--red); transform: scale(1.06); transform-origin: left; } }
+.city.is-dragging .city-card > img { cursor: grabbing; transition: none; animation: none; }
+/* Arrivée au bout : la fiche reste ouverte le temps que la page arrive */
+.city.is-going a, .city.is-going .city-card > img { cursor: progress; }
+.city.is-going .city-card > img { animation: none; }
 
 .map-foot { padding: 0 var(--gutter) 1.25rem; text-align: center; font-size: .8125rem; }
 .map-foot a { color: var(--pencil); text-decoration: none; }
@@ -1167,6 +1187,7 @@ i.mk-ok, i.mk-bad, i.mk-warn { background: none; font-style: normal; font-size: 
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .city-dot, .city-dot::after, .city-card, .city-go { transition: none; }
-  .city-dot::after, .city.is-going .city-go { animation: none; }
+  .city-dot, .city-dot::after, .city-card, .city-card > img { transition: none; }
+  .city-dot::after, .city-go path, .city-card > img, .city.is-hint .city-hint { animation: none !important; }
+  .city-go path { opacity: 1; }
 }
