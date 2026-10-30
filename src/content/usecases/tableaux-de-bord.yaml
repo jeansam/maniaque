@@ -1,0 +1,139 @@
+order: 6
+slug:
+  fr: tableaux-de-bord
+  en: dashboards
+  pt: paineis
+strings:
+  title:
+    fr: Tableaux de bord
+    en: Dashboards
+    pt: Dashboards
+  description:
+    fr: Chiffre d'affaires, marges, carnet de commandes et trésorerie sont calculés automatiquement, avec les indicateurs qui comptent pour vous.
+    en: Revenue, margins, order book and cash are calculated automatically, with the indicators that matter to you.
+    pt: Faturamento, margens, carteira de pedidos e caixa são calculados automaticamente, com os indicadores que importam para você.
+  uc:
+    fr: Vos chiffres à jour chaque matin, <span>sans attendre la fin du mois.</span>
+    en: Your figures up to date every morning, <span>without waiting for month end.</span>
+    pt: Os seus números atualizados toda manhã, <span>sem esperar o fim do mês.</span>
+  ucLede:
+    fr: 'Nous construisons des tableaux de bord de direction qui se branchent sur vos outils existants quand ils le permettent : facturation, comptabilité, CRM, caisse. Chiffre d''affaires, marges, carnet de commandes et trésorerie sont calculés automatiquement, avec les indicateurs qui comptent pour vous. Et chaque lundi, le résumé arrive dans votre boîte mail.'
+    en: 'We build management dashboards that plug into your existing tools where they allow it: invoicing, accounting, CRM, till. Revenue, margins, order book and cash are calculated automatically, with the indicators that matter to you. And every Monday, the summary lands in your inbox.'
+    pt: 'Construímos dashboards de gestão que se conectam às suas ferramentas atuais quando elas permitem: faturamento, contabilidade, CRM, caixa. Faturamento, margens, carteira de pedidos e fluxo de caixa são calculados automaticamente, com os indicadores que importam para você. E toda segunda-feira o resumo chega no seu e-mail.'
+  ucVisualAriaLabel:
+    fr: 'Exemple d''écran : tableaux de bord'
+    en: 'Example screen: dashboards'
+    pt: 'Exemplo de tela: dashboards'
+  qtFigureQtAriaLabel:
+    fr: 'Exemple d''écran : tableaux de bord'
+    en: 'Example screen: dashboards'
+    pt: 'Exemplo de tela: dashboards'
+  qtAppClass: qt-app qt-app-2
+  qtSideQtBrand14:
+    fr: <em></em>Direction
+    en: <em></em>Management
+    pt: <em></em>Diretoria
+  qtSideOn15:
+    fr: Vue d'ensemble
+    en: Overview
+    pt: Visão geral
+  qtSideLi37:
+    fr: Ventes
+    en: Sales
+    pt: Vendas
+  qtSideLi38:
+    fr: Marges
+    en: Margins
+    pt: Margens
+  qtSideLi39:
+    fr: Trésorerie
+    en: Cash
+    pt: Caixa
+  qtHeadQtNum15:
+    fr: Vue d'ensemble
+    en: Overview
+    pt: Visão geral
+  qtHeadQtClient15:
+    fr: Mis à jour ce matin à 6 h
+    en: Updated this morning at 6am
+    pt: Atualizado hoje às 6h
+  qtHeadMkPill8:
+    fr: À jour
+    en: Up to date
+    pt: Em dia
+  mkKpiSpan10:
+    fr: CA du mois
+    en: Revenue this month
+    pt: Faturamento do mês
+  mkKpiB4:
+    fr: "84\_200\_€"
+    en: €84,200
+    pt: "R$\_505.200"
+  mkKpiMkOk:
+    fr: +12 %
+    en: +12%
+    pt: +12%
+  mkKpiSpan11:
+    fr: Marge brute
+    en: Gross margin
+    pt: Margem bruta
+  mkKpiB5:
+    fr: "38\_%"
+    en: 38%
+    pt: 38%
+  mkKpiMkOk2:
+    fr: +2 pts
+    en: +2 pts
+    pt: +2 p.p.
+  mkKpiSpan12:
+    fr: Carnet de commandes
+    en: Order book
+    pt: Carteira de pedidos
+  mkKpiB6:
+    fr: "162\_000\_€"
+    en: €162,000
+    pt: "R$\_972.000"
+  mkKpiSpan13:
+    fr: Trésorerie
+    en: Cash
+    pt: Caixa
+  mkKpiB7:
+    fr: "47\_500\_€"
+    en: €47,500
+    pt: "R$\_285.000"
+  mkKpiMkBad2:
+    fr: −8 % vs mois dernier
+    en: −8% vs last month
+    pt: −8% vs mês passado
+  mkPanelMkH7:
+    fr: Chiffre d'affaires, 12 derniers mois
+    en: Revenue, last 12 months
+    pt: Faturamento, últimos 12 meses
+  mkPanelMkH8:
+    fr: Marge par activité
+    en: Margin by activity
+    pt: Margem por atividade
+  mkBarsLSpan:
+    fr: Pose
+    en: Install
+    pt: Instalação
+  mkBarsLSpan2:
+    fr: Vente
+    en: Sales
+    pt: Venda
+  mkBarsLSpan3:
+    fr: SAV
+    en: Service
+    pt: Pós-venda
+  mkBarsLSpan4:
+    fr: Contrats
+    en: Contracts
+    pt: Contratos
+  qtFigureFigcaption:
+    fr: 'Exemple : la vue d''ensemble du dirigeant, mise à jour chaque nuit.'
+    en: 'Example: the owner''s overview, refreshed every night.'
+    pt: 'Exemplo: a visão geral do gestor, atualizada toda noite.'
+  audit:
+    fr: Dites-nous quels chiffres vous suivez aujourd'hui, et comment.
+    en: Tell us which figures you track today, and how.
+    pt: Conte para nós quais números você acompanha hoje, e como.

@@ -1,0 +1,175 @@
+order: 5
+slug:
+  fr: gestion-de-stock
+  en: inventory
+  pt: controle-de-estoque
+strings:
+  title:
+    fr: Gestion de stock
+    en: Inventory
+    pt: Controle de estoque
+  description:
+    fr: Entrées, sorties, inventaires et fournisseurs sont suivis au même endroit, lecture de codes-barres comprise.
+    en: Stock in, stock out, counts and suppliers are tracked in one place, barcode scanning included.
+    pt: Entradas, saídas, inventários e fornecedores ficam no mesmo lugar, com leitura de código de barras.
+  uc:
+    fr: Une gestion de stock qui sait ce qu'il reste, <span>et ce qu'il faut commander.</span>
+    en: Inventory software that knows what's left, <span>and what to order.</span>
+    pt: Um controle de estoque que sabe o que resta, <span>e o que precisa ser comprado.</span>
+  ucLede:
+    fr: Nous construisons des outils de stock pour les ateliers, les grossistes et les commerces. Entrées, sorties, inventaires et fournisseurs sont suivis au même endroit, lecture de codes-barres comprise. Quand un article passe sous son seuil, l'outil prépare la commande fournisseur. Vous savez à tout moment ce que vous avez, et ce que ça vous coûte.
+    en: We build inventory tools for workshops, wholesalers and shops. Stock in, stock out, counts and suppliers are tracked in one place, barcode scanning included. When an item drops below its threshold, the tool prepares the supplier order. You always know what you have, and what it costs you.
+    pt: Construímos ferramentas de estoque para oficinas, atacadistas e lojas. Entradas, saídas, inventários e fornecedores ficam no mesmo lugar, com leitura de código de barras. Quando um item fica abaixo do mínimo, a ferramenta prepara o pedido ao fornecedor. Você sabe a qualquer momento o que tem, e quanto isso custa.
+  ucVisualAriaLabel:
+    fr: 'Exemple d''écran : gestion de stock'
+    en: 'Example screen: inventory'
+    pt: 'Exemplo de tela: controle de estoque'
+  qtFigureQtAriaLabel:
+    fr: 'Exemple d''écran : gestion de stock'
+    en: 'Example screen: inventory'
+    pt: 'Exemplo de tela: controle de estoque'
+  qtAppClass: qt-app
+  qtSideQtBrand8:
+    fr: <em></em>Stock
+    en: <em></em>Stock
+    pt: <em></em>Estoque
+  qtSideOn9:
+    fr: Articles
+    en: Items
+    pt: Itens
+  qtSideLi21:
+    fr: Mouvements
+    en: Movements
+    pt: Movimentações
+  qtSideLi22:
+    fr: Fournisseurs
+    en: Suppliers
+    pt: Fornecedores
+  qtSideLi23:
+    fr: Inventaires
+    en: Stock counts
+    pt: Inventários
+  qtHeadQtNum9:
+    fr: Articles
+    en: Items
+    pt: Itens
+  qtHeadQtClient9:
+    fr: Entrepôt principal
+    en: Main warehouse
+    pt: Depósito principal
+  mkKpiSpan7:
+    fr: Articles suivis
+    en: Items tracked
+    pt: Itens acompanhados
+  mkKpiB2:
+    fr: 1 284
+    en: 1,284
+    pt: '1.284'
+  mkKpiSpan8:
+    fr: Sous le seuil
+    en: Below threshold
+    pt: Abaixo do mínimo
+  mkKpiMkBad:
+    fr: +3 cette semaine
+    en: +3 this week
+    pt: +3 esta semana
+  mkKpiSpan9:
+    fr: Valeur du stock
+    en: Stock value
+    pt: Valor do estoque
+  mkKpiB3:
+    fr: "214\_300\_€"
+    en: €214,300
+    pt: "R$\_1,3 mi"
+  mkTrSpan90:
+    fr: Article
+    en: Item
+    pt: Item
+  mkTrSpan91:
+    fr: En stock
+    en: In stock
+    pt: Em estoque
+  mkTrSpan92:
+    fr: Niveau
+    en: Level
+    pt: Nível
+  mkTrSpan93:
+    fr: Statut
+    en: Status
+    pt: Status
+  mkTrSpan94:
+    fr: Vis inox M6 × 40
+    en: Stainless screw M6 × 40
+    pt: Parafuso inox M6 × 40
+  mkTrSpan95:
+    fr: 1 240
+    en: 1,240
+    pt: '1.240'
+  mkTrSpan96:
+    fr: Charnière 110°
+    en: 110° hinge
+    pt: Dobradiça 110°
+  mkTrSpan97:
+    fr: <span class="mk-pill mk-bad">À commander</span>
+    en: <span class="mk-pill mk-bad">Reorder</span>
+    pt: <span class="mk-pill mk-bad">Comprar</span>
+  mkTrSpan98:
+    fr: Joint EPDM 10 m
+    en: EPDM seal 10 m
+    pt: Vedação EPDM 10 m
+  mkTrSpan99:
+    fr: <span class="mk-pill mk-warn">Bas</span>
+    en: <span class="mk-pill mk-warn">Low</span>
+    pt: <span class="mk-pill mk-warn">Baixo</span>
+  mkTrSpan100:
+    fr: Profilé alu 6 m
+    en: 6 m alu profile
+    pt: Perfil de alumínio 6 m
+  mkTrSpan101:
+    fr: Poignée inox
+    en: Steel handle
+    pt: Puxador inox
+  mkTrSpan102:
+    fr: <span class="mk-pill mk-bad">À commander</span>
+    en: <span class="mk-pill mk-bad">Reorder</span>
+    pt: <span class="mk-pill mk-bad">Comprar</span>
+  mkAsideMkH9:
+    fr: Commande proposée
+    en: Suggested order
+    pt: Pedido sugerido
+  mkAsideMkSub2:
+    fr: Quincaillerie Morel · livraison 48 h
+    en: Morel Hardware · 48h delivery
+    pt: Ferragens Morel · entrega em 48h
+  mkLineSpan8:
+    fr: Charnière 110°
+    en: 110° hinge
+    pt: Dobradiça 110°
+  mkLineSpan9:
+    fr: Poignée inox
+    en: Steel handle
+    pt: Puxador inox
+  mkLineSpan10:
+    fr: Joint EPDM 10 m
+    en: EPDM seal 10 m
+    pt: Vedação EPDM 10 m
+  mkLineSpan11:
+    fr: Total HT
+    en: Total excl. VAT
+    pt: Total s/ impostos
+  mkLineB7:
+    fr: "1\_460\_€"
+    en: €1,460
+    pt: "R$\_8.760"
+  mkAsideMkBtn3:
+    fr: Envoyer au fournisseur
+    en: Send to supplier
+    pt: Enviar ao fornecedor
+  qtFigureFigcaption:
+    fr: 'Exemple : les articles à surveiller, et la commande fournisseur déjà prête.'
+    en: 'Example: the items to watch, and the supplier order already prepared.'
+    pt: 'Exemplo: os itens que merecem atenção, e o pedido ao fornecedor já pronto.'
+  audit:
+    fr: Dites-nous comment vous suivez votre stock aujourd'hui.
+    en: Tell us how you track your stock today.
+    pt: Conte para nós como você acompanha o seu estoque hoje.

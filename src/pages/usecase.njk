@@ -1,0 +1,36 @@
+---
+pagination: { data: pages.usecase, size: 1, alias: p }
+scripts: [nav.js]
+---
+
+
+  <section class="section uc-hero" aria-labelledby="t-uc">
+    <div class="wrap">
+      <a class="uc-back" href="{{ routes.usecaseIndex[lang] }}">{{ s.ucBack }}</a>
+      <h1 class="uc-title" id="t-uc">{{ s.uc }}</h1>
+      <p class="uc-lede">{{ s.ucLede }}</p>
+      <a data-book class="btn" target="_blank" rel="noopener">{{ s.ucBtn }}</a>
+      <ul class="uc-facts"><li>{{ s.ucFactsLi }}</li><li>{{ s.ucFactsLi2 }}</li><li>{{ s.ucFactsLi3 }}</li></ul>
+    </div>
+  </section>
+
+  <section class="uc-visual" aria-label="{{ s.ucVisualAriaLabel }}">
+    <div class="wrap">
+      <figure class="qt-figure">
+        <div class="qt" role="img" aria-label="{{ s.qtFigureQtAriaLabel }}">
+          <div class="qt-chrome"><i></i><i></i><i></i></div>
+          <div class="{{ s.qtAppClass }}">{% include "usecases/" + p.id + ".njk" %}</div>
+        </div>
+        <figcaption>{{ s.qtFigureFigcaption }}</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="cta grid-paper" aria-labelledby="t-audit">
+    <div class="wrap">
+      <h2 id="t-audit">{{ s.audit }}</h2>
+      <p>{{ s.auditP }}</p>
+      <a data-book class="btn" target="_blank" rel="noopener">{{ s.auditBtn }}</a>
+    </div>
+  </section>
+

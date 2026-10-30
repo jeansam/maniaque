@@ -1,0 +1,259 @@
+order: 9
+slug:
+  fr: feuilles-de-temps
+  en: timesheets
+  pt: registro-de-horas
+strings:
+  title:
+    fr: Feuilles de temps
+    en: Timesheets
+    pt: Registro de horas
+  description:
+    fr: Chacun saisit ses heures en quelques secondes depuis son téléphone, par chantier ou par client.
+    en: Everyone logs their hours in seconds from their phone, by site or by client.
+    pt: Cada um registra as suas horas em poucos segundos pelo celular, por obra ou por cliente.
+  uc:
+    fr: Des feuilles de temps remplies à l'heure, <span>pas le vendredi soir de mémoire.</span>
+    en: Timesheets filled in on time, <span>not on Friday night from memory.</span>
+    pt: Horas registradas na hora, <span>não na sexta à noite de memória.</span>
+  ucLede:
+    fr: Nous construisons des outils de saisie des temps pour les équipes sur le terrain comme au bureau. Chacun saisit ses heures en quelques secondes depuis son téléphone, par chantier ou par client. Les heures validées partent directement vers la paie et la facturation, sans ressaisie.
+    en: We build time tracking tools for teams in the field and in the office. Everyone logs their hours in seconds from their phone, by site or by client. Approved hours go straight to payroll and invoicing, with no retyping.
+    pt: Construímos ferramentas de registro de horas para equipes em campo e no escritório. Cada um registra as suas horas em poucos segundos pelo celular, por obra ou por cliente. As horas aprovadas vão direto para a folha de pagamento e para o faturamento, sem redigitação.
+  ucVisualAriaLabel:
+    fr: 'Exemple d''écran : feuilles de temps'
+    en: 'Example screen: timesheets'
+    pt: 'Exemplo de tela: registro de horas'
+  qtFigureQtAriaLabel:
+    fr: 'Exemple d''écran : feuilles de temps'
+    en: 'Example screen: timesheets'
+    pt: 'Exemplo de tela: registro de horas'
+  qtAppClass: qt-app
+  qtSideQtBrand7:
+    fr: <em></em>Temps
+    en: <em></em>Time
+    pt: <em></em>Horas
+  qtSideOn8:
+    fr: Semaine
+    en: Week
+    pt: Semana
+  qtSideLi18:
+    fr: Chantiers
+    en: Sites
+    pt: Obras
+  qtSideLi19:
+    fr: Paie
+    en: Payroll
+    pt: Folha
+  qtSideLi20:
+    fr: Facturation
+    en: Invoicing
+    pt: Faturamento
+  qtHeadQtNum8:
+    fr: Semaine 44
+    en: Week 44
+    pt: Semana 44
+  qtHeadQtClient8:
+    fr: Toutes les heures saisies
+    en: All hours logged
+    pt: Todas as horas registradas
+  qtHeadMkPill4:
+    fr: Prêt pour la paie
+    en: Ready for payroll
+    pt: Pronto para a folha
+  mkTrSpan57:
+    fr: Salarié
+    en: Employee
+    pt: Funcionário
+  mkTrSpan58:
+    fr: Lun
+    en: Mon
+    pt: Seg
+  mkTrSpan59:
+    fr: Mar
+    en: Tue
+    pt: Ter
+  mkTrSpan60:
+    fr: Mer
+    en: Wed
+    pt: Qua
+  mkTrSpan61:
+    fr: Jeu
+    en: Thu
+    pt: Qui
+  mkTrSpan62:
+    fr: Ven
+    en: Fri
+    pt: Sex
+  mkTrSpan63:
+    fr: 8 h
+    en: 8 h
+    pt: 8h
+  mkTrSpan64:
+    fr: 8 h
+    en: 8 h
+    pt: 8h
+  mkTrSpan65:
+    fr: 7,5 h
+    en: 7.5 h
+    pt: 7,5h
+  mkTrSpan66:
+    fr: 8 h
+    en: 8 h
+    pt: 8h
+  mkTrSpan67:
+    fr: 7 h
+    en: 7 h
+    pt: 7h
+  mkTrSpan68:
+    fr: <b>38,5 h</b>
+    en: <b>38.5 h</b>
+    pt: <b>38,5h</b>
+  mkTrSpan69:
+    fr: <span class="mk-pill mk-ok">Validé</span>
+    en: <span class="mk-pill mk-ok">Approved</span>
+    pt: <span class="mk-pill mk-ok">Aprovado</span>
+  mkTrSpan70:
+    fr: 7 h
+    en: 7 h
+    pt: 7h
+  mkTrSpan71:
+    fr: 8 h
+    en: 8 h
+    pt: 8h
+  mkTrSpan72:
+    fr: 8 h
+    en: 8 h
+    pt: 8h
+  mkTrSpan73:
+    fr: 8 h
+    en: 8 h
+    pt: 8h
+  mkTrSpan74:
+    fr: 6 h
+    en: 6 h
+    pt: 6h
+  mkTrSpan75:
+    fr: <b>37 h</b>
+    en: <b>37 h</b>
+    pt: <b>37h</b>
+  mkTrSpan76:
+    fr: <span class="mk-pill mk-ok">Validé</span>
+    en: <span class="mk-pill mk-ok">Approved</span>
+    pt: <span class="mk-pill mk-ok">Aprovado</span>
+  mkTrSpan77:
+    fr: 9 h
+    en: 9 h
+    pt: 9h
+  mkTrSpan78:
+    fr: 8,5 h
+    en: 8.5 h
+    pt: 8,5h
+  mkTrSpan79:
+    fr: 8 h
+    en: 8 h
+    pt: 8h
+  mkTrSpan80:
+    fr: 9 h
+    en: 9 h
+    pt: 9h
+  mkTrSpan81:
+    fr: 7 h
+    en: 7 h
+    pt: 7h
+  mkTrSpan82:
+    fr: <b>41,5 h</b>
+    en: <b>41.5 h</b>
+    pt: <b>41,5h</b>
+  mkTrSpan83:
+    fr: <span class="mk-pill mk-warn">Heures sup.</span>
+    en: <span class="mk-pill mk-warn">Overtime</span>
+    pt: <span class="mk-pill mk-warn">Horas extras</span>
+  mkTrSpan84:
+    fr: 8 h
+    en: 8 h
+    pt: 8h
+  mkTrSpan85:
+    fr: 4 h
+    en: 4 h
+    pt: 4h
+  mkTrSpan86:
+    fr: 8 h
+    en: 8 h
+    pt: 8h
+  mkTrSpan87:
+    fr: 8 h
+    en: 8 h
+    pt: 8h
+  mkTrSpan88:
+    fr: <b>28 h</b>
+    en: <b>28 h</b>
+    pt: <b>28h</b>
+  mkTrSpan89:
+    fr: <span class="mk-pill mk-info">Congé mer.</span>
+    en: <span class="mk-pill mk-info">Leave Wed</span>
+    pt: <span class="mk-pill mk-info">Folga qua.</span>
+  mkAsideMkH7:
+    fr: Saisie de Karim
+    en: Karim's entry
+    pt: Registro do Karim
+  mkPhoneMkPhT:
+    fr: Jeudi
+    en: Thursday
+    pt: Quinta
+  mkLineSpan3:
+    fr: Chantier Mercier
+    en: Mercier site
+    pt: Obra Mercier
+  mkLineB2:
+    fr: 6 h
+    en: 6 h
+    pt: 6h
+  mkLineSpan4:
+    fr: Dépannage Lopez
+    en: Lopez repair
+    pt: Reparo Lopez
+  mkLineB3:
+    fr: 2 h
+    en: 2 h
+    pt: 2h
+  mkLineSpan5:
+    fr: Trajet
+    en: Travel
+    pt: Deslocamento
+  mkLineB4:
+    fr: 1 h
+    en: 1 h
+    pt: 1h
+  mkPhoneMkBtn:
+    fr: Envoyer
+    en: Submit
+    pt: Enviar
+  mkAsideMkH8:
+    fr: Ce mois-ci
+    en: This month
+    pt: Este mês
+  mkLineSpan6:
+    fr: Vers la paie
+    en: To payroll
+    pt: Para a folha
+  mkLineB5:
+    fr: 612 h
+    en: 612 h
+    pt: 612h
+  mkLineSpan7:
+    fr: Facturable
+    en: Billable
+    pt: Faturável
+  mkLineB6:
+    fr: 548 h
+    en: 548 h
+    pt: 548h
+  qtFigureFigcaption:
+    fr: 'Exemple : la semaine de l''équipe, prête pour la paie, et la saisie depuis le téléphone.'
+    en: 'Example: the team''s week, ready for payroll, and an entry made from a phone.'
+    pt: 'Exemplo: a semana da equipe, pronta para a folha, e o registro pelo celular.'
+  audit:
+    fr: Dites-nous comment vos équipes déclarent leurs heures aujourd'hui.
+    en: Tell us how your teams record their hours today.
+    pt: Conte para nós como as suas equipes informam as horas hoje.

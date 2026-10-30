@@ -1,0 +1,119 @@
+order: 15
+slug:
+  fr: arrivee-d-un-salarie
+  en: new-hires
+  pt: novo-funcionario
+strings:
+  title:
+    fr: Arrivée d'un salarié
+    en: New hires
+    pt: Novo funcionário
+  description:
+    fr: 'Comptes, matériel, documents à signer, formations : chaque arrivée suit sa propre liste, avec une personne responsable pour chaque étape.'
+    en: 'Accounts, equipment, documents to sign, training: every new hire follows their own checklist, with someone responsible for each step.'
+    pt: 'Contas, equipamentos, documentos para assinar, treinamentos: cada entrada segue a sua própria lista, com um responsável para cada etapa.'
+  uc:
+    fr: Un nouveau salarié prêt dès le premier jour, <span>sans rien oublier.</span>
+    en: A new hire ready from day one, <span>with nothing forgotten.</span>
+    pt: Um novo funcionário pronto desde o primeiro dia, <span>sem esquecer nada.</span>
+  ucLede:
+    fr: 'Nous construisons des outils d''accueil des salariés pour les entreprises qui recrutent régulièrement. Comptes, matériel, documents à signer, formations : chaque arrivée suit sa propre liste, avec une personne responsable pour chaque étape. Le jour J, tout est prêt.'
+    en: 'We build staff onboarding tools for businesses that hire regularly. Accounts, equipment, documents to sign, training: every new hire follows their own checklist, with someone responsible for each step. On day one, everything is ready.'
+    pt: 'Construímos ferramentas de onboarding para empresas que contratam com frequência. Contas, equipamentos, documentos para assinar, treinamentos: cada entrada segue a sua própria lista, com um responsável para cada etapa. No grande dia, está tudo pronto.'
+  ucVisualAriaLabel:
+    fr: 'Exemple d''écran : arrivée d''un salarié'
+    en: 'Example screen: new hires'
+    pt: 'Exemplo de tela: novo funcionário'
+  qtFigureQtAriaLabel:
+    fr: 'Exemple d''écran : arrivée d''un salarié'
+    en: 'Example screen: new hires'
+    pt: 'Exemplo de tela: novo funcionário'
+  qtAppClass: qt-app qt-app-2
+  qtSideQtBrand2:
+    fr: <em></em>Équipe
+    en: <em></em>Team
+    pt: <em></em>Equipe
+  qtSideOn2:
+    fr: Arrivées
+    en: New hires
+    pt: Entradas
+  qtSideLi3:
+    fr: Départs
+    en: Leavers
+    pt: Desligamentos
+  qtSideLi4:
+    fr: Modèles
+    en: Templates
+    pt: Modelos
+  qtHeadQtNum2:
+    fr: Arrivée de Thomas
+    en: Thomas's arrival
+    pt: Entrada do Thomas
+  qtHeadQtClient2:
+    fr: J−5 · 5 tâches sur 9
+    en: 5 days to go · 5 of 9 tasks
+    pt: D−5 · 5 de 9 tarefas
+  qtHeadMkPill2:
+    fr: Dans les temps
+    en: On schedule
+    pt: No prazo
+  mkPanelMkH2:
+    fr: Thomas Girard · technicien · arrive lundi 3 novembre
+    en: Thomas Girard · technician · starts Monday 3 November
+    pt: Thomas Girard · técnico · começa segunda, 3 de novembro
+  mkColh:
+    fr: Administratif · Paul
+    en: Admin · Paul
+    pt: Administrativo · Paul
+  mkCardB:
+    fr: ✓ Contrat signé
+    en: ✓ Contract signed
+    pt: ✓ Contrato assinado
+  mkCardB2:
+    fr: ✓ Mutuelle et prévoyance
+    en: ✓ Health cover
+    pt: ✓ Plano de saúde e seguro de vida
+  mkCardB3:
+    fr: ○ Badge d'accès
+    en: ○ Access badge
+    pt: ○ Crachá de acesso
+  mkColh2:
+    fr: Informatique · Hugo
+    en: IT · Hugo
+    pt: TI · Hugo
+  mkCardB4:
+    fr: ✓ Ordinateur préparé
+    en: ✓ Laptop set up
+    pt: ✓ Computador preparado
+  mkCardB5:
+    fr: ✓ Comptes et accès
+    en: ✓ Accounts and logins
+    pt: ✓ Contas e acessos
+  mkCardB6:
+    fr: ○ Téléphone
+    en: ○ Phone
+    pt: ○ Celular
+  mkColh3:
+    fr: Équipe · Nadia
+    en: Team · Nadia
+    pt: Equipe · Nadia
+  mkCardB7:
+    fr: ✓ Parrain désigné
+    en: ✓ Buddy assigned
+    pt: ✓ Padrinho definido
+  mkCardB8:
+    fr: ○ Planning de la première semaine
+    en: ○ First-week schedule
+    pt: ○ Agenda da primeira semana
+  mkCardB9:
+    fr: ○ Formation sécurité
+    en: ○ Safety training
+    pt: ○ Treinamento de segurança
+  qtFigureFigcaption:
+    fr: 'Exemple : l''arrivée de Thomas, cinq jours avant son premier jour.'
+    en: 'Example: Thomas''s arrival, five days before his first day.'
+    pt: 'Exemplo: a entrada do Thomas, cinco dias antes do primeiro dia.'
+  audit:
+    fr: Dites-nous comment se passe l'arrivée d'un salarié aujourd'hui.
+    en: Tell us how a new hire gets set up today.
+    pt: Conte para nós como funciona hoje a chegada de um novo funcionário.

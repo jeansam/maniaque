@@ -1,0 +1,159 @@
+order: 3
+slug:
+  fr: planning-des-interventions
+  en: job-scheduling
+  pt: agenda-de-atendimentos
+strings:
+  title:
+    fr: Planning des interventions
+    en: Job scheduling
+    pt: Agenda de atendimentos
+  description:
+    fr: Vous placez l'intervention, l'outil vérifie qui est disponible et ce qu'il faut emporter.
+    en: You place the job, the tool checks who's free and what to bring.
+    pt: Você agenda o atendimento, e a ferramenta verifica quem está disponível e o que é preciso levar.
+  uc:
+    fr: Un planning qui envoie le bon technicien, <span>avec les bonnes pièces.</span>
+    en: A schedule that sends the right technician, <span>with the right parts.</span>
+    pt: Uma agenda que manda o técnico certo, <span>com as peças certas.</span>
+  ucLede:
+    fr: 'Nous construisons des plannings d''interventions pour les artisans, les mainteneurs et les entreprises de dépannage. Vous placez l''intervention, l''outil vérifie qui est disponible et ce qu''il faut emporter. Le technicien reçoit tout sur son téléphone : l''adresse, l''historique du client, le matériel. Et le rapport d''intervention revient signé, sans papier.'
+    en: 'We build job scheduling tools for tradespeople, maintenance firms and repair businesses. You place the job, the tool checks who''s free and what to bring. The technician gets everything on their phone: the address, the customer''s history, the parts. And the job report comes back signed, with no paperwork.'
+    pt: 'Construímos agendas de atendimento para prestadores de serviço, empresas de manutenção e de assistência técnica. Você agenda o atendimento, e a ferramenta verifica quem está disponível e o que é preciso levar. O técnico recebe tudo no celular: o endereço, o histórico do cliente, o material. E o relatório do atendimento volta assinado, sem papel.'
+  ucVisualAriaLabel:
+    fr: 'Exemple d''écran : planning des interventions'
+    en: 'Example screen: job scheduling'
+    pt: 'Exemplo de tela: agenda de atendimentos'
+  qtFigureQtAriaLabel:
+    fr: 'Exemple d''écran : planning des interventions'
+    en: 'Example screen: job scheduling'
+    pt: 'Exemplo de tela: agenda de atendimentos'
+  qtAppClass: qt-app
+  qtSideQtBrand10:
+    fr: <em></em>Planning
+    en: <em></em>Schedule
+    pt: <em></em>Agenda
+  qtSideOn11:
+    fr: Planning
+    en: Schedule
+    pt: Agenda
+  qtSideLi26:
+    fr: Interventions
+    en: Jobs
+    pt: Atendimentos
+  qtSideLi27:
+    fr: Techniciens
+    en: Technicians
+    pt: Técnicos
+  qtSideLi28:
+    fr: Rapports
+    en: Reports
+    pt: Relatórios
+  qtHeadQtNum11:
+    fr: Semaine 44
+    en: Week 44
+    pt: Semana 44
+  qtHeadQtClient11:
+    fr: 4 techniciens · 11 interventions
+    en: 4 technicians · 11 jobs
+    pt: 4 técnicos · 11 atendimentos
+  mkDaysSpan:
+    fr: Lun
+    en: Mon
+    pt: Seg
+  mkDaysSpan2:
+    fr: Mar
+    en: Tue
+    pt: Ter
+  mkDaysSpan3:
+    fr: Mer
+    en: Wed
+    pt: Qua
+  mkDaysSpan4:
+    fr: Jeu
+    en: Thu
+    pt: Qui
+  mkDaysSpan5:
+    fr: Ven
+    en: Fri
+    pt: Sex
+  mkLaneMkJob:
+    fr: Chaudière Lopez
+    en: Lopez boiler
+    pt: Caldeira Lopez
+  mkLaneMkJob2:
+    fr: Entretien VMC
+    en: Ventilation service
+    pt: Manutenção ventilação
+  mkLaneMkJob3:
+    fr: Rénovation SDB Girard
+    en: Girard bathroom
+    pt: Reforma banheiro Girard
+  mkLaneMkJob4:
+    fr: Dépannage
+    en: Repair
+    pt: Reparo
+  mkLaneMkJob5:
+    fr: Pose clim Bernard
+    en: Bernard A/C install
+    pt: Instalação de ar Bernard
+  mkLaneMkJob6:
+    fr: Devis
+    en: Quote
+    pt: Orçamento
+  mkLaneMkJob7:
+    fr: Visite
+    en: Site visit
+    pt: Visita
+  mkLaneMkJob8:
+    fr: Chantier Mercier
+    en: Mercier site
+    pt: Obra Mercier
+  mkAsideMkH10:
+    fr: Sur le téléphone de Karim
+    en: On Karim's phone
+    pt: No celular do Karim
+  mkPhoneMkPhT2:
+    fr: Pose clim Bernard
+    en: Bernard A/C install
+    pt: Instalação de ar Bernard
+  mkPhoneMkPhS:
+    fr: Mer. 8 h 30 · 3 av. Foch
+    en: Wed 8:30 · 3 Foch Ave
+    pt: Qua. 8h30 · Av. Foch, 3
+  mkPhoneMkPhL:
+    fr: À emporter
+    en: Bring
+    pt: Levar
+  mkPhoneMkCheck:
+    fr: ✓ Unité extérieure 3,5 kW
+    en: ✓ 3.5 kW outdoor unit
+    pt: ✓ Unidade externa 3,5 kW
+  mkPhoneMkCheck2:
+    fr: ✓ Kit de liaison 5 m
+    en: ✓ 5 m line set
+    pt: ✓ Kit de ligação 5 m
+  mkPhoneMkCheck3:
+    fr: ✓ Support mural
+    en: ✓ Wall bracket
+    pt: ✓ Suporte de parede
+  mkPhoneMkPhL2:
+    fr: Historique
+    en: History
+    pt: Histórico
+  mkPhoneMkPhS2:
+    fr: Client depuis 2021 · 2 interventions
+    en: Customer since 2021 · 2 jobs
+    pt: Cliente desde 2021 · 2 atendimentos
+  mkPhoneMkBtn2:
+    fr: Démarrer l'intervention
+    en: Start job
+    pt: Iniciar o atendimento
+  qtFigureFigcaption:
+    fr: 'Exemple : la semaine de l''équipe, et l''intervention telle que Karim la reçoit.'
+    en: 'Example: the team''s week, and the job as Karim receives it.'
+    pt: 'Exemplo: a semana da equipe, e o atendimento do jeito que o Karim recebe.'
+  audit:
+    fr: Dites-nous comment vous organisez vos interventions aujourd'hui.
+    en: Tell us how you organise your jobs today.
+    pt: Conte para nós como você organiza os seus atendimentos hoje.

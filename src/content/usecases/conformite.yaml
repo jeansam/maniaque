@@ -1,0 +1,195 @@
+order: 14
+slug:
+  fr: conformite
+  en: compliance
+  pt: conformidade
+strings:
+  title:
+    fr: Conformité
+    en: Compliance
+    pt: Conformidade
+  description:
+    fr: Chaque document a sa date de validité.
+    en: Every document has its expiry date.
+    pt: Cada documento tem a sua data de validade.
+  uc:
+    fr: Votre conformité suivie de près, <span>avant l'échéance, pas après.</span>
+    en: Compliance kept on track, <span>before the deadline, not after.</span>
+    pt: A sua conformidade sob controle, <span>antes do vencimento, não depois.</span>
+  ucLede:
+    fr: Nous construisons des outils de suivi de conformité pour les entreprises soumises à des certifications, des habilitations ou des contrôles obligatoires. Chaque document a sa date de validité. L'outil relance la bonne personne avant l'échéance, garde les justificatifs et vous donne une vue claire de ce qui est à jour.
+    en: We build compliance tracking tools for businesses subject to certifications, permits or mandatory inspections. Every document has its expiry date. The tool reminds the right person before the deadline, keeps the evidence and gives you a clear view of what's up to date.
+    pt: Construímos ferramentas de controle de conformidade para empresas sujeitas a certificações, habilitações ou inspeções obrigatórias. Cada documento tem a sua data de validade. A ferramenta avisa a pessoa certa antes do vencimento, guarda os comprovantes e dá a você uma visão clara do que está em dia.
+  ucVisualAriaLabel:
+    fr: 'Exemple d''écran : conformité'
+    en: 'Example screen: compliance'
+    pt: 'Exemplo de tela: conformidade'
+  qtFigureQtAriaLabel:
+    fr: 'Exemple d''écran : conformité'
+    en: 'Example screen: compliance'
+    pt: 'Exemplo de tela: conformidade'
+  qtAppClass: qt-app
+  qtSideQtBrand3:
+    fr: <em></em>Conformité
+    en: <em></em>Compliance
+    pt: <em></em>Conformidade
+  qtSideOn3:
+    fr: Équipe
+    en: Team
+    pt: Equipe
+  qtSideLi5:
+    fr: Véhicules
+    en: Vehicles
+    pt: Veículos
+  qtSideLi6:
+    fr: Certifications
+    en: Certifications
+    pt: Certificações
+  qtHeadQtNum3:
+    fr: Habilitations de l'équipe
+    en: Team permits
+    pt: Habilitações da equipe
+  qtHeadQtClient3:
+    fr: 4 techniciens
+    en: 4 technicians
+    pt: 4 técnicos
+  qtHeadMkPill3:
+    fr: 1 expiré
+    en: 1 expired
+    pt: 1 vencido
+  mkKpiSpan:
+    fr: Documents suivis
+    en: Documents tracked
+    pt: Documentos acompanhados
+  mkKpiSpan2:
+    fr: Expirent sous 60 jours
+    en: Expiring within 60 days
+    pt: Vencem em 60 dias
+  mkKpiSpan3:
+    fr: Expirés
+    en: Expired
+    pt: Vencidos
+  mkTrSpan:
+    fr: Salarié
+    en: Employee
+    pt: Funcionário
+  mkTrSpan2:
+    fr: Habilitation électrique
+    en: Electrical permit
+    pt: NR-10 (elétrica)
+  mkTrSpan3:
+    fr: Travail en hauteur
+    en: Work at height
+    pt: NR-35 (altura)
+  mkTrSpan4:
+    fr: SST
+    en: SST
+    pt: Primeiros socorros
+  mkTrSpan5:
+    fr: Visite médicale
+    en: Medical check
+    pt: Exame médico
+  mkTrSpan6:
+    fr: <span class="mk-pill mk-ok">À jour</span>
+    en: <span class="mk-pill mk-ok">Valid</span>
+    pt: <span class="mk-pill mk-ok">Em dia</span>
+  mkTrSpan7:
+    fr: <span class="mk-pill mk-ok">À jour</span>
+    en: <span class="mk-pill mk-ok">Valid</span>
+    pt: <span class="mk-pill mk-ok">Em dia</span>
+  mkTrSpan8:
+    fr: <span class="mk-pill mk-warn">Expire bientôt</span>
+    en: <span class="mk-pill mk-warn">Expires soon</span>
+    pt: <span class="mk-pill mk-warn">Vence em breve</span>
+  mkTrSpan9:
+    fr: <span class="mk-pill mk-ok">À jour</span>
+    en: <span class="mk-pill mk-ok">Valid</span>
+    pt: <span class="mk-pill mk-ok">Em dia</span>
+  mkTrSpan10:
+    fr: <span class="mk-pill mk-ok">À jour</span>
+    en: <span class="mk-pill mk-ok">Valid</span>
+    pt: <span class="mk-pill mk-ok">Em dia</span>
+  mkTrSpan11:
+    fr: <span class="mk-pill mk-bad">Expiré</span>
+    en: <span class="mk-pill mk-bad">Expired</span>
+    pt: <span class="mk-pill mk-bad">Vencido</span>
+  mkTrSpan12:
+    fr: <span class="mk-pill mk-ok">À jour</span>
+    en: <span class="mk-pill mk-ok">Valid</span>
+    pt: <span class="mk-pill mk-ok">Em dia</span>
+  mkTrSpan13:
+    fr: <span class="mk-pill mk-ok">À jour</span>
+    en: <span class="mk-pill mk-ok">Valid</span>
+    pt: <span class="mk-pill mk-ok">Em dia</span>
+  mkTrSpan14:
+    fr: <span class="mk-pill mk-warn">Expire bientôt</span>
+    en: <span class="mk-pill mk-warn">Expires soon</span>
+    pt: <span class="mk-pill mk-warn">Vence em breve</span>
+  mkTrSpan15:
+    fr: <span class="mk-pill mk-ok">À jour</span>
+    en: <span class="mk-pill mk-ok">Valid</span>
+    pt: <span class="mk-pill mk-ok">Em dia</span>
+  mkTrSpan16:
+    fr: <span class="mk-pill mk-ok">À jour</span>
+    en: <span class="mk-pill mk-ok">Valid</span>
+    pt: <span class="mk-pill mk-ok">Em dia</span>
+  mkTrSpan17:
+    fr: <span class="mk-pill mk-ok">À jour</span>
+    en: <span class="mk-pill mk-ok">Valid</span>
+    pt: <span class="mk-pill mk-ok">Em dia</span>
+  mkTrSpan18:
+    fr: <span class="mk-pill mk-ok">À jour</span>
+    en: <span class="mk-pill mk-ok">Valid</span>
+    pt: <span class="mk-pill mk-ok">Em dia</span>
+  mkTrSpan19:
+    fr: <span class="mk-pill mk-ok">À jour</span>
+    en: <span class="mk-pill mk-ok">Valid</span>
+    pt: <span class="mk-pill mk-ok">Em dia</span>
+  mkTrSpan20:
+    fr: <span class="mk-pill mk-ok">À jour</span>
+    en: <span class="mk-pill mk-ok">Valid</span>
+    pt: <span class="mk-pill mk-ok">Em dia</span>
+  mkTrSpan21:
+    fr: <span class="mk-pill mk-warn">Expire bientôt</span>
+    en: <span class="mk-pill mk-warn">Expires soon</span>
+    pt: <span class="mk-pill mk-warn">Vence em breve</span>
+  mkAsideMkH2:
+    fr: Relances envoyées
+    en: Reminders sent
+    pt: Avisos enviados
+  mkItemB:
+    fr: Hier
+    en: Yday
+    pt: Ontem
+  mkItemSmall:
+    fr: Recyclage travail en hauteur
+    en: Work at height refresher
+    pt: Reciclagem de trabalho em altura
+  mkItemB2:
+    fr: Lun.
+    en: Mon
+    pt: Seg.
+  mkItemSmall2:
+    fr: Habilitation électrique, 45 j
+    en: Electrical permit, 45 days
+    pt: NR-10, 45 dias
+  mkItemB3:
+    fr: Lun.
+    en: Mon
+    pt: Seg.
+  mkItemSmall3:
+    fr: Visite médicale, 30 j
+    en: Medical check, 30 days
+    pt: Exame médico, 30 dias
+  mkAsideMkBtn:
+    fr: Exporter pour l'audit
+    en: Export for the audit
+    pt: Exportar para a auditoria
+  qtFigureFigcaption:
+    fr: 'Exemple : les habilitations de l''équipe d''un coup d''œil, relances comprises.'
+    en: 'Example: the team''s permits at a glance, reminders included.'
+    pt: 'Exemplo: as habilitações da equipe num relance, com os avisos incluídos.'
+  audit:
+    fr: Dites-nous ce que vous devez tenir à jour aujourd'hui.
+    en: Tell us what you have to keep up to date today.
+    pt: Conte para nós o que você precisa manter em dia hoje.

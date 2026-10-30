@@ -1,0 +1,131 @@
+order: 12
+slug:
+  fr: support-client
+  en: customer-support
+  pt: suporte-ao-cliente
+strings:
+  title:
+    fr: Support client
+    en: Customer support
+    pt: Suporte ao cliente
+  description:
+    fr: Chaque demande est classée, attribuée à la bonne personne et accompagnée d'un brouillon de réponse rédigé par l'IA à partir de vos réponses passées.
+    en: Every request is sorted, assigned to the right person and comes with a draft reply written by AI from your past answers.
+    pt: Cada pedido é classificado, atribuído à pessoa certa e acompanhado de um rascunho de resposta escrito pela IA a partir das suas respostas anteriores.
+  uc:
+    fr: Un support client qui trie la boîte mail, <span>et prépare les réponses.</span>
+    en: Customer support that sorts the inbox, <span>and drafts the replies.</span>
+    pt: Um suporte ao cliente que organiza a caixa de e-mail, <span>e prepara as respostas.</span>
+  ucLede:
+    fr: Nous construisons des outils de support pour les équipes débordées par les emails. Chaque demande est classée, attribuée à la bonne personne et accompagnée d'un brouillon de réponse rédigé par l'IA à partir de vos réponses passées. Votre équipe relit et envoie. Vos clients ont une réponse plus vite, et rien ne se perd.
+    en: We build support tools for teams swamped by email. Every request is sorted, assigned to the right person and comes with a draft reply written by AI from your past answers. Your team reviews and sends. Customers hear back faster, and nothing slips through.
+    pt: Construímos ferramentas de suporte para equipes sobrecarregadas de e-mails. Cada pedido é classificado, atribuído à pessoa certa e acompanhado de um rascunho de resposta escrito pela IA a partir das suas respostas anteriores. A sua equipe revisa e envia. Seus clientes recebem resposta mais rápido, e nada se perde.
+  ucVisualAriaLabel:
+    fr: 'Exemple d''écran : support client'
+    en: 'Example screen: customer support'
+    pt: 'Exemplo de tela: suporte ao cliente'
+  qtFigureQtAriaLabel:
+    fr: 'Exemple d''écran : support client'
+    en: 'Example screen: customer support'
+    pt: 'Exemplo de tela: suporte ao cliente'
+  qtAppClass: qt-app qt-app-2
+  qtSideQtBrand13:
+    fr: <em></em>Support
+    en: <em></em>Support
+    pt: <em></em>Suporte
+  qtSideOn14:
+    fr: Boîte de réception
+    en: Inbox
+    pt: Caixa de entrada
+  qtSideLi35:
+    fr: Mes demandes
+    en: Mine
+    pt: Meus pedidos
+  qtSideLi36:
+    fr: Réponses types
+    en: Saved replies
+    pt: Respostas prontas
+  qtHeadQtNum14:
+    fr: Boîte de réception
+    en: Inbox
+    pt: Caixa de entrada
+  qtHeadQtClient14:
+    fr: 12 nouvelles demandes, toutes triées
+    en: 12 new requests, all sorted
+    pt: 12 novos pedidos, todos classificados
+  qtHeadMkPill7:
+    fr: 1 urgente
+    en: 1 urgent
+    pt: 1 urgente
+  mkMailB:
+    fr: Boulangerie Martin
+    en: Boulangerie Martin
+    pt: Padaria Martin
+  mkMailSpan:
+    fr: Four en panne depuis ce matin
+    en: Oven down since this morning
+    pt: Forno parado desde hoje de manhã
+  mkMailMkPill:
+    fr: Urgent
+    en: Urgent
+    pt: Urgente
+  mkMailB2:
+    fr: Garage Leroy
+    en: Garage Leroy
+    pt: Oficina Leroy
+  mkMailSpan2:
+    fr: Erreur sur la facture F-2317
+    en: Error on invoice F-2317
+    pt: Erro na fatura F-2317
+  mkMailMkPill2:
+    fr: Facturation
+    en: Billing
+    pt: Faturamento
+  mkMailB3:
+    fr: Cabinet Dufour
+    en: Cabinet Dufour
+    pt: Escritório Dufour
+  mkMailSpan3:
+    fr: Changer l'adresse de livraison
+    en: Change delivery address
+    pt: Mudar o endereço de entrega
+  mkMailMkPill3:
+    fr: Commande
+    en: Order
+    pt: Pedido
+  mkMailB4:
+    fr: Hôtel des Alpes
+    en: Hôtel des Alpes
+    pt: Hotel dos Alpes
+  mkMailSpan4:
+    fr: Devis pour un second four
+    en: Quote for a second oven
+    pt: Orçamento para um segundo forno
+  mkMailMkPill4:
+    fr: Commercial
+    en: Sales
+    pt: Comercial
+  mkPanelMkH6:
+    fr: Brouillon préparé par l'IA
+    en: Draft prepared by AI
+    pt: Rascunho preparado pela IA
+  mkPanelMkDraft:
+    fr: Bonjour Madame Martin, nous sommes désolés pour la panne. Karim peut passer aujourd'hui à 14 h avec la carte de rechange. Cela vous convient-il ?
+    en: Hello Mrs Martin, we're sorry about the breakdown. Karim can come by today at 2pm with the spare board. Does that work for you?
+    pt: Olá, Sra. Martin, sentimos muito pelo problema. O Karim pode passar hoje às 14h com a placa de reposição. Esse horário funciona para a senhora?
+  mkActionsMkSub:
+    fr: 'Attribué à : Karim · Contrat d''entretien actif'
+    en: 'Assigned to: Karim · Maintenance plan active'
+    pt: 'Atribuído a: Karim · Contrato de manutenção ativo'
+  mkActionsMkBtn:
+    fr: Relire et envoyer
+    en: Review and send
+    pt: Revisar e enviar
+  qtFigureFigcaption:
+    fr: 'Exemple : une demande urgente, triée et déjà accompagnée de sa réponse.'
+    en: 'Example: an urgent request, sorted and already paired with a reply.'
+    pt: 'Exemplo: um pedido urgente, classificado e já acompanhado da resposta.'
+  audit:
+    fr: Dites-nous comment vous gérez les demandes de vos clients aujourd'hui.
+    en: Tell us how you handle customer requests today.
+    pt: Conte para nós como você lida hoje com os pedidos dos seus clientes.

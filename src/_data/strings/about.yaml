@@ -1,0 +1,116 @@
+title:
+  fr: À propos
+  en: About
+  pt: Sobre
+description:
+  fr: 'Qui est derrière Maniaque : un développeur qui crée des applications pour les entrepreneurs et les grands groupes depuis 2019.'
+  en: 'Who is behind Maniaque: a developer building applications for entrepreneurs and large companies since 2019.'
+  pt: 'Quem está por trás da Maniaque: um desenvolvedor que cria aplicativos para empreendedores e grandes empresas desde 2019.'
+fondateurId:
+  fr: fondateur
+  en: founder
+  pt: fondateur
+fondateurAriaLabelledby:
+  fr: t-fondateur
+  en: t-founder
+  pt: t-fondateur
+splitTextFondateurId:
+  fr: t-fondateur
+  en: t-founder
+  pt: t-fondateur
+splitTextFondateur:
+  fr: Qui vous répond
+  en: Who you'll be talking to
+  pt: Quem responde a você
+portraitImgAlt:
+  fr: Portrait de Jean-Samuel Jéquier, fondateur de Maniaque
+  en: Portrait of Jean-Samuel Jéquier, founder of Maniaque
+  pt: Retrato de Jean-Samuel Jéquier, fundador da Maniaque
+portraitImgAlt2:
+  fr: Portrait d'Eliakim Oliveira, Maniaque São Paulo
+  en: Portrait of Eliakim Oliveira, Maniaque São Paulo
+  pt: Retrato de Eliakim Oliveira, Maniaque São Paulo
+portraitImgAlt3:
+  fr: Portrait de Nthuseni Mathaga, Maniaque Johannesbourg
+  en: Portrait of Nthuseni Mathaga, Maniaque Johannesburg
+  pt: Retrato de Nthuseni Mathaga, Maniaque Joanesburgo
+founderP:
+  fr: 'Depuis 2019, Jean-Samuel Jéquier crée des applications pour des entrepreneurs comme pour des grands groupes : une centaine au total, dans le tourisme, le monde associatif, le commerce, le médical, la fintech, la comptabilité, et bien d''autres secteurs.'
+  en: 'Since 2019, Jean-Samuel Jéquier has been building applications for entrepreneurs and large companies alike: about a hundred in total, in tourism, non-profits, retail, healthcare, fintech, accounting and many other industries.'
+  pt: 'Desde 2019, Jean-Samuel Jéquier cria aplicativos tanto para empreendedores quanto para grandes empresas: cerca de cem no total, em turismo, terceiro setor, comércio, saúde, fintech, contabilidade e muitos outros setores.'
+founderP2:
+  fr: 'Il a fondé Maniaque parce que l''IA permet enfin d''offrir ce niveau de sur-mesure à toutes les entreprises, pas seulement aux plus grandes. Ce qui ne change pas : quelqu''un qui écoute, qui répond et qui tient ses dates.'
+  en: 'He founded Maniaque because AI finally makes this level of custom software affordable for every business, not just the biggest ones. What doesn''t change: someone who listens, answers and meets their deadlines.'
+  pt: 'Ele fundou a Maniaque porque a IA finalmente permite oferecer esse nível de personalização a todas as empresas, não só às maiores. O que não muda: alguém que escuta, que responde e que cumpre os prazos.'
+founderSign:
+  fr: Jean-Samuel Jéquier, fondateur
+  en: Jean-Samuel Jéquier, founder
+  pt: Jean-Samuel Jéquier, fundador
+founderPrev:
+  fr: Avant Maniaque, il a travaillé entre autres chez <a class="inline-link" href="https://www.airbus.com" target="_blank" rel="noopener">Airbus</a> et <a class="inline-link" href="https://www.airdev.co" target="_blank" rel="noopener">Airdev</a>.
+  en: Before Maniaque, he worked at companies such as <a class="inline-link" href="https://www.airbus.com" target="_blank" rel="noopener">Airbus</a> and <a class="inline-link" href="https://www.airdev.co" target="_blank" rel="noopener">Airdev</a>.
+  pt: Antes da Maniaque, ele trabalhou, entre outras, na <a class="inline-link" href="https://www.airbus.com" target="_blank" rel="noopener">Airbus</a> e na <a class="inline-link" href="https://www.airdev.co" target="_blank" rel="noopener">Airdev</a>.
+founderMetaLiLinkAriaLabel:
+  fr: Profil LinkedIn de Jean-Samuel Jéquier
+  en: Jean-Samuel Jéquier's LinkedIn profile
+  pt: Perfil de Jean-Samuel Jéquier no LinkedIn
+founderMetaPlaceAriaLabel:
+  fr: Basé à Marseille
+  en: Based in Marseille
+  pt: Baseado em Marselha
+founderMetaPlace:
+  fr: <svg class="pin-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="#D2251B" stroke="#D2251B"/></svg><span>Marseille</span>
+  en: <svg class="pin-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="#D2251B" stroke="#D2251B"/></svg><span>Marseille</span>
+  pt: <svg class="pin-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="#D2251B" stroke="#D2251B"/></svg><span>Marselha</span>
+founderP3:
+  fr: 'À São Paulo, c''est Eliakim Oliveira qui vous répond : la personne qui vous écoute est aussi celle qui construit votre outil et s''engage sur les dates.'
+  en: 'In São Paulo, Eliakim Oliveira is the one who answers you: the person who listens to you is also the one who builds your tool and commits to the dates.'
+  pt: 'Em São Paulo, quem responde a você é Eliakim Oliveira: a pessoa que escuta você é a mesma que constrói a sua ferramenta e se compromete com os prazos.'
+founderP4:
+  fr: 'La méthode Maniaque : l''IA écrit le code, vite, et quelqu''un reste responsable du résultat, de l''audit à chaque livraison.'
+  en: 'The Maniaque way: AI writes the code, fast, and someone stays accountable for the result, from the audit to every delivery.'
+  pt: 'O método Maniaque: a IA escreve o código, rápido, e alguém continua responsável pelo resultado, do diagnóstico a cada entrega.'
+founderMetaLiLinkAriaLabel2:
+  fr: Profil LinkedIn de Eliakim Oliveira
+  en: Eliakim Oliveira's LinkedIn profile
+  pt: Perfil de Eliakim Oliveira no LinkedIn
+founderMetaPlaceAriaLabel2:
+  fr: Basé à São Paulo
+  en: Based in São Paulo
+  pt: Baseado em São Paulo
+founderP5:
+  fr: 'À Johannesbourg, c''est Nthuseni Mathaga qui vous répond : la personne qui vous écoute est aussi celle qui construit votre outil et s''engage sur les dates.'
+  en: 'In Johannesburg, Nthuseni Mathaga is the one who answers you: the person who listens to you is also the one who builds your tool and commits to the dates.'
+  pt: 'Em Joanesburgo, quem responde a você é Nthuseni Mathaga: a pessoa que escuta você é a mesma que constrói a sua ferramenta e se compromete com os prazos.'
+founderP6:
+  fr: 'La méthode Maniaque : l''IA écrit le code, vite, et quelqu''un reste responsable du résultat, de l''audit à chaque livraison.'
+  en: 'The Maniaque way: AI writes the code, fast, and someone stays accountable for the result, from the audit to every delivery.'
+  pt: 'O método Maniaque: a IA escreve o código, rápido, e alguém continua responsável pelo resultado, do diagnóstico a cada entrega.'
+founderSign2:
+  fr: Nthuseni Mathaga, Maniaque Johannesbourg
+  en: Nthuseni Mathaga, Maniaque Johannesburg
+  pt: Nthuseni Mathaga, Maniaque Joanesburgo
+founderMetaLiLinkAriaLabel3:
+  fr: Profil LinkedIn de Nthuseni Mathaga
+  en: Nthuseni Mathaga's LinkedIn profile
+  pt: Perfil de Nthuseni Mathaga no LinkedIn
+founderMetaPlaceAriaLabel3:
+  fr: Basé à Johannesbourg
+  en: Based in Johannesburg
+  pt: Baseado em Joanesburgo
+founderMetaPlace2:
+  fr: <svg class="pin-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="#D2251B" stroke="#D2251B"/></svg><span>Johannesbourg</span>
+  en: <svg class="pin-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="#D2251B" stroke="#D2251B"/></svg><span>Johannesburg</span>
+  pt: <svg class="pin-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="#D2251B" stroke="#D2251B"/></svg><span>Joanesburgo</span>
+audit:
+  fr: Parlons de ce qui vous agace au quotidien.
+  en: Let's talk about what bugs you every day.
+  pt: Vamos falar do que irrita você no dia a dia.
+auditP:
+  fr: 45 minutes, gratuites et sans engagement. Vous repartez avec un avis franc, même si c'est pour nous dire non.
+  en: 45 minutes, free and with no commitment. You leave with an honest opinion, even if it's to tell you no.
+  pt: 45 minutos, gratuitos e sem compromisso. Você sai com uma opinião franca, mesmo que seja para nos dizer não.
+auditBtn:
+  fr: Choisir un créneau
+  en: Pick a time slot
+  pt: Escolher um horário

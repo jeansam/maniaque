@@ -1,0 +1,167 @@
+order: 8
+slug:
+  fr: lecture-de-documents
+  en: document-reading
+  pt: leitura-de-documentos
+strings:
+  title:
+    fr: Lecture de documents
+    en: Document reading
+    pt: Leitura de documentos
+  description:
+    fr: L'IA extrait les informations, les range au bon endroit et signale ce qui semble anormal.
+    en: AI pulls out the information, files it in the right place and flags anything that looks off.
+    pt: A IA extrai as informações, coloca cada uma no lugar certo e sinaliza o que parece anormal.
+  uc:
+    fr: Une IA qui lit vos documents, <span>et remplit les bonnes cases.</span>
+    en: AI that reads your documents, <span>and fills in the right fields.</span>
+    pt: Uma IA que lê os seus documentos, <span>e preenche os campos certos.</span>
+  ucLede:
+    fr: 'Nous construisons des outils qui lisent pour vous les factures fournisseurs, les bons de commande et les formulaires, qu''ils arrivent par email ou en photo. L''IA extrait les informations, les range au bon endroit et signale ce qui semble anormal. Vous vérifiez, vous validez : la saisie à la main disparaît.'
+    en: 'We build tools that read supplier invoices, purchase orders and forms for you, whether they arrive by email or as a photo. AI pulls out the information, files it in the right place and flags anything that looks off. You check, you approve: manual data entry disappears.'
+    pt: 'Construímos ferramentas que leem por você as faturas de fornecedores, os pedidos de compra e os formulários, cheguem eles por e-mail ou em foto. A IA extrai as informações, coloca cada uma no lugar certo e sinaliza o que parece anormal. Você confere e aprova: a digitação manual desaparece.'
+  ucVisualAriaLabel:
+    fr: 'Exemple d''écran : lecture de documents'
+    en: 'Example screen: document reading'
+    pt: 'Exemplo de tela: leitura de documentos'
+  qtFigureQtAriaLabel:
+    fr: 'Exemple d''écran : lecture de documents'
+    en: 'Example screen: document reading'
+    pt: 'Exemplo de tela: leitura de documentos'
+  qtAppClass: qt-app qt-app-2
+  qtSideQtBrand9:
+    fr: <em></em>Documents
+    en: <em></em>Documents
+    pt: <em></em>Documentos
+  qtSideOn10:
+    fr: À valider
+    en: To review
+    pt: A aprovar
+  qtSideLi24:
+    fr: Validés
+    en: Approved
+    pt: Aprovados
+  qtSideLi25:
+    fr: Fournisseurs
+    en: Suppliers
+    pt: Fornecedores
+  qtHeadQtNum10:
+    fr: Facture reçue par email
+    en: Invoice received by email
+    pt: Fatura recebida por e-mail
+  qtHeadQtClient10:
+    fr: Lue par l'IA en 4 secondes
+    en: Read by AI in 4 seconds
+    pt: Lida pela IA em 4 segundos
+  qtHeadMkPill5:
+    fr: 1 point à vérifier
+    en: 1 thing to check
+    pt: 1 ponto a conferir
+  mkDocT:
+    fr: FACTURE n° 88412
+    en: INVOICE n° 88412
+    pt: FATURA nº 88412
+  mkDocP:
+    fr: Quincaillerie Morel
+    en: Quincaillerie Morel
+    pt: Ferragens Morel
+  mkDocP2:
+    fr: 12 rue des Forges, Lyon
+    en: 12 rue des Forges, Lyon
+    pt: Rua das Forjas, 12, Lyon
+  mkDocLSpan:
+    fr: Charnière 110° × 200
+    en: 110° hinge × 200
+    pt: Dobradiça 110° × 200
+  mkDocLSpan2:
+    fr: "640\_€"
+    en: €640
+    pt: "R$\_3.840"
+  mkDocLSpan3:
+    fr: Poignée inox × 100
+    en: Steel handle × 100
+    pt: Puxador inox × 100
+  mkDocLSpan4:
+    fr: "520\_€"
+    en: €520
+    pt: "R$\_3.120"
+  mkDocLSpan5:
+    fr: Joint EPDM × 20
+    en: EPDM seal × 20
+    pt: Vedação EPDM × 20
+  mkDocLSpan6:
+    fr: "300\_€"
+    en: €300
+    pt: "R$\_1.800"
+  mkDocLSpan7:
+    fr: Total TTC
+    en: Total incl. VAT
+    pt: Total c/ impostos
+  mkDocLSpan8:
+    fr: "1\_752\_€"
+    en: €1,752
+    pt: "R$\_10.512"
+  mkGrowMkH:
+    fr: Informations extraites
+    en: Extracted data
+    pt: Informações extraídas
+  mkFieldSpan7:
+    fr: Fournisseur
+    en: Supplier
+    pt: Fornecedor
+  mkFieldB:
+    fr: Quincaillerie Morel
+    en: Quincaillerie Morel
+    pt: Ferragens Morel
+  mkFieldSpan8:
+    fr: N° de facture
+    en: Invoice no.
+    pt: Nº da fatura
+  mkFieldSpan9:
+    fr: Date
+    en: Date
+    pt: Data
+  mkFieldSpan10:
+    fr: Total HT
+    en: Total excl. VAT
+    pt: Total s/ impostos
+  mkFieldB2:
+    fr: "1\_460\_€"
+    en: €1,460
+    pt: "R$\_8.760"
+  mkFieldSpan11:
+    fr: TVA
+    en: VAT
+    pt: Impostos
+  mkFieldB3:
+    fr: "292\_€"
+    en: €292
+    pt: "R$\_1.752"
+  mkFieldSpan12:
+    fr: Bon de commande
+    en: Purchase order
+    pt: Pedido de compra
+  mkFieldB4:
+    fr: BC-0312
+    en: BC-0312
+    pt: PC-0312
+  mkFieldMkPill7:
+    fr: À vérifier
+    en: Check
+    pt: Conferir
+  mkGrowMkAlert:
+    fr: Le bon BC-0312 prévoyait 180 charnières, la facture en compte 200.
+    en: PO BC-0312 was for 180 hinges, the invoice says 200.
+    pt: O pedido PC-0312 previa 180 dobradiças, a fatura cobra 200.
+  mkGrowMkBtn:
+    fr: Valider et envoyer en compta
+    en: Approve and send to accounts
+    pt: Aprovar e enviar para a contabilidade
+  qtFigureFigcaption:
+    fr: 'Exemple : une facture lue en quelques secondes, et l''écart repéré avec le bon de commande.'
+    en: 'Example: an invoice read in seconds, with the mismatch against the purchase order flagged.'
+    pt: 'Exemplo: uma fatura lida em poucos segundos, e a diferença em relação ao pedido de compra identificada.'
+  audit:
+    fr: Dites-nous quels documents vous recopiez aujourd'hui.
+    en: Tell us which documents you copy by hand today.
+    pt: Conte para nós quais documentos você copia à mão hoje.

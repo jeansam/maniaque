@@ -1,0 +1,23 @@
+# Textes de l'interface commune (en-tête, menus, pied de page), dans les trois langues
+mainId: { fr: contenu, en: content, pt: conteudo }
+skip: { fr: Aller au contenu, en: Skip to content, pt: Ir para o conteúdo }
+homeLabel: { fr: "Maniaque, accueil", en: "Maniaque, home", pt: "Maniaque, início" }
+tagline: { fr: Votre partenaire IA de confiance à, en: Your trusted AI partner in, pt: Seu parceiro de IA de confiança em }
+chooseCity: { fr: Choisir la ville, en: Choose your city, pt: Escolher a cidade }
+openMenu: { fr: Ouvrir le menu, en: Open menu, pt: Abrir o menu }
+mainNav: { fr: Navigation principale, en: Main navigation, pt: Navegação principal }
+# Liens vers les sections de la page de l'offre : l'ancre (id) et le libellé
+offerLinks:
+  fr: [{ id: fonctionnement, label: Fonctionnement }, { id: tarifs, label: Tarifs }, { id: faq, label: FAQ }]
+  en: [{ id: how-it-works, label: How it works }, { id: pricing, label: Pricing }, { id: faq, label: FAQ }]
+  pt: [{ id: como-funciona, label: Como funciona }, { id: precos, label: Preços }, { id: faq, label: FAQ }]
+moreLinks: { fr: Plus de liens, en: More links, pt: Mais links }
+sections:
+  usecaseIndex: { fr: Cas d'usage, en: Use cases, pt: Casos de uso }
+  about: { fr: À propos, en: About, pt: Sobre }
+  articleIndex: { fr: Articles, en: Articles, pt: Artigos }
+languageLabel: { fr: "Langue : ", en: "Language: ", pt: "Idioma: " }
+book: { fr: Réserver un audit, en: Book an audit, pt: Agendar diagnóstico }
+footer: { fr: Outils sur mesure pour PME. Prix hors taxes., en: Custom software for small businesses. Prices exclude VAT., pt: Softwares sob medida para PMEs. Preços sem impostos. }
+legal: { fr: Mentions légales, en: Legal notice, pt: Aviso legal }
+backHome: { fr: Retour à l'accueil, en: Back to home, pt: Voltar ao início }

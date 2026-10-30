@@ -1,0 +1,135 @@
+order: 11
+slug:
+  fr: arrivee-d-un-client
+  en: new-client-setup
+  pt: novo-cliente
+strings:
+  title:
+    fr: Arrivée d'un client
+    en: New client setup
+    pt: Novo cliente
+  description:
+    fr: Le client remplit un seul formulaire, dépose ses documents et signe en ligne.
+    en: The client fills in one form, uploads their documents and signs online.
+    pt: O cliente preenche um único formulário, envia os documentos e assina online.
+  uc:
+    fr: Un nouveau client lancé en une journée, <span>sans rien ressaisir.</span>
+    en: A new client up and running in a day, <span>with nothing typed twice.</span>
+    pt: Um novo cliente ativo em um dia, <span>sem redigitar nada.</span>
+  ucLede:
+    fr: Nous construisons des parcours d'arrivée client pour les entreprises qui recopient les mêmes informations dans plusieurs logiciels. Le client remplit un seul formulaire, dépose ses documents et signe en ligne. L'outil crée sa fiche partout où il le faut et prépare son dossier. Vous suivez chaque arrivée, étape par étape.
+    en: We build client onboarding flows for businesses that type the same details into several systems. The client fills in one form, uploads their documents and signs online. The tool creates their record everywhere it's needed and prepares their file. You follow each new client, step by step.
+    pt: Construímos jornadas de entrada de clientes para empresas que copiam as mesmas informações em vários sistemas. O cliente preenche um único formulário, envia os documentos e assina online. A ferramenta cria o cadastro dele em todos os lugares necessários e prepara a pasta. Você acompanha cada entrada, etapa por etapa.
+  ucVisualAriaLabel:
+    fr: 'Exemple d''écran : arrivée d''un client'
+    en: 'Example screen: new client setup'
+    pt: 'Exemplo de tela: novo cliente'
+  qtFigureQtAriaLabel:
+    fr: 'Exemple d''écran : arrivée d''un client'
+    en: 'Example screen: new client setup'
+    pt: 'Exemplo de tela: novo cliente'
+  qtAppClass: qt-app
+  qtSideQtBrand:
+    fr: <em></em>Clients
+    en: <em></em>Clients
+    pt: <em></em>Clientes
+  qtSideOn:
+    fr: Arrivées
+    en: Onboarding
+    pt: Entradas
+  qtSideLi:
+    fr: Clients
+    en: Clients
+    pt: Clientes
+  qtSideLi2:
+    fr: Documents
+    en: Documents
+    pt: Documentos
+  qtHeadQtNum:
+    fr: Imprimerie Petit
+    en: Imprimerie Petit
+    pt: Gráfica Petit
+  qtHeadQtClient:
+    fr: Nouveau client
+    en: New client
+    pt: Novo cliente
+  qtHeadMkPill:
+    fr: 4 étapes sur 6
+    en: 4 of 6 steps
+    pt: 4 de 6 etapas
+  mkPanelMkH:
+    fr: Imprimerie Petit · arrivée lancée ce matin
+    en: Petit Print · onboarding started this morning
+    pt: Gráfica Petit · entrada iniciada hoje de manhã
+  mkFieldSpan:
+    fr: ✓ Formulaire rempli par le client
+    en: ✓ Form filled in by client
+    pt: ✓ Formulário preenchido pelo cliente
+  mkFieldMkPill:
+    fr: Fait
+    en: Done
+    pt: Feito
+  mkFieldSpan2:
+    fr: ✓ Kbis et RIB déposés
+    en: ✓ Company docs and bank details uploaded
+    pt: ✓ Contrato social e dados bancários enviados
+  mkFieldMkPill2:
+    fr: Fait
+    en: Done
+    pt: Feito
+  mkFieldSpan3:
+    fr: ✓ Contrat signé en ligne
+    en: ✓ Contract signed online
+    pt: ✓ Contrato assinado online
+  mkFieldMkPill3:
+    fr: Fait
+    en: Done
+    pt: Feito
+  mkFieldSpan4:
+    fr: ✓ Fiche créée en compta et au CRM
+    en: ✓ Record created in accounts and CRM
+    pt: ✓ Cadastro criado na contabilidade e no CRM
+  mkFieldMkPill4:
+    fr: Fait
+    en: Done
+    pt: Feito
+  mkFieldSpan5:
+    fr: Accès à l'espace client envoyés
+    en: Portal access sent
+    pt: Acessos à área do cliente enviados
+  mkFieldMkPill5:
+    fr: En cours
+    en: In progress
+    pt: Em andamento
+  mkFieldSpan6:
+    fr: Rendez-vous de lancement
+    en: Kick-off meeting
+    pt: Reunião de kickoff
+  mkFieldMkPill6:
+    fr: Jeudi 10 h
+    en: Thu 10am
+    pt: Quinta, 10h
+  mkAsideMkH:
+    fr: Arrivées en cours
+    en: Onboarding now
+    pt: Entradas em andamento
+  mkItemSpan:
+    fr: Garage Leroy
+    en: Garage Leroy
+    pt: Oficina Leroy
+  mkItemSpan2:
+    fr: Hôtel des Alpes
+    en: Hôtel des Alpes
+    pt: Hotel dos Alpes
+  mkItemSpan3:
+    fr: Ferme Duval
+    en: Ferme Duval
+    pt: Fazenda Duval
+  qtFigureFigcaption:
+    fr: 'Exemple : un client arrivé ce matin, déjà aux deux tiers du parcours.'
+    en: 'Example: a client who started this morning, already two thirds of the way.'
+    pt: 'Exemplo: um cliente que chegou hoje de manhã e já está a dois terços da jornada.'
+  audit:
+    fr: Dites-nous comment se passe l'arrivée d'un client aujourd'hui.
+    en: Tell us how a new client gets set up today.
+    pt: Conte para nós como funciona hoje a entrada de um novo cliente.

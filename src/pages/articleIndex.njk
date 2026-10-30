@@ -1,0 +1,20 @@
+---
+pagination: { data: pages.articleIndex, size: 1, alias: p }
+mainClass: section
+section: articleIndex
+scripts: [nav.js]
+---
+
+  <div class="wrap">
+    <h1 class="articles-title">{{ s.articlesTitle }}</h1>
+    <p class="section-lede">{{ s.sectionLede }}</p>
+
+    <ul class="article-list">
+      <li>
+        <a class="article-card" href="{{ s.articleListArticleCardHref }}">{{ s.articleListArticleCard }}</a>
+      </li>
+      <li>
+        <a class="article-card" href="{{ s.articleListArticleCardHref2 }}">{{ s.articleListArticleCard2 }}</a>
+      </li>
+    </ul>
+  </div>

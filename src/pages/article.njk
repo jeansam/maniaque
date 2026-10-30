@@ -1,0 +1,28 @@
+---
+pagination: { data: pages.article, size: 1, alias: p }
+og: article
+mainClass: article
+section: articleIndex
+scripts: [nav.js]
+---
+
+  <div class="wrap article-wrap">
+    <p class="article-back"><a class="link" href="{{ routes.articleIndex[lang] }}">{{ s.articleBackLink }}</a></p>
+    <h1 class="article-title">{{ s.articleTitle }}</h1>
+    <p class="article-meta">{{ s.articleMeta }}</p>
+  </div>
+
+  <figure class="article-figure wrap">
+    <img src="{{ s.articleFigureImgSrc }}" width="1600" height="840" alt="{{ s.articleFigureImgAlt }}">
+    <figcaption>{{ s.articleFigureFigcaption }}</figcaption>
+  </figure>
+
+  <article class="wrap article-wrap prose">{% include "articles/" + p.id + ".njk" %}</article>
+
+  <section class="cta grid-paper" aria-labelledby="t-audit">
+    <div class="wrap">
+      <h2 id="t-audit">{{ s.audit }}</h2>
+      <p>{{ s.auditP }}</p>
+      <a data-book class="btn" target="_blank" rel="noopener">{{ s.auditBtn }}</a>
+    </div>
+  </section>

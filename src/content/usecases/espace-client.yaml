@@ -1,0 +1,183 @@
+order: 4
+slug:
+  fr: espace-client
+  en: customer-portal
+  pt: area-do-cliente
+strings:
+  title:
+    fr: Espace client
+    en: Customer portal
+    pt: Área do cliente
+  description:
+    fr: Vos clients suivent leurs commandes étape par étape, téléchargent leurs factures et vous écrivent au même endroit.
+    en: Your customers follow their orders step by step, download their invoices and message you in one place.
+    pt: Seus clientes acompanham os pedidos etapa por etapa, baixam as faturas e falam com você no mesmo lugar.
+  uc:
+    fr: Un espace client à vos couleurs, <span>qui répond avant qu'on vous appelle.</span>
+    en: A customer portal in your colours, <span>that answers before they call.</span>
+    pt: Uma área do cliente com a sua cara, <span>que responde antes que liguem para você.</span>
+  ucLede:
+    fr: Nous construisons des espaces clients pour les entreprises qui reçoivent trop d'appels du type « où en est ma commande ? ». Vos clients suivent leurs commandes étape par étape, téléchargent leurs factures et vous écrivent au même endroit. Vous décidez de ce qu'ils voient, et votre équipe récupère le temps passé au téléphone.
+    en: We build customer portals for businesses that get too many “where's my order?” calls. Your customers follow their orders step by step, download their invoices and message you in one place. You decide what they see, and your team gets back the time spent on the phone.
+    pt: Construímos áreas do cliente para empresas que recebem ligações demais do tipo “como está o meu pedido?”. Seus clientes acompanham os pedidos etapa por etapa, baixam as faturas e falam com você no mesmo lugar. Você decide o que eles veem, e a sua equipe recupera o tempo gasto ao telefone.
+  ucVisualAriaLabel:
+    fr: 'Exemple d''écran : espace client'
+    en: 'Example screen: customer portal'
+    pt: 'Exemplo de tela: área do cliente'
+  qtFigureQtAriaLabel:
+    fr: 'Exemple d''écran : espace client'
+    en: 'Example screen: customer portal'
+    pt: 'Exemplo de tela: área do cliente'
+  qtAppClass: qt-app
+  qtSideQtBrand6:
+    fr: <em></em>Martin Équipements
+    en: <em></em>Martin Equipment
+    pt: <em></em>Martin Equipamentos
+  qtSideOn7:
+    fr: Accueil
+    en: Home
+    pt: Início
+  qtSideLi15:
+    fr: Commandes
+    en: Orders
+    pt: Pedidos
+  qtSideLi16:
+    fr: Factures
+    en: Invoices
+    pt: Faturas
+  qtSideLi17:
+    fr: Messages
+    en: Messages
+    pt: Mensagens
+  qtHeadQtNum7:
+    fr: Bonjour, Boulangerie Martin
+    en: Hello, Martin Bakery
+    pt: Olá, Padaria Martin
+  qtHeadQtClient7:
+    fr: Votre espace client
+    en: Your customer portal
+    pt: Sua área do cliente
+  mkPanelMkH3:
+    fr: Commande C-2318 · livraison prévue jeudi
+    en: Order C-2318 · delivery due Thursday
+    pt: Pedido P-2318 · entrega prevista para quinta
+  doneSpan:
+    fr: Commande reçue
+    en: Order received
+    pt: Pedido recebido
+  doneSpan2:
+    fr: En fabrication
+    en: In production
+    pt: Em produção
+  nowSpan:
+    fr: Expédiée
+    en: Shipped
+    pt: Enviado
+  mkStepsSpan:
+    fr: Livrée
+    en: Delivered
+    pt: Entregue
+  mkPanelMkH4:
+    fr: Mes commandes
+    en: My orders
+    pt: Meus pedidos
+  mkTrSpan41:
+    fr: Commande
+    en: Order
+    pt: Pedido
+  mkTrSpan42:
+    fr: Date
+    en: Date
+    pt: Data
+  mkTrSpan43:
+    fr: Montant
+    en: Amount
+    pt: Valor
+  mkTrSpan44:
+    fr: Statut
+    en: Status
+    pt: Status
+  mkTrSpan45:
+    fr: C-2318
+    en: C-2318
+    pt: P-2318
+  mkTrSpan46:
+    fr: 28 oct.
+    en: 28 Oct
+    pt: 28 out.
+  mkTrSpan47:
+    fr: "1\_240\_€"
+    en: €1,240
+    pt: "R$\_7.440"
+  mkTrSpan48:
+    fr: <span class="mk-pill mk-info">Expédiée</span>
+    en: <span class="mk-pill mk-info">Shipped</span>
+    pt: <span class="mk-pill mk-info">Enviado</span>
+  mkTrSpan49:
+    fr: C-2301
+    en: C-2301
+    pt: P-2301
+  mkTrSpan50:
+    fr: 14 oct.
+    en: 14 Oct
+    pt: 14 out.
+  mkTrSpan51:
+    fr: "3\_600\_€"
+    en: €3,600
+    pt: "R$\_21.600"
+  mkTrSpan52:
+    fr: <span class="mk-pill mk-ok">Livrée</span>
+    en: <span class="mk-pill mk-ok">Delivered</span>
+    pt: <span class="mk-pill mk-ok">Entregue</span>
+  mkTrSpan53:
+    fr: C-2287
+    en: C-2287
+    pt: P-2287
+  mkTrSpan54:
+    fr: 2 oct.
+    en: 2 Oct
+    pt: 2 out.
+  mkTrSpan55:
+    fr: "890\_€"
+    en: €890
+    pt: "R$\_5.340"
+  mkTrSpan56:
+    fr: <span class="mk-pill mk-ok">Livrée</span>
+    en: <span class="mk-pill mk-ok">Delivered</span>
+    pt: <span class="mk-pill mk-ok">Entregue</span>
+  mkAsideMkH5:
+    fr: Mes factures
+    en: My invoices
+    pt: Minhas faturas
+  mkItemSmall8:
+    fr: "1\_240\_€"
+    en: €1,240
+    pt: "R$\_7.440"
+  mkItemSmall9:
+    fr: "3\_600\_€"
+    en: €3,600
+    pt: "R$\_21.600"
+  mkItemSmall10:
+    fr: "890\_€"
+    en: €890
+    pt: "R$\_5.340"
+  mkAsideMkH6:
+    fr: Messages
+    en: Messages
+    pt: Mensagens
+  mkAsideMkMsg:
+    fr: Bonjour, pouvez-vous livrer avant 10 h ?
+    en: Hi, could you deliver before 10am?
+    pt: Olá, vocês podem entregar antes das 10h?
+  mkAsideMkMsg2:
+    fr: Oui, c'est noté pour jeudi 8 h 30.
+    en: Yes, booked for Thursday 8:30.
+    pt: Sim, anotado para quinta às 8h30.
+  qtFigureFigcaption:
+    fr: 'Exemple : ce que voit votre client en se connectant.'
+    en: 'Example: what your customer sees when they log in.'
+    pt: 'Exemplo: o que o seu cliente vê ao entrar.'
+  audit:
+    fr: Dites-nous ce que vos clients vous demandent le plus souvent.
+    en: Tell us what your customers ask you most often.
+    pt: Conte para nós o que os seus clientes mais perguntam.

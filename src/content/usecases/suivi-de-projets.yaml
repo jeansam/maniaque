@@ -1,0 +1,151 @@
+order: 7
+slug:
+  fr: suivi-de-projets
+  en: project-tracking
+  pt: gestao-de-projetos
+strings:
+  title:
+    fr: Suivi de projets
+    en: Project tracking
+    pt: Gestão de projetos
+  description:
+    fr: Tâches, temps passé, budget et facturation sont réunis sur chaque projet.
+    en: Tasks, time spent, budget and invoicing come together on every project.
+    pt: Tarefas, horas trabalhadas, orçamento e faturamento ficam reunidos em cada projeto.
+  uc:
+    fr: Un suivi de projets qui voit la dérive, <span>avant qu'elle coûte cher.</span>
+    en: Project tracking that spots the drift, <span>before it gets expensive.</span>
+    pt: Uma gestão de projetos que vê o desvio, <span>antes que ele saia caro.</span>
+  ucLede:
+    fr: Nous construisons des outils de suivi de projets pour les entreprises de services, les bureaux d'études et les agences. Tâches, temps passé, budget et facturation sont réunis sur chaque projet. Vous voyez en un coup d'œil ce qui est consommé, ce qui reste, et ce qu'il est temps de facturer.
+    en: We build project tracking tools for service businesses, engineering firms and agencies. Tasks, time spent, budget and invoicing come together on every project. You see at a glance what's used, what's left, and what's ready to invoice.
+    pt: Construímos ferramentas de gestão de projetos para empresas de serviços, escritórios de engenharia e agências. Tarefas, horas trabalhadas, orçamento e faturamento ficam reunidos em cada projeto. Você vê num relance o que foi consumido, o que resta e o que já está na hora de faturar.
+  ucVisualAriaLabel:
+    fr: 'Exemple d''écran : suivi de projets'
+    en: 'Example screen: project tracking'
+    pt: 'Exemplo de tela: gestão de projetos'
+  qtFigureQtAriaLabel:
+    fr: 'Exemple d''écran : suivi de projets'
+    en: 'Example screen: project tracking'
+    pt: 'Exemplo de tela: gestão de projetos'
+  qtAppClass: qt-app
+  qtSideQtBrand12:
+    fr: <em></em>Projets
+    en: <em></em>Projects
+    pt: <em></em>Projetos
+  qtSideOn13:
+    fr: Projets
+    en: Projects
+    pt: Projetos
+  qtSideLi32:
+    fr: Temps
+    en: Time
+    pt: Horas
+  qtSideLi33:
+    fr: Équipe
+    en: Team
+    pt: Equipe
+  qtSideLi34:
+    fr: Facturation
+    en: Invoicing
+    pt: Faturamento
+  qtHeadQtNum13:
+    fr: Projets en cours
+    en: Active projects
+    pt: Projetos em andamento
+  qtHeadQtClient13:
+    fr: 4 projets · 9 personnes
+    en: 4 projects · 9 people
+    pt: 4 projetos · 9 pessoas
+  mkTrSpan103:
+    fr: Projet
+    en: Project
+    pt: Projeto
+  mkTrSpan104:
+    fr: Avancement
+    en: Progress
+    pt: Andamento
+  mkTrSpan105:
+    fr: Budget consommé
+    en: Budget used
+    pt: Orçamento consumido
+  mkTrSpan106:
+    fr: Rénovation siège Dufour
+    en: Dufour HQ refit
+    pt: Reforma da sede Dufour
+  mkTrSpan107:
+    fr: <span class="mk-pill mk-ok">Dans les clous</span>
+    en: <span class="mk-pill mk-ok">On track</span>
+    pt: <span class="mk-pill mk-ok">Dentro do previsto</span>
+  mkTrSpan108:
+    fr: Audit énergétique Leroy
+    en: Leroy energy audit
+    pt: Diagnóstico energético Leroy
+  mkTrSpan109:
+    fr: <span class="mk-pill mk-bad">Dérive</span>
+    en: <span class="mk-pill mk-bad">Overrun</span>
+    pt: <span class="mk-pill mk-bad">Desvio</span>
+  mkTrSpan110:
+    fr: Site web Hôtel des Alpes
+    en: Hotel des Alpes website
+    pt: Site Hotel dos Alpes
+  mkTrSpan111:
+    fr: <span class="mk-pill mk-ok">Dans les clous</span>
+    en: <span class="mk-pill mk-ok">On track</span>
+    pt: <span class="mk-pill mk-ok">Dentro do previsto</span>
+  mkTrSpan112:
+    fr: Étude Clinique du Parc
+    en: Park Clinic study
+    pt: Estudo Clínica do Parque
+  mkTrSpan113:
+    fr: <span class="mk-pill mk-warn">À surveiller</span>
+    en: <span class="mk-pill mk-warn">Watch</span>
+    pt: <span class="mk-pill mk-warn">Atenção</span>
+  mkAsideMkH11:
+    fr: Audit énergétique Leroy
+    en: Leroy energy audit
+    pt: Diagnóstico energético Leroy
+  mkAsideMkSub3:
+    fr: 71 % du budget pour 40 % du travail
+    en: 71% of budget for 40% of the work
+    pt: 71% do orçamento para 40% do trabalho
+  mkLineSpan12:
+    fr: Temps prévu
+    en: Planned time
+    pt: Horas previstas
+  mkLineB8:
+    fr: 60 h
+    en: 60 h
+    pt: 60h
+  mkLineSpan13:
+    fr: Temps passé
+    en: Time spent
+    pt: Horas trabalhadas
+  mkLineB9:
+    fr: 43 h
+    en: 43 h
+    pt: 43h
+  mkLineSpan14:
+    fr: Reste à faire estimé
+    en: Estimated to finish
+    pt: Restante estimado
+  mkLineB10:
+    fr: 38 h
+    en: 38 h
+    pt: 38h
+  mkAsideMkAlert2:
+    fr: 'Dépassement prévu : 21 h. Prévenir le client ou revoir le périmètre.'
+    en: 'Expected overrun: 21h. Warn the client or rework the scope.'
+    pt: 'Estouro previsto: 21h. Avisar o cliente ou rever o escopo.'
+  mkAsideMkBtn5:
+    fr: Facturer l'étape 1
+    en: Invoice stage 1
+    pt: Faturar a etapa 1
+  qtFigureFigcaption:
+    fr: 'Exemple : un projet qui dérive, repéré à mi-parcours.'
+    en: 'Example: a project going over, caught halfway through.'
+    pt: 'Exemplo: um projeto com desvio, identificado no meio do caminho.'
+  audit:
+    fr: Dites-nous comment vous suivez vos projets aujourd'hui.
+    en: Tell us how you track your projects today.
+    pt: Conte para nós como você acompanha os seus projetos hoje.

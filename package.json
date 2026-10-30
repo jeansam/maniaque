@@ -1,0 +1,20 @@
+{
+  "name": "maniaque",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeansam/maniaque.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jeansam/maniaque/issues"
+  },
+  "homepage": "https://github.com/jeansam/maniaque#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.7",
+    "js-yaml": "^4.3.2"
+  },
+  "private": true
+}

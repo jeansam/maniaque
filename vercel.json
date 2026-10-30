@@ -1,4 +1,6 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": "_site",
   "redirects": [
     { "source": "/", "has": [{ "type": "cookie", "key": "maniaque-lang", "value": "fr" }], "destination": "/fr/", "permanent": false },
     { "source": "/", "has": [{ "type": "cookie", "key": "maniaque-lang", "value": "pt" }], "destination": "/pt/", "permanent": false },
