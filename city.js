@@ -1,5 +1,5 @@
 // Ville choisie : lien d'audit, prix et devise, mentions géographiques et personne de l'À propos.
-// La langue, elle, est celle de la page (/, /en/, /pt/) : changer de langue ne change pas de ville.
+// La langue, elle, est celle de la page (/fr/, /, /pt/ : l'accueil anglais est à la racine) : changer de langue ne change pas de ville.
 // C'est ici, et seulement ici, qu'on change le lien d'audit et les prix de chaque ville : les liens
 // et prix écrits dans le HTML ne servent que si le JavaScript ne se charge pas.
 (function () {

@@ -4,7 +4,7 @@ Site vitrine de l'offre Maniaque : outils sur mesure pour PME, demandes illimit�
 
 Site statique, sans étape de build : Vercel le sert tel quel.
 
-- `index.html` (et `en/`, `pt/`) : l'accueil, une carte du monde (`images/world.svg`) avec les trois villes ; survoler une ville montre la personne qui y répond, cliquer ouvre l'offre dans la langue de la ville. `map.js` gère l'appui sur mobile (premier appui : la fiche, second : la page)
+- `index.html` : l'accueil, en anglais par défaut (`fr/` pour le français, `pt/` pour le portugais ; `en/` redirige vers `/`) : une carte du monde (`images/world.svg`) avec les trois villes ; survoler une ville montre la personne qui y répond, cliquer ouvre l'offre dans la langue de la ville. `map.js` gère l'appui sur mobile (premier appui : la fiche, second : la page)
 - `offre/index.html` (et `en/offer/`, `pt/oferta/`) : la page de l'offre (ancienne page d'accueil)
 - `styles.css` : la charte (papier millimétré, encre bleue, rouge de correction)
 - `script.js` : l'animation du titre de l'offre, le filtre de la FAQ par profil et les étapes repliables sur mobile
@@ -17,7 +17,7 @@ Site statique, sans étape de build : Vercel le sert tel quel.
   - un lien `?ville=sao-paulo` (ou `johannesburg`, `marseille`) choisit la ville
 - `nav.js` : le menu hamburger sur mobile et tablette, et le menu « plus » (Cas d'usage, À propos, Articles) sur ordinateur
 - `articles/` : la liste des articles (`articles/index.html`) et un dossier par article, avec son illustration
-- `en/` : la version anglaise
+- `en/` : la version anglaise (sauf l'accueil, à la racine)
 - `pt/` : la version en portugais du Brésil (`pt/casos-de-uso/`, `pt/sobre/`, `pt/artigos/`), illustrations des articles comprises, dont les exemples des écrans sont en reais
 - `mentions-legales.html` (et `en/legal-notice/`, `pt/aviso-legal/`) : à compléter (adresse)
 
