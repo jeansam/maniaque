@@ -6,6 +6,8 @@
   var CITIES = {
     marseille: {
       name: { fr: "Marseille", en: "Marseille", pt: "Marselha" },
+      // Notre-Dame de la Garde : la basilique sur sa colline, le clocher et la Bonne Mère au sommet
+      landmark: '<path d="M2 21c3-2.2 6.5-3 10-3s7 .8 10 3"/><path d="M6 18.6V13.5l2.5-2 2.5 2v4.6"/><path d="M11 18.2V9h4v9.2"/><path d="M11 9l2-2 2 2"/><path d="M13 7V4.2"/><circle cx="13" cy="3" r="1"/>',
       person: { name: "Jean-Sam", photo: "/images/avatar-jean-samuel.webp" },
       lang: "fr",
       book: "https://calendar.app.google/vFyLbndCK2tUXYibA",
@@ -14,6 +16,8 @@
     },
     "sao-paulo": {
       name: { fr: "São Paulo", en: "São Paulo", pt: "São Paulo" },
+      // MASP : la grande boîte suspendue entre ses deux portiques
+      landmark: '<path d="M2 20h20"/><path d="M4.5 20V7.5h15V20"/><rect x="4.5" y="9.5" width="15" height="5"/><path d="M8 12h1.5M11.25 12h1.5M14.5 12H16"/>',
       person: { name: "Eliakim", photo: "/images/avatar-eliakim-oliveira.webp" },
       lang: "pt",
       book: "https://wa.me/5511936207406", // WhatsApp, en attendant un agenda
@@ -22,6 +26,8 @@
     },
     johannesburg: {
       name: { fr: "Johannesbourg", en: "Johannesburg", pt: "Joanesburgo" },
+      // Tour Hillbrow : le fût élancé, la nacelle et l'antenne
+      landmark: '<path d="M8.5 21 11 16V10m2 0v6l2.5 5"/><path d="M6 21h12"/><rect x="9" y="6.5" width="6" height="3.5" rx="1"/><path d="M10 6.5h4M12 6.5V2"/>',
       person: { name: "Nthuseni", photo: "/images/avatar-nthuseni-mathaga.webp" },
       lang: "en",
       book: "https://www.linkedin.com/in/nmathaga/", // LinkedIn de Nthuseni, en attendant un agenda
@@ -87,6 +93,11 @@
     document.querySelectorAll("[data-set-city]").forEach(function (a) {
       var current = a.getAttribute("data-set-city") === id;
       if (current) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
+      // Dans le menu des villes, le monument de la ville dessiné devant son nom
+      var other = CITIES[a.getAttribute("data-set-city")];
+      if (other && a.closest(".picker-city")) {
+        a.insertAdjacentHTML("afterbegin", '<svg class="landmark" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">' + other.landmark + "</svg>");
+      }
       // Choisir une ville l'enregistre ; le lien mène à la page dans la langue de cette ville
       a.addEventListener("click", function () {
         var chosen = a.getAttribute("data-set-city");
