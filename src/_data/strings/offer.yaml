@@ -44,10 +44,6 @@ seePricing:
   fr: Voir les tarifs
   en: See pricing
   pt: Ver os preços
-answers:
-  fr: vous répond.
-  en: will get back to you.
-  pt: responde a você.
 showcaseLabel:
   fr: "Exemples d'outils sur mesure : tableaux de bord, CRM, stocks, plannings et applications mobiles"
   en: "Examples of custom tools: dashboards, CRM, inventory, schedules and mobile apps"

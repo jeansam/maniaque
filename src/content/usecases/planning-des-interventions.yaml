@@ -1,4 +1,6 @@
 order: 3
+# Famille, pour le filtre de la page Cas d'usage (libellés dans usecaseIndex.yaml, sous groups)
+group: operations
 slug:
   fr: planning-des-interventions
   en: job-scheduling

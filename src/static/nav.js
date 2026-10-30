@@ -66,3 +66,19 @@
   window.addEventListener("scroll", update, { passive: true });
   update();
 })();
+
+// Page Cas d'usage : les familles (Ventes et clients, Opérations…) filtrent les cartes
+(function () {
+  var filter = document.querySelector(".uses-filter");
+  if (!filter) return;
+  var buttons = filter.querySelectorAll("[data-group]");
+  var cards = document.querySelectorAll(".uses > li[data-group]");
+  filter.hidden = false;
+  buttons.forEach(function (b) {
+    b.addEventListener("click", function () {
+      var group = b.getAttribute("data-group");
+      buttons.forEach(function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
+      cards.forEach(function (li) { li.hidden = group !== "all" && li.getAttribute("data-group") !== group; });
+    });
+  });
+})();

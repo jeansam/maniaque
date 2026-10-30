@@ -1,13 +1,17 @@
 {#- Blocs de balisage partagés par plusieurs modèles.
     Les maquettes d'écran existent en deux styles : « qt » (pages des cas d'usage) et « dc » (vitrine de l'offre). -#}
 
-{#- Encart de fin de page pour réserver un audit ; anchor et alt servent à la page de l'offre #}
-{% macro cta(title, text, button, anchor, alt) %}<section class="cta grid-paper"{% if anchor %} id="{{ anchor }}"{% endif %} aria-labelledby="t-audit">
-    <div class="wrap">
-      <h2 id="t-audit">{{ title }}</h2>
-      <p>{{ text }}</p>
-      <a data-book class="btn"{% if anchor %} id="{{ anchor }}-link"{% endif %} target="_blank" rel="noopener">{{ button }}</a>
-{% if alt %}      <p class="cta-alt">{{ alt }}</p>
+{#- Encart de fin de page pour réserver un audit ; anchor et alt servent à la page de l'offre.
+    who : la personne qui répond dans la ville choisie (photo, prénom, texte, lien vers l'À propos), en face du bouton #}
+{% macro cta(title, text, button, anchor, alt, who) %}<section class="cta grid-paper"{% if anchor %} id="{{ anchor }}"{% endif %} aria-labelledby="t-audit">
+    <div class="wrap{% if who %} cta-split{% endif %}">
+      <div>
+        <h2 id="t-audit">{{ title }}</h2>
+        <p>{{ text }}</p>
+        <a data-book class="btn"{% if anchor %} id="{{ anchor }}-link"{% endif %} target="_blank" rel="noopener">{{ button }}</a>
+{% if alt %}        <p class="cta-alt">{{ alt }}</p>
+{% endif %}      </div>
+{% if who %}      <a class="cta-who" href="{{ who.href }}"><img data-person-photo src="{{ who.photo }}" width="120" height="120" alt=""><span><strong data-person-name>{{ who.name }}</strong> {{ who.text }}</span></a>
 {% endif %}    </div>
   </section>{% endmacro %}
 

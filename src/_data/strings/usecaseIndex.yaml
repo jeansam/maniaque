@@ -14,6 +14,22 @@ usesSectionLede:
   fr: Voici les outils les plus plébiscités. Chacun est construit autour de votre façon de travailler, pas l'inverse, et peut commencer petit, puis grandir demande après demande.
   en: These are the most popular tools. Each one is built around the way you work, not the other way round, and can start small, then grow one request at a time.
   pt: Estas são as ferramentas mais pedidas. Cada uma é construída em torno da sua forma de trabalhar, e não o contrário, e pode começar pequena e crescer pedido após pedido.
+# Filtre de la page : une famille par cas d'usage (champ group de chaque cas), « Tous » en premier
+filterLabel:
+  fr: Filtrer les cas d'usage
+  en: Filter use cases
+  pt: Filtrar casos de uso
+groups:
+  - id: all
+    label: { fr: Tous, en: All, pt: Todos }
+  - id: sales
+    label: { fr: Ventes et clients, en: Sales and customers, pt: Vendas e clientes }
+  - id: operations
+    label: { fr: Opérations, en: Operations, pt: Operações }
+  - id: team
+    label: { fr: Équipe, en: Team, pt: Equipe }
+  - id: admin
+    label: { fr: Pilotage et administratif, en: Management and admin, pt: Gestão e administrativo }
 usesLink:
   fr: Voir l'exemple →
   en: See the example →

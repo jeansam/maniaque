@@ -65,7 +65,7 @@
     <nav class="bar-nav" id="main-nav" aria-label="{{ t.mainNav }}">
 {% for key, a in t.offerSections %}      <a href="{{ routes.offer[lang] }}#{{ a.id }}">{{ a.label }}</a>
 {% endfor %}      <div class="nav-more">
-        {{ c.burger("more-btn", "more-menu", t.moreLinks) }}
+        <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-menu" aria-label="{{ t.moreLinks }}">{{ t.more }}</button>
         <div class="more-menu" id="more-menu">
 {% for key in ["usecaseIndex", "about", "articleIndex"] %}          <a href="{{ routes[key][lang] }}"{% if section == key %} aria-current="page"{% endif %}>{{ t.sections[key] }}</a>
 {% endfor %}        </div>

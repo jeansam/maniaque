@@ -157,6 +157,12 @@ a { color: inherit; }
   text-decoration: underline; text-decoration-color: var(--red); text-decoration-thickness: 1.5px; text-underline-offset: 3px;
 }
 .city-btn:hover, .picker-city.is-open .city-btn { color: var(--red-ink); }
+/* Petit chevron : la ville s'ouvre en menu, comme la langue */
+.city-btn::after {
+  content: ""; display: inline-block; width: .32rem; height: .32rem; margin: 0 .15rem 0 .4rem; vertical-align: .2em;
+  border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg);
+}
+.picker-city.is-open .city-btn::after { vertical-align: -.05em; transform: rotate(-135deg); }
 
 /* Blocs propres à une ville : seuls ceux de la ville choisie s'affichent */
 html[data-city="marseille"] [data-city-only]:not([data-city-only~="marseille"]),
@@ -190,8 +196,7 @@ html[data-city="johannesburg"] [data-city-only]:not([data-city-only~="johannesbu
 /* Menus flottants : la ville et la langue */
 .picker { position: relative; display: inline-flex; }
 .picker-city .picker-menu { left: -.75rem; right: auto; top: calc(100% + .5rem); z-index: 30; }
-/* Sur ordinateur, le bouton de langue se rapproche du menu « plus » (moitié de l'espace habituel) */
-@media (min-width: 1081px) { .nav-more + .picker-lang { margin-left: -.875rem; } }
+
 /* Sur petit écran, le menu des villes part du bord gauche de la phrase pour ne pas déborder */
 @media (max-width: 640px) {
   .tagline { position: relative; }
@@ -200,18 +205,21 @@ html[data-city="johannesburg"] [data-city-only]:not([data-city-only~="johannesbu
 }
 /* Pied des mentions légales : retour à l'accueil et autres langues groupés */
 .foot-links { display: flex; flex-wrap: wrap; gap: 1.25rem; }
-/* Menu « plus » sur ordinateur : Cas d'usage, À propos et Articles derrière un hamburger */
+/* Menu « Plus » sur ordinateur : Cas d'usage, À propos et Articles, derrière un mot et un chevron */
 .nav-more { position: relative; display: flex; }
 .more-btn {
-  display: inline-flex; flex-direction: column; justify-content: center; gap: 4px;
-  width: 2.75rem; height: 2.5rem; padding: 0 .7rem;
-  background: transparent; border: 1.5px solid var(--grid-strong); border-radius: 3px; cursor: pointer;
+  display: inline-flex; align-items: center; gap: .4rem; padding: 0;
+  font: inherit; font-size: .9375rem; font-weight: 500; color: var(--pencil);
+  background: none; border: 0; cursor: pointer;
 }
-.more-btn span { display: block; height: 2px; background: var(--ink); border-radius: 2px; transition: transform .2s, opacity .2s; }
-.more-btn:hover, .nav-more:has([aria-current]) .more-btn { border-color: var(--ink); }
-.nav-more.is-open .more-btn span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
-.nav-more.is-open .more-btn span:nth-child(2) { opacity: 0; }
-.nav-more.is-open .more-btn span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+.more-btn::after {
+  content: ""; width: .4rem; height: .4rem; margin-top: -.2rem;
+  border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg);
+  transition: transform .2s;
+}
+.more-btn:hover, .nav-more.is-open .more-btn { color: var(--ink); }
+.nav-more:has([aria-current]) .more-btn { color: var(--ink); font-weight: 600; }
+.nav-more.is-open .more-btn::after { margin-top: .2rem; transform: rotate(-135deg); }
 .more-menu, .picker-menu {
   display: none; position: absolute; top: calc(100% + .6rem); right: 0; min-width: 12rem;
   flex-direction: column; padding: .4rem;
@@ -228,7 +236,7 @@ html[data-city="johannesburg"] [data-city-only]:not([data-city-only~="johannesbu
 /* Langues : un petit drapeau devant chaque nom */
 .picker-lang .picker-menu a { display: flex; align-items: center; gap: .55rem; }
 .flag { flex: none; width: 1.25rem; height: .875rem; border-radius: 2px; box-shadow: 0 0 0 1px rgba(20, 40, 80, .15); }
-@media (prefers-reduced-motion: reduce) { .more-btn span { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .more-btn::after { transition: none; } }
 @media (max-width: 1080px) {
   .more-btn { display: none; }
   .nav-more, .nav-more .more-menu { display: contents; }
@@ -435,8 +443,8 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 .steps li { counter-increment: step; border-top: 2px solid var(--ink); padding-top: 1.25rem; }
 .steps li::before {
   content: counter(step);
-  display: block; font-size: 3rem; font-weight: 300; line-height: 1; margin-bottom: 1rem;
-  font-variant-numeric: tabular-nums; color: var(--grid-strong);
+  display: block; font-size: 3rem; font-weight: 700; line-height: 1; margin-bottom: 1rem; letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums; color: var(--red);
 }
 .step-meta { color: var(--red-ink); font-weight: 600; font-size: 1rem; margin-top: .3rem; }
 .steps li p:not(.step-meta) { margin-top: .9rem; color: var(--pencil); }
@@ -647,6 +655,9 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 .uses-page { padding-top: clamp(3rem, 2rem + 4vw, 5.5rem); }
 .uses-page .about-title { max-width: 18ch; }
 .uses-more { margin-top: 2rem; font-size: var(--t-lead); }
+.uses-filter { display: block; margin-top: 2.5rem; }
+.uses-filter[hidden], .uses > li[hidden] { display: none; }
+.uses-filter + .uses { margin-top: 1.5rem; }
 
 /* ---------- Appel final ---------- */
 
@@ -655,6 +666,28 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 .cta p { margin-top: 1.25rem; font-size: var(--t-lead); max-width: 34rem; line-height: 1.45; }
 .cta .btn { margin-top: 2rem; }
 .cta .cta-alt { font-size: 1rem; color: var(--pencil); margin-top: 1rem; }
+/* En face du bouton, la personne qui répond : on sait à qui on parle avant de réserver */
+.cta-split { display: grid; gap: 2.5rem; }
+@media (min-width: 900px) { .cta-split { grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 4rem; } }
+.cta-who {
+  display: flex; align-items: center; gap: 1rem; justify-self: start;
+  padding: .75rem 1.5rem .75rem .75rem;
+  background: #fff; border: 1.5px solid var(--ink); border-radius: 4rem;
+  color: var(--ink); text-decoration: none; font-size: 1.125rem; line-height: 1.3;
+  transform: rotate(-1.5deg);
+  transition: transform .2s ease;
+}
+.cta-who:hover { transform: rotate(0); }
+.cta-who img { flex: none; width: 5.5rem; height: 5.5rem; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--red); }
+.cta-who strong { display: block; font-size: 1.375rem; font-weight: 700; letter-spacing: -0.015em; }
+.cta-who:hover strong { text-decoration: underline; text-decoration-color: var(--red); text-decoration-thickness: 2px; text-underline-offset: .2em; }
+@media (min-width: 900px) { .cta-who { margin-right: 2rem; } }
+@media (max-width: 599px) {
+  .cta-who { gap: .75rem; padding-right: 1.25rem; font-size: 1rem; }
+  .cta-who img { width: 4rem; height: 4rem; }
+  .cta-who strong { font-size: 1.125rem; }
+}
+@media (prefers-reduced-motion: reduce) { .cta-who { transition: none; } }
 
 /* ---------- Pied de page ---------- */
 
@@ -961,6 +994,18 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 .uc-hero .btn { margin-top: 2rem; }
 .uc-facts { display: flex; flex-wrap: wrap; gap: .5rem 0; margin-top: 2rem; color: var(--pencil); font-size: 1rem; }
 .uc-facts li + li::before { content: ""; display: inline-block; width: 1px; height: 1em; margin: 0 1rem; vertical-align: -.15em; background: var(--grid-strong); }
+/* Sur grand écran, le titre à gauche et le texte à droite : la maquette arrive dans le premier écran */
+@media (min-width: 1100px) {
+  .uc-head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 4rem; align-items: end; }
+  .uc-head .uc-title { font-size: clamp(2.4rem, 1rem + 3vw, 3.75rem); }
+  .uc-intro .uc-lede { margin-top: 0; font-size: 1.125rem; }
+  .uc-intro .btn { margin-top: 1.5rem; }
+  /* Une information par ligne : dans une colonne étroite, les séparateurs tomberaient en début de ligne */
+  .uc-intro .uc-facts { flex-direction: column; gap: .3rem; margin-top: 1.25rem; font-size: .9375rem; }
+  .uc-intro .uc-facts li::before, .uc-intro .uc-facts li + li::before {
+    content: ""; display: inline-block; width: .6rem; height: 2px; margin: 0 .6rem 0 0; vertical-align: .3em; background: var(--red);
+  }
+}
 /* Tuile avec exemple : cliquable en entier, le lien se souligne en rouge au survol */
 .uses li:has(.uses-link) { position: relative; transition: border-color .15s; }
 .uses li:has(.uses-link):hover { border-color: var(--grid-strong); }
