@@ -698,15 +698,56 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
     pointer-events: auto; cursor: pointer;
     display: flex; align-items: center; justify-content: space-between; gap: 1rem; width: 100%;
   }
-  .step-toggle::after {
-    content: "+"; font-weight: 400; font-size: 1.5rem; line-height: 1; color: var(--pencil);
-    transition: transform .2s;
-  }
-  .steps li.is-open .step-toggle::after { transform: rotate(45deg); color: var(--red); }
+  .step-toggle::after { transition: transform .2s, border-color .2s; }
   .js .steps li:not(.is-open) .step-desc,
   .js .steps li:not(.is-open) .step-btn { display: none; }
 }
-@media (max-width: 699px) and (prefers-reduced-motion: reduce) { .step-toggle::after { transition: none; } }
+/* Sur mobile, les étapes deviennent une frise : un trait d'encre à gauche, une pastille par étape.
+   L'étape ouverte passe au stylo rouge ; après la dernière, le trait continue en pointillés,
+   parce que les itérations ne s'arrêtent pas. */
+@media (max-width: 699px) {
+  .steps { gap: 0; margin-top: 2rem; }
+  .steps li { position: relative; border-top: 0; padding: 0 0 1.75rem 3rem; }
+  .steps li:last-child { padding-bottom: 0; }
+  .steps li::before {
+    position: absolute; left: 0; top: 0; z-index: 1; margin: 0;
+    display: grid; place-items: center; width: 1.75rem; height: 1.75rem; border-radius: 50%;
+    font-size: .875rem; font-weight: 700; line-height: 1; color: var(--ink);
+    background: var(--paper-alt); border: 2px solid var(--ink);
+    transition: background-color .2s, border-color .2s, color .2s, box-shadow .2s;
+  }
+  .steps li::after {
+    content: ""; position: absolute; left: calc(.875rem - 1px); top: 1.75rem; bottom: 0; width: 2px;
+    background: var(--ink);
+  }
+  .steps li:last-child::after {
+    bottom: auto; height: 2.75rem;
+    background: repeating-linear-gradient(to bottom, var(--ink) 0 4px, transparent 4px 9px);
+    -webkit-mask-image: linear-gradient(#000 30%, transparent);
+    mask-image: linear-gradient(#000 30%, transparent);
+  }
+  .steps li.is-open::before {
+    color: #fff; background: var(--red); border-color: var(--red);
+    box-shadow: 0 0 0 5px rgba(210, 37, 27, .16);
+  }
+  .steps h3 { font-size: 1.25rem; line-height: 1.4; }
+  .steps .step-meta { margin-top: 0; font-size: .9375rem; }
+  /* Toute la ligne titre et durée se touche, pas seulement le titre */
+  .step-toggle::before { content: ""; position: absolute; left: 0; right: 0; top: -.5rem; height: 4.25rem; }
+  .step-toggle::after {
+    content: ""; flex: none; width: .55rem; height: .55rem; margin-right: .3rem;
+    border: solid var(--pencil); border-width: 0 2px 2px 0; transform: translateY(-25%) rotate(45deg);
+  }
+  .steps li.is-open .step-toggle::after { border-color: var(--red); transform: translateY(25%) rotate(-135deg); }
+  .steps li p.step-desc { margin-top: .75rem; }
+  .steps .step-btn { margin-top: 1rem; }
+  .steps li.is-open .step-desc, .steps li.is-open .step-btn { animation: step-in .25s ease-out; }
+}
+@keyframes step-in { from { opacity: 0; transform: translateY(-.35rem); } }
+@media (max-width: 699px) and (prefers-reduced-motion: reduce) {
+  .step-toggle::after, .steps li::before { transition: none; }
+  .steps li.is-open .step-desc, .steps li.is-open .step-btn { animation: none; }
+}
 
 /* ---------- Bandeau d'exemples d'outils ---------- */
 /* Deux rangées de maquettes (ordinateur et mobile) qui défilent en sens inverse. */
