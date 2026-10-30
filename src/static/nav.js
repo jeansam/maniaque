@@ -43,3 +43,26 @@
     if (e.key === "Escape" && more.classList.contains("is-open")) { setMore(false); moreBtn.focus(); }
   });
 })();
+
+// Mobile et tablette : la barre « Réserver mon audit » apparaît en bas une fois le haut de page passé,
+// et s'efface quand un autre bouton d'audit est déjà à l'écran (encart de fin de page, tarifs…)
+(function () {
+  var bar = document.querySelector(".book-bar");
+  if (!bar) return;
+  var link = bar.querySelector("a");
+  var visible = new Set();
+  function update() {
+    var show = window.scrollY > window.innerHeight * 0.6 && visible.size === 0;
+    bar.classList.toggle("is-shown", show);
+    link.tabIndex = show ? 0 : -1;
+  }
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { e.isIntersecting ? visible.add(e.target) : visible.delete(e.target); });
+      update();
+    });
+    document.querySelectorAll("main a[data-book]").forEach(function (a) { io.observe(a); });
+  }
+  window.addEventListener("scroll", update, { passive: true });
+  update();
+})();

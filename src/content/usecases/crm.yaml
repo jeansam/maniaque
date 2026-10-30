@@ -27,9 +27,9 @@ strings:
     pt: "Construímos CRMs para PMEs que vendem por orçamento, por telefone ou em campo. Seus contatos, seus negócios e seus follow-ups ficam no mesmo lugar, com as etapas de venda que você realmente usa. Toda manhã, cada um sabe para quem ligar. E sem licença por usuário: a equipe toda tem acesso."
   appClass: qt-app
   caption:
-    fr: "Exemple : le pipeline de la semaine, et les relances du jour à droite."
-    en: "Example: this week's pipeline, with today's follow-ups on the right."
-    pt: "Exemplo: o funil da semana e, à direita, os follow-ups do dia."
+    fr: "Exemple : le pipeline de la semaine, et les relances du jour."
+    en: "Example: this week's pipeline, and today's follow-ups."
+    pt: "Exemplo: o funil da semana e os follow-ups do dia."
   audit:
     fr: Dites-nous comment vous suivez vos clients aujourd'hui.
     en: Tell us how you keep track of customers today.

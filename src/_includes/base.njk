@@ -78,7 +78,10 @@
 {%- endif %}
 
 <main id="{{ t.mainId }}"{% if mainClass %} class="{{ mainClass }}"{% endif %}>{{ content }}</main>
-
+{% if variant != "home" %}
+{#- Sur mobile et tablette, le bouton d'audit reste à portée de pouce une fois l'en-tête passé (nav.js) #}
+<div class="book-bar"><a data-book class="btn" target="_blank" rel="noopener" tabindex="-1">{{ t.bookFree }}</a></div>
+{% endif %}
 {% if variant == "home" -%}
 <footer class="map-foot">
   <a href="{{ routes.legal[lang] }}">{{ t.legal }}</a>

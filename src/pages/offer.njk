@@ -71,9 +71,19 @@ scripts: [script.js, nav.js]
             <tr><th scope="row">{{ row.label }}</th>{% for value in row.values %}<td{% if row.num %} class="num"{% endif %}>{{ value }}</td>{% endfor %}</tr>{% endfor %}
           </tbody>
         </table>
+{#- Sur mobile, le tableau devient une carte par formule : mêmes textes, lus de haut en bas (l'un ou l'autre est affiché, jamais les deux) #}
+        <div class="plans">{% for plan in s.plans %}{% set i = loop.index0 %}
+          <div class="plan">
+            <p class="plan-name">{{ plan }}</p>
+            <dl>{% for row in s.planRows %}
+              <div{% if row.num %} class="num"{% endif %}><dt>{{ row.label }}</dt><dd>{{ row.values[i] }}</dd></div>{% endfor %}
+            </dl>
+          </div>{% endfor %}
+        </div>
         <div class="quote-notes">{% for note in s.notes %}
           <p><button type="button" class="note-toggle" aria-expanded="false" aria-controls="note-{{ note.id }}">{{ note.title }}</button><span class="note-sep">{{ note.sep or t.colon }}</span><span class="note-body" id="note-{{ note.id }}">{{ note.text }}</span></p>{% endfor %}
         </div>
+        <a data-book class="btn quote-btn" target="_blank" rel="noopener">{{ t.bookFree }}</a>
       </div>
     </div>
   </section>
