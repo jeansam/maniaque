@@ -1,0 +1,22 @@
+---
+layout: base.njk
+noindex: true
+---
+{#- Les mentions légales : ni navigation ni scripts, pas d'indexation par les moteurs de recherche -#}
+<header class="bar">
+  <div class="wrap bar-inner">
+    <div class="brand">
+      {% include "wordmark.njk" %}
+    </div>
+  </div>
+</header>
+<main class="{{ mainClass }}">{{ content }}</main>
+<footer class="foot">
+  <div class="wrap foot-inner">
+    {% set small = true %}{% include "wordmark.njk" %}
+    <span class="foot-links">
+      <a href="{{ routes.home[lang] }}">{{ t.backHome }}</a>
+{% for l in langs %}{% if l.code != lang %}      <a href="{{ routes.legal[l.code] }}" hreflang="{{ l.htmlLang }}" lang="{{ l.htmlLang }}" aria-label="{{ l.versionLabel }}">{{ l.short }}</a>
+{% endif %}{% endfor %}    </span>
+  </div>
+</footer>

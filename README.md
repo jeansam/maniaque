@@ -28,7 +28,10 @@ npm start
 
 ## Organisation
 
-- `src/_includes/base.njk` : le squelette de toutes les pages (`<head>`, en-tête avec les menus des villes et des langues, pied de page) ; trois variantes : page courante, accueil (`variant: home`) et mentions légales (`variant: legal`)
+- `src/_includes/base.njk` : le squelette de toutes les pages (`<head>`, puis le corps, puis les scripts de la page), autour d'un des trois gabarits de `src/_includes/layouts/` :
+  - `page.njk` : la page courante (en-tête avec les menus des villes et des langues, navigation, pied de page), par défaut
+  - `home.njk` : l'accueil (en-tête réduit au logo et aux langues), choisi par `layout: layouts/home.njk`
+  - `legal.njk` : les mentions légales (sans navigation, non indexées), choisi par `layout: layouts/legal.njk`
 - `src/_includes/components.njk` : les blocs partagés (encart d'audit, éléments répétés des maquettes d'écran : menu latéral, en-tête, tableau, indicateurs…)
 - `src/pages/` : un modèle par type de page, générée dans chaque langue (et pour chaque cas d'usage ou article). Le début du fichier dit quelles pages il produit et leurs particularités (titre, balises de partage, scripts)
   - `home.njk` : l'accueil, en anglais à la racine (`/fr/`, `/pt/`) : une carte du monde avec les trois villes ; survoler une ville montre la personne qui y répond, cliquer ouvre l'offre dans la langue de la ville
@@ -44,8 +47,8 @@ npm start
   - un lien `?ville=sao-paulo` (ou `johannesburg`, `marseille`) choisit la ville
 
   Sans JavaScript, chaque page montre les prix et le lien d'audit de sa ville par défaut (celle de sa langue) : la génération les remplit (`eleventy.config.js`)
+- `src/styles.njk` : donne `styles.css`, la charte (papier millimétré, encre bleue, rouge de correction), réunie en un seul fichier à partir des parties de `src/_includes/styles/` : `base.css` (couleurs, typographie, boutons, sections, encart d'audit), `header.css`, `footer.css`, `offer.css`, `showcase.css` (la vitrine de l'offre), `usecases.css`, `pages.css` (À propos, mentions légales), `articles.css`, `home.css`. L'ordre est celui de la liste dans `styles.njk`
 - `src/static/` : les fichiers servis tels quels
-  - `styles.css` : la charte (papier millimétré, encre bleue, rouge de correction)
   - `script.js` : l'animation du titre de l'offre, le filtre de la FAQ par profil et les étapes repliables sur mobile
   - `nav.js` : le menu hamburger sur mobile et tablette, le menu « plus » (Cas d'usage, À propos, Articles) sur ordinateur, et les menus flottants de la ville et de la langue
   - `map.js` : l'appui sur la carte de l'accueil sur mobile (premier appui : la fiche, second : la page)

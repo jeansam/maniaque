@@ -1,0 +1,12 @@
+/* Pages simples : mentions légales et À propos */
+
+/* ---------- Page simple (mentions légales) ---------- */
+
+.page { padding-block: var(--space); }
+.page h1 { font-size: var(--t-h2); font-weight: 760; letter-spacing: -0.03em; line-height: 1.05; }
+.page h2 { font-size: var(--t-h3); margin-top: 2.5rem; }
+.page p { margin-top: .75rem; max-width: 42rem; color: var(--pencil); }
+
+/* Page À propos */
+.about { padding-top: clamp(3rem, 2rem + 4vw, 5.5rem); }
+.about-title { font-size: var(--t-h2); font-weight: 760; line-height: 1.04; letter-spacing: -0.03em; }

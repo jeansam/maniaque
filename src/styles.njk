@@ -1,0 +1,7 @@
+---
+permalink: /styles.css
+eleventyExcludeFromCollections: true
+---
+{#- La feuille de style du site, réunie en un seul fichier à partir des parties de src/_includes/styles/, dans cet ordre -#}
+{% for part in ["base", "header", "footer", "offer", "showcase", "usecases", "pages", "articles", "home"] %}{% include "styles/" + part + ".css" %}
+{% endfor %}

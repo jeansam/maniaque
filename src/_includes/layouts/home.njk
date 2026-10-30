@@ -1,0 +1,19 @@
+---
+layout: base.njk
+bodyClass: home-map
+---
+{#- L'accueil : la carte du monde occupe l'écran, l'en-tête ne garde que le logo et les langues -#}
+<a class="skip" href="#{{ t.mainId }}">{{ t.skip }}</a>
+
+<header class="bar bar-min">
+  <div class="wrap bar-inner">
+    {% include "wordmark.njk" %}
+    {% include "lang-picker.njk" %}
+  </div>
+</header>
+
+<main id="{{ t.mainId }}"{% if mainClass %} class="{{ mainClass }}"{% endif %}>{{ content }}</main>
+
+<footer class="map-foot">
+  <a href="{{ routes.legal[lang] }}">{{ t.legal }}</a>
+</footer>

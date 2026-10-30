@@ -2,7 +2,7 @@
 const { resolve } = require("../../lib/i18n.js");
 
 module.exports = {
-  layout: "base.njk",
+  layout: "layouts/page.njk",
   permalink: (data) => data.p.url,
   eleventyComputed: {
     lang: (data) => data.p.lang,

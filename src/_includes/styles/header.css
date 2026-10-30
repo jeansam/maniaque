@@ -1,0 +1,174 @@
+/* Barre du haut : logo, mention de la ville, navigation, menus de la ville et de la langue, hamburgers */
+
+/* ---------- Barre du haut ---------- */
+
+.bar {
+  position: sticky; top: 0; z-index: 5;
+  background: rgba(246, 248, 250, .94);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--grid);
+}
+.bar-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  min-height: 4rem; gap: 1rem;
+}
+.wordmark {
+  font-weight: 900;
+  font-size: 1.5rem;
+  letter-spacing: -0.04em;
+  text-decoration: none;
+}
+.wordmark-small { font-size: 1.25rem; }
+
+/* Mention locale à côté du logo (version française) */
+.brand { display: flex; align-items: center; gap: .9rem; min-width: 0; }
+.tagline {
+  display: flex; align-items: center; gap: .3rem;
+  padding-left: .9rem; border-left: 1px solid var(--grid-strong);
+  font-size: .875rem; font-weight: 500; color: var(--pencil); white-space: nowrap;
+}
+.tagline-pin { flex: none; color: var(--red); }
+@media (max-width: 1300px) {
+  .brand { flex-direction: column; align-items: flex-start; gap: .1rem; }
+  .bar-inner:has(.tagline) { padding-block: .45rem; }
+  .tagline { padding-left: 0; border-left: 0; font-size: .8125rem; }
+}
+@media (max-width: 420px) { .tagline { font-size: .75rem; white-space: normal; } }
+/* La ville et le point final passent à la ligne ensemble */
+.tagline-city { white-space: nowrap; }
+/* La ville soulignée ouvre le choix de la ville */
+.city-btn {
+  font: inherit; font-weight: 700; color: var(--ink); background: none; border: 0; padding: 0; cursor: pointer;
+  text-decoration: underline; text-decoration-color: var(--red); text-decoration-thickness: 1.5px; text-underline-offset: 3px;
+}
+.city-btn:hover, .picker-city.is-open .city-btn { color: var(--red-ink); }
+
+/* Blocs propres à une ville : seuls ceux de la ville choisie s'affichent */
+html[data-city="marseille"] [data-city-only]:not([data-city-only~="marseille"]),
+html[data-city="sao-paulo"] [data-city-only]:not([data-city-only~="sao-paulo"]),
+html[data-city="johannesburg"] [data-city-only]:not([data-city-only~="johannesburg"]) { display: none; }
+
+/* Il y a de l'IA dans maniaque : les deux lettres portent le rouge de correction */
+.ia { color: var(--red); }
+.split-text .ia { font-weight: 700; }
+/* Dans le titre, elles ne rougissent qu'une fois la retouche livrée */
+.js .target .ia { color: inherit; transition: color .4s .6s; }
+.js.is-fixed .target .ia { color: var(--red); }
+@media (prefers-reduced-motion: reduce) { .js .target .ia { transition: none; } }
+.bar-nav { display: flex; align-items: center; gap: 1.75rem; }
+.bar-nav a:not(.btn) {
+  font-size: .9375rem; font-weight: 500; text-decoration: none; color: var(--pencil);
+}
+.bar-nav a:not(.btn):hover { color: var(--ink); }
+.bar-nav .lang, .bar-min .lang {
+  display: inline-flex; align-items: center; justify-content: center; gap: .35rem;
+  min-width: 2.75rem; height: 2.5rem; padding: 0 .6rem;
+  font: inherit; font-size: .9375rem; font-weight: 700; color: var(--ink); background: transparent; cursor: pointer;
+  border: 1.5px solid var(--grid-strong); border-radius: 3px;
+}
+.bar-nav .lang:hover, .bar-min .lang:hover, .picker-lang.is-open .lang { border-color: var(--ink); }
+/* Petit chevron : la langue s'ouvre en menu, comme la ville */
+.bar-nav .lang::after, .bar-min .lang::after {
+  content: ""; width: .4rem; height: .4rem; margin-top: -.2rem;
+  border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg);
+}
+/* Menus flottants : la ville et la langue */
+.picker { position: relative; display: inline-flex; }
+.picker-city .picker-menu { left: -.75rem; right: auto; top: calc(100% + .5rem); z-index: 30; }
+/* Sur ordinateur, le bouton de langue se rapproche du menu « plus » (moitié de l'espace habituel) */
+@media (min-width: 1081px) { .nav-more + .picker-lang { margin-left: -.875rem; } }
+/* Sur petit écran, le menu des villes part du bord gauche de la phrase pour ne pas déborder */
+@media (max-width: 640px) {
+  .tagline { position: relative; }
+  .picker-city { position: static; }
+  .picker-city .picker-menu { left: 0; }
+}
+/* Pied des mentions légales : retour à l'accueil et autres langues groupés */
+.foot-links { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+/* Menu « plus » sur ordinateur : Cas d'usage, À propos et Articles derrière un hamburger */
+.nav-more { position: relative; display: flex; }
+.more-btn {
+  display: inline-flex; flex-direction: column; justify-content: center; gap: 4px;
+  width: 2.75rem; height: 2.5rem; padding: 0 .7rem;
+  background: transparent; border: 1.5px solid var(--grid-strong); border-radius: 3px; cursor: pointer;
+}
+.more-btn span { display: block; height: 2px; background: var(--ink); border-radius: 2px; transition: transform .2s, opacity .2s; }
+.more-btn:hover, .nav-more:has([aria-current]) .more-btn { border-color: var(--ink); }
+.nav-more.is-open .more-btn span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+.nav-more.is-open .more-btn span:nth-child(2) { opacity: 0; }
+.nav-more.is-open .more-btn span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+.more-menu, .picker-menu {
+  display: none; position: absolute; top: calc(100% + .6rem); right: 0; min-width: 12rem;
+  flex-direction: column; padding: .4rem;
+  background: var(--paper); border: 1px solid var(--grid-strong); border-radius: 6px;
+  box-shadow: 0 16px 32px -16px rgba(20, 40, 80, .3);
+}
+.nav-more.is-open .more-menu, .picker.is-open .picker-menu { display: flex; }
+.bar-nav .more-menu a:not(.btn), .picker-menu a, .bar-nav .picker-menu a {
+  padding: .6rem .75rem; border-radius: 4px; font-size: .9375rem; font-weight: 500; text-decoration: none; color: var(--ink);
+}
+.bar-nav .more-menu a:not(.btn):hover, .picker-menu a:hover { background: var(--paper-alt); }
+.bar-nav .more-menu a[aria-current], .picker-menu a[aria-current] { font-weight: 700; }
+.picker-menu a[aria-current]::after { content: " ✓"; color: var(--red); }
+/* Langues : un petit drapeau devant chaque nom */
+.picker-lang .picker-menu a { display: flex; align-items: center; gap: .55rem; }
+.flag { flex: none; width: 1.25rem; height: .875rem; border-radius: 2px; box-shadow: 0 0 0 1px rgba(20, 40, 80, .15); }
+@media (prefers-reduced-motion: reduce) { .more-btn span { transition: none; } }
+@media (max-width: 1080px) {
+  .more-btn { display: none; }
+  .nav-more, .nav-more .more-menu { display: contents; }
+  .bar-nav .more-menu a:not(.btn) { padding: .9rem 0; border-radius: 0; }
+  .bar-nav .more-menu a:not(.btn):hover { background: none; }
+}
+/* Bouton hamburger, visible seulement sur mobile */
+.menu-btn { display: none; }
+@media (max-width: 1080px) {
+  .menu-btn {
+    display: inline-flex; flex-direction: column; justify-content: center; gap: 5px;
+    width: 2.75rem; height: 2.75rem; padding: 0 .65rem;
+    background: transparent; border: 1.5px solid var(--grid-strong); border-radius: 8px; cursor: pointer;
+  }
+  .menu-btn span { display: block; height: 2px; background: var(--ink); border-radius: 2px; transition: transform .2s, opacity .2s; }
+  .bar.is-open .menu-btn span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .bar.is-open .menu-btn span:nth-child(2) { opacity: 0; }
+  .bar.is-open .menu-btn span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .bar-nav {
+    display: none;
+    position: absolute; top: 100%; left: 0; right: 0;
+    flex-direction: column; align-items: stretch; gap: 0;
+    padding: .5rem var(--gutter) 1.25rem;
+    background: var(--paper);
+    border-bottom: 1px solid var(--grid-strong);
+    box-shadow: 0 16px 32px -16px rgba(20, 40, 80, .25);
+  }
+  .bar.is-open .bar-nav { display: flex; }
+  .bar-nav a:not(.btn):not(.lang):not(.picker-lang a) {
+    padding: .9rem 0; font-size: 1.125rem; color: var(--ink);
+    border-bottom: 1px solid var(--grid);
+  }
+  /* Dans le menu mobile, les trois langues s'affichent directement, côte à côte ;
+     si elles ne tiennent pas dans la largeur, la rangée défile du doigt jusqu'aux bords de l'écran */
+  .bar-nav .picker-lang { align-self: stretch; margin: 1rem calc(-1 * var(--gutter)) 0; min-width: 0; }
+  .picker-lang .picker-btn { display: none; }
+  .picker-lang .picker-menu {
+    display: flex; position: static; flex-direction: row; gap: .5rem; min-width: 0;
+    padding: 0; background: none; border: 0; box-shadow: none;
+  }
+  .bar-nav .picker-lang .picker-menu {
+    width: 100%; overflow-x: auto; padding-inline: var(--gutter); scroll-padding-inline: var(--gutter);
+    overscroll-behavior-x: contain; scrollbar-width: none;
+  }
+  .bar-nav .picker-lang .picker-menu::-webkit-scrollbar { display: none; }
+  .bar-nav .picker-lang .picker-menu a {
+    flex: none; white-space: nowrap;
+    padding: .5rem .75rem; border: 1.5px solid var(--grid-strong); border-radius: 3px; font-weight: 700;
+  }
+  .bar-nav .picker-lang .picker-menu a[aria-current] { border-color: var(--ink); }
+  .picker-lang .picker-menu a[aria-current]::after { content: none; }
+  .bar-nav .btn { margin-top: 1rem; min-height: 3rem; font-size: 1rem; }
+}
+@media (max-width: 1080px) and (prefers-reduced-motion: reduce) { .menu-btn span { transition: none; } }
+
+/* Le lien de la page en cours dans la navigation */
+.bar-nav a[aria-current="page"] { color: var(--ink); }

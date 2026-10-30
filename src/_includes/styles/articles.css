@@ -1,0 +1,53 @@
+/* Articles : la liste et chaque article */
+
+/* ---------- Articles ---------- */
+
+
+.articles-title { font-size: var(--t-h2); font-weight: 760; letter-spacing: -0.03em; line-height: 1.05; }
+.article-list { margin-top: 3rem; display: grid; gap: 2rem; }
+@media (min-width: 900px) { .article-list { grid-template-columns: 1fr 1fr; } }
+.article-card {
+  display: block; text-decoration: none; color: inherit;
+  border: 1px solid var(--grid-strong); border-radius: 4px; overflow: hidden; background: #fff;
+  transition: border-color .2s;
+}
+.article-card:hover { border-color: var(--ink); }
+.article-card img { display: block; width: 100%; height: auto; border-bottom: 1px solid var(--grid-strong); }
+.article-card-body { display: block; padding: 1.25rem 1.5rem 1.5rem; }
+.article-card-date { display: block; font-size: var(--t-small); color: var(--pencil); }
+.article-card-title { display: block; margin-top: .4rem; font-size: 1.375rem; font-weight: 700; line-height: 1.25; letter-spacing: -0.015em; }
+.article-card:hover .article-card-title { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: .2em; }
+.article-card-text { display: block; margin-top: .6rem; color: var(--pencil); font-size: 1rem; }
+
+.article { padding-top: clamp(2.5rem, 2rem + 3vw, 4.5rem); }
+.article-wrap { max-width: calc(44rem + 2 * var(--gutter)); }
+.article-back { font-size: 1rem; }
+.article-title { margin-top: 1.5rem; font-size: clamp(2.2rem, 1.4rem + 3vw, 3.5rem); font-weight: 760; line-height: 1.04; letter-spacing: -0.035em; }
+.article-meta { margin-top: 1rem; font-size: 1rem; color: var(--pencil); }
+.article-figure { margin-top: 2.5rem; max-width: calc(60rem + 2 * var(--gutter)); }
+.article-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--grid-strong); border-radius: 4px; }
+.article-figure figcaption { margin-top: .75rem; font-size: .9375rem; color: var(--pencil); }
+
+.prose { padding-top: 2.5rem; padding-bottom: var(--space); }
+.prose p, .prose ul, .prose ol { margin-top: 1.25rem; font-size: 1.1875rem; line-height: 1.65; }
+.prose h2 { margin-top: 3rem; font-size: 1.75rem; line-height: 1.15; max-width: none; letter-spacing: -0.02em; }
+.prose ul { padding-left: 1.25rem; list-style: disc; }
+.prose ol { padding-left: 1.5rem; list-style: decimal; }
+.prose li + li { margin-top: .5rem; }
+.prose a { color: var(--ink); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: .2em; text-decoration-color: var(--red); }
+.prose a:hover { color: var(--red-ink); }
+.prose .article-lede { font-size: 1.375rem; line-height: 1.5; color: var(--ink); }
+.table-scroll { margin-top: 1.5rem; overflow-x: auto; }
+.compare { width: 100%; border-collapse: collapse; font-size: 1rem; line-height: 1.4; }
+.compare th, .compare td { padding: .75rem .9rem; border-bottom: 1px solid var(--grid-strong); text-align: left; vertical-align: top; }
+.compare thead th { border-bottom: 2px solid var(--ink); font-weight: 700; }
+.compare thead th:last-child, .compare td:last-child { background: #FFF6F5; }
+.compare tbody th { font-weight: 500; color: var(--pencil); }
+@media (max-width: 599px) {
+  .compare { font-size: .8125rem; }
+  .compare th, .compare td { padding: .6rem .35rem; }
+}
+.references { margin-top: 3.5rem; padding-top: 1.5rem; border-top: 1px solid var(--grid-strong); }
+.references h2 { margin-top: 0; font-size: 1.25rem; }
+.references ol { font-size: 1rem; color: var(--pencil); }
+.references ol li { font-size: 1rem; }

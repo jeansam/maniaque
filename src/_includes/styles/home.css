@@ -1,0 +1,173 @@
+/* Accueil */
+
+/* ---------- Carte de l'accueil ----------
+   Le monde en points bleus, sans frontières ni noms ; les trois villes au stylo rouge.
+   Survoler une ville montre la personne qui y répond, reliée au point par un trait de renvoi. */
+
+.home-map { display: flex; flex-direction: column; min-height: 100vh; min-height: 100svh; }
+.bar-min { position: relative; background: transparent; backdrop-filter: none; border-bottom: 0; }
+/* Le choix de la langue reste un menu flottant, même sur petit écran */
+.bar-min .picker-lang .picker-btn { display: inline-flex; }
+.bar-min .picker-lang .picker-menu {
+  display: none; position: absolute; flex-direction: column; gap: 0; min-width: 12rem;
+  padding: .4rem; background: var(--paper); border: 1px solid var(--grid-strong);
+  box-shadow: 0 16px 32px -16px rgba(20, 40, 80, .3);
+}
+.bar-min .picker-lang.is-open .picker-menu { display: flex; }
+.bar-min .picker-lang .picker-menu a[aria-current]::after { content: " ✓"; }
+
+.map-stage {
+  flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: clamp(1rem, .5rem + 2vw, 2rem);
+  padding: 1rem var(--gutter) 2rem;
+  overflow-x: clip;
+}
+.map-title {
+  max-width: 32ch; text-align: center; text-wrap: balance;
+  font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em;
+}
+.map-scroll { width: 100%; display: flex; justify-content: center; }
+.world {
+  position: relative; flex: none;
+  width: min(100%, 80rem, calc((100svh - 24rem) * 360 / 142));
+  aspect-ratio: 360 / 142;
+}
+.world-land { display: block; width: 100%; height: 100%; }
+.cities { position: absolute; inset: 0; }
+.city { position: absolute; left: var(--x); top: var(--y); width: 0; height: 0; }
+.city a {
+  position: absolute; left: -22px; top: -22px; width: 44px; height: 44px;
+  display: grid; place-items: center;
+  color: var(--ink); text-decoration: none; border-radius: 50%;
+}
+.city-dot {
+  position: relative; width: 14px; height: 14px; border-radius: 50%;
+  background: var(--red); box-shadow: 0 0 0 3px var(--paper);
+  transition: transform .2s, opacity .2s;
+}
+/* Le halo : une seule pulsation à l'arrivée, puis il marque la ville survolée */
+.city-dot::after {
+  content: ""; position: absolute; inset: -3px; border-radius: 50%;
+  border: 2px solid var(--red); opacity: 0;
+  animation: city-halo 1.6s ease-out .5s 2;
+  transition: transform .2s, opacity .2s;
+}
+@keyframes city-halo {
+  from { opacity: .6; transform: scale(1); }
+  to { opacity: 0; transform: scale(3); }
+}
+.cities:has(a:hover, a:focus-visible, .is-open) .city-dot { opacity: .45; }
+.cities .city a:hover .city-dot, .cities .city a:focus-visible .city-dot, .cities .city.is-open .city-dot { opacity: 1; transform: scale(1.5); }
+.cities .city a:hover .city-dot::after, .cities .city a:focus-visible .city-dot::after, .cities .city.is-open .city-dot::after {
+  opacity: .35; transform: scale(1.9); animation: none;
+}
+
+.city-card {
+  position: absolute; bottom: calc(50% + 34px); left: 50%; z-index: 2;
+  display: flex; align-items: center; gap: .75rem;
+  padding: .5rem 1.25rem .5rem .5rem;
+  background: #fff; border: 1.5px solid var(--ink); border-radius: 3rem;
+  white-space: nowrap; line-height: 1.25;
+  opacity: 0; pointer-events: none;
+  transform: translate(-50%, 4px);
+  transition: opacity .18s, transform .18s;
+}
+.city-card img { flex: none; width: 56px; height: 56px; border-radius: 50%; object-fit: cover; }
+.city-card strong { display: block; font-size: 1.125rem; font-weight: 700; }
+.city-card strong + span { display: block; font-size: var(--t-small); color: var(--pencil); }
+.city-card .city-name { display: block; font-size: var(--t-small); font-weight: 600; color: var(--ink); }
+/* Le trait de renvoi, du bas de la fiche au point de la ville */
+.city-card::after {
+  content: ""; position: absolute; top: 100%; left: 50%; width: 1.5px; height: 22px;
+  margin-left: -.75px; background: var(--red);
+}
+/* Pont invisible : la souris peut aller du point à la fiche sans la refermer */
+.city-card::before { content: ""; position: absolute; left: 0; right: 0; top: 100%; height: 36px; }
+.city a:hover .city-card, .city a:focus-visible .city-card, .city.is-open .city-card, .city.is-going .city-card {
+  opacity: 1; pointer-events: auto; transform: translate(-50%, 0);
+}
+.city a:focus-visible { outline-offset: -6px; }
+/* Glisser pour ouvrir : la photo est une poignée qu'on tire vers les chevrons, à droite.
+   --dx suit le doigt, --p (de 0 à 1) efface le texte et remplit la piste derrière la photo. */
+.city-card {
+  --dx: 0px; --p: 0;
+  background: linear-gradient(90deg, var(--paper-alt) calc(var(--p) * 100%), #fff 0);
+}
+.city-card > img {
+  position: relative; z-index: 1;
+  cursor: grab; touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-touch-callout: none;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--red), 0 6px 14px -4px rgba(20, 40, 80, .45);
+  transform: translateX(var(--dx));
+  transition: transform .35s cubic-bezier(.3, 1.4, .5, 1);
+}
+.city-card > span, .city-go { opacity: calc(1 - var(--p) * 1.6); }
+.city-go { flex: none; margin-left: .25rem; color: var(--red); }
+.city-go path { opacity: .25; animation: city-chev 1.2s ease-in-out infinite; }
+.city-go path:nth-child(2) { animation-delay: .15s; }
+.city-go path:nth-child(3) { animation-delay: .3s; }
+@keyframes city-chev { 0%, 100% { opacity: .25; } 35% { opacity: 1; } }
+/* Fiche ouverte : la photo esquisse le geste, de temps en temps */
+.city a:hover .city-card > img, .city.is-open .city-card > img { animation: city-nudge 2.6s ease-in-out .4s infinite; }
+@keyframes city-nudge { 0%, 55%, 100% { translate: 0; } 68% { translate: 14px; } 80% { translate: 0; } 88% { translate: 5px; } }
+.city.is-dragging .city-card > img { cursor: grabbing; transition: none; animation: none; }
+/* Arrivée au bout : la fiche reste ouverte le temps que la page arrive */
+.city.is-going a, .city.is-going .city-card > img { cursor: progress; }
+.city.is-going .city-card > img { animation: none; }
+
+.map-foot { padding: 0 var(--gutter) 1.25rem; text-align: center; font-size: .8125rem; }
+.map-foot a { color: var(--pencil); text-decoration: none; }
+.map-foot a:hover { color: var(--ink); text-decoration: underline; }
+
+/* Sous la carte, les cas d'usage défilent sur deux rangées en sens contraire, comme les maquettes de l'offre */
+.uses-marquee {
+  display: grid; gap: .6rem; width: 100vw; margin-top: .5rem;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+.marquee-row { overflow: hidden; }
+/* Pas de gap : le point après chaque nom rend la boucle exacte à -50 % */
+.marquee-track, .marquee-track ul { display: flex; width: max-content; }
+.marquee-track { animation: showcase 70s linear infinite; }
+.marquee-rev .marquee-track { animation-direction: reverse; animation-duration: 80s; }
+.uses-marquee:hover .marquee-track, .uses-marquee:focus-within .marquee-track { animation-play-state: paused; }
+.marquee-track li { display: flex; align-items: center; white-space: nowrap; }
+.marquee-track li::after {
+  content: ""; width: 6px; height: 6px; margin-inline: 1.1rem; border-radius: 50%; background: var(--red);
+}
+.marquee-track a {
+  font-size: 1.0625rem; font-weight: 600; color: var(--ink); text-decoration: none;
+  text-decoration-thickness: 2px; text-underline-offset: .2em;
+}
+.marquee-track a:hover, .marquee-track a:focus-visible { color: var(--red-ink); text-decoration: underline; }
+@media (prefers-reduced-motion: reduce) { .marquee-track { animation: none; } }
+
+/* Sur mobile, le monde déborde de l'écran pour que les trois villes restent lisibles :
+   on le fait défiler du doigt, et les bords en fondu disent qu'il continue */
+@media (max-width: 700px) {
+  .map-stage { padding-inline: 0; }
+  .map-title { padding-inline: var(--gutter); }
+  .map-scroll {
+    justify-content: flex-start; overflow-x: auto; padding-top: 2.5rem;
+    overscroll-behavior-x: contain; scrollbar-width: none;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 1.5rem, #000 calc(100% - 1.5rem), transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 1.5rem, #000 calc(100% - 1.5rem), transparent);
+  }
+  .map-scroll::-webkit-scrollbar { display: none; }
+  .world { width: 220vw; max-width: none; }
+  .city-card { gap: .6rem; padding-right: 1rem; }
+  .city-card img { width: 44px; height: 44px; }
+  .city-card strong { font-size: 1rem; }
+  /* Les fiches des villes au bord de l'écran s'ouvrent vers l'intérieur */
+  .city[data-anchor="start"] .city-card { left: -6px; transform: translate(0, 4px); }
+  .city[data-anchor="end"] .city-card { left: auto; right: -6px; transform: translate(0, 4px); }
+  .city[data-anchor="start"] .city-card::after { left: 28px; }
+  .city[data-anchor="end"] .city-card::after { left: auto; right: 28px; }
+  .city[data-anchor="start"].is-open .city-card, .city[data-anchor="start"].is-going .city-card, .city[data-anchor="start"] a:hover .city-card, .city[data-anchor="start"] a:focus-visible .city-card,
+  .city[data-anchor="end"].is-open .city-card, .city[data-anchor="end"].is-going .city-card, .city[data-anchor="end"] a:hover .city-card, .city[data-anchor="end"] a:focus-visible .city-card { transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .city-dot, .city-dot::after, .city-card, .city-card > img { transition: none; }
+  .city-dot::after, .city-go path, .city-card > img { animation: none !important; }
+  .city-go path { opacity: 1; }
+}

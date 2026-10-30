@@ -1,0 +1,148 @@
+/* Maniaque
+   Papier millimétré, encre bleue, stylo rouge de correction.
+   Une seule audace : l'annotation du titre. Le reste reste sobre et précis. */
+
+:root {
+  --paper: #F6F8FA;      /* papier, blanc froid */
+  --paper-alt: #ECF1F4;  /* papier de section alternée */
+  --grid: #D3E2EA;       /* lignes du millimétré */
+  --grid-strong: #B9D0DC;
+  --ink: #142850;        /* encre bleu nuit */
+  --pencil: #556273;     /* texte secondaire, mine de crayon */
+  --red: #D2251B;        /* stylo de correction */
+  --red-ink: #B01E15;    /* rouge lisible sur fond clair */
+
+  --font: "Schibsted Grotesk", system-ui, sans-serif;
+
+  /* Échelle typographique (base 18 px, rapport 4:3) */
+  --t-small: 0.875rem;
+  --t-body: 1.125rem;
+  --t-lead: 1.375rem;
+  --t-h3: 1.5rem;
+  --t-h2: clamp(2rem, 1.4rem + 2.4vw, 3.25rem);
+  --t-hero: clamp(3.4rem, 1rem + 7.4vw, 8rem);
+
+  --wrap: 72rem;
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --space: clamp(4.5rem, 3rem + 6vw, 8rem);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: var(--t-body);
+  line-height: 1.55;
+  font-feature-settings: "tnum" 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, p, ul, ol, dl, dd, figure { margin: 0; }
+ul, ol { padding: 0; list-style: none; }
+
+a { color: inherit; }
+
+:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: calc(var(--wrap) + 2 * var(--gutter));
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+.skip {
+  position: absolute; left: 1rem; top: -4rem; z-index: 10;
+  background: var(--ink); color: var(--paper); padding: .6rem 1rem;
+}
+.skip:focus { top: 1rem; }
+
+/* Papier millimétré : trame fine de 8 px, trame forte de 40 px */
+.grid-paper {
+  background-color: var(--paper);
+  background-image:
+    linear-gradient(var(--grid-strong) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-strong) 1px, transparent 1px),
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 40px 40px, 40px 40px, 8px 8px, 8px 8px;
+  background-position: -1px -1px;
+}
+
+/* ---------- Boutons et liens ---------- */
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 3.25rem;
+  padding: 0 1.5rem;
+  background: var(--red);
+  color: #fff;
+  font: 600 1.0625rem/1 var(--font);
+  text-decoration: none;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color .15s;
+}
+.btn:hover { background: var(--red-ink); }
+.btn-ink { background: var(--ink); }
+.btn-ink:hover { background: #0B1A38; }
+.btn-small { min-height: 2.5rem; padding: 0 1rem; font-size: .9375rem; }
+
+.link {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: .25em;
+  text-decoration-color: var(--grid-strong);
+}
+.link:hover { text-decoration-color: var(--ink); }
+.inline-link { color: var(--ink); text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: .2em; }
+.inline-link:hover { color: var(--red-ink); }
+
+/* ---------- Sections ---------- */
+
+.section { padding-block: var(--space); }
+.section-alt { background: var(--paper-alt); }
+
+h2 {
+  font-size: var(--t-h2);
+  font-weight: 760;
+  line-height: 1.04;
+  letter-spacing: -0.03em;
+  max-width: 20ch;
+}
+h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing: -0.015em; }
+
+.section-lede { margin-top: 1.25rem; font-size: var(--t-lead); color: var(--pencil); max-width: 40rem; line-height: 1.45; }
+
+.split { display: grid; gap: 2.5rem; }
+@media (min-width: 900px) {
+  .split { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 4rem; align-items: start; }
+  .split-text { position: sticky; top: 6rem; }
+}
+.split-text p { margin-top: 1.25rem; max-width: 34rem; color: var(--pencil); }
+.split-text strong { color: var(--ink); font-weight: 700; }
+
+/* ---------- Appel final ---------- */
+
+.cta { padding-block: var(--space); border-top: 1px solid var(--grid-strong); }
+.cta h2 { max-width: 16ch; font-size: clamp(2.4rem, 1.4rem + 4vw, 4.5rem); }
+.cta p { margin-top: 1.25rem; font-size: var(--t-lead); max-width: 34rem; line-height: 1.45; }
+.cta .btn { margin-top: 2rem; }
+.cta .cta-alt { font-size: 1rem; color: var(--pencil); margin-top: 1rem; }
