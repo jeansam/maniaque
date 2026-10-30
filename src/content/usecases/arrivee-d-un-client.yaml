@@ -3,6 +3,14 @@ slug:
   fr: arrivee-d-un-client
   en: new-client-setup
   pt: novo-cliente
+quote:
+  fr: «&nbsp;On saisit ses coordonnées dans cinq logiciels.&nbsp;»
+  en: “We type their details into five systems.”
+  pt: “Cadastramos os dados dele em cinco sistemas.”
+summary:
+  fr: Un seul formulaire, rempli une seule fois. Le client est créé partout où il doit l'être, et son dossier est prêt le jour même.
+  en: One form, filled in once. The client is created everywhere they need to be, and their file is ready the same day.
+  pt: Um único formulário, preenchido uma única vez. O cliente é criado em todos os lugares necessários, e o cadastro fica pronto no mesmo dia.
 strings:
   title:
     fr: Arrivée d'un client
@@ -21,18 +29,18 @@ strings:
     en: We build client onboarding flows for businesses that type the same details into several systems. The client fills in one form, uploads their documents and signs online. The tool creates their record everywhere it's needed and prepares their file. You follow each new client, step by step.
     pt: Construímos jornadas de entrada de clientes para empresas que copiam as mesmas informações em vários sistemas. O cliente preenche um único formulário, envia os documentos e assina online. A ferramenta cria o cadastro dele em todos os lugares necessários e prepara a pasta. Você acompanha cada entrada, etapa por etapa.
   ucVisualAriaLabel:
-    fr: 'Exemple d''écran : arrivée d''un client'
-    en: 'Example screen: new client setup'
-    pt: 'Exemplo de tela: novo cliente'
+    fr: "Exemple d'écran : arrivée d'un client"
+    en: "Example screen: new client setup"
+    pt: "Exemplo de tela: novo cliente"
   qtFigureQtAriaLabel:
-    fr: 'Exemple d''écran : arrivée d''un client'
-    en: 'Example screen: new client setup'
-    pt: 'Exemplo de tela: novo cliente'
+    fr: "Exemple d'écran : arrivée d'un client"
+    en: "Example screen: new client setup"
+    pt: "Exemplo de tela: novo cliente"
   qtAppClass: qt-app
   qtFigureFigcaption:
-    fr: 'Exemple : un client arrivé ce matin, déjà aux deux tiers du parcours.'
-    en: 'Example: a client who started this morning, already two thirds of the way.'
-    pt: 'Exemplo: um cliente que chegou hoje de manhã e já está a dois terços da jornada.'
+    fr: "Exemple : un client arrivé ce matin, déjà aux deux tiers du parcours."
+    en: "Example: a client who started this morning, already two thirds of the way."
+    pt: "Exemplo: um cliente que chegou hoje de manhã e já está a dois terços da jornada."
   audit:
     fr: Dites-nous comment se passe l'arrivée d'un client aujourd'hui.
     en: Tell us how a new client gets set up today.
@@ -42,7 +50,7 @@ strings:
     en: <em></em>Clients
     pt: <em></em>Clientes
   items:
-    - 'on': true
+    - "on": true
       label:
         fr: Arrivées
         en: Onboarding

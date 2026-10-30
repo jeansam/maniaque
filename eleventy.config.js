@@ -1,5 +1,6 @@
 const yaml = require("js-yaml");
 const cities = require("./src/_data/cities.js");
+const { resolve } = require("./lib/i18n.js");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
@@ -7,6 +8,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.setNunjucksEnvironmentOptions({ autoescape: false, throwOnUndefined: true });
   eleventyConfig.addFilter("values", (obj) => Object.values(obj));
   eleventyConfig.addFilter("find", (list, code) => list.find((item) => item.code === code));
+  // Un texte { fr, en, pt } dans la langue demandée (pour les données d'une autre page : cas d'usage, articles)
+  eleventyConfig.addFilter("tr", (value, lang) => resolve(value, lang));
 
   // Fichiers servis tels quels (styles, scripts, images, favicon)
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });

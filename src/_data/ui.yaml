@@ -6,11 +6,11 @@ tagline: { fr: Votre partenaire IA de confiance à, en: Your trusted AI partner 
 chooseCity: { fr: Choisir la ville, en: Choose your city, pt: Escolher a cidade }
 openMenu: { fr: Ouvrir le menu, en: Open menu, pt: Abrir o menu }
 mainNav: { fr: Navigation principale, en: Main navigation, pt: Navegação principal }
-# Liens vers les sections de la page de l'offre : l'ancre (id) et le libellé
-offerLinks:
-  fr: [{ id: fonctionnement, label: Fonctionnement }, { id: tarifs, label: Tarifs }, { id: faq, label: FAQ }]
-  en: [{ id: how-it-works, label: How it works }, { id: pricing, label: Pricing }, { id: faq, label: FAQ }]
-  pt: [{ id: como-funciona, label: Como funciona }, { id: precos, label: Preços }, { id: faq, label: FAQ }]
+# Sections de la page de l'offre liées depuis le menu : l'ancre (id) et le libellé
+offerSections:
+  howItWorks: { id: { fr: fonctionnement, en: how-it-works, pt: como-funciona }, label: { fr: Fonctionnement, en: How it works, pt: Como funciona } }
+  pricing: { id: { fr: tarifs, en: pricing, pt: precos }, label: { fr: Tarifs, en: Pricing, pt: Preços } }
+  faq: { id: faq, label: FAQ }
 moreLinks: { fr: Plus de liens, en: More links, pt: Mais links }
 sections:
   usecaseIndex: { fr: Cas d'usage, en: Use cases, pt: Casos de uso }

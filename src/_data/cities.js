@@ -6,6 +6,8 @@ module.exports = {
     id: "marseille",
     name: { fr: "Marseille", en: "Marseille", pt: "Marselha" },
     person: { name: "Jean-Sam", photo: "/images/avatar-jean-samuel.webp" },
+    // Sur la carte du monde de l'accueil : position du point et côté où s'ouvre la fiche
+    map: { anchor: "center", x: "51.49%", y: "28.66%" },
     lang: "fr",
     book: "https://calendar.app.google/vFyLbndCK2tUXYibA",
     currency: "EUR",
@@ -16,6 +18,8 @@ module.exports = {
     id: "sao-paulo",
     name: { fr: "São Paulo", en: "São Paulo", pt: "São Paulo" },
     person: { name: "Eliakim", photo: "/images/avatar-eliakim-oliveira.webp" },
+    // Sur la carte du monde de l'accueil : position du point et côté où s'ouvre la fiche
+    map: { anchor: "start", x: "37.05%", y: "75.74%" },
     lang: "pt",
     book: "https://wa.me/5511936207406", // WhatsApp, en attendant un agenda
     currency: "BRL",
@@ -26,6 +30,8 @@ module.exports = {
     id: "johannesburg",
     name: { fr: "Johannesbourg", en: "Johannesburg", pt: "Joanesburgo" },
     person: { name: "Nthuseni", photo: "/images/avatar-nthuseni-mathaga.webp" },
+    // Sur la carte du monde de l'accueil : position du point et côté où s'ouvre la fiche
+    map: { anchor: "end", x: "57.79%", y: "77.61%" },
     lang: "en",
     book: "https://www.linkedin.com/in/nmathaga/", // LinkedIn de Nthuseni, en attendant un agenda
     currency: "ZAR",

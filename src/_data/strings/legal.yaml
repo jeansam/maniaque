@@ -15,25 +15,25 @@ p:
   en: Jean-Samuel Jéquier, sole trader (entrepreneur individuel) operating under the trade name Maniaque.
   pt: Jean-Samuel Jéquier, empresário individual (entrepreneur individuel, França) que atua sob o nome comercial Maniaque.
 p2:
-  fr: 'SIRET : 894 000 348 00017. Adresse : [À compléter].'
-  en: 'SIRET: 894 000 348 00017. Address: [To be completed].'
-  pt: 'SIRET: 894 000 348 00017. Endereço: [A preencher].'
+  fr: "SIRET : 894 000 348 00017. Adresse : [À compléter]."
+  en: "SIRET: 894 000 348 00017. Address: [To be completed]."
+  pt: "SIRET: 894 000 348 00017. Endereço: [A preencher]."
 p3:
-  fr: 'Contact : <a href="mailto:hello@maniaque.xyz">hello@maniaque.xyz</a>'
-  en: 'Contact: <a href="mailto:hello@maniaque.xyz">hello@maniaque.xyz</a>'
-  pt: 'Contato: <a href="mailto:hello@maniaque.xyz">hello@maniaque.xyz</a>'
+  fr: "Contact : <a href=\"mailto:hello@maniaque.xyz\">hello@maniaque.xyz</a>"
+  en: "Contact: <a href=\"mailto:hello@maniaque.xyz\">hello@maniaque.xyz</a>"
+  pt: "Contato: <a href=\"mailto:hello@maniaque.xyz\">hello@maniaque.xyz</a>"
 p4:
-  fr: 'Directeur de la publication : Jean-Samuel Jéquier.'
-  en: 'Publication director: Jean-Samuel Jéquier.'
-  pt: 'Diretor de publicação: Jean-Samuel Jéquier.'
+  fr: "Directeur de la publication : Jean-Samuel Jéquier."
+  en: "Publication director: Jean-Samuel Jéquier."
+  pt: "Diretor de publicação: Jean-Samuel Jéquier."
 h22:
   fr: Hébergement
   en: Hosting
   pt: Hospedagem
 p5:
-  fr: 'Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis.'
-  en: 'Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, United States.'
-  pt: 'Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, Estados Unidos.'
+  fr: "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis."
+  en: "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, United States."
+  pt: "Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, Estados Unidos."
 h23:
   fr: Données personnelles
   en: Personal data

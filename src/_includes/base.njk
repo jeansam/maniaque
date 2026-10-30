@@ -61,7 +61,7 @@
     </div>
     <button class="menu-btn" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="{{ t.openMenu }}"><span></span><span></span><span></span></button>
     <nav class="bar-nav" id="main-nav" aria-label="{{ t.mainNav }}">
-{% for a in t.offerLinks %}      <a href="{{ routes.offer[lang] }}#{{ a.id }}">{{ a.label }}</a>
+{% for key, a in t.offerSections %}      <a href="{{ routes.offer[lang] }}#{{ a.id }}">{{ a.label }}</a>
 {% endfor %}      <div class="nav-more">
         <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-menu" aria-label="{{ t.moreLinks }}"><span></span><span></span><span></span></button>
         <div class="more-menu" id="more-menu">

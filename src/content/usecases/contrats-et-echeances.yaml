@@ -3,6 +3,14 @@ slug:
   fr: contrats-et-echeances
   en: contracts-and-deadlines
   pt: contratos-e-prazos
+quote:
+  fr: «&nbsp;Le contrat s'est encore renouvelé tout seul.&nbsp;»
+  en: “The contract renewed itself again.”
+  pt: “O contrato renovou sozinho de novo.”
+summary:
+  fr: Chaque contrat avec ses dates clés. Vous êtes prévenu à temps pour renégocier ou résilier.
+  en: Every contract with its key dates. You're warned in time to renegotiate or cancel.
+  pt: Cada contrato com as suas datas-chave. Você é avisado a tempo de renegociar ou cancelar.
 strings:
   title:
     fr: Contrats et échéances
@@ -21,18 +29,18 @@ strings:
     en: We build contract tracking tools for businesses juggling suppliers, leases, subscriptions or maintenance contracts. Each contract is stored with its dates, amount and notice period. You're warned in time to renegotiate or cancel, instead of being caught by an automatic renewal.
     pt: Construímos ferramentas de gestão de contratos para empresas que lidam com fornecedores, locações, assinaturas ou contratos de manutenção. Cada contrato é registrado com as suas datas, o seu valor e o seu aviso prévio. Você é avisado a tempo de renegociar ou cancelar, em vez de engolir uma renovação automática.
   ucVisualAriaLabel:
-    fr: 'Exemple d''écran : contrats et échéances'
-    en: 'Example screen: contracts and deadlines'
-    pt: 'Exemplo de tela: contratos e prazos'
+    fr: "Exemple d'écran : contrats et échéances"
+    en: "Example screen: contracts and deadlines"
+    pt: "Exemplo de tela: contratos e prazos"
   qtFigureQtAriaLabel:
-    fr: 'Exemple d''écran : contrats et échéances'
-    en: 'Example screen: contracts and deadlines'
-    pt: 'Exemplo de tela: contratos e prazos'
+    fr: "Exemple d'écran : contrats et échéances"
+    en: "Example screen: contracts and deadlines"
+    pt: "Exemplo de tela: contratos e prazos"
   qtAppClass: qt-app
   qtFigureFigcaption:
-    fr: 'Exemple : une reconduction de trois ans évitée, sept jours avant la fin du préavis.'
-    en: 'Example: a three-year renewal avoided, seven days before the notice deadline.'
-    pt: 'Exemplo: uma renovação de três anos evitada, sete dias antes do fim do aviso prévio.'
+    fr: "Exemple : une reconduction de trois ans évitée, sept jours avant la fin du préavis."
+    en: "Example: a three-year renewal avoided, seven days before the notice deadline."
+    pt: "Exemplo: uma renovação de três anos evitada, sete dias antes do fim do aviso prévio."
   audit:
     fr: Dites-nous comment vous suivez vos contrats aujourd'hui.
     en: Tell us how you keep track of contracts today.
@@ -42,7 +50,7 @@ strings:
     en: <em></em>Contracts
     pt: <em></em>Contratos
   items:
-    - 'on': true
+    - "on": true
       label:
         fr: Échéances
         en: Deadlines
@@ -71,12 +79,12 @@ strings:
         fr: Contrats suivis
         en: Contracts tracked
         pt: Contratos acompanhados
-      b: '38'
+      b: "38"
     - span:
         fr: Échéances sous 90 jours
         en: Due within 90 days
         pt: Prazos em até 90 dias
-      b: '4'
+      b: "4"
     - span:
         fr: Montant annuel
         en: Annual amount
@@ -97,7 +105,7 @@ strings:
         - fr: Échéance
           en: Renewal
           pt: Vencimento
-        - ''
+        - ""
     - class: mk-tr
       items:
         - fr: Location copieurs · Burotec

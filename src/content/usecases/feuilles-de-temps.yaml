@@ -3,6 +3,14 @@ slug:
   fr: feuilles-de-temps
   en: timesheets
   pt: registro-de-horas
+quote:
+  fr: «&nbsp;Chacun remplit ses heures le vendredi soir, de mémoire.&nbsp;»
+  en: “Everyone fills in their hours on Friday night, from memory.”
+  pt: “Cada um preenche as horas na sexta à noite, de memória.”
+summary:
+  fr: Une saisie en quelques secondes depuis le téléphone. Les heures partent directement vers la paie et la facturation.
+  en: Logging time takes seconds, from a phone. Hours go straight to payroll and invoicing.
+  pt: Um registro em poucos segundos pelo celular. As horas vão direto para a folha de pagamento e para o faturamento.
 strings:
   title:
     fr: Feuilles de temps
@@ -21,18 +29,18 @@ strings:
     en: We build time tracking tools for teams in the field and in the office. Everyone logs their hours in seconds from their phone, by site or by client. Approved hours go straight to payroll and invoicing, with no retyping.
     pt: Construímos ferramentas de registro de horas para equipes em campo e no escritório. Cada um registra as suas horas em poucos segundos pelo celular, por obra ou por cliente. As horas aprovadas vão direto para a folha de pagamento e para o faturamento, sem redigitação.
   ucVisualAriaLabel:
-    fr: 'Exemple d''écran : feuilles de temps'
-    en: 'Example screen: timesheets'
-    pt: 'Exemplo de tela: registro de horas'
+    fr: "Exemple d'écran : feuilles de temps"
+    en: "Example screen: timesheets"
+    pt: "Exemplo de tela: registro de horas"
   qtFigureQtAriaLabel:
-    fr: 'Exemple d''écran : feuilles de temps'
-    en: 'Example screen: timesheets'
-    pt: 'Exemplo de tela: registro de horas'
+    fr: "Exemple d'écran : feuilles de temps"
+    en: "Example screen: timesheets"
+    pt: "Exemplo de tela: registro de horas"
   qtAppClass: qt-app
   qtFigureFigcaption:
-    fr: 'Exemple : la semaine de l''équipe, prête pour la paie, et la saisie depuis le téléphone.'
-    en: 'Example: the team''s week, ready for payroll, and an entry made from a phone.'
-    pt: 'Exemplo: a semana da equipe, pronta para a folha, e o registro pelo celular.'
+    fr: "Exemple : la semaine de l'équipe, prête pour la paie, et la saisie depuis le téléphone."
+    en: "Example: the team's week, ready for payroll, and an entry made from a phone."
+    pt: "Exemplo: a semana da equipe, pronta para a folha, e o registro pelo celular."
   audit:
     fr: Dites-nous comment vos équipes déclarent leurs heures aujourd'hui.
     en: Tell us how your teams record their hours today.
@@ -42,7 +50,7 @@ strings:
     en: <em></em>Time
     pt: <em></em>Horas
   items:
-    - 'on': true
+    - "on": true
       label:
         fr: Semaine
         en: Week
@@ -96,7 +104,7 @@ strings:
           en: Fri
           pt: Sex
         - Total
-        - ''
+        - ""
     - class: mk-tr
       items:
         - <em class="mk-av" style="background:#2F6FDB">J</em>Julien

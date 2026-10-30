@@ -3,6 +3,14 @@ slug:
   fr: conformite
   en: compliance
   pt: conformidade
+quote:
+  fr: «&nbsp;L'attestation a expiré la semaine dernière.&nbsp;»
+  en: “The certificate expired last week.”
+  pt: “O certificado venceu semana passada.”
+summary:
+  fr: "Certifications, habilitations, contrôles obligatoires : l'outil relance avant l'échéance, pas après."
+  en: "Certifications, permits, mandatory inspections: the tool chases them before the deadline, not after."
+  pt: "Certificações, habilitações, inspeções obrigatórias: a ferramenta avisa antes do vencimento, não depois."
 strings:
   title:
     fr: Conformité
@@ -21,18 +29,18 @@ strings:
     en: We build compliance tracking tools for businesses subject to certifications, permits or mandatory inspections. Every document has its expiry date. The tool reminds the right person before the deadline, keeps the evidence and gives you a clear view of what's up to date.
     pt: Construímos ferramentas de controle de conformidade para empresas sujeitas a certificações, habilitações ou inspeções obrigatórias. Cada documento tem a sua data de validade. A ferramenta avisa a pessoa certa antes do vencimento, guarda os comprovantes e dá a você uma visão clara do que está em dia.
   ucVisualAriaLabel:
-    fr: 'Exemple d''écran : conformité'
-    en: 'Example screen: compliance'
-    pt: 'Exemplo de tela: conformidade'
+    fr: "Exemple d'écran : conformité"
+    en: "Example screen: compliance"
+    pt: "Exemplo de tela: conformidade"
   qtFigureQtAriaLabel:
-    fr: 'Exemple d''écran : conformité'
-    en: 'Example screen: compliance'
-    pt: 'Exemplo de tela: conformidade'
+    fr: "Exemple d'écran : conformité"
+    en: "Example screen: compliance"
+    pt: "Exemplo de tela: conformidade"
   qtAppClass: qt-app
   qtFigureFigcaption:
-    fr: 'Exemple : les habilitations de l''équipe d''un coup d''œil, relances comprises.'
-    en: 'Example: the team''s permits at a glance, reminders included.'
-    pt: 'Exemplo: as habilitações da equipe num relance, com os avisos incluídos.'
+    fr: "Exemple : les habilitations de l'équipe d'un coup d'œil, relances comprises."
+    en: "Example: the team's permits at a glance, reminders included."
+    pt: "Exemplo: as habilitações da equipe num relance, com os avisos incluídos."
   audit:
     fr: Dites-nous ce que vous devez tenir à jour aujourd'hui.
     en: Tell us what you have to keep up to date today.
@@ -42,7 +50,7 @@ strings:
     en: <em></em>Compliance
     pt: <em></em>Conformidade
   items:
-    - 'on': true
+    - "on": true
       label:
         fr: Équipe
         en: Team
@@ -75,17 +83,17 @@ strings:
         fr: Documents suivis
         en: Documents tracked
         pt: Documentos acompanhados
-      b: '64'
+      b: "64"
     - span:
         fr: Expirent sous 60 jours
         en: Expiring within 60 days
         pt: Vencem em 60 dias
-      b: '3'
+      b: "3"
     - span:
         fr: Expirés
         en: Expired
         pt: Vencidos
-      b: '1'
+      b: "1"
   mkTable:
     - class: mk-tr mk-th
       items:

@@ -3,36 +3,44 @@ slug:
   fr: arrivee-d-un-salarie
   en: new-hires
   pt: novo-funcionario
+quote:
+  fr: «&nbsp;Le nouveau a attendu ses accès toute la matinée.&nbsp;»
+  en: “The new starter waited all morning for their logins.”
+  pt: “O novato passou a manhã toda esperando os acessos.”
+summary:
+  fr: "Comptes, matériel, documents à signer, formations : tout est prêt avant le premier jour, et rien n'est oublié."
+  en: "Accounts, equipment, documents to sign, training: everything is ready before day one, and nothing is forgotten."
+  pt: "Contas, equipamentos, documentos para assinar, treinamentos: tudo pronto antes do primeiro dia, sem esquecer nada."
 strings:
   title:
     fr: Arrivée d'un salarié
     en: New hires
     pt: Novo funcionário
   description:
-    fr: 'Comptes, matériel, documents à signer, formations : chaque arrivée suit sa propre liste, avec une personne responsable pour chaque étape.'
-    en: 'Accounts, equipment, documents to sign, training: every new hire follows their own checklist, with someone responsible for each step.'
-    pt: 'Contas, equipamentos, documentos para assinar, treinamentos: cada entrada segue a sua própria lista, com um responsável para cada etapa.'
+    fr: "Comptes, matériel, documents à signer, formations : chaque arrivée suit sa propre liste, avec une personne responsable pour chaque étape."
+    en: "Accounts, equipment, documents to sign, training: every new hire follows their own checklist, with someone responsible for each step."
+    pt: "Contas, equipamentos, documentos para assinar, treinamentos: cada entrada segue a sua própria lista, com um responsável para cada etapa."
   uc:
     fr: Un nouveau salarié prêt dès le premier jour, <span>sans rien oublier.</span>
     en: A new hire ready from day one, <span>with nothing forgotten.</span>
     pt: Um novo funcionário pronto desde o primeiro dia, <span>sem esquecer nada.</span>
   ucLede:
-    fr: 'Nous construisons des outils d''accueil des salariés pour les entreprises qui recrutent régulièrement. Comptes, matériel, documents à signer, formations : chaque arrivée suit sa propre liste, avec une personne responsable pour chaque étape. Le jour J, tout est prêt.'
-    en: 'We build staff onboarding tools for businesses that hire regularly. Accounts, equipment, documents to sign, training: every new hire follows their own checklist, with someone responsible for each step. On day one, everything is ready.'
-    pt: 'Construímos ferramentas de onboarding para empresas que contratam com frequência. Contas, equipamentos, documentos para assinar, treinamentos: cada entrada segue a sua própria lista, com um responsável para cada etapa. No grande dia, está tudo pronto.'
+    fr: "Nous construisons des outils d'accueil des salariés pour les entreprises qui recrutent régulièrement. Comptes, matériel, documents à signer, formations : chaque arrivée suit sa propre liste, avec une personne responsable pour chaque étape. Le jour J, tout est prêt."
+    en: "We build staff onboarding tools for businesses that hire regularly. Accounts, equipment, documents to sign, training: every new hire follows their own checklist, with someone responsible for each step. On day one, everything is ready."
+    pt: "Construímos ferramentas de onboarding para empresas que contratam com frequência. Contas, equipamentos, documentos para assinar, treinamentos: cada entrada segue a sua própria lista, com um responsável para cada etapa. No grande dia, está tudo pronto."
   ucVisualAriaLabel:
-    fr: 'Exemple d''écran : arrivée d''un salarié'
-    en: 'Example screen: new hires'
-    pt: 'Exemplo de tela: novo funcionário'
+    fr: "Exemple d'écran : arrivée d'un salarié"
+    en: "Example screen: new hires"
+    pt: "Exemplo de tela: novo funcionário"
   qtFigureQtAriaLabel:
-    fr: 'Exemple d''écran : arrivée d''un salarié'
-    en: 'Example screen: new hires'
-    pt: 'Exemplo de tela: novo funcionário'
+    fr: "Exemple d'écran : arrivée d'un salarié"
+    en: "Example screen: new hires"
+    pt: "Exemplo de tela: novo funcionário"
   qtAppClass: qt-app qt-app-2
   qtFigureFigcaption:
-    fr: 'Exemple : l''arrivée de Thomas, cinq jours avant son premier jour.'
-    en: 'Example: Thomas''s arrival, five days before his first day.'
-    pt: 'Exemplo: a entrada do Thomas, cinco dias antes do primeiro dia.'
+    fr: "Exemple : l'arrivée de Thomas, cinq jours avant son premier jour."
+    en: "Example: Thomas's arrival, five days before his first day."
+    pt: "Exemplo: a entrada do Thomas, cinco dias antes do primeiro dia."
   audit:
     fr: Dites-nous comment se passe l'arrivée d'un salarié aujourd'hui.
     en: Tell us how a new hire gets set up today.
@@ -42,7 +50,7 @@ strings:
     en: <em></em>Team
     pt: <em></em>Equipe
   items:
-    - 'on': true
+    - "on": true
       label:
         fr: Arrivées
         en: New hires

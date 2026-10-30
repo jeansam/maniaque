@@ -3,6 +3,14 @@ slug:
   fr: lecture-de-documents
   en: document-reading
   pt: leitura-de-documentos
+quote:
+  fr: «&nbsp;Je recopie les bons de commande à la main.&nbsp;»
+  en: “I copy purchase orders by hand.”
+  pt: “Eu copio os pedidos de compra à mão.”
+summary:
+  fr: L'IA lit vos factures, bons de commande et formulaires, et remplit les bonnes cases. Vous vérifiez, vous validez.
+  en: AI reads your invoices, purchase orders and forms, and fills in the right fields. You check, you approve.
+  pt: A IA lê as suas faturas, pedidos de compra e formulários e preenche os campos certos. Você confere e aprova.
 strings:
   title:
     fr: Lecture de documents
@@ -17,22 +25,22 @@ strings:
     en: AI that reads your documents, <span>and fills in the right fields.</span>
     pt: Uma IA que lê os seus documentos, <span>e preenche os campos certos.</span>
   ucLede:
-    fr: 'Nous construisons des outils qui lisent pour vous les factures fournisseurs, les bons de commande et les formulaires, qu''ils arrivent par email ou en photo. L''IA extrait les informations, les range au bon endroit et signale ce qui semble anormal. Vous vérifiez, vous validez : la saisie à la main disparaît.'
-    en: 'We build tools that read supplier invoices, purchase orders and forms for you, whether they arrive by email or as a photo. AI pulls out the information, files it in the right place and flags anything that looks off. You check, you approve: manual data entry disappears.'
-    pt: 'Construímos ferramentas que leem por você as faturas de fornecedores, os pedidos de compra e os formulários, cheguem eles por e-mail ou em foto. A IA extrai as informações, coloca cada uma no lugar certo e sinaliza o que parece anormal. Você confere e aprova: a digitação manual desaparece.'
+    fr: "Nous construisons des outils qui lisent pour vous les factures fournisseurs, les bons de commande et les formulaires, qu'ils arrivent par email ou en photo. L'IA extrait les informations, les range au bon endroit et signale ce qui semble anormal. Vous vérifiez, vous validez : la saisie à la main disparaît."
+    en: "We build tools that read supplier invoices, purchase orders and forms for you, whether they arrive by email or as a photo. AI pulls out the information, files it in the right place and flags anything that looks off. You check, you approve: manual data entry disappears."
+    pt: "Construímos ferramentas que leem por você as faturas de fornecedores, os pedidos de compra e os formulários, cheguem eles por e-mail ou em foto. A IA extrai as informações, coloca cada uma no lugar certo e sinaliza o que parece anormal. Você confere e aprova: a digitação manual desaparece."
   ucVisualAriaLabel:
-    fr: 'Exemple d''écran : lecture de documents'
-    en: 'Example screen: document reading'
-    pt: 'Exemplo de tela: leitura de documentos'
+    fr: "Exemple d'écran : lecture de documents"
+    en: "Example screen: document reading"
+    pt: "Exemplo de tela: leitura de documentos"
   qtFigureQtAriaLabel:
-    fr: 'Exemple d''écran : lecture de documents'
-    en: 'Example screen: document reading'
-    pt: 'Exemplo de tela: leitura de documentos'
+    fr: "Exemple d'écran : lecture de documents"
+    en: "Example screen: document reading"
+    pt: "Exemplo de tela: leitura de documentos"
   qtAppClass: qt-app qt-app-2
   qtFigureFigcaption:
-    fr: 'Exemple : une facture lue en quelques secondes, et l''écart repéré avec le bon de commande.'
-    en: 'Example: an invoice read in seconds, with the mismatch against the purchase order flagged.'
-    pt: 'Exemplo: uma fatura lida em poucos segundos, e a diferença em relação ao pedido de compra identificada.'
+    fr: "Exemple : une facture lue en quelques secondes, et l'écart repéré avec le bon de commande."
+    en: "Example: an invoice read in seconds, with the mismatch against the purchase order flagged."
+    pt: "Exemplo: uma fatura lida em poucos segundos, e a diferença em relação ao pedido de compra identificada."
   audit:
     fr: Dites-nous quels documents vous recopiez aujourd'hui.
     en: Tell us which documents you copy by hand today.
@@ -42,7 +50,7 @@ strings:
     en: <em></em>Documents
     pt: <em></em>Documentos
   items:
-    - 'on': true
+    - "on": true
       label:
         fr: À valider
         en: To review

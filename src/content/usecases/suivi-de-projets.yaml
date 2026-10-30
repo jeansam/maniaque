@@ -3,6 +3,14 @@ slug:
   fr: suivi-de-projets
   en: project-tracking
   pt: gestao-de-projetos
+quote:
+  fr: «&nbsp;On a dépassé le budget sans s'en rendre compte.&nbsp;»
+  en: “We went over budget without noticing.”
+  pt: “Estouramos o orçamento sem perceber.”
+summary:
+  fr: Tâches, temps passé, budget et facturation réunis sur chaque projet. Vous voyez la dérive avant qu'elle coûte cher.
+  en: Tasks, time spent, budget and invoicing together on every project. You see the drift before it gets expensive.
+  pt: Tarefas, horas trabalhadas, orçamento e faturamento reunidos em cada projeto. Você vê o desvio antes que ele saia caro.
 strings:
   title:
     fr: Suivi de projets
@@ -21,18 +29,18 @@ strings:
     en: We build project tracking tools for service businesses, engineering firms and agencies. Tasks, time spent, budget and invoicing come together on every project. You see at a glance what's used, what's left, and what's ready to invoice.
     pt: Construímos ferramentas de gestão de projetos para empresas de serviços, escritórios de engenharia e agências. Tarefas, horas trabalhadas, orçamento e faturamento ficam reunidos em cada projeto. Você vê num relance o que foi consumido, o que resta e o que já está na hora de faturar.
   ucVisualAriaLabel:
-    fr: 'Exemple d''écran : suivi de projets'
-    en: 'Example screen: project tracking'
-    pt: 'Exemplo de tela: gestão de projetos'
+    fr: "Exemple d'écran : suivi de projets"
+    en: "Example screen: project tracking"
+    pt: "Exemplo de tela: gestão de projetos"
   qtFigureQtAriaLabel:
-    fr: 'Exemple d''écran : suivi de projets'
-    en: 'Example screen: project tracking'
-    pt: 'Exemplo de tela: gestão de projetos'
+    fr: "Exemple d'écran : suivi de projets"
+    en: "Example screen: project tracking"
+    pt: "Exemplo de tela: gestão de projetos"
   qtAppClass: qt-app
   qtFigureFigcaption:
-    fr: 'Exemple : un projet qui dérive, repéré à mi-parcours.'
-    en: 'Example: a project going over, caught halfway through.'
-    pt: 'Exemplo: um projeto com desvio, identificado no meio do caminho.'
+    fr: "Exemple : un projet qui dérive, repéré à mi-parcours."
+    en: "Example: a project going over, caught halfway through."
+    pt: "Exemplo: um projeto com desvio, identificado no meio do caminho."
   audit:
     fr: Dites-nous comment vous suivez vos projets aujourd'hui.
     en: Tell us how you track your projects today.
@@ -42,7 +50,7 @@ strings:
     en: <em></em>Projects
     pt: <em></em>Projetos
   items:
-    - 'on': true
+    - "on": true
       label:
         fr: Projets
         en: Projects
@@ -82,7 +90,7 @@ strings:
         - fr: Budget consommé
           en: Budget used
           pt: Orçamento consumido
-        - ''
+        - ""
     - class: mk-tr
       items:
         - fr: Rénovation siège Dufour
@@ -159,9 +167,9 @@ strings:
     en: 38 h
     pt: 38h
   mkAsideMkAlert:
-    fr: 'Dépassement prévu : 21 h. Prévenir le client ou revoir le périmètre.'
-    en: 'Expected overrun: 21h. Warn the client or rework the scope.'
-    pt: 'Estouro previsto: 21h. Avisar o cliente ou rever o escopo.'
+    fr: "Dépassement prévu : 21 h. Prévenir le client ou revoir le périmètre."
+    en: "Expected overrun: 21h. Warn the client or rework the scope."
+    pt: "Estouro previsto: 21h. Avisar o cliente ou rever o escopo."
   mkAsideMkBtn:
     fr: Facturer l'étape 1
     en: Invoice stage 1

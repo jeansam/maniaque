@@ -3,6 +3,14 @@ slug:
   fr: planning-des-interventions
   en: job-scheduling
   pt: agenda-de-atendimentos
+quote:
+  fr: «&nbsp;Le technicien est arrivé sans la pièce.&nbsp;»
+  en: “The technician turned up without the part.”
+  pt: “O técnico chegou sem a peça.”
+summary:
+  fr: Qui va où, quand, avec quoi. Chaque intervention arrive sur le téléphone du bon technicien, avec l'adresse, l'historique et le matériel à prévoir.
+  en: Who goes where, when, with what. Each job lands on the right technician's phone, with the address, the history and the parts to bring.
+  pt: Quem vai aonde, quando e com o quê. Cada atendimento chega ao celular do técnico certo, com o endereço, o histórico e o material necessário.
 strings:
   title:
     fr: Planning des interventions
@@ -17,22 +25,22 @@ strings:
     en: A schedule that sends the right technician, <span>with the right parts.</span>
     pt: Uma agenda que manda o técnico certo, <span>com as peças certas.</span>
   ucLede:
-    fr: 'Nous construisons des plannings d''interventions pour les artisans, les mainteneurs et les entreprises de dépannage. Vous placez l''intervention, l''outil vérifie qui est disponible et ce qu''il faut emporter. Le technicien reçoit tout sur son téléphone : l''adresse, l''historique du client, le matériel. Et le rapport d''intervention revient signé, sans papier.'
-    en: 'We build job scheduling tools for tradespeople, maintenance firms and repair businesses. You place the job, the tool checks who''s free and what to bring. The technician gets everything on their phone: the address, the customer''s history, the parts. And the job report comes back signed, with no paperwork.'
-    pt: 'Construímos agendas de atendimento para prestadores de serviço, empresas de manutenção e de assistência técnica. Você agenda o atendimento, e a ferramenta verifica quem está disponível e o que é preciso levar. O técnico recebe tudo no celular: o endereço, o histórico do cliente, o material. E o relatório do atendimento volta assinado, sem papel.'
+    fr: "Nous construisons des plannings d'interventions pour les artisans, les mainteneurs et les entreprises de dépannage. Vous placez l'intervention, l'outil vérifie qui est disponible et ce qu'il faut emporter. Le technicien reçoit tout sur son téléphone : l'adresse, l'historique du client, le matériel. Et le rapport d'intervention revient signé, sans papier."
+    en: "We build job scheduling tools for tradespeople, maintenance firms and repair businesses. You place the job, the tool checks who's free and what to bring. The technician gets everything on their phone: the address, the customer's history, the parts. And the job report comes back signed, with no paperwork."
+    pt: "Construímos agendas de atendimento para prestadores de serviço, empresas de manutenção e de assistência técnica. Você agenda o atendimento, e a ferramenta verifica quem está disponível e o que é preciso levar. O técnico recebe tudo no celular: o endereço, o histórico do cliente, o material. E o relatório do atendimento volta assinado, sem papel."
   ucVisualAriaLabel:
-    fr: 'Exemple d''écran : planning des interventions'
-    en: 'Example screen: job scheduling'
-    pt: 'Exemplo de tela: agenda de atendimentos'
+    fr: "Exemple d'écran : planning des interventions"
+    en: "Example screen: job scheduling"
+    pt: "Exemplo de tela: agenda de atendimentos"
   qtFigureQtAriaLabel:
-    fr: 'Exemple d''écran : planning des interventions'
-    en: 'Example screen: job scheduling'
-    pt: 'Exemplo de tela: agenda de atendimentos'
+    fr: "Exemple d'écran : planning des interventions"
+    en: "Example screen: job scheduling"
+    pt: "Exemplo de tela: agenda de atendimentos"
   qtAppClass: qt-app
   qtFigureFigcaption:
-    fr: 'Exemple : la semaine de l''équipe, et l''intervention telle que Karim la reçoit.'
-    en: 'Example: the team''s week, and the job as Karim receives it.'
-    pt: 'Exemplo: a semana da equipe, e o atendimento do jeito que o Karim recebe.'
+    fr: "Exemple : la semaine de l'équipe, et l'intervention telle que Karim la reçoit."
+    en: "Example: the team's week, and the job as Karim receives it."
+    pt: "Exemplo: a semana da equipe, e o atendimento do jeito que o Karim recebe."
   audit:
     fr: Dites-nous comment vous organisez vos interventions aujourd'hui.
     en: Tell us how you organise your jobs today.
@@ -42,7 +50,7 @@ strings:
     en: <em></em>Schedule
     pt: <em></em>Agenda
   items:
-    - 'on': true
+    - "on": true
       label:
         fr: Planning
         en: Schedule
@@ -87,12 +95,12 @@ strings:
       en: Fri
       pt: Sex
   mkLane:
-    - style: --s:0;--l:2;--c:#2F6FDB
+    - style: "--s:0;--l:2;--c:#2F6FDB"
       label:
         fr: Chaudière Lopez
         en: Lopez boiler
         pt: Caldeira Lopez
-    - style: --s:3;--l:2;--c:#2F6FDB
+    - style: "--s:3;--l:2;--c:#2F6FDB"
       label:
         fr: Entretien VMC
         en: Ventilation service
@@ -102,28 +110,28 @@ strings:
     en: Girard bathroom
     pt: Reforma banheiro Girard
   mkLane2:
-    - style: --s:0;--l:1;--c:#D2251B
+    - style: "--s:0;--l:1;--c:#D2251B"
       label:
         fr: Dépannage
         en: Repair
         pt: Reparo
-    - style: --s:2;--l:2;--c:#D2251B
+    - style: "--s:2;--l:2;--c:#D2251B"
       label:
         fr: Pose clim Bernard
         en: Bernard A/C install
         pt: Instalação de ar Bernard
-    - style: --s:4;--l:1;--c:#D2251B
+    - style: "--s:4;--l:1;--c:#D2251B"
       label:
         fr: Devis
         en: Quote
         pt: Orçamento
   mkLane3:
-    - style: --s:1;--l:1;--c:#2FA36B
+    - style: "--s:1;--l:1;--c:#2FA36B"
       label:
         fr: Visite
         en: Site visit
         pt: Visita
-    - style: --s:3;--l:2;--c:#2FA36B
+    - style: "--s:3;--l:2;--c:#2FA36B"
       label:
         fr: Chantier Mercier
         en: Mercier site

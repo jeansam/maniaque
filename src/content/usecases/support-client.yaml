@@ -3,6 +3,14 @@ slug:
   fr: support-client
   en: customer-support
   pt: suporte-ao-cliente
+quote:
+  fr: «&nbsp;La boîte mail déborde.&nbsp;»
+  en: “The inbox is overflowing.”
+  pt: “A caixa de e-mail está transbordando.”
+summary:
+  fr: Les demandes sont triées, attribuées et accompagnées d'un brouillon de réponse. Vos clients sont servis plus vite, et votre équipe respire.
+  en: Requests are sorted, assigned and come with a draft reply. Your customers hear back faster, and your team can breathe.
+  pt: Os pedidos são classificados, atribuídos e acompanhados de um rascunho de resposta. Seus clientes são atendidos mais rápido, e a sua equipe respira.
 strings:
   title:
     fr: Support client
@@ -21,18 +29,18 @@ strings:
     en: We build support tools for teams swamped by email. Every request is sorted, assigned to the right person and comes with a draft reply written by AI from your past answers. Your team reviews and sends. Customers hear back faster, and nothing slips through.
     pt: Construímos ferramentas de suporte para equipes sobrecarregadas de e-mails. Cada pedido é classificado, atribuído à pessoa certa e acompanhado de um rascunho de resposta escrito pela IA a partir das suas respostas anteriores. A sua equipe revisa e envia. Seus clientes recebem resposta mais rápido, e nada se perde.
   ucVisualAriaLabel:
-    fr: 'Exemple d''écran : support client'
-    en: 'Example screen: customer support'
-    pt: 'Exemplo de tela: suporte ao cliente'
+    fr: "Exemple d'écran : support client"
+    en: "Example screen: customer support"
+    pt: "Exemplo de tela: suporte ao cliente"
   qtFigureQtAriaLabel:
-    fr: 'Exemple d''écran : support client'
-    en: 'Example screen: customer support'
-    pt: 'Exemplo de tela: suporte ao cliente'
+    fr: "Exemple d'écran : support client"
+    en: "Example screen: customer support"
+    pt: "Exemplo de tela: suporte ao cliente"
   qtAppClass: qt-app qt-app-2
   qtFigureFigcaption:
-    fr: 'Exemple : une demande urgente, triée et déjà accompagnée de sa réponse.'
-    en: 'Example: an urgent request, sorted and already paired with a reply.'
-    pt: 'Exemplo: um pedido urgente, classificado e já acompanhado da resposta.'
+    fr: "Exemple : une demande urgente, triée et déjà accompagnée de sa réponse."
+    en: "Example: an urgent request, sorted and already paired with a reply."
+    pt: "Exemplo: um pedido urgente, classificado e já acompanhado da resposta."
   audit:
     fr: Dites-nous comment vous gérez les demandes de vos clients aujourd'hui.
     en: Tell us how you handle customer requests today.
@@ -42,7 +50,7 @@ strings:
     en: <em></em>Support
     pt: <em></em>Suporte
   items:
-    - 'on': true
+    - "on": true
       label:
         fr: Boîte de réception
         en: Inbox
@@ -140,9 +148,9 @@ strings:
   mkActions:
     - class: mk-sub
       label:
-        fr: 'Attribué à : Karim · Contrat d''entretien actif'
-        en: 'Assigned to: Karim · Maintenance plan active'
-        pt: 'Atribuído a: Karim · Contrato de manutenção ativo'
+        fr: "Attribué à : Karim · Contrat d'entretien actif"
+        en: "Assigned to: Karim · Maintenance plan active"
+        pt: "Atribuído a: Karim · Contrato de manutenção ativo"
     - class: mk-btn
       label:
         fr: Relire et envoyer

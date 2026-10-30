@@ -7,7 +7,30 @@ scripts: [script.js, nav.js]
 {% import "components.njk" as c %}
 
   <section class="hero grid-paper">
-    <div class="wrap">{{ s.heroWrap }}</div>
+    <div class="wrap">
+      <div class="hero-head">
+        <h1 class="hero-title">
+          <span class="line">{{ s.heroLine1 }}</span>
+          <span class="line"><span class="target" id="target">man<span class="ia">ia</span>que</span>{% if s.meaning %}<a class="star" href="#meaning" aria-label="{{ s.meaningLabel }}">*</a>{% endif %}</span>
+          <span class="line">{{ s.heroLine3 }}</span>
+        </h1>
+        <div class="note" aria-hidden="true">
+          <p class="note-ask">{{ s.noteAsk }}</p>
+          <p class="note-next">{{ s.noteNext }}</p>
+        </div>
+      </div>
+{% if s.meaning %}      <p class="meaning" id="meaning"><span class="star-ref" aria-hidden="true">*</span>{{ s.meaning }}</p>
+{% endif %}      <div class="hero-foot">
+        <p class="lede">{{ s.lede }}</p>
+        <div class="hero-cta">
+          <div class="hero-actions">
+            <a data-book class="btn" target="_blank" rel="noopener">{{ s.heroBook }}</a>
+            <a class="link" href="#{{ t.offerSections.pricing.id }}">{{ s.seePricing }}</a>
+          </div>
+          <a class="who" href="{{ routes.about[lang] }}"><img data-person-photo src="{{ city.person.photo }}" width="32" height="32" alt=""><span><span data-person-name>{{ city.person.name }}</span> {{ s.answers }}</span></a>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section class="showcase" role="img" aria-label="{{ s.showcaseAriaLabel }}">
@@ -15,9 +38,9 @@ scripts: [script.js, nav.js]
     <div class="showcase-row showcase-rev"><div class="showcase-track">{% set showcase2 %}<div class="dc dc-light dc-wide" style="--ac:#5B8DEF;--ac2:#F2B84B"><div class="dc-main">{{ c.dcHead2("dc-head", s.dcTitles11) }}<div class="dc-plan"><span></span><div class="dc-days">{% for item in s.dcDays %}<span>{{ item }}</span>{% endfor %}</div><span class="dc-who"><em style="background:#5B8DEF"></em>Julien</span>{{ c.dcLane("dc-lane", s.dcLane, "dc-job") }}<span class="dc-who"><em style="background:#F2B84B"></em>Sarah</span><div class="dc-lane"><span class="dc-job" style="--s:1;--l:3;--c:#F2B84B">{{ s.dcLaneDcJob3 }}</span></div><span class="dc-who"><em style="background:#E5677D"></em>Karim</span>{{ c.dcLane("dc-lane", s.dcLane2, "dc-job") }}<span class="dc-who"><em style="background:#2FBF71"></em>Léa</span>{{ c.dcLane("dc-lane", s.dcLane3, "dc-job") }}</div></div></div><div class="dc dc-dark dc-phone" style="--ac:#5B8DEF;--ac2:#F2B84B"><span class="dc-notch"></span><div class="dc-pmain"><p class="dc-ph">{{ s.dcPmainDcPh7 }}</p><div class="dc-hero"><span>{{ s.dcHeroSpan }}</span><b>{{ s.dcHeroB }}</b><i class="up">{{ s.dcHeroUp }}</i></div><svg class="dc-chart" viewBox="0 0 120 44" preserveAspectRatio="none">{% for dcGl in s.dcGls3 %}<line x1="0" x2="120" y1="{{ dcGl.y1 }}" y2="{{ dcGl.y2 }}" class="dc-gl"/>{% endfor %}<path d="M0.0 30.2 L10.9 26.1 L21.8 28.8 L32.7 23.3 L43.6 24.7 L54.5 19.2 L65.5 20.6 L76.4 15.0 L87.3 16.4 L98.2 10.9 L109.1 8.1 L120.0 4.0 L120 44 L0 44 Z" fill="var(--ac)" opacity=".16"/><path d="M0.0 30.2 L10.9 26.1 L21.8 28.8 L32.7 23.3 L43.6 24.7 L54.5 19.2 L65.5 20.6 L76.4 15.0 L87.3 16.4 L98.2 10.9 L109.1 8.1 L120.0 4.0" fill="none" stroke="var(--ac)" stroke-width="1.6" vector-effect="non-scaling-stroke"/></svg><div class="dc-mk">{% for dcKpi in s.dcMk3 %}<div class="dc-kpi"><span>{{ dcKpi.span }}</span><b>{{ dcKpi.b }}</b></div>{% endfor %}</div></div><nav class="dc-tabbar">{% for item in s.dcTabbar7 %}<i{% if item.on %} class="on"{% endif %}></i>{% endfor %}</nav></div><div class="dc dc-dark " style="--ac:#2FBF71;--ac2:#F25C54">{{ c.dcSide2("dc-side", "dc-brand", "Stockly", s.items9) }}<div class="dc-main">{{ c.dcHead2("dc-head", s.dcTitles12) }}<div class="dc-kpis dc-k3"><div class="dc-kpi"><span>{{ s.dcKpiSpan27 }}</span><b>12</b><i class="up">−4</i></div><div class="dc-kpi"><span>{{ s.dcKpiSpan28 }}</span><b>37</b><i class="down">+6</i></div><div class="dc-kpi"><span>{{ s.dcKpiSpan29 }}</span><b>{{ s.dcKpiB16 }}</b></div></div><div class="dc-row"><div class="dc-panel dc-grow"><p class="dc-cap">{{ s.dcPanelDcCap3 }}</p><svg class="dc-chart" viewBox="0 0 300 70" preserveAspectRatio="none">{% for rect in s.dcChart %}<rect x="{{ rect.x }}" y="{{ rect.y }}" width="12.4" height="{{ rect.height }}" rx="1.5" fill="{{ rect.fill }}"/>{% endfor %}</svg></div><div class="dc-panel dc-center"><p class="dc-cap">{{ s.dcPanelDcCap4 }}</p><div class="dc-donut" style="width:64px;height:64px"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="none" stroke="var(--line)" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="var(--ac)" stroke-width="7" stroke-linecap="round" stroke-dasharray="153.6 163.4" transform="rotate(-90 32 32)"/></svg><b>{{ s.dcDonutB }}</b></div></div></div></div></div><div class="dc dc-light dc-wide" style="--ac:#7C5CFC;--ac2:#F2B84B"><div class="dc-main">{{ c.dcHead2("dc-head", s.dcTitles13) }}<div class="dc-org"><div class="dc-node dc-top"><em style="background:#142850">M</em><b>Marc</b><span>{{ s.dcNodeSpan }}</span></div><div class="dc-branch"></div><div class="dc-nodes">{% for dcNode in s.dcNodes %}<div class="dc-node"><em style="{{ dcNode.emStyle }}">{{ dcNode.em }}</em><b>{{ dcNode.b }}</b><span>{{ dcNode.span }}</span></div>{% endfor %}</div></div></div></div><div class="dc dc-light dc-phone" style="--ac:#7C5CFC;--ac2:#22A06B"><span class="dc-notch"></span><div class="dc-pmain"><p class="dc-ph">{{ s.dcPmainDcPh8 }}</p>{% for dcLi in s.dcLis3 %}<div class="dc-li"><em>{{ dcLi.em }}</em><div><span>{{ dcLi.span }}</span><small>{{ dcLi.small }}</small></div><span class="dc-pill dc-info">{{ dcLi.dcPill }}</span></div>{% endfor %}</div><nav class="dc-tabbar">{% for item in s.dcTabbar8 %}<i{% if item.on %} class="on"{% endif %}></i>{% endfor %}</nav></div><div class="dc dc-dark " style="--ac:#F2B84B;--ac2:#5B8DEF">{{ c.dcSide("dc-side", "dc-brand", s.dcSideDcBrand3, s.items10) }}<div class="dc-main">{{ c.dcHead2("dc-head", s.dcTitles14) }}<div class="dc-row"><div class="dc-cal"><span class="dc-dh">{{ s.dcCalDcDh }}</span><span class="dc-dh">{{ s.dcCalDcDh2 }}</span><span class="dc-dh">{{ s.dcCalDcDh3 }}</span><span class="dc-dh">{{ s.dcCalDcDh4 }}</span><span class="dc-dh">{{ s.dcCalDcDh5 }}</span><span class="dc-dh">S</span><span class="dc-dh">{{ s.dcCalDcDh6 }}</span><span></span><span></span><span></span><span class="">1</span><span class="">2</span><span class="b">3</span><span class="b">4</span><span class="b">5</span><span class="">6</span><span class="">7</span><span class="">8</span><span class="">9</span><span class="b">10</span><span class="b">11</span><span class="b">12</span><span class="b">13</span><span class="">14</span><span class="">15</span><span class="">16</span><span class="b">17</span><span class="b">18</span><span class="b">19</span><span class="b">20</span><span class="">21</span><span class="">22</span><span class=" t">23</span><span class="b">24</span><span class="b">25</span><span class="b">26</span><span class="b">27</span><span class="">28</span><span class="">29</span><span class="">30</span><span class="">31</span></div><div class="dc-col2">{% for dcKpi in s.dcCol2 %}<div class="dc-kpi"><span>{{ dcKpi.span }}</span><b>{{ dcKpi.b }}</b></div>{% endfor %}</div></div></div></div><div class="dc dc-green dc-phone" style="--ac:#C5F04A;--ac2:#F2B84B"><span class="dc-notch"></span><div class="dc-pmain">{% for dcPh in s.dcPhs %}<p class="{{ dcPh.class }}">{{ dcPh.label }}</p>{% endfor %}<div class="dc-clock"><div class="dc-donut" style="width:78px;height:78px"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="none" stroke="var(--line)" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="var(--ac)" stroke-width="7" stroke-linecap="round" stroke-dasharray="163.4 163.4" transform="rotate(-90 32 32)"/></svg><b>07:58</b></div></div><p class="dc-ok">{{ s.dcPmainDcOk }}</p><div class="dc-mk">{% for dcKpi in s.dcMk4 %}<div class="dc-kpi"><span>{{ dcKpi.span }}</span><b>{{ dcKpi.b }}</b></div>{% endfor %}</div></div><nav class="dc-tabbar">{% for item in s.dcTabbar9 %}<i{% if item.on %} class="on"{% endif %}></i>{% endfor %}</nav></div><div class="dc dc-light dc-wide" style="--ac:#F07B3F;--ac2:#142850"><div class="dc-main">{{ c.dcHead2("dc-head", s.dcTitles15) }}<div class="dc-row">{{ c.dcPanel(s.dcPanel3) }}<div class="dc-panel dc-center"><p class="dc-cap">{{ s.dcPanelDcCap5 }}</p><div class="dc-donut" style="width:64px;height:64px"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="none" stroke="var(--line)" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="var(--ac)" stroke-width="7" stroke-linecap="round" stroke-dasharray="132.3 163.4" transform="rotate(-90 32 32)"/></svg><b>{{ s.dcDonutB2 }}</b></div></div></div><div class="dc-panel"><p class="dc-cap">{{ s.dcPanelDcCap6 }}</p><svg class="dc-chart" viewBox="0 0 300 40" preserveAspectRatio="none">{% for rect in s.dcChart2 %}<rect x="{{ rect.x }}" y="{{ rect.y }}" width="15.5" height="{{ rect.height }}" rx="1.5" fill="var(--ac)"/>{% endfor %}</svg></div></div></div>{% endset %}{{ showcase2 }}<div class="showcase-dup" aria-hidden="true">{{ showcase2 }}</div></div></div>
   </section>
 
-  <section class="section section-alt" id="{{ s.howItWorksId }}" aria-labelledby="{{ s.howItWorksAriaLabelledby }}">
+  <section class="section section-alt" id="{{ t.offerSections.howItWorks.id }}" aria-labelledby="t-etapes">
     <div class="wrap">
-      <h2 id="{{ s.howItWorksStepsId }}">{{ s.howItWorksSteps }}</h2>
+      <h2 id="t-etapes">{{ s.howItWorksSteps }}</h2>
       <ol class="steps">
         <li>
           <h3><button type="button" class="step-toggle" aria-expanded="false" aria-controls="step-desc-1">{{ s.h3StepToggle }}</button></h3>
@@ -32,9 +55,9 @@ scripts: [script.js, nav.js]
     </div>
   </section>
 
-  <section class="section" id="{{ s.pricingId }}" aria-labelledby="{{ s.pricingAriaLabelledby }}">
+  <section class="section" id="{{ t.offerSections.pricing.id }}" aria-labelledby="t-tarifs">
     <div class="wrap">
-      <h2 id="{{ s.pricingId2 }}">{{ s.pricing }}</h2>
+      <h2 id="t-tarifs">{{ s.pricing }}</h2>
       <p class="section-lede">{{ s.pricingSectionLede }}</p>
       <div class="quote">
         <table class="quote-table">
@@ -60,10 +83,10 @@ scripts: [script.js, nav.js]
     </div>
   </section>
 
-  <section class="section section-alt" id="{{ s.commitmentsId }}" aria-labelledby="{{ s.commitmentsAriaLabelledby }}">
+  <section class="section section-alt" id="{{ s.commitmentsId }}" aria-labelledby="t-engagements">
     <div class="wrap split split-wide">
       <div class="split-text">
-        <h2 id="{{ s.splitTextCommitmentsId }}">{{ s.splitTextCommitments }}</h2>
+        <h2 id="t-engagements">{{ s.splitTextCommitments }}</h2>
         <p>{{ s.splitTextP }}</p>
       </div>
       <div>
@@ -79,9 +102,9 @@ scripts: [script.js, nav.js]
     </div>
   </section>
 
-  <section class="section" id="{{ s.safeguardsId }}" aria-labelledby="{{ s.safeguardsAriaLabelledby }}">
+  <section class="section" id="{{ s.safeguardsId }}" aria-labelledby="t-garanties">
     <div class="wrap">
-      <h2 id="{{ s.safeguardsId2 }}">{{ s.safeguards }}</h2>
+      <h2 id="t-garanties">{{ s.safeguards }}</h2>
       <p class="section-lede">{{ s.safeguardsSectionLede }}</p>
       <div class="assurances">
         {% for item in s.assurances %}{% if not loop.first %}
@@ -94,7 +117,7 @@ scripts: [script.js, nav.js]
     </div>
   </section>
 
-  <section class="section section-alt" id="faq" aria-labelledby="t-faq">
+  <section class="section section-alt" id="{{ t.offerSections.faq.id }}" aria-labelledby="t-faq">
     <div class="wrap faq-wrap">
       <div class="faq-head">
         <h2 id="t-faq">{{ s.faqHeadFaq }}</h2>

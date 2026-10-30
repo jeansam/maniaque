@@ -3,6 +3,14 @@ slug:
   fr: espace-client
   en: customer-portal
   pt: area-do-cliente
+quote:
+  fr: «&nbsp;Où en est ma commande&nbsp;? (troisième appel de la journée)&nbsp;»
+  en: “Where's my order? (third call today)”
+  pt: “Como está o meu pedido? (terceira ligação do dia)”
+summary:
+  fr: Vos clients suivent leurs commandes, téléchargent leurs factures et vous écrivent au même endroit, à vos couleurs.
+  en: Your customers track their orders, download their invoices and message you in one place, in your colours.
+  pt: Seus clientes acompanham os pedidos, baixam as faturas e falam com você no mesmo lugar, com a sua identidade visual.
 strings:
   title:
     fr: Espace client
@@ -21,18 +29,18 @@ strings:
     en: We build customer portals for businesses that get too many “where's my order?” calls. Your customers follow their orders step by step, download their invoices and message you in one place. You decide what they see, and your team gets back the time spent on the phone.
     pt: Construímos áreas do cliente para empresas que recebem ligações demais do tipo “como está o meu pedido?”. Seus clientes acompanham os pedidos etapa por etapa, baixam as faturas e falam com você no mesmo lugar. Você decide o que eles veem, e a sua equipe recupera o tempo gasto ao telefone.
   ucVisualAriaLabel:
-    fr: 'Exemple d''écran : espace client'
-    en: 'Example screen: customer portal'
-    pt: 'Exemplo de tela: área do cliente'
+    fr: "Exemple d'écran : espace client"
+    en: "Example screen: customer portal"
+    pt: "Exemplo de tela: área do cliente"
   qtFigureQtAriaLabel:
-    fr: 'Exemple d''écran : espace client'
-    en: 'Example screen: customer portal'
-    pt: 'Exemplo de tela: área do cliente'
+    fr: "Exemple d'écran : espace client"
+    en: "Example screen: customer portal"
+    pt: "Exemplo de tela: área do cliente"
   qtAppClass: qt-app
   qtFigureFigcaption:
-    fr: 'Exemple : ce que voit votre client en se connectant.'
-    en: 'Example: what your customer sees when they log in.'
-    pt: 'Exemplo: o que o seu cliente vê ao entrar.'
+    fr: "Exemple : ce que voit votre client en se connectant."
+    en: "Example: what your customer sees when they log in."
+    pt: "Exemplo: o que o seu cliente vê ao entrar."
   audit:
     fr: Dites-nous ce que vos clients vous demandent le plus souvent.
     en: Tell us what your customers ask you most often.
@@ -42,7 +50,7 @@ strings:
     en: <em></em>Martin Equipment
     pt: <em></em>Martin Equipamentos
   items:
-    - 'on': true
+    - "on": true
       label:
         fr: Accueil
         en: Home
@@ -90,7 +98,7 @@ strings:
         fr: Expédiée
         en: Shipped
         pt: Enviado
-    - class: ''
+    - class: ""
       span:
         fr: Livrée
         en: Delivered

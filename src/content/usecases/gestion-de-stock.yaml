@@ -3,6 +3,14 @@ slug:
   fr: gestion-de-stock
   en: inventory
   pt: controle-de-estoque
+quote:
+  fr: «&nbsp;On a encore des vis de 6&nbsp;?&nbsp;»
+  en: “Do we still have size 6 screws?”
+  pt: “Ainda temos parafuso de 6?”
+summary:
+  fr: Entrées, sorties, seuils d'alerte et fournisseurs. Vous savez ce qu'il reste, ce qu'il faut commander et ce que ça vous coûte.
+  en: Stock in, stock out, alert thresholds and suppliers. You know what's left, what to order and what it costs you.
+  pt: Entradas, saídas, estoque mínimo e fornecedores. Você sabe o que resta, o que precisa comprar e quanto isso custa.
 strings:
   title:
     fr: Gestion de stock
@@ -21,18 +29,18 @@ strings:
     en: We build inventory tools for workshops, wholesalers and shops. Stock in, stock out, counts and suppliers are tracked in one place, barcode scanning included. When an item drops below its threshold, the tool prepares the supplier order. You always know what you have, and what it costs you.
     pt: Construímos ferramentas de estoque para oficinas, atacadistas e lojas. Entradas, saídas, inventários e fornecedores ficam no mesmo lugar, com leitura de código de barras. Quando um item fica abaixo do mínimo, a ferramenta prepara o pedido ao fornecedor. Você sabe a qualquer momento o que tem, e quanto isso custa.
   ucVisualAriaLabel:
-    fr: 'Exemple d''écran : gestion de stock'
-    en: 'Example screen: inventory'
-    pt: 'Exemplo de tela: controle de estoque'
+    fr: "Exemple d'écran : gestion de stock"
+    en: "Example screen: inventory"
+    pt: "Exemplo de tela: controle de estoque"
   qtFigureQtAriaLabel:
-    fr: 'Exemple d''écran : gestion de stock'
-    en: 'Example screen: inventory'
-    pt: 'Exemplo de tela: controle de estoque'
+    fr: "Exemple d'écran : gestion de stock"
+    en: "Example screen: inventory"
+    pt: "Exemplo de tela: controle de estoque"
   qtAppClass: qt-app
   qtFigureFigcaption:
-    fr: 'Exemple : les articles à surveiller, et la commande fournisseur déjà prête.'
-    en: 'Example: the items to watch, and the supplier order already prepared.'
-    pt: 'Exemplo: os itens que merecem atenção, e o pedido ao fornecedor já pronto.'
+    fr: "Exemple : les articles à surveiller, et la commande fournisseur déjà prête."
+    en: "Example: the items to watch, and the supplier order already prepared."
+    pt: "Exemplo: os itens que merecem atenção, e o pedido ao fornecedor já pronto."
   audit:
     fr: Dites-nous comment vous suivez votre stock aujourd'hui.
     en: Tell us how you track your stock today.
@@ -42,7 +50,7 @@ strings:
     en: <em></em>Stock
     pt: <em></em>Estoque
   items:
-    - 'on': true
+    - "on": true
       label:
         fr: Articles
         en: Items
@@ -77,7 +85,7 @@ strings:
   mkKpiB:
     fr: 1 284
     en: 1,284
-    pt: '1.284'
+    pt: "1.284"
   mkKpiSpan2:
     fr: Sous le seuil
     en: Below threshold
@@ -116,7 +124,7 @@ strings:
           pt: Parafuso inox M6 × 40
         - fr: 1 240
           en: 1,240
-          pt: '1.240'
+          pt: "1.240"
         - <span class="mk-bar mk-bar-ink"><i style="width:90%"></i></span>
         - <span class="mk-pill mk-ok">OK</span>
     - class: mk-tr
@@ -124,7 +132,7 @@ strings:
         - fr: Charnière 110°
           en: 110° hinge
           pt: Dobradiça 110°
-        - '86'
+        - "86"
         - <span class="mk-bar mk-bar-bad"><i style="width:28%"></i></span>
         - fr: <span class="mk-pill mk-bad">À commander</span>
           en: <span class="mk-pill mk-bad">Reorder</span>
@@ -134,7 +142,7 @@ strings:
         - fr: Joint EPDM 10 m
           en: EPDM seal 10 m
           pt: Vedação EPDM 10 m
-        - '42'
+        - "42"
         - <span class="mk-bar mk-bar-warn"><i style="width:45%"></i></span>
         - fr: <span class="mk-pill mk-warn">Bas</span>
           en: <span class="mk-pill mk-warn">Low</span>
@@ -144,7 +152,7 @@ strings:
         - fr: Profilé alu 6 m
           en: 6 m alu profile
           pt: Perfil de alumínio 6 m
-        - '318'
+        - "318"
         - <span class="mk-bar mk-bar-ink"><i style="width:80%"></i></span>
         - <span class="mk-pill mk-ok">OK</span>
     - class: mk-tr
@@ -152,7 +160,7 @@ strings:
         - fr: Poignée inox
           en: Steel handle
           pt: Puxador inox
-        - '19'
+        - "19"
         - <span class="mk-bar mk-bar-bad"><i style="width:15%"></i></span>
         - fr: <span class="mk-pill mk-bad">À commander</span>
           en: <span class="mk-pill mk-bad">Reorder</span>

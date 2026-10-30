@@ -3,6 +3,14 @@ slug:
   fr: propositions-commerciales
   en: sales-proposals
   pt: propostas-comerciais
+quote:
+  fr: «&nbsp;Chaque proposition repart d'un vieux fichier Word.&nbsp;»
+  en: “Every proposal starts from an old Word file.”
+  pt: “Cada proposta começa de um arquivo Word antigo.”
+summary:
+  fr: L'IA rédige un premier jet à partir de vos propositions passées, mis en page à votre image. Il ne vous reste qu'à relire.
+  en: AI drafts a first version from your past proposals, laid out in your brand. All that's left is to proofread.
+  pt: A IA escreve um primeiro rascunho a partir das suas propostas anteriores, diagramado com a sua identidade. Só falta revisar.
 strings:
   title:
     fr: Propositions commerciales
@@ -21,18 +29,18 @@ strings:
     en: We build proposal tools for consultancies, agencies and service businesses. AI reads the client's brief and drafts a first version from your past proposals, references and CVs. The document comes out in your own template. You proofread, set the price, and send.
     pt: Construímos ferramentas de propostas para consultorias, agências e empresas de serviços. A IA lê a necessidade do cliente e escreve um primeiro rascunho a partir das suas propostas anteriores, das suas referências e dos seus currículos. O documento sai no seu próprio modelo. Você revisa, define o preço e envia.
   ucVisualAriaLabel:
-    fr: 'Exemple d''écran : propositions commerciales'
-    en: 'Example screen: sales proposals'
-    pt: 'Exemplo de tela: propostas comerciais'
+    fr: "Exemple d'écran : propositions commerciales"
+    en: "Example screen: sales proposals"
+    pt: "Exemplo de tela: propostas comerciais"
   qtFigureQtAriaLabel:
-    fr: 'Exemple d''écran : propositions commerciales'
-    en: 'Example screen: sales proposals'
-    pt: 'Exemplo de tela: propostas comerciais'
+    fr: "Exemple d'écran : propositions commerciales"
+    en: "Example screen: sales proposals"
+    pt: "Exemplo de tela: propostas comerciais"
   qtAppClass: qt-app
   qtFigureFigcaption:
-    fr: 'Exemple : un cahier des charges reçu, une proposition prête à relire.'
-    en: 'Example: a brief received, a proposal ready to review.'
-    pt: 'Exemplo: um termo de referência recebido, uma proposta pronta para revisar.'
+    fr: "Exemple : un cahier des charges reçu, une proposition prête à relire."
+    en: "Example: a brief received, a proposal ready to review."
+    pt: "Exemplo: um termo de referência recebido, uma proposta pronta para revisar."
   audit:
     fr: Dites-nous comment vous rédigez vos propositions aujourd'hui.
     en: Tell us how you write proposals today.
@@ -42,7 +50,7 @@ strings:
     en: <em></em>Proposals
     pt: <em></em>Propostas
   items:
-    - 'on': true
+    - "on": true
       label:
         fr: En cours
         en: In progress

@@ -3,36 +3,44 @@ slug:
   fr: devis-et-chiffrages
   en: quotes-and-estimates
   pt: orcamentos
+quote:
+  fr: «&nbsp;Il me faut deux heures par devis.&nbsp;»
+  en: “Every quote takes me two hours.”
+  pt: “Eu levo duas horas para fazer um orçamento.”
+summary:
+  fr: Vos tarifs, vos marges et vos options sont déjà enregistrés. Le devis se monte en quelques minutes et part au bon format.
+  en: Your rates, margins and options are already stored. A quote comes together in minutes and goes out in the right format.
+  pt: Seus preços, suas margens e suas opções já estão cadastrados. O orçamento fica pronto em poucos minutos e sai no formato certo.
 strings:
   title:
     fr: Devis et chiffrages
     en: Quotes and estimates
     pt: Orçamentos
   description:
-    fr: 'Un logiciel de devis construit autour de vos tarifs et de vos marges : le devis se monte en quelques minutes, part à vos couleurs et se relance tout seul.'
-    en: 'Quoting software built around your rates and your margins: a quote comes together in minutes, goes out in your brand and follows itself up.'
-    pt: 'Um software de orçamentos construído em torno dos seus preços e das suas margens: o orçamento fica pronto em poucos minutos, sai com a sua identidade visual e é cobrado sozinho.'
+    fr: "Un logiciel de devis construit autour de vos tarifs et de vos marges : le devis se monte en quelques minutes, part à vos couleurs et se relance tout seul."
+    en: "Quoting software built around your rates and your margins: a quote comes together in minutes, goes out in your brand and follows itself up."
+    pt: "Um software de orçamentos construído em torno dos seus preços e das suas margens: o orçamento fica pronto em poucos minutos, sai com a sua identidade visual e é cobrado sozinho."
   uc:
     fr: Un logiciel de devis qui connaît vos tarifs, <span>et protège vos marges.</span>
     en: Quoting software that knows your rates, <span>and protects your margins.</span>
     pt: Um software de orçamentos que conhece os seus preços, <span>e protege as suas margens.</span>
   ucLede:
-    fr: 'Nous construisons des outils de devis pour les artisans, les installateurs et les entreprises de services. Vos prix, vos marges et vos options sont déjà dedans : vous choisissez les prestations, l''outil calcule, vérifie la marge et met le devis en page à vos couleurs. Vous relisez, vous envoyez. Sans réponse, le client est relancé automatiquement.'
-    en: 'We build quoting tools for tradespeople, installers and service businesses. Your prices, margins and options are already in it: you pick the items, the tool does the maths, checks the margin and lays the quote out in your brand. You proofread, you send. If there''s no answer, the customer gets an automatic reminder.'
-    pt: 'Construímos ferramentas de orçamento para prestadores de serviço, instaladores e empresas de serviços. Seus preços, suas margens e suas opções já estão lá dentro: você escolhe os serviços, a ferramenta calcula, confere a margem e diagrama o orçamento com a sua identidade visual. Você revisa e envia. Sem resposta, o cliente recebe um lembrete automático.'
+    fr: "Nous construisons des outils de devis pour les artisans, les installateurs et les entreprises de services. Vos prix, vos marges et vos options sont déjà dedans : vous choisissez les prestations, l'outil calcule, vérifie la marge et met le devis en page à vos couleurs. Vous relisez, vous envoyez. Sans réponse, le client est relancé automatiquement."
+    en: "We build quoting tools for tradespeople, installers and service businesses. Your prices, margins and options are already in it: you pick the items, the tool does the maths, checks the margin and lays the quote out in your brand. You proofread, you send. If there's no answer, the customer gets an automatic reminder."
+    pt: "Construímos ferramentas de orçamento para prestadores de serviço, instaladores e empresas de serviços. Seus preços, suas margens e suas opções já estão lá dentro: você escolhe os serviços, a ferramenta calcula, confere a margem e diagrama o orçamento com a sua identidade visual. Você revisa e envia. Sem resposta, o cliente recebe um lembrete automático."
   ucVisualAriaLabel:
-    fr: 'Exemple d''écran : un devis en cours de création, avec le catalogue de prestations, le calcul de la marge et l''aperçu du document envoyé au client'
-    en: 'Example screen: a quote being built, with the item catalogue, the margin check and a preview of the document sent to the customer'
-    pt: 'Exemplo de tela: um orçamento em criação, com o catálogo de serviços, o cálculo da margem e a prévia do documento enviado ao cliente'
+    fr: "Exemple d'écran : un devis en cours de création, avec le catalogue de prestations, le calcul de la marge et l'aperçu du document envoyé au client"
+    en: "Example screen: a quote being built, with the item catalogue, the margin check and a preview of the document sent to the customer"
+    pt: "Exemplo de tela: um orçamento em criação, com o catálogo de serviços, o cálculo da margem e a prévia do documento enviado ao cliente"
   qtFigureQtAriaLabel:
-    fr: 'Exemple d''écran : un devis en cours de création, avec le catalogue de prestations, le calcul de la marge et l''aperçu du document envoyé au client'
-    en: 'Example screen: a quote being built, with the item catalogue, the margin check and a preview of the document sent to the customer'
-    pt: 'Exemplo de tela: um orçamento em criação, com o catálogo de serviços, o cálculo da margem e a prévia do documento enviado ao cliente'
+    fr: "Exemple d'écran : un devis en cours de création, avec le catalogue de prestations, le calcul de la marge et l'aperçu du document envoyé au client"
+    en: "Example screen: a quote being built, with the item catalogue, the margin check and a preview of the document sent to the customer"
+    pt: "Exemplo de tela: um orçamento em criação, com o catálogo de serviços, o cálculo da margem e a prévia do documento enviado ao cliente"
   qtAppClass: qt-app
   qtFigureFigcaption:
-    fr: 'Exemple : un devis monté en quatre lignes, marge vérifiée, prêt à partir.'
-    en: 'Example: a four-line quote, margin checked, ready to go.'
-    pt: 'Exemplo: um orçamento montado em quatro linhas, com a margem conferida, pronto para sair.'
+    fr: "Exemple : un devis monté en quatre lignes, marge vérifiée, prêt à partir."
+    en: "Example: a four-line quote, margin checked, ready to go."
+    pt: "Exemplo: um orçamento montado em quatro linhas, com a margem conferida, pronto para sair."
   audit:
     fr: Dites-nous comment vous établissez vos devis aujourd'hui.
     en: Tell us how you handle quotes today.
@@ -42,7 +50,7 @@ strings:
     en: <em></em>Quotes
     pt: <em></em>Orçamentos
   items:
-    - 'on': true
+    - "on": true
       label:
         fr: Devis
         en: Quotes
@@ -106,7 +114,7 @@ strings:
         fr: 280 €
         en: €280
         pt: "R$\_1.680"
-    - class: ''
+    - class: ""
       span:
         fr: Contrat d'entretien annuel
         en: Annual maintenance plan
@@ -144,7 +152,7 @@ strings:
         - fr: Fourniture et pose four mixte 10 niveaux
           en: Supply and install 10-tray combi oven
           pt: Fornecimento e instalação forno combinado 10 GNs
-        - '1'
+        - "1"
         - fr: 4 800 €
           en: €4,800
           pt: "R$\_28.800"
@@ -156,7 +164,7 @@ strings:
         - fr: Raccordement électrique
           en: Electrical connection
           pt: Ligação elétrica
-        - '1'
+        - "1"
         - fr: 620 €
           en: €620
           pt: "R$\_3.720"
@@ -168,7 +176,7 @@ strings:
         - fr: Mise en service et réglages
           en: Commissioning and set-up
           pt: Partida e ajustes
-        - '1'
+        - "1"
         - fr: 280 €
           en: €280
           pt: "R$\_1.680"
@@ -180,7 +188,7 @@ strings:
         - fr: Déplacement zone 1
           en: Travel, zone 1
           pt: Deslocamento zona 1
-        - '1'
+        - "1"
         - fr: 60 €
           en: €60
           pt: "R$\_360"
