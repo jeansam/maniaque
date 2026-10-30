@@ -1,0 +1,44 @@
+titles:
+  - class: dc-title
+    label:
+      fr: Équipe
+      en: Team
+      pt: Equipe
+  - class: dc-sub
+    label:
+      fr: Organigramme, 18 personnes
+      en: Org chart, 18 people
+      pt: Organograma, 18 pessoas
+managerRole:
+  fr: Gérant
+  en: Owner
+  pt: Gerente geral
+staff:
+  - emStyle: background:#7C5CFC
+    em: C
+    b: Claire
+    span:
+      fr: Direction
+      en: Management
+      pt: Diretoria
+  - emStyle: background:#F2B84B
+    em: H
+    b: Hugo
+    span:
+      fr: Commercial
+      en: Sales
+      pt: Commercial
+  - emStyle: background:#2FBF71
+    em: "N"
+    b: Nadia
+    span:
+      fr: Atelier
+      en: Workshop
+      pt: Produção
+  - emStyle: background:#E5677D
+    em: P
+    b: Paul
+    span:
+      fr: Admin
+      en: Admin
+      pt: Administrativo

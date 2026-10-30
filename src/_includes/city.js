@@ -1,0 +1,72 @@
+// Ville choisie : lien d'audit, prix et devise, mentions géographiques et personne de l'À propos.
+// La langue, elle, est celle de la page (/fr/, /, /pt/ : l'accueil anglais est à la racine) : changer de langue ne change pas de ville.
+// Ce code devient /city.js avec les villes de src/_data/cities.js (CITIES), qu'y ajoute src/city.njk.
+// Les liens et prix écrits dans le HTML ne servent que si le JavaScript ne se charge pas.
+var KEY = "maniaque-city";
+var root = document.documentElement;
+var pageLang = (root.lang || "fr").slice(0, 2);
+
+function read() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
+function save(id) { try { localStorage.setItem(KEY, id); } catch (e) {} }
+// Langue choisie à la main : un cookie que Vercel lit sur l'accueil (vercel.json) pour ne plus
+// rediriger selon le pays du visiteur
+function saveLang(lang) { document.cookie = "maniaque-lang=" + lang.slice(0, 2) + "; path=/; max-age=31536000; SameSite=Lax"; }
+
+// Un lien partagé (?ville=sao-paulo) l'emporte, puis le choix enregistré, puis la ville par défaut de la page
+var params = new URLSearchParams(location.search);
+var asked = params.get("ville") || params.get("city");
+if (asked && CITIES[asked]) {
+  save(asked);
+  params.delete("ville"); params.delete("city");
+  var qs = params.toString();
+  history.replaceState(null, "", location.pathname + (qs ? "?" + qs : "") + location.hash);
+}
+var stored = read();
+var id = CITIES[asked] ? asked : CITIES[stored] ? stored : root.getAttribute("data-city");
+if (!CITIES[id]) id = "marseille";
+// La langue ne fixe la ville qu'à la première page vue ; ensuite, seul le menu des villes la change
+if (id !== stored) save(id);
+var city = CITIES[id];
+// Posé tout de suite : les blocs propres à une autre ville ne s'affichent jamais, même un instant
+root.setAttribute("data-city", id);
+
+function apply() {
+  var fmt = new Intl.NumberFormat(root.lang || "fr", {
+    style: "currency", currency: city.currency, currencyDisplay: city.currencyDisplay, maximumFractionDigits: 0
+  });
+  document.querySelectorAll("[data-price]").forEach(function (el) {
+    var amount = city.prices[el.getAttribute("data-price")];
+    if (amount !== undefined) el.textContent = fmt.format(amount);
+  });
+  document.querySelectorAll("a[data-book]").forEach(function (a) { a.href = city.book; });
+  // Changer de langue garde la ville, même si le navigateur n'a pas pu l'enregistrer
+  document.querySelectorAll(".picker-lang .picker-menu a").forEach(function (a) {
+    var url = new URL(a.href, location.href);
+    url.searchParams.set("ville", id);
+    a.href = url.pathname + url.search + url.hash;
+    a.addEventListener("click", function () { saveLang(a.getAttribute("hreflang")); });
+  });
+  document.querySelectorAll("[data-city-name]").forEach(function (el) { el.textContent = city.name[pageLang]; });
+  // La personne qui répond dans cette ville, au-dessus de la phrase d'accroche
+  document.querySelectorAll("[data-person-name]").forEach(function (el) { el.textContent = city.person.name; });
+  document.querySelectorAll("img[data-person-photo]").forEach(function (img) { img.src = city.person.photo; });
+  // Sur la carte de l'accueil, chaque ville montre sa propre personne
+  document.querySelectorAll("[data-person-of]").forEach(function (el) {
+    var other = CITIES[el.getAttribute("data-person-of")] || city;
+    el.querySelectorAll("[data-person-name]").forEach(function (n) { n.textContent = other.person.name; });
+    el.querySelectorAll("img[data-person-photo]").forEach(function (img) { img.src = other.person.photo; });
+    el.addEventListener("click", function () { saveLang(other.lang); });
+  });
+  document.querySelectorAll("[data-set-city]").forEach(function (a) {
+    var current = a.getAttribute("data-set-city") === id;
+    if (current) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
+    // Choisir une ville l'enregistre ; le lien mène à la page dans la langue de cette ville
+    a.addEventListener("click", function () {
+      var chosen = a.getAttribute("data-set-city");
+      save(chosen);
+      if (CITIES[chosen]) saveLang(CITIES[chosen].lang);
+    });
+  });
+}
+if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", apply);
+else apply();

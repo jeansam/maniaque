@@ -1,0 +1,38 @@
+title:
+  fr: Scanner un article
+  en: Scan an item
+  pt: Escanear um item
+lines:
+  - class: dc-ref
+    label:
+      fr: Réf. 40-218
+      en: Ref. 40-218
+      pt: Ref. 40-218
+  - class: dc-name
+    label:
+      fr: Vis inox M6 × 40
+      en: Stainless screw M6 × 40
+      pt: Parafuso inox M6 × 40
+kpis:
+  - label:
+      fr: En stock
+      en: In stock
+      pt: Em estoque
+    value:
+      fr: 1 240
+      en: 1,240
+      pt: "1.240"
+  - label:
+      fr: Seuil
+      en: Threshold
+      pt: Mínimo
+    value: "300"
+action:
+  fr: Ajouter au bon
+  en: Add to order
+  pt: Adicionar ao pedido
+tabs:
+  - "on": true
+  - {}
+  - {}
+  - {}

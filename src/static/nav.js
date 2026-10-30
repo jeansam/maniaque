@@ -1,3 +1,4 @@
+// Menus de navigation : le hamburger sur mobile, le menu « plus » sur ordinateur et les menus flottants de la ville et de la langue
 // Menu mobile : le bouton hamburger ouvre et ferme la navigation
 (function () {
   var bar = document.querySelector(".bar");
@@ -41,5 +42,36 @@
   });
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape" && more.classList.contains("is-open")) { setMore(false); moreBtn.focus(); }
+  });
+})();
+
+// Menus flottants (ville, langue) : clic pour ouvrir, clic à l'extérieur ou Échap pour fermer
+(function () {
+  var pickers = document.querySelectorAll(".picker");
+  function close(except) {
+    pickers.forEach(function (p) {
+      if (p === except) return;
+      p.classList.remove("is-open");
+      p.querySelector(".picker-btn").setAttribute("aria-expanded", "false");
+    });
+  }
+  pickers.forEach(function (p) {
+    var btn = p.querySelector(".picker-btn");
+    btn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var open = !p.classList.contains("is-open");
+      close(p);
+      p.classList.toggle("is-open", open);
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  });
+  document.addEventListener("click", function (e) {
+    var inside = e.target.closest && e.target.closest(".picker");
+    close(inside);
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key !== "Escape") return;
+    var open = document.querySelector(".picker.is-open");
+    if (open) { close(); open.querySelector(".picker-btn").focus(); }
   });
 })();

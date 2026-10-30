@@ -1,0 +1,108 @@
+titles:
+  - class: dc-title
+    label:
+      fr: Pipeline commercial
+      en: Sales pipeline
+      pt: Funil de vendas
+  - class: dc-sub
+    label:
+      fr: 23 affaires en cours, 412 k€ pondérés
+      en: 23 open deals, €412k weighted
+      pt: "23 negócios em andamento, R$\_2,5 mi ponderados"
+button:
+  fr: + Affaire
+  en: + Deal
+  pt: + Negócio
+columns:
+  - dcColh:
+      fr: Prospection
+      en: Prospecting
+      pt: Prospecção
+    dcDeals:
+      - b:
+          fr: Boulangerie Martin
+          en: Martin Bakery
+          pt: Padaria Martin
+        span:
+          fr: 8 400 €
+          en: €8,400
+          pt: "R$\_50.400"
+      - b:
+          fr: Atelier Roux
+          en: Roux Workshop
+          pt: Ateliê Roux
+        span:
+          fr: 12 000 €
+          en: €12,000
+          pt: "R$\_72.000"
+      - b:
+          fr: Clinique du Parc
+          en: Park Clinic
+          pt: Clínica do Parque
+        span:
+          fr: 21 500 €
+          en: €21,500
+          pt: "R$\_129.000"
+  - dcColh:
+      fr: Devis envoyé
+      en: Quote sent
+      pt: Orçamento enviado
+    dcDeals:
+      - b:
+          fr: Garage Leroy
+          en: Leroy Garage
+          pt: Oficina Leroy
+        span:
+          fr: 6 900 €
+          en: €6,900
+          pt: "R$\_41.400"
+      - b:
+          fr: Cabinet Dufour
+          en: Dufour & Co
+          pt: Escritório Dufour
+        span:
+          fr: 15 200 €
+          en: €15,200
+          pt: "R$\_91.200"
+  - dcColh:
+      fr: Négociation
+      en: Negotiation
+      pt: Negociação
+    dcDeals:
+      - b:
+          fr: Hôtel des Alpes
+          en: Hotel des Alpes
+          pt: Hotel dos Alpes
+        span:
+          fr: 32 000 €
+          en: €32,000
+          pt: "R$\_192.000"
+      - b:
+          fr: Transports Morel
+          en: Morel Transport
+          pt: Transportes Morel
+        span:
+          fr: 18 600 €
+          en: €18,600
+          pt: "R$\_111.600"
+  - dcColh:
+      fr: Signé
+      en: Won
+      pt: Fechado
+    dcDeals:
+      - b:
+          fr: Ferme Bio Duval
+          en: Duval Organic Farm
+          pt: Fazenda Orgânica Duval
+        span:
+          fr: 9 800 €
+          en: €9,800
+          pt: "R$\_58.800"
+      - b:
+          fr: Imprimerie Petit
+          en: Petit Print
+          pt: Gráfica Petit
+        span:
+          fr: 11 300 €
+          en: €11,300
+          pt: "R$\_67.800"

@@ -1,0 +1,29 @@
+title:
+  fr: Ma réservation
+  en: My booking
+  pt: Minha reserva
+lines:
+  - class: dc-name
+    label:
+      fr: Chambre Vue lac
+      en: Lake view room
+      pt: Quarto com vista para o lago
+  - class: dc-ref
+    label:
+      fr: Ven. 24 → Dim. 26
+      en: Fri 24 → Sun 26
+      pt: Sex. 24 → Dom. 26
+  - class: dc-ref
+    label:
+      fr: 2 nuits · 2 adultes
+      en: 2 nights · 2 adults
+      pt: 2 noites · 2 adultos
+action:
+  fr: Confirmer · 248 €
+  en: Confirm · €248
+  pt: "Confirmar · R$\_1.488"
+tabs:
+  - "on": true
+  - {}
+  - {}
+  - {}

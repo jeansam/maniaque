@@ -1,0 +1,82 @@
+titles:
+  - class: dc-title
+    label:
+      fr: Tournées de livraison
+      en: Delivery rounds
+      pt: Rotas de entrega
+  - class: dc-sub
+    label:
+      fr: Aujourd'hui, 4 véhicules
+      en: Today, 4 vehicles
+      pt: Hoje, 4 veículos
+kpis:
+  - label:
+      fr: Tournées
+      en: Rounds
+      pt: Rotas
+    value: "14"
+  - label:
+      fr: Livraisons
+      en: Deliveries
+      pt: Entregas
+    value: "312"
+  - label:
+      fr: À l'heure
+      en: On time
+      pt: No horário
+    value:
+      fr: 96 %
+      en: 96%
+      pt: 96%
+routes:
+  - d: M12 30 L30 40 L48 25 L57 48 L74 35 L90 22
+    stroke: "#F2B84B"
+  - d: M22 55 L41 70 L66 62 L83 58
+    stroke: "#2FBF71"
+menu:
+  - style: left:12%;top:30%;background:#F2B84B
+  - style: left:22%;top:55%;background:#F2B84B
+  - style: left:30%;top:40%;background:#2FBF71
+  - style: left:41%;top:70%;background:#2FBF71
+  - style: left:48%;top:25%;background:#5B8DEF
+  - style: left:57%;top:48%;background:#5B8DEF
+  - style: left:66%;top:62%;background:#E5677D
+  - style: left:74%;top:35%;background:#F2B84B
+  - style: left:83%;top:58%;background:#2FBF71
+  - style: left:90%;top:22%;background:#5B8DEF
+  - style: left:36%;top:82%;background:#E5677D
+  - style: left:62%;top:15%;background:#2FBF71
+progress:
+  - span:
+      fr: Tournée Nord
+      en: North round
+      pt: Rota Norte
+    iStyle: width:82%
+    b:
+      fr: 82 %
+      en: 82%
+      pt: 82 %
+  - span:
+      fr: Tournée Centre
+      en: Centre round
+      pt: Rota Centro
+    iStyle: width:64%
+    b:
+      fr: 64 %
+      en: 64%
+      pt: 64 %
+  - span:
+      fr: Tournée Sud
+      en: South round
+      pt: Rota Sul
+    iStyle: width:41%
+    b:
+      fr: 41 %
+      en: 41%
+      pt: 41 %
+  - span: Express
+    iStyle: width:93%
+    b:
+      fr: 93 %
+      en: 93%
+      pt: 93 %

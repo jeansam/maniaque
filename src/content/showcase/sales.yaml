@@ -1,0 +1,101 @@
+menu:
+  - "on": true
+    label:
+      fr: Vue d'ensemble
+      en: Overview
+      pt: Visão geral
+  - label:
+      fr: Ventes
+      en: Sales
+      pt: Vendas
+  - label:
+      fr: Clients
+      en: Customers
+      pt: Clientes
+  - label:
+      fr: Produits
+      en: Products
+      pt: Produtos
+  - label:
+      fr: Rapports
+      en: Reports
+      pt: Relatórios
+titles:
+  - class: dc-title
+    label:
+      fr: Ventes
+      en: Sales
+      pt: Vendas
+  - class: dc-sub
+    label:
+      fr: Chiffre d'affaires, panier moyen et conversion, au jour le jour
+      en: Revenue, average basket and conversion, day by day
+      pt: Faturamento, ticket médio e conversão, dia a dia
+button:
+  fr: Exporter
+  en: Export
+  pt: Exportar
+kpis:
+  - label:
+      fr: CA du mois
+      en: Monthly revenue
+      pt: Faturamento do mês
+    value:
+      fr: 84,2 k€
+      en: €84.2k
+      pt: "R$\_505 mil"
+    trend:
+      fr: +12 %
+      en: +12%
+      pt: +12%
+    tone: up
+  - label:
+      fr: Commandes
+      en: Orders
+      pt: Pedidos
+    value:
+      fr: 1 248
+      en: 1,248
+      pt: "1.248"
+    trend:
+      fr: +8 %
+      en: +8%
+      pt: +8%
+    tone: up
+  - label:
+      fr: Panier moyen
+      en: Avg. basket
+      pt: Ticket médio
+    value:
+      fr: 67 €
+      en: €67
+      pt: "R$\_402"
+    trend:
+      fr: +3 %
+      en: +3%
+      pt: +3%
+    tone: up
+  - label:
+      fr: Retours
+      en: Returns
+      pt: Devoluções
+    value:
+      fr: 2,1 %
+      en: 2.1%
+      pt: 2,1%
+    trend:
+      fr: −0,4
+      en: −0.4
+      pt: −0,4
+    tone: up
+caption:
+  fr: CA quotidien, 30 derniers jours
+  en: Daily revenue, last 30 days
+  pt: Faturamento diário, últimos 30 dias
+gridLines:
+  - y1: "17.5"
+    y2: "17.5"
+  - y1: "35.0"
+    y2: "35.0"
+  - y1: "52.5"
+    y2: "52.5"

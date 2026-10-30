@@ -1,0 +1,68 @@
+title:
+  fr: Affaires
+  en: Deals
+  pt: Negócios
+list:
+  - em: H
+    span:
+      fr: Hôtel des Alpes
+      en: Hotel des Alpes
+      pt: Hotel dos Alpes
+    small:
+      fr: 32 000 €
+      en: €32,000
+      pt: "R$\_192 mil"
+    dcPill:
+      fr: Négo.
+      en: Nego.
+      pt: Negoc.
+  - em:
+      fr: C
+      en: P
+      pt: C
+    span:
+      fr: Clinique du Parc
+      en: Park Clinic
+      pt: Clínica do Parque
+    small:
+      fr: 21 500 €
+      en: €21,500
+      pt: "R$\_129 mil"
+    dcPill: Prosp.
+  - em:
+      fr: T
+      en: M
+      pt: T
+    span:
+      fr: Transports Morel
+      en: Morel Transport
+      pt: Transportes Morel
+    small:
+      fr: 18 600 €
+      en: €18,600
+      pt: "R$\_112 mil"
+    dcPill:
+      fr: Négo.
+      en: Nego.
+      pt: Negoc.
+  - em:
+      fr: C
+      en: D
+      pt: C
+    span:
+      fr: Cabinet Dufour
+      en: Dufour & Co
+      pt: Escritório Dufour
+    small:
+      fr: 15 200 €
+      en: €15,200
+      pt: "R$\_91 mil"
+    dcPill:
+      fr: Devis
+      en: Quote
+      pt: Orçam.
+tabs:
+  - "on": true
+  - {}
+  - {}
+  - {}

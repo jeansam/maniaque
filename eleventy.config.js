@@ -1,5 +1,6 @@
 const yaml = require("js-yaml");
 const cities = require("./src/_data/cities.js");
+const langs = require("./src/_data/langs.js");
 const { resolve } = require("./lib/i18n.js");
 const markdownIt = require("markdown-it");
 
@@ -26,11 +27,10 @@ module.exports = function (eleventyConfig) {
   // Première lettre en minuscule, sauf pour un sigle (CRM)
   eleventyConfig.addFilter("lowerFirst", (s) => (/^.[A-Z]/.test(s) ? s : s.charAt(0).toLowerCase() + s.slice(1)));
   // Un nombre écrit à la façon de la langue (7,5 en français, 7.5 en anglais)
-  const locales = { fr: "fr", en: "en", pt: "pt-BR" };
-  eleventyConfig.addFilter("number", (n, lang) => new Intl.NumberFormat(locales[lang]).format(n));
+  const language = (code) => langs.find((l) => l.code === code);
+  eleventyConfig.addFilter("number", (n, lang) => new Intl.NumberFormat(language(lang).locale).format(n));
   // Une date (2026-10-23) écrite en toutes lettres : 23 octobre 2026, 23 October 2026, 23 de outubro de 2026
-  const dateLocales = { ...locales, en: "en-GB" };
-  eleventyConfig.addFilter("date", (iso, lang) => new Intl.DateTimeFormat(dateLocales[lang], { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(iso)));
+  eleventyConfig.addFilter("date", (iso, lang) => new Intl.DateTimeFormat(language(lang).dateLocale, { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" }).format(new Date(iso)));
 
   // Fichiers servis tels quels (styles, scripts, images, favicon)
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });

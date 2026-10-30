@@ -1,0 +1,100 @@
+menu:
+  - "on": true
+    label:
+      fr: Tickets
+      en: Tickets
+      pt: Chamados
+  - label:
+      fr: Clients
+      en: Clients
+      pt: Clientes
+  - label: FAQ
+  - label:
+      fr: Stats
+      en: Stats
+      pt: Estatísticas
+titles:
+  - class: dc-title
+    label:
+      fr: Support client
+      en: Customer support
+      pt: Suporte ao cliente
+  - class: dc-sub
+    label:
+      fr: "Délai moyen de réponse : 1 h 12"
+      en: "Average response time: 1h 12m"
+      pt: "Tempo médio de resposta: 1h12"
+kpis:
+  - label:
+      fr: Ouverts
+      en: Open
+      pt: Abertos
+    value: "26"
+  - label:
+      fr: Résolus 7 j
+      en: Solved 7d
+      pt: Resolvidos 7 d
+    value: "184"
+  - label:
+      fr: Satisfaction
+      en: Satisfaction
+      pt: Satisfação
+    value:
+      fr: 4,8/5
+      en: 4.8/5
+      pt: 4,8/5
+table:
+  - class: dc-tr dc-th
+    items:
+      - fr: Ticket
+        en: Ticket
+        pt: Chamado
+      - fr: Sujet
+        en: Subject
+        pt: Assunto
+      - fr: Priorité
+        en: Priority
+        pt: Prioridade
+      - fr: Agent
+        en: Agent
+        pt: Agente
+  - class: dc-tr
+    items:
+      - "#482"
+      - fr: Accès espace client
+        en: Portal access
+        pt: Acesso à área do cliente
+      - fr: <span class="dc-pill dc-bad">Haute</span>
+        en: <span class="dc-pill dc-bad">High</span>
+        pt: <span class="dc-pill dc-bad">Alta</span>
+      - Inès
+  - class: dc-tr
+    items:
+      - "#481"
+      - fr: Erreur de facture
+        en: Invoice error
+        pt: Erro na fatura
+      - fr: <span class="dc-pill dc-warn">Moyenne</span>
+        en: <span class="dc-pill dc-warn">Medium</span>
+        pt: <span class="dc-pill dc-warn">Média</span>
+      - Tom
+  - class: dc-tr
+    items:
+      - "#480"
+      - fr: Changer d'adresse
+        en: Change address
+        pt: Mudar o endereço
+      - fr: <span class="dc-pill dc-info">Basse</span>
+        en: <span class="dc-pill dc-info">Low</span>
+        pt: <span class="dc-pill dc-info">Baixa</span>
+      - Inès
+  - class: dc-tr
+    items:
+      - "#479"
+      - fr: Export comptable
+        en: Accounting export
+        pt: Exportação contábil
+      - fr: <span class="dc-pill dc-warn">Moyenne</span>
+        en: <span class="dc-pill dc-warn">Medium</span>
+        pt: <span class="dc-pill dc-warn">Média</span>
+      - Max

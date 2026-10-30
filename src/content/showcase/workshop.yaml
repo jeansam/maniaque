@@ -1,0 +1,88 @@
+titles:
+  - class: dc-title
+    label:
+      fr: Atelier
+      en: Workshop
+      pt: Produção
+  - class: dc-sub
+    label:
+      fr: Ordres de fabrication en cours
+      en: Production orders in progress
+      pt: Ordens de produção em andamento
+progress:
+  - span:
+      fr: OF-1092 · Portail alu
+      en: PO-1092 · Alu gate
+      pt: OP-1092 · Portão de alumínio
+    iStyle: width:78%
+    b:
+      fr: 78 %
+      en: 78%
+      pt: 78 %
+  - span:
+      fr: OF-1093 · Garde-corps
+      en: PO-1093 · Railing
+      pt: OP-1093 · Guarda-corpo
+    iStyle: width:45%
+    b:
+      fr: 45 %
+      en: 45%
+      pt: 45 %
+  - span:
+      fr: OF-1094 · Verrière
+      en: PO-1094 · Glass roof
+      pt: OP-1094 · Claraboia
+    iStyle: width:22%
+    b:
+      fr: 22 %
+      en: 22%
+      pt: 22 %
+caption:
+  fr: TRS
+  en: OEE
+  pt: OEE
+gauge:
+  fr: 81 %
+  en: 81%
+  pt: 81 %
+caption2:
+  fr: Charge machine
+  en: Machine load
+  pt: Carga de máquina
+bars:
+  - x: "4.8"
+    "y": "23.5"
+    height: "16.5"
+  - x: "29.8"
+    "y": "17.3"
+    height: "22.7"
+  - x: "54.8"
+    "y": "14.4"
+    height: "25.6"
+  - x: "79.8"
+    "y": "20.2"
+    height: "19.8"
+  - x: "104.8"
+    "y": "11.1"
+    height: "28.9"
+  - x: "129.8"
+    "y": "6.1"
+    height: "33.9"
+  - x: "154.8"
+    "y": "8.6"
+    height: "31.4"
+  - x: "179.8"
+    "y": "13.6"
+    height: "26.4"
+  - x: "204.8"
+    "y": "16.0"
+    height: "24.0"
+  - x: "229.8"
+    "y": "10.2"
+    height: "29.8"
+  - x: "254.8"
+    "y": "3.6"
+    height: "36.4"
+  - x: "279.8"
+    "y": "6.9"
+    height: "33.1"

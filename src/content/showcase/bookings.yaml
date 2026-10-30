@@ -1,0 +1,67 @@
+brand:
+  fr: <em></em>Hôtelo
+  en: <em></em>Stayo
+  pt: <em></em>Hôtelo
+menu:
+  - "on": true
+    label:
+      fr: Planning
+      en: Planning
+      pt: Agenda
+  - label:
+      fr: Clients
+      en: Clients
+      pt: Clientes
+  - label:
+      fr: Tarifs
+      en: Tarifs
+      pt: Tarifas
+  - label:
+      fr: Ménage
+      en: Ménage
+      pt: Limpeza
+titles:
+  - class: dc-title
+    label:
+      fr: Réservations
+      en: Bookings
+      pt: Reservas
+  - class: dc-sub
+    label:
+      fr: Octobre
+      en: October
+      pt: Outubro
+kpis:
+  - label:
+      fr: Taux d'occupation
+      en: Occupancy
+      pt: Taxa de ocupação
+    value:
+      fr: 87 %
+      en: 87%
+      pt: 87%
+  - label:
+      fr: Arrivées aujourd'hui
+      en: Arrivals today
+      pt: Check-ins hoje
+    value: "9"
+days:
+  - fr: L
+    en: M
+    pt: S
+  - fr: M
+    en: T
+    pt: T
+  - fr: M
+    en: W
+    pt: Q
+  - fr: J
+    en: T
+    pt: Q
+  - fr: V
+    en: F
+    pt: S
+  - S
+  - fr: D
+    en: S
+    pt: D

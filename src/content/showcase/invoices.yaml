@@ -1,0 +1,116 @@
+brand:
+  fr: <em></em>Facto
+  en: <em></em>Billo
+  pt: <em></em>Facto
+menu:
+  - label:
+      fr: Accueil
+      en: Home
+      pt: Início
+  - "on": true
+    label:
+      fr: Factures
+      en: Invoices
+      pt: Faturas
+  - label:
+      fr: Devis
+      en: Quotes
+      pt: Orçamentos
+  - label:
+      fr: Clients
+      en: Customers
+      pt: Clientes
+  - label:
+      fr: Paiements
+      en: Payments
+      pt: Pagamentos
+titles:
+  - class: dc-title
+    label:
+      fr: Factures
+      en: Invoices
+      pt: Faturas
+  - class: dc-sub
+    label:
+      fr: Relances automatiques activées
+      en: Automatic reminders on
+      pt: Cobranças automáticas ativadas
+button:
+  fr: + Facture
+  en: + Invoice
+  pt: + Fatura
+table:
+  - class: dc-tr dc-th
+    items:
+      - fr: N°
+        en: No.
+        pt: Nº
+      - fr: Client
+        en: Customer
+        pt: Cliente
+      - fr: Montant
+        en: Amount
+        pt: Valor
+      - fr: Statut
+        en: Status
+        pt: Status
+  - class: dc-tr
+    items:
+      - F-2318
+      - fr: Garage Leroy
+        en: Leroy Garage
+        pt: Oficina Leroy
+      - fr: 1 240 €
+        en: €1,240
+        pt: "R$\_7.440"
+      - fr: <span class="dc-pill dc-ok">Payée</span>
+        en: <span class="dc-pill dc-ok">Paid</span>
+        pt: <span class="dc-pill dc-ok">Paga</span>
+  - class: dc-tr
+    items:
+      - F-2317
+      - fr: Atelier Roux
+        en: Roux Workshop
+        pt: Ateliê Roux
+      - fr: 3 600 €
+        en: €3,600
+        pt: "R$\_21.600"
+      - fr: <span class="dc-pill dc-bad">En retard</span>
+        en: <span class="dc-pill dc-bad">Overdue</span>
+        pt: <span class="dc-pill dc-bad">Atrasada</span>
+  - class: dc-tr
+    items:
+      - F-2316
+      - fr: Clinique du Parc
+        en: Park Clinic
+        pt: Clínica do Parque
+      - fr: 890 €
+        en: €890
+        pt: "R$\_5.340"
+      - fr: <span class="dc-pill dc-info">Envoyée</span>
+        en: <span class="dc-pill dc-info">Sent</span>
+        pt: <span class="dc-pill dc-info">Enviada</span>
+  - class: dc-tr
+    items:
+      - F-2315
+      - fr: Hôtel des Alpes
+        en: Hotel des Alpes
+        pt: Hotel dos Alpes
+      - fr: 5 120 €
+        en: €5,120
+        pt: "R$\_30.720"
+      - fr: <span class="dc-pill dc-ok">Payée</span>
+        en: <span class="dc-pill dc-ok">Paid</span>
+        pt: <span class="dc-pill dc-ok">Paga</span>
+  - class: dc-tr
+    items:
+      - F-2314
+      - fr: Cabinet Dufour
+        en: Dufour & Co
+        pt: Escritório Dufour
+      - fr: 2 300 €
+        en: €2,300
+        pt: "R$\_13.800"
+      - fr: <span class="dc-pill dc-warn">Relancée</span>
+        en: <span class="dc-pill dc-warn">Reminded</span>
+        pt: <span class="dc-pill dc-warn">Cobrada</span>

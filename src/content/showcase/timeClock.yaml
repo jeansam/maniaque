@@ -1,0 +1,37 @@
+titles:
+  - class: dc-ph
+    label:
+      fr: Pointage
+      en: Time clock
+      pt: Ponto
+  - class: dc-ref
+    label:
+      fr: Bonjour Karim
+      en: Hello Karim
+      pt: Olá, Karim
+status:
+  fr: ✓ Arrivée enregistrée
+  en: ✓ Check-in recorded
+  pt: ✓ Entrada registrada
+kpis:
+  - label:
+      fr: Cette semaine
+      en: This week
+      pt: Esta semana
+    value:
+      fr: 31 h 20
+      en: 31h 20m
+      pt: 31h20
+  - label:
+      fr: Congés restants
+      en: Leave left
+      pt: Férias restantes
+    value:
+      fr: 12 j
+      en: 12 d
+      pt: 12 d
+tabs:
+  - "on": true
+  - {}
+  - {}
+  - {}

@@ -1,0 +1,44 @@
+title:
+  fr: Mes interventions
+  en: My jobs
+  pt: Meus atendimentos
+list:
+  - class: dc-li on
+    b: "08:30"
+    span:
+      fr: Chaudière Lopez
+      en: Lopez boiler
+      pt: Caldeira Lopez
+    small:
+      fr: 12 rue des Lilas
+      en: 12 Lilac St
+      pt: Rua dos Lírios, 12
+  - class: dc-li
+    b: "10:45"
+    span:
+      fr: Entretien VMC
+      en: Ventilation service
+      pt: Manutenção da ventilação
+    small:
+      fr: ZA des Tilleuls
+      en: Lime Park
+      pt: Distrito Industrial
+  - class: dc-li
+    b: "14:00"
+    span:
+      fr: Pose clim Bernard
+      en: Bernard A/C
+      pt: Instalação de ar Bernard
+    small:
+      fr: 3 av. Foch
+      en: 3 Foch Ave
+      pt: Av. Foch, 3
+action:
+  fr: Démarrer
+  en: Start
+  pt: Iniciar
+tabs:
+  - "on": true
+  - {}
+  - {}
+  - {}

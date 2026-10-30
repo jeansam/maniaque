@@ -1,0 +1,42 @@
+title:
+  fr: Bonjour Claire
+  en: Hello Claire
+  pt: Olá, Claire
+heroLabel:
+  fr: CA aujourd'hui
+  en: Revenue today
+  pt: Faturamento hoje
+heroValue:
+  fr: 3 420 €
+  en: €3,420
+  pt: "R$\_20.520"
+heroTrend:
+  fr: +18 % vs hier
+  en: +18% vs yesterday
+  pt: +18% vs ontem
+gridLines:
+  - y1: "11.0"
+    y2: "11.0"
+  - y1: "22.0"
+    y2: "22.0"
+  - y1: "33.0"
+    y2: "33.0"
+kpis:
+  - label:
+      fr: Commandes
+      en: Orders
+      pt: Pedidos
+    value: "46"
+  - label:
+      fr: Panier
+      en: Basket
+      pt: Ticket
+    value:
+      fr: 74 €
+      en: €74
+      pt: "R$\_444"
+tabs:
+  - "on": true
+  - {}
+  - {}
+  - {}

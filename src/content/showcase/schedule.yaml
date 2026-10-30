@@ -1,0 +1,53 @@
+titles:
+  - class: dc-title
+    label:
+      fr: Planning des interventions
+      en: Job schedule
+      pt: Agenda de atendimentos
+  - class: dc-sub
+    label:
+      fr: Semaine 43
+      en: Week 43
+      pt: Semana 43
+lane:
+  - style: "--s:0;--l:2;--c:#5B8DEF"
+    label:
+      fr: Chaudière Lopez
+      en: Lopez boiler
+      pt: Caldeira Lopez
+  - style: "--s:3;--l:2;--c:#5B8DEF"
+    label:
+      fr: Entretien VMC
+      en: Ventilation service
+      pt: Manutenção ventilação
+job:
+  fr: Rénovation SDB Girard
+  en: Girard bathroom
+  pt: Reforma banheiro Girard
+lane2:
+  - style: "--s:0;--l:1;--c:#E5677D"
+    label:
+      fr: Dépannage
+      en: Repair
+      pt: Reparo
+  - style: "--s:2;--l:2;--c:#E5677D"
+    label:
+      fr: Pose clim Bernard
+      en: Bernard A/C install
+      pt: Instalação de ar Bernard
+  - style: "--s:4;--l:1;--c:#E5677D"
+    label:
+      fr: Devis
+      en: Quote
+      pt: Orçamento
+lane3:
+  - style: "--s:1;--l:1;--c:#2FBF71"
+    label:
+      fr: Visite
+      en: Site visit
+      pt: Visita
+  - style: "--s:3;--l:2;--c:#2FBF71"
+    label:
+      fr: Chantier Mercier
+      en: Mercier site
+      pt: Obra Mercier
