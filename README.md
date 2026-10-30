@@ -56,5 +56,3 @@ npm start
 
 - Liens d'audit de São Paulo (WhatsApp pour l'instant) et de Johannesbourg (LinkedIn de Nthuseni pour l'instant), dans `src/_data/cities.js`
 - Prix en rands de Johannesbourg (conversion approximative), dans `src/_data/cities.js`
-
-- Compléter les champs `[À compléter]` des mentions légales, dans les trois langues (`[To be completed]`, `[A preencher]`), dans `src/_data/strings/legal.yaml`
