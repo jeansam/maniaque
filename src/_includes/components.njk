@@ -1,13 +1,7 @@
-{# Blocs de balisage partagés par plusieurs modèles #}
-{% macro dcSide(dcSideClass, dcSideDcBrandClass, dcSideDcBrand, dcSideUl) %}<aside class="{{ dcSideClass }}"><p class="{{ dcSideDcBrandClass }}">{{ dcSideDcBrand }}</p><ul>{% for item in dcSideUl %}<li{% if item.on %} class=on{% endif %}>{{ item.label }}</li>{% endfor %}</ul></aside>{% endmacro %}
-{% macro dcHead(dcHeadClass, dcHeadDiv, dcHeadDcBtnClass, dcHeadDcBtn) %}<div class="{{ dcHeadClass }}"><div>{% for dcTitle in dcHeadDiv %}<p class="{{ dcTitle.class }}">{{ dcTitle.label }}</p>{% endfor %}</div><span class="{{ dcHeadDcBtnClass }}">{{ dcHeadDcBtn }}</span></div>{% endmacro %}
-{% macro liLink(liLinkAriaLabel, liLinkHref) %}<a class="li-link" aria-label="{{ liLinkAriaLabel }}" href="{{ liLinkHref }}" target="_blank" rel="noopener"><svg class="li-icon" viewBox="0 0 448 512" width="18" height="20" aria-hidden="true" fill="currentColor"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>{% endmacro %}
-{% macro dcHead2(dcHeadClass, dcHeadDiv) %}<div class="{{ dcHeadClass }}"><div>{% for dcTitle in dcHeadDiv %}<p class="{{ dcTitle.class }}">{{ dcTitle.label }}</p>{% endfor %}</div></div>{% endmacro %}
-{% macro details(detailsDataRoles, detailsSummary, detailsP) %}<details data-roles="{{ detailsDataRoles }}">
-          <summary>{{ detailsSummary }}</summary>
-          <p>{{ detailsP }}</p>
-        </details>{% endmacro %}
-{% macro dcTable(dcTableClass, dcTableStyle, dcTable) %}<div class="{{ dcTableClass }}" style="{{ dcTableStyle }}">{% for dcTr in dcTable %}<div class="{{ dcTr.class }}">{% for item in dcTr.items %}<span>{{ item }}</span>{% endfor %}</div>{% endfor %}</div>{% endmacro %}
+{#- Blocs de balisage partagés par plusieurs modèles.
+    Les maquettes d'écran existent en deux styles : « qt » (pages des cas d'usage) et « dc » (vitrine de l'offre). -#}
+
+{#- Encart de fin de page pour réserver un audit ; anchor et alt servent à la page de l'offre #}
 {% macro cta(title, text, button, anchor, alt) %}<section class="cta grid-paper"{% if anchor %} id="{{ anchor }}"{% endif %} aria-labelledby="t-audit">
     <div class="wrap">
       <h2 id="t-audit">{{ title }}</h2>
@@ -16,16 +10,27 @@
 {% if alt %}      <p class="cta-alt">{{ alt }}</p>
 {% endif %}    </div>
   </section>{% endmacro %}
-{% macro dcLane(dcLaneClass, dcLane, dcLaneDcJobClass) %}<div class="{{ dcLaneClass }}">{% for dcJob in dcLane %}<span class="{{ dcLaneDcJobClass }}" style="{{ dcJob.style }}">{{ dcJob.label }}</span>{% endfor %}</div>{% endmacro %}
-{% macro li(h3StepToggleAriaControls, h3StepToggle, stepMeta, stepDesc2Id, stepDesc2) %}<li>
-          <h3><button type="button" class="step-toggle" aria-expanded="false" aria-controls="{{ h3StepToggleAriaControls }}">{{ h3StepToggle }}</button></h3>
-          <p class="step-meta">{{ stepMeta }}</p>
-          <p class="step-desc" id="{{ stepDesc2Id }}">{{ stepDesc2 }}</p>
-        </li>{% endmacro %}
-{% macro dcSide2(dcSideClass, dcSideDcBrandClass, dcSideDcBrand, dcSideUl) %}<aside class="{{ dcSideClass }}"><p class="{{ dcSideDcBrandClass }}"><em></em>{{ dcSideDcBrand }}</p><ul>{% for item in dcSideUl %}<li{% if item.on %} class=on{% endif %}>{{ item.label }}</li>{% endfor %}</ul></aside>{% endmacro %}
-{% macro p(noteToggleAriaControls, noteToggle, noteSep, notePaiementId, notePaiement) %}<p><button type="button" class="note-toggle" aria-expanded="false" aria-controls="{{ noteToggleAriaControls }}">{{ noteToggle }}</button><span class="note-sep">{{ noteSep }}</span><span class="note-body" id="{{ notePaiementId }}">{{ notePaiement }}</span></p>{% endmacro %}
-{% macro div(xClass, b, span, small) %}<div class="{{ xClass }}"><b>{{ b }}</b><div><span>{{ span }}</span><small>{{ small }}</small></div></div>{% endmacro %}
-{% macro mkField(mkFieldSpan, mkFieldB) %}<div class="mk-field"><span>{{ mkFieldSpan }}</span><b>{{ mkFieldB }}</b><span class="mk-pill mk-ok">✓</span></div>{% endmacro %}
-{% macro dcPanel(dcPanel) %}<div class="dc-panel dc-grow">{% for dcProg in dcPanel %}<div class="dc-prog"><span>{{ dcProg.span }}</span><div><i style="{{ dcProg.iStyle }}"></i></div><b>{{ dcProg.b }}</b></div>{% endfor %}</div>{% endmacro %}
-{% macro mkPanel(mkBarIStyle, mkPanelMkH) %}<div class="mk-panel"><p class="mk-h">{{ mkPanelMkH }}</p><span class="mk-bar mk-bar-ink"><i style="{{ mkBarIStyle }}"></i></span></div>{% endmacro %}
-{% macro mkField2(mkFieldSpan, mkFieldB) %}<div class="mk-field"><span>{{ mkFieldSpan }}</span><b>{{ mkFieldB }}</b><span class="mk-pill mk-ok">✓</span></div>{% endmacro %}
+
+{#- Maquettes : menu latéral avec le nom de l'application (mark : la pastille de couleur devant le nom) #}
+{% macro sidebar(kind, brand, items, mark) %}<aside class="{{ kind }}-side"><p class="{{ kind }}-brand">{% if mark %}<em></em>{% endif %}{{ brand }}</p><ul>{% for item in items %}<li{% if item.on %} class=on{% endif %}>{{ item.label }}</li>{% endfor %}</ul></aside>{% endmacro %}
+
+{#- Maquettes : en-tête d'écran (titres, et un bouton ou un statut à droite) #}
+{% macro screenHead(kind, titles, buttonClass, button) %}<div class="{{ kind }}-head"><div>{% for title in titles %}<p class="{{ title.class }}">{{ title.label }}</p>{% endfor %}</div>{% if button %}<span class="{{ buttonClass }}">{{ button }}</span>{% endif %}</div>{% endmacro %}
+
+{#- Maquettes : tableau, une ligne par élément de rows (classe de la ligne et cellules) #}
+{% macro table(class, style, rows) %}<div class="{{ class }}" style="{{ style }}">{% for row in rows %}<div class="{{ row.class }}">{% for cell in row.items %}<span>{{ cell }}</span>{% endfor %}</div>{% endfor %}</div>{% endmacro %}
+
+{#- Maquettes : ligne de planning, des interventions placées par leur style #}
+{% macro lane(class, jobs, jobClass) %}<div class="{{ class }}">{% for job in jobs %}<span class="{{ jobClass }}" style="{{ job.style }}">{{ job.label }}</span>{% endfor %}</div>{% endmacro %}
+
+{#- Maquettes : barres de progression #}
+{% macro progress(rows) %}<div class="dc-panel dc-grow">{% for row in rows %}<div class="dc-prog"><span>{{ row.span }}</span><div><i style="{{ row.iStyle }}"></i></div><b>{{ row.b }}</b></div>{% endfor %}</div>{% endmacro %}
+
+{#- Maquettes : élément de liste (valeur en gras, libellé et détail) #}
+{% macro listItem(class, b, span, small) %}<div class="{{ class }}"><b>{{ b }}</b><div><span>{{ span }}</span><small>{{ small }}</small></div></div>{% endmacro %}
+
+{#- Maquettes : champ validé #}
+{% macro checkedField(label, value) %}<div class="mk-field"><span>{{ label }}</span><b>{{ value }}</b><span class="mk-pill mk-ok">✓</span></div>{% endmacro %}
+
+{#- Maquettes : panneau avec un titre et une barre remplie (style : sa largeur) #}
+{% macro barPanel(style, title) %}<div class="mk-panel"><p class="mk-h">{{ title }}</p><span class="mk-bar mk-bar-ink"><i style="{{ style }}"></i></span></div>{% endmacro %}

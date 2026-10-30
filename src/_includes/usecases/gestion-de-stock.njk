@@ -1,7 +1,7 @@
 {% import "components.njk" as c %}
-            {{ c.dcSide("qt-side", "qt-brand", s.qtSideQtBrand, s.items) }}
+            {{ c.sidebar("qt", s.qtSideQtBrand, s.items) }}
             <div class="qt-main">
-              {{ c.dcHead2("qt-head", s.qtNums) }}
-              <div class="mk-kpis"><div class="mk-kpi"><span>{{ s.mkKpiSpan }}</span><b>{{ s.mkKpiB }}</b></div><div class="mk-kpi"><span>{{ s.mkKpiSpan2 }}</span><b>12</b><i class=mk-bad>{{ s.mkKpiMkBad }}</i></div><div class="mk-kpi"><span>{{ s.mkKpiSpan3 }}</span><b>{{ s.mkKpiB2 }}</b></div></div>{{ c.dcTable("mk-table", "--tpl:1.6fr .7fr 1fr .9fr", s.mkTable) }}
+              {{ c.screenHead("qt", s.qtNums) }}
+              <div class="mk-kpis"><div class="mk-kpi"><span>{{ s.mkKpiSpan }}</span><b>{{ s.mkKpiB }}</b></div><div class="mk-kpi"><span>{{ s.mkKpiSpan2 }}</span><b>12</b><i class=mk-bad>{{ s.mkKpiMkBad }}</i></div><div class="mk-kpi"><span>{{ s.mkKpiSpan3 }}</span><b>{{ s.mkKpiB2 }}</b></div></div>{{ c.table("mk-table", "--tpl:1.6fr .7fr 1fr .9fr", s.mkTable) }}
             </div><div class="mk-aside">{% for mkH in s.mkHs %}<p class="{{ mkH.class }}">{{ mkH.label }}</p>{% endfor %}{% for mkLine in s.mkLines %}<div class="{{ mkLine.class }}"><span>{{ mkLine.span }}</span><b>{{ mkLine.b }}</b></div>{% endfor %}<span class="mk-btn">{{ s.mkAsideMkBtn }}</span></div>
           

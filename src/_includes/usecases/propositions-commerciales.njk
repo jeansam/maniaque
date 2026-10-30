@@ -1,7 +1,7 @@
 {% import "components.njk" as c %}
-            {{ c.dcSide("qt-side", "qt-brand", s.qtSideQtBrand, s.items) }}
+            {{ c.sidebar("qt", s.qtSideQtBrand, s.items) }}
             <div class="qt-main">
-              {{ c.dcHead("qt-head", s.qtNums, "mk-pill mk-warn", s.qtHeadMkPill) }}
+              {{ c.screenHead("qt", s.qtNums, "mk-pill mk-warn", s.qtHeadMkPill) }}
               <div class="mk-panel">{% for mkH in s.mkPanel %}<p class="{{ mkH.class }}">{{ mkH.label }}</p>{% endfor %}</div><p class="mk-h">{{ s.qtMainMkH }}</p><div class="mk-field">{% for item in s.mkField %}<span{% if item.mkPillMkOk %} class="mk-pill mk-ok"{% endif %}>{{ item.label }}</span>{% endfor %}</div><div class="mk-field">{% for item in s.mkField2 %}<span{% if item.mkPillMkOk %} class="mk-pill mk-ok"{% endif %}>{{ item.label }}</span>{% endfor %}</div><div class="mk-field">{% for item in s.mkField3 %}<span{% if item.mkPillMkOk %} class="mk-pill mk-ok"{% endif %}>{{ item.label }}</span>{% endfor %}</div><div class="mk-field">{% for item in s.mkField4 %}<span{% if item.mkPillMkOk %} class="mk-pill mk-ok"{% endif %}>{{ item.label }}</span>{% endfor %}</div><div class="mk-field">{% for item in s.mkField5 %}<span{% if item.mkPillMkOk %} class="mk-pill mk-ok"{% endif %}>{{ item.label }}</span>{% endfor %}</div><div class="mk-field">{% for item in s.mkField6 %}<span{% if item.mkPillMkWarn %} class="mk-pill mk-warn"{% endif %}>{{ item.label }}</span>{% endfor %}</div>
             </div><div class="mk-aside"><div class="mk-doc mk-doc-s"><p class="mk-doc-logo">{{ s.mkDocLogo }}</p><p class="mk-doc-t">{{ s.mkDocT }}</p><p>{{ s.mkDocP }}</p><p class="mk-sub">{{ s.mkDocMkSub }}</p>{% for mkDocTxt in s.mkDocTxts %}<i class="mk-doc-txt" style="{{ mkDocTxt.style }}"></i>{% endfor %}</div><span class="mk-btn">{{ s.mkAsideMkBtn }}</span></div>
           

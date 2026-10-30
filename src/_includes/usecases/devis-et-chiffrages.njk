@@ -1,7 +1,7 @@
 {% import "components.njk" as c %}
-            {{ c.dcSide("qt-side", "qt-brand", s.qtSideQtBrand, s.items) }}
+            {{ c.sidebar("qt", s.qtSideQtBrand, s.items) }}
             <div class="qt-main">
-              {{ c.dcHead("qt-head", s.qtNums, "qt-status", s.qtHeadQtStatus) }}
+              {{ c.screenHead("qt", s.qtNums, "qt-status", s.qtHeadQtStatus) }}
               <div class="qt-body">
                 <div class="qt-cat"><p class="qt-search">{{ s.qtCatQtSearch }}</p><ul>{% for item in s.catalog %}<li class="{{ "in" if item.line else "" }}"><span>{{ item.name }}</span><b>{{ (s.lines[item.line] or item).price }}</b></li>{% endfor %}</ul></div>
                 <div class="qt-sheet">

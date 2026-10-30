@@ -36,4 +36,6 @@ weekdays:
   - { fr: Mer, en: Wed, pt: Qua }
   - { fr: Jeu, en: Thu, pt: Qui }
   - { fr: Ven, en: Fri, pt: Sex }
+# Deux-points avant une explication (« Hébergement : … »)
+colon: { fr: "&nbsp;: ", en: ": ", pt: ": " }
 backHome: { fr: Retour à l'accueil, en: Back to home, pt: Voltar ao início }

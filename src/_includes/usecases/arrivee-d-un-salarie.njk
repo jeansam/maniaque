@@ -1,7 +1,7 @@
 {% import "components.njk" as c %}
-            {{ c.dcSide("qt-side", "qt-brand", s.qtSideQtBrand, s.items) }}
+            {{ c.sidebar("qt", s.qtSideQtBrand, s.items) }}
             <div class="qt-main">
-              {{ c.dcHead("qt-head", s.qtNums, "mk-pill mk-ok", s.qtHeadMkPill) }}
-              {{ c.mkPanel("width:55%", s.mkPanelMkH) }}<div class="mk-kanban mk-k3">{% for mkCol in s.mkKanban %}<div class="mk-col"><p class="mk-colh">{{ mkCol.mkColh }}</p>{% for mkCard in mkCol.mkCards %}<div class="{{ mkCard.class }}"><b>{{ mkCard.b }}</b></div>{% endfor %}</div>{% endfor %}</div>
+              {{ c.screenHead("qt", s.qtNums, "mk-pill mk-ok", s.qtHeadMkPill) }}
+              {{ c.barPanel("width:55%", s.mkPanelMkH) }}<div class="mk-kanban mk-k3">{% for mkCol in s.mkKanban %}<div class="mk-col"><p class="mk-colh">{{ mkCol.mkColh }}</p>{% for mkCard in mkCol.mkCards %}<div class="{{ mkCard.class }}"><b>{{ mkCard.b }}</b></div>{% endfor %}</div>{% endfor %}</div>
             </div>
           
