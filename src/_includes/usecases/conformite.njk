@@ -1,7 +1,7 @@
 {% import "components.njk" as c %}
-            {{ c.sidebar("qt", s.qtSideQtBrand, s.items) }}
+            {{ c.sidebar("qt", s.brand, s.menu) }}
             <div class="qt-main">
-              {{ c.screenHead("qt", s.qtNums, "mk-pill mk-bad", s.qtHeadMkPill) }}
-              {{ c.kpis("mk-kpis", "mk-kpi", s.mkKpis) }}<div class="mk-table" style="--tpl:1fr repeat(4, 1fr)"><div class="mk-tr mk-th">{% for column in s.columns %}<span>{{ column }}</span>{% endfor %}</div>{% for person in s.staff %}<div class="mk-tr"><span><em class="mk-av" style="background:{{ person.color }}">{{ person.name[0] }}</em>{{ person.name }}</span>{% for status in person.status %}<span><span class="mk-pill mk-{{ status }}">{{ s.statuses[status] }}</span></span>{% endfor %}</div>{% endfor %}</div>
-            </div><div class="mk-aside"><p class="mk-h">{{ s.mkAsideMkH }}</p>{% for mkItem in s.mkItems %}{{ c.listItem("mk-item", mkItem.b, mkItem.span, mkItem.small) }}{% endfor %}<span class="mk-btn">{{ s.mkAsideMkBtn }}</span></div>
+              {{ c.screenHead("qt", s.titles, "mk-pill mk-bad", s.status) }}
+              {{ c.kpis("mk-kpis", "mk-kpi", s.kpis) }}<div class="mk-table" style="--tpl:1fr repeat(4, 1fr)"><div class="mk-tr mk-th">{% for column in s.columns %}<span>{{ column }}</span>{% endfor %}</div>{% for person in s.staff %}<div class="mk-tr"><span><em class="mk-av" style="background:{{ person.color }}">{{ person.name[0] }}</em>{{ person.name }}</span>{% for status in person.status %}<span><span class="mk-pill mk-{{ status }}">{{ s.statuses[status] }}</span></span>{% endfor %}</div>{% endfor %}</div>
+            </div><div class="mk-aside"><p class="mk-h">{{ s.asideTitle }}</p>{% for mkItem in s.items %}{{ c.listItem("mk-item", mkItem.b, mkItem.span, mkItem.small) }}{% endfor %}<span class="mk-btn">{{ s.asideButton }}</span></div>
           

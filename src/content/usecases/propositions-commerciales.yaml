@@ -28,7 +28,7 @@ strings:
     fr: Nous construisons des outils de propositions pour les cabinets de conseil, les agences et les entreprises de services. L'IA lit le besoin du client et rédige un premier jet à partir de vos propositions passées, de vos références et de vos CV. Le document sort dans votre propre modèle. Vous relisez, vous fixez le prix, et vous envoyez.
     en: We build proposal tools for consultancies, agencies and service businesses. AI reads the client's brief and drafts a first version from your past proposals, references and CVs. The document comes out in your own template. You proofread, set the price, and send.
     pt: Construímos ferramentas de propostas para consultorias, agências e empresas de serviços. A IA lê a necessidade do cliente e escreve um primeiro rascunho a partir das suas propostas anteriores, das suas referências e dos seus currículos. O documento sai no seu próprio modelo. Você revisa, define o preço e envia.
-  qtAppClass: qt-app
+  appClass: qt-app
   caption:
     fr: "Exemple : un cahier des charges reçu, une proposition prête à relire."
     en: "Example: a brief received, a proposal ready to review."
@@ -37,11 +37,11 @@ strings:
     fr: Dites-nous comment vous rédigez vos propositions aujourd'hui.
     en: Tell us how you write proposals today.
     pt: Conte para nós como você escreve as suas propostas hoje.
-  qtSideQtBrand:
+  brand:
     fr: <em></em>Propositions
     en: <em></em>Proposals
     pt: <em></em>Propostas
-  items:
+  menu:
     - "on": true
       label:
         fr: En cours
@@ -59,7 +59,7 @@ strings:
         fr: Modèles
         en: Templates
         pt: Modelos
-  qtNums:
+  titles:
     - class: qt-num
       label:
         fr: Proposition Clinique du Parc
@@ -70,11 +70,11 @@ strings:
         fr: Premier jet prêt en 3 minutes
         en: First draft ready in 3 minutes
         pt: Primeiro rascunho pronto em 3 minutos
-  qtHeadMkPill:
+  status:
     fr: À relire
     en: To review
     pt: Revisar
-  mkPanel:
+  panel:
     - class: mk-h
       label:
         fr: Cahier des charges reçu
@@ -85,11 +85,11 @@ strings:
         fr: Clinique du Parc · Étude de réorganisation des blocs, 12 pages
         en: Park Clinic · Theatre reorganisation study, 12 pages
         pt: Clínica do Parque · Estudo de reorganização do centro cirúrgico, 12 páginas
-  qtMainMkH:
+  mainTitle:
     fr: Sections rédigées par l'IA
     en: Sections drafted by AI
     pt: Seções escritas pela IA
-  mkField:
+  fields:
     - label:
         fr: 1. Compréhension du besoin
         en: 1. Understanding the need
@@ -99,7 +99,7 @@ strings:
         fr: Rédigé
         en: Drafted
         pt: Escrito
-  mkField2:
+  fields2:
     - label:
         fr: 2. Approche proposée
         en: 2. Proposed approach
@@ -109,7 +109,7 @@ strings:
         fr: Rédigé
         en: Drafted
         pt: Escrito
-  mkField3:
+  fields3:
     - label:
         fr: 3. Références similaires
         en: 3. Similar references
@@ -119,7 +119,7 @@ strings:
         fr: 3 trouvées
         en: 3 found
         pt: 3 encontradas
-  mkField4:
+  fields4:
     - label:
         fr: 4. Équipe et CV
         en: 4. Team and CVs
@@ -129,7 +129,7 @@ strings:
         fr: Rédigé
         en: Drafted
         pt: Escrito
-  mkField5:
+  fields5:
     - label:
         fr: 5. Planning
         en: 5. Timeline
@@ -139,7 +139,7 @@ strings:
         fr: Rédigé
         en: Drafted
         pt: Escrito
-  mkField6:
+  fields6:
     - label:
         fr: 6. Prix
         en: 6. Price
@@ -149,23 +149,23 @@ strings:
         fr: À vous
         en: Your call
         pt: Com você
-  mkDocLogo:
+  docLogo:
     fr: <em></em>Dufour Conseil
     en: <em></em>Dufour Conseil
     pt: <em></em>Dufour Consultoria
-  mkDocT:
+  docTitle:
     fr: PROPOSITION
     en: PROPOSAL
     pt: PROPOSTA
-  mkDocP:
+  docText:
     fr: Réorganisation des blocs opératoires
     en: Theatre reorganisation
     pt: Reorganização do centro cirúrgico
-  mkDocMkSub:
+  docSubtitle:
     fr: Pour la Clinique du Parc
     en: For Park Clinic
     pt: Para a Clínica do Parque
-  mkDocTxts:
+  docTexts:
     - style: width:95%
     - style: width:88%
     - style: width:92%
@@ -173,7 +173,7 @@ strings:
     - style: width:94%
     - style: width:85%
     - style: width:70%
-  mkAsideMkBtn:
+  asideButton:
     fr: Exporter en Word
     en: Export to Word
     pt: Exportar para Word

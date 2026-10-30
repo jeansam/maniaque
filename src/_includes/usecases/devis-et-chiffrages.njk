@@ -1,25 +1,25 @@
 {% import "components.njk" as c %}
-            {{ c.sidebar("qt", s.qtSideQtBrand, s.items) }}
+            {{ c.sidebar("qt", s.brand, s.menu) }}
             <div class="qt-main">
-              {{ c.screenHead("qt", s.qtNums, "qt-status", s.qtHeadQtStatus) }}
+              {{ c.screenHead("qt", s.titles, "qt-status", s.status) }}
               <div class="qt-body">
-                <div class="qt-cat"><p class="qt-search">{{ s.qtCatQtSearch }}</p><ul>{% for item in s.catalog %}<li class="{{ "in" if item.line else "" }}"><span>{{ item.name }}</span><b>{{ (s.lines[item.line] or item).price }}</b></li>{% endfor %}</ul></div>
+                <div class="qt-cat"><p class="qt-search">{{ s.search }}</p><ul>{% for item in s.catalog %}<li class="{{ "in" if item.line else "" }}"><span>{{ item.name }}</span><b>{{ (s.lines[item.line] or item).price }}</b></li>{% endfor %}</ul></div>
                 <div class="qt-sheet">
                   <div class="qt-table"><div class="qt-tr qt-th">{% for column in s.columns %}<span>{{ column }}</span>{% endfor %}</div>{% for id, line in s.lines %}<div class="qt-tr"><span>{{ line.label }}</span><span>1</span><span>{{ line.price }}</span><span>{{ line.price }}</span></div>{% endfor %}</div>
                   <div class="qt-foot">
-                    <div class="qt-margin"><b>{{ s.qtMarginB }}</b><span>{{ s.qtMarginSpan }}</span></div>
+                    <div class="qt-margin"><b>{{ s.margin }}</b><span>{{ s.marginNote }}</span></div>
                     <div class="qt-tot">{% for key, total in s.totals %}<div{% if key == "gross" %} class=qt-ttc{% endif %}><span>{{ total.label }}</span><b>{{ total.amount }}</b></div>{% endfor %}</div>
                   </div>
-                  <div class="qt-actions">{% for qtRemind in s.qtActions %}<span class="{{ qtRemind.class }}">{{ qtRemind.label }}</span>{% endfor %}</div>
+                  <div class="qt-actions">{% for qtRemind in s.actions %}<span class="{{ qtRemind.class }}">{{ qtRemind.label }}</span>{% endfor %}</div>
                 </div>
               </div>
             </div>
             <div class="qt-pdf">
-              {% for qtPdfLogo in s.qtPdfLogos %}{% if not loop.first %}
+              {% for qtPdfLogo in s.pdfHeader %}{% if not loop.first %}
               {% endif %}<p class="{{ qtPdfLogo.class }}">{{ qtPdfLogo.label }}</p>{% endfor %}
               <div class="qt-pdf-lines">{% for id, line in s.lines %}<div><span>{{ line.label }}</span><span>{{ line.price }}</span></div>{% endfor %}</div>
               <div class="qt-pdf-total"><span>{{ s.totals.gross.label }}</span><b>{{ s.totals.gross.amount }}</b></div>
-              {% for qtPdfValid in s.qtPdfValids %}{% if not loop.first %}
+              {% for qtPdfValid in s.pdfFooter %}{% if not loop.first %}
               {% endif %}<p class="{{ qtPdfValid.class }}">{{ qtPdfValid.label }}</p>{% endfor %}
             </div>
           

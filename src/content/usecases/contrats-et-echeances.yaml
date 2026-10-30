@@ -28,7 +28,7 @@ strings:
     fr: Nous construisons des outils de suivi de contrats pour les entreprises qui gèrent des fournisseurs, des locations, des abonnements ou des contrats de maintenance. Chaque contrat est enregistré avec ses dates, son montant et son préavis. Vous êtes prévenu à temps pour renégocier ou résilier, au lieu de subir une reconduction.
     en: We build contract tracking tools for businesses juggling suppliers, leases, subscriptions or maintenance contracts. Each contract is stored with its dates, amount and notice period. You're warned in time to renegotiate or cancel, instead of being caught by an automatic renewal.
     pt: Construímos ferramentas de gestão de contratos para empresas que lidam com fornecedores, locações, assinaturas ou contratos de manutenção. Cada contrato é registrado com as suas datas, o seu valor e o seu aviso prévio. Você é avisado a tempo de renegociar ou cancelar, em vez de engolir uma renovação automática.
-  qtAppClass: qt-app
+  appClass: qt-app
   caption:
     fr: "Exemple : une reconduction de trois ans évitée, sept jours avant la fin du préavis."
     en: "Example: a three-year renewal avoided, seven days before the notice deadline."
@@ -37,11 +37,11 @@ strings:
     fr: Dites-nous comment vous suivez vos contrats aujourd'hui.
     en: Tell us how you keep track of contracts today.
     pt: Conte para nós como você acompanha os seus contratos hoje.
-  qtSideQtBrand:
+  brand:
     fr: <em></em>Contrats
     en: <em></em>Contracts
     pt: <em></em>Contratos
-  items:
+  menu:
     - "on": true
       label:
         fr: Échéances
@@ -55,7 +55,7 @@ strings:
         fr: Fournisseurs
         en: Suppliers
         pt: Fornecedores
-  qtNums:
+  titles:
     - class: qt-num
       label:
         fr: Échéances
@@ -66,7 +66,7 @@ strings:
         fr: Les 12 prochains mois
         en: Next 12 months
         pt: Os próximos 12 meses
-  mkKpis:
+  kpis:
     - label:
         fr: Contrats suivis
         en: Contracts tracked
@@ -85,7 +85,7 @@ strings:
         fr: "86\_400\_€"
         en: €86,400
         pt: "R$\_518.400"
-  mkTable:
+  table:
     - class: mk-tr mk-th
       items:
         - fr: Contrat
@@ -154,7 +154,7 @@ strings:
         - fr: <span class="mk-pill mk-ok">Dans 9 mois</span>
           en: <span class="mk-pill mk-ok">In 9 months</span>
           pt: <span class="mk-pill mk-ok">Em 9 meses</span>
-  mkHs:
+  headings:
     - class: mk-h
       label:
         fr: Location copieurs
@@ -165,23 +165,23 @@ strings:
         fr: Burotec · reconduction tacite de 3 ans
         en: Burotec · automatic 3-year renewal
         pt: Burotec · renovação automática por 3 anos
-  mkAsideMkAlert:
+  asideAlert:
     fr: Sans action avant le 31 octobre, le contrat repart pour 3 ans.
     en: Without action before 31 October, the contract renews for 3 years.
     pt: Sem nenhuma ação até 31 de outubro, o contrato se renova por 3 anos.
-  mkLineSpan:
+  lineLabel:
     fr: Préavis
     en: Notice
     pt: Aviso prévio
-  mkLineB:
+  lineValue:
     fr: 2 mois
     en: 2 months
     pt: 2 meses
-  mkLineSpan2:
+  lineLabel2:
     fr: Responsable
     en: Owner
     pt: Responsável
-  mkAsideMkBtn:
+  asideButton:
     fr: Préparer la lettre de résiliation
     en: Draft the cancellation letter
     pt: Preparar a carta de cancelamento

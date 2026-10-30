@@ -28,7 +28,7 @@ strings:
     fr: Nous construisons des outils de suivi de projets pour les entreprises de services, les bureaux d'études et les agences. Tâches, temps passé, budget et facturation sont réunis sur chaque projet. Vous voyez en un coup d'œil ce qui est consommé, ce qui reste, et ce qu'il est temps de facturer.
     en: We build project tracking tools for service businesses, engineering firms and agencies. Tasks, time spent, budget and invoicing come together on every project. You see at a glance what's used, what's left, and what's ready to invoice.
     pt: Construímos ferramentas de gestão de projetos para empresas de serviços, escritórios de engenharia e agências. Tarefas, horas trabalhadas, orçamento e faturamento ficam reunidos em cada projeto. Você vê num relance o que foi consumido, o que resta e o que já está na hora de faturar.
-  qtAppClass: qt-app
+  appClass: qt-app
   caption:
     fr: "Exemple : un projet qui dérive, repéré à mi-parcours."
     en: "Example: a project going over, caught halfway through."
@@ -37,11 +37,11 @@ strings:
     fr: Dites-nous comment vous suivez vos projets aujourd'hui.
     en: Tell us how you track your projects today.
     pt: Conte para nós como você acompanha os seus projetos hoje.
-  qtSideQtBrand:
+  brand:
     fr: <em></em>Projets
     en: <em></em>Projects
     pt: <em></em>Projetos
-  items:
+  menu:
     - "on": true
       label:
         fr: Projets
@@ -59,7 +59,7 @@ strings:
         fr: Facturation
         en: Invoicing
         pt: Faturamento
-  qtNums:
+  titles:
     - class: qt-num
       label:
         fr: Projets en cours
@@ -70,7 +70,7 @@ strings:
         fr: 4 projets · 9 personnes
         en: 4 projects · 9 people
         pt: 4 projetos · 9 pessoas
-  mkTable:
+  table:
     - class: mk-tr mk-th
       items:
         - fr: Projet
@@ -123,7 +123,7 @@ strings:
         - fr: <span class="mk-pill mk-warn">À surveiller</span>
           en: <span class="mk-pill mk-warn">Watch</span>
           pt: <span class="mk-pill mk-warn">Atenção</span>
-  mkHs:
+  headings:
     - class: mk-h
       label:
         fr: Audit énergétique Leroy
@@ -134,35 +134,35 @@ strings:
         fr: 71 % du budget pour 40 % du travail
         en: 71% of budget for 40% of the work
         pt: 71% do orçamento para 40% do trabalho
-  mkLineSpan:
+  lineLabel:
     fr: Temps prévu
     en: Planned time
     pt: Horas previstas
-  mkLineB:
+  lineValue:
     fr: 60 h
     en: 60 h
     pt: 60h
-  mkLineSpan2:
+  lineLabel2:
     fr: Temps passé
     en: Time spent
     pt: Horas trabalhadas
-  mkLineB2:
+  lineValue2:
     fr: 43 h
     en: 43 h
     pt: 43h
-  mkLineSpan3:
+  lineLabel3:
     fr: Reste à faire estimé
     en: Estimated to finish
     pt: Restante estimado
-  mkLineB3:
+  lineValue3:
     fr: 38 h
     en: 38 h
     pt: 38h
-  mkAsideMkAlert:
+  asideAlert:
     fr: "Dépassement prévu : 21 h. Prévenir le client ou revoir le périmètre."
     en: "Expected overrun: 21h. Warn the client or rework the scope."
     pt: "Estouro previsto: 21h. Avisar o cliente ou rever o escopo."
-  mkAsideMkBtn:
+  asideButton:
     fr: Facturer l'étape 1
     en: Invoice stage 1
     pt: Faturar a etapa 1

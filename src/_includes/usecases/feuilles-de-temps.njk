@@ -1,7 +1,7 @@
 {% import "components.njk" as c %}
-            {{ c.sidebar("qt", s.qtSideQtBrand, s.items) }}
+            {{ c.sidebar("qt", s.brand, s.menu) }}
             <div class="qt-main">
-              {{ c.screenHead("qt", s.qtNums, "mk-pill mk-ok", s.qtHeadMkPill) }}
+              {{ c.screenHead("qt", s.titles, "mk-pill mk-ok", s.status) }}
               <div class="mk-table" style="--tpl:1.3fr repeat(5, .6fr) .7fr 1fr"><div class="mk-tr mk-th"><span>{{ s.employee }}</span>{% for day in t.weekdays %}<span>{{ day }}</span>{% endfor %}<span>Total</span><span></span></div>{% for person in s.timesheets %}<div class="mk-tr"><span><em class="mk-av" style="background:{{ person.color }}">{{ person.name[0] }}</em>{{ person.name }}</span>{% for h in person.hours %}<span>{% if h == none %}—{% else %}{{ h | number(lang) }}{{ s.hourUnit }}{% endif %}</span>{% endfor %}<span><b>{{ person.hours | sum | number(lang) }}{{ s.hourUnit }}</b></span><span><span class="mk-pill mk-{{ person.status }}">{{ s.statuses[person.status] }}</span></span></div>{% endfor %}</div>
-            </div><div class="mk-aside"><p class="mk-h">{{ s.mkAsideMkH }}</p><div class="mk-phone"><p class="mk-ph-t">{{ s.mkPhoneMkPhT }}</p>{% for mkLine in s.mkLines %}<div class="mk-line"><span>{{ mkLine.span }}</span><b>{{ mkLine.b }}</b></div>{% endfor %}<span class="mk-btn">{{ s.mkPhoneMkBtn }}</span></div><p class="mk-h mk-mt">{{ s.mkAsideMkH2 }}</p>{% for mkLine in s.mkLines2 %}<div class="mk-line"><span>{{ mkLine.span }}</span><b>{{ mkLine.b }}</b></div>{% endfor %}</div>
+            </div><div class="mk-aside"><p class="mk-h">{{ s.asideTitle }}</p><div class="mk-phone"><p class="mk-ph-t">{{ s.phoneTitle }}</p>{% for mkLine in s.lines %}<div class="mk-line"><span>{{ mkLine.span }}</span><b>{{ mkLine.b }}</b></div>{% endfor %}<span class="mk-btn">{{ s.phoneButton }}</span></div><p class="mk-h mk-mt">{{ s.asideTitle2 }}</p>{% for mkLine in s.lines2 %}<div class="mk-line"><span>{{ mkLine.span }}</span><b>{{ mkLine.b }}</b></div>{% endfor %}</div>
           

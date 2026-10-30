@@ -28,7 +28,7 @@ strings:
     fr: "Nous construisons des plannings d'interventions pour les artisans, les mainteneurs et les entreprises de dépannage. Vous placez l'intervention, l'outil vérifie qui est disponible et ce qu'il faut emporter. Le technicien reçoit tout sur son téléphone : l'adresse, l'historique du client, le matériel. Et le rapport d'intervention revient signé, sans papier."
     en: "We build job scheduling tools for tradespeople, maintenance firms and repair businesses. You place the job, the tool checks who's free and what to bring. The technician gets everything on their phone: the address, the customer's history, the parts. And the job report comes back signed, with no paperwork."
     pt: "Construímos agendas de atendimento para prestadores de serviço, empresas de manutenção e de assistência técnica. Você agenda o atendimento, e a ferramenta verifica quem está disponível e o que é preciso levar. O técnico recebe tudo no celular: o endereço, o histórico do cliente, o material. E o relatório do atendimento volta assinado, sem papel."
-  qtAppClass: qt-app
+  appClass: qt-app
   caption:
     fr: "Exemple : la semaine de l'équipe, et l'intervention telle que Karim la reçoit."
     en: "Example: the team's week, and the job as Karim receives it."
@@ -37,11 +37,11 @@ strings:
     fr: Dites-nous comment vous organisez vos interventions aujourd'hui.
     en: Tell us how you organise your jobs today.
     pt: Conte para nós como você organiza os seus atendimentos hoje.
-  qtSideQtBrand:
+  brand:
     fr: <em></em>Planning
     en: <em></em>Schedule
     pt: <em></em>Agenda
-  items:
+  menu:
     - "on": true
       label:
         fr: Planning
@@ -59,7 +59,7 @@ strings:
         fr: Rapports
         en: Reports
         pt: Relatórios
-  qtNums:
+  titles:
     - class: qt-num
       label:
         fr: Semaine 44
@@ -70,7 +70,7 @@ strings:
         fr: 4 techniciens · 11 interventions
         en: 4 technicians · 11 jobs
         pt: 4 técnicos · 11 atendimentos
-  mkLane:
+  lane:
     - style: "--s:0;--l:2;--c:#2F6FDB"
       label:
         fr: Chaudière Lopez
@@ -81,11 +81,11 @@ strings:
         fr: Entretien VMC
         en: Ventilation service
         pt: Manutenção ventilação
-  mkLaneMkJob:
+  job:
     fr: Rénovation SDB Girard
     en: Girard bathroom
     pt: Reforma banheiro Girard
-  mkLane2:
+  lane2:
     - style: "--s:0;--l:1;--c:#D2251B"
       label:
         fr: Dépannage
@@ -101,7 +101,7 @@ strings:
         fr: Devis
         en: Quote
         pt: Orçamento
-  mkLane3:
+  lane3:
     - style: "--s:1;--l:1;--c:#2FA36B"
       label:
         fr: Visite
@@ -112,11 +112,11 @@ strings:
         fr: Chantier Mercier
         en: Mercier site
         pt: Obra Mercier
-  mkAsideMkH:
+  asideTitle:
     fr: Sur le téléphone de Karim
     en: On Karim's phone
     pt: No celular do Karim
-  mkPhTs:
+  phoneTitles:
     - class: mk-ph-t
       label:
         fr: Pose clim Bernard
@@ -157,7 +157,7 @@ strings:
         fr: Client depuis 2021 · 2 interventions
         en: Customer since 2021 · 2 jobs
         pt: Cliente desde 2021 · 2 atendimentos
-  mkPhoneMkBtn:
+  phoneButton:
     fr: Démarrer l'intervention
     en: Start job
     pt: Iniciar o atendimento

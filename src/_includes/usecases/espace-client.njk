@@ -1,7 +1,7 @@
 {% import "components.njk" as c %}
-            {{ c.sidebar("qt", s.qtSideQtBrand, s.items) }}
+            {{ c.sidebar("qt", s.brand, s.menu) }}
             <div class="qt-main">
-              {{ c.screenHead("qt", s.qtNums) }}
-              <div class="mk-panel"><p class="mk-h">{{ s.mkPanelMkH }}</p><div class="mk-steps">{% for done in s.mkSteps %}<div class="{{ done.class }}"><i></i><span>{{ done.span }}</span></div>{% endfor %}</div></div><div class="mk-panel"><p class="mk-h">{{ s.mkPanelMkH2 }}</p>{{ c.table("mk-table", "--tpl:1fr 1fr 1fr 1fr", s.mkTable) }}</div>
-            </div><div class="mk-aside"><p class="mk-h">{{ s.mkAsideMkH }}</p>{% for mkItem in s.mkItems %}<div class="mk-item"><b>PDF</b><div><span>{{ mkItem.span }}</span><small>{{ mkItem.small }}</small></div></div>{% endfor %}<p class="mk-h mk-mt">{{ s.mkAsideMkH2 }}</p>{% for mkMsg in s.mkMsgs %}<div class="{{ mkMsg.class }}">{{ mkMsg.label }}</div>{% endfor %}</div>
+              {{ c.screenHead("qt", s.titles) }}
+              <div class="mk-panel"><p class="mk-h">{{ s.panelTitle }}</p><div class="mk-steps">{% for done in s.steps %}<div class="{{ done.class }}"><i></i><span>{{ done.span }}</span></div>{% endfor %}</div></div><div class="mk-panel"><p class="mk-h">{{ s.panelTitle2 }}</p>{{ c.table("mk-table", "--tpl:1fr 1fr 1fr 1fr", s.table) }}</div>
+            </div><div class="mk-aside"><p class="mk-h">{{ s.asideTitle }}</p>{% for mkItem in s.items %}<div class="mk-item"><b>PDF</b><div><span>{{ mkItem.span }}</span><small>{{ mkItem.small }}</small></div></div>{% endfor %}<p class="mk-h mk-mt">{{ s.asideTitle2 }}</p>{% for mkMsg in s.messages %}<div class="{{ mkMsg.class }}">{{ mkMsg.label }}</div>{% endfor %}</div>
           

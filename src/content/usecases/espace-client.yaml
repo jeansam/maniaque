@@ -28,7 +28,7 @@ strings:
     fr: Nous construisons des espaces clients pour les entreprises qui reçoivent trop d'appels du type « où en est ma commande ? ». Vos clients suivent leurs commandes étape par étape, téléchargent leurs factures et vous écrivent au même endroit. Vous décidez de ce qu'ils voient, et votre équipe récupère le temps passé au téléphone.
     en: We build customer portals for businesses that get too many “where's my order?” calls. Your customers follow their orders step by step, download their invoices and message you in one place. You decide what they see, and your team gets back the time spent on the phone.
     pt: Construímos áreas do cliente para empresas que recebem ligações demais do tipo “como está o meu pedido?”. Seus clientes acompanham os pedidos etapa por etapa, baixam as faturas e falam com você no mesmo lugar. Você decide o que eles veem, e a sua equipe recupera o tempo gasto ao telefone.
-  qtAppClass: qt-app
+  appClass: qt-app
   caption:
     fr: "Exemple : ce que voit votre client en se connectant."
     en: "Example: what your customer sees when they log in."
@@ -37,11 +37,11 @@ strings:
     fr: Dites-nous ce que vos clients vous demandent le plus souvent.
     en: Tell us what your customers ask you most often.
     pt: Conte para nós o que os seus clientes mais perguntam.
-  qtSideQtBrand:
+  brand:
     fr: <em></em>Martin Équipements
     en: <em></em>Martin Equipment
     pt: <em></em>Martin Equipamentos
-  items:
+  menu:
     - "on": true
       label:
         fr: Accueil
@@ -59,7 +59,7 @@ strings:
         fr: Messages
         en: Messages
         pt: Mensagens
-  qtNums:
+  titles:
     - class: qt-num
       label:
         fr: Bonjour, Boulangerie Martin
@@ -70,11 +70,11 @@ strings:
         fr: Votre espace client
         en: Your customer portal
         pt: Sua área do cliente
-  mkPanelMkH:
+  panelTitle:
     fr: Commande C-2318 · livraison prévue jeudi
     en: Order C-2318 · delivery due Thursday
     pt: Pedido P-2318 · entrega prevista para quinta
-  mkSteps:
+  steps:
     - class: done
       span:
         fr: Commande reçue
@@ -95,11 +95,11 @@ strings:
         fr: Livrée
         en: Delivered
         pt: Entregue
-  mkPanelMkH2:
+  panelTitle2:
     fr: Mes commandes
     en: My orders
     pt: Meus pedidos
-  mkTable:
+  table:
     - class: mk-tr mk-th
       items:
         - fr: Commande
@@ -156,11 +156,11 @@ strings:
         - fr: <span class="mk-pill mk-ok">Livrée</span>
           en: <span class="mk-pill mk-ok">Delivered</span>
           pt: <span class="mk-pill mk-ok">Entregue</span>
-  mkAsideMkH:
+  asideTitle:
     fr: Mes factures
     en: My invoices
     pt: Minhas faturas
-  mkItems:
+  items:
     - span: F-2318
       small:
         fr: "1\_240\_€"
@@ -176,11 +176,11 @@ strings:
         fr: "890\_€"
         en: €890
         pt: "R$\_5.340"
-  mkAsideMkH2:
+  asideTitle2:
     fr: Messages
     en: Messages
     pt: Mensagens
-  mkMsgs:
+  messages:
     - class: mk-msg
       label:
         fr: Bonjour, pouvez-vous livrer avant 10 h ?

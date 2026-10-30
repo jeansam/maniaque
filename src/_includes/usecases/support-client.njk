@@ -1,7 +1,7 @@
 {% import "components.njk" as c %}
-            {{ c.sidebar("qt", s.qtSideQtBrand, s.items) }}
+            {{ c.sidebar("qt", s.brand, s.menu) }}
             <div class="qt-main">
-              {{ c.screenHead("qt", s.qtNums, "mk-pill mk-bad", s.qtHeadMkPill) }}
-              <div class="mk-row"><div class="mk-inbox">{% for mail in s.mails %}<div class="mk-mail{% if loop.first %} on{% endif %}"><b>{{ mail.from }}</b><span>{{ mail.subject }}</span><span class="mk-pill mk-{{ mail.tone }}">{{ mail.tag }}</span></div>{% endfor %}</div><div class="mk-grow"><div class="mk-panel">{% for mkH in s.mkHs %}<p class="{{ mkH.class }}">{{ mkH.label }}</p>{% endfor %}<div class="mk-actions">{% for mkSub in s.mkActions %}<span class="{{ mkSub.class }}">{{ mkSub.label }}</span>{% endfor %}</div></div></div></div>
+              {{ c.screenHead("qt", s.titles, "mk-pill mk-bad", s.status) }}
+              <div class="mk-row"><div class="mk-inbox">{% for mail in s.mails %}<div class="mk-mail{% if loop.first %} on{% endif %}"><b>{{ mail.from }}</b><span>{{ mail.subject }}</span><span class="mk-pill mk-{{ mail.tone }}">{{ mail.tag }}</span></div>{% endfor %}</div><div class="mk-grow"><div class="mk-panel">{% for mkH in s.headings %}<p class="{{ mkH.class }}">{{ mkH.label }}</p>{% endfor %}<div class="mk-actions">{% for mkSub in s.actions %}<span class="{{ mkSub.class }}">{{ mkSub.label }}</span>{% endfor %}</div></div></div></div>
             </div>
           

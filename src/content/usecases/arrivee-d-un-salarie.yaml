@@ -28,7 +28,7 @@ strings:
     fr: "Nous construisons des outils d'accueil des salariés pour les entreprises qui recrutent régulièrement. Comptes, matériel, documents à signer, formations : chaque arrivée suit sa propre liste, avec une personne responsable pour chaque étape. Le jour J, tout est prêt."
     en: "We build staff onboarding tools for businesses that hire regularly. Accounts, equipment, documents to sign, training: every new hire follows their own checklist, with someone responsible for each step. On day one, everything is ready."
     pt: "Construímos ferramentas de onboarding para empresas que contratam com frequência. Contas, equipamentos, documentos para assinar, treinamentos: cada entrada segue a sua própria lista, com um responsável para cada etapa. No grande dia, está tudo pronto."
-  qtAppClass: qt-app qt-app-2
+  appClass: qt-app qt-app-2
   caption:
     fr: "Exemple : l'arrivée de Thomas, cinq jours avant son premier jour."
     en: "Example: Thomas's arrival, five days before his first day."
@@ -37,11 +37,11 @@ strings:
     fr: Dites-nous comment se passe l'arrivée d'un salarié aujourd'hui.
     en: Tell us how a new hire gets set up today.
     pt: Conte para nós como funciona hoje a chegada de um novo funcionário.
-  qtSideQtBrand:
+  brand:
     fr: <em></em>Équipe
     en: <em></em>Team
     pt: <em></em>Equipe
-  items:
+  menu:
     - "on": true
       label:
         fr: Arrivées
@@ -55,7 +55,7 @@ strings:
         fr: Modèles
         en: Templates
         pt: Modelos
-  qtNums:
+  titles:
     - class: qt-num
       label:
         fr: Arrivée de Thomas
@@ -66,15 +66,15 @@ strings:
         fr: J−5 · 5 tâches sur 9
         en: 5 days to go · 5 of 9 tasks
         pt: D−5 · 5 de 9 tarefas
-  qtHeadMkPill:
+  status:
     fr: Dans les temps
     en: On schedule
     pt: No prazo
-  mkPanelMkH:
+  panelTitle:
     fr: Thomas Girard · technicien · arrive lundi 3 novembre
     en: Thomas Girard · technician · starts Monday 3 November
     pt: Thomas Girard · técnico · começa segunda, 3 de novembro
-  mkKanban:
+  kanban:
     - mkColh:
         fr: Administratif · Paul
         en: Admin · Paul

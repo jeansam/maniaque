@@ -28,7 +28,7 @@ strings:
     fr: Nous construisons des outils de saisie des temps pour les équipes sur le terrain comme au bureau. Chacun saisit ses heures en quelques secondes depuis son téléphone, par chantier ou par client. Les heures validées partent directement vers la paie et la facturation, sans ressaisie.
     en: We build time tracking tools for teams in the field and in the office. Everyone logs their hours in seconds from their phone, by site or by client. Approved hours go straight to payroll and invoicing, with no retyping.
     pt: Construímos ferramentas de registro de horas para equipes em campo e no escritório. Cada um registra as suas horas em poucos segundos pelo celular, por obra ou por cliente. As horas aprovadas vão direto para a folha de pagamento e para o faturamento, sem redigitação.
-  qtAppClass: qt-app
+  appClass: qt-app
   caption:
     fr: "Exemple : la semaine de l'équipe, prête pour la paie, et la saisie depuis le téléphone."
     en: "Example: the team's week, ready for payroll, and an entry made from a phone."
@@ -37,11 +37,11 @@ strings:
     fr: Dites-nous comment vos équipes déclarent leurs heures aujourd'hui.
     en: Tell us how your teams record their hours today.
     pt: Conte para nós como as suas equipes informam as horas hoje.
-  qtSideQtBrand:
+  brand:
     fr: <em></em>Temps
     en: <em></em>Time
     pt: <em></em>Horas
-  items:
+  menu:
     - "on": true
       label:
         fr: Semaine
@@ -59,7 +59,7 @@ strings:
         fr: Facturation
         en: Invoicing
         pt: Faturamento
-  qtNums:
+  titles:
     - class: qt-num
       label:
         fr: Semaine 44
@@ -70,7 +70,7 @@ strings:
         fr: Toutes les heures saisies
         en: All hours logged
         pt: Todas as horas registradas
-  qtHeadMkPill:
+  status:
     fr: Prêt pour la paie
     en: Ready for payroll
     pt: Pronto para a folha
@@ -132,15 +132,15 @@ strings:
         - 8
         - 8
       status: info
-  mkAsideMkH:
+  asideTitle:
     fr: Saisie de Karim
     en: Karim's entry
     pt: Registro do Karim
-  mkPhoneMkPhT:
+  phoneTitle:
     fr: Jeudi
     en: Thursday
     pt: Quinta
-  mkLines:
+  lines:
     - span:
         fr: Chantier Mercier
         en: Mercier site
@@ -165,15 +165,15 @@ strings:
         fr: 1 h
         en: 1 h
         pt: 1h
-  mkPhoneMkBtn:
+  phoneButton:
     fr: Envoyer
     en: Submit
     pt: Enviar
-  mkAsideMkH2:
+  asideTitle2:
     fr: Ce mois-ci
     en: This month
     pt: Este mês
-  mkLines2:
+  lines2:
     - span:
         fr: Vers la paie
         en: To payroll

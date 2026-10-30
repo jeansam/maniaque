@@ -32,7 +32,7 @@ strings:
     fr: "Exemple d'écran : un devis en cours de création, avec le catalogue de prestations, le calcul de la marge et l'aperçu du document envoyé au client"
     en: "Example screen: a quote being built, with the item catalogue, the margin check and a preview of the document sent to the customer"
     pt: "Exemplo de tela: um orçamento em criação, com o catálogo de serviços, o cálculo da margem e a prévia do documento enviado ao cliente"
-  qtAppClass: qt-app
+  appClass: qt-app
   caption:
     fr: "Exemple : un devis monté en quatre lignes, marge vérifiée, prêt à partir."
     en: "Example: a four-line quote, margin checked, ready to go."
@@ -41,11 +41,11 @@ strings:
     fr: Dites-nous comment vous établissez vos devis aujourd'hui.
     en: Tell us how you handle quotes today.
     pt: Conte para nós como você faz os seus orçamentos hoje.
-  qtSideQtBrand:
+  brand:
     fr: <em></em>Devis
     en: <em></em>Quotes
     pt: <em></em>Orçamentos
-  items:
+  menu:
     - "on": true
       label:
         fr: Devis
@@ -63,7 +63,7 @@ strings:
         fr: Relances
         en: Reminders
         pt: Follow-ups
-  qtNums:
+  titles:
     - class: qt-num
       label:
         fr: Devis D-2026-148
@@ -74,11 +74,11 @@ strings:
         fr: Boulangerie Martin
         en: Martin Bakery
         pt: Padaria Martin
-  qtHeadQtStatus:
+  status:
     fr: Brouillon
     en: Draft
     pt: Rascunho
-  qtCatQtSearch:
+  search:
     fr: Rechercher une prestation…
     en: Search for an item…
     pt: Buscar um serviço…
@@ -161,11 +161,11 @@ strings:
         fr: 60 €
         en: €60
         pt: "R$\_360"
-  qtMarginB:
+  margin:
     fr: ✓ Marge 31 %
     en: ✓ Margin 31%
     pt: ✓ Margem de 31%
-  qtMarginSpan:
+  marginNote:
     fr: au-dessus de votre seuil de 25 %
     en: above your 25% threshold
     pt: acima do seu mínimo de 25%
@@ -197,7 +197,7 @@ strings:
         fr: 6 912 €
         en: €6,912
         pt: "R$\_41.472"
-  qtActions:
+  actions:
     - class: qt-remind
       label:
         fr: Relance automatique dans 7 jours si pas de réponse
@@ -208,7 +208,7 @@ strings:
         fr: Envoyer au client
         en: Send to customer
         pt: Enviar ao cliente
-  qtPdfLogos:
+  pdfHeader:
     - class: qt-pdf-logo
       label:
         fr: <em></em>Martin Équipements
@@ -224,7 +224,7 @@ strings:
         fr: Boulangerie Martin
         en: Martin Bakery
         pt: Padaria Martin
-  qtPdfValids:
+  pdfFooter:
     - class: qt-pdf-valid
       label:
         fr: Valable 30 jours

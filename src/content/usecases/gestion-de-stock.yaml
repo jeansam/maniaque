@@ -28,7 +28,7 @@ strings:
     fr: Nous construisons des outils de stock pour les ateliers, les grossistes et les commerces. Entrées, sorties, inventaires et fournisseurs sont suivis au même endroit, lecture de codes-barres comprise. Quand un article passe sous son seuil, l'outil prépare la commande fournisseur. Vous savez à tout moment ce que vous avez, et ce que ça vous coûte.
     en: We build inventory tools for workshops, wholesalers and shops. Stock in, stock out, counts and suppliers are tracked in one place, barcode scanning included. When an item drops below its threshold, the tool prepares the supplier order. You always know what you have, and what it costs you.
     pt: Construímos ferramentas de estoque para oficinas, atacadistas e lojas. Entradas, saídas, inventários e fornecedores ficam no mesmo lugar, com leitura de código de barras. Quando um item fica abaixo do mínimo, a ferramenta prepara o pedido ao fornecedor. Você sabe a qualquer momento o que tem, e quanto isso custa.
-  qtAppClass: qt-app
+  appClass: qt-app
   caption:
     fr: "Exemple : les articles à surveiller, et la commande fournisseur déjà prête."
     en: "Example: the items to watch, and the supplier order already prepared."
@@ -37,11 +37,11 @@ strings:
     fr: Dites-nous comment vous suivez votre stock aujourd'hui.
     en: Tell us how you track your stock today.
     pt: Conte para nós como você acompanha o seu estoque hoje.
-  qtSideQtBrand:
+  brand:
     fr: <em></em>Stock
     en: <em></em>Stock
     pt: <em></em>Estoque
-  items:
+  menu:
     - "on": true
       label:
         fr: Articles
@@ -59,7 +59,7 @@ strings:
         fr: Inventaires
         en: Stock counts
         pt: Inventários
-  qtNums:
+  titles:
     - class: qt-num
       label:
         fr: Articles
@@ -97,7 +97,7 @@ strings:
         fr: "214\_300\_€"
         en: €214,300
         pt: "R$\_1,3 mi"
-  mkTable:
+  table:
     - class: mk-tr mk-th
       items:
         - fr: Article
@@ -160,7 +160,7 @@ strings:
         - fr: <span class="mk-pill mk-bad">À commander</span>
           en: <span class="mk-pill mk-bad">Reorder</span>
           pt: <span class="mk-pill mk-bad">Comprar</span>
-  mkHs:
+  headings:
     - class: mk-h
       label:
         fr: Commande proposée
@@ -171,7 +171,7 @@ strings:
         fr: Quincaillerie Morel · livraison 48 h
         en: Morel Hardware · 48h delivery
         pt: Ferragens Morel · entrega em 48h
-  mkLines:
+  lines:
     - class: mk-line
       span:
         fr: Charnière 110°
@@ -199,7 +199,7 @@ strings:
         fr: "1\_460\_€"
         en: €1,460
         pt: "R$\_8.760"
-  mkAsideMkBtn:
+  asideButton:
     fr: Envoyer au fournisseur
     en: Send to supplier
     pt: Enviar ao fornecedor

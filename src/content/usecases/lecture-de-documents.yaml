@@ -28,7 +28,7 @@ strings:
     fr: "Nous construisons des outils qui lisent pour vous les factures fournisseurs, les bons de commande et les formulaires, qu'ils arrivent par email ou en photo. L'IA extrait les informations, les range au bon endroit et signale ce qui semble anormal. Vous vérifiez, vous validez : la saisie à la main disparaît."
     en: "We build tools that read supplier invoices, purchase orders and forms for you, whether they arrive by email or as a photo. AI pulls out the information, files it in the right place and flags anything that looks off. You check, you approve: manual data entry disappears."
     pt: "Construímos ferramentas que leem por você as faturas de fornecedores, os pedidos de compra e os formulários, cheguem eles por e-mail ou em foto. A IA extrai as informações, coloca cada uma no lugar certo e sinaliza o que parece anormal. Você confere e aprova: a digitação manual desaparece."
-  qtAppClass: qt-app qt-app-2
+  appClass: qt-app qt-app-2
   caption:
     fr: "Exemple : une facture lue en quelques secondes, et l'écart repéré avec le bon de commande."
     en: "Example: an invoice read in seconds, with the mismatch against the purchase order flagged."
@@ -37,11 +37,11 @@ strings:
     fr: Dites-nous quels documents vous recopiez aujourd'hui.
     en: Tell us which documents you copy by hand today.
     pt: Conte para nós quais documentos você copia à mão hoje.
-  qtSideQtBrand:
+  brand:
     fr: <em></em>Documents
     en: <em></em>Documents
     pt: <em></em>Documentos
-  items:
+  menu:
     - "on": true
       label:
         fr: À valider
@@ -55,7 +55,7 @@ strings:
         fr: Fournisseurs
         en: Suppliers
         pt: Fornecedores
-  qtNums:
+  titles:
     - class: qt-num
       label:
         fr: Facture reçue par email
@@ -66,11 +66,11 @@ strings:
         fr: Lue par l'IA en 4 secondes
         en: Read by AI in 4 seconds
         pt: Lida pela IA em 4 segundos
-  qtHeadMkPill:
+  status:
     fr: 1 point à vérifier
     en: 1 thing to check
     pt: 1 ponto a conferir
-  items2:
+  menu2:
     - mkDocT: true
       label:
         fr: FACTURE n° 88412
@@ -84,87 +84,87 @@ strings:
         fr: 12 rue des Forges, Lyon
         en: 12 rue des Forges, Lyon
         pt: Rua das Forjas, 12, Lyon
-  mkDocL:
+  docLines:
     - fr: Charnière 110° × 200
       en: 110° hinge × 200
       pt: Dobradiça 110° × 200
     - fr: "640\_€"
       en: €640
       pt: "R$\_3.840"
-  mkDocL2:
+  docLines2:
     - fr: Poignée inox × 100
       en: Steel handle × 100
       pt: Puxador inox × 100
     - fr: "520\_€"
       en: €520
       pt: "R$\_3.120"
-  mkDocL3:
+  docLines3:
     - fr: Joint EPDM × 20
       en: EPDM seal × 20
       pt: Vedação EPDM × 20
     - fr: "300\_€"
       en: €300
       pt: "R$\_1.800"
-  mkDocL4:
+  docLines4:
     - fr: Total TTC
       en: Total incl. VAT
       pt: Total c/ impostos
     - fr: "1\_752\_€"
       en: €1,752
       pt: "R$\_10.512"
-  mkGrowMkH:
+  growTitle:
     fr: Informations extraites
     en: Extracted data
     pt: Informações extraídas
-  mkFieldSpan:
+  fieldLabel:
     fr: Fournisseur
     en: Supplier
     pt: Fornecedor
-  mkFieldB:
+  fieldValue:
     fr: Quincaillerie Morel
     en: Quincaillerie Morel
     pt: Ferragens Morel
-  mkFieldSpan2:
+  fieldLabel2:
     fr: N° de facture
     en: Invoice no.
     pt: Nº da fatura
-  mkFieldSpan3:
+  fieldLabel3:
     fr: Date
     en: Date
     pt: Data
-  mkFieldSpan4:
+  fieldLabel4:
     fr: Total HT
     en: Total excl. VAT
     pt: Total s/ impostos
-  mkFieldB2:
+  fieldValue2:
     fr: "1\_460\_€"
     en: €1,460
     pt: "R$\_8.760"
-  mkFieldSpan5:
+  fieldLabel5:
     fr: TVA
     en: VAT
     pt: Impostos
-  mkFieldB3:
+  fieldValue3:
     fr: "292\_€"
     en: €292
     pt: "R$\_1.752"
-  mkFieldSpan6:
+  fieldLabel6:
     fr: Bon de commande
     en: Purchase order
     pt: Pedido de compra
-  mkFieldB4:
+  fieldValue4:
     fr: BC-0312
     en: BC-0312
     pt: PC-0312
-  mkFieldMkPill:
+  fieldStatus:
     fr: À vérifier
     en: Check
     pt: Conferir
-  mkGrowMkAlert:
+  growAlert:
     fr: Le bon BC-0312 prévoyait 180 charnières, la facture en compte 200.
     en: PO BC-0312 was for 180 hinges, the invoice says 200.
     pt: O pedido PC-0312 previa 180 dobradiças, a fatura cobra 200.
-  mkGrowMkBtn:
+  growButton:
     fr: Valider et envoyer en compta
     en: Approve and send to accounts
     pt: Aprovar e enviar para a contabilidade

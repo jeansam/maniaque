@@ -28,7 +28,7 @@ strings:
     fr: Nous construisons des outils de suivi de conformité pour les entreprises soumises à des certifications, des habilitations ou des contrôles obligatoires. Chaque document a sa date de validité. L'outil relance la bonne personne avant l'échéance, garde les justificatifs et vous donne une vue claire de ce qui est à jour.
     en: We build compliance tracking tools for businesses subject to certifications, permits or mandatory inspections. Every document has its expiry date. The tool reminds the right person before the deadline, keeps the evidence and gives you a clear view of what's up to date.
     pt: Construímos ferramentas de controle de conformidade para empresas sujeitas a certificações, habilitações ou inspeções obrigatórias. Cada documento tem a sua data de validade. A ferramenta avisa a pessoa certa antes do vencimento, guarda os comprovantes e dá a você uma visão clara do que está em dia.
-  qtAppClass: qt-app
+  appClass: qt-app
   caption:
     fr: "Exemple : les habilitations de l'équipe d'un coup d'œil, relances comprises."
     en: "Example: the team's permits at a glance, reminders included."
@@ -37,11 +37,11 @@ strings:
     fr: Dites-nous ce que vous devez tenir à jour aujourd'hui.
     en: Tell us what you have to keep up to date today.
     pt: Conte para nós o que você precisa manter em dia hoje.
-  qtSideQtBrand:
+  brand:
     fr: <em></em>Conformité
     en: <em></em>Compliance
     pt: <em></em>Conformidade
-  items:
+  menu:
     - "on": true
       label:
         fr: Équipe
@@ -55,7 +55,7 @@ strings:
         fr: Certifications
         en: Certifications
         pt: Certificações
-  qtNums:
+  titles:
     - class: qt-num
       label:
         fr: Habilitations de l'équipe
@@ -66,11 +66,11 @@ strings:
         fr: 4 techniciens
         en: 4 technicians
         pt: 4 técnicos
-  qtHeadMkPill:
+  status:
     fr: 1 expiré
     en: 1 expired
     pt: 1 vencido
-  mkKpis:
+  kpis:
     - label:
         fr: Documents suivis
         en: Documents tracked
@@ -144,11 +144,11 @@ strings:
         - ok
         - ok
         - warn
-  mkAsideMkH:
+  asideTitle:
     fr: Relances envoyées
     en: Reminders sent
     pt: Avisos enviados
-  mkItems:
+  items:
     - b:
         fr: Hier
         en: Yday
@@ -176,7 +176,7 @@ strings:
         fr: Visite médicale, 30 j
         en: Medical check, 30 days
         pt: Exame médico, 30 dias
-  mkAsideMkBtn:
+  asideButton:
     fr: Exporter pour l'audit
     en: Export for the audit
     pt: Exportar para a auditoria

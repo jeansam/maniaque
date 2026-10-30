@@ -1,7 +1,7 @@
 {% import "components.njk" as c %}
-            {{ c.sidebar("qt", s.qtSideQtBrand, s.items) }}
+            {{ c.sidebar("qt", s.brand, s.menu) }}
             <div class="qt-main">
-              {{ c.screenHead("qt", s.qtNums) }}
-              {{ c.kpis("mk-kpis", "mk-kpi", s.kpis) }}{{ c.table("mk-table", "--tpl:1.6fr .7fr 1fr .9fr", s.mkTable) }}
-            </div><div class="mk-aside">{% for mkH in s.mkHs %}<p class="{{ mkH.class }}">{{ mkH.label }}</p>{% endfor %}{% for mkLine in s.mkLines %}<div class="{{ mkLine.class }}"><span>{{ mkLine.span }}</span><b>{{ mkLine.b }}</b></div>{% endfor %}<span class="mk-btn">{{ s.mkAsideMkBtn }}</span></div>
+              {{ c.screenHead("qt", s.titles) }}
+              {{ c.kpis("mk-kpis", "mk-kpi", s.kpis) }}{{ c.table("mk-table", "--tpl:1.6fr .7fr 1fr .9fr", s.table) }}
+            </div><div class="mk-aside">{% for mkH in s.headings %}<p class="{{ mkH.class }}">{{ mkH.label }}</p>{% endfor %}{% for mkLine in s.lines %}<div class="{{ mkLine.class }}"><span>{{ mkLine.span }}</span><b>{{ mkLine.b }}</b></div>{% endfor %}<span class="mk-btn">{{ s.asideButton }}</span></div>
           

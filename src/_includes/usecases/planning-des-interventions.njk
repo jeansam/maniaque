@@ -1,7 +1,7 @@
 {% import "components.njk" as c %}
-            {{ c.sidebar("qt", s.qtSideQtBrand, s.items) }}
+            {{ c.sidebar("qt", s.brand, s.menu) }}
             <div class="qt-main">
-              {{ c.screenHead("qt", s.qtNums) }}
-              <div class="mk-plan"><span></span><div class="mk-days">{% for item in t.weekdays %}<span>{{ item }}</span>{% endfor %}</div><span class="mk-who"><em class="mk-av" style="background:#2F6FDB">J</em>Julien</span>{{ c.lane("mk-lane", s.mkLane, "mk-job") }}<span class="mk-who"><em class="mk-av" style="background:#E0A030">S</em>Sarah</span><div class="mk-lane"><span class="mk-job" style="--s:1;--l:3;--c:#E0A030">{{ s.mkLaneMkJob }}</span></div><span class="mk-who"><em class="mk-av" style="background:#D2251B">K</em>Karim</span>{{ c.lane("mk-lane", s.mkLane2, "mk-job") }}<span class="mk-who"><em class="mk-av" style="background:#2FA36B">L</em>Léa</span>{{ c.lane("mk-lane", s.mkLane3, "mk-job") }}</div>
-            </div><div class="mk-aside"><p class="mk-h">{{ s.mkAsideMkH }}</p><div class="mk-phone">{% for mkPhT in s.mkPhTs %}<p class="{{ mkPhT.class }}">{{ mkPhT.label }}</p>{% endfor %}<span class="mk-btn">{{ s.mkPhoneMkBtn }}</span></div></div>
+              {{ c.screenHead("qt", s.titles) }}
+              <div class="mk-plan"><span></span><div class="mk-days">{% for item in t.weekdays %}<span>{{ item }}</span>{% endfor %}</div><span class="mk-who"><em class="mk-av" style="background:#2F6FDB">J</em>Julien</span>{{ c.lane("mk-lane", s.lane, "mk-job") }}<span class="mk-who"><em class="mk-av" style="background:#E0A030">S</em>Sarah</span><div class="mk-lane"><span class="mk-job" style="--s:1;--l:3;--c:#E0A030">{{ s.job }}</span></div><span class="mk-who"><em class="mk-av" style="background:#D2251B">K</em>Karim</span>{{ c.lane("mk-lane", s.lane2, "mk-job") }}<span class="mk-who"><em class="mk-av" style="background:#2FA36B">L</em>Léa</span>{{ c.lane("mk-lane", s.lane3, "mk-job") }}</div>
+            </div><div class="mk-aside"><p class="mk-h">{{ s.asideTitle }}</p><div class="mk-phone">{% for mkPhT in s.phoneTitles %}<p class="{{ mkPhT.class }}">{{ mkPhT.label }}</p>{% endfor %}<span class="mk-btn">{{ s.phoneButton }}</span></div></div>
           

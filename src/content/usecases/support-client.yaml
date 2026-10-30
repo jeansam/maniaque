@@ -28,7 +28,7 @@ strings:
     fr: Nous construisons des outils de support pour les équipes débordées par les emails. Chaque demande est classée, attribuée à la bonne personne et accompagnée d'un brouillon de réponse rédigé par l'IA à partir de vos réponses passées. Votre équipe relit et envoie. Vos clients ont une réponse plus vite, et rien ne se perd.
     en: We build support tools for teams swamped by email. Every request is sorted, assigned to the right person and comes with a draft reply written by AI from your past answers. Your team reviews and sends. Customers hear back faster, and nothing slips through.
     pt: Construímos ferramentas de suporte para equipes sobrecarregadas de e-mails. Cada pedido é classificado, atribuído à pessoa certa e acompanhado de um rascunho de resposta escrito pela IA a partir das suas respostas anteriores. A sua equipe revisa e envia. Seus clientes recebem resposta mais rápido, e nada se perde.
-  qtAppClass: qt-app qt-app-2
+  appClass: qt-app qt-app-2
   caption:
     fr: "Exemple : une demande urgente, triée et déjà accompagnée de sa réponse."
     en: "Example: an urgent request, sorted and already paired with a reply."
@@ -37,11 +37,11 @@ strings:
     fr: Dites-nous comment vous gérez les demandes de vos clients aujourd'hui.
     en: Tell us how you handle customer requests today.
     pt: Conte para nós como você lida hoje com os pedidos dos seus clientes.
-  qtSideQtBrand:
+  brand:
     fr: <em></em>Support
     en: <em></em>Support
     pt: <em></em>Suporte
-  items:
+  menu:
     - "on": true
       label:
         fr: Boîte de réception
@@ -55,7 +55,7 @@ strings:
         fr: Réponses types
         en: Saved replies
         pt: Respostas prontas
-  qtNums:
+  titles:
     - class: qt-num
       label:
         fr: Boîte de réception
@@ -66,7 +66,7 @@ strings:
         fr: 12 nouvelles demandes, toutes triées
         en: 12 new requests, all sorted
         pt: 12 novos pedidos, todos classificados
-  qtHeadMkPill:
+  status:
     fr: 1 urgente
     en: 1 urgent
     pt: 1 urgente
@@ -123,7 +123,7 @@ strings:
         en: Sales
         pt: Comercial
       tone: warn
-  mkHs:
+  headings:
     - class: mk-h
       label:
         fr: Brouillon préparé par l'IA
@@ -134,7 +134,7 @@ strings:
         fr: Bonjour Madame Martin, nous sommes désolés pour la panne. Karim peut passer aujourd'hui à 14 h avec la carte de rechange. Cela vous convient-il ?
         en: Hello Mrs Martin, we're sorry about the breakdown. Karim can come by today at 2pm with the spare board. Does that work for you?
         pt: Olá, Sra. Martin, sentimos muito pelo problema. O Karim pode passar hoje às 14h com a placa de reposição. Esse horário funciona para a senhora?
-  mkActions:
+  actions:
     - class: mk-sub
       label:
         fr: "Attribué à : Karim · Contrat d'entretien actif"

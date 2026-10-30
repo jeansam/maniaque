@@ -28,7 +28,7 @@ strings:
     fr: Nous construisons des parcours d'arrivée client pour les entreprises qui recopient les mêmes informations dans plusieurs logiciels. Le client remplit un seul formulaire, dépose ses documents et signe en ligne. L'outil crée sa fiche partout où il le faut et prépare son dossier. Vous suivez chaque arrivée, étape par étape.
     en: We build client onboarding flows for businesses that type the same details into several systems. The client fills in one form, uploads their documents and signs online. The tool creates their record everywhere it's needed and prepares their file. You follow each new client, step by step.
     pt: Construímos jornadas de entrada de clientes para empresas que copiam as mesmas informações em vários sistemas. O cliente preenche um único formulário, envia os documentos e assina online. A ferramenta cria o cadastro dele em todos os lugares necessários e prepara a pasta. Você acompanha cada entrada, etapa por etapa.
-  qtAppClass: qt-app
+  appClass: qt-app
   caption:
     fr: "Exemple : un client arrivé ce matin, déjà aux deux tiers du parcours."
     en: "Example: a client who started this morning, already two thirds of the way."
@@ -37,11 +37,11 @@ strings:
     fr: Dites-nous comment se passe l'arrivée d'un client aujourd'hui.
     en: Tell us how a new client gets set up today.
     pt: Conte para nós como funciona hoje a entrada de um novo cliente.
-  qtSideQtBrand:
+  brand:
     fr: <em></em>Clients
     en: <em></em>Clients
     pt: <em></em>Clientes
-  items:
+  menu:
     - "on": true
       label:
         fr: Arrivées
@@ -55,7 +55,7 @@ strings:
         fr: Documents
         en: Documents
         pt: Documentos
-  qtNums:
+  titles:
     - class: qt-num
       label:
         fr: Imprimerie Petit
@@ -66,15 +66,15 @@ strings:
         fr: Nouveau client
         en: New client
         pt: Novo cliente
-  qtHeadMkPill:
+  status:
     fr: 4 étapes sur 6
     en: 4 of 6 steps
     pt: 4 de 6 etapas
-  mkPanelMkH:
+  panelTitle:
     fr: Imprimerie Petit · arrivée lancée ce matin
     en: Petit Print · onboarding started this morning
     pt: Gráfica Petit · entrada iniciada hoje de manhã
-  mkField:
+  fields:
     - label:
         fr: ✓ Formulaire rempli par le client
         en: ✓ Form filled in by client
@@ -84,7 +84,7 @@ strings:
         fr: Fait
         en: Done
         pt: Feito
-  mkField2:
+  fields2:
     - label:
         fr: ✓ Kbis et RIB déposés
         en: ✓ Company docs and bank details uploaded
@@ -94,7 +94,7 @@ strings:
         fr: Fait
         en: Done
         pt: Feito
-  mkField3:
+  fields3:
     - label:
         fr: ✓ Contrat signé en ligne
         en: ✓ Contract signed online
@@ -104,7 +104,7 @@ strings:
         fr: Fait
         en: Done
         pt: Feito
-  mkField4:
+  fields4:
     - label:
         fr: ✓ Fiche créée en compta et au CRM
         en: ✓ Record created in accounts and CRM
@@ -114,7 +114,7 @@ strings:
         fr: Fait
         en: Done
         pt: Feito
-  mkField5:
+  fields5:
     - label:
         fr: Accès à l'espace client envoyés
         en: Portal access sent
@@ -124,7 +124,7 @@ strings:
         fr: En cours
         en: In progress
         pt: Em andamento
-  mkField6:
+  fields6:
     - label:
         fr: Rendez-vous de lancement
         en: Kick-off meeting
@@ -134,11 +134,11 @@ strings:
         fr: Jeudi 10 h
         en: Thu 10am
         pt: Quinta, 10h
-  mkAsideMkH:
+  asideTitle:
     fr: Arrivées en cours
     en: Onboarding now
     pt: Entradas em andamento
-  mkItems:
+  items:
     - items:
         - label:
             fr: Garage Leroy
