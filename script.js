@@ -49,10 +49,10 @@
   });
   if (roles.length) setRole("ceo");
 
-  // Étapes « Comment ça marche » : sur mobile, toucher un titre affiche ou masque sa description
-  document.querySelectorAll(".step-toggle").forEach(function (btn) {
+  // Étapes « Comment ça marche » et notes sous les tarifs : sur mobile, toucher un titre affiche ou masque son texte
+  document.querySelectorAll(".step-toggle, .note-toggle").forEach(function (btn) {
     btn.addEventListener("click", function () {
-      var li = btn.closest("li");
+      var li = btn.closest("li, p");
       var open = !li.classList.contains("is-open");
       li.classList.toggle("is-open", open);
       btn.setAttribute("aria-expanded", open ? "true" : "false");

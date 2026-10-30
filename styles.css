@@ -459,6 +459,34 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 .quote-table .num { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; line-height: 1.1; }
 .quote-table th[scope="row"] { width: 28%; }
 .quote-notes { margin-top: 1.5rem; display: grid; gap: .6rem; max-width: 46rem; font-size: 1rem; color: var(--pencil); }
+/* L'intitulé de chaque note, en gras ; sur ordinateur c'est du texte, sur mobile il ouvre la note */
+.note-toggle {
+  font: inherit; font-weight: 700; color: var(--ink); text-align: left;
+  background: none; border: 0; padding: 0; cursor: default; pointer-events: none;
+}
+@media (max-width: 699px) {
+  .quote-notes { gap: 0; border-top: 1px solid var(--grid-strong); }
+  .quote-notes p { border-bottom: 1px solid var(--grid-strong); }
+  .note-toggle {
+    pointer-events: auto; cursor: pointer;
+    display: flex; align-items: center; justify-content: space-between; gap: 1rem; width: 100%; padding: .85rem 0;
+  }
+  .note-toggle::after {
+    content: ""; flex: none; width: .5rem; height: .5rem; margin-right: .3rem;
+    border: solid var(--pencil); border-width: 0 2px 2px 0; transform: translateY(-25%) rotate(45deg);
+    transition: transform .2s, border-color .2s;
+  }
+  .quote-notes p.is-open .note-toggle::after { border-color: var(--red); transform: translateY(25%) rotate(-135deg); }
+  .note-sep { display: none; }
+  .note-body { display: block; padding-bottom: .9rem; }
+  .note-body::first-letter { text-transform: uppercase; }
+  .js .quote-notes p:not(.is-open) .note-body { display: none; }
+  .quote-notes p.is-open .note-body { animation: step-in .25s ease-out; }
+}
+@media (max-width: 699px) and (prefers-reduced-motion: reduce) {
+  .note-toggle::after { transition: none; }
+  .quote-notes p.is-open .note-body { animation: none; }
+}
 
 @media (max-width: 680px) {
   .quote-table thead th { font-size: 1.0625rem; }
