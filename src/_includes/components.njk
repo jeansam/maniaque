@@ -8,12 +8,13 @@
           <p>{{ detailsP }}</p>
         </details>{% endmacro %}
 {% macro dcTable(dcTableClass, dcTableStyle, dcTable) %}<div class="{{ dcTableClass }}" style="{{ dcTableStyle }}">{% for dcTr in dcTable %}<div class="{{ dcTr.class }}">{% for item in dcTr.items %}<span>{{ item }}</span>{% endfor %}</div>{% endfor %}</div>{% endmacro %}
-{% macro cta(audit, auditP, auditBtn) %}<section class="cta grid-paper" aria-labelledby="t-audit">
+{% macro cta(title, text, button, anchor, alt) %}<section class="cta grid-paper"{% if anchor %} id="{{ anchor }}"{% endif %} aria-labelledby="t-audit">
     <div class="wrap">
-      <h2 id="t-audit">{{ audit }}</h2>
-      <p>{{ auditP }}</p>
-      <a data-book class="btn" target="_blank" rel="noopener">{{ auditBtn }}</a>
-    </div>
+      <h2 id="t-audit">{{ title }}</h2>
+      <p>{{ text }}</p>
+      <a data-book class="btn"{% if anchor %} id="{{ anchor }}-link"{% endif %} target="_blank" rel="noopener">{{ button }}</a>
+{% if alt %}      <p class="cta-alt">{{ alt }}</p>
+{% endif %}    </div>
   </section>{% endmacro %}
 {% macro dcLane(dcLaneClass, dcLane, dcLaneDcJobClass) %}<div class="{{ dcLaneClass }}">{% for dcJob in dcLane %}<span class="{{ dcLaneDcJobClass }}" style="{{ dcJob.style }}">{{ dcJob.label }}</span>{% endfor %}</div>{% endmacro %}
 {% macro li(h3StepToggleAriaControls, h3StepToggle, stepMeta, stepDesc2Id, stepDesc2) %}<li>

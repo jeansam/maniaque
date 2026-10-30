@@ -10,6 +10,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("find", (list, code) => list.find((item) => item.code === code));
   // Un texte { fr, en, pt } dans la langue demandée (pour les données d'une autre page : cas d'usage, articles)
   eleventyConfig.addFilter("tr", (value, lang) => resolve(value, lang));
+  // Un nombre écrit à la façon de la langue (7,5 en français, 7.5 en anglais)
+  const locales = { fr: "fr", en: "en", pt: "pt-BR" };
+  eleventyConfig.addFilter("number", (n, lang) => new Intl.NumberFormat(locales[lang]).format(n));
 
   // Fichiers servis tels quels (styles, scripts, images, favicon)
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });

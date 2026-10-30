@@ -5,45 +5,26 @@ scripts: [nav.js]
 ---
 {% import "components.njk" as c %}
 
-  <section class="section about" id="{{ s.fondateurId }}" aria-labelledby="{{ s.fondateurAriaLabelledby }}">
+  <section class="section about" id="{{ s.anchor }}" aria-labelledby="t-fondateur">
     <div class="wrap split">
       <div class="split-text">
-        <h1 class="about-title" id="{{ s.splitTextFondateurId }}">{{ s.splitTextFondateur }}</h1>
-        {% for portrait in s.portraits %}{% if not loop.first %}
-        {% endif %}<figure class="portrait grid-paper" data-city-only="{{ portrait.dataCityOnly }}">
-          <img src="{{ portrait.imgSrc }}" width="640" height="723" alt="{{ portrait.imgAlt }}" loading="lazy">
-        </figure>{% endfor %}
-      </div>
-      <div class="founder" data-city-only="marseille">
-        <p>{{ s.founderP }}</p>
-        <p>{{ s.founderP2 }}</p>
-        <p class="founder-sign">{{ s.founderSign }}</p>
-        <p class="founder-prev">{{ s.founderPrev }}</p>
-        <div class="founder-meta">
-          {{ c.liLink(s.founderMetaLiLinkAriaLabel, "https://www.linkedin.com/in/jsjequier") }}
-          <span class="place" aria-label="{{ s.founderMetaPlaceAriaLabel }}">{{ s.founderMetaPlace }}</span>
+        <h1 class="about-title" id="t-fondateur">{{ s.heading }}</h1>
+{% for c in cities | values %}        <figure class="portrait grid-paper" data-city-only="{{ c.id }}">
+          <img src="{{ c.person.portrait }}" width="640" height="723" alt="{{ s.people[c.id].alt }}" loading="lazy">
+        </figure>
+{% endfor %}      </div>
+{#- Une présentation par ville : celle de la ville choisie s'affiche (data-city-only) #}
+{% for c in cities | values %}{% set who = s.people[c.id] %}      <div class="founder" data-city-only="{{ c.id }}">
+{% for para in who.bio or [who.intro, s.partnerMethod] %}        <p>{{ para }}</p>
+{% endfor %}        <p class="founder-sign">{{ who.sign or (s.partnerSign | replace("{name}", c.person.fullName) | replace("{city}", c.name[lang])) }}</p>
+{% if who.previous %}        <p class="founder-prev">{{ who.previous }}</p>
+{% endif %}        <div class="founder-meta">
+          <a class="li-link" aria-label="{{ s.linkedinLabel | replace("{name}", c.person.fullName) }}" href="{{ c.person.linkedin }}" target="_blank" rel="noopener">{% include "icons/linkedin.svg" %}</a>
+          <span class="place" aria-label="{{ s.basedIn | replace("{city}", c.name[lang]) }}">{% include "icons/pin.svg" %}<span>{{ c.name[lang] }}</span></span>
         </div>
       </div>
-      <div class="founder" data-city-only="sao-paulo">
-        <p>{{ s.founderP3 }}</p>
-        <p>{{ s.founderP4 }}</p>
-        <p class="founder-sign">Eliakim Oliveira, Maniaque São Paulo</p>
-        <div class="founder-meta">
-          {{ c.liLink(s.founderMetaLiLinkAriaLabel2, "https://www.linkedin.com/in/eliakim-oliveira/") }}
-          <span class="place" aria-label="{{ s.founderMetaPlaceAriaLabel2 }}"><svg class="pin-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5" fill="#D2251B" stroke="#D2251B"/></svg><span>São Paulo</span></span>
-        </div>
-      </div>
-      <div class="founder" data-city-only="johannesburg">
-        <p>{{ s.founderP5 }}</p>
-        <p>{{ s.founderP6 }}</p>
-        <p class="founder-sign">{{ s.founderSign2 }}</p>
-        <div class="founder-meta">
-          {{ c.liLink(s.founderMetaLiLinkAriaLabel3, "https://www.linkedin.com/in/nmathaga/") }}
-          <span class="place" aria-label="{{ s.founderMetaPlaceAriaLabel3 }}">{{ s.founderMetaPlace2 }}</span>
-        </div>
-      </div>
-    </div>
+{% endfor %}    </div>
   </section>
 
-  {{ c.cta(s.audit, s.auditP, s.auditBtn) }}
+  {{ c.cta(t.cta.title, t.cta.text, t.cta.button) }}
 

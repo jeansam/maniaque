@@ -40,10 +40,6 @@ lede:
   fr: Au lieu de toute une équipe, <strong>un spécialiste Produit et IA dédié crée un nouvel outil digital sur mesure</strong> pour votre entreprise. Sa force&nbsp;? Formaliser et donner vie à vos idées de bout en bout. Pour <strong><span data-price="monthly"></span>&nbsp;HT par mois</strong>.
   en: Instead of a whole team, <strong>one dedicated Product and AI specialist builds a new custom digital tool</strong> for your business. Their strength? Shaping your ideas and bringing them to life from start to finish. For <strong><span data-price="monthly"></span> excl. VAT per month</strong>.
   pt: Em vez de uma equipe inteira, <strong>um especialista dedicado em Produto e IA cria uma nova ferramenta digital sob medida</strong> para a sua empresa. O ponto forte dele? Dar forma às suas ideias e torná-las realidade, do início ao fim. Por <strong><span data-price="monthly"></span> por mês, sem impostos</strong>.
-heroBook:
-  fr: Réserver mon audit gratuit
-  en: Book my free audit
-  pt: Agendar meu diagnóstico gratuito
 seePricing:
   fr: Voir les tarifs
   en: See pricing
@@ -681,22 +677,6 @@ dcTitles11:
       fr: Semaine 43
       en: Week 43
       pt: Semana 43
-dcDays:
-  - fr: Lun
-    en: Mon
-    pt: Seg
-  - fr: Mar
-    en: Tue
-    pt: Ter
-  - fr: Mer
-    en: Wed
-    pt: Qua
-  - fr: Jeu
-    en: Thu
-    pt: Qui
-  - fr: Ven
-    en: Fri
-    pt: Sex
 dcLane:
   - style: "--s:0;--l:2;--c:#5B8DEF"
     label:
@@ -1223,10 +1203,6 @@ stepsStepDesc1:
   fr: "On parle de votre activité et de ce qui vous fait perdre du temps. Vous recevez ensuite une page claire : le problème, ce que ferait la première version, le coût mensuel total, et notre avis franc sur l'intérêt d'y aller."
   en: "We talk about your business and what's wasting your time. You then get one clear page: the problem, what the first version would do, the total monthly cost, and our honest opinion on whether it's worth it."
   pt: "Conversamos sobre a sua atividade e sobre o que faz você perder tempo. Depois, você recebe uma página clara: o problema, o que a primeira versão faria, o custo mensal total e a nossa opinião franca sobre se vale a pena seguir em frente."
-stepsBtn:
-  fr: Réserver mon audit gratuit
-  en: Book my free audit
-  pt: Agendar meu diagnóstico gratuito
 h3StepToggle2:
   fr: Cadrage
   en: Scoping
@@ -1629,18 +1605,6 @@ detailsP15:
   fr: On fait une veille régulière sur les outils de développement à l'ère de l'IA, pour vous proposer à l'audit la combinaison la plus performante et la plus fiable du moment. Selon votre besoin, c'est du code sur mesure, ou <a class="inline-link" href="https://bubble.io/" target="_blank" rel="noopener">Bubble</a> si vous voulez pouvoir modifier l'outil vous-même.
   en: We keep a regular watch on development tools in the age of AI, so at the audit we can offer you the best-performing, most reliable combination available. Depending on your needs, that's custom code, or <a class="inline-link" href="https://bubble.io/" target="_blank" rel="noopener">Bubble</a> if you want to be able to edit the tool yourself.
   pt: Acompanhamos de perto as ferramentas de desenvolvimento na era da IA, para propor no diagnóstico a combinação mais eficiente e confiável do momento. Conforme a sua necessidade, pode ser código sob medida ou <a class="inline-link" href="https://bubble.io/" target="_blank" rel="noopener">Bubble</a>, se você quiser poder modificar a ferramenta por conta própria.
-audit:
-  fr: Parlons de ce qui vous agace au quotidien.
-  en: Let's talk about what bugs you every day.
-  pt: Vamos falar do que irrita você no dia a dia.
-auditP:
-  fr: 45 minutes, gratuites et sans engagement. Vous repartez avec un avis franc, même si c'est pour nous dire non.
-  en: 45 minutes, free and with no commitment. You leave with an honest opinion, even if it's to tell you no.
-  pt: 45 minutos, gratuitos e sem compromisso. Você sai com uma opinião franca, mesmo que seja para nos dizer não.
-auditLink:
-  fr: Choisir un créneau
-  en: Pick a time slot
-  pt: Escolher um horário
 auditCtaAlt:
   fr: Ou écrivez-nous à <a href="mailto:hello@maniaque.xyz">hello@maniaque.xyz</a>
   en: Or email us at <a href="mailto:hello@maniaque.xyz">hello@maniaque.xyz</a>

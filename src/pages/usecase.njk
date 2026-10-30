@@ -9,7 +9,7 @@ scripts: [nav.js]
       <a class="uc-back" href="{{ routes.usecaseIndex[lang] }}">{{ s.ucBack }}</a>
       <h1 class="uc-title" id="t-uc">{{ s.uc }}</h1>
       <p class="uc-lede">{{ s.ucLede }}</p>
-      <a data-book class="btn" target="_blank" rel="noopener">{{ s.ucBtn }}</a>
+      <a data-book class="btn" target="_blank" rel="noopener">{{ t.bookFree }}</a>
       <ul class="uc-facts">{% for item in s.ucFacts %}<li>{{ item }}</li>{% endfor %}</ul>
     </div>
   </section>
@@ -26,5 +26,5 @@ scripts: [nav.js]
     </div>
   </section>
 
-  {{ c.cta(s.audit, s.auditP, s.auditBtn) }}
+  {{ c.cta(s.audit, s.auditP, t.cta.button) }}
 

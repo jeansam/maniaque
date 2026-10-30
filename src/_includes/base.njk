@@ -3,10 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if brandFirst %}Maniaque, {{ s.title }}{% else %}{{ s.title }}, Maniaque{% endif %}</title>
+{#- Sans titre propre, une page prend son libellé du menu (À propos, Articles, Mentions légales) #}
+{% set title = s.title or t.sections[p.key] or t[p.key] -%}
+<title>{% if brandFirst %}Maniaque, {{ title }}{% else %}{{ title }}, Maniaque{% endif %}</title>
 {% if variant == "legal" %}<meta name="robots" content="noindex">
 {% else %}<meta name="description" content="{{ s.description }}">
-{% endif %}{% if og %}<meta property="og:title" content="{{ s.ogTitle or (("Maniaque, " if brandFirst else "") + s.title) }}">
+{% endif %}{% if og %}<meta property="og:title" content="{{ s.ogTitle or (("Maniaque, " if brandFirst else "") + title) }}">
 <meta property="og:description" content="{{ s.ogDescription or s.description }}">
 {% endif %}{% if og == "article" %}<meta property="og:image" content="{{ p.url }}illustration.png">
 <meta property="og:type" content="article">

@@ -82,123 +82,64 @@ strings:
     fr: Prêt pour la paie
     en: Ready for payroll
     pt: Pronto para a folha
-  mkTable:
-    - class: mk-tr mk-th
-      items:
-        - fr: Salarié
-          en: Employee
-          pt: Funcionário
-        - fr: Lun
-          en: Mon
-          pt: Seg
-        - fr: Mar
-          en: Tue
-          pt: Ter
-        - fr: Mer
-          en: Wed
-          pt: Qua
-        - fr: Jeu
-          en: Thu
-          pt: Qui
-        - fr: Ven
-          en: Fri
-          pt: Sex
-        - Total
-        - ""
-    - class: mk-tr
-      items:
-        - <em class="mk-av" style="background:#2F6FDB">J</em>Julien
-        - fr: 8 h
-          en: 8 h
-          pt: 8h
-        - fr: 8 h
-          en: 8 h
-          pt: 8h
-        - fr: 7,5 h
-          en: 7.5 h
-          pt: 7,5h
-        - fr: 8 h
-          en: 8 h
-          pt: 8h
-        - fr: 7 h
-          en: 7 h
-          pt: 7h
-        - fr: <b>38,5 h</b>
-          en: <b>38.5 h</b>
-          pt: <b>38,5h</b>
-        - fr: <span class="mk-pill mk-ok">Validé</span>
-          en: <span class="mk-pill mk-ok">Approved</span>
-          pt: <span class="mk-pill mk-ok">Aprovado</span>
-    - class: mk-tr
-      items:
-        - <em class="mk-av" style="background:#E0A030">S</em>Sarah
-        - fr: 7 h
-          en: 7 h
-          pt: 7h
-        - fr: 8 h
-          en: 8 h
-          pt: 8h
-        - fr: 8 h
-          en: 8 h
-          pt: 8h
-        - fr: 8 h
-          en: 8 h
-          pt: 8h
-        - fr: 6 h
-          en: 6 h
-          pt: 6h
-        - fr: <b>37 h</b>
-          en: <b>37 h</b>
-          pt: <b>37h</b>
-        - fr: <span class="mk-pill mk-ok">Validé</span>
-          en: <span class="mk-pill mk-ok">Approved</span>
-          pt: <span class="mk-pill mk-ok">Aprovado</span>
-    - class: mk-tr
-      items:
-        - <em class="mk-av" style="background:#D2251B">K</em>Karim
-        - fr: 9 h
-          en: 9 h
-          pt: 9h
-        - fr: 8,5 h
-          en: 8.5 h
-          pt: 8,5h
-        - fr: 8 h
-          en: 8 h
-          pt: 8h
-        - fr: 9 h
-          en: 9 h
-          pt: 9h
-        - fr: 7 h
-          en: 7 h
-          pt: 7h
-        - fr: <b>41,5 h</b>
-          en: <b>41.5 h</b>
-          pt: <b>41,5h</b>
-        - fr: <span class="mk-pill mk-warn">Heures sup.</span>
-          en: <span class="mk-pill mk-warn">Overtime</span>
-          pt: <span class="mk-pill mk-warn">Horas extras</span>
-    - class: mk-tr
-      items:
-        - <em class="mk-av" style="background:#2FA36B">L</em>Léa
-        - fr: 8 h
-          en: 8 h
-          pt: 8h
-        - fr: 4 h
-          en: 4 h
-          pt: 4h
-        - —
-        - fr: 8 h
-          en: 8 h
-          pt: 8h
-        - fr: 8 h
-          en: 8 h
-          pt: 8h
-        - fr: <b>28 h</b>
-          en: <b>28 h</b>
-          pt: <b>28h</b>
-        - fr: <span class="mk-pill mk-info">Congé mer.</span>
-          en: <span class="mk-pill mk-info">Leave Wed</span>
-          pt: <span class="mk-pill mk-info">Folga qua.</span>
+  employee:
+    fr: Salarié
+    en: Employee
+    pt: Funcionário
+  hourUnit:
+    fr: " h"
+    en: " h"
+    pt: h
+  statuses:
+    ok:
+      fr: Validé
+      en: Approved
+      pt: Aprovado
+    warn:
+      fr: Heures sup.
+      en: Overtime
+      pt: Horas extras
+    info:
+      fr: Congé mer.
+      en: Leave Wed
+      pt: Folga qua.
+  timesheets:
+    - name: Julien
+      color: "#2F6FDB"
+      hours:
+        - 8
+        - 8
+        - 7.5
+        - 8
+        - 7
+      status: ok
+    - name: Sarah
+      color: "#E0A030"
+      hours:
+        - 7
+        - 8
+        - 8
+        - 8
+        - 6
+      status: ok
+    - name: Karim
+      color: "#D2251B"
+      hours:
+        - 9
+        - 8.5
+        - 8
+        - 9
+        - 7
+      status: warn
+    - name: Léa
+      color: "#2FA36B"
+      hours:
+        - 8
+        - 4
+        - null
+        - 8
+        - 8
+      status: info
   mkAsideMkH:
     fr: Saisie de Karim
     en: Karim's entry

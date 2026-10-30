@@ -78,22 +78,6 @@ strings:
         fr: 4 techniciens · 11 interventions
         en: 4 technicians · 11 jobs
         pt: 4 técnicos · 11 atendimentos
-  mkDays:
-    - fr: Lun
-      en: Mon
-      pt: Seg
-    - fr: Mar
-      en: Tue
-      pt: Ter
-    - fr: Mer
-      en: Wed
-      pt: Qua
-    - fr: Jeu
-      en: Thu
-      pt: Qui
-    - fr: Ven
-      en: Fri
-      pt: Sex
   mkLane:
     - style: "--s:0;--l:2;--c:#2F6FDB"
       label:

@@ -94,84 +94,64 @@ strings:
         en: Expired
         pt: Vencidos
       b: "1"
-  mkTable:
-    - class: mk-tr mk-th
-      items:
-        - fr: Salarié
-          en: Employee
-          pt: Funcionário
-        - fr: Habilitation électrique
-          en: Electrical permit
-          pt: NR-10 (elétrica)
-        - fr: Travail en hauteur
-          en: Work at height
-          pt: NR-35 (altura)
-        - fr: SST
-          en: SST
-          pt: Primeiros socorros
-        - fr: Visite médicale
-          en: Medical check
-          pt: Exame médico
-    - class: mk-tr
-      items:
-        - <em class="mk-av" style="background:#2F6FDB">J</em>Julien
-        - fr: <span class="mk-pill mk-ok">À jour</span>
-          en: <span class="mk-pill mk-ok">Valid</span>
-          pt: <span class="mk-pill mk-ok">Em dia</span>
-        - fr: <span class="mk-pill mk-ok">À jour</span>
-          en: <span class="mk-pill mk-ok">Valid</span>
-          pt: <span class="mk-pill mk-ok">Em dia</span>
-        - fr: <span class="mk-pill mk-warn">Expire bientôt</span>
-          en: <span class="mk-pill mk-warn">Expires soon</span>
-          pt: <span class="mk-pill mk-warn">Vence em breve</span>
-        - fr: <span class="mk-pill mk-ok">À jour</span>
-          en: <span class="mk-pill mk-ok">Valid</span>
-          pt: <span class="mk-pill mk-ok">Em dia</span>
-    - class: mk-tr
-      items:
-        - <em class="mk-av" style="background:#E0A030">S</em>Sarah
-        - fr: <span class="mk-pill mk-ok">À jour</span>
-          en: <span class="mk-pill mk-ok">Valid</span>
-          pt: <span class="mk-pill mk-ok">Em dia</span>
-        - fr: <span class="mk-pill mk-bad">Expiré</span>
-          en: <span class="mk-pill mk-bad">Expired</span>
-          pt: <span class="mk-pill mk-bad">Vencido</span>
-        - fr: <span class="mk-pill mk-ok">À jour</span>
-          en: <span class="mk-pill mk-ok">Valid</span>
-          pt: <span class="mk-pill mk-ok">Em dia</span>
-        - fr: <span class="mk-pill mk-ok">À jour</span>
-          en: <span class="mk-pill mk-ok">Valid</span>
-          pt: <span class="mk-pill mk-ok">Em dia</span>
-    - class: mk-tr
-      items:
-        - <em class="mk-av" style="background:#D2251B">K</em>Karim
-        - fr: <span class="mk-pill mk-warn">Expire bientôt</span>
-          en: <span class="mk-pill mk-warn">Expires soon</span>
-          pt: <span class="mk-pill mk-warn">Vence em breve</span>
-        - fr: <span class="mk-pill mk-ok">À jour</span>
-          en: <span class="mk-pill mk-ok">Valid</span>
-          pt: <span class="mk-pill mk-ok">Em dia</span>
-        - fr: <span class="mk-pill mk-ok">À jour</span>
-          en: <span class="mk-pill mk-ok">Valid</span>
-          pt: <span class="mk-pill mk-ok">Em dia</span>
-        - fr: <span class="mk-pill mk-ok">À jour</span>
-          en: <span class="mk-pill mk-ok">Valid</span>
-          pt: <span class="mk-pill mk-ok">Em dia</span>
-    - class: mk-tr
-      items:
-        - <em class="mk-av" style="background:#2FA36B">L</em>Léa
-        - fr: <span class="mk-pill mk-ok">À jour</span>
-          en: <span class="mk-pill mk-ok">Valid</span>
-          pt: <span class="mk-pill mk-ok">Em dia</span>
-        - fr: <span class="mk-pill mk-ok">À jour</span>
-          en: <span class="mk-pill mk-ok">Valid</span>
-          pt: <span class="mk-pill mk-ok">Em dia</span>
-        - fr: <span class="mk-pill mk-ok">À jour</span>
-          en: <span class="mk-pill mk-ok">Valid</span>
-          pt: <span class="mk-pill mk-ok">Em dia</span>
-        - fr: <span class="mk-pill mk-warn">Expire bientôt</span>
-          en: <span class="mk-pill mk-warn">Expires soon</span>
-          pt: <span class="mk-pill mk-warn">Vence em breve</span>
+  columns:
+    - fr: Salarié
+      en: Employee
+      pt: Funcionário
+    - fr: Habilitation électrique
+      en: Electrical permit
+      pt: NR-10 (elétrica)
+    - fr: Travail en hauteur
+      en: Work at height
+      pt: NR-35 (altura)
+    - fr: SST
+      en: SST
+      pt: Primeiros socorros
+    - fr: Visite médicale
+      en: Medical check
+      pt: Exame médico
+  statuses:
+    ok:
+      fr: À jour
+      en: Valid
+      pt: Em dia
+    warn:
+      fr: Expire bientôt
+      en: Expires soon
+      pt: Vence em breve
+    bad:
+      fr: Expiré
+      en: Expired
+      pt: Vencido
+  staff:
+    - name: Julien
+      color: "#2F6FDB"
+      status:
+        - ok
+        - ok
+        - warn
+        - ok
+    - name: Sarah
+      color: "#E0A030"
+      status:
+        - ok
+        - bad
+        - ok
+        - ok
+    - name: Karim
+      color: "#D2251B"
+      status:
+        - warn
+        - ok
+        - ok
+        - ok
+    - name: Léa
+      color: "#2FA36B"
+      status:
+        - ok
+        - ok
+        - ok
+        - warn
   mkAsideMkH:
     fr: Relances envoyées
     en: Reminders sent

@@ -5,7 +5,13 @@ module.exports = {
   marseille: {
     id: "marseille",
     name: { fr: "Marseille", en: "Marseille", pt: "Marselha" },
-    person: { name: "Jean-Sam", photo: "/images/avatar-jean-samuel.webp" },
+    person: {
+      name: "Jean-Sam",
+      fullName: "Jean-Samuel Jéquier",
+      photo: "/images/avatar-jean-samuel.webp",
+      portrait: "/images/jean-samuel.webp",
+      linkedin: "https://www.linkedin.com/in/jsjequier"
+    },
     // Sur la carte du monde de l'accueil : position du point et côté où s'ouvre la fiche
     map: { anchor: "center", x: "51.49%", y: "28.66%" },
     lang: "fr",
@@ -17,7 +23,13 @@ module.exports = {
   "sao-paulo": {
     id: "sao-paulo",
     name: { fr: "São Paulo", en: "São Paulo", pt: "São Paulo" },
-    person: { name: "Eliakim", photo: "/images/avatar-eliakim-oliveira.webp" },
+    person: {
+      name: "Eliakim",
+      fullName: "Eliakim Oliveira",
+      photo: "/images/avatar-eliakim-oliveira.webp",
+      portrait: "/images/eliakim-oliveira.webp",
+      linkedin: "https://www.linkedin.com/in/eliakim-oliveira/"
+    },
     // Sur la carte du monde de l'accueil : position du point et côté où s'ouvre la fiche
     map: { anchor: "start", x: "37.05%", y: "75.74%" },
     lang: "pt",
@@ -29,7 +41,13 @@ module.exports = {
   johannesburg: {
     id: "johannesburg",
     name: { fr: "Johannesbourg", en: "Johannesburg", pt: "Joanesburgo" },
-    person: { name: "Nthuseni", photo: "/images/avatar-nthuseni-mathaga.webp" },
+    person: {
+      name: "Nthuseni",
+      fullName: "Nthuseni Mathaga",
+      photo: "/images/avatar-nthuseni-mathaga.webp",
+      portrait: "/images/nthuseni-mathaga.webp",
+      linkedin: "https://www.linkedin.com/in/nmathaga/"
+    },
     // Sur la carte du monde de l'accueil : position du point et côté où s'ouvre la fiche
     map: { anchor: "end", x: "57.79%", y: "77.61%" },
     lang: "en",

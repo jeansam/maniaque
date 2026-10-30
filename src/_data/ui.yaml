@@ -20,4 +20,20 @@ languageLabel: { fr: "Langue : ", en: "Language: ", pt: "Idioma: " }
 book: { fr: Réserver un audit, en: Book an audit, pt: Agendar diagnóstico }
 footer: { fr: Outils sur mesure pour PME. Prix hors taxes., en: Custom software for small businesses. Prices exclude VAT., pt: Softwares sob medida para PMEs. Preços sem impostos. }
 legal: { fr: Mentions légales, en: Legal notice, pt: Aviso legal }
+# L'encart de fin de page pour réserver un audit ; une page peut changer le titre et le texte
+cta:
+  title: { fr: Parlons de ce qui vous agace au quotidien., en: Let's talk about what bugs you every day., pt: Vamos falar do que irrita você no dia a dia. }
+  text:
+    fr: 45 minutes, gratuites et sans engagement. Vous repartez avec un avis franc, même si c'est pour nous dire non.
+    en: 45 minutes, free and with no commitment. You leave with an honest opinion, even if it's to tell you no.
+    pt: 45 minutos, gratuitos e sem compromisso. Você sai com uma opinião franca, mesmo que seja para nos dizer não.
+  button: { fr: Choisir un créneau, en: Pick a time slot, pt: Escolher um horário }
+bookFree: { fr: Réserver mon audit gratuit, en: Book my free audit, pt: Agendar meu diagnóstico gratuito }
+# Jours ouvrés, pour les maquettes d'écran (planning, feuilles de temps)
+weekdays:
+  - { fr: Lun, en: Mon, pt: Seg }
+  - { fr: Mar, en: Tue, pt: Ter }
+  - { fr: Mer, en: Wed, pt: Qua }
+  - { fr: Jeu, en: Thu, pt: Qui }
+  - { fr: Ven, en: Fri, pt: Sex }
 backHome: { fr: Retour à l'accueil, en: Back to home, pt: Voltar ao início }

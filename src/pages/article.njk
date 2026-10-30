@@ -19,4 +19,4 @@ scripts: [nav.js]
 
   <article class="wrap article-wrap prose">{% include "articles/" + p.id + ".njk" %}</article>
 
-  {{ c.cta(s.audit, s.auditP, s.auditBtn) }}
+  {{ c.cta(t.cta.title, t.cta.text, t.cta.button) }}

@@ -2,10 +2,6 @@ ucBack:
   fr: ← Cas d'usage
   en: ← Use cases
   pt: ← Casos de uso
-ucBtn:
-  fr: Réserver mon audit gratuit
-  en: Book my free audit
-  pt: Agendar meu diagnóstico gratuito
 ucFacts:
   - fr: Première version en 2 à 8&nbsp;semaines
     en: First version in 2 to 8&nbsp;weeks
@@ -20,7 +16,3 @@ auditP:
   fr: 45 minutes, gratuites et sans engagement. On repère où vous perdez le plus de temps, et ce qu'on construirait en premier.
   en: 45 minutes, free and with no commitment. We'll find where you lose the most time, and what we'd build first.
   pt: 45 minutos, gratuitos e sem compromisso. Identificamos onde você perde mais tempo e o que construiríamos primeiro.
-auditBtn:
-  fr: Choisir un créneau
-  en: Pick a time slot
-  pt: Escolher um horário
