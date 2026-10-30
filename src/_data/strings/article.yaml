@@ -1,3 +1,8 @@
+# {date} et {minutes} sont remplacés dans le modèle par la date de l'article et sa durée de lecture
+published:
+  fr: "Publié le {date}. Lecture : {minutes} minutes."
+  en: Published on {date}. {minutes}-minute read.
+  pt: "Publicado em {date}. Leitura: {minutes} minutos."
 articleBackLink:
   fr: Tous les articles
   en: All articles

@@ -8,8 +8,8 @@ scripts: [nav.js]
 {% import "components.njk" as c %}
   <div class="wrap article-wrap">
     <p class="article-back"><a class="link" href="{{ routes.articleIndex[lang] }}">{{ s.articleBackLink }}</a></p>
-    <h1 class="article-title">{{ s.articleTitle }}</h1>
-    <p class="article-meta">{{ s.articleMeta }}</p>
+    <h1 class="article-title">{{ s.heading or s.title }}</h1>
+    <p class="article-meta">{{ s.published | replace("{date}", p.item.date | date(lang)) | replace("{minutes}", p.item.minutes) }}</p>
   </div>
 
   <figure class="article-figure wrap">

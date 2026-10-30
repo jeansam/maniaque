@@ -3,6 +3,12 @@ slug:
   fr: cout-du-code-crm
   en: cost-of-code-crm
   pt: custo-do-codigo-crm
+date: "2026-10-23"
+minutes: 7
+summary:
+  fr: Ce qu'une agence demandait pour un CRM de base, hier en code, puis en no-code, et aujourd'hui avec l'IA. Chiffres sourcés, et ce qui ne baisse pas.
+  en: What an agency charged for a basic CRM, first in code, then in no-code, and now with AI. Sourced figures, and what doesn't get cheaper.
+  pt: O que uma agência cobrava por um CRM básico, antes em código, depois em no-code e hoje com IA. Números com fontes, e o que não fica mais barato.
 strings:
   title:
     fr: "Le coût du code : un CRM sur mesure en code, en no-code et avec l'IA"
@@ -16,14 +22,6 @@ strings:
     fr: "De 30 000 € à quelques milliers d'euros : comment le prix d'un CRM sur mesure a changé, et ce que vous payez vraiment aujourd'hui."
     en: "From €30,000 to a few thousand euros: how the price of a custom CRM has changed, and what you're really paying for today."
     pt: "De R$\_180 mil a algumas dezenas de milhares de reais: como o preço de um CRM sob medida mudou, e o que você realmente paga hoje."
-  articleTitle:
-    fr: "Le coût du code : un CRM sur mesure en code, en no-code et avec l'IA"
-    en: "The cost of code: a custom CRM in code, in no-code and with AI"
-    pt: "O custo do código: um CRM sob medida em código, em no-code e com IA"
-  articleMeta:
-    fr: "Publié le 23 octobre 2026. Lecture : 7 minutes."
-    en: Published on 23 October 2026. 7-minute read.
-    pt: "Publicado em 23 de outubro de 2026. Leitura: 7 minutos."
   articleFigureImgSrc:
     fr: illustration.webp
     en: illustration.webp

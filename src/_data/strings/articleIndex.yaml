@@ -2,76 +2,7 @@ description:
   fr: Nos articles sur l'IA, les outils sur mesure et la façon de construire des logiciels pour les PME.
   en: Our articles on AI, custom tools and how to build software for small businesses.
   pt: Nossos artigos sobre IA, ferramentas sob medida e a forma de construir software para PMEs.
-articlesTitle:
-  fr: Articles
-  en: Articles
-  pt: Itens
 sectionLede:
   fr: Ce qu'on observe en construisant des outils pour les PME, avec l'IA.
   en: What we learn building tools for small businesses, with AI.
   pt: O que observamos construindo ferramentas para PMEs, com IA.
-articleList:
-  - articleCardHref:
-      fr: /articles/cout-du-code-crm/
-      en: /en/articles/cost-of-code-crm/
-      pt: /pt/artigos/custo-do-codigo-crm/
-    articleCard:
-      fr: |2-
-
-                  <img src="/articles/cout-du-code-crm/illustration.webp" width="1600" height="840" alt="" loading="lazy">
-                  <span class="article-card-body">
-                    <span class="article-card-date">23 octobre 2026</span>
-                    <span class="article-card-title">Le coût du code : un CRM sur mesure en code, en no-code et avec l'IA</span>
-                    <span class="article-card-text">Ce qu'une agence demandait pour un CRM de base, hier en code, puis en no-code, et aujourd'hui avec l'IA. Chiffres sourcés, et ce qui ne baisse pas.</span>
-                  </span>
-                
-      en: |2-
-
-                  <img src="/en/articles/cost-of-code-crm/illustration.webp" width="1600" height="840" alt="" loading="lazy">
-                  <span class="article-card-body">
-                    <span class="article-card-date">23 October 2026</span>
-                    <span class="article-card-title">The cost of code: a custom CRM in code, in no-code and with AI</span>
-                    <span class="article-card-text">What an agency charged for a basic CRM, first in code, then in no-code, and now with AI. Sourced figures, and what doesn't get cheaper.</span>
-                  </span>
-                
-      pt: |2-
-
-                  <img src="/pt/artigos/custo-do-codigo-crm/illustration.webp" width="1600" height="840" alt="" loading="lazy">
-                  <span class="article-card-body">
-                    <span class="article-card-date">23 de outubro de 2026</span>
-                    <span class="article-card-title">O custo do código: um CRM sob medida em código, em no-code e com IA</span>
-                    <span class="article-card-text">O que uma agência cobrava por um CRM básico, antes em código, depois em no-code e hoje com IA. Números com fontes, e o que não fica mais barato.</span>
-                  </span>
-                
-  - articleCardHref:
-      fr: /articles/developpeur-ninja-ia/
-      en: /en/articles/one-person-developer-ai/
-      pt: /pt/artigos/desenvolvedor-unico-ia/
-    articleCard:
-      fr: |2-
-
-                  <img src="/articles/developpeur-ninja-ia/illustration.webp" width="1600" height="840" alt="" loading="lazy">
-                  <span class="article-card-body">
-                    <span class="article-card-date">22 octobre 2026</span>
-                    <span class="article-card-title">Un seul interlocuteur, du besoin au code : pourquoi c'est enfin possible</span>
-                    <span class="article-card-text">Les entreprises d'une seule personne explosent avec l'IA. Pourquoi un développeur qui comprend votre métier et prend les décisions techniques vaut mieux qu'une équipe qui multiplie les intermédiaires.</span>
-                  </span>
-                
-      en: |2-
-
-                  <img src="/en/articles/one-person-developer-ai/illustration.webp" width="1600" height="840" alt="" loading="lazy">
-                  <span class="article-card-body">
-                    <span class="article-card-date">22 October 2026</span>
-                    <span class="article-card-title">One point of contact, from need to code: why it's finally possible</span>
-                    <span class="article-card-text">One-person companies are booming with AI. Why a developer who understands your business and makes the technical calls beats a team that keeps adding middlemen.</span>
-                  </span>
-                
-      pt: |2-
-
-                  <img src="/pt/artigos/desenvolvedor-unico-ia/illustration.webp" width="1600" height="840" alt="" loading="lazy">
-                  <span class="article-card-body">
-                    <span class="article-card-date">22 de outubro de 2026</span>
-                    <span class="article-card-title">Um único interlocutor, da necessidade ao código: por que isso finalmente é possível</span>
-                    <span class="article-card-text">As empresas de uma pessoa só estão explodindo com a IA. Por que um desenvolvedor que entende o seu negócio e toma as decisões técnicas vale mais do que uma equipe que multiplica os intermediários.</span>
-                  </span>
-                

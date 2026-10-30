@@ -6,13 +6,19 @@ scripts: [nav.js]
 ---
 
   <div class="wrap">
-    <h1 class="articles-title">{{ s.articlesTitle }}</h1>
+    <h1 class="articles-title">{{ t.sections.articleIndex }}</h1>
     <p class="section-lede">{{ s.sectionLede }}</p>
 
-    <ul class="article-list">
-      {% for item in s.articleList %}{% if not loop.first %}
-      {% endif %}<li>
-        <a class="article-card" href="{{ item.articleCardHref }}">{{ item.articleCard }}</a>
+    <ul class="article-list">{% for a in articles | values %}{% set url = routes["article:" + a.id][lang] %}
+      <li>
+        <a class="article-card" href="{{ url }}">
+          <img src="{{ url }}illustration.webp" width="1600" height="840" alt="" loading="lazy">
+          <span class="article-card-body">
+            <span class="article-card-date">{{ a.date | date(lang) }}</span>
+            <span class="article-card-title">{{ (a.strings.heading or a.strings.title) | tr(lang) }}</span>
+            <span class="article-card-text">{{ a.summary | tr(lang) }}</span>
+          </span>
+        </a>
       </li>{% endfor %}
     </ul>
   </div>

@@ -19,7 +19,7 @@ function each(type, items) {
   const shared = strings(type);
   return Object.values(items).flatMap((item) => LANGS.map((lang) => {
     const key = type + ":" + item.id;
-    return { type, key, id: item.id, lang, url: routes[key][lang], s: resolve({ ...shared, ...item.strings }, lang) };
+    return { type, key, id: item.id, item, lang, url: routes[key][lang], s: resolve({ ...shared, ...item.strings }, lang) };
   }));
 }
 

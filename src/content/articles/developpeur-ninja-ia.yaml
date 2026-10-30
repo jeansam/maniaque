@@ -3,6 +3,12 @@ slug:
   fr: developpeur-ninja-ia
   en: one-person-developer-ai
   pt: desenvolvedor-unico-ia
+date: "2026-10-22"
+minutes: 6
+summary:
+  fr: Les entreprises d'une seule personne explosent avec l'IA. Pourquoi un développeur qui comprend votre métier et prend les décisions techniques vaut mieux qu'une équipe qui multiplie les intermédiaires.
+  en: One-person companies are booming with AI. Why a developer who understands your business and makes the technical calls beats a team that keeps adding middlemen.
+  pt: As empresas de uma pessoa só estão explodindo com a IA. Por que um desenvolvedor que entende o seu negócio e toma as decisões técnicas vale mais do que uma equipe que multiplica os intermediários.
 strings:
   title:
     fr: Un seul interlocuteur, du besoin au code
@@ -16,14 +22,10 @@ strings:
     fr: Pourquoi un développeur seul, épaulé par l'IA, peut désormais faire mieux qu'une équipe.
     en: Why a single developer, backed by AI, can now do better than a team.
     pt: Por que um desenvolvedor sozinho, apoiado pela IA, agora pode fazer melhor do que uma equipe.
-  articleTitle:
+  heading:
     fr: "Un seul interlocuteur, du besoin au code : pourquoi c'est enfin possible"
     en: "One point of contact, from need to code: why it's finally possible"
     pt: "Um único interlocutor, da necessidade ao código: por que isso finalmente é possível"
-  articleMeta:
-    fr: "Publié le 22 octobre 2026. Lecture : 6 minutes."
-    en: Published on 22 October 2026. 6-minute read.
-    pt: "Publicado em 22 de outubro de 2026. Leitura: 6 minutos."
   articleFigureImgSrc:
     fr: illustration.webp
     en: illustration.webp
