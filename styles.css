@@ -262,14 +262,21 @@ html[data-city="johannesburg"] [data-city-only]:not([data-city-only~="johannesbu
     padding: .9rem 0; font-size: 1.125rem; color: var(--ink);
     border-bottom: 1px solid var(--grid);
   }
-  /* Dans le menu mobile, les trois langues s'affichent directement, côte à côte */
-  .bar-nav .picker-lang { align-self: flex-start; margin-top: 1rem; }
+  /* Dans le menu mobile, les trois langues s'affichent directement, côte à côte ;
+     si elles ne tiennent pas dans la largeur, la rangée défile du doigt jusqu'aux bords de l'écran */
+  .bar-nav .picker-lang { align-self: stretch; margin: 1rem calc(-1 * var(--gutter)) 0; min-width: 0; }
   .picker-lang .picker-btn { display: none; }
   .picker-lang .picker-menu {
     display: flex; position: static; flex-direction: row; gap: .5rem; min-width: 0;
     padding: 0; background: none; border: 0; box-shadow: none;
   }
+  .bar-nav .picker-lang .picker-menu {
+    width: 100%; overflow-x: auto; padding-inline: var(--gutter); scroll-padding-inline: var(--gutter);
+    overscroll-behavior-x: contain; scrollbar-width: none;
+  }
+  .bar-nav .picker-lang .picker-menu::-webkit-scrollbar { display: none; }
   .bar-nav .picker-lang .picker-menu a {
+    flex: none; white-space: nowrap;
     padding: .5rem .75rem; border: 1.5px solid var(--grid-strong); border-radius: 3px; font-weight: 700;
   }
   .bar-nav .picker-lang .picker-menu a[aria-current] { border-color: var(--ink); }

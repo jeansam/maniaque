@@ -6,6 +6,12 @@
   function setOpen(open) {
     bar.classList.toggle("is-open", open);
     btn.setAttribute("aria-expanded", open ? "true" : "false");
+    // La rangée des langues défile pour montrer la langue en cours, même si elle est la dernière
+    var langs = bar.querySelector(".bar-nav .picker-lang .picker-menu");
+    var current = langs && langs.querySelector("[aria-current]");
+    if (open && current && langs.scrollWidth > langs.clientWidth) {
+      langs.scrollLeft = current.offsetLeft + current.offsetWidth - langs.clientWidth + parseFloat(getComputedStyle(langs).paddingRight);
+    }
   }
   btn.addEventListener("click", function () {
     setOpen(btn.getAttribute("aria-expanded") !== "true");
