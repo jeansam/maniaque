@@ -20,24 +20,16 @@ strings:
     fr: Vos clients suivent leurs commandes étape par étape, téléchargent leurs factures et vous écrivent au même endroit.
     en: Your customers follow their orders step by step, download their invoices and message you in one place.
     pt: Seus clientes acompanham os pedidos etapa por etapa, baixam as faturas e falam com você no mesmo lugar.
-  uc:
+  headline:
     fr: Un espace client à vos couleurs, <span>qui répond avant qu'on vous appelle.</span>
     en: A customer portal in your colours, <span>that answers before they call.</span>
     pt: Uma área do cliente com a sua cara, <span>que responde antes que liguem para você.</span>
-  ucLede:
+  lede:
     fr: Nous construisons des espaces clients pour les entreprises qui reçoivent trop d'appels du type « où en est ma commande ? ». Vos clients suivent leurs commandes étape par étape, téléchargent leurs factures et vous écrivent au même endroit. Vous décidez de ce qu'ils voient, et votre équipe récupère le temps passé au téléphone.
     en: We build customer portals for businesses that get too many “where's my order?” calls. Your customers follow their orders step by step, download their invoices and message you in one place. You decide what they see, and your team gets back the time spent on the phone.
     pt: Construímos áreas do cliente para empresas que recebem ligações demais do tipo “como está o meu pedido?”. Seus clientes acompanham os pedidos etapa por etapa, baixam as faturas e falam com você no mesmo lugar. Você decide o que eles veem, e a sua equipe recupera o tempo gasto ao telefone.
-  ucVisualAriaLabel:
-    fr: "Exemple d'écran : espace client"
-    en: "Example screen: customer portal"
-    pt: "Exemplo de tela: área do cliente"
-  qtFigureQtAriaLabel:
-    fr: "Exemple d'écran : espace client"
-    en: "Example screen: customer portal"
-    pt: "Exemplo de tela: área do cliente"
   qtAppClass: qt-app
-  qtFigureFigcaption:
+  caption:
     fr: "Exemple : ce que voit votre client en se connectant."
     en: "Example: what your customer sees when they log in."
     pt: "Exemplo: o que o seu cliente vê ao entrar."

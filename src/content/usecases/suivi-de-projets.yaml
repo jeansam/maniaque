@@ -20,24 +20,16 @@ strings:
     fr: Tâches, temps passé, budget et facturation sont réunis sur chaque projet.
     en: Tasks, time spent, budget and invoicing come together on every project.
     pt: Tarefas, horas trabalhadas, orçamento e faturamento ficam reunidos em cada projeto.
-  uc:
+  headline:
     fr: Un suivi de projets qui voit la dérive, <span>avant qu'elle coûte cher.</span>
     en: Project tracking that spots the drift, <span>before it gets expensive.</span>
     pt: Uma gestão de projetos que vê o desvio, <span>antes que ele saia caro.</span>
-  ucLede:
+  lede:
     fr: Nous construisons des outils de suivi de projets pour les entreprises de services, les bureaux d'études et les agences. Tâches, temps passé, budget et facturation sont réunis sur chaque projet. Vous voyez en un coup d'œil ce qui est consommé, ce qui reste, et ce qu'il est temps de facturer.
     en: We build project tracking tools for service businesses, engineering firms and agencies. Tasks, time spent, budget and invoicing come together on every project. You see at a glance what's used, what's left, and what's ready to invoice.
     pt: Construímos ferramentas de gestão de projetos para empresas de serviços, escritórios de engenharia e agências. Tarefas, horas trabalhadas, orçamento e faturamento ficam reunidos em cada projeto. Você vê num relance o que foi consumido, o que resta e o que já está na hora de faturar.
-  ucVisualAriaLabel:
-    fr: "Exemple d'écran : suivi de projets"
-    en: "Example screen: project tracking"
-    pt: "Exemplo de tela: gestão de projetos"
-  qtFigureQtAriaLabel:
-    fr: "Exemple d'écran : suivi de projets"
-    en: "Example screen: project tracking"
-    pt: "Exemplo de tela: gestão de projetos"
   qtAppClass: qt-app
-  qtFigureFigcaption:
+  caption:
     fr: "Exemple : un projet qui dérive, repéré à mi-parcours."
     en: "Example: a project going over, caught halfway through."
     pt: "Exemplo: um projeto com desvio, identificado no meio do caminho."

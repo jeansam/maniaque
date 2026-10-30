@@ -20,24 +20,16 @@ strings:
     fr: Chaque contrat est enregistré avec ses dates, son montant et son préavis.
     en: Each contract is stored with its dates, amount and notice period.
     pt: Cada contrato é registrado com as suas datas, o seu valor e o seu aviso prévio.
-  uc:
+  headline:
     fr: Chaque contrat avec ses dates clés, <span>et une alerte avant chaque échéance.</span>
     en: Every contract with its key dates, <span>and an alert before each deadline.</span>
     pt: Cada contrato com as suas datas-chave, <span>e um alerta antes de cada prazo.</span>
-  ucLede:
+  lede:
     fr: Nous construisons des outils de suivi de contrats pour les entreprises qui gèrent des fournisseurs, des locations, des abonnements ou des contrats de maintenance. Chaque contrat est enregistré avec ses dates, son montant et son préavis. Vous êtes prévenu à temps pour renégocier ou résilier, au lieu de subir une reconduction.
     en: We build contract tracking tools for businesses juggling suppliers, leases, subscriptions or maintenance contracts. Each contract is stored with its dates, amount and notice period. You're warned in time to renegotiate or cancel, instead of being caught by an automatic renewal.
     pt: Construímos ferramentas de gestão de contratos para empresas que lidam com fornecedores, locações, assinaturas ou contratos de manutenção. Cada contrato é registrado com as suas datas, o seu valor e o seu aviso prévio. Você é avisado a tempo de renegociar ou cancelar, em vez de engolir uma renovação automática.
-  ucVisualAriaLabel:
-    fr: "Exemple d'écran : contrats et échéances"
-    en: "Example screen: contracts and deadlines"
-    pt: "Exemplo de tela: contratos e prazos"
-  qtFigureQtAriaLabel:
-    fr: "Exemple d'écran : contrats et échéances"
-    en: "Example screen: contracts and deadlines"
-    pt: "Exemplo de tela: contratos e prazos"
   qtAppClass: qt-app
-  qtFigureFigcaption:
+  caption:
     fr: "Exemple : une reconduction de trois ans évitée, sept jours avant la fin du préavis."
     en: "Example: a three-year renewal avoided, seven days before the notice deadline."
     pt: "Exemplo: uma renovação de três anos evitada, sete dias antes do fim do aviso prévio."

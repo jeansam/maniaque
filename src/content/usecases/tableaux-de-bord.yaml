@@ -20,24 +20,16 @@ strings:
     fr: Chiffre d'affaires, marges, carnet de commandes et trésorerie sont calculés automatiquement, avec les indicateurs qui comptent pour vous.
     en: Revenue, margins, order book and cash are calculated automatically, with the indicators that matter to you.
     pt: Faturamento, margens, carteira de pedidos e caixa são calculados automaticamente, com os indicadores que importam para você.
-  uc:
+  headline:
     fr: Vos chiffres à jour chaque matin, <span>sans attendre la fin du mois.</span>
     en: Your figures up to date every morning, <span>without waiting for month end.</span>
     pt: Os seus números atualizados toda manhã, <span>sem esperar o fim do mês.</span>
-  ucLede:
+  lede:
     fr: "Nous construisons des tableaux de bord de direction qui se branchent sur vos outils existants quand ils le permettent : facturation, comptabilité, CRM, caisse. Chiffre d'affaires, marges, carnet de commandes et trésorerie sont calculés automatiquement, avec les indicateurs qui comptent pour vous. Et chaque lundi, le résumé arrive dans votre boîte mail."
     en: "We build management dashboards that plug into your existing tools where they allow it: invoicing, accounting, CRM, till. Revenue, margins, order book and cash are calculated automatically, with the indicators that matter to you. And every Monday, the summary lands in your inbox."
     pt: "Construímos dashboards de gestão que se conectam às suas ferramentas atuais quando elas permitem: faturamento, contabilidade, CRM, caixa. Faturamento, margens, carteira de pedidos e fluxo de caixa são calculados automaticamente, com os indicadores que importam para você. E toda segunda-feira o resumo chega no seu e-mail."
-  ucVisualAriaLabel:
-    fr: "Exemple d'écran : tableaux de bord"
-    en: "Example screen: dashboards"
-    pt: "Exemplo de tela: dashboards"
-  qtFigureQtAriaLabel:
-    fr: "Exemple d'écran : tableaux de bord"
-    en: "Example screen: dashboards"
-    pt: "Exemplo de tela: dashboards"
   qtAppClass: qt-app qt-app-2
-  qtFigureFigcaption:
+  caption:
     fr: "Exemple : la vue d'ensemble du dirigeant, mise à jour chaque nuit."
     en: "Example: the owner's overview, refreshed every night."
     pt: "Exemplo: a visão geral do gestor, atualizada toda noite."

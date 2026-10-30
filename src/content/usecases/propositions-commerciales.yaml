@@ -20,24 +20,16 @@ strings:
     fr: L'IA lit le besoin du client et rédige un premier jet à partir de vos propositions passées, de vos références et de vos CV.
     en: AI reads the client's brief and drafts a first version from your past proposals, references and CVs.
     pt: A IA lê a necessidade do cliente e escreve um primeiro rascunho a partir das suas propostas anteriores, das suas referências e dos seus currículos.
-  uc:
+  headline:
     fr: Des propositions commerciales rédigées en minutes, <span>et mises en page à votre image.</span>
     en: Sales proposals drafted in minutes, <span>and laid out in your brand.</span>
     pt: Propostas comerciais escritas em minutos, <span>e diagramadas com a sua identidade.</span>
-  ucLede:
+  lede:
     fr: Nous construisons des outils de propositions pour les cabinets de conseil, les agences et les entreprises de services. L'IA lit le besoin du client et rédige un premier jet à partir de vos propositions passées, de vos références et de vos CV. Le document sort dans votre propre modèle. Vous relisez, vous fixez le prix, et vous envoyez.
     en: We build proposal tools for consultancies, agencies and service businesses. AI reads the client's brief and drafts a first version from your past proposals, references and CVs. The document comes out in your own template. You proofread, set the price, and send.
     pt: Construímos ferramentas de propostas para consultorias, agências e empresas de serviços. A IA lê a necessidade do cliente e escreve um primeiro rascunho a partir das suas propostas anteriores, das suas referências e dos seus currículos. O documento sai no seu próprio modelo. Você revisa, define o preço e envia.
-  ucVisualAriaLabel:
-    fr: "Exemple d'écran : propositions commerciales"
-    en: "Example screen: sales proposals"
-    pt: "Exemplo de tela: propostas comerciais"
-  qtFigureQtAriaLabel:
-    fr: "Exemple d'écran : propositions commerciales"
-    en: "Example screen: sales proposals"
-    pt: "Exemplo de tela: propostas comerciais"
   qtAppClass: qt-app
-  qtFigureFigcaption:
+  caption:
     fr: "Exemple : un cahier des charges reçu, une proposition prête à relire."
     en: "Example: a brief received, a proposal ready to review."
     pt: "Exemplo: um termo de referência recebido, uma proposta pronta para revisar."

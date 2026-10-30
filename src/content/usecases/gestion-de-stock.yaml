@@ -20,24 +20,16 @@ strings:
     fr: Entrées, sorties, inventaires et fournisseurs sont suivis au même endroit, lecture de codes-barres comprise.
     en: Stock in, stock out, counts and suppliers are tracked in one place, barcode scanning included.
     pt: Entradas, saídas, inventários e fornecedores ficam no mesmo lugar, com leitura de código de barras.
-  uc:
+  headline:
     fr: Une gestion de stock qui sait ce qu'il reste, <span>et ce qu'il faut commander.</span>
     en: Inventory software that knows what's left, <span>and what to order.</span>
     pt: Um controle de estoque que sabe o que resta, <span>e o que precisa ser comprado.</span>
-  ucLede:
+  lede:
     fr: Nous construisons des outils de stock pour les ateliers, les grossistes et les commerces. Entrées, sorties, inventaires et fournisseurs sont suivis au même endroit, lecture de codes-barres comprise. Quand un article passe sous son seuil, l'outil prépare la commande fournisseur. Vous savez à tout moment ce que vous avez, et ce que ça vous coûte.
     en: We build inventory tools for workshops, wholesalers and shops. Stock in, stock out, counts and suppliers are tracked in one place, barcode scanning included. When an item drops below its threshold, the tool prepares the supplier order. You always know what you have, and what it costs you.
     pt: Construímos ferramentas de estoque para oficinas, atacadistas e lojas. Entradas, saídas, inventários e fornecedores ficam no mesmo lugar, com leitura de código de barras. Quando um item fica abaixo do mínimo, a ferramenta prepara o pedido ao fornecedor. Você sabe a qualquer momento o que tem, e quanto isso custa.
-  ucVisualAriaLabel:
-    fr: "Exemple d'écran : gestion de stock"
-    en: "Example screen: inventory"
-    pt: "Exemplo de tela: controle de estoque"
-  qtFigureQtAriaLabel:
-    fr: "Exemple d'écran : gestion de stock"
-    en: "Example screen: inventory"
-    pt: "Exemplo de tela: controle de estoque"
   qtAppClass: qt-app
-  qtFigureFigcaption:
+  caption:
     fr: "Exemple : les articles à surveiller, et la commande fournisseur déjà prête."
     en: "Example: the items to watch, and the supplier order already prepared."
     pt: "Exemplo: os itens que merecem atenção, e o pedido ao fornecedor já pronto."

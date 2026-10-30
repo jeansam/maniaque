@@ -20,24 +20,16 @@ strings:
     fr: Vous placez l'intervention, l'outil vérifie qui est disponible et ce qu'il faut emporter.
     en: You place the job, the tool checks who's free and what to bring.
     pt: Você agenda o atendimento, e a ferramenta verifica quem está disponível e o que é preciso levar.
-  uc:
+  headline:
     fr: Un planning qui envoie le bon technicien, <span>avec les bonnes pièces.</span>
     en: A schedule that sends the right technician, <span>with the right parts.</span>
     pt: Uma agenda que manda o técnico certo, <span>com as peças certas.</span>
-  ucLede:
+  lede:
     fr: "Nous construisons des plannings d'interventions pour les artisans, les mainteneurs et les entreprises de dépannage. Vous placez l'intervention, l'outil vérifie qui est disponible et ce qu'il faut emporter. Le technicien reçoit tout sur son téléphone : l'adresse, l'historique du client, le matériel. Et le rapport d'intervention revient signé, sans papier."
     en: "We build job scheduling tools for tradespeople, maintenance firms and repair businesses. You place the job, the tool checks who's free and what to bring. The technician gets everything on their phone: the address, the customer's history, the parts. And the job report comes back signed, with no paperwork."
     pt: "Construímos agendas de atendimento para prestadores de serviço, empresas de manutenção e de assistência técnica. Você agenda o atendimento, e a ferramenta verifica quem está disponível e o que é preciso levar. O técnico recebe tudo no celular: o endereço, o histórico do cliente, o material. E o relatório do atendimento volta assinado, sem papel."
-  ucVisualAriaLabel:
-    fr: "Exemple d'écran : planning des interventions"
-    en: "Example screen: job scheduling"
-    pt: "Exemplo de tela: agenda de atendimentos"
-  qtFigureQtAriaLabel:
-    fr: "Exemple d'écran : planning des interventions"
-    en: "Example screen: job scheduling"
-    pt: "Exemplo de tela: agenda de atendimentos"
   qtAppClass: qt-app
-  qtFigureFigcaption:
+  caption:
     fr: "Exemple : la semaine de l'équipe, et l'intervention telle que Karim la reçoit."
     en: "Example: the team's week, and the job as Karim receives it."
     pt: "Exemplo: a semana da equipe, e o atendimento do jeito que o Karim recebe."

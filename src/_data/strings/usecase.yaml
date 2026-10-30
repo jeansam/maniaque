@@ -1,3 +1,8 @@
+# exampleScreen : devant le titre du cas d'usage, pour décrire sa maquette d'écran (sauf si le cas a son propre screenLabel)
+exampleScreen:
+  fr: "Exemple d'écran : "
+  en: "Example screen: "
+  pt: "Exemplo de tela: "
 ucBack:
   fr: ← Cas d'usage
   en: ← Use cases

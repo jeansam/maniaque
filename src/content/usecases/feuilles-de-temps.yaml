@@ -20,24 +20,16 @@ strings:
     fr: Chacun saisit ses heures en quelques secondes depuis son téléphone, par chantier ou par client.
     en: Everyone logs their hours in seconds from their phone, by site or by client.
     pt: Cada um registra as suas horas em poucos segundos pelo celular, por obra ou por cliente.
-  uc:
+  headline:
     fr: Des feuilles de temps remplies à l'heure, <span>pas le vendredi soir de mémoire.</span>
     en: Timesheets filled in on time, <span>not on Friday night from memory.</span>
     pt: Horas registradas na hora, <span>não na sexta à noite de memória.</span>
-  ucLede:
+  lede:
     fr: Nous construisons des outils de saisie des temps pour les équipes sur le terrain comme au bureau. Chacun saisit ses heures en quelques secondes depuis son téléphone, par chantier ou par client. Les heures validées partent directement vers la paie et la facturation, sans ressaisie.
     en: We build time tracking tools for teams in the field and in the office. Everyone logs their hours in seconds from their phone, by site or by client. Approved hours go straight to payroll and invoicing, with no retyping.
     pt: Construímos ferramentas de registro de horas para equipes em campo e no escritório. Cada um registra as suas horas em poucos segundos pelo celular, por obra ou por cliente. As horas aprovadas vão direto para a folha de pagamento e para o faturamento, sem redigitação.
-  ucVisualAriaLabel:
-    fr: "Exemple d'écran : feuilles de temps"
-    en: "Example screen: timesheets"
-    pt: "Exemplo de tela: registro de horas"
-  qtFigureQtAriaLabel:
-    fr: "Exemple d'écran : feuilles de temps"
-    en: "Example screen: timesheets"
-    pt: "Exemplo de tela: registro de horas"
   qtAppClass: qt-app
-  qtFigureFigcaption:
+  caption:
     fr: "Exemple : la semaine de l'équipe, prête pour la paie, et la saisie depuis le téléphone."
     en: "Example: the team's week, ready for payroll, and an entry made from a phone."
     pt: "Exemplo: a semana da equipe, pronta para a folha, e o registro pelo celular."

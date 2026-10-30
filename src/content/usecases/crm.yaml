@@ -17,24 +17,16 @@ strings:
     fr: Vos contacts, vos affaires et vos relances sont au même endroit, avec les étapes de vente que vous utilisez vraiment.
     en: Your contacts, deals and follow-ups live in one place, with the sales stages you actually use.
     pt: Seus contatos, seus negócios e seus follow-ups ficam no mesmo lugar, com as etapas de venda que você realmente usa.
-  uc:
+  headline:
     fr: Un CRM rangé comme vous vendez, <span>pas comme un éditeur l'a décidé.</span>
     en: A CRM organised the way you sell, <span>not the way a vendor decided.</span>
     pt: Um CRM organizado do jeito que você vende, <span>não do jeito que um fornecedor decidiu.</span>
-  ucLede:
+  lede:
     fr: "Nous construisons des CRM pour les PME qui vendent sur devis, par téléphone ou sur le terrain. Vos contacts, vos affaires et vos relances sont au même endroit, avec les étapes de vente que vous utilisez vraiment. Chaque matin, chacun sait qui rappeler. Et pas de licence par utilisateur : toute l'équipe y a accès."
     en: "We build CRMs for small businesses that sell on quotes, over the phone or in the field. Your contacts, deals and follow-ups live in one place, with the sales stages you actually use. Every morning, everyone knows who to call back. And no per-user licences: the whole team gets access."
     pt: "Construímos CRMs para PMEs que vendem por orçamento, por telefone ou em campo. Seus contatos, seus negócios e seus follow-ups ficam no mesmo lugar, com as etapas de venda que você realmente usa. Toda manhã, cada um sabe para quem ligar. E sem licença por usuário: a equipe toda tem acesso."
-  ucVisualAriaLabel:
-    fr: "Exemple d'écran : CRM"
-    en: "Example screen: CRM"
-    pt: "Exemplo de tela: CRM"
-  qtFigureQtAriaLabel:
-    fr: "Exemple d'écran : CRM"
-    en: "Example screen: CRM"
-    pt: "Exemplo de tela: CRM"
   qtAppClass: qt-app
-  qtFigureFigcaption:
+  caption:
     fr: "Exemple : le pipeline de la semaine, et les relances du jour à droite."
     en: "Example: this week's pipeline, with today's follow-ups on the right."
     pt: "Exemplo: o funil da semana e, à direita, os follow-ups do dia."

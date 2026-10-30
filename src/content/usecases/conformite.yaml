@@ -20,24 +20,16 @@ strings:
     fr: Chaque document a sa date de validité.
     en: Every document has its expiry date.
     pt: Cada documento tem a sua data de validade.
-  uc:
+  headline:
     fr: Votre conformité suivie de près, <span>avant l'échéance, pas après.</span>
     en: Compliance kept on track, <span>before the deadline, not after.</span>
     pt: A sua conformidade sob controle, <span>antes do vencimento, não depois.</span>
-  ucLede:
+  lede:
     fr: Nous construisons des outils de suivi de conformité pour les entreprises soumises à des certifications, des habilitations ou des contrôles obligatoires. Chaque document a sa date de validité. L'outil relance la bonne personne avant l'échéance, garde les justificatifs et vous donne une vue claire de ce qui est à jour.
     en: We build compliance tracking tools for businesses subject to certifications, permits or mandatory inspections. Every document has its expiry date. The tool reminds the right person before the deadline, keeps the evidence and gives you a clear view of what's up to date.
     pt: Construímos ferramentas de controle de conformidade para empresas sujeitas a certificações, habilitações ou inspeções obrigatórias. Cada documento tem a sua data de validade. A ferramenta avisa a pessoa certa antes do vencimento, guarda os comprovantes e dá a você uma visão clara do que está em dia.
-  ucVisualAriaLabel:
-    fr: "Exemple d'écran : conformité"
-    en: "Example screen: compliance"
-    pt: "Exemplo de tela: conformidade"
-  qtFigureQtAriaLabel:
-    fr: "Exemple d'écran : conformité"
-    en: "Example screen: compliance"
-    pt: "Exemplo de tela: conformidade"
   qtAppClass: qt-app
-  qtFigureFigcaption:
+  caption:
     fr: "Exemple : les habilitations de l'équipe d'un coup d'œil, relances comprises."
     en: "Example: the team's permits at a glance, reminders included."
     pt: "Exemplo: as habilitações da equipe num relance, com os avisos incluídos."

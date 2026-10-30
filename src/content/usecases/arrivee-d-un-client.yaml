@@ -20,24 +20,16 @@ strings:
     fr: Le client remplit un seul formulaire, dépose ses documents et signe en ligne.
     en: The client fills in one form, uploads their documents and signs online.
     pt: O cliente preenche um único formulário, envia os documentos e assina online.
-  uc:
+  headline:
     fr: Un nouveau client lancé en une journée, <span>sans rien ressaisir.</span>
     en: A new client up and running in a day, <span>with nothing typed twice.</span>
     pt: Um novo cliente ativo em um dia, <span>sem redigitar nada.</span>
-  ucLede:
+  lede:
     fr: Nous construisons des parcours d'arrivée client pour les entreprises qui recopient les mêmes informations dans plusieurs logiciels. Le client remplit un seul formulaire, dépose ses documents et signe en ligne. L'outil crée sa fiche partout où il le faut et prépare son dossier. Vous suivez chaque arrivée, étape par étape.
     en: We build client onboarding flows for businesses that type the same details into several systems. The client fills in one form, uploads their documents and signs online. The tool creates their record everywhere it's needed and prepares their file. You follow each new client, step by step.
     pt: Construímos jornadas de entrada de clientes para empresas que copiam as mesmas informações em vários sistemas. O cliente preenche um único formulário, envia os documentos e assina online. A ferramenta cria o cadastro dele em todos os lugares necessários e prepara a pasta. Você acompanha cada entrada, etapa por etapa.
-  ucVisualAriaLabel:
-    fr: "Exemple d'écran : arrivée d'un client"
-    en: "Example screen: new client setup"
-    pt: "Exemplo de tela: novo cliente"
-  qtFigureQtAriaLabel:
-    fr: "Exemple d'écran : arrivée d'un client"
-    en: "Example screen: new client setup"
-    pt: "Exemplo de tela: novo cliente"
   qtAppClass: qt-app
-  qtFigureFigcaption:
+  caption:
     fr: "Exemple : un client arrivé ce matin, déjà aux deux tiers du parcours."
     en: "Example: a client who started this morning, already two thirds of the way."
     pt: "Exemplo: um cliente que chegou hoje de manhã e já está a dois terços da jornada."
