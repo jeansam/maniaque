@@ -322,6 +322,8 @@ html[data-city="johannesburg"] [data-city-only]:not([data-city-only~="johannesbu
 .note-ask { font-style: italic; font-weight: 500; }
 .note-done { font-weight: 700; margin-top: .25rem; }
 .note-next { font-style: italic; font-weight: 500; margin-top: .6rem; }
+/* Sur mobile, les annotations au stylo rouge sous le titre s'effacent : le titre suffit */
+@media (max-width: 699px) { .note { display: none; } }
 
 @media (min-width: 1200px) {
   .note {
