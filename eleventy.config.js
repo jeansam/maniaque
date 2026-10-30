@@ -1,6 +1,18 @@
 const yaml = require("js-yaml");
 const cities = require("./src/_data/cities.js");
 const { resolve } = require("./lib/i18n.js");
+const markdownIt = require("markdown-it");
+
+// Texte des articles en Markdown (le HTML y reste permis : tableau, lien d'audit) ; les liens externes s'ouvrent dans un nouvel onglet
+const md = markdownIt({ html: true });
+const linkOpen = md.renderer.rules.link_open || ((tokens, i, options, env, self) => self.renderToken(tokens, i, options));
+md.renderer.rules.link_open = (tokens, i, options, env, self) => {
+  if (/^https?:/.test(tokens[i].attrGet("href"))) {
+    tokens[i].attrSet("target", "_blank");
+    tokens[i].attrSet("rel", "noopener");
+  }
+  return linkOpen(tokens, i, options, env, self);
+};
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
@@ -10,6 +22,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("find", (list, code) => list.find((item) => item.code === code));
   // Un texte { fr, en, pt } dans la langue demandée (pour les données d'une autre page : cas d'usage, articles)
   eleventyConfig.addFilter("tr", (value, lang) => resolve(value, lang));
+  eleventyConfig.addFilter("markdown", (text) => md.render(text));
   // Première lettre en minuscule, sauf pour un sigle (CRM)
   eleventyConfig.addFilter("lowerFirst", (s) => (/^.[A-Z]/.test(s) ? s : s.charAt(0).toLowerCase() + s.slice(1)));
   // Un nombre écrit à la façon de la langue (7,5 en français, 7.5 en anglais)

@@ -7,16 +7,25 @@ scripts: [nav.js]
 ---
 {% import "components.njk" as c %}
   <div class="wrap article-wrap">
-    <p class="article-back"><a class="link" href="{{ routes.articleIndex[lang] }}">{{ s.articleBackLink }}</a></p>
+    <p class="article-back"><a class="link" href="{{ routes.articleIndex[lang] }}">{{ s.backLink }}</a></p>
     <h1 class="article-title">{{ s.heading or s.title }}</h1>
     <p class="article-meta">{{ s.published | replace("{date}", p.item.date | date(lang)) | replace("{minutes}", p.item.minutes) }}</p>
   </div>
 
   <figure class="article-figure wrap">
-    <img src="{{ s.articleFigureImgSrc }}" width="1600" height="840" alt="{{ s.articleFigureImgAlt }}">
-    <figcaption>{{ s.articleFigureFigcaption }}</figcaption>
+    <img src="{{ p.url }}illustration.webp" width="1600" height="840" alt="{{ s.imageAlt }}">
+    <figcaption>{{ s.imageCaption }}</figcaption>
   </figure>
 
-  <article class="wrap article-wrap prose">{% include "articles/" + p.id + ".njk" %}</article>
+  <article class="wrap article-wrap prose">
+    <p class="article-lede">{{ s.lede }}</p>
+{{ p.item.body[lang] | markdown }}
+    <section class="references" aria-labelledby="t-refs">
+      <h2 id="t-refs">{{ s.referencesTitle }}</h2>
+      <ol>{% for ref in s.references %}
+        <li>{{ ref }}</li>{% endfor %}
+      </ol>
+    </section>
+  </article>
 
   {{ c.cta(t.cta.title, t.cta.text, t.cta.button) }}

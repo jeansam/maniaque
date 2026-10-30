@@ -3,7 +3,8 @@ published:
   fr: "Publié le {date}. Lecture : {minutes} minutes."
   en: Published on {date}. {minutes}-minute read.
   pt: "Publicado em {date}. Leitura: {minutes} minutos."
-articleBackLink:
+backLink:
   fr: Tous les articles
   en: All articles
   pt: Todos os artigos
+referencesTitle: { fr: Références, en: References, pt: Referências }

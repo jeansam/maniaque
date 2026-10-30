@@ -22,303 +22,61 @@ strings:
     fr: "De 30 000 € à quelques milliers d'euros : comment le prix d'un CRM sur mesure a changé, et ce que vous payez vraiment aujourd'hui."
     en: "From €30,000 to a few thousand euros: how the price of a custom CRM has changed, and what you're really paying for today."
     pt: "De R$\_180 mil a algumas dezenas de milhares de reais: como o preço de um CRM sob medida mudou, e o que você realmente paga hoje."
-  articleFigureImgSrc:
-    fr: illustration.webp
-    en: illustration.webp
-    pt: /pt/artigos/custo-do-codigo-crm/illustration.webp
-  articleFigureImgAlt:
+  imageAlt:
     fr: "Graphique en barres du prix demandé par une agence pour un CRM de base sur mesure : 25 000 à 40 000 euros en code traditionnel, 5 000 à 15 000 euros en no-code, 2 500 à 5 000 euros en code avec l'IA."
     en: "Bar chart of what an agency charges for a basic custom CRM: €25,000 to €40,000 in traditional code, €5,000 to €15,000 in no-code, €2,500 to €5,000 in code with AI."
     pt: "Gráfico de barras do preço cobrado por uma agência por um CRM básico sob medida: de 150 mil a 240 mil reais em código tradicional, de 30 mil a 90 mil reais em no-code, de 15 mil a 30 mil reais em código com IA."
-  articleFigureFigcaption:
+  imageCaption:
     fr: Le prix d'une première version de CRM sur mesure, selon la façon de le construire. Ordres de grandeur.
     en: The price of a first version of a custom CRM, depending on how it's built. Rough figures.
     pt: "O preço de uma primeira versão de CRM sob medida, conforme a forma de construí-lo. Ordens de grandeza, convertidas de euros a cerca de R$\_6 por euro."
-  articleLede:
+  lede:
     fr: Pendant longtemps, un logiciel sur mesure était un luxe de grande entreprise. Une PME qui voulait son propre CRM recevait un devis à cinq chiffres et retournait à ses tableurs. En dix ans, le prix d'une même première version a été divisé par dix. Voici comment, chiffres à l'appui, et ce qui, en revanche, n'a pas baissé.
     en: For a long time, custom software was a big-company luxury. A small business that wanted its own CRM got a five-figure quote and went back to its spreadsheets. In ten years, the price of the same first version has dropped tenfold. Here is how, with figures, and what hasn't got any cheaper.
     pt: Por muito tempo, software sob medida foi um luxo de grande empresa. Uma PME que queria o próprio CRM recebia um orçamento de cinco dígitos e voltava para as suas planilhas. Em dez anos, o preço de uma mesma primeira versão caiu para um décimo. Veja como, com números, e o que, por outro lado, não ficou mais barato.
-  h:
-    fr: "Le cas d'école : un CRM de base"
-    en: "The test case: a basic CRM"
-    pt: "O caso clássico: um CRM básico"
-  p:
-    fr: "Pour comparer ce qui est comparable, prenons le même besoin d'une époque à l'autre. Un CRM de base pour une PME, c'est :"
-    en: "To compare like with like, let's take the same need from one era to the next. A basic CRM for a small business means:"
-    pt: "Para comparar o que é comparável, vamos considerar a mesma necessidade de uma época para outra. Um CRM básico para uma PME é:"
-  li:
-    fr: une fiche par contact et par entreprise, avec l'historique des échanges ;
-    en: a record for each contact and company, with the history of your exchanges;
-    pt: uma ficha por contato e por empresa, com o histórico das conversas;
-  li2:
-    fr: un pipeline de ventes, des devis en cours jusqu'à la signature ;
-    en: a sales pipeline, from open quotes to signature;
-    pt: um funil de vendas, dos orçamentos em andamento até a assinatura;
-  li3:
-    fr: des tâches et des relances, avec un rappel quand on oublie quelqu'un ;
-    en: tasks and follow-ups, with a reminder when someone gets forgotten;
-    pt: tarefas e follow-ups, com um lembrete quando alguém é esquecido;
-  li4:
-    fr: quelques rôles (commercial, responsable), l'import de vos fichiers Excel et un export.
-    en: a few roles (salesperson, manager), importing your Excel files, and an export.
-    pt: alguns perfis (vendedor, gestor), a importação dos seus arquivos Excel e uma exportação.
-  p2:
-    fr: Pas d'intelligence artificielle intégrée, pas de connexion à votre comptabilité. Le strict nécessaire, mais adapté à votre façon de vendre plutôt qu'à celle d'un éditeur américain.
-    en: No built-in artificial intelligence, no link to your accounting. The bare minimum, but shaped around the way you sell rather than the way a software vendor thinks you should.
-    pt: Sem inteligência artificial integrada, sem conexão com a sua contabilidade. O estritamente necessário, mas adaptado à sua forma de vender, e não à de um fornecedor americano.
-  h2:
-    fr: "Époque 1 : le code traditionnel, 25 000 à 40 000 €"
-    en: "Era 1: traditional code, €25,000 to €40,000"
-    pt: "Época 1: o código tradicional, de R$\_150 mil a R$\_240 mil"
-  p3:
-    fr: C'est la fourchette que donnent encore les guides du secteur pour un CRM métier basique. <a href="https://www.go-sidely.com/post/combien-coute-un-crm-commercial" target="_blank" rel="noopener">Sidely</a> l'estime entre 25 000 et 40 000 €, et entre 50 000 et 100 000 € pour un CRM complet. Chaque connexion à un autre logiciel, un ERP ou un outil comptable, ajoute <a href="https://sokeo.fr/cout-crm-entreprise-investissement-rentabilite/" target="_blank" rel="noopener">5 000 à 15 000 € selon Sokeo</a>.
-    en: That's the range industry guides still give for a basic business CRM. <a href="https://www.go-sidely.com/post/combien-coute-un-crm-commercial" target="_blank" rel="noopener">Sidely</a> puts it between €25,000 and €40,000, and between €50,000 and €100,000 for a full CRM. Each connection to another piece of software, an ERP or an accounting tool, adds <a href="https://sokeo.fr/cout-crm-entreprise-investissement-rentabilite/" target="_blank" rel="noopener">€5,000 to €15,000 according to Sokeo</a>.
-    pt: "É a faixa que os guias do setor na França ainda indicam para um CRM de negócio básico (os valores deste artigo foram convertidos de euros, a cerca de R$\_6 por euro). A <a href=\"https://www.go-sidely.com/post/combien-coute-un-crm-commercial\" target=\"_blank\" rel=\"noopener\">Sidely</a> estima entre R$\_150 mil e R$\_240 mil, e entre R$\_300 mil e R$\_600 mil para um CRM completo. Cada integração com outro software, um ERP ou uma ferramenta contábil, acrescenta <a href=\"https://sokeo.fr/cout-crm-entreprise-investissement-rentabilite/\" target=\"_blank\" rel=\"noopener\">de R$\_30 mil a R$\_90 mil, segundo a Sokeo</a>."
-  p4:
-    fr: "Ces montants s'expliquent par un calcul simple : des jours de travail multipliés par un tarif journalier. Côté ESN, <a href=\"https://www.lafabriquedunet.fr/agences/pages/agences-esn-ssii/tarifs\" target=\"_blank\" rel=\"noopener\">La Fabrique du Net</a> relève des tarifs qui commencent à 320 € par jour pour un développeur junior. Une agence facture plutôt 700 à 1 000 € par jour, chef de projet et designer compris. À 40 jours de travail, on arrive vite à 30 000 ou 40 000 €."
-    en: "These amounts come from a simple calculation: days of work multiplied by a day rate. For IT services firms, <a href=\"https://www.lafabriquedunet.fr/agences/pages/agences-esn-ssii/tarifs\" target=\"_blank\" rel=\"noopener\">La Fabrique du Net</a> records rates starting at €320 a day for a junior developer. An agency usually charges €700 to €1,000 a day, project manager and designer included. At 40 days of work, you quickly reach €30,000 or €40,000."
-    pt: "Esses valores se explicam por uma conta simples: dias de trabalho multiplicados por uma diária. Do lado das consultorias de TI, a <a href=\"https://www.lafabriquedunet.fr/agences/pages/agences-esn-ssii/tarifs\" target=\"_blank\" rel=\"noopener\">La Fabrique du Net</a> registra diárias a partir de cerca de R$\_1.900 para um desenvolvedor júnior. Uma agência cobra mais na faixa de R$\_4.200 a R$\_6.000 por dia, com gerente de projeto e designer incluídos. Com 40 dias de trabalho, chega-se rapidamente a R$\_180 mil ou R$\_240 mil."
-  p5:
-    fr: Les plateformes de freelances confirment l'ordre de grandeur. Sur Codeur.com, une PME qui cherchait en 2025 un <a href="https://www.codeur.com/projects/462449-crm-sur-mesure-adhesion" target="_blank" rel="noopener">CRM sur mesure pour gérer des adhésions</a> a reçu des devis de 15 400 € en moyenne, pour 40 jours de travail estimés. Et ce sont des freelances, sans les frais de structure d'une agence.
-    en: Freelance platforms confirm the order of magnitude. On Codeur.com, a French business looking in 2025 for a <a href="https://www.codeur.com/projects/462449-crm-sur-mesure-adhesion" target="_blank" rel="noopener">custom CRM to manage memberships</a> received quotes averaging €15,400, for an estimated 40 days of work. And those are freelancers, without an agency's overheads.
-    pt: "As plataformas de freelancers confirmam a ordem de grandeza. No Codeur.com, uma PME que procurava em 2025 um <a href=\"https://www.codeur.com/projects/462449-crm-sur-mesure-adhesion\" target=\"_blank\" rel=\"noopener\">CRM sob medida para gerenciar adesões</a> recebeu orçamentos de cerca de R$\_92 mil em média, para 40 dias de trabalho estimados. E são freelancers, sem os custos de estrutura de uma agência."
-  p6:
-    fr: "Pourquoi si cher ? Parce que tout s'écrit à la main : la base de données, les écrans, les formulaires, les droits d'accès, les tests. Un CRM de base, c'est des milliers de lignes de code dont la plupart sont banales mais doivent quand même être écrites, relues et testées par quelqu'un."
-    en: "Why so expensive? Because everything is written by hand: the database, the screens, the forms, the access rights, the tests. A basic CRM is thousands of lines of code, most of them mundane, that still have to be written, reviewed and tested by someone."
-    pt: "Por que tão caro? Porque tudo é escrito à mão: o banco de dados, as telas, os formulários, as permissões de acesso, os testes. Um CRM básico são milhares de linhas de código, a maioria banal, mas que mesmo assim precisam ser escritas, revisadas e testadas por alguém."
-  h3:
-    fr: "Époque 2 : le no-code, 5 000 à 15 000 €"
-    en: "Era 2: no-code, €5,000 to €15,000"
-    pt: "Época 2: o no-code, de R$\_30 mil a R$\_90 mil"
-  p7:
-    fr: À partir de la fin des années 2010, des outils visuels comme Bubble, Airtable ou Softr ont permis d'assembler une application sans écrire de code. Les écrans se dessinent, la base de données se configure, la logique se branche avec des blocs. Une vague d'agences no-code est née de cette promesse.
-    en: From the late 2010s, visual tools like Bubble, Airtable or Softr made it possible to put an application together without writing code. You draw the screens, configure the database and wire up the logic with blocks. A wave of no-code agencies was born from that promise.
-    pt: A partir do fim dos anos 2010, ferramentas visuais como Bubble, Airtable ou Softr permitiram montar um aplicativo sem escrever código. As telas são desenhadas, o banco de dados é configurado, a lógica é conectada com blocos. Uma onda de agências no-code nasceu dessa promessa.
-  p8:
-    fr: "Les prix ont suivi. D'après le <a href=\"https://www.lafabriquedunet.fr/agences/pages/agences-nocode/tarifs\" target=\"_blank\" rel=\"noopener\">relevé de La Fabrique du Net</a> sur 111 projets confiés à des agences no-code, le budget médian est de 10 000 €, et la moitié des projets se situe entre 5 000 et 15 000 €. Certaines agences affichent des prix d'entrée encore plus bas : <a href=\"https://www.superforge.io/agence-bubble\" target=\"_blank\" rel=\"noopener\">Superforge</a> annonce un premier produit sur Bubble à partir de 4 900 € HT, et <a href=\"https://www.noxcod.com/blog/cout-application-bubble-tarif\" target=\"_blank\" rel=\"noopener\">Noxcod</a> situe le taux horaire des agences Bubble entre 100 et 200 € HT."
-    en: "Prices followed. According to <a href=\"https://www.lafabriquedunet.fr/agences/pages/agences-nocode/tarifs\" target=\"_blank\" rel=\"noopener\">La Fabrique du Net's survey</a> of 111 projects handed to no-code agencies in France, the median budget is €10,000, and half of the projects fall between €5,000 and €15,000. Some agencies advertise even lower entry prices: <a href=\"https://www.superforge.io/agence-bubble\" target=\"_blank\" rel=\"noopener\">Superforge</a> offers a first Bubble product from €4,900 excl. VAT, and <a href=\"https://www.noxcod.com/blog/cout-application-bubble-tarif\" target=\"_blank\" rel=\"noopener\">Noxcod</a> puts Bubble agencies' hourly rates between €100 and €200 excl. VAT."
-    pt: "Os preços acompanharam. Segundo o <a href=\"https://www.lafabriquedunet.fr/agences/pages/agences-nocode/tarifs\" target=\"_blank\" rel=\"noopener\">levantamento da La Fabrique du Net</a> sobre 111 projetos confiados a agências no-code, o orçamento mediano é de R$\_60 mil, e metade dos projetos fica entre R$\_30 mil e R$\_90 mil. Algumas agências anunciam preços de entrada ainda mais baixos: a <a href=\"https://www.superforge.io/agence-bubble\" target=\"_blank\" rel=\"noopener\">Superforge</a> oferece um primeiro produto em Bubble a partir de cerca de R$\_29.400 sem impostos, e a <a href=\"https://www.noxcod.com/blog/cout-application-bubble-tarif\" target=\"_blank\" rel=\"noopener\">Noxcod</a> situa o valor da hora das agências Bubble entre R$\_600 e R$\_1.200 sem impostos."
-  p9:
-    fr: "Le gain était réel, mais il avait une limite : même sans écrire de code, tout passe encore par un cerveau humain. Chaque écran se dessine à la main, chaque règle de votre métier se traduit en blocs logiques, chaque cas particulier se teste un par un."
-    en: "The saving was real, but it had a limit: even without writing code, everything still goes through a human brain. Every screen is drawn by hand, every one of your business rules is translated into logic blocks, every edge case is tested one by one."
-    pt: "O ganho era real, mas tinha um limite: mesmo sem escrever código, tudo ainda passa por um cérebro humano. Cada tela é desenhada à mão, cada regra do seu negócio é traduzida em blocos lógicos, cada caso particular é testado um a um."
-  p10:
-    fr: "Et pour un produit de qualité, il faut même plusieurs cerveaux. Une agence no-code mobilise en général une petite équipe : quelqu'un pour comprendre le besoin, quelqu'un pour concevoir les écrans, quelqu'un pour construire et quelqu'un pour tester. Chaque passage de relais entre eux ajoute des échanges, des délais et des pertes d'information, comme nous l'expliquions dans <a href=\"/articles/developpeur-ninja-ia/\">Un seul interlocuteur, du besoin au code</a>."
-    en: "And a quality product actually takes several brains. A no-code agency usually puts a small team on it: someone to understand the need, someone to design the screens, someone to build and someone to test. Every handoff between them adds conversations, delays and lost information, as we explained in <a href=\"/en/articles/one-person-developer-ai/\">One point of contact, from need to code</a>."
-    pt: "E, para um produto de qualidade, são necessários até vários cérebros. Uma agência no-code costuma mobilizar uma pequena equipe: alguém para entender a necessidade, alguém para desenhar as telas, alguém para construir e alguém para testar. Cada passagem de bastão entre eles acrescenta conversas, atrasos e perdas de informação, como explicamos em <a href=\"/pt/artigos/desenvolvedor-unico-ia/\">Um único interlocutor, da necessidade ao código</a>."
-  p11:
-    fr: Le no-code a donc fait baisser le prix en accélérant la fabrication. Mais le temps humain, lui, restait au cœur de la facture.
-    en: So no-code brought the price down by speeding up the building. But human time stayed at the heart of the invoice.
-    pt: O no-code baixou o preço ao acelerar a construção. Mas o tempo humano continuava no centro da conta.
-  h4:
-    fr: "Époque 3 : le code avec l'IA, quelques milliers d'euros"
-    en: "Era 3: code with AI, a few thousand euros"
-    pt: "Época 3: o código com IA, algumas dezenas de milhares de reais"
-  p12:
-    fr: Depuis 2023, l'IA écrit du vrai code, dans des langages standards, que n'importe quel développeur peut relire et reprendre. Le phénomène a pris une ampleur que peu avaient anticipée. En mars 2025, Y Combinator, le plus célèbre accélérateur de startups, indiquait que <a href="https://techcrunch.com/2025/03/06/a-quarter-of-startups-in-ycs-current-cohort-have-codebases-that-are-almost-entirely-ai-generated" target="_blank" rel="noopener">pour un quart de sa promotion, 95&nbsp;% du code avait été écrit par l'IA</a>. Lovable, un outil qui génère des applications à partir d'une description, a dépassé <a href="https://tech.eu/2025/07/23/lovable-becomes-fastest-software-company-ever-to-reach-100m-arr/" target="_blank" rel="noopener">100 millions de dollars de revenus annuels en huit mois</a>, avec un abonnement qui démarre à <a href="https://lovable.dev/pricing" target="_blank" rel="noopener">25 dollars par mois</a>.
-    en: Since 2023, AI has been writing real code, in standard languages, that any developer can read and take over. The shift has grown faster than almost anyone expected. In March 2025, Y Combinator, the best-known startup accelerator, said that <a href="https://techcrunch.com/2025/03/06/a-quarter-of-startups-in-ycs-current-cohort-have-codebases-that-are-almost-entirely-ai-generated" target="_blank" rel="noopener">for a quarter of its batch, 95% of the code had been written by AI</a>. Lovable, a tool that generates applications from a description, passed <a href="https://tech.eu/2025/07/23/lovable-becomes-fastest-software-company-ever-to-reach-100m-arr/" target="_blank" rel="noopener">$100 million in annual revenue in eight months</a>, with a subscription that starts at <a href="https://lovable.dev/pricing" target="_blank" rel="noopener">$25 a month</a>.
-    pt: Desde 2023, a IA escreve código de verdade, em linguagens padrão, que qualquer desenvolvedor pode revisar e assumir. O fenômeno ganhou uma dimensão que poucos previam. Em março de 2025, a Y Combinator, a aceleradora de startups mais famosa do mundo, informou que <a href="https://techcrunch.com/2025/03/06/a-quarter-of-startups-in-ycs-current-cohort-have-codebases-that-are-almost-entirely-ai-generated" target="_blank" rel="noopener">em um quarto da sua turma, 95% do código tinha sido escrito por IA</a>. O Lovable, uma ferramenta que gera aplicativos a partir de uma descrição, ultrapassou <a href="https://tech.eu/2025/07/23/lovable-becomes-fastest-software-company-ever-to-reach-100m-arr/" target="_blank" rel="noopener">100 milhões de dólares de receita anual em oito meses</a>, com uma assinatura que começa em <a href="https://lovable.dev/pricing" target="_blank" rel="noopener">25 dólares por mês</a>.
-  p13:
-    fr: "Que disent les études sur le gain de temps ? Elles sont plus nuancées que les annonces, et c'est justement ce qui les rend utiles :"
-    en: "What do studies say about the time saved? They're more nuanced than the announcements, which is exactly what makes them useful:"
-    pt: "O que dizem os estudos sobre o ganho de tempo? Eles são mais nuançados do que os anúncios, e é justamente isso que os torna úteis:"
-  li5:
-    fr: dans une <a href="https://arxiv.org/abs/2302.06590" target="_blank" rel="noopener">expérience contrôlée menée par Microsoft Research, GitHub et le MIT</a>, les développeurs aidés par l'IA ont écrit un petit serveur web 55,8&nbsp;% plus vite que les autres ;
-    en: in a <a href="https://arxiv.org/abs/2302.06590" target="_blank" rel="noopener">controlled experiment run by Microsoft Research, GitHub and MIT</a>, developers helped by AI wrote a small web server 55.8% faster than the others;
-    pt: em um <a href="https://arxiv.org/abs/2302.06590" target="_blank" rel="noopener">experimento controlado conduzido pela Microsoft Research, pelo GitHub e pelo MIT</a>, os desenvolvedores ajudados pela IA escreveram um pequeno servidor web 55,8% mais rápido que os demais;
-  li6:
-    fr: une <a href="https://www.ai.engineer/talks/tbDDYKRFjhk-ai-developer-productivity" target="_blank" rel="noopener">étude de Stanford portant sur plus de 100 000 développeurs</a> mesure un gain net moyen de 15 à 20&nbsp;%, mais nettement plus élevé sur les projets neufs et simples que sur les gros logiciels existants ;
-    en: a <a href="https://www.ai.engineer/talks/tbDDYKRFjhk-ai-developer-productivity" target="_blank" rel="noopener">Stanford study covering more than 100,000 developers</a> measures an average net gain of 15 to 20%, but much higher on new, simple projects than on large existing software;
-    pt: um <a href="https://www.ai.engineer/talks/tbDDYKRFjhk-ai-developer-productivity" target="_blank" rel="noopener">estudo de Stanford com mais de 100.000 desenvolvedores</a> mede um ganho líquido médio de 15 a 20%, mas bem maior em projetos novos e simples do que em grandes softwares existentes;
-  li7:
-    fr: à l'inverse, l'organisme de recherche <a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/" target="_blank" rel="noopener">METR</a> a observé que des développeurs expérimentés, travaillant sur de très gros projets open source qu'ils connaissaient par cœur, étaient 19&nbsp;% plus lents avec l'IA en 2025.
-    en: on the other hand, the research organisation <a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/" target="_blank" rel="noopener">METR</a> found that experienced developers, working on very large open-source projects they knew inside out, were 19% slower with AI in 2025.
-    pt: por outro lado, o instituto de pesquisa <a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/" target="_blank" rel="noopener">METR</a> observou que desenvolvedores experientes, trabalhando em projetos open source muito grandes que conheciam de cor, ficaram 19% mais lentos com IA em 2025.
-  p14:
-    fr: "La leçon est claire : l'IA accélère surtout ce qui est neuf, standard et bien délimité. Un CRM de base coche toutes ces cases. Les fiches contacts, les formulaires, les listes filtrables, les droits d'accès : c'est exactement le code banal que l'IA écrit le mieux, et celui qui représentait l'essentiel de la facture de l'époque 1."
-    en: "The lesson is clear: AI mostly speeds up work that is new, standard and well scoped. A basic CRM ticks every box. Contact records, forms, filterable lists, access rights: that's exactly the mundane code AI writes best, and it made up most of the bill in era 1."
-    pt: "A lição é clara: a IA acelera sobretudo o que é novo, padrão e bem delimitado. Um CRM básico cumpre todos esses requisitos. Fichas de contato, formulários, listas filtráveis, permissões de acesso: é exatamente o código banal que a IA escreve melhor, e o que representava a maior parte da conta da época 1."
-  p15:
-    fr: "Les grilles de prix publiques n'ont pas encore rattrapé ce changement, et il n'existe pas encore de relevé fiable sur les agences qui développent avec l'IA. Notre fourchette de 2 500 à 5 000 € est donc une estimation, pas une moyenne de marché. Pour donner un point de repère vérifiable : chez Maniaque, la première version d'un outil sur mesure comme ce CRM coûte <a href=\"/offre/#tarifs\">2 500 € HT</a>, livrée en 2 à 8 semaines, en vrai code qui vous appartient."
-    en: "Public price lists haven't caught up with this change yet, and there is no reliable survey of agencies that build with AI. Our €2,500 to €5,000 range is therefore an estimate, not a market average. As a checkable reference point: at Maniaque, the first version of a custom tool like this CRM costs <a href=\"/en/offer/#pricing\">€2,500 excl. VAT</a>, delivered in 2 to 8 weeks, in real code that belongs to you."
-    pt: "As tabelas de preço públicas ainda não acompanharam essa mudança, e ainda não existe um levantamento confiável sobre as agências que desenvolvem com IA. A nossa faixa de R$\_15 mil a R$\_30 mil é, portanto, uma estimativa, não uma média de mercado. Como referência verificável: na Maniaque, a primeira versão de uma ferramenta sob medida como esse CRM custa <a href=\"/pt/oferta/#precos\">R$\_15.000 sem impostos</a>, entregue em 2 a 8 semanas, em código de verdade que pertence a você."
-  h5:
-    fr: Les trois époques côte à côte
-    en: The three eras side by side
-    pt: As três épocas lado a lado
-  compareTh:
-    fr: Code traditionnel
-    en: Traditional code
-    pt: Código tradicional
-  compareTh2:
-    fr: Code avec l'IA
-    en: Code with AI
-    pt: Código com IA
-  compareTh3:
-    fr: Première version
-    en: First version
-    pt: Primeira versão
-  compareTd:
-    fr: 25&nbsp;000 à 40&nbsp;000&nbsp;€
-    en: €25,000 to&nbsp;€40,000
-    pt: R$&nbsp;150&nbsp;mil a R$&nbsp;240&nbsp;mil
-  compareTd2:
-    fr: 5&nbsp;000 à 15&nbsp;000&nbsp;€
-    en: €5,000 to&nbsp;€15,000
-    pt: R$&nbsp;30&nbsp;mil a R$&nbsp;90&nbsp;mil
-  compareTd3:
-    fr: 2&nbsp;500 à 5&nbsp;000&nbsp;€
-    en: €2,500 to&nbsp;€5,000
-    pt: R$&nbsp;15&nbsp;mil a R$&nbsp;30&nbsp;mil
-  compareTh4:
-    fr: Délai typique
-    en: Typical timeline
-    pt: Prazo típico
-  compareTd4:
-    fr: 2 à 4 mois
-    en: 2 to 4 months
-    pt: 2 a 4 meses
-  compareTd5:
-    fr: Quelques semaines
-    en: A few weeks
-    pt: Algumas semanas
-  compareTd6:
-    fr: Quelques semaines
-    en: A few weeks
-    pt: Algumas semanas
-  compareTh5:
-    fr: Le code vous appartient
-    en: You own the code
-    pt: O código pertence a você
-  compareTd7:
-    fr: Oui
-    en: "Yes"
-    pt: Sim
-  compareTd8:
-    fr: Non, il reste sur la plateforme
-    en: No, it stays on the platform
-    pt: Não, fica na plataforma
-  compareTd9:
-    fr: Oui
-    en: "Yes"
-    pt: Sim
-  compareTh6:
-    fr: Limites techniques
-    en: Technical limits
-    pt: Limites técnicos
-  compareTd10:
-    fr: Aucune
-    en: None
-    pt: Nenhum
-  compareTd11:
-    fr: Celles de l'outil
-    en: Those of the tool
-    pt: Os da ferramenta
-  compareTd12:
-    fr: Aucune
-    en: None
-    pt: Nenhum
-  h6:
-    fr: Ce qui ne baisse pas
-    en: What doesn't get cheaper
-    pt: O que não fica mais barato
-  p16:
-    fr: "Si écrire du code ne coûte presque plus rien, pourquoi un CRM ne coûte-t-il pas 25 dollars par mois sur Lovable ? Parce que le code n'a jamais été la partie difficile. Trois choses gardent leur prix :"
-    en: "If writing code costs next to nothing, why doesn't a CRM cost $25 a month on Lovable? Because code was never the hard part. Three things keep their price:"
-    pt: "Se escrever código quase não custa mais nada, por que um CRM não custa 25 dólares por mês no Lovable? Porque o código nunca foi a parte difícil. Três coisas mantêm o seu preço:"
-  li8:
-    fr: <strong>comprendre votre besoin.</strong> Savoir que vos commerciaux ne remplissent jamais le champ « source », que tel client a deux adresses de facturation, que la relance doit partir le mardi. L'IA construit ce qu'on lui décrit. Encore faut-il le décrire juste ;
-    en: <strong>understanding your need.</strong> Knowing that your salespeople never fill in the "source" field, that one client has two billing addresses, that follow-ups must go out on Tuesdays. AI builds what you describe to it. You still have to describe it right;
-    pt: <strong>entender a sua necessidade.</strong> Saber que os seus vendedores nunca preenchem o campo “origem”, que tal cliente tem dois endereços de cobrança, que o follow-up precisa sair na terça-feira. A IA constrói o que lhe descrevem. Ainda é preciso descrever direito;
-  li9:
-    fr: <strong>les décisions techniques.</strong> Où sont stockées vos données, qui y a accès, comment on les sauvegarde, comment l'outil évoluera dans deux ans. Un code généré sans relecture fonctionne souvent en démonstration et casse en production ;
-    en: <strong>technical decisions.</strong> Where your data is stored, who can access it, how it's backed up, how the tool will evolve in two years. Code generated without review often works in a demo and breaks in production;
-    pt: <strong>as decisões técnicas.</strong> Onde ficam os seus dados, quem tem acesso, como é feito o backup, como a ferramenta vai evoluir em dois anos. Um código gerado sem revisão costuma funcionar na demonstração e quebrar em produção;
-  li10:
-    fr: <strong>la vie de l'outil.</strong> Un logiciel utilisé tous les jours appelle des corrections, des ajustements et des nouvelles demandes. Les guides du secteur comptent chaque année <a href="https://www.magram.fr/blog/prix-crm-combien-coute-un-logiciel-crm" target="_blank" rel="noopener">5 à 10&nbsp;% du coût de développement</a> rien que pour la maintenance.
-    en: <strong>the life of the tool.</strong> Software used every day needs fixes, adjustments and new requests. Industry guides budget <a href="https://www.magram.fr/blog/prix-crm-combien-coute-un-logiciel-crm" target="_blank" rel="noopener">5 to 10% of the development cost</a> each year for maintenance alone.
-    pt: <strong>a vida da ferramenta.</strong> Um software usado todos os dias pede correções, ajustes e novos pedidos. Os guias do setor contam, todo ano, <a href="https://www.magram.fr/blog/prix-crm-combien-coute-un-logiciel-crm" target="_blank" rel="noopener">de 5 a 10% do custo de desenvolvimento</a> só para a manutenção.
-  p17:
-    fr: "Autrement dit, la facture se déplace. Hier, vous payiez surtout des heures de frappe. Aujourd'hui, vous payez surtout du jugement : quelqu'un qui comprend votre métier, prend les bonnes décisions et reste là après la livraison."
-    en: "In other words, the bill is shifting. Yesterday, you mostly paid for hours of typing. Today, you mostly pay for judgement: someone who understands your business, makes the right calls and is still there after delivery."
-    pt: "Em outras palavras, a conta muda de lugar. Antes, você pagava sobretudo horas de digitação. Hoje, você paga sobretudo discernimento: alguém que entende o seu negócio, toma as decisões certas e continua presente depois da entrega."
-  h7:
-    fr: Ce que ça change pour une PME
-    en: What it changes for a small business
-    pt: O que isso muda para uma PME
-  p18:
-    fr: "La question n'est plus « avons-nous les moyens d'un outil sur mesure ? ». Pour la plupart des PME, la réponse est désormais oui. La vraie question devient : « qui va comprendre notre façon de travailler, et l'accompagner dans la durée ? »."
-    en: "The question is no longer \"can we afford custom software?\". For most small businesses, the answer is now yes. The real question becomes: \"who will understand the way we work, and stay with us over time?\"."
-    pt: "A pergunta não é mais “temos condições de pagar por uma ferramenta sob medida?”. Para a maioria das PMEs, a resposta agora é sim. A verdadeira pergunta passa a ser: “quem vai entender a nossa forma de trabalhar e acompanhá-la ao longo do tempo?”."
-  p19:
-    fr: C'est pour ça que notre modèle repose sur une première version à prix fixe, puis un abonnement mensuel qui couvre les évolutions, l'hébergement et la maintenance. Le coût du code a chuté, nous le répercutons. Le temps passé à comprendre votre entreprise, lui, reste le cœur du travail.
-    en: That's why our model is a fixed-price first version, then a monthly subscription that covers changes, hosting and maintenance. The cost of code has dropped, and we pass that on. The time spent understanding your business remains the heart of the work.
-    pt: É por isso que o nosso modelo se baseia em uma primeira versão a preço fixo, seguida de uma assinatura mensal que cobre as evoluções, a hospedagem e a manutenção. O custo do código despencou, e repassamos isso. O tempo dedicado a entender a sua empresa continua sendo o centro do trabalho.
-  p20:
-    fr: Si vous avez un CRM, un tableur ou un outil métier qui vous agace, <a data-book target="_blank" rel="noopener">réservez un audit gratuit de 45 minutes</a>. Vous saurez ce que coûterait votre outil aujourd'hui, et si ça vaut le coup.
-    en: If you have a CRM, a spreadsheet or a business tool that bugs you, <a data-book target="_blank" rel="noopener">book a free 45-minute audit</a>. You'll find out what your tool would cost today, and whether it's worth it.
-    pt: Se você tem um CRM, uma planilha ou uma ferramenta de trabalho que irrita você, <a data-book target="_blank" rel="noopener">agende um diagnóstico gratuito de 45 minutos</a>. Você vai saber quanto custaria a sua ferramenta hoje, e se vale a pena.
-  refs:
-    fr: Références
-    en: References
-    pt: Referências
-  refsLi:
-    fr: "<a href=\"https://www.go-sidely.com/post/combien-coute-un-crm-commercial\" target=\"_blank\" rel=\"noopener\">Sidely, Prix d'un CRM commercial : fourchettes et critères de coût</a>."
-    en: "<a href=\"https://www.go-sidely.com/post/combien-coute-un-crm-commercial\" target=\"_blank\" rel=\"noopener\" hreflang=\"fr\">Sidely, Prix d'un CRM commercial : fourchettes et critères de coût</a> (in French)."
-    pt: "<a href=\"https://www.go-sidely.com/post/combien-coute-un-crm-commercial\" target=\"_blank\" rel=\"noopener\">Sidely, Preço de um CRM comercial: faixas e critérios de custo</a> (em francês)."
-  refsLi2:
-    fr: "<a href=\"https://sokeo.fr/cout-crm-entreprise-investissement-rentabilite/\" target=\"_blank\" rel=\"noopener\">Sokeo, Coût CRM sur mesure : combien investir pour une solution personnalisée ?</a>"
-    en: "<a href=\"https://sokeo.fr/cout-crm-entreprise-investissement-rentabilite/\" target=\"_blank\" rel=\"noopener\" hreflang=\"fr\">Sokeo, Coût CRM sur mesure : combien investir pour une solution personnalisée ?</a> (in French)."
-    pt: "<a href=\"https://sokeo.fr/cout-crm-entreprise-investissement-rentabilite/\" target=\"_blank\" rel=\"noopener\">Sokeo, Custo de um CRM sob medida: quanto investir em uma solução personalizada?</a> (em francês)."
-  refsLi3:
-    fr: <a href="https://www.lafabriquedunet.fr/agences/pages/agences-esn-ssii/tarifs" target="_blank" rel="noopener">La Fabrique du Net, Tarifs des ESN en 2026</a>.
-    en: <a href="https://www.lafabriquedunet.fr/agences/pages/agences-esn-ssii/tarifs" target="_blank" rel="noopener" hreflang="fr">La Fabrique du Net, IT services firm rates in 2026</a> (in French).
-    pt: <a href="https://www.lafabriquedunet.fr/agences/pages/agences-esn-ssii/tarifs" target="_blank" rel="noopener">La Fabrique du Net, Preços das consultorias de TI em 2026</a> (em francês).
-  refsLi4:
-    fr: <a href="https://www.codeur.com/projects/462449-crm-sur-mesure-adhesion" target="_blank" rel="noopener">Codeur.com, demande de devis « CRM sur mesure adhésion »</a>, 2025.
-    en: <a href="https://www.codeur.com/projects/462449-crm-sur-mesure-adhesion" target="_blank" rel="noopener" hreflang="fr">Codeur.com, quote request "CRM sur mesure adhésion"</a>, 2025 (in French).
-    pt: <a href="https://www.codeur.com/projects/462449-crm-sur-mesure-adhesion" target="_blank" rel="noopener">Codeur.com, pedido de orçamento “CRM sob medida para adesões”</a> (em francês), 2025.
-  refsLi5:
-    fr: <a href="https://www.lafabriquedunet.fr/agences/pages/agences-nocode/tarifs" target="_blank" rel="noopener">La Fabrique du Net, Tarifs des agences no-code en 2026</a>, relevé d'octobre 2026.
-    en: <a href="https://www.lafabriquedunet.fr/agences/pages/agences-nocode/tarifs" target="_blank" rel="noopener" hreflang="fr">La Fabrique du Net, No-code agency rates in 2026</a>, October 2026 survey (in French).
-    pt: <a href="https://www.lafabriquedunet.fr/agences/pages/agences-nocode/tarifs" target="_blank" rel="noopener">La Fabrique du Net, Preços das agências no-code em 2026</a> (em francês), levantamento de outubro de 2026.
-  refsLi6:
-    fr: <a href="https://www.superforge.io/agence-bubble" target="_blank" rel="noopener">Superforge, Agence Bubble</a>.
-    en: <a href="https://www.superforge.io/agence-bubble" target="_blank" rel="noopener" hreflang="fr">Superforge, Agence Bubble</a> (in French).
-    pt: <a href="https://www.superforge.io/agence-bubble" target="_blank" rel="noopener">Superforge, Agência Bubble</a> (em francês).
-  refsLi7:
-    fr: <a href="https://www.noxcod.com/blog/cout-application-bubble-tarif" target="_blank" rel="noopener">Noxcod, Combien coûte une application Bubble</a>, 2026.
-    en: <a href="https://www.noxcod.com/blog/cout-application-bubble-tarif" target="_blank" rel="noopener" hreflang="fr">Noxcod, Combien coûte une application Bubble</a>, 2026 (in French).
-    pt: <a href="https://www.noxcod.com/blog/cout-application-bubble-tarif" target="_blank" rel="noopener">Noxcod, Quanto custa um aplicativo Bubble</a> (em francês), 2026.
-  refsLi8:
-    fr: <a href="https://techcrunch.com/2025/03/06/a-quarter-of-startups-in-ycs-current-cohort-have-codebases-that-are-almost-entirely-ai-generated" target="_blank" rel="noopener">TechCrunch, A quarter of startups in YC's current cohort have codebases that are almost entirely AI-generated</a>, mars 2025.
-    en: <a href="https://techcrunch.com/2025/03/06/a-quarter-of-startups-in-ycs-current-cohort-have-codebases-that-are-almost-entirely-ai-generated" target="_blank" rel="noopener">TechCrunch, A quarter of startups in YC's current cohort have codebases that are almost entirely AI-generated</a>, March 2025.
-    pt: <a href="https://techcrunch.com/2025/03/06/a-quarter-of-startups-in-ycs-current-cohort-have-codebases-that-are-almost-entirely-ai-generated" target="_blank" rel="noopener">TechCrunch, Um quarto das startups da turma atual da YC tem código quase todo gerado por IA</a> (em inglês), março de 2025.
-  refsLi9:
-    fr: <a href="https://tech.eu/2025/07/23/lovable-becomes-fastest-software-company-ever-to-reach-100m-arr/" target="_blank" rel="noopener">Tech.eu, Lovable becomes fastest software company ever to reach $100M ARR</a>, juillet 2025.
-    en: <a href="https://tech.eu/2025/07/23/lovable-becomes-fastest-software-company-ever-to-reach-100m-arr/" target="_blank" rel="noopener">Tech.eu, Lovable becomes fastest software company ever to reach $100M ARR</a>, July 2025.
-    pt: <a href="https://tech.eu/2025/07/23/lovable-becomes-fastest-software-company-ever-to-reach-100m-arr/" target="_blank" rel="noopener">Tech.eu, Lovable se torna a empresa de software mais rápida a chegar a 100 milhões de dólares de receita recorrente anual</a> (em inglês), julho de 2025.
-  refsLi10:
-    fr: <a href="https://lovable.dev/pricing" target="_blank" rel="noopener">Lovable, Pricing</a>.
-    en: <a href="https://lovable.dev/pricing" target="_blank" rel="noopener">Lovable, Pricing</a>.
-    pt: <a href="https://lovable.dev/pricing" target="_blank" rel="noopener">Lovable, Preços</a> (em inglês).
-  refsLi11:
-    fr: "<a href=\"https://arxiv.org/abs/2302.06590\" target=\"_blank\" rel=\"noopener\">Peng et al., The Impact of AI on Developer Productivity: Evidence from GitHub Copilot</a>, février 2023."
-    en: "<a href=\"https://arxiv.org/abs/2302.06590\" target=\"_blank\" rel=\"noopener\">Peng et al., The Impact of AI on Developer Productivity: Evidence from GitHub Copilot</a>, February 2023."
-    pt: "<a href=\"https://arxiv.org/abs/2302.06590\" target=\"_blank\" rel=\"noopener\">Peng et al., O impacto da IA na produtividade dos desenvolvedores: evidências do GitHub Copilot</a> (em inglês), fevereiro de 2023."
-  refsLi12:
-    fr: <a href="https://www.ai.engineer/talks/tbDDYKRFjhk-ai-developer-productivity" target="_blank" rel="noopener">Yegor Denisov-Blanch (Stanford), Does AI Actually Boost Developer Productivity? (100k Devs Study)</a>, 2025.
-    en: <a href="https://www.ai.engineer/talks/tbDDYKRFjhk-ai-developer-productivity" target="_blank" rel="noopener">Yegor Denisov-Blanch (Stanford), Does AI Actually Boost Developer Productivity? (100k Devs Study)</a>, 2025.
-    pt: <a href="https://www.ai.engineer/talks/tbDDYKRFjhk-ai-developer-productivity" target="_blank" rel="noopener">Yegor Denisov-Blanch (Stanford), A IA realmente aumenta a produtividade dos desenvolvedores? (estudo com 100 mil devs)</a> (em inglês), 2025.
-  refsLi13:
-    fr: <a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/" target="_blank" rel="noopener">METR, Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity</a>, juillet 2025.
-    en: <a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/" target="_blank" rel="noopener">METR, Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity</a>, July 2025.
-    pt: <a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/" target="_blank" rel="noopener">METR, Medindo o impacto da IA do início de 2025 na produtividade de desenvolvedores open source experientes</a> (em inglês), julho de 2025.
-  refsLi14:
-    fr: "<a href=\"https://www.magram.fr/blog/prix-crm-combien-coute-un-logiciel-crm\" target=\"_blank\" rel=\"noopener\">Magram, Prix d'un CRM : combien coûte un logiciel CRM en 2026 ?</a>"
-    en: "<a href=\"https://www.magram.fr/blog/prix-crm-combien-coute-un-logiciel-crm\" target=\"_blank\" rel=\"noopener\" hreflang=\"fr\">Magram, Prix d'un CRM : combien coûte un logiciel CRM en 2026 ?</a> (in French)."
-    pt: "<a href=\"https://www.magram.fr/blog/prix-crm-combien-coute-un-logiciel-crm\" target=\"_blank\" rel=\"noopener\">Magram, Preço de um CRM: quanto custa um software de CRM em 2026?</a> (em francês)."
-  refsLi15:
-    fr: "<a href=\"/articles/developpeur-ninja-ia/\">Maniaque, Un seul interlocuteur, du besoin au code : pourquoi c'est enfin possible</a>, octobre 2026."
-    en: "<a href=\"/en/articles/one-person-developer-ai/\">Maniaque, One point of contact, from need to code: why it's finally possible</a>, October 2026."
-    pt: "<a href=\"/pt/artigos/desenvolvedor-unico-ia/\">Maniaque, Um único interlocutor, da necessidade ao código: por que isso finalmente é possível</a>, outubro de 2026."
+  references:
+    - fr: "<a href=\"https://www.go-sidely.com/post/combien-coute-un-crm-commercial\" target=\"_blank\" rel=\"noopener\">Sidely, Prix d'un CRM commercial : fourchettes et critères de coût</a>."
+      en: "<a href=\"https://www.go-sidely.com/post/combien-coute-un-crm-commercial\" target=\"_blank\" rel=\"noopener\" hreflang=\"fr\">Sidely, Prix d'un CRM commercial : fourchettes et critères de coût</a> (in French)."
+      pt: "<a href=\"https://www.go-sidely.com/post/combien-coute-un-crm-commercial\" target=\"_blank\" rel=\"noopener\">Sidely, Preço de um CRM comercial: faixas e critérios de custo</a> (em francês)."
+    - fr: "<a href=\"https://sokeo.fr/cout-crm-entreprise-investissement-rentabilite/\" target=\"_blank\" rel=\"noopener\">Sokeo, Coût CRM sur mesure : combien investir pour une solution personnalisée ?</a>"
+      en: "<a href=\"https://sokeo.fr/cout-crm-entreprise-investissement-rentabilite/\" target=\"_blank\" rel=\"noopener\" hreflang=\"fr\">Sokeo, Coût CRM sur mesure : combien investir pour une solution personnalisée ?</a> (in French)."
+      pt: "<a href=\"https://sokeo.fr/cout-crm-entreprise-investissement-rentabilite/\" target=\"_blank\" rel=\"noopener\">Sokeo, Custo de um CRM sob medida: quanto investir em uma solução personalizada?</a> (em francês)."
+    - fr: <a href="https://www.lafabriquedunet.fr/agences/pages/agences-esn-ssii/tarifs" target="_blank" rel="noopener">La Fabrique du Net, Tarifs des ESN en 2026</a>.
+      en: <a href="https://www.lafabriquedunet.fr/agences/pages/agences-esn-ssii/tarifs" target="_blank" rel="noopener" hreflang="fr">La Fabrique du Net, IT services firm rates in 2026</a> (in French).
+      pt: <a href="https://www.lafabriquedunet.fr/agences/pages/agences-esn-ssii/tarifs" target="_blank" rel="noopener">La Fabrique du Net, Preços das consultorias de TI em 2026</a> (em francês).
+    - fr: <a href="https://www.codeur.com/projects/462449-crm-sur-mesure-adhesion" target="_blank" rel="noopener">Codeur.com, demande de devis « CRM sur mesure adhésion »</a>, 2025.
+      en: <a href="https://www.codeur.com/projects/462449-crm-sur-mesure-adhesion" target="_blank" rel="noopener" hreflang="fr">Codeur.com, quote request "CRM sur mesure adhésion"</a>, 2025 (in French).
+      pt: <a href="https://www.codeur.com/projects/462449-crm-sur-mesure-adhesion" target="_blank" rel="noopener">Codeur.com, pedido de orçamento “CRM sob medida para adesões”</a> (em francês), 2025.
+    - fr: <a href="https://www.lafabriquedunet.fr/agences/pages/agences-nocode/tarifs" target="_blank" rel="noopener">La Fabrique du Net, Tarifs des agences no-code en 2026</a>, relevé d'octobre 2026.
+      en: <a href="https://www.lafabriquedunet.fr/agences/pages/agences-nocode/tarifs" target="_blank" rel="noopener" hreflang="fr">La Fabrique du Net, No-code agency rates in 2026</a>, October 2026 survey (in French).
+      pt: <a href="https://www.lafabriquedunet.fr/agences/pages/agences-nocode/tarifs" target="_blank" rel="noopener">La Fabrique du Net, Preços das agências no-code em 2026</a> (em francês), levantamento de outubro de 2026.
+    - fr: <a href="https://www.superforge.io/agence-bubble" target="_blank" rel="noopener">Superforge, Agence Bubble</a>.
+      en: <a href="https://www.superforge.io/agence-bubble" target="_blank" rel="noopener" hreflang="fr">Superforge, Agence Bubble</a> (in French).
+      pt: <a href="https://www.superforge.io/agence-bubble" target="_blank" rel="noopener">Superforge, Agência Bubble</a> (em francês).
+    - fr: <a href="https://www.noxcod.com/blog/cout-application-bubble-tarif" target="_blank" rel="noopener">Noxcod, Combien coûte une application Bubble</a>, 2026.
+      en: <a href="https://www.noxcod.com/blog/cout-application-bubble-tarif" target="_blank" rel="noopener" hreflang="fr">Noxcod, Combien coûte une application Bubble</a>, 2026 (in French).
+      pt: <a href="https://www.noxcod.com/blog/cout-application-bubble-tarif" target="_blank" rel="noopener">Noxcod, Quanto custa um aplicativo Bubble</a> (em francês), 2026.
+    - fr: <a href="https://techcrunch.com/2025/03/06/a-quarter-of-startups-in-ycs-current-cohort-have-codebases-that-are-almost-entirely-ai-generated" target="_blank" rel="noopener">TechCrunch, A quarter of startups in YC's current cohort have codebases that are almost entirely AI-generated</a>, mars 2025.
+      en: <a href="https://techcrunch.com/2025/03/06/a-quarter-of-startups-in-ycs-current-cohort-have-codebases-that-are-almost-entirely-ai-generated" target="_blank" rel="noopener">TechCrunch, A quarter of startups in YC's current cohort have codebases that are almost entirely AI-generated</a>, March 2025.
+      pt: <a href="https://techcrunch.com/2025/03/06/a-quarter-of-startups-in-ycs-current-cohort-have-codebases-that-are-almost-entirely-ai-generated" target="_blank" rel="noopener">TechCrunch, Um quarto das startups da turma atual da YC tem código quase todo gerado por IA</a> (em inglês), março de 2025.
+    - fr: <a href="https://tech.eu/2025/07/23/lovable-becomes-fastest-software-company-ever-to-reach-100m-arr/" target="_blank" rel="noopener">Tech.eu, Lovable becomes fastest software company ever to reach $100M ARR</a>, juillet 2025.
+      en: <a href="https://tech.eu/2025/07/23/lovable-becomes-fastest-software-company-ever-to-reach-100m-arr/" target="_blank" rel="noopener">Tech.eu, Lovable becomes fastest software company ever to reach $100M ARR</a>, July 2025.
+      pt: <a href="https://tech.eu/2025/07/23/lovable-becomes-fastest-software-company-ever-to-reach-100m-arr/" target="_blank" rel="noopener">Tech.eu, Lovable se torna a empresa de software mais rápida a chegar a 100 milhões de dólares de receita recorrente anual</a> (em inglês), julho de 2025.
+    - fr: <a href="https://lovable.dev/pricing" target="_blank" rel="noopener">Lovable, Pricing</a>.
+      en: <a href="https://lovable.dev/pricing" target="_blank" rel="noopener">Lovable, Pricing</a>.
+      pt: <a href="https://lovable.dev/pricing" target="_blank" rel="noopener">Lovable, Preços</a> (em inglês).
+    - fr: "<a href=\"https://arxiv.org/abs/2302.06590\" target=\"_blank\" rel=\"noopener\">Peng et al., The Impact of AI on Developer Productivity: Evidence from GitHub Copilot</a>, février 2023."
+      en: "<a href=\"https://arxiv.org/abs/2302.06590\" target=\"_blank\" rel=\"noopener\">Peng et al., The Impact of AI on Developer Productivity: Evidence from GitHub Copilot</a>, February 2023."
+      pt: "<a href=\"https://arxiv.org/abs/2302.06590\" target=\"_blank\" rel=\"noopener\">Peng et al., O impacto da IA na produtividade dos desenvolvedores: evidências do GitHub Copilot</a> (em inglês), fevereiro de 2023."
+    - fr: <a href="https://www.ai.engineer/talks/tbDDYKRFjhk-ai-developer-productivity" target="_blank" rel="noopener">Yegor Denisov-Blanch (Stanford), Does AI Actually Boost Developer Productivity? (100k Devs Study)</a>, 2025.
+      en: <a href="https://www.ai.engineer/talks/tbDDYKRFjhk-ai-developer-productivity" target="_blank" rel="noopener">Yegor Denisov-Blanch (Stanford), Does AI Actually Boost Developer Productivity? (100k Devs Study)</a>, 2025.
+      pt: <a href="https://www.ai.engineer/talks/tbDDYKRFjhk-ai-developer-productivity" target="_blank" rel="noopener">Yegor Denisov-Blanch (Stanford), A IA realmente aumenta a produtividade dos desenvolvedores? (estudo com 100 mil devs)</a> (em inglês), 2025.
+    - fr: <a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/" target="_blank" rel="noopener">METR, Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity</a>, juillet 2025.
+      en: <a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/" target="_blank" rel="noopener">METR, Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity</a>, July 2025.
+      pt: <a href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/" target="_blank" rel="noopener">METR, Medindo o impacto da IA do início de 2025 na produtividade de desenvolvedores open source experientes</a> (em inglês), julho de 2025.
+    - fr: "<a href=\"https://www.magram.fr/blog/prix-crm-combien-coute-un-logiciel-crm\" target=\"_blank\" rel=\"noopener\">Magram, Prix d'un CRM : combien coûte un logiciel CRM en 2026 ?</a>"
+      en: "<a href=\"https://www.magram.fr/blog/prix-crm-combien-coute-un-logiciel-crm\" target=\"_blank\" rel=\"noopener\" hreflang=\"fr\">Magram, Prix d'un CRM : combien coûte un logiciel CRM en 2026 ?</a> (in French)."
+      pt: "<a href=\"https://www.magram.fr/blog/prix-crm-combien-coute-un-logiciel-crm\" target=\"_blank\" rel=\"noopener\">Magram, Preço de um CRM: quanto custa um software de CRM em 2026?</a> (em francês)."
+    - fr: "<a href=\"/articles/developpeur-ninja-ia/\">Maniaque, Un seul interlocuteur, du besoin au code : pourquoi c'est enfin possible</a>, octobre 2026."
+      en: "<a href=\"/en/articles/one-person-developer-ai/\">Maniaque, One point of contact, from need to code: why it's finally possible</a>, October 2026."
+      pt: "<a href=\"/pt/artigos/desenvolvedor-unico-ia/\">Maniaque, Um único interlocutor, da necessidade ao código: por que isso finalmente é possível</a>, outubro de 2026."

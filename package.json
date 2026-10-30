@@ -14,7 +14,8 @@
   "homepage": "https://github.com/jeansam/maniaque#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.7",
-    "js-yaml": "^4.3.2"
+    "js-yaml": "^4.3.2",
+    "markdown-it": "^14.3.3"
   },
   "private": true
 }

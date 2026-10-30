@@ -26,139 +26,34 @@ strings:
     fr: "Un seul interlocuteur, du besoin au code : pourquoi c'est enfin possible"
     en: "One point of contact, from need to code: why it's finally possible"
     pt: "Um único interlocutor, da necessidade ao código: por que isso finalmente é possível"
-  articleFigureImgSrc:
-    fr: illustration.webp
-    en: illustration.webp
-    pt: /pt/artigos/desenvolvedor-unico-ia/illustration.webp
-  articleFigureImgAlt:
+  imageAlt:
     fr: Schéma comparant une équipe classique de cinq personnes reliées par dix canaux de communication, et un client relié par un seul canal à un développeur épaulé par l'IA.
     en: Diagram comparing a traditional five-person team linked by ten communication channels with a client linked by a single channel to a developer backed by AI.
     pt: Esquema comparando uma equipe tradicional de cinco pessoas ligadas por dez canais de comunicação e um cliente ligado por um único canal a um desenvolvedor apoiado pela IA.
-  articleFigureFigcaption:
+  imageCaption:
     fr: Cinq personnes, dix canaux de communication. Une personne, un seul.
     en: Five people, ten communication channels. One person, just one.
     pt: Cinco pessoas, dez canais de comunicação. Uma pessoa, um só.
-  articleLede:
+  lede:
     fr: "Pendant des années, construire un logiciel sur mesure voulait dire réunir une équipe : un chef de projet, un designer, des développeurs, un testeur. L'IA est en train de changer cette équation. Aujourd'hui, une seule personne compétente peut porter un projet de bout en bout, et c'est souvent la meilleure option pour une PME."
     en: "For years, building custom software meant assembling a team: a project manager, a designer, developers, a tester. AI is changing that equation. Today, one skilled person can carry a project from start to finish, and for a small business it's often the best option."
     pt: "Durante anos, construir um software sob medida significava reunir uma equipe: um gerente de projeto, um designer, desenvolvedores, um testador. A IA está mudando essa equação. Hoje, uma única pessoa competente pode conduzir um projeto do início ao fim, e muitas vezes essa é a melhor opção para uma PME."
-  h:
-    fr: Une tendance qui se lit dans les chiffres
-    en: A trend you can see in the numbers
-    pt: Uma tendência que aparece nos números
-  p:
-    fr: Selon le <a href="https://carta.com/data/solo-founders-report" target="_blank" rel="noopener">rapport 2025 de Carta sur les fondateurs solo</a>, la part des startups créées par une seule personne est passée de 23,7&nbsp;% en 2019 à 36,3&nbsp;% au premier semestre 2025. Plus d'une nouvelle entreprise sur trois démarre désormais avec un seul fondateur. Carta décrit l'IA comme un « multiplicateur de force » qui permet à une personne de prototyper et de lancer un produit bien plus vite qu'avant.
-    en: According to <a href="https://carta.com/data/solo-founders-report" target="_blank" rel="noopener">Carta's 2025 Solo Founders Report</a>, the share of startups founded by a single person rose from 23.7% in 2019 to 36.3% in the first half of 2025. More than one new company in three now starts with a single founder. Carta describes AI as a "force multiplier" that lets one person prototype and launch a product far faster than before.
-    pt: Segundo o <a href="https://carta.com/data/solo-founders-report" target="_blank" rel="noopener">relatório 2025 da Carta sobre fundadores solo</a>, a fatia de startups criadas por uma só pessoa passou de 23,7% em 2019 para 36,3% no primeiro semestre de 2025. Mais de uma em cada três novas empresas agora começa com um único fundador. A Carta descreve a IA como um “multiplicador de força” que permite a uma pessoa prototipar e lançar um produto muito mais rápido do que antes.
-  p2:
-    fr: "Même constat du côté du <a href=\"https://axios.com/2026/06/09/ai-entrepreneurs-founders-nasdaq\" target=\"_blank\" rel=\"noopener\">Nasdaq Economic Institute, relayé par Axios</a> : aux États-Unis, les créations d'entreprises d'une seule personne ont augmenté de plus de 20&nbsp;% depuis début 2025, alors que celles des entreprises qui prévoient d'embaucher stagnent. Près de la moitié de cette hausse vient des secteurs qui utilisent le plus l'IA."
-    en: "The <a href=\"https://axios.com/2026/06/09/ai-entrepreneurs-founders-nasdaq\" target=\"_blank\" rel=\"noopener\">Nasdaq Economic Institute, as reported by Axios</a>, sees the same thing: in the United States, applications for one-person businesses have risen more than 20% since early 2025, while those from companies planning to hire have stayed flat. Nearly half of that growth comes from the industries that use AI the most."
-    pt: "A mesma constatação vem do <a href=\"https://axios.com/2026/06/09/ai-entrepreneurs-founders-nasdaq\" target=\"_blank\" rel=\"noopener\">Nasdaq Economic Institute, citado pela Axios</a>: nos Estados Unidos, a abertura de empresas de uma pessoa só cresceu mais de 20% desde o início de 2025, enquanto a das empresas que pretendem contratar está estagnada. Quase metade desse aumento vem dos setores que mais usam IA."
-  p3:
-    fr: Certains vont plus loin. Sam Altman, le patron d'OpenAI, <a href="https://fortune.com/2024/02/04/sam-altman-one-person-unicorn-silicon-valley-founder-myth/" target="_blank" rel="noopener">prédit l'arrivée de la première entreprise d'une seule personne valorisée à un milliard de dollars</a>, quelque chose qui aurait été « inimaginable sans l'IA ».
-    en: Some go further. OpenAI's CEO Sam Altman <a href="https://fortune.com/2024/02/04/sam-altman-one-person-unicorn-silicon-valley-founder-myth/" target="_blank" rel="noopener">predicts the first one-person company worth a billion dollars</a>, something that would have been "unimaginable without AI".
-    pt: Alguns vão além. Sam Altman, o CEO da OpenAI, <a href="https://fortune.com/2024/02/04/sam-altman-one-person-unicorn-silicon-valley-founder-myth/" target="_blank" rel="noopener">prevê a chegada da primeira empresa de uma pessoa só avaliada em um bilhão de dólares</a>, algo que seria “inimaginável sem a IA”.
-  h2:
-    fr: Ce qu'en disent les outils eux-mêmes
-    en: What the tool makers say
-    pt: O que dizem as próprias ferramentas
-  p4:
-    fr: Bubble, l'un des principaux outils de développement visuel, a interrogé plus de 350 de ses utilisateurs pour son <a href="https://bubble.io/blog/state-of-no-code-development/" target="_blank" rel="noopener">rapport 2024 sur le no-code</a>. Son cofondateur Josh Haas y prédit que le trio classique designer, développeur et chef de produit va se « fondre en un seul rôle ». Dans la même enquête, 64&nbsp;% des répondants pensent que la plupart des développeurs travailleront surtout avec des outils visuels d'ici 2030.
-    en: Bubble, one of the leading visual development platforms, surveyed more than 350 of its users for its <a href="https://bubble.io/blog/state-of-no-code-development/" target="_blank" rel="noopener">2024 State of No-Code report</a>. Its co-founder Josh Haas predicts that the traditional triad of designer, developer and product manager will "collapse into a single role". In the same survey, 64% of respondents think most developers will mainly work with visual tools by 2030.
-    pt: O Bubble, uma das principais ferramentas de desenvolvimento visual, ouviu mais de 350 usuários para o seu <a href="https://bubble.io/blog/state-of-no-code-development/" target="_blank" rel="noopener">relatório 2024 sobre no-code</a>. Nele, o cofundador Josh Haas prevê que o trio clássico designer, desenvolvedor e gerente de produto vai se “fundir em um único papel”. Na mesma pesquisa, 64% dos entrevistados acham que a maioria dos desenvolvedores vai trabalhar principalmente com ferramentas visuais até 2030.
-  p5:
-    fr: "On peut discuter des chiffres, qui viennent d'un éditeur et de ses propres utilisateurs. Mais la direction est claire : les rôles qui étaient répartis entre plusieurs personnes peuvent maintenant être tenus par une seule."
-    en: "The numbers are open to debate, since they come from a vendor and its own users. But the direction is clear: roles that used to be spread across several people can now be held by one."
-    pt: "Dá para discutir os números, que vêm de um fornecedor e dos seus próprios usuários. Mas a direção é clara: os papéis que eram divididos entre várias pessoas agora podem ser assumidos por uma só."
-  h3:
-    fr: "Le vrai coût d'une équipe : la communication"
-    en: "The real cost of a team: communication"
-    pt: "O verdadeiro custo de uma equipe: a comunicação"
-  p6:
-    fr: Dans une équipe classique, votre besoin passe de main en main. Vous l'expliquez à un commercial ou à un chef de projet, qui le traduit pour un designer, qui le transmet à un développeur, dont le travail est ensuite vérifié par un testeur. À chaque passage, une partie du sens se perd, et chaque aller-retour coûte une réunion, un email, quelques jours.
-    en: In a traditional team, your need passes from hand to hand. You explain it to a salesperson or a project manager, who translates it for a designer, who passes it on to a developer, whose work is then checked by a tester. Some meaning gets lost at every handoff, and every back-and-forth costs a meeting, an email, a few days.
-    pt: Em uma equipe tradicional, a sua necessidade passa de mão em mão. Você a explica para um vendedor ou um gerente de projeto, que a traduz para um designer, que a repassa para um desenvolvedor, cujo trabalho depois é verificado por um testador. A cada passagem, uma parte do sentido se perde, e cada ida e volta custa uma reunião, um e-mail, alguns dias.
-  p7:
-    fr: "Ce phénomène est connu depuis longtemps. En 1975, Frederick Brooks l'a décrit dans <em>The Mythical Man-Month</em> : chaque personne ajoutée à un projet multiplie les échanges nécessaires. C'est ce qu'on appelle la <a href=\"https://fr.wikipedia.org/wiki/Loi_de_Brooks\" target=\"_blank\" rel=\"noopener\">loi de Brooks</a>. Avec 5 personnes, il existe 10 canaux de communication possibles. Avec 10 personnes, il y en a 45."
-    en: "This has been known for a long time. In 1975, Frederick Brooks described it in <em>The Mythical Man-Month</em>: every person added to a project multiplies the conversations needed. It's known as <a href=\"https://en.wikipedia.org/wiki/Brooks%27s_law\" target=\"_blank\" rel=\"noopener\">Brooks's law</a>. With 5 people, there are 10 possible communication channels. With 10 people, there are 45."
-    pt: "Esse fenômeno é conhecido há muito tempo. Em 1975, Frederick Brooks o descreveu em <em>The Mythical Man-Month</em>: cada pessoa adicionada a um projeto multiplica as trocas necessárias. É o que se chama de <a href=\"https://en.wikipedia.org/wiki/Brooks%27s_law\" target=\"_blank\" rel=\"noopener\">lei de Brooks</a>. Com 5 pessoas, existem 10 canais de comunicação possíveis. Com 10 pessoas, são 45."
-  p8:
-    fr: "Pour un grand projet, cette organisation se justifie. Pour l'outil interne d'une PME, elle produit surtout de la friction : des délais, des malentendus et une facture qui paie autant la coordination que le travail."
-    en: "For a large project, that structure makes sense. For a small business's internal tool, it mostly creates friction: delays, misunderstandings, and an invoice that pays for coordination as much as for the work."
-    pt: "Para um grande projeto, essa organização se justifica. Para a ferramenta interna de uma PME, ela produz sobretudo atrito: atrasos, mal-entendidos e uma conta que paga tanto a coordenação quanto o trabalho."
-  h4:
-    fr: Ce que change l'IA
-    en: What AI changes
-    pt: O que a IA muda
-  p9:
-    fr: "Longtemps, une seule personne ne pouvait pas tout faire, simplement par manque de temps. Écrire le code, les tests, la documentation, préparer les écrans : il fallait plusieurs paires de mains."
-    en: "For a long time, one person simply couldn't do it all, for lack of time. Writing the code, the tests, the documentation, preparing the screens: it took several pairs of hands."
-    pt: "Por muito tempo, uma só pessoa não conseguia fazer tudo, simplesmente por falta de tempo. Escrever o código, os testes, a documentação, preparar as telas: eram necessárias várias mãos."
-  p10:
-    fr: "L'IA prend désormais en charge une grande partie de cette production. Le goulot d'étranglement n'est plus l'écriture du code. Il se déplace vers deux choses que l'IA ne fait pas à votre place :"
-    en: "AI now handles a large part of that production. The bottleneck is no longer writing code. It has shifted to two things AI won't do for you:"
-    pt: "Agora a IA assume grande parte dessa produção. O gargalo não é mais escrever o código. Ele se desloca para duas coisas que a IA não faz por você:"
-  li:
-    fr: <strong>comprendre votre métier en profondeur</strong>, avec ses exceptions, ses habitudes et ce qui compte vraiment pour vos équipes ;
-    en: <strong>understanding your business in depth</strong>, with its exceptions, its habits and what really matters to your teams;
-    pt: <strong>entender o seu negócio a fundo</strong>, com as suas exceções, os seus hábitos e o que realmente importa para as suas equipes;
-  li2:
-    fr: "<strong>prendre les bonnes décisions techniques</strong> : quelle architecture, quel compromis, ce qu'on construit maintenant et ce qui peut attendre."
-    en: "<strong>making the right technical calls</strong>: which architecture, which trade-off, what to build now and what can wait."
-    pt: "<strong>tomar as decisões técnicas certas</strong>: qual arquitetura, qual compromisso, o que construir agora e o que pode esperar."
-  p11:
-    fr: Quand ces deux compétences sont réunies dans la même tête, il n'y a plus rien à traduire. La personne qui vous écoute est celle qui décide et qui construit. Elle sait pourquoi vous demandez une fonctionnalité, et pas seulement ce que vous demandez. C'est ce profil, un développeur « ninja » qui parle votre langue et celle de la machine, que l'IA rend enfin viable pour les PME.
-    en: When both skills live in the same head, there's nothing left to translate. The person who listens to you is the one who decides and builds. They know why you're asking for a feature, not just what you're asking for. That profile, a "ninja" developer who speaks both your language and the machine's, is what AI finally makes viable for small businesses.
-    pt: Quando essas duas competências estão reunidas na mesma cabeça, não há mais nada a traduzir. A pessoa que escuta você é a mesma que decide e constrói. Ela sabe por que você pede uma funcionalidade, e não só o que você pede. É esse perfil, um desenvolvedor “ninja” que fala a sua língua e a da máquina, que a IA finalmente torna viável para as PMEs.
-  h5:
-    fr: Les limites, honnêtement
-    en: The limits, honestly
-    pt: Os limites, com honestidade
-  p12:
-    fr: Ce modèle n'est pas magique. Comme le rappelle <a href="https://www.selfemployed.com/news/solo-founders-ai-replace-teams-limits-2026/" target="_blank" rel="noopener">un article de SelfEmployed qui s'appuie sur une enquête de Fortune</a>, l'IA ne valide pas un marché, ne fixe pas des prix et ne choisit pas les priorités à votre place. Ces décisions restent humaines, et c'est précisément là que l'expérience de la personne en face de vous compte.
-    en: This model isn't magic. As <a href="https://www.selfemployed.com/news/solo-founders-ai-replace-teams-limits-2026/" target="_blank" rel="noopener">an article in SelfEmployed, based on reporting by Fortune</a>, points out, AI doesn't validate a market, set prices or choose priorities for you. Those decisions stay human, and that's exactly where the experience of the person in front of you matters.
-    pt: Esse modelo não é mágico. Como lembra <a href="https://www.selfemployed.com/news/solo-founders-ai-replace-teams-limits-2026/" target="_blank" rel="noopener">um artigo da SelfEmployed baseado em uma reportagem da Fortune</a>, a IA não valida um mercado, não define preços e não escolhe as prioridades por você. Essas decisões continuam humanas, e é justamente aí que a experiência da pessoa à sua frente faz diferença.
-  p13:
-    fr: "L'autre question légitime, c'est la dépendance à une seule personne. Elle se règle avec de bonnes pratiques : un code et des données qui vous appartiennent, une documentation tenue à jour et des outils standards que d'autres développeurs savent reprendre."
-    en: "The other fair question is depending on a single person. Good practice solves it: code and data that belong to you, documentation kept up to date, and standard tools that other developers can pick up."
-    pt: "A outra questão legítima é a dependência de uma única pessoa. Ela se resolve com boas práticas: código e dados que pertencem a você, uma documentação mantida em dia e ferramentas padrão que outros desenvolvedores sabem assumir."
-  h6:
-    fr: Notre parti pris chez Maniaque
-    en: Our take at Maniaque
-    pt: A nossa escolha na Maniaque
-  p14:
-    fr: "C'est exactement le modèle que nous avons choisi : un seul interlocuteur, qui comprend votre activité et construit votre outil, épaulé par l'IA pour aller vite. Moins d'intermédiaires, moins de réunions, et des décisions prises par quelqu'un qui connaît à la fois votre métier et la technique."
-    en: "That's exactly the model we chose: one point of contact who understands your business and builds your tool, backed by AI to move fast. Fewer middlemen, fewer meetings, and decisions made by someone who knows both your business and the technology."
-    pt: "É exatamente o modelo que escolhemos: um único interlocutor, que entende a sua atividade e constrói a sua ferramenta, apoiado pela IA para ganhar velocidade. Menos intermediários, menos reuniões e decisões tomadas por alguém que conhece ao mesmo tempo o seu negócio e a parte técnica."
-  p15:
-    fr: Si vous voulez voir ce que ça donnerait pour votre entreprise, <a data-book target="_blank" rel="noopener">réservez un audit gratuit de 45 minutes</a>. Vous repartirez avec un avis franc, même si c'est pour vous dire que ce n'est pas le bon moment.
-    en: If you'd like to see what it would look like for your company, <a data-book target="_blank" rel="noopener">book a free 45-minute audit</a>. You'll leave with an honest opinion, even if it's that now isn't the right time.
-    pt: Se você quiser ver como seria para a sua empresa, <a data-book target="_blank" rel="noopener">agende um diagnóstico gratuito de 45 minutos</a>. Você vai sair com uma opinião franca, mesmo que seja para ouvir que este não é o momento certo.
-  refs:
-    fr: Références
-    en: References
-    pt: Referências
-  refsLi:
-    fr: <a href="https://carta.com/data/solo-founders-report" target="_blank" rel="noopener">Carta, Solo Founders Report 2025</a>, décembre 2025.
-    en: <a href="https://carta.com/data/solo-founders-report" target="_blank" rel="noopener">Carta, Solo Founders Report 2025</a>, December 2025.
-    pt: <a href="https://carta.com/data/solo-founders-report" target="_blank" rel="noopener">Carta, Relatório sobre fundadores solo 2025</a> (em inglês), dezembro de 2025.
-  refsLi2:
-    fr: <a href="https://axios.com/2026/06/09/ai-entrepreneurs-founders-nasdaq" target="_blank" rel="noopener">Axios, Nasdaq sees AI behind solo founder boom</a>, juin 2026.
-    en: <a href="https://axios.com/2026/06/09/ai-entrepreneurs-founders-nasdaq" target="_blank" rel="noopener">Axios, Nasdaq sees AI behind solo founder boom</a>, June 2026.
-    pt: <a href="https://axios.com/2026/06/09/ai-entrepreneurs-founders-nasdaq" target="_blank" rel="noopener">Axios, Nasdaq vê a IA por trás do boom de fundadores solo</a> (em inglês), junho de 2026.
-  refsLi3:
-    fr: <a href="https://fortune.com/2024/02/04/sam-altman-one-person-unicorn-silicon-valley-founder-myth/" target="_blank" rel="noopener">Fortune, Sam Altman et l'entreprise d'une seule personne à un milliard de dollars</a>, février 2024.
-    en: <a href="https://fortune.com/2024/02/04/sam-altman-one-person-unicorn-silicon-valley-founder-myth/" target="_blank" rel="noopener">Fortune, Sam Altman and the one-person billion-dollar company</a>, February 2024.
-    pt: <a href="https://fortune.com/2024/02/04/sam-altman-one-person-unicorn-silicon-valley-founder-myth/" target="_blank" rel="noopener">Fortune, Sam Altman e a empresa de uma pessoa só avaliada em um bilhão de dólares</a> (em inglês), fevereiro de 2024.
-  refsLi4:
-    fr: <a href="https://bubble.io/blog/state-of-no-code-development/" target="_blank" rel="noopener">Bubble, The 2024 State of No-Code</a>, 2024.
-    en: <a href="https://bubble.io/blog/state-of-no-code-development/" target="_blank" rel="noopener">Bubble, The 2024 State of No-Code</a>, 2024.
-    pt: <a href="https://bubble.io/blog/state-of-no-code-development/" target="_blank" rel="noopener">Bubble, O estado do no-code em 2024</a> (em inglês), 2024.
-  refsLi5:
-    fr: <a href="https://fr.wikipedia.org/wiki/Loi_de_Brooks" target="_blank" rel="noopener">Wikipédia, Loi de Brooks</a>, d'après Frederick Brooks, <em>The Mythical Man-Month</em>, 1975.
-    en: <a href="https://en.wikipedia.org/wiki/Brooks%27s_law" target="_blank" rel="noopener">Wikipedia, Brooks's law</a>, after Frederick Brooks, <em>The Mythical Man-Month</em>, 1975.
-    pt: <a href="https://en.wikipedia.org/wiki/Brooks%27s_law" target="_blank" rel="noopener">Wikipedia, Brooks's law</a> (em inglês), segundo Frederick Brooks, <em>The Mythical Man-Month</em>, 1975.
-  refsLi6:
-    fr: <a href="https://www.selfemployed.com/news/solo-founders-ai-replace-teams-limits-2026/" target="_blank" rel="noopener">SelfEmployed, Solo Founders Lean On AI To Replace Teams, But Limits Remain</a>, mai 2026.
-    en: <a href="https://www.selfemployed.com/news/solo-founders-ai-replace-teams-limits-2026/" target="_blank" rel="noopener">SelfEmployed, Solo Founders Lean On AI To Replace Teams, But Limits Remain</a>, May 2026.
-    pt: <a href="https://www.selfemployed.com/news/solo-founders-ai-replace-teams-limits-2026/" target="_blank" rel="noopener">SelfEmployed, Fundadores solo usam a IA para substituir equipes, mas os limites continuam</a> (em inglês), maio de 2026.
+  references:
+    - fr: <a href="https://carta.com/data/solo-founders-report" target="_blank" rel="noopener">Carta, Solo Founders Report 2025</a>, décembre 2025.
+      en: <a href="https://carta.com/data/solo-founders-report" target="_blank" rel="noopener">Carta, Solo Founders Report 2025</a>, December 2025.
+      pt: <a href="https://carta.com/data/solo-founders-report" target="_blank" rel="noopener">Carta, Relatório sobre fundadores solo 2025</a> (em inglês), dezembro de 2025.
+    - fr: <a href="https://axios.com/2026/06/09/ai-entrepreneurs-founders-nasdaq" target="_blank" rel="noopener">Axios, Nasdaq sees AI behind solo founder boom</a>, juin 2026.
+      en: <a href="https://axios.com/2026/06/09/ai-entrepreneurs-founders-nasdaq" target="_blank" rel="noopener">Axios, Nasdaq sees AI behind solo founder boom</a>, June 2026.
+      pt: <a href="https://axios.com/2026/06/09/ai-entrepreneurs-founders-nasdaq" target="_blank" rel="noopener">Axios, Nasdaq vê a IA por trás do boom de fundadores solo</a> (em inglês), junho de 2026.
+    - fr: <a href="https://fortune.com/2024/02/04/sam-altman-one-person-unicorn-silicon-valley-founder-myth/" target="_blank" rel="noopener">Fortune, Sam Altman et l'entreprise d'une seule personne à un milliard de dollars</a>, février 2024.
+      en: <a href="https://fortune.com/2024/02/04/sam-altman-one-person-unicorn-silicon-valley-founder-myth/" target="_blank" rel="noopener">Fortune, Sam Altman and the one-person billion-dollar company</a>, February 2024.
+      pt: <a href="https://fortune.com/2024/02/04/sam-altman-one-person-unicorn-silicon-valley-founder-myth/" target="_blank" rel="noopener">Fortune, Sam Altman e a empresa de uma pessoa só avaliada em um bilhão de dólares</a> (em inglês), fevereiro de 2024.
+    - fr: <a href="https://bubble.io/blog/state-of-no-code-development/" target="_blank" rel="noopener">Bubble, The 2024 State of No-Code</a>, 2024.
+      en: <a href="https://bubble.io/blog/state-of-no-code-development/" target="_blank" rel="noopener">Bubble, The 2024 State of No-Code</a>, 2024.
+      pt: <a href="https://bubble.io/blog/state-of-no-code-development/" target="_blank" rel="noopener">Bubble, O estado do no-code em 2024</a> (em inglês), 2024.
+    - fr: <a href="https://fr.wikipedia.org/wiki/Loi_de_Brooks" target="_blank" rel="noopener">Wikipédia, Loi de Brooks</a>, d'après Frederick Brooks, <em>The Mythical Man-Month</em>, 1975.
+      en: <a href="https://en.wikipedia.org/wiki/Brooks%27s_law" target="_blank" rel="noopener">Wikipedia, Brooks's law</a>, after Frederick Brooks, <em>The Mythical Man-Month</em>, 1975.
+      pt: <a href="https://en.wikipedia.org/wiki/Brooks%27s_law" target="_blank" rel="noopener">Wikipedia, Brooks's law</a> (em inglês), segundo Frederick Brooks, <em>The Mythical Man-Month</em>, 1975.
+    - fr: <a href="https://www.selfemployed.com/news/solo-founders-ai-replace-teams-limits-2026/" target="_blank" rel="noopener">SelfEmployed, Solo Founders Lean On AI To Replace Teams, But Limits Remain</a>, mai 2026.
+      en: <a href="https://www.selfemployed.com/news/solo-founders-ai-replace-teams-limits-2026/" target="_blank" rel="noopener">SelfEmployed, Solo Founders Lean On AI To Replace Teams, But Limits Remain</a>, May 2026.
+      pt: <a href="https://www.selfemployed.com/news/solo-founders-ai-replace-teams-limits-2026/" target="_blank" rel="noopener">SelfEmployed, Fundadores solo usam a IA para substituir equipes, mas os limites continuam</a> (em inglês), maio de 2026.
