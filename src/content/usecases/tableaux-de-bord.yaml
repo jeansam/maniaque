@@ -82,50 +82,54 @@ strings:
     fr: À jour
     en: Up to date
     pt: Em dia
-  mkKpiSpan:
-    fr: CA du mois
-    en: Revenue this month
-    pt: Faturamento do mês
-  mkKpiB:
-    fr: "84\_200\_€"
-    en: €84,200
-    pt: "R$\_505.200"
-  mkKpiMkOk:
-    fr: +12 %
-    en: +12%
-    pt: +12%
-  mkKpiSpan2:
-    fr: Marge brute
-    en: Gross margin
-    pt: Margem bruta
-  mkKpiB2:
-    fr: "38\_%"
-    en: 38%
-    pt: 38%
-  mkKpiMkOk2:
-    fr: +2 pts
-    en: +2 pts
-    pt: +2 p.p.
-  mkKpiSpan3:
-    fr: Carnet de commandes
-    en: Order book
-    pt: Carteira de pedidos
-  mkKpiB3:
-    fr: "162\_000\_€"
-    en: €162,000
-    pt: "R$\_972.000"
-  mkKpiSpan4:
-    fr: Trésorerie
-    en: Cash
-    pt: Caixa
-  mkKpiB4:
-    fr: "47\_500\_€"
-    en: €47,500
-    pt: "R$\_285.000"
-  mkKpiMkBad:
-    fr: −8 % vs mois dernier
-    en: −8% vs last month
-    pt: −8% vs mês passado
+  kpis:
+    - label:
+        fr: CA du mois
+        en: Revenue this month
+        pt: Faturamento do mês
+      value:
+        fr: "84\_200\_€"
+        en: €84,200
+        pt: "R$\_505.200"
+      trend:
+        fr: +12 %
+        en: +12%
+        pt: +12%
+      tone: mk-ok
+    - label:
+        fr: Marge brute
+        en: Gross margin
+        pt: Margem bruta
+      value:
+        fr: "38\_%"
+        en: 38%
+        pt: 38%
+      trend:
+        fr: +2 pts
+        en: +2 pts
+        pt: +2 p.p.
+      tone: mk-ok
+    - label:
+        fr: Carnet de commandes
+        en: Order book
+        pt: Carteira de pedidos
+      value:
+        fr: "162\_000\_€"
+        en: €162,000
+        pt: "R$\_972.000"
+    - label:
+        fr: Trésorerie
+        en: Cash
+        pt: Caixa
+      value:
+        fr: "47\_500\_€"
+        en: €47,500
+        pt: "R$\_285.000"
+      trend:
+        fr: −8 % vs mois dernier
+        en: −8% vs last month
+        pt: −8% vs mês passado
+      tone: mk-bad
   mkPanelMkH:
     fr: Chiffre d'affaires, 12 derniers mois
     en: Revenue, last 12 months

@@ -78,62 +78,59 @@ strings:
     fr: 1 urgente
     en: 1 urgent
     pt: 1 urgente
-  mkMailB:
-    fr: Boulangerie Martin
-    en: Boulangerie Martin
-    pt: Padaria Martin
-  items2:
-    - label:
+  mails:
+    - from:
+        fr: Boulangerie Martin
+        en: Boulangerie Martin
+        pt: Padaria Martin
+      subject:
         fr: Four en panne depuis ce matin
         en: Oven down since this morning
         pt: Forno parado desde hoje de manhã
-    - mkPillMkBad: true
-      label:
+      tag:
         fr: Urgent
         en: Urgent
         pt: Urgente
-  mkMailB2:
-    fr: Garage Leroy
-    en: Garage Leroy
-    pt: Oficina Leroy
-  items3:
-    - label:
+      tone: bad
+    - from:
+        fr: Garage Leroy
+        en: Garage Leroy
+        pt: Oficina Leroy
+      subject:
         fr: Erreur sur la facture F-2317
         en: Error on invoice F-2317
         pt: Erro na fatura F-2317
-    - mkPillMkInfo: true
-      label:
+      tag:
         fr: Facturation
         en: Billing
         pt: Faturamento
-  mkMailB3:
-    fr: Cabinet Dufour
-    en: Cabinet Dufour
-    pt: Escritório Dufour
-  items4:
-    - label:
+      tone: info
+    - from:
+        fr: Cabinet Dufour
+        en: Cabinet Dufour
+        pt: Escritório Dufour
+      subject:
         fr: Changer l'adresse de livraison
         en: Change delivery address
         pt: Mudar o endereço de entrega
-    - mkPillMkOk: true
-      label:
+      tag:
         fr: Commande
         en: Order
         pt: Pedido
-  mkMailB4:
-    fr: Hôtel des Alpes
-    en: Hôtel des Alpes
-    pt: Hotel dos Alpes
-  items5:
-    - label:
+      tone: ok
+    - from:
+        fr: Hôtel des Alpes
+        en: Hôtel des Alpes
+        pt: Hotel dos Alpes
+      subject:
         fr: Devis pour un second four
         en: Quote for a second oven
         pt: Orçamento para um segundo forno
-    - mkPillMkWarn: true
-      label:
+      tag:
         fr: Commercial
         en: Sales
         pt: Comercial
+      tone: warn
   mkHs:
     - class: mk-h
       label:

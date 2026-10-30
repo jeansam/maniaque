@@ -90,54 +90,58 @@ dcHeadDcBtn:
   en: Export
   pt: Exportar
 dcKpis:
-  - span:
+  - label:
       fr: CA du mois
       en: Monthly revenue
       pt: Faturamento do mês
-    b:
+    value:
       fr: 84,2 k€
       en: €84.2k
       pt: "R$\_505 mil"
-    up:
+    trend:
       fr: +12 %
       en: +12%
       pt: +12%
-  - span:
+    tone: up
+  - label:
       fr: Commandes
       en: Orders
       pt: Pedidos
-    b:
+    value:
       fr: 1 248
       en: 1,248
       pt: "1.248"
-    up:
+    trend:
       fr: +8 %
       en: +8%
       pt: +8%
-  - span:
+    tone: up
+  - label:
       fr: Panier moyen
       en: Avg. basket
       pt: Ticket médio
-    b:
+    value:
       fr: 67 €
       en: €67
       pt: "R$\_402"
-    up:
+    trend:
       fr: +3 %
       en: +3%
       pt: +3%
-  - span:
+    tone: up
+  - label:
       fr: Retours
       en: Returns
       pt: Devoluções
-    b:
+    value:
       fr: 2,1 %
       en: 2.1%
       pt: 2,1%
-    up:
+    trend:
       fr: −0,4
       en: −0.4
       pt: −0,4
+    tone: up
 dcPanelDcCap:
   fr: CA quotidien, 30 derniers jours
   en: Daily revenue, last 30 days
@@ -317,19 +321,19 @@ dcRefs:
       en: Stainless screw M6 × 40
       pt: Parafuso inox M6 × 40
 dcMk:
-  - span:
+  - label:
       fr: En stock
       en: In stock
       pt: Em estoque
-    b:
+    value:
       fr: 1 240
       en: 1,240
       pt: "1.240"
-  - span:
+  - label:
       fr: Seuil
       en: Threshold
       pt: Mínimo
-    b: "300"
+    value: "300"
 dcPmainDcCta2:
   fr: Ajouter au bon
   en: Add to order
@@ -467,21 +471,21 @@ dcTitles4:
       en: Today, 4 vehicles
       pt: Hoje, 4 veículos
 dcKpis2:
-  - span:
+  - label:
       fr: Tournées
       en: Rounds
       pt: Rotas
-    b: "14"
-  - span:
+    value: "14"
+  - label:
       fr: Livraisons
       en: Deliveries
       pt: Entregas
-    b: "312"
-  - span:
+    value: "312"
+  - label:
       fr: À l'heure
       en: On time
       pt: No horário
-    b:
+    value:
       fr: 96 %
       en: 96%
       pt: 96%
@@ -593,21 +597,21 @@ dcTitles5:
       en: "Average response time: 1h 12m"
       pt: "Tempo médio de resposta: 1h12"
 dcKpis3:
-  - span:
+  - label:
       fr: Ouverts
       en: Open
       pt: Abertos
-    b: "26"
-  - span:
+    value: "26"
+  - label:
       fr: Résolus 7 j
       en: Solved 7d
       pt: Resolvidos 7 d
-    b: "184"
-  - span:
+    value: "184"
+  - label:
       fr: Satisfaction
       en: Satisfaction
       pt: Satisfação
-    b:
+    value:
       fr: 4,8/5
       en: 4.8/5
       pt: 4,8/5
@@ -743,16 +747,16 @@ dcGls3:
   - y1: "33.0"
     y2: "33.0"
 dcMk3:
-  - span:
+  - label:
       fr: Commandes
       en: Orders
       pt: Pedidos
-    b: "46"
-  - span:
+    value: "46"
+  - label:
       fr: Panier
       en: Basket
       pt: Ticket
-    b:
+    value:
       fr: 74 €
       en: €74
       pt: "R$\_444"
@@ -790,22 +794,29 @@ dcTitles12:
       fr: Alertes de réapprovisionnement, 3 entrepôts
       en: Restock alerts, 3 warehouses
       pt: Alertas de reposição, 3 depósitos
-dcKpiSpan27:
-  fr: Ruptures
-  en: Out of stock
-  pt: Rupturas
-dcKpiSpan28:
-  fr: Stock bas
-  en: Low stock
-  pt: Estoque baixo
-dcKpiSpan29:
-  fr: Valeur
-  en: Value
-  pt: Valor
-dcKpiB16:
-  fr: 214 k€
-  en: €214k
-  pt: "R$\_1,3 mi"
+kpis:
+  - label:
+      fr: Ruptures
+      en: Out of stock
+      pt: Rupturas
+    value: "12"
+    trend: −4
+    tone: up
+  - label:
+      fr: Stock bas
+      en: Low stock
+      pt: Estoque baixo
+    value: "37"
+    trend: "+6"
+    tone: down
+  - label:
+      fr: Valeur
+      en: Value
+      pt: Valor
+    value:
+      fr: 214 k€
+      en: €214k
+      pt: "R$\_1,3 mi"
 dcPanelDcCap3:
   fr: Mouvements par jour
   en: Movements per day
@@ -1049,19 +1060,19 @@ dcCalDcDh6:
   en: S
   pt: D
 dcCol2:
-  - span:
+  - label:
       fr: Taux d'occupation
       en: Occupancy
       pt: Taxa de ocupação
-    b:
+    value:
       fr: 87 %
       en: 87%
       pt: 87%
-  - span:
+  - label:
       fr: Arrivées aujourd'hui
       en: Arrivals today
       pt: Check-ins hoje
-    b: "9"
+    value: "9"
 dcPhs:
   - class: dc-ph
     label:
@@ -1078,19 +1089,19 @@ dcPmainDcOk:
   en: ✓ Check-in recorded
   pt: ✓ Entrada registrada
 dcMk4:
-  - span:
+  - label:
       fr: Cette semaine
       en: This week
       pt: Esta semana
-    b:
+    value:
       fr: 31 h 20
       en: 31h 20m
       pt: 31h20
-  - span:
+  - label:
       fr: Congés restants
       en: Leave left
       pt: Férias restantes
-    b:
+    value:
       fr: 12 j
       en: 12 d
       pt: 12 d

@@ -34,3 +34,15 @@
 
 {#- Maquettes : panneau avec un titre et une barre remplie (style : sa largeur) #}
 {% macro barPanel(style, title) %}<div class="mk-panel"><p class="mk-h">{{ title }}</p><span class="mk-bar mk-bar-ink"><i style="{{ style }}"></i></span></div>{% endmacro %}
+
+{#- Maquettes : indicateurs (libellé, valeur, et une tendance colorée selon tone) #}
+{% macro kpis(class, itemClass, items) %}<div class="{{ class }}">{% for kpi in items %}<div class="{{ itemClass }}"><span>{{ kpi.label }}</span><b>{{ kpi.value }}</b>{% if kpi.trend %}<i class="{{ kpi.tone }}">{{ kpi.trend }}</i>{% endif %}</div>{% endfor %}</div>{% endmacro %}
+
+{#- Maquettes : jauge circulaire ; filled est la longueur de l'arc rempli, sur 163,4 pour un tour complet #}
+{% macro donut(size, filled, label) %}<div class="dc-donut" style="width:{{ size }}px;height:{{ size }}px"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="26" fill="none" stroke="var(--line)" stroke-width="7"/><circle cx="32" cy="32" r="26" fill="none" stroke="var(--ac)" stroke-width="7" stroke-linecap="round" stroke-dasharray="{{ filled }} 163.4" transform="rotate(-90 32 32)"/></svg><b>{{ label }}</b></div>{% endmacro %}
+
+{#- Maquettes : graphique en barres (hauteur du dessin, largeur des barres ; fill : couleur commune, sinon celle de chaque barre) #}
+{% macro barChart(height, width, bars, fill) %}<svg class="dc-chart" viewBox="0 0 300 {{ height }}" preserveAspectRatio="none">{% for bar in bars %}<rect x="{{ bar.x }}" y="{{ bar.y }}" width="{{ width }}" height="{{ bar.height }}" rx="1.5" fill="{{ fill or bar.fill }}"/>{% endfor %}</svg>{% endmacro %}
+
+{#- Bouton à trois traits qui ouvre un menu #}
+{% macro burger(class, menu, label) %}<button class="{{ class }}" type="button" aria-expanded="false" aria-controls="{{ menu }}" aria-label="{{ label }}"><span></span><span></span><span></span></button>{% endmacro %}

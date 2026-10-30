@@ -79,21 +79,21 @@ strings:
     en: 1 expired
     pt: 1 vencido
   mkKpis:
-    - span:
+    - label:
         fr: Documents suivis
         en: Documents tracked
         pt: Documentos acompanhados
-      b: "64"
-    - span:
+      value: "64"
+    - label:
         fr: Expirent sous 60 jours
         en: Expiring within 60 days
         pt: Vencem em 60 dias
-      b: "3"
-    - span:
+      value: "3"
+    - label:
         fr: Expirés
         en: Expired
         pt: Vencidos
-      b: "1"
+      value: "1"
   columns:
     - fr: Salarié
       en: Employee

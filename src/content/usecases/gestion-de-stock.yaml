@@ -78,30 +78,33 @@ strings:
         fr: Entrepôt principal
         en: Main warehouse
         pt: Depósito principal
-  mkKpiSpan:
-    fr: Articles suivis
-    en: Items tracked
-    pt: Itens acompanhados
-  mkKpiB:
-    fr: 1 284
-    en: 1,284
-    pt: "1.284"
-  mkKpiSpan2:
-    fr: Sous le seuil
-    en: Below threshold
-    pt: Abaixo do mínimo
-  mkKpiMkBad:
-    fr: +3 cette semaine
-    en: +3 this week
-    pt: +3 esta semana
-  mkKpiSpan3:
-    fr: Valeur du stock
-    en: Stock value
-    pt: Valor do estoque
-  mkKpiB2:
-    fr: "214\_300\_€"
-    en: €214,300
-    pt: "R$\_1,3 mi"
+  kpis:
+    - label:
+        fr: Articles suivis
+        en: Items tracked
+        pt: Itens acompanhados
+      value:
+        fr: 1 284
+        en: 1,284
+        pt: "1.284"
+    - label:
+        fr: Sous le seuil
+        en: Below threshold
+        pt: Abaixo do mínimo
+      value: "12"
+      trend:
+        fr: +3 cette semaine
+        en: +3 this week
+        pt: +3 esta semana
+      tone: mk-bad
+    - label:
+        fr: Valeur du stock
+        en: Stock value
+        pt: Valor do estoque
+      value:
+        fr: "214\_300\_€"
+        en: €214,300
+        pt: "R$\_1,3 mi"
   mkTable:
     - class: mk-tr mk-th
       items:

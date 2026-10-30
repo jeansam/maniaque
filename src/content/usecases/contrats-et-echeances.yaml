@@ -75,21 +75,21 @@ strings:
         en: Next 12 months
         pt: Os próximos 12 meses
   mkKpis:
-    - span:
+    - label:
         fr: Contrats suivis
         en: Contracts tracked
         pt: Contratos acompanhados
-      b: "38"
-    - span:
+      value: "38"
+    - label:
         fr: Échéances sous 90 jours
         en: Due within 90 days
         pt: Prazos em até 90 dias
-      b: "4"
-    - span:
+      value: "4"
+    - label:
         fr: Montant annuel
         en: Annual amount
         pt: Valor anual
-      b:
+      value:
         fr: "86\_400\_€"
         en: €86,400
         pt: "R$\_518.400"
