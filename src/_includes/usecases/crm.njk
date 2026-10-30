@@ -3,5 +3,5 @@
             <div class="qt-main">
               {{ c.screenHead("qt", s.titles) }}
               <div class="mk-kanban">{% for mkCol in s.kanban %}<div class="mk-col"><p class="mk-colh">{{ mkCol.mkColh }}</p>{% for mkCard in mkCol.mkCards %}<div class="mk-card"><b>{{ mkCard.b }}</b><span>{{ mkCard.span }}</span><small><em class="mk-av" style="{{ mkCard.mkAvStyle }}">{{ mkCard.mkAv }}</em>{{ mkCard.small }}</small></div>{% endfor %}</div>{% endfor %}</div>
-            </div><div class="mk-aside"><p class="mk-h">{{ s.asideTitle }}</p>{% for mkItem in s.items %}{{ c.listItem("mk-item", mkItem.b, mkItem.span, mkItem.small) }}{% endfor %}</div>
+            </div><div class="mk-aside"><p class="mk-h">{{ s.asideTitle }}</p>{% for mkItem in s.items %}<div class="mk-item"><b>{{ mkItem.b }}</b><div><span>{{ mkItem.span }}</span><small>{{ mkItem.small }}</small></div></div>{% endfor %}</div>
           

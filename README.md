@@ -20,7 +20,7 @@ npm start
   - `src/_data/ui.yaml` : l'interface commune (en-tête, menus, pied de page, encart « Réserver un audit », jours de la semaine…)
   - `src/_data/strings/<page>.yaml` : les textes d'une page (`home`, `offer`, `usecaseIndex`, `about`, `articleIndex`, `legal`, et les textes communs aux pages de cas d'usage, `usecase`, et d'articles, `article`)
   - `src/content/usecases/<cas>.yaml` : un cas d'usage (son adresse dans chaque langue, son titre, la citation et le résumé de la page Cas d'usage, et les textes de sa maquette d'écran) ; `order` donne sa place dans les listes
-  - `src/content/articles/<article>.yaml` : un article (adresse, date, durée de lecture, résumé, et son texte)
+  - `src/content/articles/<article>.yaml` : un article (adresse, date, durée de lecture, résumé, introduction, légende de l'illustration et références) ; **son texte est en Markdown, un fichier par langue** : `<article>.fr.md`, `<article>.en.md`, `<article>.pt.md` (`## ` pour un intertitre, `**gras**`, `[lien](https://…)` ; les liens externes s'ouvrent dans un nouvel onglet ; le HTML reste permis, pour un tableau par exemple)
 - **Une ville** : `src/_data/cities.js`, **seul endroit où changer, par ville, le lien du bouton d'audit, les prix et la devise, et la personne qui répond** (prénom, nom, photos, LinkedIn), ainsi que sa place sur la carte de l'accueil. `city.js` est généré à partir de ce fichier
 - **Une adresse de page** : `src/_data/routes.js` (et le `slug` des cas d'usage et des articles)
 - **Une langue** : `src/_data/langs.js` ; l'ordre du menu des langues est dans `src/_data/langMenu.js`
@@ -28,13 +28,13 @@ npm start
 ## Organisation
 
 - `src/_includes/base.njk` : le squelette de toutes les pages (`<head>`, en-tête avec les menus des villes et des langues, pied de page) ; trois variantes : page courante, accueil (`variant: home`) et mentions légales (`variant: legal`)
-- `src/_includes/components.njk` : les blocs partagés (encart d'audit, éléments des maquettes d'écran : menu latéral, en-tête, tableau, indicateurs…)
+- `src/_includes/components.njk` : les blocs partagés (encart d'audit, éléments répétés des maquettes d'écran : menu latéral, en-tête, tableau, indicateurs…)
 - `src/pages/` : un modèle par type de page, générée dans chaque langue (et pour chaque cas d'usage ou article). Le début du fichier dit quelles pages il produit et leurs particularités (titre, balises de partage, scripts)
   - `home.njk` : l'accueil, en anglais à la racine (`/fr/`, `/pt/`) : une carte du monde avec les trois villes ; survoler une ville montre la personne qui y répond, cliquer ouvre l'offre dans la langue de la ville
-  - `offer.njk` : la page de l'offre
+  - `offer.njk` : la page de l'offre ; chaque maquette d'écran de la vitrine a son modèle dans `src/_includes/showcase/<maquette>.njk` et ses textes dans `offer.yaml`, sous `showcase.<maquette>`
   - `usecaseIndex.njk` et `usecase.njk` : la page Cas d'usage et la page de chaque cas ; la maquette d'écran de chaque cas est dans `src/_includes/usecases/<cas>.njk`, son icône dans `src/_includes/icons/<cas>.svg`
   - `about.njk` : la page À propos, avec la personne qui répond dans chaque ville
-  - `articleIndex.njk` et `article.njk` : la liste des articles et chaque article, dont le texte est dans `src/_includes/articles/<article>.njk`
+  - `articleIndex.njk` et `article.njk` : la liste des articles et chaque article
   - `legal.njk` : les mentions légales
 - `src/city.njk` : donne `city.js`, la ville choisie dans l'en-tête (Marseille, São Paulo, Johannesbourg). La ville est gardée dans le navigateur et ne change pas quand on change de langue ; choisir une ville ouvre la page dans sa langue. Dans le HTML :
   - `data-book` sur un lien : il pointe vers le lien d'audit de la ville
