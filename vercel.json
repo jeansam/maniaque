@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    { "source": "/", "has": [{ "type": "cookie", "key": "maniaque-lang", "value": "fr" }], "destination": "/fr/", "permanent": false },
+    { "source": "/", "has": [{ "type": "cookie", "key": "maniaque-lang", "value": "pt" }], "destination": "/pt/", "permanent": false },
+    { "source": "/", "missing": [{ "type": "cookie", "key": "maniaque-lang" }], "has": [{ "type": "header", "key": "x-vercel-ip-country", "value": "FR" }], "destination": "/fr/", "permanent": false },
+    { "source": "/", "missing": [{ "type": "cookie", "key": "maniaque-lang" }], "has": [{ "type": "header", "key": "x-vercel-ip-country", "value": "BR" }], "destination": "/pt/", "permanent": false }
+  ]
+}

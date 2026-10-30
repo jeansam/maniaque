@@ -35,6 +35,9 @@
 
   function read() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
   function save(id) { try { localStorage.setItem(KEY, id); } catch (e) {} }
+  // Langue choisie à la main : un cookie que Vercel lit sur l'accueil (vercel.json) pour ne plus
+  // rediriger selon le pays du visiteur
+  function saveLang(lang) { document.cookie = "maniaque-lang=" + lang.slice(0, 2) + "; path=/; max-age=31536000; SameSite=Lax"; }
 
   // Un lien partagé (?ville=sao-paulo) l'emporte, puis le choix enregistré, puis la ville par défaut de la page
   var params = new URLSearchParams(location.search);
@@ -68,6 +71,7 @@
       var url = new URL(a.href, location.href);
       url.searchParams.set("ville", id);
       a.href = url.pathname + url.search + url.hash;
+      a.addEventListener("click", function () { saveLang(a.getAttribute("hreflang")); });
     });
     document.querySelectorAll("[data-city-name]").forEach(function (el) { el.textContent = city.name[pageLang]; });
     // La personne qui répond dans cette ville, au-dessus de la phrase d'accroche
@@ -75,15 +79,20 @@
     document.querySelectorAll("img[data-person-photo]").forEach(function (img) { img.src = city.person.photo; });
     // Sur la carte de l'accueil, chaque ville montre sa propre personne
     document.querySelectorAll("[data-person-of]").forEach(function (el) {
-      var person = (CITIES[el.getAttribute("data-person-of")] || city).person;
-      el.querySelectorAll("[data-person-name]").forEach(function (n) { n.textContent = person.name; });
-      el.querySelectorAll("img[data-person-photo]").forEach(function (img) { img.src = person.photo; });
+      var other = CITIES[el.getAttribute("data-person-of")] || city;
+      el.querySelectorAll("[data-person-name]").forEach(function (n) { n.textContent = other.person.name; });
+      el.querySelectorAll("img[data-person-photo]").forEach(function (img) { img.src = other.person.photo; });
+      el.addEventListener("click", function () { saveLang(other.lang); });
     });
     document.querySelectorAll("[data-set-city]").forEach(function (a) {
       var current = a.getAttribute("data-set-city") === id;
       if (current) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current");
       // Choisir une ville l'enregistre ; le lien mène à la page dans la langue de cette ville
-      a.addEventListener("click", function () { save(a.getAttribute("data-set-city")); });
+      a.addEventListener("click", function () {
+        var chosen = a.getAttribute("data-set-city");
+        save(chosen);
+        if (CITIES[chosen]) saveLang(CITIES[chosen].lang);
+      });
     });
 
     // Menus flottants (ville, langue) : clic pour ouvrir, clic à l'extérieur ou Échap pour fermer

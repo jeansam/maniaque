@@ -18,6 +18,7 @@ Site statique, sans étape de build : Vercel le sert tel quel.
 - `nav.js` : le menu hamburger sur mobile et tablette, et le menu « plus » (Cas d'usage, À propos, Articles) sur ordinateur
 - `articles/` : la liste des articles (`articles/index.html`) et un dossier par article, avec son illustration
 - `en/` : la version anglaise (sauf l'accueil, à la racine)
+- `vercel.json` : sur l'accueil (`/`), redirige selon le pays du visiteur (France → `/fr/`, Brésil → `/pt/`, ailleurs : anglais). Dès qu'on choisit une langue ou une ville à la main, un cookie `maniaque-lang` (posé par `city.js`) l'emporte sur le pays
 - `pt/` : la version en portugais du Brésil (`pt/casos-de-uso/`, `pt/sobre/`, `pt/artigos/`), illustrations des articles comprises, dont les exemples des écrans sont en reais
 - `mentions-legales.html` (et `en/legal-notice/`, `pt/aviso-legal/`) : à compléter (adresse)
 
