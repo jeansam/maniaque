@@ -953,10 +953,13 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 /* Tuile avec exemple : cliquable en entier, le lien se souligne en rouge au survol */
 .uses li:has(.uses-link) { position: relative; transition: border-color .15s; }
 .uses li:has(.uses-link):hover { border-color: var(--grid-strong); }
+/* Page Cas d'usage : au survol ou au clic, la tuile penche légèrement vers la gauche */
+.uses-page .uses li:has(.uses-link) { transition: border-color .15s, transform .2s ease; }
+.uses-page .uses li:has(.uses-link):hover, .uses-page .uses li:has(.uses-link):active { transform: rotate(-1.5deg); }
 .uses-link { display: inline-block; margin-top: .9rem; font-size: .9375rem; font-weight: 600; color: var(--ink); text-decoration: none; text-decoration-thickness: 2px; text-underline-offset: .2em; }
 .uses-link::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
 .uses li:hover .uses-link, .uses-link:focus-visible { text-decoration: underline; text-decoration-color: var(--red); }
-@media (prefers-reduced-motion: reduce) { .uses li { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .uses li, .uses-page .uses li:has(.uses-link) { transition: none; } }
 
 /* Maquette d'un devis : catalogue, lignes, marge et aperçu du document */
 .uc-visual { padding-bottom: var(--space); }
