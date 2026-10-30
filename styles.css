@@ -545,10 +545,7 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
   padding: 1.25rem var(--pad) 1.5rem;
   margin-inline: calc(-1 * var(--pad));
   border-radius: 0 0 4px 4px;
-  transition: background-color .2s ease;
 }
-/* Au survol ou au toucher, le bloc passe sur fond blanc pour le mettre au premier plan */
-.assurances > div:hover, .assurances > div.is-anim { background-color: #fff; }
 .assurances .icon { display: block; width: 3rem; height: 3rem; margin-bottom: 1rem; }
 .assurances p { margin-top: .75rem; color: var(--pencil); max-width: 34rem; }
 
