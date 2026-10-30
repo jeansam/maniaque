@@ -29,246 +29,6 @@ strings:
     en: 'Example screen: a quote being built, with the item catalogue, the margin check and a preview of the document sent to the customer'
     pt: 'Exemplo de tela: um orçamento em criação, com o catálogo de serviços, o cálculo da margem e a prévia do documento enviado ao cliente'
   qtAppClass: qt-app
-  qtSideQtBrand5:
-    fr: <em></em>Devis
-    en: <em></em>Quotes
-    pt: <em></em>Orçamentos
-  qtSideOn6:
-    fr: Devis
-    en: Quotes
-    pt: Orçamentos
-  qtSideLi12:
-    fr: Clients
-    en: Customers
-    pt: Clientes
-  qtSideLi13:
-    fr: Catalogue
-    en: Catalogue
-    pt: Catálogo
-  qtSideLi14:
-    fr: Relances
-    en: Reminders
-    pt: Follow-ups
-  qtHeadQtNum6:
-    fr: Devis D-2026-148
-    en: Quote Q-2026-148
-    pt: Orçamento O-2026-148
-  qtHeadQtClient6:
-    fr: Boulangerie Martin
-    en: Martin Bakery
-    pt: Padaria Martin
-  qtHeadQtStatus:
-    fr: Brouillon
-    en: Draft
-    pt: Rascunho
-  qtCatQtSearch:
-    fr: Rechercher une prestation…
-    en: Search for an item…
-    pt: Buscar um serviço…
-  inSpan:
-    fr: Four mixte 10 niveaux
-    en: 10-tray combi oven
-    pt: Forno combinado 10 GNs
-  inB:
-    fr: 4 800 €
-    en: €4,800
-    pt: "R$\_28.800"
-  inSpan2:
-    fr: Raccordement électrique
-    en: Electrical connection
-    pt: Ligação elétrica
-  inB2:
-    fr: 620 €
-    en: €620
-    pt: "R$\_3.720"
-  inSpan3:
-    fr: Mise en service
-    en: Commissioning
-    pt: Instalação e partida
-  inB3:
-    fr: 280 €
-    en: €280
-    pt: "R$\_1.680"
-  qtCatSpan:
-    fr: Contrat d'entretien annuel
-    en: Annual maintenance plan
-    pt: Contrato de manutenção anual
-  qtCatB:
-    fr: 390 €
-    en: €390
-    pt: "R$\_2.340"
-  inSpan4:
-    fr: Déplacement zone 1
-    en: Travel, zone 1
-    pt: Deslocamento zona 1
-  inB4:
-    fr: 60 €
-    en: €60
-    pt: "R$\_360"
-  qtTrSpan:
-    fr: Désignation
-    en: Description
-    pt: Descrição
-  qtTrSpan2:
-    fr: Qté
-    en: Qty
-    pt: Qtd.
-  qtTrSpan3:
-    fr: Prix HT
-    en: Unit price
-    pt: Preço s/ imp.
-  qtTrSpan4:
-    fr: Total HT
-    en: Total
-    pt: Total s/ imp.
-  qtTrSpan5:
-    fr: Fourniture et pose four mixte 10 niveaux
-    en: Supply and install 10-tray combi oven
-    pt: Fornecimento e instalação forno combinado 10 GNs
-  qtTrSpan6:
-    fr: 4 800 €
-    en: €4,800
-    pt: "R$\_28.800"
-  qtTrSpan7:
-    fr: 4 800 €
-    en: €4,800
-    pt: "R$\_28.800"
-  qtTrSpan8:
-    fr: Raccordement électrique
-    en: Electrical connection
-    pt: Ligação elétrica
-  qtTrSpan9:
-    fr: 620 €
-    en: €620
-    pt: "R$\_3.720"
-  qtTrSpan10:
-    fr: 620 €
-    en: €620
-    pt: "R$\_3.720"
-  qtTrSpan11:
-    fr: Mise en service et réglages
-    en: Commissioning and set-up
-    pt: Partida e ajustes
-  qtTrSpan12:
-    fr: 280 €
-    en: €280
-    pt: "R$\_1.680"
-  qtTrSpan13:
-    fr: 280 €
-    en: €280
-    pt: "R$\_1.680"
-  qtTrSpan14:
-    fr: Déplacement zone 1
-    en: Travel, zone 1
-    pt: Deslocamento zona 1
-  qtTrSpan15:
-    fr: 60 €
-    en: €60
-    pt: "R$\_360"
-  qtTrSpan16:
-    fr: 60 €
-    en: €60
-    pt: "R$\_360"
-  qtMarginB:
-    fr: ✓ Marge 31 %
-    en: ✓ Margin 31%
-    pt: ✓ Margem de 31%
-  qtMarginSpan:
-    fr: au-dessus de votre seuil de 25 %
-    en: above your 25% threshold
-    pt: acima do seu mínimo de 25%
-  qtTotSpan:
-    fr: Total HT
-    en: Total excl. VAT
-    pt: Total s/ impostos
-  qtTotB:
-    fr: 5 760 €
-    en: €5,760
-    pt: "R$\_34.560"
-  qtTotSpan2:
-    fr: TVA 20 %
-    en: VAT 20%
-    pt: Impostos 20%
-  qtTotB2:
-    fr: 1 152 €
-    en: €1,152
-    pt: "R$\_6.912"
-  qtTtcSpan:
-    fr: Total TTC
-    en: Total incl. VAT
-    pt: Total c/ impostos
-  qtTtcB:
-    fr: 6 912 €
-    en: €6,912
-    pt: "R$\_41.472"
-  qtActionsQtRemind:
-    fr: Relance automatique dans 7 jours si pas de réponse
-    en: Automatic reminder in 7 days if no reply
-    pt: Lembrete automático em 7 dias se não houver resposta
-  qtActionsQtSend:
-    fr: Envoyer au client
-    en: Send to customer
-    pt: Enviar ao cliente
-  qtPdfLogo:
-    fr: <em></em>Martin Équipements
-    en: <em></em>Martin Equipment
-    pt: <em></em>Martin Equipamentos
-  qtPdfTitle:
-    fr: DEVIS
-    en: QUOTE
-    pt: ORÇAMENTO
-  qtPdfTo:
-    fr: Boulangerie Martin
-    en: Martin Bakery
-    pt: Padaria Martin
-  qtPdfLinesSpan:
-    fr: Fourniture et pose four mixte 10 niveaux
-    en: Supply and install 10-tray combi oven
-    pt: Fornecimento e instalação forno combinado 10 GNs
-  qtPdfLinesSpan2:
-    fr: 4 800 €
-    en: €4,800
-    pt: "R$\_28.800"
-  qtPdfLinesSpan3:
-    fr: Raccordement électrique
-    en: Electrical connection
-    pt: Ligação elétrica
-  qtPdfLinesSpan4:
-    fr: 620 €
-    en: €620
-    pt: "R$\_3.720"
-  qtPdfLinesSpan5:
-    fr: Mise en service et réglages
-    en: Commissioning and set-up
-    pt: Partida e ajustes
-  qtPdfLinesSpan6:
-    fr: 280 €
-    en: €280
-    pt: "R$\_1.680"
-  qtPdfLinesSpan7:
-    fr: Déplacement zone 1
-    en: Travel, zone 1
-    pt: Deslocamento zona 1
-  qtPdfLinesSpan8:
-    fr: 60 €
-    en: €60
-    pt: "R$\_360"
-  qtPdfTotalSpan:
-    fr: Total TTC
-    en: Total incl. VAT
-    pt: Total c/ impostos
-  qtPdfTotalB:
-    fr: 6 912 €
-    en: €6,912
-    pt: "R$\_41.472"
-  qtPdfValid:
-    fr: Valable 30 jours
-    en: Valid for 30 days
-    pt: Válido por 30 dias
-  qtPdfSign:
-    fr: Bon pour accord
-    en: Accepted
-    pt: De acordo
   qtFigureFigcaption:
     fr: 'Exemple : un devis monté en quatre lignes, marge vérifiée, prêt à partir.'
     en: 'Example: a four-line quote, margin checked, ready to go.'
@@ -277,3 +37,262 @@ strings:
     fr: Dites-nous comment vous établissez vos devis aujourd'hui.
     en: Tell us how you handle quotes today.
     pt: Conte para nós como você faz os seus orçamentos hoje.
+  qtSideQtBrand:
+    fr: <em></em>Devis
+    en: <em></em>Quotes
+    pt: <em></em>Orçamentos
+  items:
+    - 'on': true
+      label:
+        fr: Devis
+        en: Quotes
+        pt: Orçamentos
+    - label:
+        fr: Clients
+        en: Customers
+        pt: Clientes
+    - label:
+        fr: Catalogue
+        en: Catalogue
+        pt: Catálogo
+    - label:
+        fr: Relances
+        en: Reminders
+        pt: Follow-ups
+  qtNums:
+    - class: qt-num
+      label:
+        fr: Devis D-2026-148
+        en: Quote Q-2026-148
+        pt: Orçamento O-2026-148
+    - class: qt-client
+      label:
+        fr: Boulangerie Martin
+        en: Martin Bakery
+        pt: Padaria Martin
+  qtHeadQtStatus:
+    fr: Brouillon
+    en: Draft
+    pt: Rascunho
+  qtCatQtSearch:
+    fr: Rechercher une prestation…
+    en: Search for an item…
+    pt: Buscar um serviço…
+  ins:
+    - class: in
+      span:
+        fr: Four mixte 10 niveaux
+        en: 10-tray combi oven
+        pt: Forno combinado 10 GNs
+      b:
+        fr: 4 800 €
+        en: €4,800
+        pt: "R$\_28.800"
+    - class: in
+      span:
+        fr: Raccordement électrique
+        en: Electrical connection
+        pt: Ligação elétrica
+      b:
+        fr: 620 €
+        en: €620
+        pt: "R$\_3.720"
+    - class: in
+      span:
+        fr: Mise en service
+        en: Commissioning
+        pt: Instalação e partida
+      b:
+        fr: 280 €
+        en: €280
+        pt: "R$\_1.680"
+    - class: ''
+      span:
+        fr: Contrat d'entretien annuel
+        en: Annual maintenance plan
+        pt: Contrato de manutenção anual
+      b:
+        fr: 390 €
+        en: €390
+        pt: "R$\_2.340"
+    - class: in
+      span:
+        fr: Déplacement zone 1
+        en: Travel, zone 1
+        pt: Deslocamento zona 1
+      b:
+        fr: 60 €
+        en: €60
+        pt: "R$\_360"
+  qtTable:
+    - class: qt-tr qt-th
+      items:
+        - fr: Désignation
+          en: Description
+          pt: Descrição
+        - fr: Qté
+          en: Qty
+          pt: Qtd.
+        - fr: Prix HT
+          en: Unit price
+          pt: Preço s/ imp.
+        - fr: Total HT
+          en: Total
+          pt: Total s/ imp.
+    - class: qt-tr
+      items:
+        - fr: Fourniture et pose four mixte 10 niveaux
+          en: Supply and install 10-tray combi oven
+          pt: Fornecimento e instalação forno combinado 10 GNs
+        - '1'
+        - fr: 4 800 €
+          en: €4,800
+          pt: "R$\_28.800"
+        - fr: 4 800 €
+          en: €4,800
+          pt: "R$\_28.800"
+    - class: qt-tr
+      items:
+        - fr: Raccordement électrique
+          en: Electrical connection
+          pt: Ligação elétrica
+        - '1'
+        - fr: 620 €
+          en: €620
+          pt: "R$\_3.720"
+        - fr: 620 €
+          en: €620
+          pt: "R$\_3.720"
+    - class: qt-tr
+      items:
+        - fr: Mise en service et réglages
+          en: Commissioning and set-up
+          pt: Partida e ajustes
+        - '1'
+        - fr: 280 €
+          en: €280
+          pt: "R$\_1.680"
+        - fr: 280 €
+          en: €280
+          pt: "R$\_1.680"
+    - class: qt-tr
+      items:
+        - fr: Déplacement zone 1
+          en: Travel, zone 1
+          pt: Deslocamento zona 1
+        - '1'
+        - fr: 60 €
+          en: €60
+          pt: "R$\_360"
+        - fr: 60 €
+          en: €60
+          pt: "R$\_360"
+  qtMarginB:
+    fr: ✓ Marge 31 %
+    en: ✓ Margin 31%
+    pt: ✓ Margem de 31%
+  qtMarginSpan:
+    fr: au-dessus de votre seuil de 25 %
+    en: above your 25% threshold
+    pt: acima do seu mínimo de 25%
+  qtTot:
+    - span:
+        fr: Total HT
+        en: Total excl. VAT
+        pt: Total s/ impostos
+      b:
+        fr: 5 760 €
+        en: €5,760
+        pt: "R$\_34.560"
+    - span:
+        fr: TVA 20 %
+        en: VAT 20%
+        pt: Impostos 20%
+      b:
+        fr: 1 152 €
+        en: €1,152
+        pt: "R$\_6.912"
+    - qtTtc: true
+      span:
+        fr: Total TTC
+        en: Total incl. VAT
+        pt: Total c/ impostos
+      b:
+        fr: 6 912 €
+        en: €6,912
+        pt: "R$\_41.472"
+  qtActions:
+    - class: qt-remind
+      label:
+        fr: Relance automatique dans 7 jours si pas de réponse
+        en: Automatic reminder in 7 days if no reply
+        pt: Lembrete automático em 7 dias se não houver resposta
+    - class: qt-send
+      label:
+        fr: Envoyer au client
+        en: Send to customer
+        pt: Enviar ao cliente
+  qtPdfLogos:
+    - class: qt-pdf-logo
+      label:
+        fr: <em></em>Martin Équipements
+        en: <em></em>Martin Equipment
+        pt: <em></em>Martin Equipamentos
+    - class: qt-pdf-title
+      label:
+        fr: DEVIS
+        en: QUOTE
+        pt: ORÇAMENTO
+    - class: qt-pdf-to
+      label:
+        fr: Boulangerie Martin
+        en: Martin Bakery
+        pt: Padaria Martin
+  qtPdfLines:
+    - items:
+        - fr: Fourniture et pose four mixte 10 niveaux
+          en: Supply and install 10-tray combi oven
+          pt: Fornecimento e instalação forno combinado 10 GNs
+        - fr: 4 800 €
+          en: €4,800
+          pt: "R$\_28.800"
+    - items:
+        - fr: Raccordement électrique
+          en: Electrical connection
+          pt: Ligação elétrica
+        - fr: 620 €
+          en: €620
+          pt: "R$\_3.720"
+    - items:
+        - fr: Mise en service et réglages
+          en: Commissioning and set-up
+          pt: Partida e ajustes
+        - fr: 280 €
+          en: €280
+          pt: "R$\_1.680"
+    - items:
+        - fr: Déplacement zone 1
+          en: Travel, zone 1
+          pt: Deslocamento zona 1
+        - fr: 60 €
+          en: €60
+          pt: "R$\_360"
+  qtPdfTotalSpan:
+    fr: Total TTC
+    en: Total incl. VAT
+    pt: Total c/ impostos
+  qtPdfTotalB:
+    fr: 6 912 €
+    en: €6,912
+    pt: "R$\_41.472"
+  qtPdfValids:
+    - class: qt-pdf-valid
+      label:
+        fr: Valable 30 jours
+        en: Valid for 30 days
+        pt: Válido por 30 dias
+    - class: qt-pdf-sign
+      label:
+        fr: Bon pour accord
+        en: Accepted
+        pt: De acordo

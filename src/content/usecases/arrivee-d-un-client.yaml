@@ -29,102 +29,6 @@ strings:
     en: 'Example screen: new client setup'
     pt: 'Exemplo de tela: novo cliente'
   qtAppClass: qt-app
-  qtSideQtBrand:
-    fr: <em></em>Clients
-    en: <em></em>Clients
-    pt: <em></em>Clientes
-  qtSideOn:
-    fr: Arrivées
-    en: Onboarding
-    pt: Entradas
-  qtSideLi:
-    fr: Clients
-    en: Clients
-    pt: Clientes
-  qtSideLi2:
-    fr: Documents
-    en: Documents
-    pt: Documentos
-  qtHeadQtNum:
-    fr: Imprimerie Petit
-    en: Imprimerie Petit
-    pt: Gráfica Petit
-  qtHeadQtClient:
-    fr: Nouveau client
-    en: New client
-    pt: Novo cliente
-  qtHeadMkPill:
-    fr: 4 étapes sur 6
-    en: 4 of 6 steps
-    pt: 4 de 6 etapas
-  mkPanelMkH:
-    fr: Imprimerie Petit · arrivée lancée ce matin
-    en: Petit Print · onboarding started this morning
-    pt: Gráfica Petit · entrada iniciada hoje de manhã
-  mkFieldSpan:
-    fr: ✓ Formulaire rempli par le client
-    en: ✓ Form filled in by client
-    pt: ✓ Formulário preenchido pelo cliente
-  mkFieldMkPill:
-    fr: Fait
-    en: Done
-    pt: Feito
-  mkFieldSpan2:
-    fr: ✓ Kbis et RIB déposés
-    en: ✓ Company docs and bank details uploaded
-    pt: ✓ Contrato social e dados bancários enviados
-  mkFieldMkPill2:
-    fr: Fait
-    en: Done
-    pt: Feito
-  mkFieldSpan3:
-    fr: ✓ Contrat signé en ligne
-    en: ✓ Contract signed online
-    pt: ✓ Contrato assinado online
-  mkFieldMkPill3:
-    fr: Fait
-    en: Done
-    pt: Feito
-  mkFieldSpan4:
-    fr: ✓ Fiche créée en compta et au CRM
-    en: ✓ Record created in accounts and CRM
-    pt: ✓ Cadastro criado na contabilidade e no CRM
-  mkFieldMkPill4:
-    fr: Fait
-    en: Done
-    pt: Feito
-  mkFieldSpan5:
-    fr: Accès à l'espace client envoyés
-    en: Portal access sent
-    pt: Acessos à área do cliente enviados
-  mkFieldMkPill5:
-    fr: En cours
-    en: In progress
-    pt: Em andamento
-  mkFieldSpan6:
-    fr: Rendez-vous de lancement
-    en: Kick-off meeting
-    pt: Reunião de kickoff
-  mkFieldMkPill6:
-    fr: Jeudi 10 h
-    en: Thu 10am
-    pt: Quinta, 10h
-  mkAsideMkH:
-    fr: Arrivées en cours
-    en: Onboarding now
-    pt: Entradas em andamento
-  mkItemSpan:
-    fr: Garage Leroy
-    en: Garage Leroy
-    pt: Oficina Leroy
-  mkItemSpan2:
-    fr: Hôtel des Alpes
-    en: Hôtel des Alpes
-    pt: Hotel dos Alpes
-  mkItemSpan3:
-    fr: Ferme Duval
-    en: Ferme Duval
-    pt: Fazenda Duval
   qtFigureFigcaption:
     fr: 'Exemple : un client arrivé ce matin, déjà aux deux tiers du parcours.'
     en: 'Example: a client who started this morning, already two thirds of the way.'
@@ -133,3 +37,126 @@ strings:
     fr: Dites-nous comment se passe l'arrivée d'un client aujourd'hui.
     en: Tell us how a new client gets set up today.
     pt: Conte para nós como funciona hoje a entrada de um novo cliente.
+  qtSideQtBrand:
+    fr: <em></em>Clients
+    en: <em></em>Clients
+    pt: <em></em>Clientes
+  items:
+    - 'on': true
+      label:
+        fr: Arrivées
+        en: Onboarding
+        pt: Entradas
+    - label:
+        fr: Clients
+        en: Clients
+        pt: Clientes
+    - label:
+        fr: Documents
+        en: Documents
+        pt: Documentos
+  qtNums:
+    - class: qt-num
+      label:
+        fr: Imprimerie Petit
+        en: Imprimerie Petit
+        pt: Gráfica Petit
+    - class: qt-client
+      label:
+        fr: Nouveau client
+        en: New client
+        pt: Novo cliente
+  qtHeadMkPill:
+    fr: 4 étapes sur 6
+    en: 4 of 6 steps
+    pt: 4 de 6 etapas
+  mkPanelMkH:
+    fr: Imprimerie Petit · arrivée lancée ce matin
+    en: Petit Print · onboarding started this morning
+    pt: Gráfica Petit · entrada iniciada hoje de manhã
+  mkField:
+    - label:
+        fr: ✓ Formulaire rempli par le client
+        en: ✓ Form filled in by client
+        pt: ✓ Formulário preenchido pelo cliente
+    - mkPillMkOk: true
+      label:
+        fr: Fait
+        en: Done
+        pt: Feito
+  mkField2:
+    - label:
+        fr: ✓ Kbis et RIB déposés
+        en: ✓ Company docs and bank details uploaded
+        pt: ✓ Contrato social e dados bancários enviados
+    - mkPillMkOk: true
+      label:
+        fr: Fait
+        en: Done
+        pt: Feito
+  mkField3:
+    - label:
+        fr: ✓ Contrat signé en ligne
+        en: ✓ Contract signed online
+        pt: ✓ Contrato assinado online
+    - mkPillMkOk: true
+      label:
+        fr: Fait
+        en: Done
+        pt: Feito
+  mkField4:
+    - label:
+        fr: ✓ Fiche créée en compta et au CRM
+        en: ✓ Record created in accounts and CRM
+        pt: ✓ Cadastro criado na contabilidade e no CRM
+    - mkPillMkOk: true
+      label:
+        fr: Fait
+        en: Done
+        pt: Feito
+  mkField5:
+    - label:
+        fr: Accès à l'espace client envoyés
+        en: Portal access sent
+        pt: Acessos à área do cliente enviados
+    - mkPillMkWarn: true
+      label:
+        fr: En cours
+        en: In progress
+        pt: Em andamento
+  mkField6:
+    - label:
+        fr: Rendez-vous de lancement
+        en: Kick-off meeting
+        pt: Reunião de kickoff
+    - mkPillMkInfo: true
+      label:
+        fr: Jeudi 10 h
+        en: Thu 10am
+        pt: Quinta, 10h
+  mkAsideMkH:
+    fr: Arrivées en cours
+    en: Onboarding now
+    pt: Entradas em andamento
+  mkItems:
+    - items:
+        - label:
+            fr: Garage Leroy
+            en: Garage Leroy
+            pt: Oficina Leroy
+        - mkBarMkBarInk: true
+          label: <i style="width:100%"></i>
+    - items:
+        - label:
+            fr: Hôtel des Alpes
+            en: Hôtel des Alpes
+            pt: Hotel dos Alpes
+        - mkBarMkBarInk: true
+          label: <i style="width:66%"></i>
+    - items:
+        - label:
+            fr: Ferme Duval
+            en: Ferme Duval
+            pt: Fazenda Duval
+        - mkBarMkBarInk: true
+          label: <i style="width:33%"></i>

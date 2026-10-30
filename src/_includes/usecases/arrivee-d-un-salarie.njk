@@ -1,7 +1,7 @@
-
-            <aside class="qt-side"><p class="qt-brand">{{ s.qtSideQtBrand2 }}</p><ul><li class=on>{{ s.qtSideOn2 }}</li><li>{{ s.qtSideLi3 }}</li><li>{{ s.qtSideLi4 }}</li></ul></aside>
+{% import "components.njk" as c %}
+            {{ c.dcSide("qt-side", "qt-brand", s.qtSideQtBrand, s.items) }}
             <div class="qt-main">
-              <div class="qt-head"><div><p class="qt-num">{{ s.qtHeadQtNum2 }}</p><p class="qt-client">{{ s.qtHeadQtClient2 }}</p></div><span class="mk-pill mk-ok">{{ s.qtHeadMkPill2 }}</span></div>
-              <div class="mk-panel"><p class="mk-h">{{ s.mkPanelMkH2 }}</p><span class="mk-bar mk-bar-ink"><i style="width:55%"></i></span></div><div class="mk-kanban mk-k3"><div class="mk-col"><p class="mk-colh">{{ s.mkColh }}</p><div class="mk-card mk-task done"><b>{{ s.mkCardB }}</b></div><div class="mk-card mk-task done"><b>{{ s.mkCardB2 }}</b></div><div class="mk-card mk-task"><b>{{ s.mkCardB3 }}</b></div></div><div class="mk-col"><p class="mk-colh">{{ s.mkColh2 }}</p><div class="mk-card mk-task done"><b>{{ s.mkCardB4 }}</b></div><div class="mk-card mk-task done"><b>{{ s.mkCardB5 }}</b></div><div class="mk-card mk-task"><b>{{ s.mkCardB6 }}</b></div></div><div class="mk-col"><p class="mk-colh">{{ s.mkColh3 }}</p><div class="mk-card mk-task done"><b>{{ s.mkCardB7 }}</b></div><div class="mk-card mk-task"><b>{{ s.mkCardB8 }}</b></div><div class="mk-card mk-task"><b>{{ s.mkCardB9 }}</b></div></div></div>
+              {{ c.dcHead("qt-head", s.qtNums, "mk-pill mk-ok", s.qtHeadMkPill) }}
+              {{ c.mkPanel("width:55%", s.mkPanelMkH) }}<div class="mk-kanban mk-k3">{% for mkCol in s.mkKanban %}<div class="mk-col"><p class="mk-colh">{{ mkCol.mkColh }}</p>{% for mkCard in mkCol.mkCards %}<div class="{{ mkCard.class }}"><b>{{ mkCard.b }}</b></div>{% endfor %}</div>{% endfor %}</div>
             </div>
           

@@ -22,18 +22,25 @@ splitTextFondateur:
   fr: Qui vous répond
   en: Who you'll be talking to
   pt: Quem responde a você
-portraitImgAlt:
-  fr: Portrait de Jean-Samuel Jéquier, fondateur de Maniaque
-  en: Portrait of Jean-Samuel Jéquier, founder of Maniaque
-  pt: Retrato de Jean-Samuel Jéquier, fundador da Maniaque
-portraitImgAlt2:
-  fr: Portrait d'Eliakim Oliveira, Maniaque São Paulo
-  en: Portrait of Eliakim Oliveira, Maniaque São Paulo
-  pt: Retrato de Eliakim Oliveira, Maniaque São Paulo
-portraitImgAlt3:
-  fr: Portrait de Nthuseni Mathaga, Maniaque Johannesbourg
-  en: Portrait of Nthuseni Mathaga, Maniaque Johannesburg
-  pt: Retrato de Nthuseni Mathaga, Maniaque Joanesburgo
+portraits:
+  - dataCityOnly: marseille
+    imgSrc: /images/jean-samuel.webp
+    imgAlt:
+      fr: Portrait de Jean-Samuel Jéquier, fondateur de Maniaque
+      en: Portrait of Jean-Samuel Jéquier, founder of Maniaque
+      pt: Retrato de Jean-Samuel Jéquier, fundador da Maniaque
+  - dataCityOnly: sao-paulo
+    imgSrc: /images/eliakim-oliveira.webp
+    imgAlt:
+      fr: Portrait d'Eliakim Oliveira, Maniaque São Paulo
+      en: Portrait of Eliakim Oliveira, Maniaque São Paulo
+      pt: Retrato de Eliakim Oliveira, Maniaque São Paulo
+  - dataCityOnly: johannesburg
+    imgSrc: /images/nthuseni-mathaga.webp
+    imgAlt:
+      fr: Portrait de Nthuseni Mathaga, Maniaque Johannesbourg
+      en: Portrait of Nthuseni Mathaga, Maniaque Johannesburg
+      pt: Retrato de Nthuseni Mathaga, Maniaque Joanesburgo
 founderP:
   fr: 'Depuis 2019, Jean-Samuel Jéquier crée des applications pour des entrepreneurs comme pour des grands groupes : une centaine au total, dans le tourisme, le monde associatif, le commerce, le médical, la fintech, la comptabilité, et bien d''autres secteurs.'
   en: 'Since 2019, Jean-Samuel Jéquier has been building applications for entrepreneurs and large companies alike: about a hundred in total, in tourism, non-profits, retail, healthcare, fintech, accounting and many other industries.'

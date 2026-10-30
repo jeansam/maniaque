@@ -6,18 +6,16 @@ ucBtn:
   fr: Réserver mon audit gratuit
   en: Book my free audit
   pt: Agendar meu diagnóstico gratuito
-ucFactsLi:
-  fr: Première version en 2 à 8&nbsp;semaines
-  en: First version in 2 to 8&nbsp;weeks
-  pt: Primeira versão em 2 a 8&nbsp;semanas
-ucFactsLi2:
-  fr: <span data-price="monthly"></span>&nbsp;HT par mois
-  en: <span data-price="monthly"></span> excl. VAT per month
-  pt: <span data-price="monthly"></span> por mês, sem impostos
-ucFactsLi3:
-  fr: Audit gratuit
-  en: Free audit
-  pt: Diagnóstico gratuito
+ucFacts:
+  - fr: Première version en 2 à 8&nbsp;semaines
+    en: First version in 2 to 8&nbsp;weeks
+    pt: Primeira versão em 2 a 8&nbsp;semanas
+  - fr: <span data-price="monthly"></span>&nbsp;HT par mois
+    en: <span data-price="monthly"></span> excl. VAT per month
+    pt: <span data-price="monthly"></span> por mês, sem impostos
+  - fr: Audit gratuit
+    en: Free audit
+    pt: Diagnóstico gratuito
 auditP:
   fr: 45 minutes, gratuites et sans engagement. On repère où vous perdez le plus de temps, et ce qu'on construirait en premier.
   en: 45 minutes, free and with no commitment. We'll find where you lose the most time, and what we'd build first.

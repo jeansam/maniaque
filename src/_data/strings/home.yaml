@@ -14,54 +14,67 @@ worldCitiesAriaLabel:
   fr: Nos villes
   en: Our cities
   pt: Nossas cidades
-cityA:
-  fr: |2-
+cities:
+  - dataAnchor: center
+    style: '--x: 51.49%; --y: 28.66%'
+    aHref: /offre/?ville=marseille
+    aDataPersonOf: marseille
+    a:
+      fr: |2-
 
-                <span class="city-dot" aria-hidden="true"></span>
-                <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-jean-samuel.webp" width="56" height="56" alt=""><span><strong data-person-name>Jean-Sam</strong><span>Spécialiste Produit &amp; IA</span><span class="city-name">Marseille</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
-              
-  en: |2-
+                    <span class="city-dot" aria-hidden="true"></span>
+                    <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-jean-samuel.webp" width="56" height="56" alt=""><span><strong data-person-name>Jean-Sam</strong><span>Spécialiste Produit &amp; IA</span><span class="city-name">Marseille</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
+                  
+      en: |2-
 
-                <span class="city-dot" aria-hidden="true"></span>
-                <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-jean-samuel.webp" width="56" height="56" alt=""><span><strong data-person-name>Jean-Sam</strong><span>Product &amp; AI specialist</span><span class="city-name">Marseille</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
-              
-  pt: |2-
+                    <span class="city-dot" aria-hidden="true"></span>
+                    <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-jean-samuel.webp" width="56" height="56" alt=""><span><strong data-person-name>Jean-Sam</strong><span>Product &amp; AI specialist</span><span class="city-name">Marseille</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
+                  
+      pt: |2-
 
-                <span class="city-dot" aria-hidden="true"></span>
-                <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-jean-samuel.webp" width="56" height="56" alt=""><span><strong data-person-name>Jean-Sam</strong><span>Especialista em Produto &amp; IA</span><span class="city-name">Marselha</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
-              
-cityA2:
-  fr: |2-
+                    <span class="city-dot" aria-hidden="true"></span>
+                    <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-jean-samuel.webp" width="56" height="56" alt=""><span><strong data-person-name>Jean-Sam</strong><span>Especialista em Produto &amp; IA</span><span class="city-name">Marselha</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
+                  
+  - dataAnchor: start
+    style: '--x: 37.05%; --y: 75.74%'
+    aHref: /pt/oferta/?ville=sao-paulo
+    aDataPersonOf: sao-paulo
+    a:
+      fr: |2-
 
-                <span class="city-dot" aria-hidden="true"></span>
-                <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-eliakim-oliveira.webp" width="56" height="56" alt=""><span><strong data-person-name>Eliakim</strong><span>Spécialiste Produit &amp; IA</span><span class="city-name">São Paulo</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
-              
-  en: |2-
+                    <span class="city-dot" aria-hidden="true"></span>
+                    <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-eliakim-oliveira.webp" width="56" height="56" alt=""><span><strong data-person-name>Eliakim</strong><span>Spécialiste Produit &amp; IA</span><span class="city-name">São Paulo</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
+                  
+      en: |2-
 
-                <span class="city-dot" aria-hidden="true"></span>
-                <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-eliakim-oliveira.webp" width="56" height="56" alt=""><span><strong data-person-name>Eliakim</strong><span>Product &amp; AI specialist</span><span class="city-name">São Paulo</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
-              
-  pt: |2-
+                    <span class="city-dot" aria-hidden="true"></span>
+                    <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-eliakim-oliveira.webp" width="56" height="56" alt=""><span><strong data-person-name>Eliakim</strong><span>Product &amp; AI specialist</span><span class="city-name">São Paulo</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
+                  
+      pt: |2-
 
-                <span class="city-dot" aria-hidden="true"></span>
-                <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-eliakim-oliveira.webp" width="56" height="56" alt=""><span><strong data-person-name>Eliakim</strong><span>Especialista em Produto &amp; IA</span><span class="city-name">São Paulo</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
-              
-cityA3:
-  fr: |2-
+                    <span class="city-dot" aria-hidden="true"></span>
+                    <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-eliakim-oliveira.webp" width="56" height="56" alt=""><span><strong data-person-name>Eliakim</strong><span>Especialista em Produto &amp; IA</span><span class="city-name">São Paulo</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
+                  
+  - dataAnchor: end
+    style: '--x: 57.79%; --y: 77.61%'
+    aHref: /en/offer/?ville=johannesburg
+    aDataPersonOf: johannesburg
+    a:
+      fr: |2-
 
-                <span class="city-dot" aria-hidden="true"></span>
-                <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-nthuseni-mathaga.webp" width="56" height="56" alt=""><span><strong data-person-name>Nthuseni</strong><span>Spécialiste Produit &amp; IA</span><span class="city-name">Johannesbourg</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
-              
-  en: |2-
+                    <span class="city-dot" aria-hidden="true"></span>
+                    <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-nthuseni-mathaga.webp" width="56" height="56" alt=""><span><strong data-person-name>Nthuseni</strong><span>Spécialiste Produit &amp; IA</span><span class="city-name">Johannesbourg</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
+                  
+      en: |2-
 
-                <span class="city-dot" aria-hidden="true"></span>
-                <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-nthuseni-mathaga.webp" width="56" height="56" alt=""><span><strong data-person-name>Nthuseni</strong><span>Product &amp; AI specialist</span><span class="city-name">Johannesburg</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
-              
-  pt: |2-
+                    <span class="city-dot" aria-hidden="true"></span>
+                    <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-nthuseni-mathaga.webp" width="56" height="56" alt=""><span><strong data-person-name>Nthuseni</strong><span>Product &amp; AI specialist</span><span class="city-name">Johannesburg</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
+                  
+      pt: |2-
 
-                <span class="city-dot" aria-hidden="true"></span>
-                <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-nthuseni-mathaga.webp" width="56" height="56" alt=""><span><strong data-person-name>Nthuseni</strong><span>Especialista em Produto &amp; IA</span><span class="city-name">Joanesburgo</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
-              
+                    <span class="city-dot" aria-hidden="true"></span>
+                    <span class="city-card"><img data-person-photo draggable="false" src="/images/avatar-nthuseni-mathaga.webp" width="56" height="56" alt=""><span><strong data-person-name>Nthuseni</strong><span>Especialista em Produto &amp; IA</span><span class="city-name">Joanesburgo</span></span><svg class="city-go" viewBox="0 0 30 16" width="30" height="16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3.5 7.5 8 3 12.5"/><path d="M12 3.5 16.5 8 12 12.5"/><path d="M21 3.5 25.5 8 21 12.5"/></svg></span>
+                  
 usesMarqueeAriaLabel:
   fr: Nos cas d'usage
   en: Our use cases
@@ -290,227 +303,230 @@ marqueeTrackA28:
   fr: Lecture de documents
   en: Document reading
   pt: Leitura de documentos
-marqueeTrackAHref33:
-  fr: /cas-d-usage/feuilles-de-temps/
-  en: /en/use-cases/timesheets/
-  pt: /pt/casos-de-uso/registro-de-horas/
-marqueeTrackA29:
-  fr: Feuilles de temps
-  en: Timesheets
-  pt: Registro de horas
-marqueeTrackAHref34:
-  fr: /cas-d-usage/propositions-commerciales/
-  en: /en/use-cases/sales-proposals/
-  pt: /pt/casos-de-uso/propostas-comerciais/
-marqueeTrackA30:
-  fr: Propositions commerciales
-  en: Sales proposals
-  pt: Propostas comerciais
-marqueeTrackAHref35:
-  fr: /cas-d-usage/arrivee-d-un-client/
-  en: /en/use-cases/new-client-setup/
-  pt: /pt/casos-de-uso/novo-cliente/
-marqueeTrackA31:
-  fr: Arrivée d'un client
-  en: New client setup
-  pt: Novo cliente
-marqueeTrackAHref36:
-  fr: /cas-d-usage/support-client/
-  en: /en/use-cases/customer-support/
-  pt: /pt/casos-de-uso/suporte-ao-cliente/
-marqueeTrackA32:
-  fr: Support client
-  en: Customer support
-  pt: Suporte ao cliente
-marqueeTrackAHref37:
-  fr: /cas-d-usage/contrats-et-echeances/
-  en: /en/use-cases/contracts-and-deadlines/
-  pt: /pt/casos-de-uso/contratos-e-prazos/
-marqueeTrackA33:
-  fr: Contrats et échéances
-  en: Contracts and deadlines
-  pt: Contratos e prazos
-marqueeTrackAHref38:
-  fr: /cas-d-usage/conformite/
-  en: /en/use-cases/compliance/
-  pt: /pt/casos-de-uso/conformidade/
-marqueeTrackA34:
-  fr: Conformité
-  en: Compliance
-  pt: Conformidade
-marqueeTrackAHref39:
-  fr: /cas-d-usage/arrivee-d-un-salarie/
-  en: /en/use-cases/new-hires/
-  pt: /pt/casos-de-uso/novo-funcionario/
-marqueeTrackA35:
-  fr: Arrivée d'un salarié
-  en: New hires
-  pt: Novo funcionário
-marqueeTrackAHref40:
-  fr: /cas-d-usage/feuilles-de-temps/
-  en: /en/use-cases/timesheets/
-  pt: /pt/casos-de-uso/registro-de-horas/
-marqueeTrackA36:
-  fr: Feuilles de temps
-  en: Timesheets
-  pt: Registro de horas
-marqueeTrackAHref41:
-  fr: /cas-d-usage/propositions-commerciales/
-  en: /en/use-cases/sales-proposals/
-  pt: /pt/casos-de-uso/propostas-comerciais/
-marqueeTrackA37:
-  fr: Propositions commerciales
-  en: Sales proposals
-  pt: Propostas comerciais
-marqueeTrackAHref42:
-  fr: /cas-d-usage/arrivee-d-un-client/
-  en: /en/use-cases/new-client-setup/
-  pt: /pt/casos-de-uso/novo-cliente/
-marqueeTrackA38:
-  fr: Arrivée d'un client
-  en: New client setup
-  pt: Novo cliente
-marqueeTrackAHref43:
-  fr: /cas-d-usage/support-client/
-  en: /en/use-cases/customer-support/
-  pt: /pt/casos-de-uso/suporte-ao-cliente/
-marqueeTrackA39:
-  fr: Support client
-  en: Customer support
-  pt: Suporte ao cliente
-marqueeTrackAHref44:
-  fr: /cas-d-usage/contrats-et-echeances/
-  en: /en/use-cases/contracts-and-deadlines/
-  pt: /pt/casos-de-uso/contratos-e-prazos/
-marqueeTrackA40:
-  fr: Contrats et échéances
-  en: Contracts and deadlines
-  pt: Contratos e prazos
-marqueeTrackAHref45:
-  fr: /cas-d-usage/conformite/
-  en: /en/use-cases/compliance/
-  pt: /pt/casos-de-uso/conformidade/
-marqueeTrackA41:
-  fr: Conformité
-  en: Compliance
-  pt: Conformidade
-marqueeTrackAHref46:
-  fr: /cas-d-usage/arrivee-d-un-salarie/
-  en: /en/use-cases/new-hires/
-  pt: /pt/casos-de-uso/novo-funcionario/
-marqueeTrackA42:
-  fr: Arrivée d'un salarié
-  en: New hires
-  pt: Novo funcionário
-marqueeTrackAHref47:
-  fr: /cas-d-usage/feuilles-de-temps/
-  en: /en/use-cases/timesheets/
-  pt: /pt/casos-de-uso/registro-de-horas/
-marqueeTrackA43:
-  fr: Feuilles de temps
-  en: Timesheets
-  pt: Registro de horas
-marqueeTrackAHref48:
-  fr: /cas-d-usage/propositions-commerciales/
-  en: /en/use-cases/sales-proposals/
-  pt: /pt/casos-de-uso/propostas-comerciais/
-marqueeTrackA44:
-  fr: Propositions commerciales
-  en: Sales proposals
-  pt: Propostas comerciais
-marqueeTrackAHref49:
-  fr: /cas-d-usage/arrivee-d-un-client/
-  en: /en/use-cases/new-client-setup/
-  pt: /pt/casos-de-uso/novo-cliente/
-marqueeTrackA45:
-  fr: Arrivée d'un client
-  en: New client setup
-  pt: Novo cliente
-marqueeTrackAHref50:
-  fr: /cas-d-usage/support-client/
-  en: /en/use-cases/customer-support/
-  pt: /pt/casos-de-uso/suporte-ao-cliente/
-marqueeTrackA46:
-  fr: Support client
-  en: Customer support
-  pt: Suporte ao cliente
-marqueeTrackAHref51:
-  fr: /cas-d-usage/contrats-et-echeances/
-  en: /en/use-cases/contracts-and-deadlines/
-  pt: /pt/casos-de-uso/contratos-e-prazos/
-marqueeTrackA47:
-  fr: Contrats et échéances
-  en: Contracts and deadlines
-  pt: Contratos e prazos
-marqueeTrackAHref52:
-  fr: /cas-d-usage/conformite/
-  en: /en/use-cases/compliance/
-  pt: /pt/casos-de-uso/conformidade/
-marqueeTrackA48:
-  fr: Conformité
-  en: Compliance
-  pt: Conformidade
-marqueeTrackAHref53:
-  fr: /cas-d-usage/arrivee-d-un-salarie/
-  en: /en/use-cases/new-hires/
-  pt: /pt/casos-de-uso/novo-funcionario/
-marqueeTrackA49:
-  fr: Arrivée d'un salarié
-  en: New hires
-  pt: Novo funcionário
-marqueeTrackAHref54:
-  fr: /cas-d-usage/feuilles-de-temps/
-  en: /en/use-cases/timesheets/
-  pt: /pt/casos-de-uso/registro-de-horas/
-marqueeTrackA50:
-  fr: Feuilles de temps
-  en: Timesheets
-  pt: Registro de horas
-marqueeTrackAHref55:
-  fr: /cas-d-usage/propositions-commerciales/
-  en: /en/use-cases/sales-proposals/
-  pt: /pt/casos-de-uso/propostas-comerciais/
-marqueeTrackA51:
-  fr: Propositions commerciales
-  en: Sales proposals
-  pt: Propostas comerciais
-marqueeTrackAHref56:
-  fr: /cas-d-usage/arrivee-d-un-client/
-  en: /en/use-cases/new-client-setup/
-  pt: /pt/casos-de-uso/novo-cliente/
-marqueeTrackA52:
-  fr: Arrivée d'un client
-  en: New client setup
-  pt: Novo cliente
-marqueeTrackAHref57:
-  fr: /cas-d-usage/support-client/
-  en: /en/use-cases/customer-support/
-  pt: /pt/casos-de-uso/suporte-ao-cliente/
-marqueeTrackA53:
-  fr: Support client
-  en: Customer support
-  pt: Suporte ao cliente
-marqueeTrackAHref58:
-  fr: /cas-d-usage/contrats-et-echeances/
-  en: /en/use-cases/contracts-and-deadlines/
-  pt: /pt/casos-de-uso/contratos-e-prazos/
-marqueeTrackA54:
-  fr: Contrats et échéances
-  en: Contracts and deadlines
-  pt: Contratos e prazos
-marqueeTrackAHref59:
-  fr: /cas-d-usage/conformite/
-  en: /en/use-cases/compliance/
-  pt: /pt/casos-de-uso/conformidade/
-marqueeTrackA55:
-  fr: Conformité
-  en: Compliance
-  pt: Conformidade
-marqueeTrackAHref60:
-  fr: /cas-d-usage/arrivee-d-un-salarie/
-  en: /en/use-cases/new-hires/
-  pt: /pt/casos-de-uso/novo-funcionario/
-marqueeTrackA56:
-  fr: Arrivée d'un salarié
-  en: New hires
-  pt: Novo funcionário
+items:
+  - aHref:
+      fr: /cas-d-usage/feuilles-de-temps/
+      en: /en/use-cases/timesheets/
+      pt: /pt/casos-de-uso/registro-de-horas/
+    a:
+      fr: Feuilles de temps
+      en: Timesheets
+      pt: Registro de horas
+  - aHref:
+      fr: /cas-d-usage/propositions-commerciales/
+      en: /en/use-cases/sales-proposals/
+      pt: /pt/casos-de-uso/propostas-comerciais/
+    a:
+      fr: Propositions commerciales
+      en: Sales proposals
+      pt: Propostas comerciais
+  - aHref:
+      fr: /cas-d-usage/arrivee-d-un-client/
+      en: /en/use-cases/new-client-setup/
+      pt: /pt/casos-de-uso/novo-cliente/
+    a:
+      fr: Arrivée d'un client
+      en: New client setup
+      pt: Novo cliente
+  - aHref:
+      fr: /cas-d-usage/support-client/
+      en: /en/use-cases/customer-support/
+      pt: /pt/casos-de-uso/suporte-ao-cliente/
+    a:
+      fr: Support client
+      en: Customer support
+      pt: Suporte ao cliente
+  - aHref:
+      fr: /cas-d-usage/contrats-et-echeances/
+      en: /en/use-cases/contracts-and-deadlines/
+      pt: /pt/casos-de-uso/contratos-e-prazos/
+    a:
+      fr: Contrats et échéances
+      en: Contracts and deadlines
+      pt: Contratos e prazos
+  - aHref:
+      fr: /cas-d-usage/conformite/
+      en: /en/use-cases/compliance/
+      pt: /pt/casos-de-uso/conformidade/
+    a:
+      fr: Conformité
+      en: Compliance
+      pt: Conformidade
+  - aHref:
+      fr: /cas-d-usage/arrivee-d-un-salarie/
+      en: /en/use-cases/new-hires/
+      pt: /pt/casos-de-uso/novo-funcionario/
+    a:
+      fr: Arrivée d'un salarié
+      en: New hires
+      pt: Novo funcionário
+items2:
+  - aHref:
+      fr: /cas-d-usage/feuilles-de-temps/
+      en: /en/use-cases/timesheets/
+      pt: /pt/casos-de-uso/registro-de-horas/
+    a:
+      fr: Feuilles de temps
+      en: Timesheets
+      pt: Registro de horas
+  - aHref:
+      fr: /cas-d-usage/propositions-commerciales/
+      en: /en/use-cases/sales-proposals/
+      pt: /pt/casos-de-uso/propostas-comerciais/
+    a:
+      fr: Propositions commerciales
+      en: Sales proposals
+      pt: Propostas comerciais
+  - aHref:
+      fr: /cas-d-usage/arrivee-d-un-client/
+      en: /en/use-cases/new-client-setup/
+      pt: /pt/casos-de-uso/novo-cliente/
+    a:
+      fr: Arrivée d'un client
+      en: New client setup
+      pt: Novo cliente
+  - aHref:
+      fr: /cas-d-usage/support-client/
+      en: /en/use-cases/customer-support/
+      pt: /pt/casos-de-uso/suporte-ao-cliente/
+    a:
+      fr: Support client
+      en: Customer support
+      pt: Suporte ao cliente
+  - aHref:
+      fr: /cas-d-usage/contrats-et-echeances/
+      en: /en/use-cases/contracts-and-deadlines/
+      pt: /pt/casos-de-uso/contratos-e-prazos/
+    a:
+      fr: Contrats et échéances
+      en: Contracts and deadlines
+      pt: Contratos e prazos
+  - aHref:
+      fr: /cas-d-usage/conformite/
+      en: /en/use-cases/compliance/
+      pt: /pt/casos-de-uso/conformidade/
+    a:
+      fr: Conformité
+      en: Compliance
+      pt: Conformidade
+  - aHref:
+      fr: /cas-d-usage/arrivee-d-un-salarie/
+      en: /en/use-cases/new-hires/
+      pt: /pt/casos-de-uso/novo-funcionario/
+    a:
+      fr: Arrivée d'un salarié
+      en: New hires
+      pt: Novo funcionário
+items3:
+  - aHref:
+      fr: /cas-d-usage/feuilles-de-temps/
+      en: /en/use-cases/timesheets/
+      pt: /pt/casos-de-uso/registro-de-horas/
+    a:
+      fr: Feuilles de temps
+      en: Timesheets
+      pt: Registro de horas
+  - aHref:
+      fr: /cas-d-usage/propositions-commerciales/
+      en: /en/use-cases/sales-proposals/
+      pt: /pt/casos-de-uso/propostas-comerciais/
+    a:
+      fr: Propositions commerciales
+      en: Sales proposals
+      pt: Propostas comerciais
+  - aHref:
+      fr: /cas-d-usage/arrivee-d-un-client/
+      en: /en/use-cases/new-client-setup/
+      pt: /pt/casos-de-uso/novo-cliente/
+    a:
+      fr: Arrivée d'un client
+      en: New client setup
+      pt: Novo cliente
+  - aHref:
+      fr: /cas-d-usage/support-client/
+      en: /en/use-cases/customer-support/
+      pt: /pt/casos-de-uso/suporte-ao-cliente/
+    a:
+      fr: Support client
+      en: Customer support
+      pt: Suporte ao cliente
+  - aHref:
+      fr: /cas-d-usage/contrats-et-echeances/
+      en: /en/use-cases/contracts-and-deadlines/
+      pt: /pt/casos-de-uso/contratos-e-prazos/
+    a:
+      fr: Contrats et échéances
+      en: Contracts and deadlines
+      pt: Contratos e prazos
+  - aHref:
+      fr: /cas-d-usage/conformite/
+      en: /en/use-cases/compliance/
+      pt: /pt/casos-de-uso/conformidade/
+    a:
+      fr: Conformité
+      en: Compliance
+      pt: Conformidade
+  - aHref:
+      fr: /cas-d-usage/arrivee-d-un-salarie/
+      en: /en/use-cases/new-hires/
+      pt: /pt/casos-de-uso/novo-funcionario/
+    a:
+      fr: Arrivée d'un salarié
+      en: New hires
+      pt: Novo funcionário
+  - aHref:
+      fr: /cas-d-usage/feuilles-de-temps/
+      en: /en/use-cases/timesheets/
+      pt: /pt/casos-de-uso/registro-de-horas/
+    a:
+      fr: Feuilles de temps
+      en: Timesheets
+      pt: Registro de horas
+  - aHref:
+      fr: /cas-d-usage/propositions-commerciales/
+      en: /en/use-cases/sales-proposals/
+      pt: /pt/casos-de-uso/propostas-comerciais/
+    a:
+      fr: Propositions commerciales
+      en: Sales proposals
+      pt: Propostas comerciais
+  - aHref:
+      fr: /cas-d-usage/arrivee-d-un-client/
+      en: /en/use-cases/new-client-setup/
+      pt: /pt/casos-de-uso/novo-cliente/
+    a:
+      fr: Arrivée d'un client
+      en: New client setup
+      pt: Novo cliente
+  - aHref:
+      fr: /cas-d-usage/support-client/
+      en: /en/use-cases/customer-support/
+      pt: /pt/casos-de-uso/suporte-ao-cliente/
+    a:
+      fr: Support client
+      en: Customer support
+      pt: Suporte ao cliente
+  - aHref:
+      fr: /cas-d-usage/contrats-et-echeances/
+      en: /en/use-cases/contracts-and-deadlines/
+      pt: /pt/casos-de-uso/contratos-e-prazos/
+    a:
+      fr: Contrats et échéances
+      en: Contracts and deadlines
+      pt: Contratos e prazos
+  - aHref:
+      fr: /cas-d-usage/conformite/
+      en: /en/use-cases/compliance/
+      pt: /pt/casos-de-uso/conformidade/
+    a:
+      fr: Conformité
+      en: Compliance
+      pt: Conformidade
+  - aHref:
+      fr: /cas-d-usage/arrivee-d-un-salarie/
+      en: /en/use-cases/new-hires/
+      pt: /pt/casos-de-uso/novo-funcionario/
+    a:
+      fr: Arrivée d'un salarié
+      en: New hires
+      pt: Novo funcionário

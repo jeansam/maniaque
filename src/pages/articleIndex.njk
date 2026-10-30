@@ -10,11 +10,9 @@ scripts: [nav.js]
     <p class="section-lede">{{ s.sectionLede }}</p>
 
     <ul class="article-list">
-      <li>
-        <a class="article-card" href="{{ s.articleListArticleCardHref }}">{{ s.articleListArticleCard }}</a>
-      </li>
-      <li>
-        <a class="article-card" href="{{ s.articleListArticleCardHref2 }}">{{ s.articleListArticleCard2 }}</a>
-      </li>
+      {% for item in s.articleList %}{% if not loop.first %}
+      {% endif %}<li>
+        <a class="article-card" href="{{ item.articleCardHref }}">{{ item.articleCard }}</a>
+      </li>{% endfor %}
     </ul>
   </div>

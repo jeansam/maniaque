@@ -5,7 +5,7 @@ mainClass: article
 section: articleIndex
 scripts: [nav.js]
 ---
-
+{% import "components.njk" as c %}
   <div class="wrap article-wrap">
     <p class="article-back"><a class="link" href="{{ routes.articleIndex[lang] }}">{{ s.articleBackLink }}</a></p>
     <h1 class="article-title">{{ s.articleTitle }}</h1>
@@ -19,10 +19,4 @@ scripts: [nav.js]
 
   <article class="wrap article-wrap prose">{% include "articles/" + p.id + ".njk" %}</article>
 
-  <section class="cta grid-paper" aria-labelledby="t-audit">
-    <div class="wrap">
-      <h2 id="t-audit">{{ s.audit }}</h2>
-      <p>{{ s.auditP }}</p>
-      <a data-book class="btn" target="_blank" rel="noopener">{{ s.auditBtn }}</a>
-    </div>
-  </section>
+  {{ c.cta(s.audit, s.auditP, s.auditBtn) }}

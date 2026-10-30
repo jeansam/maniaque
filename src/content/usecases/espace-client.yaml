@@ -29,150 +29,6 @@ strings:
     en: 'Example screen: customer portal'
     pt: 'Exemplo de tela: área do cliente'
   qtAppClass: qt-app
-  qtSideQtBrand6:
-    fr: <em></em>Martin Équipements
-    en: <em></em>Martin Equipment
-    pt: <em></em>Martin Equipamentos
-  qtSideOn7:
-    fr: Accueil
-    en: Home
-    pt: Início
-  qtSideLi15:
-    fr: Commandes
-    en: Orders
-    pt: Pedidos
-  qtSideLi16:
-    fr: Factures
-    en: Invoices
-    pt: Faturas
-  qtSideLi17:
-    fr: Messages
-    en: Messages
-    pt: Mensagens
-  qtHeadQtNum7:
-    fr: Bonjour, Boulangerie Martin
-    en: Hello, Martin Bakery
-    pt: Olá, Padaria Martin
-  qtHeadQtClient7:
-    fr: Votre espace client
-    en: Your customer portal
-    pt: Sua área do cliente
-  mkPanelMkH3:
-    fr: Commande C-2318 · livraison prévue jeudi
-    en: Order C-2318 · delivery due Thursday
-    pt: Pedido P-2318 · entrega prevista para quinta
-  doneSpan:
-    fr: Commande reçue
-    en: Order received
-    pt: Pedido recebido
-  doneSpan2:
-    fr: En fabrication
-    en: In production
-    pt: Em produção
-  nowSpan:
-    fr: Expédiée
-    en: Shipped
-    pt: Enviado
-  mkStepsSpan:
-    fr: Livrée
-    en: Delivered
-    pt: Entregue
-  mkPanelMkH4:
-    fr: Mes commandes
-    en: My orders
-    pt: Meus pedidos
-  mkTrSpan41:
-    fr: Commande
-    en: Order
-    pt: Pedido
-  mkTrSpan42:
-    fr: Date
-    en: Date
-    pt: Data
-  mkTrSpan43:
-    fr: Montant
-    en: Amount
-    pt: Valor
-  mkTrSpan44:
-    fr: Statut
-    en: Status
-    pt: Status
-  mkTrSpan45:
-    fr: C-2318
-    en: C-2318
-    pt: P-2318
-  mkTrSpan46:
-    fr: 28 oct.
-    en: 28 Oct
-    pt: 28 out.
-  mkTrSpan47:
-    fr: "1\_240\_€"
-    en: €1,240
-    pt: "R$\_7.440"
-  mkTrSpan48:
-    fr: <span class="mk-pill mk-info">Expédiée</span>
-    en: <span class="mk-pill mk-info">Shipped</span>
-    pt: <span class="mk-pill mk-info">Enviado</span>
-  mkTrSpan49:
-    fr: C-2301
-    en: C-2301
-    pt: P-2301
-  mkTrSpan50:
-    fr: 14 oct.
-    en: 14 Oct
-    pt: 14 out.
-  mkTrSpan51:
-    fr: "3\_600\_€"
-    en: €3,600
-    pt: "R$\_21.600"
-  mkTrSpan52:
-    fr: <span class="mk-pill mk-ok">Livrée</span>
-    en: <span class="mk-pill mk-ok">Delivered</span>
-    pt: <span class="mk-pill mk-ok">Entregue</span>
-  mkTrSpan53:
-    fr: C-2287
-    en: C-2287
-    pt: P-2287
-  mkTrSpan54:
-    fr: 2 oct.
-    en: 2 Oct
-    pt: 2 out.
-  mkTrSpan55:
-    fr: "890\_€"
-    en: €890
-    pt: "R$\_5.340"
-  mkTrSpan56:
-    fr: <span class="mk-pill mk-ok">Livrée</span>
-    en: <span class="mk-pill mk-ok">Delivered</span>
-    pt: <span class="mk-pill mk-ok">Entregue</span>
-  mkAsideMkH5:
-    fr: Mes factures
-    en: My invoices
-    pt: Minhas faturas
-  mkItemSmall8:
-    fr: "1\_240\_€"
-    en: €1,240
-    pt: "R$\_7.440"
-  mkItemSmall9:
-    fr: "3\_600\_€"
-    en: €3,600
-    pt: "R$\_21.600"
-  mkItemSmall10:
-    fr: "890\_€"
-    en: €890
-    pt: "R$\_5.340"
-  mkAsideMkH6:
-    fr: Messages
-    en: Messages
-    pt: Mensagens
-  mkAsideMkMsg:
-    fr: Bonjour, pouvez-vous livrer avant 10 h ?
-    en: Hi, could you deliver before 10am?
-    pt: Olá, vocês podem entregar antes das 10h?
-  mkAsideMkMsg2:
-    fr: Oui, c'est noté pour jeudi 8 h 30.
-    en: Yes, booked for Thursday 8:30.
-    pt: Sim, anotado para quinta às 8h30.
   qtFigureFigcaption:
     fr: 'Exemple : ce que voit votre client en se connectant.'
     en: 'Example: what your customer sees when they log in.'
@@ -181,3 +37,157 @@ strings:
     fr: Dites-nous ce que vos clients vous demandent le plus souvent.
     en: Tell us what your customers ask you most often.
     pt: Conte para nós o que os seus clientes mais perguntam.
+  qtSideQtBrand:
+    fr: <em></em>Martin Équipements
+    en: <em></em>Martin Equipment
+    pt: <em></em>Martin Equipamentos
+  items:
+    - 'on': true
+      label:
+        fr: Accueil
+        en: Home
+        pt: Início
+    - label:
+        fr: Commandes
+        en: Orders
+        pt: Pedidos
+    - label:
+        fr: Factures
+        en: Invoices
+        pt: Faturas
+    - label:
+        fr: Messages
+        en: Messages
+        pt: Mensagens
+  qtNums:
+    - class: qt-num
+      label:
+        fr: Bonjour, Boulangerie Martin
+        en: Hello, Martin Bakery
+        pt: Olá, Padaria Martin
+    - class: qt-client
+      label:
+        fr: Votre espace client
+        en: Your customer portal
+        pt: Sua área do cliente
+  mkPanelMkH:
+    fr: Commande C-2318 · livraison prévue jeudi
+    en: Order C-2318 · delivery due Thursday
+    pt: Pedido P-2318 · entrega prevista para quinta
+  mkSteps:
+    - class: done
+      span:
+        fr: Commande reçue
+        en: Order received
+        pt: Pedido recebido
+    - class: done
+      span:
+        fr: En fabrication
+        en: In production
+        pt: Em produção
+    - class: now
+      span:
+        fr: Expédiée
+        en: Shipped
+        pt: Enviado
+    - class: ''
+      span:
+        fr: Livrée
+        en: Delivered
+        pt: Entregue
+  mkPanelMkH2:
+    fr: Mes commandes
+    en: My orders
+    pt: Meus pedidos
+  mkTable:
+    - class: mk-tr mk-th
+      items:
+        - fr: Commande
+          en: Order
+          pt: Pedido
+        - fr: Date
+          en: Date
+          pt: Data
+        - fr: Montant
+          en: Amount
+          pt: Valor
+        - fr: Statut
+          en: Status
+          pt: Status
+    - class: mk-tr
+      items:
+        - fr: C-2318
+          en: C-2318
+          pt: P-2318
+        - fr: 28 oct.
+          en: 28 Oct
+          pt: 28 out.
+        - fr: "1\_240\_€"
+          en: €1,240
+          pt: "R$\_7.440"
+        - fr: <span class="mk-pill mk-info">Expédiée</span>
+          en: <span class="mk-pill mk-info">Shipped</span>
+          pt: <span class="mk-pill mk-info">Enviado</span>
+    - class: mk-tr
+      items:
+        - fr: C-2301
+          en: C-2301
+          pt: P-2301
+        - fr: 14 oct.
+          en: 14 Oct
+          pt: 14 out.
+        - fr: "3\_600\_€"
+          en: €3,600
+          pt: "R$\_21.600"
+        - fr: <span class="mk-pill mk-ok">Livrée</span>
+          en: <span class="mk-pill mk-ok">Delivered</span>
+          pt: <span class="mk-pill mk-ok">Entregue</span>
+    - class: mk-tr
+      items:
+        - fr: C-2287
+          en: C-2287
+          pt: P-2287
+        - fr: 2 oct.
+          en: 2 Oct
+          pt: 2 out.
+        - fr: "890\_€"
+          en: €890
+          pt: "R$\_5.340"
+        - fr: <span class="mk-pill mk-ok">Livrée</span>
+          en: <span class="mk-pill mk-ok">Delivered</span>
+          pt: <span class="mk-pill mk-ok">Entregue</span>
+  mkAsideMkH:
+    fr: Mes factures
+    en: My invoices
+    pt: Minhas faturas
+  mkItems:
+    - span: F-2318
+      small:
+        fr: "1\_240\_€"
+        en: €1,240
+        pt: "R$\_7.440"
+    - span: F-2301
+      small:
+        fr: "3\_600\_€"
+        en: €3,600
+        pt: "R$\_21.600"
+    - span: F-2287
+      small:
+        fr: "890\_€"
+        en: €890
+        pt: "R$\_5.340"
+  mkAsideMkH2:
+    fr: Messages
+    en: Messages
+    pt: Mensagens
+  mkMsgs:
+    - class: mk-msg
+      label:
+        fr: Bonjour, pouvez-vous livrer avant 10 h ?
+        en: Hi, could you deliver before 10am?
+        pt: Olá, vocês podem entregar antes das 10h?
+    - class: mk-msg mk-msg-me
+      label:
+        fr: Oui, c'est noté pour jeudi 8 h 30.
+        en: Yes, booked for Thursday 8:30.
+        pt: Sim, anotado para quinta às 8h30.

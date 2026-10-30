@@ -29,142 +29,6 @@ strings:
     en: 'Example screen: inventory'
     pt: 'Exemplo de tela: controle de estoque'
   qtAppClass: qt-app
-  qtSideQtBrand8:
-    fr: <em></em>Stock
-    en: <em></em>Stock
-    pt: <em></em>Estoque
-  qtSideOn9:
-    fr: Articles
-    en: Items
-    pt: Itens
-  qtSideLi21:
-    fr: Mouvements
-    en: Movements
-    pt: Movimentações
-  qtSideLi22:
-    fr: Fournisseurs
-    en: Suppliers
-    pt: Fornecedores
-  qtSideLi23:
-    fr: Inventaires
-    en: Stock counts
-    pt: Inventários
-  qtHeadQtNum9:
-    fr: Articles
-    en: Items
-    pt: Itens
-  qtHeadQtClient9:
-    fr: Entrepôt principal
-    en: Main warehouse
-    pt: Depósito principal
-  mkKpiSpan7:
-    fr: Articles suivis
-    en: Items tracked
-    pt: Itens acompanhados
-  mkKpiB2:
-    fr: 1 284
-    en: 1,284
-    pt: '1.284'
-  mkKpiSpan8:
-    fr: Sous le seuil
-    en: Below threshold
-    pt: Abaixo do mínimo
-  mkKpiMkBad:
-    fr: +3 cette semaine
-    en: +3 this week
-    pt: +3 esta semana
-  mkKpiSpan9:
-    fr: Valeur du stock
-    en: Stock value
-    pt: Valor do estoque
-  mkKpiB3:
-    fr: "214\_300\_€"
-    en: €214,300
-    pt: "R$\_1,3 mi"
-  mkTrSpan90:
-    fr: Article
-    en: Item
-    pt: Item
-  mkTrSpan91:
-    fr: En stock
-    en: In stock
-    pt: Em estoque
-  mkTrSpan92:
-    fr: Niveau
-    en: Level
-    pt: Nível
-  mkTrSpan93:
-    fr: Statut
-    en: Status
-    pt: Status
-  mkTrSpan94:
-    fr: Vis inox M6 × 40
-    en: Stainless screw M6 × 40
-    pt: Parafuso inox M6 × 40
-  mkTrSpan95:
-    fr: 1 240
-    en: 1,240
-    pt: '1.240'
-  mkTrSpan96:
-    fr: Charnière 110°
-    en: 110° hinge
-    pt: Dobradiça 110°
-  mkTrSpan97:
-    fr: <span class="mk-pill mk-bad">À commander</span>
-    en: <span class="mk-pill mk-bad">Reorder</span>
-    pt: <span class="mk-pill mk-bad">Comprar</span>
-  mkTrSpan98:
-    fr: Joint EPDM 10 m
-    en: EPDM seal 10 m
-    pt: Vedação EPDM 10 m
-  mkTrSpan99:
-    fr: <span class="mk-pill mk-warn">Bas</span>
-    en: <span class="mk-pill mk-warn">Low</span>
-    pt: <span class="mk-pill mk-warn">Baixo</span>
-  mkTrSpan100:
-    fr: Profilé alu 6 m
-    en: 6 m alu profile
-    pt: Perfil de alumínio 6 m
-  mkTrSpan101:
-    fr: Poignée inox
-    en: Steel handle
-    pt: Puxador inox
-  mkTrSpan102:
-    fr: <span class="mk-pill mk-bad">À commander</span>
-    en: <span class="mk-pill mk-bad">Reorder</span>
-    pt: <span class="mk-pill mk-bad">Comprar</span>
-  mkAsideMkH9:
-    fr: Commande proposée
-    en: Suggested order
-    pt: Pedido sugerido
-  mkAsideMkSub2:
-    fr: Quincaillerie Morel · livraison 48 h
-    en: Morel Hardware · 48h delivery
-    pt: Ferragens Morel · entrega em 48h
-  mkLineSpan8:
-    fr: Charnière 110°
-    en: 110° hinge
-    pt: Dobradiça 110°
-  mkLineSpan9:
-    fr: Poignée inox
-    en: Steel handle
-    pt: Puxador inox
-  mkLineSpan10:
-    fr: Joint EPDM 10 m
-    en: EPDM seal 10 m
-    pt: Vedação EPDM 10 m
-  mkLineSpan11:
-    fr: Total HT
-    en: Total excl. VAT
-    pt: Total s/ impostos
-  mkLineB7:
-    fr: "1\_460\_€"
-    en: €1,460
-    pt: "R$\_8.760"
-  mkAsideMkBtn3:
-    fr: Envoyer au fournisseur
-    en: Send to supplier
-    pt: Enviar ao fornecedor
   qtFigureFigcaption:
     fr: 'Exemple : les articles à surveiller, et la commande fournisseur déjà prête.'
     en: 'Example: the items to watch, and the supplier order already prepared.'
@@ -173,3 +37,166 @@ strings:
     fr: Dites-nous comment vous suivez votre stock aujourd'hui.
     en: Tell us how you track your stock today.
     pt: Conte para nós como você acompanha o seu estoque hoje.
+  qtSideQtBrand:
+    fr: <em></em>Stock
+    en: <em></em>Stock
+    pt: <em></em>Estoque
+  items:
+    - 'on': true
+      label:
+        fr: Articles
+        en: Items
+        pt: Itens
+    - label:
+        fr: Mouvements
+        en: Movements
+        pt: Movimentações
+    - label:
+        fr: Fournisseurs
+        en: Suppliers
+        pt: Fornecedores
+    - label:
+        fr: Inventaires
+        en: Stock counts
+        pt: Inventários
+  qtNums:
+    - class: qt-num
+      label:
+        fr: Articles
+        en: Items
+        pt: Itens
+    - class: qt-client
+      label:
+        fr: Entrepôt principal
+        en: Main warehouse
+        pt: Depósito principal
+  mkKpiSpan:
+    fr: Articles suivis
+    en: Items tracked
+    pt: Itens acompanhados
+  mkKpiB:
+    fr: 1 284
+    en: 1,284
+    pt: '1.284'
+  mkKpiSpan2:
+    fr: Sous le seuil
+    en: Below threshold
+    pt: Abaixo do mínimo
+  mkKpiMkBad:
+    fr: +3 cette semaine
+    en: +3 this week
+    pt: +3 esta semana
+  mkKpiSpan3:
+    fr: Valeur du stock
+    en: Stock value
+    pt: Valor do estoque
+  mkKpiB2:
+    fr: "214\_300\_€"
+    en: €214,300
+    pt: "R$\_1,3 mi"
+  mkTable:
+    - class: mk-tr mk-th
+      items:
+        - fr: Article
+          en: Item
+          pt: Item
+        - fr: En stock
+          en: In stock
+          pt: Em estoque
+        - fr: Niveau
+          en: Level
+          pt: Nível
+        - fr: Statut
+          en: Status
+          pt: Status
+    - class: mk-tr
+      items:
+        - fr: Vis inox M6 × 40
+          en: Stainless screw M6 × 40
+          pt: Parafuso inox M6 × 40
+        - fr: 1 240
+          en: 1,240
+          pt: '1.240'
+        - <span class="mk-bar mk-bar-ink"><i style="width:90%"></i></span>
+        - <span class="mk-pill mk-ok">OK</span>
+    - class: mk-tr
+      items:
+        - fr: Charnière 110°
+          en: 110° hinge
+          pt: Dobradiça 110°
+        - '86'
+        - <span class="mk-bar mk-bar-bad"><i style="width:28%"></i></span>
+        - fr: <span class="mk-pill mk-bad">À commander</span>
+          en: <span class="mk-pill mk-bad">Reorder</span>
+          pt: <span class="mk-pill mk-bad">Comprar</span>
+    - class: mk-tr
+      items:
+        - fr: Joint EPDM 10 m
+          en: EPDM seal 10 m
+          pt: Vedação EPDM 10 m
+        - '42'
+        - <span class="mk-bar mk-bar-warn"><i style="width:45%"></i></span>
+        - fr: <span class="mk-pill mk-warn">Bas</span>
+          en: <span class="mk-pill mk-warn">Low</span>
+          pt: <span class="mk-pill mk-warn">Baixo</span>
+    - class: mk-tr
+      items:
+        - fr: Profilé alu 6 m
+          en: 6 m alu profile
+          pt: Perfil de alumínio 6 m
+        - '318'
+        - <span class="mk-bar mk-bar-ink"><i style="width:80%"></i></span>
+        - <span class="mk-pill mk-ok">OK</span>
+    - class: mk-tr
+      items:
+        - fr: Poignée inox
+          en: Steel handle
+          pt: Puxador inox
+        - '19'
+        - <span class="mk-bar mk-bar-bad"><i style="width:15%"></i></span>
+        - fr: <span class="mk-pill mk-bad">À commander</span>
+          en: <span class="mk-pill mk-bad">Reorder</span>
+          pt: <span class="mk-pill mk-bad">Comprar</span>
+  mkHs:
+    - class: mk-h
+      label:
+        fr: Commande proposée
+        en: Suggested order
+        pt: Pedido sugerido
+    - class: mk-sub
+      label:
+        fr: Quincaillerie Morel · livraison 48 h
+        en: Morel Hardware · 48h delivery
+        pt: Ferragens Morel · entrega em 48h
+  mkLines:
+    - class: mk-line
+      span:
+        fr: Charnière 110°
+        en: 110° hinge
+        pt: Dobradiça 110°
+      b: × 200
+    - class: mk-line
+      span:
+        fr: Poignée inox
+        en: Steel handle
+        pt: Puxador inox
+      b: × 100
+    - class: mk-line
+      span:
+        fr: Joint EPDM 10 m
+        en: EPDM seal 10 m
+        pt: Vedação EPDM 10 m
+      b: × 20
+    - class: mk-line mk-total
+      span:
+        fr: Total HT
+        en: Total excl. VAT
+        pt: Total s/ impostos
+      b:
+        fr: "1\_460\_€"
+        en: €1,460
+        pt: "R$\_8.760"
+  mkAsideMkBtn:
+    fr: Envoyer au fournisseur
+    en: Send to supplier
+    pt: Enviar ao fornecedor

@@ -29,106 +29,6 @@ strings:
     en: 'Example screen: dashboards'
     pt: 'Exemplo de tela: dashboards'
   qtAppClass: qt-app qt-app-2
-  qtSideQtBrand14:
-    fr: <em></em>Direction
-    en: <em></em>Management
-    pt: <em></em>Diretoria
-  qtSideOn15:
-    fr: Vue d'ensemble
-    en: Overview
-    pt: Visão geral
-  qtSideLi37:
-    fr: Ventes
-    en: Sales
-    pt: Vendas
-  qtSideLi38:
-    fr: Marges
-    en: Margins
-    pt: Margens
-  qtSideLi39:
-    fr: Trésorerie
-    en: Cash
-    pt: Caixa
-  qtHeadQtNum15:
-    fr: Vue d'ensemble
-    en: Overview
-    pt: Visão geral
-  qtHeadQtClient15:
-    fr: Mis à jour ce matin à 6 h
-    en: Updated this morning at 6am
-    pt: Atualizado hoje às 6h
-  qtHeadMkPill8:
-    fr: À jour
-    en: Up to date
-    pt: Em dia
-  mkKpiSpan10:
-    fr: CA du mois
-    en: Revenue this month
-    pt: Faturamento do mês
-  mkKpiB4:
-    fr: "84\_200\_€"
-    en: €84,200
-    pt: "R$\_505.200"
-  mkKpiMkOk:
-    fr: +12 %
-    en: +12%
-    pt: +12%
-  mkKpiSpan11:
-    fr: Marge brute
-    en: Gross margin
-    pt: Margem bruta
-  mkKpiB5:
-    fr: "38\_%"
-    en: 38%
-    pt: 38%
-  mkKpiMkOk2:
-    fr: +2 pts
-    en: +2 pts
-    pt: +2 p.p.
-  mkKpiSpan12:
-    fr: Carnet de commandes
-    en: Order book
-    pt: Carteira de pedidos
-  mkKpiB6:
-    fr: "162\_000\_€"
-    en: €162,000
-    pt: "R$\_972.000"
-  mkKpiSpan13:
-    fr: Trésorerie
-    en: Cash
-    pt: Caixa
-  mkKpiB7:
-    fr: "47\_500\_€"
-    en: €47,500
-    pt: "R$\_285.000"
-  mkKpiMkBad2:
-    fr: −8 % vs mois dernier
-    en: −8% vs last month
-    pt: −8% vs mês passado
-  mkPanelMkH7:
-    fr: Chiffre d'affaires, 12 derniers mois
-    en: Revenue, last 12 months
-    pt: Faturamento, últimos 12 meses
-  mkPanelMkH8:
-    fr: Marge par activité
-    en: Margin by activity
-    pt: Margem por atividade
-  mkBarsLSpan:
-    fr: Pose
-    en: Install
-    pt: Instalação
-  mkBarsLSpan2:
-    fr: Vente
-    en: Sales
-    pt: Venda
-  mkBarsLSpan3:
-    fr: SAV
-    en: Service
-    pt: Pós-venda
-  mkBarsLSpan4:
-    fr: Contrats
-    en: Contracts
-    pt: Contratos
   qtFigureFigcaption:
     fr: 'Exemple : la vue d''ensemble du dirigeant, mise à jour chaque nuit.'
     en: 'Example: the owner''s overview, refreshed every night.'
@@ -137,3 +37,133 @@ strings:
     fr: Dites-nous quels chiffres vous suivez aujourd'hui, et comment.
     en: Tell us which figures you track today, and how.
     pt: Conte para nós quais números você acompanha hoje, e como.
+  qtSideQtBrand:
+    fr: <em></em>Direction
+    en: <em></em>Management
+    pt: <em></em>Diretoria
+  items:
+    - 'on': true
+      label:
+        fr: Vue d'ensemble
+        en: Overview
+        pt: Visão geral
+    - label:
+        fr: Ventes
+        en: Sales
+        pt: Vendas
+    - label:
+        fr: Marges
+        en: Margins
+        pt: Margens
+    - label:
+        fr: Trésorerie
+        en: Cash
+        pt: Caixa
+  qtNums:
+    - class: qt-num
+      label:
+        fr: Vue d'ensemble
+        en: Overview
+        pt: Visão geral
+    - class: qt-client
+      label:
+        fr: Mis à jour ce matin à 6 h
+        en: Updated this morning at 6am
+        pt: Atualizado hoje às 6h
+  qtHeadMkPill:
+    fr: À jour
+    en: Up to date
+    pt: Em dia
+  mkKpiSpan:
+    fr: CA du mois
+    en: Revenue this month
+    pt: Faturamento do mês
+  mkKpiB:
+    fr: "84\_200\_€"
+    en: €84,200
+    pt: "R$\_505.200"
+  mkKpiMkOk:
+    fr: +12 %
+    en: +12%
+    pt: +12%
+  mkKpiSpan2:
+    fr: Marge brute
+    en: Gross margin
+    pt: Margem bruta
+  mkKpiB2:
+    fr: "38\_%"
+    en: 38%
+    pt: 38%
+  mkKpiMkOk2:
+    fr: +2 pts
+    en: +2 pts
+    pt: +2 p.p.
+  mkKpiSpan3:
+    fr: Carnet de commandes
+    en: Order book
+    pt: Carteira de pedidos
+  mkKpiB3:
+    fr: "162\_000\_€"
+    en: €162,000
+    pt: "R$\_972.000"
+  mkKpiSpan4:
+    fr: Trésorerie
+    en: Cash
+    pt: Caixa
+  mkKpiB4:
+    fr: "47\_500\_€"
+    en: €47,500
+    pt: "R$\_285.000"
+  mkKpiMkBad:
+    fr: −8 % vs mois dernier
+    en: −8% vs last month
+    pt: −8% vs mês passado
+  mkPanelMkH:
+    fr: Chiffre d'affaires, 12 derniers mois
+    en: Revenue, last 12 months
+    pt: Faturamento, últimos 12 meses
+  lines:
+    - y1: '30'
+      y2: '30'
+    - y1: '60'
+      y2: '60'
+    - y1: '90'
+      y2: '90'
+  mkPanelMkH2:
+    fr: Marge par activité
+    en: Margin by activity
+    pt: Margem por atividade
+  mkChart:
+    - x: '16.9'
+      'y': '31.2'
+      height: '78.8'
+      fill: '#142850'
+      opacity: '0.85'
+    - x: '91.9'
+      'y': '44.4'
+      height: '65.6'
+      fill: '#142850'
+      opacity: '0.85'
+    - x: '166.9'
+      'y': '57.5'
+      height: '52.5'
+      fill: '#142850'
+      opacity: '0.85'
+    - x: '241.9'
+      'y': '14.3'
+      height: '95.7'
+      fill: '#D2251B'
+      opacity: '1'
+  mkBarsL:
+    - fr: Pose
+      en: Install
+      pt: Instalação
+    - fr: Vente
+      en: Sales
+      pt: Venda
+    - fr: SAV
+      en: Service
+      pt: Pós-venda
+    - fr: Contrats
+      en: Contracts
+      pt: Contratos

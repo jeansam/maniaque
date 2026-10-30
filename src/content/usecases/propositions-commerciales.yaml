@@ -29,118 +29,6 @@ strings:
     en: 'Example screen: sales proposals'
     pt: 'Exemplo de tela: propostas comerciais'
   qtAppClass: qt-app
-  qtSideQtBrand11:
-    fr: <em></em>Propositions
-    en: <em></em>Proposals
-    pt: <em></em>Propostas
-  qtSideOn12:
-    fr: En cours
-    en: In progress
-    pt: Em andamento
-  qtSideLi29:
-    fr: Envoyées
-    en: Sent
-    pt: Enviadas
-  qtSideLi30:
-    fr: Références
-    en: References
-    pt: Referências
-  qtSideLi31:
-    fr: Modèles
-    en: Templates
-    pt: Modelos
-  qtHeadQtNum12:
-    fr: Proposition Clinique du Parc
-    en: Park Clinic proposal
-    pt: Proposta Clínica do Parque
-  qtHeadQtClient12:
-    fr: Premier jet prêt en 3 minutes
-    en: First draft ready in 3 minutes
-    pt: Primeiro rascunho pronto em 3 minutos
-  qtHeadMkPill6:
-    fr: À relire
-    en: To review
-    pt: Revisar
-  mkPanelMkH5:
-    fr: Cahier des charges reçu
-    en: Brief received
-    pt: Termo de referência recebido
-  mkPanelMkSub:
-    fr: Clinique du Parc · Étude de réorganisation des blocs, 12 pages
-    en: Park Clinic · Theatre reorganisation study, 12 pages
-    pt: Clínica do Parque · Estudo de reorganização do centro cirúrgico, 12 páginas
-  qtMainMkH:
-    fr: Sections rédigées par l'IA
-    en: Sections drafted by AI
-    pt: Seções escritas pela IA
-  mkFieldSpan13:
-    fr: 1. Compréhension du besoin
-    en: 1. Understanding the need
-    pt: 1. Entendimento da necessidade
-  mkFieldMkPill8:
-    fr: Rédigé
-    en: Drafted
-    pt: Escrito
-  mkFieldSpan14:
-    fr: 2. Approche proposée
-    en: 2. Proposed approach
-    pt: 2. Abordagem proposta
-  mkFieldMkPill9:
-    fr: Rédigé
-    en: Drafted
-    pt: Escrito
-  mkFieldSpan15:
-    fr: 3. Références similaires
-    en: 3. Similar references
-    pt: 3. Referências semelhantes
-  mkFieldMkPill10:
-    fr: 3 trouvées
-    en: 3 found
-    pt: 3 encontradas
-  mkFieldSpan16:
-    fr: 4. Équipe et CV
-    en: 4. Team and CVs
-    pt: 4. Equipe e currículos
-  mkFieldMkPill11:
-    fr: Rédigé
-    en: Drafted
-    pt: Escrito
-  mkFieldSpan17:
-    fr: 5. Planning
-    en: 5. Timeline
-    pt: 5. Cronograma
-  mkFieldMkPill12:
-    fr: Rédigé
-    en: Drafted
-    pt: Escrito
-  mkFieldSpan18:
-    fr: 6. Prix
-    en: 6. Price
-    pt: 6. Preço
-  mkFieldMkPill13:
-    fr: À vous
-    en: Your call
-    pt: Com você
-  mkDocLogo:
-    fr: <em></em>Dufour Conseil
-    en: <em></em>Dufour Conseil
-    pt: <em></em>Dufour Consultoria
-  mkDocT2:
-    fr: PROPOSITION
-    en: PROPOSAL
-    pt: PROPOSTA
-  mkDocP3:
-    fr: Réorganisation des blocs opératoires
-    en: Theatre reorganisation
-    pt: Reorganização do centro cirúrgico
-  mkDocMkSub:
-    fr: Pour la Clinique du Parc
-    en: For Park Clinic
-    pt: Para a Clínica do Parque
-  mkAsideMkBtn4:
-    fr: Exporter en Word
-    en: Export to Word
-    pt: Exportar para Word
   qtFigureFigcaption:
     fr: 'Exemple : un cahier des charges reçu, une proposition prête à relire.'
     en: 'Example: a brief received, a proposal ready to review.'
@@ -149,3 +37,143 @@ strings:
     fr: Dites-nous comment vous rédigez vos propositions aujourd'hui.
     en: Tell us how you write proposals today.
     pt: Conte para nós como você escreve as suas propostas hoje.
+  qtSideQtBrand:
+    fr: <em></em>Propositions
+    en: <em></em>Proposals
+    pt: <em></em>Propostas
+  items:
+    - 'on': true
+      label:
+        fr: En cours
+        en: In progress
+        pt: Em andamento
+    - label:
+        fr: Envoyées
+        en: Sent
+        pt: Enviadas
+    - label:
+        fr: Références
+        en: References
+        pt: Referências
+    - label:
+        fr: Modèles
+        en: Templates
+        pt: Modelos
+  qtNums:
+    - class: qt-num
+      label:
+        fr: Proposition Clinique du Parc
+        en: Park Clinic proposal
+        pt: Proposta Clínica do Parque
+    - class: qt-client
+      label:
+        fr: Premier jet prêt en 3 minutes
+        en: First draft ready in 3 minutes
+        pt: Primeiro rascunho pronto em 3 minutos
+  qtHeadMkPill:
+    fr: À relire
+    en: To review
+    pt: Revisar
+  mkPanel:
+    - class: mk-h
+      label:
+        fr: Cahier des charges reçu
+        en: Brief received
+        pt: Termo de referência recebido
+    - class: mk-sub
+      label:
+        fr: Clinique du Parc · Étude de réorganisation des blocs, 12 pages
+        en: Park Clinic · Theatre reorganisation study, 12 pages
+        pt: Clínica do Parque · Estudo de reorganização do centro cirúrgico, 12 páginas
+  qtMainMkH:
+    fr: Sections rédigées par l'IA
+    en: Sections drafted by AI
+    pt: Seções escritas pela IA
+  mkField:
+    - label:
+        fr: 1. Compréhension du besoin
+        en: 1. Understanding the need
+        pt: 1. Entendimento da necessidade
+    - mkPillMkOk: true
+      label:
+        fr: Rédigé
+        en: Drafted
+        pt: Escrito
+  mkField2:
+    - label:
+        fr: 2. Approche proposée
+        en: 2. Proposed approach
+        pt: 2. Abordagem proposta
+    - mkPillMkOk: true
+      label:
+        fr: Rédigé
+        en: Drafted
+        pt: Escrito
+  mkField3:
+    - label:
+        fr: 3. Références similaires
+        en: 3. Similar references
+        pt: 3. Referências semelhantes
+    - mkPillMkOk: true
+      label:
+        fr: 3 trouvées
+        en: 3 found
+        pt: 3 encontradas
+  mkField4:
+    - label:
+        fr: 4. Équipe et CV
+        en: 4. Team and CVs
+        pt: 4. Equipe e currículos
+    - mkPillMkOk: true
+      label:
+        fr: Rédigé
+        en: Drafted
+        pt: Escrito
+  mkField5:
+    - label:
+        fr: 5. Planning
+        en: 5. Timeline
+        pt: 5. Cronograma
+    - mkPillMkOk: true
+      label:
+        fr: Rédigé
+        en: Drafted
+        pt: Escrito
+  mkField6:
+    - label:
+        fr: 6. Prix
+        en: 6. Price
+        pt: 6. Preço
+    - mkPillMkWarn: true
+      label:
+        fr: À vous
+        en: Your call
+        pt: Com você
+  mkDocLogo:
+    fr: <em></em>Dufour Conseil
+    en: <em></em>Dufour Conseil
+    pt: <em></em>Dufour Consultoria
+  mkDocT:
+    fr: PROPOSITION
+    en: PROPOSAL
+    pt: PROPOSTA
+  mkDocP:
+    fr: Réorganisation des blocs opératoires
+    en: Theatre reorganisation
+    pt: Reorganização do centro cirúrgico
+  mkDocMkSub:
+    fr: Pour la Clinique du Parc
+    en: For Park Clinic
+    pt: Para a Clínica do Parque
+  mkDocTxts:
+    - style: width:95%
+    - style: width:88%
+    - style: width:92%
+    - style: width:60%
+    - style: width:94%
+    - style: width:85%
+    - style: width:70%
+  mkAsideMkBtn:
+    fr: Exporter en Word
+    en: Export to Word
+    pt: Exportar para Word

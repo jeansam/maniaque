@@ -29,83 +29,94 @@ strings:
     en: 'Example screen: document reading'
     pt: 'Exemplo de tela: leitura de documentos'
   qtAppClass: qt-app qt-app-2
-  qtSideQtBrand9:
+  qtFigureFigcaption:
+    fr: 'Exemple : une facture lue en quelques secondes, et l''écart repéré avec le bon de commande.'
+    en: 'Example: an invoice read in seconds, with the mismatch against the purchase order flagged.'
+    pt: 'Exemplo: uma fatura lida em poucos segundos, e a diferença em relação ao pedido de compra identificada.'
+  audit:
+    fr: Dites-nous quels documents vous recopiez aujourd'hui.
+    en: Tell us which documents you copy by hand today.
+    pt: Conte para nós quais documentos você copia à mão hoje.
+  qtSideQtBrand:
     fr: <em></em>Documents
     en: <em></em>Documents
     pt: <em></em>Documentos
-  qtSideOn10:
-    fr: À valider
-    en: To review
-    pt: A aprovar
-  qtSideLi24:
-    fr: Validés
-    en: Approved
-    pt: Aprovados
-  qtSideLi25:
-    fr: Fournisseurs
-    en: Suppliers
-    pt: Fornecedores
-  qtHeadQtNum10:
-    fr: Facture reçue par email
-    en: Invoice received by email
-    pt: Fatura recebida por e-mail
-  qtHeadQtClient10:
-    fr: Lue par l'IA en 4 secondes
-    en: Read by AI in 4 seconds
-    pt: Lida pela IA em 4 segundos
-  qtHeadMkPill5:
+  items:
+    - 'on': true
+      label:
+        fr: À valider
+        en: To review
+        pt: A aprovar
+    - label:
+        fr: Validés
+        en: Approved
+        pt: Aprovados
+    - label:
+        fr: Fournisseurs
+        en: Suppliers
+        pt: Fornecedores
+  qtNums:
+    - class: qt-num
+      label:
+        fr: Facture reçue par email
+        en: Invoice received by email
+        pt: Fatura recebida por e-mail
+    - class: qt-client
+      label:
+        fr: Lue par l'IA en 4 secondes
+        en: Read by AI in 4 seconds
+        pt: Lida pela IA em 4 segundos
+  qtHeadMkPill:
     fr: 1 point à vérifier
     en: 1 thing to check
     pt: 1 ponto a conferir
-  mkDocT:
-    fr: FACTURE n° 88412
-    en: INVOICE n° 88412
-    pt: FATURA nº 88412
-  mkDocP:
-    fr: Quincaillerie Morel
-    en: Quincaillerie Morel
-    pt: Ferragens Morel
-  mkDocP2:
-    fr: 12 rue des Forges, Lyon
-    en: 12 rue des Forges, Lyon
-    pt: Rua das Forjas, 12, Lyon
-  mkDocLSpan:
-    fr: Charnière 110° × 200
-    en: 110° hinge × 200
-    pt: Dobradiça 110° × 200
-  mkDocLSpan2:
-    fr: "640\_€"
-    en: €640
-    pt: "R$\_3.840"
-  mkDocLSpan3:
-    fr: Poignée inox × 100
-    en: Steel handle × 100
-    pt: Puxador inox × 100
-  mkDocLSpan4:
-    fr: "520\_€"
-    en: €520
-    pt: "R$\_3.120"
-  mkDocLSpan5:
-    fr: Joint EPDM × 20
-    en: EPDM seal × 20
-    pt: Vedação EPDM × 20
-  mkDocLSpan6:
-    fr: "300\_€"
-    en: €300
-    pt: "R$\_1.800"
-  mkDocLSpan7:
-    fr: Total TTC
-    en: Total incl. VAT
-    pt: Total c/ impostos
-  mkDocLSpan8:
-    fr: "1\_752\_€"
-    en: €1,752
-    pt: "R$\_10.512"
+  items2:
+    - mkDocT: true
+      label:
+        fr: FACTURE n° 88412
+        en: INVOICE n° 88412
+        pt: FATURA nº 88412
+    - label:
+        fr: Quincaillerie Morel
+        en: Quincaillerie Morel
+        pt: Ferragens Morel
+    - label:
+        fr: 12 rue des Forges, Lyon
+        en: 12 rue des Forges, Lyon
+        pt: Rua das Forjas, 12, Lyon
+  mkDocL:
+    - fr: Charnière 110° × 200
+      en: 110° hinge × 200
+      pt: Dobradiça 110° × 200
+    - fr: "640\_€"
+      en: €640
+      pt: "R$\_3.840"
+  mkDocL2:
+    - fr: Poignée inox × 100
+      en: Steel handle × 100
+      pt: Puxador inox × 100
+    - fr: "520\_€"
+      en: €520
+      pt: "R$\_3.120"
+  mkDocL3:
+    - fr: Joint EPDM × 20
+      en: EPDM seal × 20
+      pt: Vedação EPDM × 20
+    - fr: "300\_€"
+      en: €300
+      pt: "R$\_1.800"
+  mkDocL4:
+    - fr: Total TTC
+      en: Total incl. VAT
+      pt: Total c/ impostos
+    - fr: "1\_752\_€"
+      en: €1,752
+      pt: "R$\_10.512"
   mkGrowMkH:
     fr: Informations extraites
     en: Extracted data
     pt: Informações extraídas
-  mkFieldSpan7:
+  mkFieldSpan:
     fr: Fournisseur
     en: Supplier
     pt: Fornecedor
@@ -113,15 +124,15 @@ strings:
     fr: Quincaillerie Morel
     en: Quincaillerie Morel
     pt: Ferragens Morel
-  mkFieldSpan8:
+  mkFieldSpan2:
     fr: N° de facture
     en: Invoice no.
     pt: Nº da fatura
-  mkFieldSpan9:
+  mkFieldSpan3:
     fr: Date
     en: Date
     pt: Data
-  mkFieldSpan10:
+  mkFieldSpan4:
     fr: Total HT
     en: Total excl. VAT
     pt: Total s/ impostos
@@ -129,7 +140,7 @@ strings:
     fr: "1\_460\_€"
     en: €1,460
     pt: "R$\_8.760"
-  mkFieldSpan11:
+  mkFieldSpan5:
     fr: TVA
     en: VAT
     pt: Impostos
@@ -137,7 +148,7 @@ strings:
     fr: "292\_€"
     en: €292
     pt: "R$\_1.752"
-  mkFieldSpan12:
+  mkFieldSpan6:
     fr: Bon de commande
     en: Purchase order
     pt: Pedido de compra
@@ -145,7 +156,7 @@ strings:
     fr: BC-0312
     en: BC-0312
     pt: PC-0312
-  mkFieldMkPill7:
+  mkFieldMkPill:
     fr: À vérifier
     en: Check
     pt: Conferir
@@ -157,11 +168,3 @@ strings:
     fr: Valider et envoyer en compta
     en: Approve and send to accounts
     pt: Aprovar e enviar para a contabilidade
-  qtFigureFigcaption:
-    fr: 'Exemple : une facture lue en quelques secondes, et l''écart repéré avec le bon de commande.'
-    en: 'Example: an invoice read in seconds, with the mismatch against the purchase order flagged.'
-    pt: 'Exemplo: uma fatura lida em poucos segundos, e a diferença em relação ao pedido de compra identificada.'
-  audit:
-    fr: Dites-nous quels documents vous recopiez aujourd'hui.
-    en: Tell us which documents you copy by hand today.
-    pt: Conte para nós quais documentos você copia à mão hoje.

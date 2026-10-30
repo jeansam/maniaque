@@ -40,7 +40,7 @@ strings:
     fr: Pendant longtemps, un logiciel sur mesure était un luxe de grande entreprise. Une PME qui voulait son propre CRM recevait un devis à cinq chiffres et retournait à ses tableurs. En dix ans, le prix d'une même première version a été divisé par dix. Voici comment, chiffres à l'appui, et ce qui, en revanche, n'a pas baissé.
     en: For a long time, custom software was a big-company luxury. A small business that wanted its own CRM got a five-figure quote and went back to its spreadsheets. In ten years, the price of the same first version has dropped tenfold. Here is how, with figures, and what hasn't got any cheaper.
     pt: Por muito tempo, software sob medida foi um luxo de grande empresa. Uma PME que queria o próprio CRM recebia um orçamento de cinco dígitos e voltava para as suas planilhas. Em dez anos, o preço de uma mesma primeira versão caiu para um décimo. Veja como, com números, e o que, por outro lado, não ficou mais barato.
-  h2:
+  h:
     fr: 'Le cas d''école : un CRM de base'
     en: 'The test case: a basic CRM'
     pt: 'O caso clássico: um CRM básico'
@@ -68,7 +68,7 @@ strings:
     fr: Pas d'intelligence artificielle intégrée, pas de connexion à votre comptabilité. Le strict nécessaire, mais adapté à votre façon de vendre plutôt qu'à celle d'un éditeur américain.
     en: No built-in artificial intelligence, no link to your accounting. The bare minimum, but shaped around the way you sell rather than the way a software vendor thinks you should.
     pt: Sem inteligência artificial integrada, sem conexão com a sua contabilidade. O estritamente necessário, mas adaptado à sua forma de vender, e não à de um fornecedor americano.
-  h22:
+  h2:
     fr: 'Époque 1 : le code traditionnel, 25 000 à 40 000 €'
     en: 'Era 1: traditional code, €25,000 to €40,000'
     pt: "Época 1: o código tradicional, de R$\_150 mil a R$\_240 mil"
@@ -88,7 +88,7 @@ strings:
     fr: 'Pourquoi si cher ? Parce que tout s''écrit à la main : la base de données, les écrans, les formulaires, les droits d''accès, les tests. Un CRM de base, c''est des milliers de lignes de code dont la plupart sont banales mais doivent quand même être écrites, relues et testées par quelqu''un.'
     en: 'Why so expensive? Because everything is written by hand: the database, the screens, the forms, the access rights, the tests. A basic CRM is thousands of lines of code, most of them mundane, that still have to be written, reviewed and tested by someone.'
     pt: 'Por que tão caro? Porque tudo é escrito à mão: o banco de dados, as telas, os formulários, as permissões de acesso, os testes. Um CRM básico são milhares de linhas de código, a maioria banal, mas que mesmo assim precisam ser escritas, revisadas e testadas por alguém.'
-  h23:
+  h3:
     fr: 'Époque 2 : le no-code, 5 000 à 15 000 €'
     en: 'Era 2: no-code, €5,000 to €15,000'
     pt: "Época 2: o no-code, de R$\_30 mil a R$\_90 mil"
@@ -112,7 +112,7 @@ strings:
     fr: Le no-code a donc fait baisser le prix en accélérant la fabrication. Mais le temps humain, lui, restait au cœur de la facture.
     en: So no-code brought the price down by speeding up the building. But human time stayed at the heart of the invoice.
     pt: O no-code baixou o preço ao acelerar a construção. Mas o tempo humano continuava no centro da conta.
-  h24:
+  h4:
     fr: 'Époque 3 : le code avec l''IA, quelques milliers d''euros'
     en: 'Era 3: code with AI, a few thousand euros'
     pt: 'Época 3: o código com IA, algumas dezenas de milhares de reais'
@@ -144,7 +144,7 @@ strings:
     fr: 'Les grilles de prix publiques n''ont pas encore rattrapé ce changement, et il n''existe pas encore de relevé fiable sur les agences qui développent avec l''IA. Notre fourchette de 2 500 à 5 000 € est donc une estimation, pas une moyenne de marché. Pour donner un point de repère vérifiable : chez Maniaque, la première version d''un outil sur mesure comme ce CRM coûte <a href="/offre/#tarifs">2 500 € HT</a>, livrée en 2 à 8 semaines, en vrai code qui vous appartient.'
     en: 'Public price lists haven''t caught up with this change yet, and there is no reliable survey of agencies that build with AI. Our €2,500 to €5,000 range is therefore an estimate, not a market average. As a checkable reference point: at Maniaque, the first version of a custom tool like this CRM costs <a href="/en/offer/#pricing">€2,500 excl. VAT</a>, delivered in 2 to 8 weeks, in real code that belongs to you.'
     pt: "As tabelas de preço públicas ainda não acompanharam essa mudança, e ainda não existe um levantamento confiável sobre as agências que desenvolvem com IA. A nossa faixa de R$\_15 mil a R$\_30 mil é, portanto, uma estimativa, não uma média de mercado. Como referência verificável: na Maniaque, a primeira versão de uma ferramenta sob medida como esse CRM custa <a href=\"/pt/oferta/#precos\">R$\_15.000 sem impostos</a>, entregue em 2 a 8 semanas, em código de verdade que pertence a você."
-  h25:
+  h5:
     fr: Les trois époques côte à côte
     en: The three eras side by side
     pt: As três épocas lado a lado
@@ -220,7 +220,7 @@ strings:
     fr: Aucune
     en: None
     pt: Nenhum
-  h26:
+  h6:
     fr: Ce qui ne baisse pas
     en: What doesn't get cheaper
     pt: O que não fica mais barato
@@ -244,7 +244,7 @@ strings:
     fr: 'Autrement dit, la facture se déplace. Hier, vous payiez surtout des heures de frappe. Aujourd''hui, vous payez surtout du jugement : quelqu''un qui comprend votre métier, prend les bonnes décisions et reste là après la livraison.'
     en: 'In other words, the bill is shifting. Yesterday, you mostly paid for hours of typing. Today, you mostly pay for judgement: someone who understands your business, makes the right calls and is still there after delivery.'
     pt: 'Em outras palavras, a conta muda de lugar. Antes, você pagava sobretudo horas de digitação. Hoje, você paga sobretudo discernimento: alguém que entende o seu negócio, toma as decisões certas e continua presente depois da entrega.'
-  h27:
+  h7:
     fr: Ce que ça change pour une PME
     en: What it changes for a small business
     pt: O que isso muda para uma PME

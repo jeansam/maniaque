@@ -14,30 +14,44 @@ usesSectionLede:
   fr: Voici les outils les plus plébiscités. Chacun est construit autour de votre façon de travailler, pas l'inverse, et peut commencer petit, puis grandir demande après demande.
   en: These are the most popular tools. Each one is built around the way you work, not the other way round, and can start small, then grow one request at a time.
   pt: Estas são as ferramentas mais pedidas. Cada uma é construída em torno da sua forma de trabalhar, e não o contrário, e pode começar pequena e crescer pedido após pedido.
-usesQuote:
-  fr: «&nbsp;Qui devait rappeler le garage Leroy&nbsp;?&nbsp;»
-  en: “Who was supposed to call Leroy Garage back?”
-  pt: “Quem tinha que ligar de volta para a oficina Leroy?”
-usesP:
-  fr: 'Vos contacts, vos affaires et vos relances au même endroit, rangés comme vous vendez. Pas de licence par utilisateur : toute l''équipe y a accès.'
-  en: 'Your contacts, deals and follow-ups in one place, organised the way you sell. No per-user licences: the whole team gets access.'
-  pt: 'Seus contatos, seus negócios e seus follow-ups no mesmo lugar, organizados do jeito que você vende. Sem licença por usuário: a equipe toda tem acesso.'
+paths:
+  - d: M11 32c1.5-4 4-5.5 7-5.5s5.5 1.5 7 5.5
+  - d: M29 19h7M29 25h5
+items:
+  - usesQuote: true
+    label:
+      fr: «&nbsp;Qui devait rappeler le garage Leroy&nbsp;?&nbsp;»
+      en: “Who was supposed to call Leroy Garage back?”
+      pt: “Quem tinha que ligar de volta para a oficina Leroy?”
+  - label:
+      fr: 'Vos contacts, vos affaires et vos relances au même endroit, rangés comme vous vendez. Pas de licence par utilisateur : toute l''équipe y a accès.'
+      en: 'Your contacts, deals and follow-ups in one place, organised the way you sell. No per-user licences: the whole team gets access.'
+      pt: 'Seus contatos, seus negócios e seus follow-ups no mesmo lugar, organizados do jeito que você vende. Sem licença por usuário: a equipe toda tem acesso.'
 usesLink:
   fr: Voir l'exemple →
   en: See the example →
   pt: Ver o exemplo →
+usesIcon:
+  - d: M12 6h17l9 9v27H12z
+    stroke: '#142850'
+  - d: M29 6v9h9
+    stroke: '#142850'
+  - d: M29 25.5a5 5 0 1 0 0 7M19.5 27.5h7M19.5 30.5h7
+    stroke: '#D2251B'
 usesH2:
   fr: Devis et chiffrages
   en: Quotes and estimates
   pt: Orçamentos
-usesQuote2:
-  fr: «&nbsp;Il me faut deux heures par devis.&nbsp;»
-  en: “Every quote takes me two hours.”
-  pt: “Eu levo duas horas para fazer um orçamento.”
-usesP2:
-  fr: Vos tarifs, vos marges et vos options sont déjà enregistrés. Le devis se monte en quelques minutes et part au bon format.
-  en: Your rates, margins and options are already stored. A quote comes together in minutes and goes out in the right format.
-  pt: Seus preços, suas margens e suas opções já estão cadastrados. O orçamento fica pronto em poucos minutos e sai no formato certo.
+items2:
+  - usesQuote: true
+    label:
+      fr: «&nbsp;Il me faut deux heures par devis.&nbsp;»
+      en: “Every quote takes me two hours.”
+      pt: “Eu levo duas horas para fazer um orçamento.”
+  - label:
+      fr: Vos tarifs, vos marges et vos options sont déjà enregistrés. Le devis se monte en quelques minutes et part au bon format.
+      en: Your rates, margins and options are already stored. A quote comes together in minutes and goes out in the right format.
+      pt: Seus preços, suas margens e suas opções já estão cadastrados. O orçamento fica pronto em poucos minutos e sai no formato certo.
 usesLinkHref2:
   fr: /cas-d-usage/devis-et-chiffrages/
   en: /en/use-cases/quotes-and-estimates/
@@ -46,18 +60,25 @@ usesLink2:
   fr: Voir l'exemple →
   en: See the example →
   pt: Ver o exemplo →
+paths2:
+  - d: M7 18h34M16 6v8M32 6v8
+    stroke: '#142850'
+  - d: M24 37s-6-5-6-9a6 6 0 0 1 12 0c0 4-6 9-6 9z
+    stroke: '#D2251B'
 usesH22:
   fr: Planning des interventions
   en: Job scheduling
   pt: Agenda de atendimentos
-usesQuote3:
-  fr: «&nbsp;Le technicien est arrivé sans la pièce.&nbsp;»
-  en: “The technician turned up without the part.”
-  pt: “O técnico chegou sem a peça.”
-usesP3:
-  fr: Qui va où, quand, avec quoi. Chaque intervention arrive sur le téléphone du bon technicien, avec l'adresse, l'historique et le matériel à prévoir.
-  en: Who goes where, when, with what. Each job lands on the right technician's phone, with the address, the history and the parts to bring.
-  pt: Quem vai aonde, quando e com o quê. Cada atendimento chega ao celular do técnico certo, com o endereço, o histórico e o material necessário.
+items3:
+  - usesQuote: true
+    label:
+      fr: «&nbsp;Le technicien est arrivé sans la pièce.&nbsp;»
+      en: “The technician turned up without the part.”
+      pt: “O técnico chegou sem a peça.”
+  - label:
+      fr: Qui va où, quand, avec quoi. Chaque intervention arrive sur le téléphone du bon technicien, avec l'adresse, l'historique et le matériel à prévoir.
+      en: Who goes where, when, with what. Each job lands on the right technician's phone, with the address, the history and the parts to bring.
+      pt: Quem vai aonde, quando e com o quê. Cada atendimento chega ao celular do técnico certo, com o endereço, o histórico e o material necessário.
 usesLinkHref3:
   fr: /cas-d-usage/planning-des-interventions/
   en: /en/use-cases/job-scheduling/
@@ -70,14 +91,16 @@ usesH23:
   fr: Espace client
   en: Customer portal
   pt: Área do cliente
-usesQuote4:
-  fr: «&nbsp;Où en est ma commande&nbsp;? (troisième appel de la journée)&nbsp;»
-  en: “Where's my order? (third call today)”
-  pt: “Como está o meu pedido? (terceira ligação do dia)”
-usesP4:
-  fr: Vos clients suivent leurs commandes, téléchargent leurs factures et vous écrivent au même endroit, à vos couleurs.
-  en: Your customers track their orders, download their invoices and message you in one place, in your colours.
-  pt: Seus clientes acompanham os pedidos, baixam as faturas e falam com você no mesmo lugar, com a sua identidade visual.
+items4:
+  - usesQuote: true
+    label:
+      fr: «&nbsp;Où en est ma commande&nbsp;? (troisième appel de la journée)&nbsp;»
+      en: “Where's my order? (third call today)”
+      pt: “Como está o meu pedido? (terceira ligação do dia)”
+  - label:
+      fr: Vos clients suivent leurs commandes, téléchargent leurs factures et vous écrivent au même endroit, à vos couleurs.
+      en: Your customers track their orders, download their invoices and message you in one place, in your colours.
+      pt: Seus clientes acompanham os pedidos, baixam as faturas e falam com você no mesmo lugar, com a sua identidade visual.
 usesLinkHref4:
   fr: /cas-d-usage/espace-client/
   en: /en/use-cases/customer-portal/
@@ -86,18 +109,27 @@ usesLink4:
   fr: Voir l'exemple →
   en: See the example →
   pt: Ver o exemplo →
+rects:
+  - x: '8'
+    'y': '26'
+  - x: '25'
+    'y': '26'
+  - x: '16.5'
+    'y': '10'
 usesH24:
   fr: Gestion de stock
   en: Inventory
   pt: Controle de estoque
-usesQuote5:
-  fr: «&nbsp;On a encore des vis de 6&nbsp;?&nbsp;»
-  en: “Do we still have size 6 screws?”
-  pt: “Ainda temos parafuso de 6?”
-usesP5:
-  fr: Entrées, sorties, seuils d'alerte et fournisseurs. Vous savez ce qu'il reste, ce qu'il faut commander et ce que ça vous coûte.
-  en: Stock in, stock out, alert thresholds and suppliers. You know what's left, what to order and what it costs you.
-  pt: Entradas, saídas, estoque mínimo e fornecedores. Você sabe o que resta, o que precisa comprar e quanto isso custa.
+items5:
+  - usesQuote: true
+    label:
+      fr: «&nbsp;On a encore des vis de 6&nbsp;?&nbsp;»
+      en: “Do we still have size 6 screws?”
+      pt: “Ainda temos parafuso de 6?”
+  - label:
+      fr: Entrées, sorties, seuils d'alerte et fournisseurs. Vous savez ce qu'il reste, ce qu'il faut commander et ce que ça vous coûte.
+      en: Stock in, stock out, alert thresholds and suppliers. You know what's left, what to order and what it costs you.
+      pt: Entradas, saídas, estoque mínimo e fornecedores. Você sabe o que resta, o que precisa comprar e quanto isso custa.
 usesLinkHref5:
   fr: /cas-d-usage/gestion-de-stock/
   en: /en/use-cases/inventory/
@@ -106,18 +138,29 @@ usesLink5:
   fr: Voir l'exemple →
   en: See the example →
   pt: Ver o exemplo →
+paths3:
+  - d: M7 34a17 17 0 0 1 34 0
+    stroke: '#142850'
+  - d: M11 22l3 2M24 13v4M37 22l-3 2
+    stroke: '#142850'
+  - d: M7 40h34
+    stroke: '#142850'
+  - d: M24 34l8-10
+    stroke: '#D2251B'
 usesH25:
   fr: Tableaux de bord
   en: Dashboards
   pt: Dashboards
-usesQuote6:
-  fr: «&nbsp;J'attends la fin du mois pour savoir si on gagne de l'argent.&nbsp;»
-  en: “I wait until month end to find out if we're making money.”
-  pt: “Espero o fim do mês para saber se estamos ganhando dinheiro.”
-usesP6:
-  fr: 'Chiffre d''affaires, marges, carnet de commandes : vos chiffres à jour chaque matin, sans tableur à consolider.'
-  en: 'Revenue, margins, order book: your figures up to date every morning, with no spreadsheet to pull together.'
-  pt: 'Faturamento, margens, carteira de pedidos: os seus números atualizados toda manhã, sem planilha para consolidar.'
+items6:
+  - usesQuote: true
+    label:
+      fr: «&nbsp;J'attends la fin du mois pour savoir si on gagne de l'argent.&nbsp;»
+      en: “I wait until month end to find out if we're making money.”
+      pt: “Espero o fim do mês para saber se estamos ganhando dinheiro.”
+  - label:
+      fr: 'Chiffre d''affaires, marges, carnet de commandes : vos chiffres à jour chaque matin, sans tableur à consolider.'
+      en: 'Revenue, margins, order book: your figures up to date every morning, with no spreadsheet to pull together.'
+      pt: 'Faturamento, margens, carteira de pedidos: os seus números atualizados toda manhã, sem planilha para consolidar.'
 usesLinkHref6:
   fr: /cas-d-usage/tableaux-de-bord/
   en: /en/use-cases/dashboards/
@@ -126,18 +169,27 @@ usesLink6:
   fr: Voir l'exemple →
   en: See the example →
   pt: Ver o exemplo →
+usesIcon2:
+  - d: M8 8v34
+    stroke: '#142850'
+  - d: M13 13h16M19 22h14M15 31h10
+    stroke: '#142850'
+  - d: M32 42V29h9l-2.5 3.5L41 36h-9
+    stroke: '#D2251B'
 usesH26:
   fr: Suivi de projets
   en: Project tracking
   pt: Gestão de projetos
-usesQuote7:
-  fr: «&nbsp;On a dépassé le budget sans s'en rendre compte.&nbsp;»
-  en: “We went over budget without noticing.”
-  pt: “Estouramos o orçamento sem perceber.”
-usesP7:
-  fr: Tâches, temps passé, budget et facturation réunis sur chaque projet. Vous voyez la dérive avant qu'elle coûte cher.
-  en: Tasks, time spent, budget and invoicing together on every project. You see the drift before it gets expensive.
-  pt: Tarefas, horas trabalhadas, orçamento e faturamento reunidos em cada projeto. Você vê o desvio antes que ele saia caro.
+items7:
+  - usesQuote: true
+    label:
+      fr: «&nbsp;On a dépassé le budget sans s'en rendre compte.&nbsp;»
+      en: “We went over budget without noticing.”
+      pt: “Estouramos o orçamento sem perceber.”
+  - label:
+      fr: Tâches, temps passé, budget et facturation réunis sur chaque projet. Vous voyez la dérive avant qu'elle coûte cher.
+      en: Tasks, time spent, budget and invoicing together on every project. You see the drift before it gets expensive.
+      pt: Tarefas, horas trabalhadas, orçamento e faturamento reunidos em cada projeto. Você vê o desvio antes que ele saia caro.
 usesLinkHref7:
   fr: /cas-d-usage/suivi-de-projets/
   en: /en/use-cases/project-tracking/
@@ -146,18 +198,29 @@ usesLink7:
   fr: Voir l'exemple →
   en: See the example →
   pt: Ver o exemplo →
+usesIcon3:
+  - d: M12 6h17l9 9v27H12z
+    stroke: '#142850'
+  - d: M29 6v9h9
+    stroke: '#142850'
+  - d: M17 21h12M17 33h14
+    stroke: '#142850'
+  - d: M7 27h34
+    stroke: '#D2251B'
 usesH27:
   fr: Lecture de documents
   en: Document reading
   pt: Leitura de documentos
-usesQuote8:
-  fr: «&nbsp;Je recopie les bons de commande à la main.&nbsp;»
-  en: “I copy purchase orders by hand.”
-  pt: “Eu copio os pedidos de compra à mão.”
-usesP8:
-  fr: L'IA lit vos factures, bons de commande et formulaires, et remplit les bonnes cases. Vous vérifiez, vous validez.
-  en: AI reads your invoices, purchase orders and forms, and fills in the right fields. You check, you approve.
-  pt: A IA lê as suas faturas, pedidos de compra e formulários e preenche os campos certos. Você confere e aprova.
+items8:
+  - usesQuote: true
+    label:
+      fr: «&nbsp;Je recopie les bons de commande à la main.&nbsp;»
+      en: “I copy purchase orders by hand.”
+      pt: “Eu copio os pedidos de compra à mão.”
+  - label:
+      fr: L'IA lit vos factures, bons de commande et formulaires, et remplit les bonnes cases. Vous vérifiez, vous validez.
+      en: AI reads your invoices, purchase orders and forms, and fills in the right fields. You check, you approve.
+      pt: A IA lê as suas faturas, pedidos de compra e formulários e preenche os campos certos. Você confere e aprova.
 usesLinkHref8:
   fr: /cas-d-usage/lecture-de-documents/
   en: /en/use-cases/document-reading/
@@ -166,18 +229,25 @@ usesLink8:
   fr: Voir l'exemple →
   en: See the example →
   pt: Ver o exemplo →
+paths4:
+  - d: M24 11v2M37 24h-2M24 37v-2M11 24h2
+    stroke: '#142850'
+  - d: M24 16v8l6 4
+    stroke: '#D2251B'
 usesH28:
   fr: Feuilles de temps
   en: Timesheets
   pt: Registro de horas
-usesQuote9:
-  fr: «&nbsp;Chacun remplit ses heures le vendredi soir, de mémoire.&nbsp;»
-  en: “Everyone fills in their hours on Friday night, from memory.”
-  pt: “Cada um preenche as horas na sexta à noite, de memória.”
-usesP9:
-  fr: Une saisie en quelques secondes depuis le téléphone. Les heures partent directement vers la paie et la facturation.
-  en: Logging time takes seconds, from a phone. Hours go straight to payroll and invoicing.
-  pt: Um registro em poucos segundos pelo celular. As horas vão direto para a folha de pagamento e para o faturamento.
+items9:
+  - usesQuote: true
+    label:
+      fr: «&nbsp;Chacun remplit ses heures le vendredi soir, de mémoire.&nbsp;»
+      en: “Everyone fills in their hours on Friday night, from memory.”
+      pt: “Cada um preenche as horas na sexta à noite, de memória.”
+  - label:
+      fr: Une saisie en quelques secondes depuis le téléphone. Les heures partent directement vers la paie et la facturation.
+      en: Logging time takes seconds, from a phone. Hours go straight to payroll and invoicing.
+      pt: Um registro em poucos segundos pelo celular. As horas vão direto para a folha de pagamento e para o faturamento.
 usesLinkHref9:
   fr: /cas-d-usage/feuilles-de-temps/
   en: /en/use-cases/timesheets/
@@ -186,18 +256,27 @@ usesLink9:
   fr: Voir l'exemple →
   en: See the example →
   pt: Ver o exemplo →
+usesIcon4:
+  - d: M30 6H10v36h20
+    stroke: '#142850'
+  - d: M15 14h10M15 21h10M15 28h6
+    stroke: '#142850'
+  - d: M37 13l4 4-13 13-5 1 1-5z
+    stroke: '#D2251B'
 usesH29:
   fr: Propositions commerciales
   en: Sales proposals
   pt: Propostas comerciais
-usesQuote10:
-  fr: «&nbsp;Chaque proposition repart d'un vieux fichier Word.&nbsp;»
-  en: “Every proposal starts from an old Word file.”
-  pt: “Cada proposta começa de um arquivo Word antigo.”
-usesP10:
-  fr: L'IA rédige un premier jet à partir de vos propositions passées, mis en page à votre image. Il ne vous reste qu'à relire.
-  en: AI drafts a first version from your past proposals, laid out in your brand. All that's left is to proofread.
-  pt: A IA escreve um primeiro rascunho a partir das suas propostas anteriores, diagramado com a sua identidade. Só falta revisar.
+items10:
+  - usesQuote: true
+    label:
+      fr: «&nbsp;Chaque proposition repart d'un vieux fichier Word.&nbsp;»
+      en: “Every proposal starts from an old Word file.”
+      pt: “Cada proposta começa de um arquivo Word antigo.”
+  - label:
+      fr: L'IA rédige un premier jet à partir de vos propositions passées, mis en page à votre image. Il ne vous reste qu'à relire.
+      en: AI drafts a first version from your past proposals, laid out in your brand. All that's left is to proofread.
+      pt: A IA escreve um primeiro rascunho a partir das suas propostas anteriores, diagramado com a sua identidade. Só falta revisar.
 usesLinkHref10:
   fr: /cas-d-usage/propositions-commerciales/
   en: /en/use-cases/sales-proposals/
@@ -206,18 +285,25 @@ usesLink10:
   fr: Voir l'exemple →
   en: See the example →
   pt: Ver o exemplo →
+paths5:
+  - d: M7 41c1.5-7.5 6.5-11 13-11s11.5 3.5 13 11
+    stroke: '#142850'
+  - d: M38 12v12M32 18h12
+    stroke: '#D2251B'
 usesH210:
   fr: Arrivée d'un client
   en: New client setup
   pt: Novo cliente
-usesQuote11:
-  fr: «&nbsp;On saisit ses coordonnées dans cinq logiciels.&nbsp;»
-  en: “We type their details into five systems.”
-  pt: “Cadastramos os dados dele em cinco sistemas.”
-usesP11:
-  fr: Un seul formulaire, rempli une seule fois. Le client est créé partout où il doit l'être, et son dossier est prêt le jour même.
-  en: One form, filled in once. The client is created everywhere they need to be, and their file is ready the same day.
-  pt: Um único formulário, preenchido uma única vez. O cliente é criado em todos os lugares necessários, e o cadastro fica pronto no mesmo dia.
+items11:
+  - usesQuote: true
+    label:
+      fr: «&nbsp;On saisit ses coordonnées dans cinq logiciels.&nbsp;»
+      en: “We type their details into five systems.”
+      pt: “Cadastramos os dados dele em cinco sistemas.”
+  - label:
+      fr: Un seul formulaire, rempli une seule fois. Le client est créé partout où il doit l'être, et son dossier est prêt le jour même.
+      en: One form, filled in once. The client is created everywhere they need to be, and their file is ready the same day.
+      pt: Um único formulário, preenchido uma única vez. O cliente é criado em todos os lugares necessários, e o cadastro fica pronto no mesmo dia.
 usesLinkHref11:
   fr: /cas-d-usage/arrivee-d-un-client/
   en: /en/use-cases/new-client-setup/
@@ -226,18 +312,24 @@ usesLink11:
   fr: Voir l'exemple →
   en: See the example →
   pt: Ver o exemplo →
+circles:
+  - cx: '16'
+  - cx: '24'
+  - cx: '32'
 usesH211:
   fr: Support client
   en: Customer support
   pt: Suporte ao cliente
-usesQuote12:
-  fr: «&nbsp;La boîte mail déborde.&nbsp;»
-  en: “The inbox is overflowing.”
-  pt: “A caixa de e-mail está transbordando.”
-usesP12:
-  fr: Les demandes sont triées, attribuées et accompagnées d'un brouillon de réponse. Vos clients sont servis plus vite, et votre équipe respire.
-  en: Requests are sorted, assigned and come with a draft reply. Your customers hear back faster, and your team can breathe.
-  pt: Os pedidos são classificados, atribuídos e acompanhados de um rascunho de resposta. Seus clientes são atendidos mais rápido, e a sua equipe respira.
+items12:
+  - usesQuote: true
+    label:
+      fr: «&nbsp;La boîte mail déborde.&nbsp;»
+      en: “The inbox is overflowing.”
+      pt: “A caixa de e-mail está transbordando.”
+  - label:
+      fr: Les demandes sont triées, attribuées et accompagnées d'un brouillon de réponse. Vos clients sont servis plus vite, et votre équipe respire.
+      en: Requests are sorted, assigned and come with a draft reply. Your customers hear back faster, and your team can breathe.
+      pt: Os pedidos são classificados, atribuídos e acompanhados de um rascunho de resposta. Seus clientes são atendidos mais rápido, e a sua equipe respira.
 usesLinkHref12:
   fr: /cas-d-usage/support-client/
   en: /en/use-cases/customer-support/
@@ -246,18 +338,29 @@ usesLink12:
   fr: Voir l'exemple →
   en: See the example →
   pt: Ver o exemplo →
+usesIcon5:
+  - d: M28 6H8v36h14
+    stroke: '#142850'
+  - d: M13 14h10M13 21h10M13 28h5
+    stroke: '#142850'
+  - d: M28 38v-7a6 6 0 0 1 12 0v7l2 2H26z
+    stroke: '#D2251B'
+  - d: M32 43h4
+    stroke: '#D2251B'
 usesH212:
   fr: Contrats et échéances
   en: Contracts and deadlines
   pt: Contratos e prazos
-usesQuote13:
-  fr: «&nbsp;Le contrat s'est encore renouvelé tout seul.&nbsp;»
-  en: “The contract renewed itself again.”
-  pt: “O contrato renovou sozinho de novo.”
-usesP13:
-  fr: Chaque contrat avec ses dates clés. Vous êtes prévenu à temps pour renégocier ou résilier.
-  en: Every contract with its key dates. You're warned in time to renegotiate or cancel.
-  pt: Cada contrato com as suas datas-chave. Você é avisado a tempo de renegociar ou cancelar.
+items13:
+  - usesQuote: true
+    label:
+      fr: «&nbsp;Le contrat s'est encore renouvelé tout seul.&nbsp;»
+      en: “The contract renewed itself again.”
+      pt: “O contrato renovou sozinho de novo.”
+  - label:
+      fr: Chaque contrat avec ses dates clés. Vous êtes prévenu à temps pour renégocier ou résilier.
+      en: Every contract with its key dates. You're warned in time to renegotiate or cancel.
+      pt: Cada contrato com as suas datas-chave. Você é avisado a tempo de renegociar ou cancelar.
 usesLinkHref13:
   fr: /cas-d-usage/contrats-et-echeances/
   en: /en/use-cases/contracts-and-deadlines/
@@ -266,18 +369,25 @@ usesLink13:
   fr: Voir l'exemple →
   en: See the example →
   pt: Ver o exemplo →
+usesIcon6:
+  - d: M24 6l15 5v11c0 10-6.5 17-15 20-8.5-3-15-10-15-20V11z
+    stroke: '#142850'
+  - d: M17 24l5 5 9-9
+    stroke: '#D2251B'
 usesH213:
   fr: Conformité
   en: Compliance
   pt: Conformidade
-usesQuote14:
-  fr: «&nbsp;L'attestation a expiré la semaine dernière.&nbsp;»
-  en: “The certificate expired last week.”
-  pt: “O certificado venceu semana passada.”
-usesP14:
-  fr: 'Certifications, habilitations, contrôles obligatoires : l''outil relance avant l''échéance, pas après.'
-  en: 'Certifications, permits, mandatory inspections: the tool chases them before the deadline, not after.'
-  pt: 'Certificações, habilitações, inspeções obrigatórias: a ferramenta avisa antes do vencimento, não depois.'
+items14:
+  - usesQuote: true
+    label:
+      fr: «&nbsp;L'attestation a expiré la semaine dernière.&nbsp;»
+      en: “The certificate expired last week.”
+      pt: “O certificado venceu semana passada.”
+  - label:
+      fr: 'Certifications, habilitations, contrôles obligatoires : l''outil relance avant l''échéance, pas après.'
+      en: 'Certifications, permits, mandatory inspections: the tool chases them before the deadline, not after.'
+      pt: 'Certificações, habilitações, inspeções obrigatórias: a ferramenta avisa antes do vencimento, não depois.'
 usesLinkHref14:
   fr: /cas-d-usage/conformite/
   en: /en/use-cases/compliance/
@@ -290,14 +400,16 @@ usesH214:
   fr: Arrivée d'un salarié
   en: New hires
   pt: Novo funcionário
-usesQuote15:
-  fr: «&nbsp;Le nouveau a attendu ses accès toute la matinée.&nbsp;»
-  en: “The new starter waited all morning for their logins.”
-  pt: “O novato passou a manhã toda esperando os acessos.”
-usesP15:
-  fr: 'Comptes, matériel, documents à signer, formations : tout est prêt avant le premier jour, et rien n''est oublié.'
-  en: 'Accounts, equipment, documents to sign, training: everything is ready before day one, and nothing is forgotten.'
-  pt: 'Contas, equipamentos, documentos para assinar, treinamentos: tudo pronto antes do primeiro dia, sem esquecer nada.'
+items15:
+  - usesQuote: true
+    label:
+      fr: «&nbsp;Le nouveau a attendu ses accès toute la matinée.&nbsp;»
+      en: “The new starter waited all morning for their logins.”
+      pt: “O novato passou a manhã toda esperando os acessos.”
+  - label:
+      fr: 'Comptes, matériel, documents à signer, formations : tout est prêt avant le premier jour, et rien n''est oublié.'
+      en: 'Accounts, equipment, documents to sign, training: everything is ready before day one, and nothing is forgotten.'
+      pt: 'Contas, equipamentos, documentos para assinar, treinamentos: tudo pronto antes do primeiro dia, sem esquecer nada.'
 usesLinkHref15:
   fr: /cas-d-usage/arrivee-d-un-salarie/
   en: /en/use-cases/new-hires/

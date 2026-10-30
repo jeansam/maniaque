@@ -26,138 +26,6 @@ strings:
     en: 'Example screen: CRM'
     pt: 'Exemplo de tela: CRM'
   qtAppClass: qt-app
-  qtSideOn5:
-    fr: Pipeline
-    en: Pipeline
-    pt: Funil
-  qtSideLi9:
-    fr: Contacts
-    en: Contacts
-    pt: Contatos
-  qtSideLi10:
-    fr: Relances
-    en: Follow-ups
-    pt: Follow-ups
-  qtSideLi11:
-    fr: Rapports
-    en: Reports
-    pt: Relatórios
-  qtHeadQtNum5:
-    fr: Pipeline commercial
-    en: Sales pipeline
-    pt: Funil de vendas
-  qtHeadQtClient5:
-    fr: 5 affaires en cours · 74 500 € en jeu
-    en: 5 open deals · €74,500 at stake
-    pt: "5 negócios em andamento · R$\_447.000 em jogo"
-  mkColh4:
-    fr: Prospection <b>2</b>
-    en: Prospecting <b>2</b>
-    pt: Prospecção <b>2</b>
-  mkCardB10:
-    fr: Boulangerie Martin
-    en: Boulangerie Martin
-    pt: Padaria Martin
-  mkCardSpan:
-    fr: "8\_400\_€"
-    en: €8,400
-    pt: "R$\_50.400"
-  mkCardB11:
-    fr: Atelier Roux
-    en: Atelier Roux
-    pt: Ateliê Roux
-  mkCardSpan2:
-    fr: "12\_000\_€"
-    en: €12,000
-    pt: "R$\_72.000"
-  mkColh5:
-    fr: Devis envoyé <b>2</b>
-    en: Quote sent <b>2</b>
-    pt: Orçamento enviado <b>2</b>
-  mkCardB12:
-    fr: Garage Leroy
-    en: Garage Leroy
-    pt: Oficina Leroy
-  mkCardSpan3:
-    fr: "6\_900\_€"
-    en: €6,900
-    pt: "R$\_41.400"
-  mkCardB13:
-    fr: Cabinet Dufour
-    en: Cabinet Dufour
-    pt: Escritório Dufour
-  mkCardSpan4:
-    fr: "15\_200\_€"
-    en: €15,200
-    pt: "R$\_91.200"
-  mkColh6:
-    fr: Négociation <b>1</b>
-    en: Negotiation <b>1</b>
-    pt: Negociação <b>1</b>
-  mkCardB14:
-    fr: Hôtel des Alpes
-    en: Hôtel des Alpes
-    pt: Hotel dos Alpes
-  mkCardSpan5:
-    fr: "32\_000\_€"
-    en: €32,000
-    pt: "R$\_192.000"
-  mkColh7:
-    fr: Signé <b>2</b>
-    en: Won <b>2</b>
-    pt: Fechado <b>2</b>
-  mkCardB15:
-    fr: Ferme Duval
-    en: Ferme Duval
-    pt: Fazenda Duval
-  mkCardSpan6:
-    fr: "9\_800\_€"
-    en: €9,800
-    pt: "R$\_58.800"
-  mkCardB16:
-    fr: Imprimerie Petit
-    en: Imprimerie Petit
-    pt: Gráfica Petit
-  mkCardSpan7:
-    fr: "11\_300\_€"
-    en: €11,300
-    pt: "R$\_67.800"
-  mkAsideMkH4:
-    fr: À relancer aujourd'hui
-    en: Follow up today
-    pt: Retornar hoje
-  mkItemSpan4:
-    fr: Garage Leroy
-    en: Garage Leroy
-    pt: Oficina Leroy
-  mkItemSmall4:
-    fr: Relancer le devis
-    en: Follow up quote
-    pt: Cobrar retorno do orçamento
-  mkItemSpan5:
-    fr: Atelier Roux
-    en: Atelier Roux
-    pt: Ateliê Roux
-  mkItemSmall5:
-    fr: Premier appel
-    en: First call
-    pt: Primeira ligação
-  mkItemSpan6:
-    fr: Hôtel des Alpes
-    en: Hôtel des Alpes
-    pt: Hotel dos Alpes
-  mkItemSmall6:
-    fr: Envoyer la remise
-    en: Send discount
-    pt: Enviar o desconto
-  mkItemSpan7:
-    fr: Cabinet Dufour
-    en: Cabinet Dufour
-    pt: Escritório Dufour
-  mkItemSmall7:
-    fr: Rappeler
-    en: Call back
-    pt: Ligar de volta
   qtFigureFigcaption:
     fr: 'Exemple : le pipeline de la semaine, et les relances du jour à droite.'
     en: 'Example: this week''s pipeline, with today''s follow-ups on the right.'
@@ -166,3 +34,171 @@ strings:
     fr: Dites-nous comment vous suivez vos clients aujourd'hui.
     en: Tell us how you keep track of customers today.
     pt: Conte para nós como você acompanha os seus clientes hoje.
+  items:
+    - 'on': true
+      label:
+        fr: Pipeline
+        en: Pipeline
+        pt: Funil
+    - label:
+        fr: Contacts
+        en: Contacts
+        pt: Contatos
+    - label:
+        fr: Relances
+        en: Follow-ups
+        pt: Follow-ups
+    - label:
+        fr: Rapports
+        en: Reports
+        pt: Relatórios
+  qtNums:
+    - class: qt-num
+      label:
+        fr: Pipeline commercial
+        en: Sales pipeline
+        pt: Funil de vendas
+    - class: qt-client
+      label:
+        fr: 5 affaires en cours · 74 500 € en jeu
+        en: 5 open deals · €74,500 at stake
+        pt: "5 negócios em andamento · R$\_447.000 em jogo"
+  mkKanban:
+    - mkColh:
+        fr: Prospection <b>2</b>
+        en: Prospecting <b>2</b>
+        pt: Prospecção <b>2</b>
+      mkCards:
+        - b:
+            fr: Boulangerie Martin
+            en: Boulangerie Martin
+            pt: Padaria Martin
+          span:
+            fr: "8\_400\_€"
+            en: €8,400
+            pt: "R$\_50.400"
+          mkAvStyle: background:#2F6FDB
+          mkAv: J
+          small: Julie
+        - b:
+            fr: Atelier Roux
+            en: Atelier Roux
+            pt: Ateliê Roux
+          span:
+            fr: "12\_000\_€"
+            en: €12,000
+            pt: "R$\_72.000"
+          mkAvStyle: background:#E0A030
+          mkAv: M
+          small: Marc
+    - mkColh:
+        fr: Devis envoyé <b>2</b>
+        en: Quote sent <b>2</b>
+        pt: Orçamento enviado <b>2</b>
+      mkCards:
+        - b:
+            fr: Garage Leroy
+            en: Garage Leroy
+            pt: Oficina Leroy
+          span:
+            fr: "6\_900\_€"
+            en: €6,900
+            pt: "R$\_41.400"
+          mkAvStyle: background:#2F6FDB
+          mkAv: J
+          small: Julie
+        - b:
+            fr: Cabinet Dufour
+            en: Cabinet Dufour
+            pt: Escritório Dufour
+          span:
+            fr: "15\_200\_€"
+            en: €15,200
+            pt: "R$\_91.200"
+          mkAvStyle: background:#E0A030
+          mkAv: H
+          small: Hugo
+    - mkColh:
+        fr: Négociation <b>1</b>
+        en: Negotiation <b>1</b>
+        pt: Negociação <b>1</b>
+      mkCards:
+        - b:
+            fr: Hôtel des Alpes
+            en: Hôtel des Alpes
+            pt: Hotel dos Alpes
+          span:
+            fr: "32\_000\_€"
+            en: €32,000
+            pt: "R$\_192.000"
+          mkAvStyle: background:#2F6FDB
+          mkAv: M
+          small: Marc
+    - mkColh:
+        fr: Signé <b>2</b>
+        en: Won <b>2</b>
+        pt: Fechado <b>2</b>
+      mkCards:
+        - b:
+            fr: Ferme Duval
+            en: Ferme Duval
+            pt: Fazenda Duval
+          span:
+            fr: "9\_800\_€"
+            en: €9,800
+            pt: "R$\_58.800"
+          mkAvStyle: background:#2F6FDB
+          mkAv: H
+          small: Hugo
+        - b:
+            fr: Imprimerie Petit
+            en: Imprimerie Petit
+            pt: Gráfica Petit
+          span:
+            fr: "11\_300\_€"
+            en: €11,300
+            pt: "R$\_67.800"
+          mkAvStyle: background:#E0A030
+          mkAv: J
+          small: Julie
+  mkAsideMkH:
+    fr: À relancer aujourd'hui
+    en: Follow up today
+    pt: Retornar hoje
+  mkItems:
+    - b: '09:30'
+      span:
+        fr: Garage Leroy
+        en: Garage Leroy
+        pt: Oficina Leroy
+      small:
+        fr: Relancer le devis
+        en: Follow up quote
+        pt: Cobrar retorno do orçamento
+    - b: '11:00'
+      span:
+        fr: Atelier Roux
+        en: Atelier Roux
+        pt: Ateliê Roux
+      small:
+        fr: Premier appel
+        en: First call
+        pt: Primeira ligação
+    - b: '14:00'
+      span:
+        fr: Hôtel des Alpes
+        en: Hôtel des Alpes
+        pt: Hotel dos Alpes
+      small:
+        fr: Envoyer la remise
+        en: Send discount
+        pt: Enviar o desconto
+    - b: '16:30'
+      span:
+        fr: Cabinet Dufour
+        en: Cabinet Dufour
+        pt: Escritório Dufour
+      small:
+        fr: Rappeler
+        en: Call back
+        pt: Ligar de volta

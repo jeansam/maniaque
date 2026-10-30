@@ -29,130 +29,142 @@ strings:
     en: 'Example screen: contracts and deadlines'
     pt: 'Exemplo de tela: contratos e prazos'
   qtAppClass: qt-app
-  qtSideQtBrand4:
+  qtFigureFigcaption:
+    fr: 'Exemple : une reconduction de trois ans évitée, sept jours avant la fin du préavis.'
+    en: 'Example: a three-year renewal avoided, seven days before the notice deadline.'
+    pt: 'Exemplo: uma renovação de três anos evitada, sete dias antes do fim do aviso prévio.'
+  audit:
+    fr: Dites-nous comment vous suivez vos contrats aujourd'hui.
+    en: Tell us how you keep track of contracts today.
+    pt: Conte para nós como você acompanha os seus contratos hoje.
+  qtSideQtBrand:
     fr: <em></em>Contrats
     en: <em></em>Contracts
     pt: <em></em>Contratos
-  qtSideOn4:
-    fr: Échéances
-    en: Deadlines
-    pt: Prazos
-  qtSideLi7:
-    fr: Contrats
-    en: Contracts
-    pt: Contratos
-  qtSideLi8:
-    fr: Fournisseurs
-    en: Suppliers
-    pt: Fornecedores
-  qtHeadQtNum4:
-    fr: Échéances
-    en: Deadlines
-    pt: Prazos
-  qtHeadQtClient4:
-    fr: Les 12 prochains mois
-    en: Next 12 months
-    pt: Os próximos 12 meses
-  mkKpiSpan4:
-    fr: Contrats suivis
-    en: Contracts tracked
-    pt: Contratos acompanhados
-  mkKpiSpan5:
-    fr: Échéances sous 90 jours
-    en: Due within 90 days
-    pt: Prazos em até 90 dias
-  mkKpiSpan6:
-    fr: Montant annuel
-    en: Annual amount
-    pt: Valor anual
-  mkKpiB:
-    fr: "86\_400\_€"
-    en: €86,400
-    pt: "R$\_518.400"
-  mkTrSpan22:
-    fr: Contrat
-    en: Contract
-    pt: Contrato
-  mkTrSpan23:
-    fr: Par an
-    en: Per year
-    pt: Por ano
-  mkTrSpan24:
-    fr: Échéance
-    en: Renewal
-    pt: Vencimento
-  mkTrSpan25:
-    fr: Location copieurs · Burotec
-    en: Copier lease · Burotec
-    pt: Locação de copiadoras · Burotec
-  mkTrSpan26:
-    fr: "3\_480\_€"
-    en: €3,480
-    pt: "R$\_20.880"
-  mkTrSpan27:
-    fr: 31 déc.
-    en: 31 Dec
-    pt: 31 dez.
-  mkTrSpan28:
-    fr: <span class="mk-pill mk-bad">Préavis dans 7 jours</span>
-    en: <span class="mk-pill mk-bad">Notice in 7 days</span>
-    pt: <span class="mk-pill mk-bad">Aviso em 7 dias</span>
-  mkTrSpan29:
-    fr: Assurance flotte · Axa
-    en: Fleet insurance · Axa
-    pt: Seguro da frota · Axa
-  mkTrSpan30:
-    fr: "7\_200\_€"
-    en: €7,200
-    pt: "R$\_43.200"
-  mkTrSpan31:
-    fr: 1er mars
-    en: 1 Mar
-    pt: 1º mar.
-  mkTrSpan32:
-    fr: <span class="mk-pill mk-warn">Préavis dans 66 jours</span>
-    en: <span class="mk-pill mk-warn">Notice in 66 days</span>
-    pt: <span class="mk-pill mk-warn">Aviso em 66 dias</span>
-  mkTrSpan33:
-    fr: Maintenance clim · Froid Plus
-    en: A/C maintenance · Froid Plus
-    pt: Manutenção do ar · Froid Plus
-  mkTrSpan34:
-    fr: "1\_900\_€"
-    en: €1,900
-    pt: "R$\_11.400"
-  mkTrSpan35:
-    fr: 30 juin
-    en: 30 Jun
-    pt: 30 jun.
-  mkTrSpan36:
-    fr: <span class="mk-pill mk-ok">Dans 6 mois</span>
-    en: <span class="mk-pill mk-ok">In 6 months</span>
-    pt: <span class="mk-pill mk-ok">Em 6 meses</span>
-  mkTrSpan37:
-    fr: Logiciel de paie
-    en: Payroll software
-    pt: Software de folha
-  mkTrSpan38:
-    fr: "2\_400\_€"
-    en: €2,400
-    pt: "R$\_14.400"
-  mkTrSpan39:
-    fr: 15 sept.
-    en: 15 Sep
-    pt: 15 set.
-  mkTrSpan40:
-    fr: <span class="mk-pill mk-ok">Dans 9 mois</span>
-    en: <span class="mk-pill mk-ok">In 9 months</span>
-    pt: <span class="mk-pill mk-ok">Em 9 meses</span>
-  mkAsideMkH3:
-    fr: Location copieurs
-    en: Copier lease
-    pt: Locação de copiadoras
-  mkAsideMkSub:
-    fr: Burotec · reconduction tacite de 3 ans
-    en: Burotec · automatic 3-year renewal
-    pt: Burotec · renovação automática por 3 anos
+  items:
+    - 'on': true
+      label:
+        fr: Échéances
+        en: Deadlines
+        pt: Prazos
+    - label:
+        fr: Contrats
+        en: Contracts
+        pt: Contratos
+    - label:
+        fr: Fournisseurs
+        en: Suppliers
+        pt: Fornecedores
+  qtNums:
+    - class: qt-num
+      label:
+        fr: Échéances
+        en: Deadlines
+        pt: Prazos
+    - class: qt-client
+      label:
+        fr: Les 12 prochains mois
+        en: Next 12 months
+        pt: Os próximos 12 meses
+  mkKpis:
+    - span:
+        fr: Contrats suivis
+        en: Contracts tracked
+        pt: Contratos acompanhados
+      b: '38'
+    - span:
+        fr: Échéances sous 90 jours
+        en: Due within 90 days
+        pt: Prazos em até 90 dias
+      b: '4'
+    - span:
+        fr: Montant annuel
+        en: Annual amount
+        pt: Valor anual
+      b:
+        fr: "86\_400\_€"
+        en: €86,400
+        pt: "R$\_518.400"
+  mkTable:
+    - class: mk-tr mk-th
+      items:
+        - fr: Contrat
+          en: Contract
+          pt: Contrato
+        - fr: Par an
+          en: Per year
+          pt: Por ano
+        - fr: Échéance
+          en: Renewal
+          pt: Vencimento
+        - ''
+    - class: mk-tr
+      items:
+        - fr: Location copieurs · Burotec
+          en: Copier lease · Burotec
+          pt: Locação de copiadoras · Burotec
+        - fr: "3\_480\_€"
+          en: €3,480
+          pt: "R$\_20.880"
+        - fr: 31 déc.
+          en: 31 Dec
+          pt: 31 dez.
+        - fr: <span class="mk-pill mk-bad">Préavis dans 7 jours</span>
+          en: <span class="mk-pill mk-bad">Notice in 7 days</span>
+          pt: <span class="mk-pill mk-bad">Aviso em 7 dias</span>
+    - class: mk-tr
+      items:
+        - fr: Assurance flotte · Axa
+          en: Fleet insurance · Axa
+          pt: Seguro da frota · Axa
+        - fr: "7\_200\_€"
+          en: €7,200
+          pt: "R$\_43.200"
+        - fr: 1er mars
+          en: 1 Mar
+          pt: 1º mar.
+        - fr: <span class="mk-pill mk-warn">Préavis dans 66 jours</span>
+          en: <span class="mk-pill mk-warn">Notice in 66 days</span>
+          pt: <span class="mk-pill mk-warn">Aviso em 66 dias</span>
+    - class: mk-tr
+      items:
+        - fr: Maintenance clim · Froid Plus
+          en: A/C maintenance · Froid Plus
+          pt: Manutenção do ar · Froid Plus
+        - fr: "1\_900\_€"
+          en: €1,900
+          pt: "R$\_11.400"
+        - fr: 30 juin
+          en: 30 Jun
+          pt: 30 jun.
+        - fr: <span class="mk-pill mk-ok">Dans 6 mois</span>
+          en: <span class="mk-pill mk-ok">In 6 months</span>
+          pt: <span class="mk-pill mk-ok">Em 6 meses</span>
+    - class: mk-tr
+      items:
+        - fr: Logiciel de paie
+          en: Payroll software
+          pt: Software de folha
+        - fr: "2\_400\_€"
+          en: €2,400
+          pt: "R$\_14.400"
+        - fr: 15 sept.
+          en: 15 Sep
+          pt: 15 set.
+        - fr: <span class="mk-pill mk-ok">Dans 9 mois</span>
+          en: <span class="mk-pill mk-ok">In 9 months</span>
+          pt: <span class="mk-pill mk-ok">Em 9 meses</span>
+  mkHs:
+    - class: mk-h
+      label:
+        fr: Location copieurs
+        en: Copier lease
+        pt: Locação de copiadoras
+    - class: mk-sub
+      label:
+        fr: Burotec · reconduction tacite de 3 ans
+        en: Burotec · automatic 3-year renewal
+        pt: Burotec · renovação automática por 3 anos
   mkAsideMkAlert:
     fr: Sans action avant le 31 octobre, le contrat repart pour 3 ans.
     en: Without action before 31 October, the contract renews for 3 years.
@@ -169,15 +181,7 @@ strings:
     fr: Responsable
     en: Owner
     pt: Responsável
-  mkAsideMkBtn2:
+  mkAsideMkBtn:
     fr: Préparer la lettre de résiliation
     en: Draft the cancellation letter
     pt: Preparar a carta de cancelamento
-  qtFigureFigcaption:
-    fr: 'Exemple : une reconduction de trois ans évitée, sept jours avant la fin du préavis.'
-    en: 'Example: a three-year renewal avoided, seven days before the notice deadline.'
-    pt: 'Exemplo: uma renovação de três anos evitada, sete dias antes do fim do aviso prévio.'
-  audit:
-    fr: Dites-nous comment vous suivez vos contrats aujourd'hui.
-    en: Tell us how you keep track of contracts today.
-    pt: Conte para nós como você acompanha os seus contratos hoje.
