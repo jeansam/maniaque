@@ -11,6 +11,7 @@
   --pencil: #556273;     /* texte secondaire, mine de crayon */
   --red: #D2251B;        /* stylo de correction */
   --red-ink: #B01E15;    /* rouge lisible sur fond clair */
+  --blue-pen: #2459B8;   /* stylo bille bleu, pour les petits dessins */
 
   --font: "Schibsted Grotesk", system-ui, sans-serif;
 
@@ -228,6 +229,9 @@ html[data-city="johannesburg"] [data-city-only]:not([data-city-only~="johannesbu
 /* Langues : un petit drapeau devant chaque nom */
 .picker-lang .picker-menu a { display: flex; align-items: center; gap: .55rem; }
 .flag { flex: none; width: 1.25rem; height: .875rem; border-radius: 2px; box-shadow: 0 0 0 1px rgba(20, 40, 80, .15); }
+/* Villes : un monument dessiné au stylo bleu devant chaque nom */
+.picker-city .picker-menu a { display: flex; align-items: center; gap: .55rem; }
+.landmark { flex: none; width: 1.25rem; height: 1.25rem; color: var(--blue-pen); }
 @media (prefers-reduced-motion: reduce) { .more-btn span { transition: none; } }
 @media (max-width: 1080px) {
   .more-btn { display: none; }
