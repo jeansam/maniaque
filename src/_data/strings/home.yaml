@@ -10,6 +10,18 @@ mapTitle:
   fr: Le réseau de partenaires Produit et IA que vous pouvez rencontrer en vrai.
   en: The network of Product and AI partners you can meet in person.
   pt: A rede de parceiros de Produto e IA que você pode conhecer pessoalmente.
+hintHover:
+  fr: Survolez une ville pour voir qui vous répondra.
+  en: Hover over a city to see who you'll be talking to.
+  pt: Passe o mouse sobre uma cidade para ver quem vai te atender.
+hintTouch:
+  fr: Touchez une ville pour voir qui vous répondra.
+  en: Tap a city to see who you'll be talking to.
+  pt: Toque em uma cidade para ver quem vai te atender.
+seeOffer:
+  fr: Ou découvrez l'offre →
+  en: Or see the offer →
+  pt: Ou conheça a oferta →
 worldCitiesAriaLabel:
   fr: Nos villes
   en: Our cities

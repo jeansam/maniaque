@@ -7,10 +7,14 @@ scripts: [nav.js]
   <section class="section uc-hero" aria-labelledby="t-uc">
     <div class="wrap">
       <a class="uc-back" href="{{ routes.usecaseIndex[lang] }}">{{ s.ucBack }}</a>
-      <h1 class="uc-title" id="t-uc">{{ s.headline }}</h1>
-      <p class="uc-lede">{{ s.lede }}</p>
-      <a data-book class="btn" target="_blank" rel="noopener">{{ t.bookFree }}</a>
-      <ul class="uc-facts">{% for item in s.ucFacts %}<li>{{ item }}</li>{% endfor %}</ul>
+      <div class="uc-head">
+        <h1 class="uc-title" id="t-uc">{{ s.headline }}</h1>
+        <div class="uc-intro">
+          <p class="uc-lede">{{ s.lede }}</p>
+          <a data-book class="btn" target="_blank" rel="noopener">{{ t.bookFree }}</a>
+          <ul class="uc-facts">{% for item in s.ucFacts %}<li>{{ item }}</li>{% endfor %}</ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -26,5 +30,5 @@ scripts: [nav.js]
     </div>
   </section>
 
-  {{ c.cta(s.audit, s.auditP, t.cta.button) }}
+  {{ c.cta(s.audit, s.auditP, t.cta.button, null, null, { name: city.person.name, photo: city.person.photo, text: t.answers, href: routes.about[lang] }) }}
 

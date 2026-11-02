@@ -27,7 +27,7 @@ scripts: [script.js, nav.js]
             <a data-book class="btn" target="_blank" rel="noopener">{{ t.bookFree }}</a>
             <a class="link" href="#{{ t.offerSections.pricing.id }}">{{ s.seePricing }}</a>
           </div>
-          <a class="who" href="{{ routes.about[lang] }}"><img data-person-photo src="{{ city.person.photo }}" width="32" height="32" alt=""><span><span data-person-name>{{ city.person.name }}</span> {{ s.answers }}</span></a>
+          <a class="who" href="{{ routes.about[lang] }}"><img data-person-photo src="{{ city.person.photo }}" width="32" height="32" alt=""><span><span data-person-name>{{ city.person.name }}</span> {{ t.answers }}</span></a>
         </div>
       </div>
     </div>
@@ -44,8 +44,9 @@ scripts: [script.js, nav.js]
     <div class="wrap">
       <h2 id="t-etapes">{{ s.stepsTitle }}</h2>
       <ol class="steps">{% for step in s.steps %}
-        <li>
-          <h3><button type="button" class="step-toggle" aria-expanded="false" aria-controls="step-desc-{{ loop.index }}">{{ step.title }}</button></h3>
+{#- Sur mobile, la première étape est ouverte d'emblée : on voit qu'il y a du texte à déplier #}
+        <li{% if loop.first %} class="is-open"{% endif %}>
+          <h3><button type="button" class="step-toggle" aria-expanded="{{ "true" if loop.first else "false" }}" aria-controls="step-desc-{{ loop.index }}">{{ step.title }}</button></h3>
           <p class="step-meta">{{ step.meta }}</p>
           <p class="step-desc" id="step-desc-{{ loop.index }}">{{ step.text }}</p>
 {% if loop.first %}          <a data-book class="btn btn-small step-btn" target="_blank" rel="noopener">{{ t.bookFree }}</a>
@@ -71,9 +72,19 @@ scripts: [script.js, nav.js]
             <tr><th scope="row">{{ row.label }}</th>{% for value in row.values %}<td{% if row.num %} class="num"{% endif %}>{{ value }}</td>{% endfor %}</tr>{% endfor %}
           </tbody>
         </table>
+{#- Sur mobile, le tableau devient une carte par formule : mêmes textes, lus de haut en bas (l'un ou l'autre est affiché, jamais les deux) #}
+        <div class="plans">{% for plan in s.plans %}{% set i = loop.index0 %}
+          <div class="plan">
+            <p class="plan-name">{{ plan }}</p>
+            <dl>{% for row in s.planRows %}
+              <div{% if row.num %} class="num"{% endif %}><dt>{{ row.label }}</dt><dd>{{ row.values[i] }}</dd></div>{% endfor %}
+            </dl>
+          </div>{% endfor %}
+        </div>
         <div class="quote-notes">{% for note in s.notes %}
           <p><button type="button" class="note-toggle" aria-expanded="false" aria-controls="note-{{ note.id }}">{{ note.title }}</button><span class="note-sep">{{ note.sep or t.colon }}</span><span class="note-body" id="note-{{ note.id }}">{{ note.text }}</span></p>{% endfor %}
         </div>
+        <a data-book class="btn quote-btn" target="_blank" rel="noopener">{{ t.bookFree }}</a>
       </div>
     </div>
   </section>
@@ -129,5 +140,5 @@ scripts: [script.js, nav.js]
     </div>
   </section>
 
-  {{ c.cta(t.cta.title, t.cta.text, t.cta.button, "audit", s.emailUs) }}
+  {{ c.cta(t.cta.title, t.cta.text, t.cta.button, "audit", s.emailUs, { name: city.person.name, photo: city.person.photo, text: t.answers, href: routes.about[lang] }) }}
 

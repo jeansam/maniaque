@@ -11,6 +11,7 @@ offerSections:
   howItWorks: { id: { fr: fonctionnement, en: how-it-works, pt: como-funciona }, label: { fr: Fonctionnement, en: How it works, pt: Como funciona } }
   pricing: { id: { fr: tarifs, en: pricing, pt: precos }, label: { fr: Tarifs, en: Pricing, pt: Preços } }
   faq: { id: faq, label: FAQ }
+more: { fr: Plus, en: More, pt: Mais }
 moreLinks: { fr: Plus de liens, en: More links, pt: Mais links }
 sections:
   usecaseIndex: { fr: Cas d'usage, en: Use cases, pt: Casos de uso }
@@ -28,6 +29,8 @@ cta:
     en: 45 minutes, free and with no commitment. You leave with an honest opinion, even if it's to tell you no.
     pt: 45 minutos, gratuitos e sem compromisso. Você sai com uma opinião franca, mesmo que seja para nos dizer não.
   button: { fr: Choisir un créneau, en: Pick a time slot, pt: Escolher um horário }
+# Après le prénom de la personne qui répond dans la ville choisie (« Jean-Sam vous répond. »)
+answers: { fr: vous répond., en: will get back to you., pt: responde a você. }
 bookFree: { fr: Réserver mon audit gratuit, en: Book my free audit, pt: Agendar meu diagnóstico gratuito }
 # Jours ouvrés, pour les maquettes d'écran (planning, feuilles de temps)
 weekdays:

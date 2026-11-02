@@ -9,12 +9,16 @@ scripts: [nav.js]
     <div class="wrap">
       <h1 class="about-title" id="t-uses">{{ s.uses }}</h1>
       <p class="section-lede">{{ s.usesSectionLede }}</p>
+{#- Le filtre n'apparaît qu'avec JavaScript (nav.js) ; sans lui, tous les cas restent affichés #}
+      <div class="roles uses-filter" role="group" aria-label="{{ s.filterLabel }}" hidden>
+        <div class="roles-list">{% for g in s.groups %}<button type="button" class="role" data-group="{{ g.id }}" aria-pressed="{{ "true" if loop.first else "false" }}">{{ g.label }}</button>{% endfor %}</div>
+      </div>
       <ul class="uses">
-{% for uc in usecases | values %}        <li><svg class="uses-icon" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">{% include "icons/" + uc.id + ".svg" %}</svg><h2>{{ uc.strings.title | tr(lang) }}</h2><p class="uses-quote">{{ uc.quote | tr(lang) }}</p><p>{{ uc.summary | tr(lang) }}</p><a class="uses-link" href="{{ routes["usecase:" + uc.id][lang] }}">{{ s.usesLink }}</a></li>
+{% for uc in usecases | values %}        <li data-group="{{ uc.group }}"><svg class="uses-icon" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">{% include "icons/" + uc.id + ".svg" %}</svg><h2>{{ uc.strings.title | tr(lang) }}</h2><p class="uses-quote">{{ uc.quote | tr(lang) }}</p><p>{{ uc.summary | tr(lang) }}</p><a class="uses-link" href="{{ routes["usecase:" + uc.id][lang] }}">{{ s.usesLink }}</a></li>
 {% endfor %}      </ul>
       <p class="uses-more">{{ s.usesMore }}</p>
     </div>
   </section>
 
-  {{ c.cta(t.cta.title, t.cta.text, t.cta.button) }}
+  {{ c.cta(t.cta.title, t.cta.text, t.cta.button, null, null, { name: city.person.name, photo: city.person.photo, text: t.answers, href: routes.about[lang] }) }}
 

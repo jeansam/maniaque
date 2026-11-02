@@ -1,4 +1,6 @@
 order: 11
+# Famille, pour le filtre de la page Cas d'usage (libellés dans usecaseIndex.yaml, sous groups)
+group: sales
 slug:
   fr: arrivee-d-un-client
   en: new-client-setup

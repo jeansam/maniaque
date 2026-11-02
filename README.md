@@ -25,7 +25,7 @@ La même génération tourne sur GitHub à chaque push et pull request (`.github
   - `src/_data/ui.yaml` : l'interface commune (en-tête, menus, pied de page, encart « Réserver un audit », jours de la semaine…)
   - `src/_data/strings/<page>.yaml` : les textes d'une page (`home`, `offer`, `usecaseIndex`, `about`, `articleIndex`, `legal`, et les textes communs aux pages de cas d'usage, `usecase`, et d'articles, `article`)
   - `src/content/showcase/<maquette>.yaml` : les textes d'une maquette d'écran de la vitrine de l'offre
-  - `src/content/usecases/<cas>.yaml` : un cas d'usage (son adresse dans chaque langue, son titre, la citation et le résumé de la page Cas d'usage, et les textes de sa maquette d'écran) ; `order` donne sa place dans les listes
+  - `src/content/usecases/<cas>.yaml` : un cas d'usage (son adresse dans chaque langue, son titre, la citation et le résumé de la page Cas d'usage, et les textes de sa maquette d'écran) ; `order` donne sa place dans les listes, `group` sa famille dans le filtre de la page Cas d'usage (`sales`, `operations`, `team`, `admin`, libellés dans `usecaseIndex.yaml`)
   - `src/content/articles/<article>.yaml` : un article (adresse, date, durée de lecture, résumé, introduction, légende de l'illustration et références) ; **son texte est en Markdown, un fichier par langue** : `<article>.fr.md`, `<article>.en.md`, `<article>.pt.md` (`## ` pour un intertitre, `**gras**`, `[lien](https://…)` ; les liens externes s'ouvrent dans un nouvel onglet ; le HTML reste permis, pour un tableau par exemple)
 - **Une ville** : `src/_data/cities.js`, **seul endroit où changer, par ville, le lien du bouton d'audit, les prix et la devise, et la personne qui répond** (prénom, nom, photos, LinkedIn), ainsi que sa place sur la carte de l'accueil. `city.js` est généré à partir de ce fichier
 - **Une adresse de page** : `src/_data/routes.js` (et le `slug` des cas d'usage et des articles)
@@ -55,7 +55,7 @@ La même génération tourne sur GitHub à chaque push et pull request (`.github
 - `src/styles.njk` : donne `styles.css`, la charte (papier millimétré, encre bleue, rouge de correction), réunie en un seul fichier à partir des parties de `src/_includes/styles/` : `base.css` (couleurs, typographie, boutons, sections, encart d'audit), `header.css`, `footer.css`, `offer.css`, `showcase.css` (la vitrine de l'offre), `usecases.css`, `pages.css` (À propos, mentions légales), `articles.css`, `home.css`. L'ordre est celui de la liste dans `styles.njk`
 - `src/static/` : les fichiers servis tels quels
   - `script.js` : l'animation du titre de l'offre, le filtre de la FAQ par profil et les étapes repliables sur mobile
-  - `nav.js` : le menu hamburger sur mobile et tablette, le menu « plus » (Cas d'usage, À propos, Articles) sur ordinateur, et les menus flottants de la ville et de la langue
+  - `nav.js` : le menu hamburger sur mobile et tablette, le menu « Plus » (Cas d'usage, À propos, Articles) sur ordinateur, la barre « Réserver mon audit » en bas d'écran sur mobile et tablette, le filtre de la page Cas d'usage, et les menus flottants de la ville et de la langue
   - `map.js` : l'appui sur la carte de l'accueil sur mobile (premier appui : la fiche, second : la page)
   - les images, et l'illustration de chaque article dans chaque langue (celles en portugais ont leurs montants en reais)
   - `en/index.html` : redirige `/en/` vers l'accueil anglais, à la racine

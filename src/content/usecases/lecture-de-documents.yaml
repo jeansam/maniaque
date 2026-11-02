@@ -1,4 +1,6 @@
 order: 8
+# Famille, pour le filtre de la page Cas d'usage (libellés dans usecaseIndex.yaml, sous groups)
+group: admin
 slug:
   fr: lecture-de-documents
   en: document-reading

@@ -1,4 +1,6 @@
 order: 4
+# Famille, pour le filtre de la page Cas d'usage (libellés dans usecaseIndex.yaml, sous groups)
+group: sales
 slug:
   fr: espace-client
   en: customer-portal

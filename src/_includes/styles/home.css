@@ -26,10 +26,16 @@
   max-width: 32ch; text-align: center; text-wrap: balance;
   font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em;
 }
+.map-head { display: grid; justify-items: center; gap: .75rem; }
+.map-hint { text-align: center; text-wrap: balance; font-size: 1rem; color: var(--pencil); }
+.map-hint a { font-weight: 600; color: var(--ink); text-decoration-color: var(--red); text-decoration-thickness: 2px; text-underline-offset: .2em; white-space: nowrap; }
+.map-hint a:hover { color: var(--red-ink); }
+.hint-touch { display: none; }
+@media (hover: none) { .hint-hover { display: none; } .hint-touch { display: inline; } }
 .map-scroll { width: 100%; display: flex; justify-content: center; }
 .world {
   position: relative; flex: none;
-  width: min(100%, 80rem, calc((100svh - 24rem) * 360 / 142));
+  width: min(100%, 80rem, calc((100svh - 26rem) * 360 / 142));
   aspect-ratio: 360 / 142;
 }
 .world-land { display: block; width: 100%; height: 100%; }
@@ -56,6 +62,14 @@
   from { opacity: .6; transform: scale(1); }
   to { opacity: 0; transform: scale(3); }
 }
+/* Le nom de la ville, sous le point ; il s'efface quand la fiche (qui le reprend) est ouverte */
+.city-label {
+  position: absolute; top: calc(50% + 12px); left: 50%; transform: translateX(-50%);
+  padding: 0 .3rem; border-radius: 3px; background: rgba(246, 248, 250, .85);
+  font-size: .8125rem; font-weight: 600; white-space: nowrap; color: var(--ink);
+  transition: opacity .18s;
+}
+.city a:hover .city-label, .city a:focus-visible .city-label, .city.is-open .city-label, .city.is-going .city-label { opacity: 0; }
 .cities:has(a:hover, a:focus-visible, .is-open) .city-dot { opacity: .45; }
 .cities .city a:hover .city-dot, .cities .city a:focus-visible .city-dot, .cities .city.is-open .city-dot { opacity: 1; transform: scale(1.5); }
 .cities .city a:hover .city-dot::after, .cities .city a:focus-visible .city-dot::after, .cities .city.is-open .city-dot::after {
@@ -145,7 +159,7 @@
    on le fait défiler du doigt, et les bords en fondu disent qu'il continue */
 @media (max-width: 700px) {
   .map-stage { padding-inline: 0; }
-  .map-title { padding-inline: var(--gutter); }
+  .map-head { padding-inline: var(--gutter); }
   .map-scroll {
     justify-content: flex-start; overflow-x: auto; padding-top: 2.5rem;
     overscroll-behavior-x: contain; scrollbar-width: none;
@@ -167,7 +181,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .city-dot, .city-dot::after, .city-card, .city-card > img { transition: none; }
+  .city-dot, .city-dot::after, .city-card, .city-card > img, .city-label { transition: none; }
   .city-dot::after, .city-go path, .city-card > img { animation: none !important; }
   .city-go path { opacity: 1; }
 }

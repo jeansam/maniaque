@@ -1,4 +1,4 @@
-/* Pied de page */
+/* Pied de page, et barre d'audit en bas d'écran sur mobile et tablette */
 
 /* ---------- Pied de page ---------- */
 
@@ -7,3 +7,24 @@
 .foot .wordmark { color: var(--ink); }
 .foot-inner a:not(.wordmark) { margin-left: auto; }
 @media (max-width: 560px) { .foot-inner a:not(.wordmark) { margin-left: 0; } }
+
+/* ---------- Barre d'audit en bas d'écran (mobile et tablette) ---------- */
+
+.book-bar { display: none; }
+@media (max-width: 1080px) {
+  .book-bar {
+    display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 4;
+    padding: .75rem var(--gutter) calc(.75rem + env(safe-area-inset-bottom));
+    background: rgba(246, 248, 250, .94); backdrop-filter: blur(6px);
+    border-top: 1px solid var(--grid);
+    transform: translateY(100%); visibility: hidden;
+    transition: transform .25s ease-out, visibility 0s .25s;
+  }
+  .book-bar.is-shown { transform: none; visibility: visible; transition: transform .25s ease-out; }
+  .book-bar .btn { width: 100%; }
+  /* Le pied de page reste lisible au-dessus de la barre */
+  .book-bar ~ .foot { padding-bottom: 5.5rem; }
+}
+@media (max-width: 1080px) and (prefers-reduced-motion: reduce) {
+  .book-bar, .book-bar.is-shown { transition: none; }
+}

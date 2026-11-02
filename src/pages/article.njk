@@ -28,4 +28,4 @@ scripts: [nav.js]
     </section>
   </article>
 
-  {{ c.cta(t.cta.title, t.cta.text, t.cta.button) }}
+  {{ c.cta(t.cta.title, t.cta.text, t.cta.button, null, null, { name: city.person.name, photo: city.person.photo, text: t.answers, href: routes.about[lang] }) }}

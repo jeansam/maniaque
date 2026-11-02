@@ -146,3 +146,25 @@ h3 { font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing:
 .cta p { margin-top: 1.25rem; font-size: var(--t-lead); max-width: 34rem; line-height: 1.45; }
 .cta .btn { margin-top: 2rem; }
 .cta .cta-alt { font-size: 1rem; color: var(--pencil); margin-top: 1rem; }
+/* En face du bouton, la personne qui répond : on sait à qui on parle avant de réserver */
+.cta-split { display: grid; gap: 2.5rem; }
+@media (min-width: 900px) { .cta-split { grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 4rem; } }
+.cta-who {
+  display: flex; align-items: center; gap: 1rem; justify-self: start;
+  padding: .75rem 1.5rem .75rem .75rem;
+  background: #fff; border: 1.5px solid var(--ink); border-radius: 4rem;
+  color: var(--ink); text-decoration: none; font-size: 1.125rem; line-height: 1.3;
+  transform: rotate(-1.5deg);
+  transition: transform .2s ease;
+}
+.cta-who:hover { transform: rotate(0); }
+.cta-who img { flex: none; width: 5.5rem; height: 5.5rem; border-radius: 50%; object-fit: cover; box-shadow: 0 0 0 2px #fff, 0 0 0 4px var(--red); }
+.cta-who strong { display: block; font-size: 1.375rem; font-weight: 700; letter-spacing: -0.015em; }
+.cta-who:hover strong { text-decoration: underline; text-decoration-color: var(--red); text-decoration-thickness: 2px; text-underline-offset: .2em; }
+@media (min-width: 900px) { .cta-who { margin-right: 2rem; } }
+@media (max-width: 599px) {
+  .cta-who { gap: .75rem; padding-right: 1.25rem; font-size: 1rem; }
+  .cta-who img { width: 4rem; height: 4rem; }
+  .cta-who strong { font-size: 1.125rem; }
+}
+@media (prefers-reduced-motion: reduce) { .cta-who { transition: none; } }

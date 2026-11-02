@@ -42,6 +42,12 @@
   text-decoration: underline; text-decoration-color: var(--red); text-decoration-thickness: 1.5px; text-underline-offset: 3px;
 }
 .city-btn:hover, .picker-city.is-open .city-btn { color: var(--red-ink); }
+/* Petit chevron : la ville s'ouvre en menu, comme la langue */
+.city-btn::after {
+  content: ""; display: inline-block; width: .32rem; height: .32rem; margin: 0 .15rem 0 .4rem; vertical-align: .2em;
+  border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg);
+}
+.picker-city.is-open .city-btn::after { vertical-align: -.05em; transform: rotate(-135deg); }
 
 /* Blocs propres à une ville : seuls ceux de la ville choisie s'affichent */
 html[data-city="marseille"] [data-city-only]:not([data-city-only~="marseille"]),
@@ -75,8 +81,7 @@ html[data-city="johannesburg"] [data-city-only]:not([data-city-only~="johannesbu
 /* Menus flottants : la ville et la langue */
 .picker { position: relative; display: inline-flex; }
 .picker-city .picker-menu { left: -.75rem; right: auto; top: calc(100% + .5rem); z-index: 30; }
-/* Sur ordinateur, le bouton de langue se rapproche du menu « plus » (moitié de l'espace habituel) */
-@media (min-width: 1081px) { .nav-more + .picker-lang { margin-left: -.875rem; } }
+
 /* Sur petit écran, le menu des villes part du bord gauche de la phrase pour ne pas déborder */
 @media (max-width: 640px) {
   .tagline { position: relative; }
@@ -85,18 +90,21 @@ html[data-city="johannesburg"] [data-city-only]:not([data-city-only~="johannesbu
 }
 /* Pied des mentions légales : retour à l'accueil et autres langues groupés */
 .foot-links { display: flex; flex-wrap: wrap; gap: 1.25rem; }
-/* Menu « plus » sur ordinateur : Cas d'usage, À propos et Articles derrière un hamburger */
+/* Menu « Plus » sur ordinateur : Cas d'usage, À propos et Articles, derrière un mot et un chevron */
 .nav-more { position: relative; display: flex; }
 .more-btn {
-  display: inline-flex; flex-direction: column; justify-content: center; gap: 4px;
-  width: 2.75rem; height: 2.5rem; padding: 0 .7rem;
-  background: transparent; border: 1.5px solid var(--grid-strong); border-radius: 3px; cursor: pointer;
+  display: inline-flex; align-items: center; gap: .4rem; padding: 0;
+  font: inherit; font-size: .9375rem; font-weight: 500; color: var(--pencil);
+  background: none; border: 0; cursor: pointer;
 }
-.more-btn span { display: block; height: 2px; background: var(--ink); border-radius: 2px; transition: transform .2s, opacity .2s; }
-.more-btn:hover, .nav-more:has([aria-current]) .more-btn { border-color: var(--ink); }
-.nav-more.is-open .more-btn span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
-.nav-more.is-open .more-btn span:nth-child(2) { opacity: 0; }
-.nav-more.is-open .more-btn span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+.more-btn::after {
+  content: ""; width: .4rem; height: .4rem; margin-top: -.2rem;
+  border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg);
+  transition: transform .2s;
+}
+.more-btn:hover, .nav-more.is-open .more-btn { color: var(--ink); }
+.nav-more:has([aria-current]) .more-btn { color: var(--ink); font-weight: 600; }
+.nav-more.is-open .more-btn::after { margin-top: .2rem; transform: rotate(-135deg); }
 .more-menu, .picker-menu {
   display: none; position: absolute; top: calc(100% + .6rem); right: 0; min-width: 12rem;
   flex-direction: column; padding: .4rem;
@@ -113,7 +121,7 @@ html[data-city="johannesburg"] [data-city-only]:not([data-city-only~="johannesbu
 /* Langues : un petit drapeau devant chaque nom */
 .picker-lang .picker-menu a { display: flex; align-items: center; gap: .55rem; }
 .flag { flex: none; width: 1.25rem; height: .875rem; border-radius: 2px; box-shadow: 0 0 0 1px rgba(20, 40, 80, .15); }
-@media (prefers-reduced-motion: reduce) { .more-btn span { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .more-btn::after { transition: none; } }
 @media (max-width: 1080px) {
   .more-btn { display: none; }
   .nav-more, .nav-more .more-menu { display: contents; }

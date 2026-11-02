@@ -20,6 +20,9 @@
 .uses-page { padding-top: clamp(3rem, 2rem + 4vw, 5.5rem); }
 .uses-page .about-title { max-width: 18ch; }
 .uses-more { margin-top: 2rem; font-size: var(--t-lead); }
+.uses-filter { display: block; margin-top: 2.5rem; }
+.uses-filter[hidden], .uses > li[hidden] { display: none; }
+.uses-filter + .uses { margin-top: 1.5rem; }
 
 /* ---------- Page d'un cas d'usage ---------- */
 
@@ -32,6 +35,18 @@
 .uc-hero .btn { margin-top: 2rem; }
 .uc-facts { display: flex; flex-wrap: wrap; gap: .5rem 0; margin-top: 2rem; color: var(--pencil); font-size: 1rem; }
 .uc-facts li + li::before { content: ""; display: inline-block; width: 1px; height: 1em; margin: 0 1rem; vertical-align: -.15em; background: var(--grid-strong); }
+/* Sur grand écran, le titre à gauche et le texte à droite : la maquette arrive dans le premier écran */
+@media (min-width: 1100px) {
+  .uc-head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 4rem; align-items: end; }
+  .uc-head .uc-title { font-size: clamp(2.4rem, 1rem + 3vw, 3.75rem); }
+  .uc-intro .uc-lede { margin-top: 0; font-size: 1.125rem; }
+  .uc-intro .btn { margin-top: 1.5rem; }
+  /* Une information par ligne : dans une colonne étroite, les séparateurs tomberaient en début de ligne */
+  .uc-intro .uc-facts { flex-direction: column; gap: .3rem; margin-top: 1.25rem; font-size: .9375rem; }
+  .uc-intro .uc-facts li::before, .uc-intro .uc-facts li + li::before {
+    content: ""; display: inline-block; width: .6rem; height: 2px; margin: 0 .6rem 0 0; vertical-align: .3em; background: var(--red);
+  }
+}
 /* Tuile avec exemple : cliquable en entier, le lien se souligne en rouge au survol */
 .uses li:has(.uses-link) { position: relative; transition: border-color .15s; }
 .uses li:has(.uses-link):hover { border-color: var(--grid-strong); }
@@ -201,10 +216,17 @@ i.mk-ok, i.mk-bad, i.mk-warn { background: none; font-style: normal; font-size: 
 .mk-actions .mk-btn { margin-top: 0; }
 @media (max-width: 1000px) {
   .qt-app-2 { grid-template-columns: minmax(0, 1fr); }
-  .mk-aside { display: none; }
+  /* L'encadré de droite passe sous l'écran principal : la légende en parle souvent */
+  .mk-aside { margin: 0 1rem 1rem; }
 }
 @media (max-width: 640px) {
-  .mk-kanban, .mk-k3 { grid-template-columns: minmax(0, 1fr); }
+  .mk-k3 { grid-template-columns: minmax(0, 1fr); }
+  /* Le pipeline garde ses colonnes côte à côte et défile du doigt, plutôt que de s'empiler sur toute la hauteur */
+  .mk-kanban {
+    grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 11rem;
+    overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; padding-bottom: .4rem;
+  }
+  .mk-kanban > .mk-col { scroll-snap-align: start; }
   .mk-row { flex-direction: column; }
   .mk-table { overflow-x: auto; }
   .mk-tr { min-width: 34rem; }

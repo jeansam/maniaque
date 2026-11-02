@@ -1,4 +1,6 @@
 order: 7
+# Famille, pour le filtre de la page Cas d'usage (libellés dans usecaseIndex.yaml, sous groups)
+group: operations
 slug:
   fr: suivi-de-projets
   en: project-tracking
