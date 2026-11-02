@@ -63,3 +63,23 @@ people:
       fr: "À Johannesbourg, c'est Nthuseni Mathaga qui vous répond : la personne qui vous écoute est aussi celle qui construit votre outil et s'engage sur les dates."
       en: "In Johannesburg, Nthuseni Mathaga is the one who answers you: the person who listens to you is also the one who builds your tool and commits to the dates."
       pt: "Em Joanesburgo, quem responde a você é Nthuseni Mathaga: a pessoa que escuta você é a mesma que constrói a sua ferramenta e se compromete com os prazos."
+network:
+  anchor:
+    fr: maniaque
+    en: maniaque
+    pt: maniaque
+  heading:
+    fr: À propos de Maniaque
+    en: About Maniaque
+    pt: Sobre a Maniaque
+  since:
+    fr: Depuis 2026
+    en: Since 2026
+    pt: Desde 2026
+  text:
+    - fr: "Maniaque n'est pas une agence. C'est un réseau de partenaires Produit et IA qui partagent leurs ressources et leurs bonnes pratiques à l'ère de l'IA, mais chaque partenaire a ses propres clients. Ainsi, les clients ne paient aucun des coûts d'une agence."
+      en: "Maniaque is not an agency. It's a network of Product and AI partners who share resources and best practices with each other in the age of AI, but each partner has their own clients. This way, customers don't pay for any of the costs of an agency."
+      pt: "A Maniaque não é uma agência. É uma rede de parceiros de Produto e IA que compartilham recursos e boas práticas entre si na era da IA, mas cada parceiro tem os seus próprios clientes. Assim, os clientes não pagam nenhum dos custos de uma agência."
+    - fr: "Vous voulez rejoindre le réseau ? Écrivez-nous à <a class=\"inline-link\" href=\"mailto:hello@maniaque.xyz\">hello@maniaque.xyz</a>."
+      en: "Want to join the network? Reach out to <a class=\"inline-link\" href=\"mailto:hello@maniaque.xyz\">hello@maniaque.xyz</a>."
+      pt: "Quer entrar para a rede? Escreva para <a class=\"inline-link\" href=\"mailto:hello@maniaque.xyz\">hello@maniaque.xyz</a>."
