@@ -37,7 +37,7 @@
 .uc-facts li + li::before { content: ""; display: inline-block; width: 1px; height: 1em; margin: 0 1rem; vertical-align: -.15em; background: var(--grid-strong); }
 /* Sur grand écran, le titre à gauche et le texte à droite : la maquette arrive dans le premier écran */
 @media (min-width: 1100px) {
-  .uc-head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 4rem; align-items: end; }
+  .uc-head { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 4rem; align-items: start; }
   .uc-head .uc-title { font-size: clamp(2.4rem, 1rem + 3vw, 3.75rem); }
   .uc-intro .uc-lede { margin-top: 0; font-size: 1.125rem; }
   .uc-intro .btn { margin-top: 1.5rem; }
