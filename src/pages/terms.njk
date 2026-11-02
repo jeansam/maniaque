@@ -1,0 +1,13 @@
+---
+pagination: { data: pages.terms, size: 1, alias: p }
+variant: legal
+mainClass: page
+---
+
+  <div class="wrap">
+    <h1>{{ t.terms }}</h1>
+    <p>{{ s.updated }}</p>
+{% for section in s.sections %}
+    <h2>{{ section.title }}</h2>
+{% for para in section.text %}    <p>{{ para }}</p>
+{% endfor %}{% endfor %}  </div>

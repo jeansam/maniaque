@@ -36,7 +36,7 @@
     {% set small = true %}{% include "wordmark.njk" %}
     <span class="foot-links">
       <a href="{{ routes.home[lang] }}">{{ t.backHome }}</a>
-{% for l in langs %}{% if l.code != lang %}      <a href="{{ routes.legal[l.code] }}" hreflang="{{ l.htmlLang }}" lang="{{ l.htmlLang }}" aria-label="{{ l.versionLabel }}">{{ l.short }}</a>
+{% for l in langs %}{% if l.code != lang %}      <a href="{{ routes[p.key][l.code] }}" hreflang="{{ l.htmlLang }}" lang="{{ l.htmlLang }}" aria-label="{{ l.versionLabel }}">{{ l.short }}</a>
 {% endif %}{% endfor %}    </span>
   </div>
 </footer>
@@ -82,13 +82,17 @@
 {% if variant == "home" -%}
 <footer class="map-foot">
   <a href="{{ routes.legal[lang] }}">{{ t.legal }}</a>
+  <a href="{{ routes.terms[lang] }}">{{ t.terms }}</a>
 </footer>
 {%- else -%}
 <footer class="foot">
   <div class="wrap foot-inner">
     {% set small = true %}{% include "wordmark.njk" %}
     <p>{{ t.footer }}</p>
-    <a href="{{ routes.legal[lang] }}">{{ t.legal }}</a>
+    <span class="foot-links foot-end">
+      <a href="{{ routes.legal[lang] }}">{{ t.legal }}</a>
+      <a href="{{ routes.terms[lang] }}">{{ t.terms }}</a>
+    </span>
   </div>
 </footer>
 {%- endif %}

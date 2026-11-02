@@ -1,0 +1,123 @@
+# Les conditions générales : une section par intertitre, un paragraphe par ligne de « text »
+updated:
+  fr: Version du 2 novembre 2026.
+  en: Version of 2 November 2026.
+  pt: Versão de 2 de novembro de 2026.
+sections:
+  - title:
+      fr: Objet
+      en: Purpose
+      pt: Objeto
+    text:
+      - fr: "Ces conditions s'appliquent aux prestations Maniaque proposées aux entreprises : création d'un outil digital sur mesure, puis son évolution et sa maintenance par abonnement."
+        en: "These terms apply to the Maniaque services offered to businesses: building a custom digital tool, then evolving and maintaining it through a subscription."
+        pt: "Estes termos se aplicam aos serviços Maniaque oferecidos às empresas: criação de uma ferramenta digital sob medida e, depois, a sua evolução e manutenção por assinatura."
+      - fr: "À Marseille, le prestataire est Jean-Samuel Jéquier, entrepreneur individuel exerçant sous le nom commercial Maniaque (SIRET : 894 000 348 00017, 79 avenue de la Fourragère, 13012 Marseille). Dans les autres villes, le prestataire est le spécialiste du réseau Maniaque nommé dans la proposition remise après l'audit."
+        en: "In Marseille, the provider is Jean-Samuel Jéquier, sole trader operating under the trade name Maniaque (SIRET: 894 000 348 00017, 79 avenue de la Fourragère, 13012 Marseille, France). In the other cities, the provider is the Maniaque network specialist named in the proposal sent after the audit."
+        pt: "Em Marselha, o prestador é Jean-Samuel Jéquier, empresário individual que atua sob o nome comercial Maniaque (SIRET: 894 000 348 00017, 79 avenue de la Fourragère, 13012 Marseille, França). Nas outras cidades, o prestador é o especialista da rede Maniaque indicado na proposta enviada após o diagnóstico."
+  - title:
+      fr: Audit
+      en: Audit
+      pt: Diagnóstico
+    text:
+      - fr: "L'audit dure 45 minutes. Il est gratuit et n'engage à rien. Vous recevez ensuite une page qui décrit le problème, ce que ferait la première version, le coût mensuel total, et notre avis sur l'intérêt d'y aller. Un accord de confidentialité peut être signé dès l'audit."
+        en: "The audit lasts 45 minutes. It is free and commits you to nothing. You then receive a page describing the problem, what the first version would do, the total monthly cost, and our opinion on whether it's worth it. A non-disclosure agreement can be signed from the audit onwards."
+        pt: "O diagnóstico dura 45 minutos. É gratuito e não gera nenhum compromisso. Depois, você recebe uma página que descreve o problema, o que a primeira versão faria, o custo mensal total e a nossa opinião sobre se vale a pena. Um acordo de confidencialidade pode ser assinado já no diagnóstico."
+  - title:
+      fr: Cadrage et première version
+      en: Scoping and first version
+      pt: Escopo e primeira versão
+    text:
+      - fr: "La première version est une version fonctionnelle de l'outil, que vous ou vos équipes pouvez utiliser au quotidien. Ses fonctionnalités minimales, ses écrans, ses données et son hébergement sont définis ensemble pendant le cadrage, et validés par écrit."
+        en: "The first version is a working version of the tool that you or your teams can use day to day. Its minimum features, screens, data and hosting are defined together during scoping, and approved in writing."
+        pt: "A primeira versão é uma versão funcional da ferramenta, que você ou as suas equipes podem usar no dia a dia. As funcionalidades mínimas, as telas, os dados e a hospedagem são definidos juntos na fase de escopo e aprovados por escrito."
+      - fr: "Elle est livrée en 2 à 8 semaines, selon le périmètre. Le délai démarre à la validation du cadrage."
+        en: "It is delivered in 2 to 8 weeks, depending on the scope. The clock starts when the scope is approved."
+        pt: "Ela é entregue em 2 a 8 semanas, conforme o escopo. O prazo começa a contar na aprovação do escopo."
+  - title:
+      fr: Formules et prix
+      en: Plans and prices
+      pt: Planos e preços
+    text:
+      - fr: "Les prix sont ceux de la ville choisie, hors taxes. Deux formules sont proposées :"
+        en: "Prices are those of the selected city, excluding VAT. Two plans are offered:"
+        pt: "Os preços são os da cidade escolhida, sem impostos. Dois planos são oferecidos:"
+      - fr: "<strong>Première version payée</strong> : <span data-price=\"first\"></span>&nbsp;HT pour la première version, puis un abonnement de <span data-price=\"monthly\"></span>&nbsp;HT par mois dès sa livraison, sans engagement."
+        en: "<strong>Paid first version</strong>: <span data-price=\"first\"></span> excl. VAT for the first version, then a subscription of <span data-price=\"monthly\"></span> excl. VAT per month from its delivery, with no minimum term."
+        pt: "<strong>Primeira versão paga</strong>: <span data-price=\"first\"></span> sem impostos pela primeira versão e, depois, uma assinatura de <span data-price=\"monthly\"></span> por mês sem impostos a partir da entrega, sem fidelidade."
+      - fr: "<strong>Première version offerte</strong> : un abonnement de <span data-price=\"monthly\"></span>&nbsp;HT par mois dès le départ, avec un engagement de 6 mois."
+        en: "<strong>Free first version</strong>: a subscription of <span data-price=\"monthly\"></span> excl. VAT per month from day one, with a 6-month minimum term."
+        pt: "<strong>Primeira versão grátis</strong>: uma assinatura de <span data-price=\"monthly\"></span> por mês sem impostos desde o início, com fidelidade de 6 meses."
+  - title:
+      fr: Paiement
+      en: Payment
+      pt: Pagamento
+    text:
+      - fr: "La première version se règle moitié à la commande, moitié à la mise en service. L'abonnement est prélevé en début de mois."
+        en: "The first version is paid half on order, half on go-live. The subscription is charged by direct debit at the start of each month."
+        pt: "A primeira versão é paga metade na contratação e metade na entrada em produção. A assinatura é cobrada no início de cada mês."
+  - title:
+      fr: Durée et résiliation
+      en: Term and cancellation
+      pt: Duração e cancelamento
+    text:
+      - fr: "Hors engagement, l'abonnement est résiliable chaque mois. Vous pouvez aussi basculer sur une offre de maintenance seule, à <span data-price=\"maintenance\"></span>&nbsp;HT par mois hors hébergement : votre outil reste maintenu, sans nouvelle demande."
+        en: "Outside the minimum term, the subscription can be cancelled any month. You can also switch to a maintenance-only plan, at <span data-price=\"maintenance\"></span> excl. VAT per month, hosting not included: your tool stays maintained, with no new requests."
+        pt: "Fora do período de fidelidade, a assinatura pode ser cancelada a qualquer mês. Você também pode migrar para um plano só de manutenção, por <span data-price=\"maintenance\"></span> por mês sem impostos, hospedagem não incluída: a sua ferramenta continua mantida, sem novos pedidos."
+  - title:
+      fr: Demandes et délais
+      en: Requests and timing
+      pt: Pedidos e prazos
+    text:
+      - fr: "Chaque message reçoit une réponse sous 24&nbsp;h ouvrées. Les demandes passent par votre tableau de bord, où vous modifiez la feuille de route en temps réel, ou par message."
+        en: "Every message gets a reply within 24 business hours. Requests go through your dashboard, where you change the roadmap in real time, or by message."
+        pt: "Cada mensagem recebe resposta em até 24&nbsp;h úteis. Os pedidos passam pelo seu painel, onde você altera o roadmap em tempo real, ou por mensagem."
+      - fr: "Une fonctionnalité est développée à la fois, avec une date de livraison annoncée à l'avance ; les retouches avancent en parallèle. Une retouche change ce qui existe déjà (un libellé, une couleur, une colonne, un calcul) ; une fonctionnalité ajoute quelque chose de nouveau (un écran, un import, un envoi automatique, une connexion à un autre logiciel)."
+        en: "One feature is built at a time, with a delivery date announced in advance; tweaks move forward alongside. A tweak changes something that already exists (a label, a colour, a column, a calculation); a feature adds something new (a screen, an import, an automatic email, a connection to other software)."
+        pt: "Uma funcionalidade é desenvolvida por vez, com uma data de entrega anunciada com antecedência; os ajustes avançam em paralelo. Um ajuste muda algo que já existe (um texto, uma cor, uma coluna, um cálculo); uma funcionalidade acrescenta algo novo (uma tela, uma importação, um envio automático, uma conexão com outro software)."
+      - fr: "Vous désignez une personne disponible environ une heure par semaine pour tester et valider ce qui est livré."
+        en: "You name someone available about an hour a week to test and approve what is delivered."
+        pt: "Você indica uma pessoa disponível cerca de uma hora por semana para testar e aprovar o que é entregue."
+  - title:
+      fr: Garantie
+      en: Guarantee
+      pt: Garantia
+    text:
+      - fr: "Si la date de livraison annoncée pour une fonctionnalité n'est pas tenue, l'abonnement du mois suivant est à moitié prix."
+        en: "If the delivery date announced for a feature is missed, the next month's subscription is half price."
+        pt: "Se a data de entrega anunciada para uma funcionalidade não for cumprida, a assinatura do mês seguinte sai pela metade do preço."
+  - title:
+      fr: Hébergement et services à l'usage
+      en: Hosting and pay-per-use services
+      pt: Hospedagem e serviços pagos por uso
+    text:
+      - fr: "L'outil est hébergé par nos soins ou par les vôtres. Si nous l'hébergeons, les coûts d'hébergement sont inclus dans l'abonnement jusqu'à <span data-price=\"hosting\"></span>&nbsp;HT par mois."
+        en: "The tool is hosted by us or by you. If we host it, hosting costs are included in the subscription up to <span data-price=\"hosting\"></span> excl. VAT per month."
+        pt: "A ferramenta é hospedada por nós ou por você. Se nós hospedarmos, os custos de hospedagem estão incluídos na assinatura até <span data-price=\"hosting\"></span> por mês, sem impostos."
+      - fr: "Les services payants à l'usage (SMS, emails en grand volume, intelligence artificielle intégrée à l'outil, comptes développeur Apple et Android…) sont refacturés au coût réel, sans marge."
+        en: "Pay-per-use services (text messages, high-volume emails, artificial intelligence built into the tool, Apple and Android developer accounts…) are passed on at cost, with no markup."
+        pt: "Os serviços pagos por uso (SMS, e-mails em grande volume, inteligência artificial integrada à ferramenta, contas de desenvolvedor Apple e Android…) são repassados pelo custo real, sem margem."
+  - title:
+      fr: Propriété du code et des données
+      en: Ownership of code and data
+      pt: Propriedade do código e dos dados
+    text:
+      - fr: "Le code de votre outil et vos données vous appartiennent, dès le départ. Si vous arrêtez, nous vous transférons le code et la base de données, ou nous vous aidons à les installer chez vous."
+        en: "Your tool's code and your data belong to you from day one. If you stop, we hand over the code and the database, or help you install them on your side."
+        pt: "O código da sua ferramenta e os seus dados pertencem a você desde o início. Se você parar, transferimos o código e o banco de dados, ou ajudamos a instalá-los na sua própria infraestrutura."
+  - title:
+      fr: Confidentialité et continuité
+      en: Confidentiality and continuity
+      pt: Confidencialidade e continuidade
+    text:
+      - fr: "Vos données et vos méthodes de travail restent confidentielles. En cas d'absence de votre interlocuteur, un autre spécialiste du réseau Maniaque peut intervenir sur votre outil en cas d'urgence."
+        en: "Your data and the way you work remain confidential. If your contact is away, another Maniaque network specialist can step in on your tool in an emergency."
+        pt: "Seus dados e seus métodos de trabalho permanecem confidenciais. Na ausência do seu interlocutor, outro especialista da rede Maniaque pode atuar na sua ferramenta em caso de urgência."
+  - title:
+      fr: Contact
+      en: Contact
+      pt: Contato
+    text:
+      - fr: "Pour toute question sur ces conditions : <a href=\"mailto:hello@maniaque.xyz\">hello@maniaque.xyz</a>"
+        en: "For any question about these terms: <a href=\"mailto:hello@maniaque.xyz\">hello@maniaque.xyz</a>"
+        pt: "Para qualquer dúvida sobre estes termos: <a href=\"mailto:hello@maniaque.xyz\">hello@maniaque.xyz</a>"
