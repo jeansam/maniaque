@@ -11,8 +11,8 @@
 .about { padding-top: clamp(3rem, 2rem + 4vw, 5.5rem); }
 .about-title { font-size: var(--t-h2); font-weight: 760; line-height: 1.04; letter-spacing: -0.03em; }
 .since {
-  display: inline-block; margin: 0 0 1rem; padding: .2rem .7rem;
+  display: inline-block; margin: 1rem 0 0; padding: .2rem .7rem;
   border: 1.5px solid var(--ink); border-radius: 99px;
   font-size: .875rem; font-weight: 600; letter-spacing: .02em; color: var(--ink);
 }
-.split-text .since { margin-top: 0; color: var(--ink); }
+.split-text .since { margin-top: 1rem; color: var(--ink); }
