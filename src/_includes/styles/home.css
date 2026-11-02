@@ -130,6 +130,7 @@
 
 .map-foot { padding: 0 var(--gutter) 1.25rem; text-align: center; font-size: .8125rem; }
 .map-foot a { color: var(--pencil); text-decoration: none; }
+.map-foot a + a { margin-left: 1.25rem; }
 .map-foot a:hover { color: var(--ink); text-decoration: underline; }
 
 /* Sous la carte, les cas d'usage défilent sur deux rangées en sens contraire, comme les maquettes de l'offre */

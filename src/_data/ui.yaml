@@ -21,13 +21,14 @@ languageLabel: { fr: "Langue : ", en: "Language: ", pt: "Idioma: " }
 book: { fr: Réserver un audit, en: Book an audit, pt: Agendar diagnóstico }
 footer: { fr: Outils sur mesure pour PME. Prix hors taxes., en: Custom software for small businesses. Prices exclude VAT., pt: Softwares sob medida para PMEs. Preços sem impostos. }
 legal: { fr: Mentions légales, en: Legal notice, pt: Aviso legal }
+terms: { fr: Conditions générales, en: Terms and conditions, pt: Termos e condições }
 # L'encart de fin de page pour réserver un audit ; une page peut changer le titre et le texte
 cta:
   title: { fr: Parlons de ce qui vous agace au quotidien., en: Let's talk about what bugs you every day., pt: Vamos falar do que irrita você no dia a dia. }
   text:
-    fr: 45 minutes, gratuites et sans engagement. Vous repartez avec un avis franc, même si c'est pour nous dire non.
-    en: 45 minutes, free and with no commitment. You leave with an honest opinion, even if it's to tell you no.
-    pt: 45 minutos, gratuitos e sem compromisso. Você sai com uma opinião franca, mesmo que seja para nos dizer não.
+    fr: "45 minutes, gratuites et sans engagement. Vous recevez ensuite une page claire : le problème, ce que ferait la première version, le coût mensuel total, et notre avis franc, même si c'est pour vous dire non."
+    en: "45 minutes, free and with no commitment. You then get one clear page: the problem, what the first version would do, the total monthly cost, and our honest opinion, even if it's to tell you no."
+    pt: "45 minutos, gratuitos e sem compromisso. Depois, você recebe uma página clara: o problema, o que a primeira versão faria, o custo mensal total e a nossa opinião franca, mesmo que seja para dizer não."
   button: { fr: Choisir un créneau, en: Pick a time slot, pt: Escolher um horário }
 # Après le prénom de la personne qui répond dans la ville choisie (« Jean-Sam vous répond. »)
 answers: { fr: vous répond., en: will get back to you., pt: responde a você. }

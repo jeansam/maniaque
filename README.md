@@ -23,7 +23,7 @@ La même génération tourne sur GitHub à chaque push et pull request (`.github
 
 - **Un texte** : dans les fichiers YAML, les trois langues côte à côte (`fr`, `en`, `pt`). Une valeur sans langue est la même partout
   - `src/_data/ui.yaml` : l'interface commune (en-tête, menus, pied de page, encart « Réserver un audit », jours de la semaine…)
-  - `src/_data/strings/<page>.yaml` : les textes d'une page (`home`, `offer`, `usecaseIndex`, `about`, `articleIndex`, `legal`, et les textes communs aux pages de cas d'usage, `usecase`, et d'articles, `article`)
+  - `src/_data/strings/<page>.yaml` : les textes d'une page (`home`, `offer`, `usecaseIndex`, `about`, `articleIndex`, `legal`, `terms`, et les textes communs aux pages de cas d'usage, `usecase`, et d'articles, `article`)
   - `src/content/showcase/<maquette>.yaml` : les textes d'une maquette d'écran de la vitrine de l'offre
   - `src/content/usecases/<cas>.yaml` : un cas d'usage (son adresse dans chaque langue, son titre, la citation et le résumé de la page Cas d'usage, et les textes de sa maquette d'écran) ; `order` donne sa place dans les listes, `group` sa famille dans le filtre de la page Cas d'usage (`sales`, `operations`, `team`, `admin`, libellés dans `usecaseIndex.yaml`)
   - `src/content/articles/<article>.yaml` : un article (adresse, date, durée de lecture, résumé, introduction, légende de l'illustration et références) ; **son texte est en Markdown, un fichier par langue** : `<article>.fr.md`, `<article>.en.md`, `<article>.pt.md` (`## ` pour un intertitre, `**gras**`, `[lien](https://…)` ; les liens externes s'ouvrent dans un nouvel onglet ; le HTML reste permis, pour un tableau par exemple)
@@ -45,6 +45,7 @@ La même génération tourne sur GitHub à chaque push et pull request (`.github
   - `about.njk` : la page À propos, avec la personne qui répond dans chaque ville
   - `articleIndex.njk` et `article.njk` : la liste des articles et chaque article
   - `legal.njk` : les mentions légales
+  - `terms.njk` : les conditions générales, une section par intertitre dans `terms.yaml`
 - `src/city.njk` : donne `city.js`, fait des villes de `cities.js` et du code de `src/_includes/city.js` : la ville choisie dans l'en-tête (Marseille, São Paulo, Johannesbourg). La ville est gardée dans le navigateur et ne change pas quand on change de langue ; choisir une ville ouvre la page dans sa langue. Dans le HTML :
   - `data-book` sur un lien : il pointe vers le lien d'audit de la ville
   - `data-price="monthly|first|maintenance|hosting|none"` : le montant, dans la devise de la ville

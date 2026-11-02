@@ -32,5 +32,6 @@ module.exports = {
   about: single("about"),
   articleIndex: single("articleIndex"),
   article: each("article", articles),
-  legal: single("legal")
+  legal: single("legal"),
+  terms: single("terms")
 };

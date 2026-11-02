@@ -9,7 +9,7 @@ layout: base.njk
   <div class="wrap bar-inner">
     <div class="brand">
       {% include "wordmark.njk" %}
-      <p class="tagline"><svg class="tagline-pin" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>{{ t.tagline }} <span class="tagline-city"><span class="picker picker-city"><button type="button" class="picker-btn city-btn" aria-expanded="false" aria-controls="city-menu" aria-label="{{ t.chooseCity }}"><span data-city-name>{{ city.name[lang] }}</span></button><span class="picker-menu" id="city-menu">{% for c in cities | values %}<a href="{{ routes[p.key][c.lang] }}?ville={{ c.id }}" data-set-city="{{ c.id }}"{% if c.id == city.id %} aria-current="true"{% endif %}>{{ c.name[lang] }}</a>{% endfor %}</span></span>.</span></span></p>
+      <p class="tagline"><svg class="tagline-pin" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg><span>{{ t.tagline }} <span class="tagline-city"><span class="picker picker-city"><button type="button" class="picker-btn city-btn" aria-expanded="false" aria-controls="city-menu" aria-label="{{ t.chooseCity }}"><span data-city-name>{{ city.name[lang] }}</span></button><span class="picker-menu" id="city-menu">{% for c in cities | values %}<a href="{{ routes[p.key][c.lang] }}?ville={{ c.id }}" data-set-city="{{ c.id }}"{% if c.id == city.id %} aria-current="true"{% endif %}>{{ c.name[lang] }}</a>{% endfor %}</span></span></span></span></p>
     </div>
     {{ c.burger("menu-btn", "main-nav", t.openMenu) }}
     <nav class="bar-nav" id="main-nav" aria-label="{{ t.mainNav }}">
@@ -33,6 +33,9 @@ layout: base.njk
   <div class="wrap foot-inner">
     {% set small = true %}{% include "wordmark.njk" %}
     <p>{{ t.footer }}</p>
-    <a href="{{ routes.legal[lang] }}">{{ t.legal }}</a>
+    <span class="foot-links foot-end">
+      <a href="{{ routes.legal[lang] }}">{{ t.legal }}</a>
+      <a href="{{ routes.terms[lang] }}">{{ t.terms }}</a>
+    </span>
   </div>
 </footer>

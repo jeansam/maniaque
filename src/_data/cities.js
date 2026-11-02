@@ -51,7 +51,7 @@ module.exports = {
     // Sur la carte du monde de l'accueil : position du point et côté où s'ouvre la fiche
     map: { anchor: "end", x: "57.79%", y: "77.61%" },
     lang: "en",
-    book: "https://www.linkedin.com/in/nmathaga/", // LinkedIn de Nthuseni, en attendant un agenda
+    book: "https://calendly.com/nmathaga/30min",
     currency: "ZAR",
     currencyDisplay: "code",
     prices: { monthly: 9900, first: 50000, maintenance: 990, hosting: 1000, none: 0 }
