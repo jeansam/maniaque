@@ -1,0 +1,22 @@
+# Réglages communs des éditeurs : UTF-8, fins de ligne Unix, indentation de 2 espaces
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Les fragments inclus au milieu d'une ligne de HTML (maquettes, icônes, drapeaux, logo, menu des langues)
+# n'ont pas de retour à la ligne final : il ajouterait un espace dans la page
+[src/_includes/{usecases,showcase,icons,flags}/**]
+insert_final_newline = false
+
+[src/_includes/{lang-picker,wordmark}.njk]
+insert_final_newline = false
+
+# En Markdown, deux espaces en fin de ligne forcent un retour à la ligne
+[*.md]
+trim_trailing_whitespace = false

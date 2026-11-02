@@ -1,0 +1,19 @@
+# À chaque push et pull request : vérifie les sources, génère le site et vérifie ses liens (npm run build),
+# comme Vercel avant chaque mise en ligne
+name: Génération du site
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: npm run build

@@ -12,7 +12,12 @@ npm install
 npm start
 ```
 
-`npm start` génère le site et le sert en local, rechargé à chaque modification ; `npm run build` le génère seulement.
+Node 22 (`.nvmrc`). `npm start` génère le site et le sert en local, rechargé à chaque modification ; `npm run build` le génère seulement, entre deux vérifications qui l'arrêtent en cas de problème et disent lequel :
+
+- avant, `npm run check` (`lib/check.js`) vérifie les sources : chaque texte traduit existe dans les trois langues, chaque cas d'usage a sa maquette et son icône, chaque maquette de la vitrine ses textes, chaque article son texte et son illustration dans chaque langue, et deux pages n'ont jamais la même adresse. Un texte absent exprès d'une langue s'écrit `fr: null` (comme l'explication du mot « maniaque », inutile en français)
+- après, `lib/check-links.js` vérifie que chaque lien, image ou script vers le site mène à un fichier qui existe, et à un `id` de la page quand il vise un endroit précis (`/offre/#tarifs`)
+
+La même génération tourne sur GitHub à chaque push et pull request (`.github/workflows/build.yml`).
 
 ## Où changer quoi
 
@@ -54,6 +59,7 @@ npm start
   - `map.js` : l'appui sur la carte de l'accueil sur mobile (premier appui : la fiche, second : la page)
   - les images, et l'illustration de chaque article dans chaque langue (celles en portugais ont leurs montants en reais)
   - `en/index.html` : redirige `/en/` vers l'accueil anglais, à la racine
+- `.editorconfig` : les réglages communs des éditeurs (UTF-8, 2 espaces). Les fragments inclus au milieu d'une ligne de HTML (maquettes, icônes, drapeaux, logo) n'ont pas de retour à la ligne final, qui ajouterait un espace dans la page
 - `vercel.json` : la génération, et sur l'accueil (`/`), la redirection selon le pays du visiteur (France → `/fr/`, Brésil → `/pt/`, ailleurs : anglais). Dès qu'on choisit une langue ou une ville à la main, un cookie `maniaque-lang` (posé par `city.js`) l'emporte sur le pays
 
 ## À compléter avant diffusion

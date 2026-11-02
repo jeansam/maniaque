@@ -1,8 +1,12 @@
 {
   "name": "maniaque",
   "scripts": {
-    "build": "eleventy",
+    "check": "node lib/check.js",
+    "build": "node lib/check.js && eleventy && node lib/check-links.js",
     "start": "eleventy --serve"
+  },
+  "engines": {
+    "node": "22.x"
   },
   "repository": {
     "type": "git",

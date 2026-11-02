@@ -23,6 +23,7 @@ heroLine3:
   en: as you want.
   pt: quanto quiser.
 meaningLabel:
+  fr: null # en français, le mot se comprend : ni astérisque ni explication
   en: What maniaque means
   pt: O que significa maniaque
 noteAsk:
@@ -34,6 +35,7 @@ noteNext:
   en: “Now, a complete customer portal.”
   pt: “Agora, uma área do cliente completa.”
 meaning:
+  fr: null
   en: <em lang="fr">Maniaque</em> is French for fussy, not maniac 😅. And yes, there's AI in it.
   pt: <em lang="fr">Maniaque</em> quer dizer “maníaco por detalhes” em francês 😅. E sim, tem IA no nome.
 lede:
