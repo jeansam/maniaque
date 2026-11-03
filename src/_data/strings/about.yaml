@@ -59,6 +59,16 @@ people:
       fr: Portrait de Nthuseni Mathaga, Maniaque Johannesbourg
       en: Portrait of Nthuseni Mathaga, Maniaque Johannesburg
       pt: Retrato de Nthuseni Mathaga, Maniaque Joanesburgo
+    bio:
+      - fr: "Depuis plus de six ans, Nthuseni Mathaga crée des applications web et React Native pour des clients aux États-Unis et au Royaume-Uni. Il a contribué à livrer environ 70 applications, et y a acquis une solide expérience en architecture logicielle, en modélisation de données et en conception produit, sur des produits très variés."
+        en: "For more than six years, Nthuseni Mathaga has been building web and React Native applications for clients across the US and UK. He helped deliver around 70 client applications, gaining experience in software architecture, data modelling and product design across a wide range of products."
+        pt: "Há mais de seis anos, Nthuseni Mathaga cria aplicativos web e React Native para clientes nos Estados Unidos e no Reino Unido. Ele ajudou a entregar cerca de 70 aplicativos, ganhando experiência em arquitetura de software, modelagem de dados e design de produto, em produtos muito variados."
+      - fr: "Aujourd'hui, il crée des applications full-stack en TypeScript, React, Next.js, Node.js et Python, avec des outils de développement assisté par l'IA comme Claude Code, OpenAI Codex et Cursor. Il conçoit aussi des agents IA, des systèmes RAG et des processus d'évaluation."
+        en: "Today, he builds full-stack applications using TypeScript, React, Next.js, Node.js and Python, with AI-assisted development tools like Claude Code, OpenAI Codex and Cursor. He also builds AI agents, RAG systems and evaluation workflows."
+        pt: "Hoje, ele cria aplicativos full-stack com TypeScript, React, Next.js, Node.js e Python, usando ferramentas de desenvolvimento assistido por IA como Claude Code, OpenAI Codex e Cursor. Ele também constrói agentes de IA, sistemas RAG e fluxos de avaliação."
+      - fr: "Les outils changent vite. Ce qui ne change pas : une ingénierie réfléchie, une communication claire, et des logiciels qui fonctionnent pour ceux qui les utilisent."
+        en: "The tools are changing quickly. What doesn't change: thoughtful engineering, clear communication and software that works for the people using it."
+        pt: "As ferramentas mudam rápido. O que não muda: engenharia bem pensada, comunicação clara e software que funciona para quem o usa."
     intro:
       fr: "À Johannesbourg, c'est Nthuseni Mathaga qui vous répond : la personne qui vous écoute est aussi celle qui construit votre outil et s'engage sur les dates."
       en: "In Johannesburg, Nthuseni Mathaga is the one who answers you: the person who listens to you is also the one who builds your tool and commits to the dates."
