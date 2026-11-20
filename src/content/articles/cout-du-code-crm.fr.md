@@ -75,6 +75,6 @@ Autrement dit, la facture se déplace. Hier, vous payiez surtout des heures de f
 
 La question n'est plus « avons-nous les moyens d'un outil sur mesure ? ». Pour la plupart des PME, la réponse est désormais oui. La vraie question devient : « qui va comprendre notre façon de travailler, et l'accompagner dans la durée ? ».
 
-C'est pour ça que notre modèle repose sur une première version à prix fixe, puis un abonnement mensuel qui couvre les évolutions, l'hébergement et la maintenance. Le coût du code a chuté, nous le répercutons. Le temps passé à comprendre votre entreprise, lui, reste le cœur du travail.
+C'est pour ça que notre modèle repose sur une première version à prix fixe, puis un abonnement mensuel qui couvre l'hébergement, la maintenance et les retouches ; les évolutions se prennent à l'unité ou au forfait. Le coût du code a chuté, nous le répercutons. Le temps passé à comprendre votre entreprise, lui, reste le cœur du travail.
 
 Si vous avez un CRM, un tableur ou un outil métier qui vous agace, <a data-book="" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">réservez un audit gratuit de 45 minutes</a>. Vous saurez ce que coûterait votre outil aujourd'hui, et si ça vaut le coup.

@@ -20,9 +20,9 @@ sections:
       en: Audit
       pt: Diagnóstico
     text:
-      - fr: "L'audit dure 45 minutes. Il est gratuit et n'engage à rien. Vous recevez ensuite une page qui décrit le problème, ce que ferait la première version, le coût mensuel total, et notre avis sur l'intérêt d'y aller. Un accord de confidentialité peut être signé dès l'audit."
-        en: "The audit lasts 45 minutes. It is free and commits you to nothing. You then receive a page describing the problem, what the first version would do, the total monthly cost, and our opinion on whether it's worth it. A non-disclosure agreement can be signed from the audit onwards."
-        pt: "O diagnóstico dura 45 minutos. É gratuito e não gera nenhum compromisso. Depois, você recebe uma página que descreve o problema, o que a primeira versão faria, o custo mensal total e a nossa opinião sobre se vale a pena. Um acordo de confidencialidade pode ser assinado já no diagnóstico."
+      - fr: "L'audit dure 45 minutes. Il est gratuit et n'engage à rien. Vous recevez ensuite une page qui décrit le problème, ce que ferait la première version, son prix, le coût mensuel, et notre avis sur l'intérêt d'y aller. Un accord de confidentialité peut être signé dès l'audit."
+        en: "The audit lasts 45 minutes. It is free and commits you to nothing. You then receive a page describing the problem, what the first version would do, its price, the monthly cost, and our opinion on whether it's worth it. A non-disclosure agreement can be signed from the audit onwards."
+        pt: "O diagnóstico dura 45 minutos. É gratuito e não gera nenhum compromisso. Depois, você recebe uma página que descreve o problema, o que a primeira versão faria, o preço dela, o custo mensal e a nossa opinião sobre se vale a pena. Um acordo de confidencialidade pode ser assinado já no diagnóstico."
   - title:
       fr: Cadrage et première version
       en: Scoping and first version
@@ -45,20 +45,23 @@ sections:
       - fr: "<strong>Première version</strong> : de <span data-price=\"firstMin\"></span> à <span data-price=\"firstMax\"></span>&nbsp;HT, selon le périmètre. Le prix exact est fixé par écrit à la validation du cadrage."
         en: "<strong>First version</strong>: from <span data-price=\"firstMin\"></span> to <span data-price=\"firstMax\"></span> excl. VAT, depending on scope. The exact price is set in writing when the scope is approved."
         pt: "<strong>Primeira versão</strong>: de <span data-price=\"firstMin\"></span> a <span data-price=\"firstMax\"></span> sem impostos, conforme o escopo. O preço exato é definido por escrito na aprovação do escopo."
-      - fr: "<strong>Abonnement de base</strong> : <span data-price=\"base\"></span>&nbsp;HT par mois dès la livraison de la première version. Il comprend l'hébergement, la maintenance (mises à jour de sécurité, sauvegardes, corrections en cas de panne) et les retouches."
-        en: "<strong>Base subscription</strong>: <span data-price=\"base\"></span> excl. VAT per month from delivery of the first version. It includes hosting, maintenance (security updates, backups, fixes if something breaks) and tweaks."
-        pt: "<strong>Assinatura básica</strong>: <span data-price=\"base\"></span> por mês sem impostos a partir da entrega da primeira versão. Ela inclui a hospedagem, a manutenção (atualizações de segurança, backups, correções em caso de falha) e os ajustes."
+      - fr: "<strong>Abonnement de base</strong> : <span data-price=\"base\"></span>&nbsp;HT par mois dès la livraison de la première version. Il comprend l'hébergement, la maintenance (mises à jour de sécurité, sauvegardes, corrections de bugs et de pannes) et les retouches, dans la limite du raisonnable."
+        en: "<strong>Base subscription</strong>: <span data-price=\"base\"></span> excl. VAT per month from delivery of the first version. It includes hosting, maintenance (security updates, backups, bug and outage fixes) and tweaks, within reason."
+        pt: "<strong>Assinatura básica</strong>: <span data-price=\"base\"></span> por mês sem impostos a partir da entrega da primeira versão. Ela inclui a hospedagem, a manutenção (atualizações de segurança, backups, correções de bugs e de falhas) e os ajustes, dentro do razoável."
       - fr: "<strong>Demandes fonctionnelles</strong> : <span data-price=\"request\"></span>&nbsp;HT par demande à l'unité, ou un forfait mensuel qui remplace l'abonnement de base : <span data-price=\"tier3\"></span>&nbsp;HT par mois jusqu'à 3 demandes, <span data-price=\"tier6\"></span> jusqu'à 6, <span data-price=\"tier10\"></span> jusqu'à 10 et <span data-price=\"tier20\"></span> jusqu'à 20."
         en: "<strong>Feature requests</strong>: <span data-price=\"request\"></span> excl. VAT per request one by one, or a monthly bundle that replaces the base subscription: <span data-price=\"tier3\"></span> excl. VAT per month for up to 3 requests, <span data-price=\"tier6\"></span> for up to 6, <span data-price=\"tier10\"></span> for up to 10 and <span data-price=\"tier20\"></span> for up to 20."
         pt: "<strong>Pedidos de funcionalidade</strong>: <span data-price=\"request\"></span> sem impostos por pedido avulso, ou um pacote mensal que substitui a assinatura básica: <span data-price=\"tier3\"></span> por mês sem impostos para até 3 pedidos, <span data-price=\"tier6\"></span> para até 6, <span data-price=\"tier10\"></span> para até 10 e <span data-price=\"tier20\"></span> para até 20."
+      - fr: "Les demandes du forfait non utilisées passent au mois suivant, une seule fois, puis sont perdues. Au-delà du forfait, chaque demande en plus est facturée <span data-price=\"request\"></span>&nbsp;HT."
+        en: "Unused bundle requests carry over to the next month, once only, then expire. Beyond the bundle, each extra request is billed at <span data-price=\"request\"></span> excl. VAT."
+        pt: "Os pedidos do pacote não usados passam para o mês seguinte, uma única vez, e depois expiram. Além do pacote, cada pedido extra é faturado por <span data-price=\"request\"></span> sem impostos."
   - title:
       fr: Paiement
       en: Payment
       pt: Pagamento
     text:
-      - fr: "La première version se règle moitié à la commande, moitié à la mise en service. L'abonnement est prélevé en début de mois."
-        en: "The first version is paid half on order, half on go-live. The subscription is charged by direct debit at the start of each month."
-        pt: "A primeira versão é paga metade na contratação e metade na entrada em produção. A assinatura é cobrada no início de cada mês."
+      - fr: "La première version se règle moitié à la commande, moitié à la mise en service. L'abonnement est prélevé en début de mois. Les demandes à l'unité, et celles au-delà du forfait, sont facturées en fin de mois, avec l'abonnement suivant."
+        en: "The first version is paid half on order, half on go-live. The subscription is charged by direct debit at the start of each month. One-off requests, and those beyond the bundle, are billed at the end of the month, with the next subscription."
+        pt: "A primeira versão é paga metade na contratação e metade na entrada em produção. A assinatura é cobrada no início de cada mês. Os pedidos avulsos, e os que passam do pacote, são faturados no fim do mês, junto com a assinatura seguinte."
   - title:
       fr: Durée et résiliation
       en: Term and cancellation
@@ -78,6 +81,9 @@ sections:
       - fr: "Une fonctionnalité est développée à la fois, avec une date de livraison annoncée à l'avance ; les retouches avancent en parallèle. Une retouche change ce qui existe déjà (un texte, une image, un libellé, une couleur) ; une demande fonctionnelle ajoute quelque chose de nouveau (un écran, un import, un envoi automatique, une connexion à un autre logiciel). Une grosse fonctionnalité est découpée en étapes : chacune compte pour une demande, et leur nombre est annoncé avant de commencer."
         en: "One feature is built at a time, with a delivery date announced in advance; tweaks move forward alongside. A tweak changes something that already exists (a text, an image, a label, a colour); a feature request adds something new (a screen, an import, an automatic email, a connection to other software). A big feature is split into steps: each one counts as one request, and their number is announced before we start."
         pt: "Uma funcionalidade é desenvolvida por vez, com uma data de entrega anunciada com antecedência; os ajustes avançam em paralelo. Um ajuste muda algo que já existe (um texto, uma imagem, um rótulo, uma cor); um pedido de funcionalidade acrescenta algo novo (uma tela, uma importação, um envio automático, uma conexão com outro software). Uma funcionalidade grande é dividida em etapas: cada uma conta como um pedido, e o número de etapas é anunciado antes de começar."
+      - fr: "Avec un forfait, vous recevez chaque mois un compte rendu écrit, suivi de 30 minutes ensemble pour fixer les priorités. Ce point n'est pas proposé avec l'abonnement de base seul."
+        en: "With a bundle, you get a written report every month, followed by 30 minutes together to set priorities. This check-in is not offered with the base subscription alone."
+        pt: "Com um pacote, você recebe todo mês um relatório escrito, seguido de 30 minutos juntos para definir as prioridades. Essa reunião não é oferecida só com a assinatura básica."
       - fr: "Vous désignez une personne disponible environ une heure par semaine pour tester et valider ce qui est livré."
         en: "You name someone available about an hour a week to test and approve what is delivered."
         pt: "Você indica uma pessoa disponível cerca de uma hora por semana para testar e aprovar o que é entregue."
@@ -86,17 +92,17 @@ sections:
       en: Guarantee
       pt: Garantia
     text:
-      - fr: "Si la date de livraison annoncée pour une fonctionnalité n'est pas tenue, l'abonnement du mois suivant est à moitié prix."
-        en: "If the delivery date announced for a feature is missed, the next month's subscription is half price."
-        pt: "Se a data de entrega anunciada para uma funcionalidade não for cumprida, a assinatura do mês seguinte sai pela metade do preço."
+      - fr: "Si la date de livraison annoncée pour une demande n'est pas tenue, l'abonnement ou le forfait du mois suivant est à moitié prix. Pour une demande à l'unité, c'est cette demande qui est facturée à moitié prix."
+        en: "If the delivery date announced for a request is missed, the next month's subscription or bundle is half price. For a one-off request, that request is billed at half price."
+        pt: "Se a data de entrega anunciada para um pedido não for cumprida, a assinatura ou o pacote do mês seguinte sai pela metade do preço. Para um pedido avulso, é esse pedido que é faturado pela metade do preço."
   - title:
       fr: Hébergement et services à l'usage
       en: Hosting and pay-per-use services
       pt: Hospedagem e serviços pagos por uso
     text:
-      - fr: "L'outil est hébergé par nos soins ou par les vôtres. Si nous l'hébergeons, les coûts d'hébergement sont inclus dans l'abonnement jusqu'à <span data-price=\"hosting\"></span>&nbsp;HT par mois."
-        en: "The tool is hosted by us or by you. If we host it, hosting costs are included in the subscription up to <span data-price=\"hosting\"></span> excl. VAT per month."
-        pt: "A ferramenta é hospedada por nós ou por você. Se nós hospedarmos, os custos de hospedagem estão incluídos na assinatura até <span data-price=\"hosting\"></span> por mês, sem impostos."
+      - fr: "L'outil est hébergé par nos soins ou par les vôtres ; le prix de l'abonnement est le même dans les deux cas. Si nous l'hébergeons, les coûts d'hébergement sont inclus dans l'abonnement jusqu'à <span data-price=\"hosting\"></span>&nbsp;HT par mois."
+        en: "The tool is hosted by us or by you; the subscription price is the same either way. If we host it, hosting costs are included in the subscription up to <span data-price=\"hosting\"></span> excl. VAT per month."
+        pt: "A ferramenta é hospedada por nós ou por você; o preço da assinatura é o mesmo nos dois casos. Se nós hospedarmos, os custos de hospedagem estão incluídos na assinatura até <span data-price=\"hosting\"></span> por mês, sem impostos."
       - fr: "Les services payants à l'usage (SMS, emails en grand volume, intelligence artificielle intégrée à l'outil, comptes développeur Apple et Android…) sont refacturés au coût réel, sans marge."
         en: "Pay-per-use services (text messages, high-volume emails, artificial intelligence built into the tool, Apple and Android developer accounts…) are passed on at cost, with no markup."
         pt: "Os serviços pagos por uso (SMS, e-mails em grande volume, inteligência artificial integrada à ferramenta, contas de desenvolvedor Apple e Android…) são repassados pelo custo real, sem margem."

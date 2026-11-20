@@ -75,6 +75,6 @@ In other words, the bill is shifting. Yesterday, you mostly paid for hours of ty
 
 The question is no longer "can we afford custom software?". For most small businesses, the answer is now yes. The real question becomes: "who will understand the way we work, and stay with us over time?".
 
-That's why our model is a fixed-price first version, then a monthly subscription that covers changes, hosting and maintenance. The cost of code has dropped, and we pass that on. The time spent understanding your business remains the heart of the work.
+That's why our model is a fixed-price first version, then a monthly subscription that covers hosting, maintenance and tweaks; new features are paid one by one or through a bundle. The cost of code has dropped, and we pass that on. The time spent understanding your business remains the heart of the work.
 
 If you have a CRM, a spreadsheet or a business tool that bugs you, <a data-book="" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">book a free 45-minute audit</a>. You'll find out what your tool would cost today, and whether it's worth it.

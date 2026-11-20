@@ -75,6 +75,6 @@ Em outras palavras, a conta muda de lugar. Antes, você pagava sobretudo horas d
 
 A pergunta não é mais “temos condições de pagar por uma ferramenta sob medida?”. Para a maioria das PMEs, a resposta agora é sim. A verdadeira pergunta passa a ser: “quem vai entender a nossa forma de trabalhar e acompanhá-la ao longo do tempo?”.
 
-É por isso que o nosso modelo se baseia em uma primeira versão a preço fixo, seguida de uma assinatura mensal que cobre as evoluções, a hospedagem e a manutenção. O custo do código despencou, e repassamos isso. O tempo dedicado a entender a sua empresa continua sendo o centro do trabalho.
+É por isso que o nosso modelo se baseia em uma primeira versão a preço fixo, seguida de uma assinatura mensal que cobre a hospedagem, a manutenção e os ajustes; as evoluções são pagas avulsas ou num pacote. O custo do código despencou, e repassamos isso. O tempo dedicado a entender a sua empresa continua sendo o centro do trabalho.
 
 Se você tem um CRM, uma planilha ou uma ferramenta de trabalho que irrita você, <a data-book="" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">agende um diagnóstico gratuito de 45 minutos</a>. Você vai saber quanto custaria a sua ferramenta hoje, e se vale a pena.
