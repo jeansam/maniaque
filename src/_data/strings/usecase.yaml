@@ -11,9 +11,9 @@ ucFacts:
   - fr: Première version en 2 à 8&nbsp;semaines
     en: First version in 2 to 8&nbsp;weeks
     pt: Primeira versão em 2 a 8&nbsp;semanas
-  - fr: <span data-price="monthly"></span>&nbsp;HT par mois
-    en: <span data-price="monthly"></span> excl. VAT per month
-    pt: <span data-price="monthly"></span> por mês, sem impostos
+  - fr: Dès <span data-price="base"></span>&nbsp;HT par mois
+    en: From <span data-price="base"></span> excl. VAT per month
+    pt: A partir de <span data-price="base"></span> por mês, sem impostos
   - fr: Audit gratuit
     en: Free audit
     pt: Diagnóstico gratuito

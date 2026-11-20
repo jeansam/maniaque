@@ -1,6 +1,6 @@
 # Maniaque
 
-Site vitrine de l'offre Maniaque : outils sur mesure pour PME, demandes illimitées par abonnement.
+Site vitrine de l'offre Maniaque : outils sur mesure pour PME : une première version à prix fixe, puis un abonnement mensuel (hébergement, maintenance, retouches) et des demandes fonctionnelles à l'unité ou au forfait.
 
 Site généré avec [Eleventy](https://www.11ty.dev/) : chaque page est écrite une seule fois, et générée dans les trois langues (français, anglais, portugais du Brésil). Vercel lance la génération (`npm run build`) et sert le dossier `_site/`.
 
@@ -48,7 +48,7 @@ La même génération tourne sur GitHub à chaque push et pull request (`.github
   - `terms.njk` : les conditions générales, une section par intertitre dans `terms.yaml`
 - `src/city.njk` : donne `city.js`, fait des villes de `cities.js` et du code de `src/_includes/city.js` : la ville choisie dans l'en-tête (Marseille, São Paulo, Johannesbourg). La ville est gardée dans le navigateur et ne change pas quand on change de langue ; choisir une ville ouvre la page dans sa langue. Dans le HTML :
   - `data-book` sur un lien : il pointe vers le lien d'audit de la ville
-  - `data-price="monthly|first|maintenance|hosting|none"` : le montant, dans la devise de la ville
+  - `data-price="base"` (etc.) : le montant, dans la devise de la ville. Les clés (`firstMin`, `firstMax`, `base`, `request`, `hosting`, et pour chaque palier du forfait `tier3`, `perRequest3`, `unitTotal3`…) sont calculées par `pricing()` dans `cities.js` ; une clé inconnue arrête la génération
   - `data-city-only="sao-paulo"` (etc.) : le bloc ne s'affiche que pour cette ville (FAQ sur l'hébergement, personne de l'À propos)
   - un lien `?ville=sao-paulo` (ou `johannesburg`, `marseille`) choisit la ville
 

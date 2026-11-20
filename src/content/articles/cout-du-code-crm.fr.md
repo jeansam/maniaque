@@ -43,7 +43,7 @@ Que disent les études sur le gain de temps ? Elles sont plus nuancées que les 
 
 La leçon est claire : l'IA accélère surtout ce qui est neuf, standard et bien délimité. Un CRM de base coche toutes ces cases. Les fiches contacts, les formulaires, les listes filtrables, les droits d'accès : c'est exactement le code banal que l'IA écrit le mieux, et celui qui représentait l'essentiel de la facture de l'époque 1.
 
-Les grilles de prix publiques n'ont pas encore rattrapé ce changement, et il n'existe pas encore de relevé fiable sur les agences qui développent avec l'IA. Notre fourchette de 2 500 à 5 000 € est donc une estimation, pas une moyenne de marché. Pour donner un point de repère vérifiable : chez Maniaque, la première version d'un outil sur mesure comme ce CRM coûte [2 500 € HT](/offre/#tarifs), livrée en 2 à 8 semaines, en vrai code qui vous appartient.
+Les grilles de prix publiques n'ont pas encore rattrapé ce changement, et il n'existe pas encore de relevé fiable sur les agences qui développent avec l'IA. Notre fourchette de 2 500 à 5 000 € est donc une estimation, pas une moyenne de marché. Pour donner un point de repère vérifiable : chez Maniaque, la première version d'un outil sur mesure comme ce CRM coûte [de 1 000 à 4 000 € HT](/offre/#tarifs) selon son périmètre, livrée en 2 à 8 semaines, en vrai code qui vous appartient.
 
 ## Les trois époques côte à côte
 

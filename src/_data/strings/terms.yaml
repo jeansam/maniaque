@@ -1,8 +1,8 @@
 # Les conditions générales : une section par intertitre, un paragraphe par ligne de « text »
 updated:
-  fr: Version du 2 novembre 2026.
-  en: Version of 2 November 2026.
-  pt: Versão de 2 de novembro de 2026.
+  fr: Version du 20 novembre 2026.
+  en: Version of 20 November 2026.
+  pt: Versão de 20 de novembro de 2026.
 sections:
   - title:
       fr: Objet
@@ -39,15 +39,18 @@ sections:
       en: Plans and prices
       pt: Planos e preços
     text:
-      - fr: "Les prix sont ceux de la ville choisie, hors taxes. Deux formules sont proposées :"
-        en: "Prices are those of the selected city, excluding VAT. Two plans are offered:"
-        pt: "Os preços são os da cidade escolhida, sem impostos. Dois planos são oferecidos:"
-      - fr: "<strong>Première version payée</strong> : <span data-price=\"first\"></span>&nbsp;HT pour la première version, puis un abonnement de <span data-price=\"monthly\"></span>&nbsp;HT par mois dès sa livraison, sans engagement."
-        en: "<strong>Paid first version</strong>: <span data-price=\"first\"></span> excl. VAT for the first version, then a subscription of <span data-price=\"monthly\"></span> excl. VAT per month from its delivery, with no minimum term."
-        pt: "<strong>Primeira versão paga</strong>: <span data-price=\"first\"></span> sem impostos pela primeira versão e, depois, uma assinatura de <span data-price=\"monthly\"></span> por mês sem impostos a partir da entrega, sem fidelidade."
-      - fr: "<strong>Première version offerte</strong> : un abonnement de <span data-price=\"monthly\"></span>&nbsp;HT par mois dès le départ, avec un engagement de 6 mois."
-        en: "<strong>Free first version</strong>: a subscription of <span data-price=\"monthly\"></span> excl. VAT per month from day one, with a 6-month minimum term."
-        pt: "<strong>Primeira versão grátis</strong>: uma assinatura de <span data-price=\"monthly\"></span> por mês sem impostos desde o início, com fidelidade de 6 meses."
+      - fr: "Les prix sont ceux de la ville choisie, hors taxes."
+        en: "Prices are those of the selected city, excluding VAT."
+        pt: "Os preços são os da cidade escolhida, sem impostos."
+      - fr: "<strong>Première version</strong> : de <span data-price=\"firstMin\"></span> à <span data-price=\"firstMax\"></span>&nbsp;HT, selon le périmètre. Le prix exact est fixé par écrit à la validation du cadrage."
+        en: "<strong>First version</strong>: from <span data-price=\"firstMin\"></span> to <span data-price=\"firstMax\"></span> excl. VAT, depending on scope. The exact price is set in writing when the scope is approved."
+        pt: "<strong>Primeira versão</strong>: de <span data-price=\"firstMin\"></span> a <span data-price=\"firstMax\"></span> sem impostos, conforme o escopo. O preço exato é definido por escrito na aprovação do escopo."
+      - fr: "<strong>Abonnement de base</strong> : <span data-price=\"base\"></span>&nbsp;HT par mois dès la livraison de la première version. Il comprend l'hébergement, la maintenance (mises à jour de sécurité, sauvegardes, corrections en cas de panne) et les retouches."
+        en: "<strong>Base subscription</strong>: <span data-price=\"base\"></span> excl. VAT per month from delivery of the first version. It includes hosting, maintenance (security updates, backups, fixes if something breaks) and tweaks."
+        pt: "<strong>Assinatura básica</strong>: <span data-price=\"base\"></span> por mês sem impostos a partir da entrega da primeira versão. Ela inclui a hospedagem, a manutenção (atualizações de segurança, backups, correções em caso de falha) e os ajustes."
+      - fr: "<strong>Demandes fonctionnelles</strong> : <span data-price=\"request\"></span>&nbsp;HT par demande à l'unité, ou un forfait mensuel qui remplace l'abonnement de base : <span data-price=\"tier3\"></span>&nbsp;HT par mois jusqu'à 3 demandes, <span data-price=\"tier6\"></span> jusqu'à 6, <span data-price=\"tier10\"></span> jusqu'à 10 et <span data-price=\"tier20\"></span> jusqu'à 20."
+        en: "<strong>Feature requests</strong>: <span data-price=\"request\"></span> excl. VAT per request one by one, or a monthly bundle that replaces the base subscription: <span data-price=\"tier3\"></span> excl. VAT per month for up to 3 requests, <span data-price=\"tier6\"></span> for up to 6, <span data-price=\"tier10\"></span> for up to 10 and <span data-price=\"tier20\"></span> for up to 20."
+        pt: "<strong>Pedidos de funcionalidade</strong>: <span data-price=\"request\"></span> sem impostos por pedido avulso, ou um pacote mensal que substitui a assinatura básica: <span data-price=\"tier3\"></span> por mês sem impostos para até 3 pedidos, <span data-price=\"tier6\"></span> para até 6, <span data-price=\"tier10\"></span> para até 10 e <span data-price=\"tier20\"></span> para até 20."
   - title:
       fr: Paiement
       en: Payment
@@ -61,9 +64,9 @@ sections:
       en: Term and cancellation
       pt: Duração e cancelamento
     text:
-      - fr: "Hors engagement, l'abonnement est résiliable chaque mois. Vous pouvez aussi basculer sur une offre de maintenance seule, à <span data-price=\"maintenance\"></span>&nbsp;HT par mois hors hébergement : votre outil reste maintenu, sans nouvelle demande."
-        en: "Outside the minimum term, the subscription can be cancelled any month. You can also switch to a maintenance-only plan, at <span data-price=\"maintenance\"></span> excl. VAT per month, hosting not included: your tool stays maintained, with no new requests."
-        pt: "Fora do período de fidelidade, a assinatura pode ser cancelada a qualquer mês. Você também pode migrar para um plano só de manutenção, por <span data-price=\"maintenance\"></span> por mês sem impostos, hospedagem não incluída: a sua ferramenta continua mantida, sem novos pedidos."
+      - fr: "L'abonnement est sans engagement et résiliable chaque mois. Vous changez de palier du forfait, ou revenez à l'abonnement de base, d'un mois à l'autre."
+        en: "The subscription has no minimum term and can be cancelled any month. You can change bundle, or drop back to the base subscription, from one month to the next."
+        pt: "A assinatura não tem fidelidade e pode ser cancelada a qualquer mês. Você pode mudar de pacote, ou voltar para a assinatura básica, de um mês para o outro."
   - title:
       fr: Demandes et délais
       en: Requests and timing
@@ -72,9 +75,9 @@ sections:
       - fr: "Chaque message reçoit une réponse sous 24&nbsp;h ouvrées. Les demandes passent par votre tableau de bord, où vous modifiez la feuille de route en temps réel, ou par message."
         en: "Every message gets a reply within 24 business hours. Requests go through your dashboard, where you change the roadmap in real time, or by message."
         pt: "Cada mensagem recebe resposta em até 24&nbsp;h úteis. Os pedidos passam pelo seu painel, onde você altera o roadmap em tempo real, ou por mensagem."
-      - fr: "Une fonctionnalité est développée à la fois, avec une date de livraison annoncée à l'avance ; les retouches avancent en parallèle. Une retouche change ce qui existe déjà (un libellé, une couleur, une colonne, un calcul) ; une fonctionnalité ajoute quelque chose de nouveau (un écran, un import, un envoi automatique, une connexion à un autre logiciel)."
-        en: "One feature is built at a time, with a delivery date announced in advance; tweaks move forward alongside. A tweak changes something that already exists (a label, a colour, a column, a calculation); a feature adds something new (a screen, an import, an automatic email, a connection to other software)."
-        pt: "Uma funcionalidade é desenvolvida por vez, com uma data de entrega anunciada com antecedência; os ajustes avançam em paralelo. Um ajuste muda algo que já existe (um texto, uma cor, uma coluna, um cálculo); uma funcionalidade acrescenta algo novo (uma tela, uma importação, um envio automático, uma conexão com outro software)."
+      - fr: "Une fonctionnalité est développée à la fois, avec une date de livraison annoncée à l'avance ; les retouches avancent en parallèle. Une retouche change ce qui existe déjà (un texte, une image, un libellé, une couleur) ; une demande fonctionnelle ajoute quelque chose de nouveau (un écran, un import, un envoi automatique, une connexion à un autre logiciel). Une grosse fonctionnalité est découpée en étapes : chacune compte pour une demande, et leur nombre est annoncé avant de commencer."
+        en: "One feature is built at a time, with a delivery date announced in advance; tweaks move forward alongside. A tweak changes something that already exists (a text, an image, a label, a colour); a feature request adds something new (a screen, an import, an automatic email, a connection to other software). A big feature is split into steps: each one counts as one request, and their number is announced before we start."
+        pt: "Uma funcionalidade é desenvolvida por vez, com uma data de entrega anunciada com antecedência; os ajustes avançam em paralelo. Um ajuste muda algo que já existe (um texto, uma imagem, um rótulo, uma cor); um pedido de funcionalidade acrescenta algo novo (uma tela, uma importação, um envio automático, uma conexão com outro software). Uma funcionalidade grande é dividida em etapas: cada uma conta como um pedido, e o número de etapas é anunciado antes de começar."
       - fr: "Vous désignez une personne disponible environ une heure par semaine pour tester et valider ce qui est livré."
         en: "You name someone available about an hour a week to test and approve what is delivered."
         pt: "Você indica uma pessoa disponível cerca de uma hora por semana para testar e aprovar o que é entregue."

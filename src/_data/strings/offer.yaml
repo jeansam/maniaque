@@ -3,17 +3,17 @@ title:
   en: custom software for small businesses
   pt: softwares sob medida para PMEs
 description:
-  fr: "Un outil sur mesure pour votre entreprise, puis tout ce que vous imaginez : du petit détail à la grosse fonctionnalité. 490\_€ HT par mois. Audit gratuit."
-  en: "Custom software for your business, then everything you can think of: from the smallest detail to the biggest feature. ZAR\_9,900 excl. VAT per month. Free audit."
-  pt: "Um software sob medida para a sua empresa e, depois, tudo o que você imaginar: do menor detalhe à maior funcionalidade. R$\_2.900 por mês, sem impostos. Diagnóstico gratuito."
+  fr: "Un outil sur mesure pour votre entreprise, puis tout ce que vous imaginez : du petit détail à la grosse fonctionnalité. Première version de 1\_000 à 4\_000\_€ HT, puis dès 109\_€ HT par mois. Audit gratuit."
+  en: "Custom software for your business, then everything you can think of: from the smallest detail to the biggest feature. First version from ZAR\_20,000 to ZAR\_80,000, then from ZAR\_2,190 excl. VAT per month. Free audit."
+  pt: "Um software sob medida para a sua empresa e, depois, tudo o que você imaginar: do menor detalhe à maior funcionalidade. Primeira versão de R$\_6.000 a R$\_24.000 e, depois, a partir de R$\_649 por mês, sem impostos. Diagnóstico gratuito."
 ogTitle:
   fr: Maniaque, soyez aussi maniaque que vous voulez
   en: Maniaque, be as maniaque as you want
   pt: Maniaque, seja tão maniaque quanto quiser
 ogDescription:
-  fr: "Outils sur mesure pour PME. Réponse sous 24\_h ouvrées, nouvelles fonctionnalités testées à fond, code à vous. 490\_€ HT par mois."
-  en: "Custom software for small businesses. A reply within 24 business hours, new features fully tested, and the code is yours. ZAR\_9,900 excl. VAT per month."
-  pt: "Softwares sob medida para PMEs. Resposta em até 24\_h úteis, novas funcionalidades testadas a fundo, e o código é seu. R$\_2.900 por mês, sem impostos."
+  fr: "Outils sur mesure pour PME. Réponse sous 24\_h ouvrées, nouvelles fonctionnalités testées à fond, code à vous. Dès 109\_€ HT par mois."
+  en: "Custom software for small businesses. A reply within 24 business hours, new features fully tested, and the code is yours. From ZAR\_2,190 excl. VAT per month."
+  pt: "Softwares sob medida para PMEs. Resposta em até 24\_h úteis, novas funcionalidades testadas a fundo, e o código é seu. A partir de R$\_649 por mês, sem impostos."
 heroLine1:
   fr: Soyez aussi
   en: Be as
@@ -39,9 +39,9 @@ meaning:
   en: <em lang="fr">Maniaque</em> is French for fussy, not maniac 😅. And yes, there's AI in it.
   pt: <em lang="fr">Maniaque</em> quer dizer “maníaco por detalhes” em francês 😅. E sim, tem IA no nome.
 lede:
-  fr: Au lieu de toute une équipe, <strong>un spécialiste Produit et IA dédié crée un nouvel outil digital sur mesure</strong> pour votre entreprise. Vous lui expliquez ce qui vous fait perdre du temps, il construit l'outil, et le fait évoluer chaque semaine. Pour <strong><span data-price="monthly"></span>&nbsp;HT par mois</strong>.
-  en: Instead of a whole team, <strong>one dedicated Product and AI specialist builds a new custom digital tool</strong> for your business. You tell them what's wasting your time, they build the tool, and they keep improving it every week. For <strong><span data-price="monthly"></span> excl. VAT per month</strong>.
-  pt: Em vez de uma equipe inteira, <strong>um especialista dedicado em Produto e IA cria uma nova ferramenta digital sob medida</strong> para a sua empresa. Você explica o que faz você perder tempo, ele constrói a ferramenta e a faz evoluir toda semana. Por <strong><span data-price="monthly"></span> por mês, sem impostos</strong>.
+  fr: Au lieu de toute une équipe, <strong>un spécialiste Produit et IA dédié crée un nouvel outil digital sur mesure</strong> pour votre entreprise. Vous lui expliquez ce qui vous fait perdre du temps, il construit l'outil, puis le fait évoluer à votre rythme. Première version de <span data-price="firstMin"></span> à <span data-price="firstMax"></span>&nbsp;HT, puis <strong>dès <span data-price="base"></span>&nbsp;HT par mois</strong>.
+  en: Instead of a whole team, <strong>one dedicated Product and AI specialist builds a new custom digital tool</strong> for your business. You tell them what's wasting your time, they build the tool, then keep improving it at your pace. First version from <span data-price="firstMin"></span> to <span data-price="firstMax"></span>, then <strong>from <span data-price="base"></span> excl. VAT per month</strong>.
+  pt: Em vez de uma equipe inteira, <strong>um especialista dedicado em Produto e IA cria uma nova ferramenta digital sob medida</strong> para a sua empresa. Você explica o que faz você perder tempo, ele constrói a ferramenta e depois a faz evoluir no seu ritmo. Primeira versão de <span data-price="firstMin"></span> a <span data-price="firstMax"></span> e, depois, <strong>a partir de <span data-price="base"></span> por mês, sem impostos</strong>.
 seePricing:
   fr: Voir les tarifs
   en: See pricing
@@ -96,112 +96,223 @@ steps:
       en: Continuous iterations
       pt: Iterações contínuas
     meta:
-      fr: <span data-price="monthly"></span> HT par mois
-      en: <span data-price="monthly"></span> excl. VAT per month
-      pt: <span data-price="monthly"></span> por mês, sem impostos
+      fr: Dès <span data-price="base"></span> HT par mois
+      en: From <span data-price="base"></span> excl. VAT per month
+      pt: A partir de <span data-price="base"></span> por mês, sem impostos
     text:
-      fr: "Votre outil évolue avec vous. Nouvelles fonctions, corrections, détails : tout passe par votre liste de demandes, sans devis à chaque fois."
-      en: "Your tool evolves with you. New features, fixes, details: everything goes through your request list, with no quote each time."
-      pt: "Sua ferramenta evolui com você. Novas funções, correções, detalhes: tudo passa pela sua lista de pedidos, sem orçamento a cada vez."
+      fr: "Votre outil évolue avec vous. Les retouches sont incluses dans l'abonnement ; les demandes fonctionnelles se prennent à l'unité ou au forfait mensuel, sans devis à chaque fois."
+      en: "Your tool evolves with you. Tweaks are included in the subscription; feature requests are paid one by one or through a monthly bundle, with no quote each time."
+      pt: "Sua ferramenta evolui com você. Os ajustes estão incluídos na assinatura; os pedidos de funcionalidade são pagos avulsos ou num pacote mensal, sem orçamento a cada vez."
 pricingTitle:
-  fr: Deux formules. Aucun frais caché.
-  en: Two plans. No hidden fees.
-  pt: Dois planos. Nenhum custo oculto.
+  fr: Un prix de départ. Puis un abonnement à votre rythme.
+  en: One upfront price. Then a subscription at your pace.
+  pt: Um preço inicial. Depois, uma assinatura no seu ritmo.
 pricingLede:
-  fr: Choisissez de payer la première version ou de vous engager plus longtemps. L'abonnement est le même.
-  en: Pay for the first version, or commit for longer and get it free. The subscription is the same.
-  pt: Escolha pagar pela primeira versão ou se comprometer por mais tempo. A assinatura é a mesma.
-plansCaption:
-  fr: Comparaison des deux formules
-  en: Comparison of the two plans
-  pt: Comparação dos dois planos
-plans:
-  - fr: Première version payée
-    en: Paid first version
-    pt: Primeira versão paga
-  - fr: Première version offerte
-    en: Free first version
-    pt: Primeira versão grátis
-planRows:
-  - label:
-      fr: Pour qui ?
-      en: Who it's for
-      pt: Para quem?
-    values:
-      - fr: Vous voulez rester libre d'arrêter à tout moment.
-        en: You want to stay free to stop at any time.
-        pt: Você quer ter liberdade para parar a qualquer momento.
-      - fr: Vous partez pour au moins 6 mois. Sur cette durée, c'est la formule la moins chère.
-        en: You're in for at least 6 months. Over that period, it's the cheaper plan.
-        pt: Você vai ficar pelo menos 6 meses. Nesse período, é o plano mais barato.
-  - label:
-      fr: Audit
-      en: Audit
-      pt: Diagnóstico
-    values:
-      - fr: Gratuit
-        en: Free
-        pt: Grátis
-      - fr: Gratuit
-        en: Free
-        pt: Grátis
-  - label:
-      fr: Première version
-      en: First version
-      pt: Primeira versão
-    values:
-      - fr: <span data-price="first"></span><span class="ht">&nbsp;HT</span>
-        en: <span data-price="first"></span>
-        pt: <span data-price="first"></span>
-      - fr: <span data-price="none"></span><span class="ht">&nbsp;HT</span>
-        en: <span data-price="none"></span>
-        pt: <span data-price="none"></span>
-    num: true
-  - label:
-      fr: Abonnement mensuel
-      en: Monthly subscription
-      pt: Assinatura mensal
-    values:
-      - fr: <span data-price="monthly"></span><span class="ht">&nbsp;HT</span><span class="when">dès la livraison de la première version</span>
-        en: <span data-price="monthly"></span><span class="when">from delivery of the first version</span>
-        pt: <span data-price="monthly"></span><span class="when">a partir da entrega da primeira versão</span>
-      - fr: <span data-price="monthly"></span><span class="ht">&nbsp;HT</span><span class="when">dès le départ</span>
-        en: <span data-price="monthly"></span><span class="when">from day one</span>
-        pt: <span data-price="monthly"></span><span class="when">desde o início</span>
-    num: true
-  - label:
-      fr: Engagement minimum
-      en: Minimum term
-      pt: Fidelidade mínima
-    values:
-      - fr: Aucun
-        en: None
-        pt: Nenhuma
-      - fr: 6 mois
-        en: 6 months
-        pt: 6 meses
-  - label:
-      fr: Hébergement
-      en: Hosting
-      pt: Hospedagem
-    values:
-      - fr: Inclus jusqu'à <span data-price="hosting"></span>&nbsp;HT de coûts par mois
-        en: Included up to <span data-price="hosting"></span> of costs per month
-        pt: Incluída até <span data-price="hosting"></span> de custos por mês, sem impostos
-      - fr: Inclus jusqu'à <span data-price="hosting"></span>&nbsp;HT de coûts par mois
-        en: Included up to <span data-price="hosting"></span> of costs per month
-        pt: Incluída até <span data-price="hosting"></span> de custos por mês, sem impostos
-  - label:
-      fr: Ensuite
-      en: After that
-      pt: Depois
-    values:
-      - fr: Sans engagement, résiliable chaque mois, ou basculement sur une offre de maintenance seule à <span data-price="maintenance"></span>&nbsp;HT par mois, hors hébergement
-        en: No commitment, cancel any month, or switch to a maintenance-only plan at <span data-price="maintenance"></span> excl. VAT per month, hosting not included
-        pt: Sem fidelidade, cancelável a qualquer mês, ou migração para um plano só de manutenção por <span data-price="maintenance"></span> por mês sem impostos, hospedagem não incluída
-      - fr: Sans engagement, résiliable chaque mois, ou basculement sur une offre de maintenance seule à <span data-price="maintenance"></span>&nbsp;HT par mois, hors hébergement
-        en: No commitment, cancel any month, or switch to a maintenance-only plan at <span data-price="maintenance"></span> excl. VAT per month, hosting not included
-        pt: Sem fidelidade, cancelável a qualquer mês, ou migração para um plano só de manutenção por <span data-price="maintenance"></span> por mês sem impostos, hospedagem não incluída
+  fr: Aucun frais caché, aucun engagement. La première version se paie une fois. L'abonnement de base garde ensuite votre outil en ligne et à jour, et les demandes fonctionnelles s'y ajoutent, à l'unité ou au forfait.
+  en: No hidden fees, no minimum term. The first version is paid once. The base subscription then keeps your tool online and up to date, and feature requests come on top, one by one or as a bundle.
+  pt: Nenhum custo oculto, nenhuma fidelidade. A primeira versão é paga uma única vez. Depois, a assinatura básica mantém a sua ferramenta no ar e atualizada, e os pedidos de funcionalidade se somam a ela, avulsos ou em pacote.
+# Les deux montants fixes : la première version, puis l'abonnement de base
+first:
+  title:
+    fr: Première version
+    en: First version
+    pt: Primeira versão
+  price:
+    fr: <span data-price="firstMin"></span> <span class="range-sep">à</span> <span data-price="firstMax"></span><span class="ht">&nbsp;HT</span>
+    en: <span data-price="firstMin"></span> <span class="range-sep">to</span> <span data-price="firstMax"></span>
+    pt: <span data-price="firstMin"></span> <span class="range-sep">a</span> <span data-price="firstMax"></span>
+  when:
+    fr: Une seule fois, selon le périmètre
+    en: Paid once, depending on scope
+    pt: Pagamento único, conforme o escopo
+  text:
+    fr: Le prix exact est fixé au cadrage, avant de construire. Livrée en 2 à 8 semaines.
+    en: The exact price is set during scoping, before we build. Delivered in 2 to 8 weeks.
+    pt: O preço exato é definido na fase de escopo, antes de construir. Entregue em 2 a 8 semanas.
+base:
+  title:
+    fr: Abonnement de base
+    en: Base subscription
+    pt: Assinatura básica
+  price:
+    fr: <span data-price="base"></span><span class="ht">&nbsp;HT</span><span class="per"> / mois</span>
+    en: <span data-price="base"></span><span class="per"> / month</span>
+    pt: <span data-price="base"></span><span class="per"> / mês</span>
+  when:
+    fr: Le minimum, dès la livraison de la première version
+    en: The minimum, from delivery of the first version
+    pt: O mínimo, a partir da entrega da primeira versão
+  includes:
+    - fr: <strong>Hébergement</strong>, jusqu'à <span data-price="hosting"></span>&nbsp;HT de coûts par mois
+      en: <strong>Hosting</strong>, up to <span data-price="hosting"></span> of costs per month
+      pt: <strong>Hospedagem</strong>, até <span data-price="hosting"></span> de custos por mês
+    - fr: "<strong>Maintenance</strong>&nbsp;: mises à jour de sécurité, sauvegardes, corrections en cas de panne"
+      en: "<strong>Maintenance</strong>: security updates, backups, fixes if something breaks"
+      pt: "<strong>Manutenção</strong>: atualizações de segurança, backups, correções em caso de falha"
+    - fr: "<strong>Retouches</strong>&nbsp;: un texte, une image, un libellé, une couleur"
+      en: "<strong>Tweaks</strong>: a text, an image, a label, a colour"
+      pt: "<strong>Ajustes</strong>: um texto, uma imagem, um rótulo, uma cor"
+# Le curseur des demandes fonctionnelles : à l'unité, puis un palier par nombre de demandes (prix dans src/_data/cities.js)
+requests:
+  title:
+    fr: Demandes fonctionnelles
+    en: Feature requests
+    pt: Pedidos de funcionalidade
+  text:
+    fr: "Tout ce qui ajoute quelque chose de nouveau à votre outil : un écran, un import, un envoi automatique, une connexion à un autre logiciel. Payez-les à l'unité, ou prenez un forfait mensuel, plus avantageux dès 3 demandes."
+    en: "Anything that adds something new to your tool: a screen, an import, an automatic email, a connection to other software. Pay for them one by one, or take a monthly bundle, better value from 3 requests."
+    pt: "Tudo o que acrescenta algo novo à sua ferramenta: uma tela, uma importação, um envio automático, uma conexão com outro software. Pague avulso, ou escolha um pacote mensal, mais vantajoso a partir de 3 pedidos."
+  label:
+    fr: Demandes fonctionnelles par mois
+    en: Feature requests per month
+    pt: Pedidos de funcionalidade por mês
+  unit:
+    mark:
+      fr: À l'unité
+      en: One by one
+      pt: Avulso
+    valueText:
+      fr: À l'unité
+      en: One by one
+      pt: Avulso
+    price:
+      fr: <span data-price="base"></span><span class="ht">&nbsp;HT</span><span class="per"> / mois</span>
+      en: <span data-price="base"></span><span class="per"> / month</span>
+      pt: <span data-price="base"></span><span class="per"> / mês</span>
+    what:
+      fr: L'abonnement de base, puis <strong><span data-price="request"></span>&nbsp;HT par demande fonctionnelle</strong>.
+      en: The base subscription, then <strong><span data-price="request"></span> excl. VAT per feature request</strong>.
+      pt: A assinatura básica e, depois, <strong><span data-price="request"></span> por pedido de funcionalidade, sem impostos</strong>.
+    note:
+      fr: Pour une demande de temps en temps.
+      en: For the occasional request.
+      pt: Para um pedido de vez em quando.
+  # {n} : le nombre de demandes du palier
+  tiers: [3, 6, 10, 20]
+  tier:
+    valueText:
+      fr: Jusqu'à {n} demandes par mois
+      en: Up to {n} requests per month
+      pt: Até {n} pedidos por mês
+    price:
+      fr: <span data-price="tier{n}"></span><span class="ht">&nbsp;HT</span><span class="per"> / mois</span>
+      en: <span data-price="tier{n}"></span><span class="per"> / month</span>
+      pt: <span data-price="tier{n}"></span><span class="per"> / mês</span>
+    what:
+      fr: L'abonnement de base et <strong>jusqu'à {n} demandes fonctionnelles par mois</strong>.
+      en: The base subscription and <strong>up to {n} feature requests per month</strong>.
+      pt: A assinatura básica e <strong>até {n} pedidos de funcionalidade por mês</strong>.
+    note:
+      fr: Soit <span data-price="perRequest{n}"></span> la demande au lieu de <span data-price="request"></span>. À l'unité, ce mois vous coûterait <s><span data-price="unitTotal{n}"></span>&nbsp;HT</s>.
+      en: That's <span data-price="perRequest{n}"></span> a request instead of <span data-price="request"></span>. One by one, this month would cost you <s><span data-price="unitTotal{n}"></span></s>.
+      pt: Ou seja, <span data-price="perRequest{n}"></span> por pedido em vez de <span data-price="request"></span>. Avulso, este mês custaria <s><span data-price="unitTotal{n}"></span></s>.
+# Sous le curseur : ce qui est une retouche, une demande, plusieurs demandes (onglets sur mobile)
+kinds:
+  title:
+    fr: C'est quoi, une demande ?
+    en: What counts as a request?
+    pt: O que conta como um pedido?
+  rule:
+    fr: Si on change ce qui existe déjà, c'est une <strong>retouche</strong>, incluse dans l'abonnement. Si votre outil apprend à faire quelque chose de nouveau, c'est une <strong>demande fonctionnelle</strong>.
+    en: If we change something that already exists, it's a <strong>tweak</strong>, included in the subscription. If your tool learns to do something new, it's a <strong>feature request</strong>.
+    pt: Se mudamos algo que já existe, é um <strong>ajuste</strong>, incluído na assinatura. Se a sua ferramenta aprende a fazer algo novo, é um <strong>pedido de funcionalidade</strong>.
+  tabsLabel:
+    fr: Exemples
+    en: Examples
+    pt: Exemplos
+  columns:
+    - id: free
+      tab:
+        fr: Retouche
+        en: Tweak
+        pt: Ajuste
+      title:
+        fr: Retouche
+        en: Tweak
+        pt: Ajuste
+      tag:
+        fr: Incluse dans l'abonnement
+        en: Included in the subscription
+        pt: Incluído na assinatura
+      items:
+        - fr: Changer le texte d'un bouton ou d'un email
+          en: Change the text of a button or an email
+          pt: Mudar o texto de um botão ou de um e-mail
+        - fr: Remplacer le logo ou une photo
+          en: Replace the logo or a photo
+          pt: Trocar o logo ou uma foto
+        - fr: Renommer un statut (« En cours » devient « En production »)
+          en: Rename a status (“In progress” becomes “In production”)
+          pt: Renomear um status (“Em andamento” vira “Em produção”)
+        - fr: Changer une couleur, ou l'ordre des champs d'un formulaire
+          en: Change a colour, or the order of a form's fields
+          pt: Mudar uma cor, ou a ordem dos campos de um formulário
+        - fr: Corriger une faute, mettre à jour un tarif affiché
+          en: Fix a typo, update a price shown on screen
+          pt: Corrigir um erro de digitação, atualizar um preço exibido
+    - id: one
+      tab:
+        fr: 1 demande
+        en: 1 request
+        pt: 1 pedido
+      title:
+        fr: 1 demande fonctionnelle
+        en: 1 feature request
+        pt: 1 pedido de funcionalidade
+      tag:
+        fr: <span data-price="request"></span>&nbsp;HT à l'unité, ou dans votre forfait
+        en: <span data-price="request"></span> excl. VAT one by one, or in your bundle
+        pt: <span data-price="request"></span> sem impostos avulso, ou no seu pacote
+      items:
+        - fr: Ajouter une colonne « marge » calculée dans la liste des devis
+          en: Add a calculated “margin” column to the quotes list
+          pt: Adicionar uma coluna “margem” calculada na lista de orçamentos
+        - fr: Envoyer un rappel automatique 48&nbsp;h avant un rendez-vous
+          en: Send an automatic reminder 48 hours before an appointment
+          pt: Enviar um lembrete automático 48&nbsp;h antes de um agendamento
+        - fr: Importer vos clients depuis un fichier Excel
+          en: Import your customers from an Excel file
+          pt: Importar os seus clientes de um arquivo Excel
+        - fr: Ajouter un filtre ou un export PDF sur un écran
+          en: Add a filter or a PDF export to a screen
+          pt: Adicionar um filtro ou uma exportação em PDF a uma tela
+        - fr: Créer un écran simple, comme la liste de vos fournisseurs
+          en: Create a simple screen, like your list of suppliers
+          pt: Criar uma tela simples, como a lista dos seus fornecedores
+    - id: many
+      tab:
+        fr: Plusieurs
+        en: Several
+        pt: Vários
+      title:
+        fr: Plusieurs demandes
+        en: Several requests
+        pt: Vários pedidos
+      tag:
+        fr: Nombre annoncé avant de commencer
+        en: Number announced before we start
+        pt: Número anunciado antes de começar
+      items:
+        - fr: "Un espace client complet : connexion, suivi des commandes, factures à télécharger"
+          en: "A complete customer portal: sign-in, order tracking, downloadable invoices"
+          pt: "Uma área do cliente completa: login, acompanhamento de pedidos, faturas para baixar"
+        - fr: Une application mobile pour vos techniciens
+          en: A mobile app for your technicians
+          pt: Um aplicativo mobile para os seus técnicos
+        - fr: Une connexion complète avec votre logiciel comptable
+          en: A full connection to your accounting software
+          pt: Uma conexão completa com o seu software de contabilidade
+        - fr: Un tableau de bord avec plusieurs indicateurs et graphiques
+          en: A dashboard with several indicators and charts
+          pt: Um painel com vários indicadores e gráficos
+      note:
+        fr: On découpe les gros projets en étapes livrables, et on vous dit combien de demandes ça représente avant de commencer. Pas de surprise.
+        en: We split big projects into deliverable steps, and tell you how many requests that adds up to before we start. No surprises.
+        pt: Dividimos os projetos grandes em etapas entregáveis e dizemos quantos pedidos isso representa antes de começar. Sem surpresas.
+  doubt:
+    fr: <strong>En cas de doute</strong>, c'est nous qui tranchons, et on vous le dit avant de commencer. Si on hésite, c'est une retouche.
+    en: <strong>If in doubt</strong>, we make the call, and tell you before we start. If we're unsure, it's a tweak.
+    pt: <strong>Na dúvida</strong>, nós decidimos e avisamos você antes de começar. Se ficarmos em dúvida, é um ajuste.
 notes:
   - id: paiement
     title:
@@ -209,9 +320,9 @@ notes:
       en: Payment terms
       pt: Condições de pagamento
     text:
-      fr: Prix hors taxes. La première version se règle moitié à la commande, moitié à la mise en service. L'abonnement est prélevé en début de mois. Le détail est dans nos <a class="inline-link" href="/conditions-generales/">conditions générales</a>.
-      en: Prices exclude VAT. The first version is paid half on order, half on go-live. The subscription is charged by direct debit at the start of each month. Full details are in our <a class="inline-link" href="/en/terms/">terms and conditions</a>.
-      pt: Preços sem impostos. A primeira versão é paga metade na contratação e metade na entrada em produção. A assinatura é cobrada no início de cada mês. Os detalhes estão nos nossos <a class="inline-link" href="/pt/termos/">termos e condições</a>.
+      fr: Prix hors taxes. La première version se règle moitié à la commande, moitié à la mise en service. L'abonnement est prélevé en début de mois, sans engagement&nbsp;; vous changez de palier d'un mois à l'autre. Le détail est dans nos <a class="inline-link" href="/conditions-generales/">conditions générales</a>.
+      en: Prices exclude VAT. The first version is paid half on order, half on go-live. The subscription is charged by direct debit at the start of each month, with no minimum term; you can change bundle from one month to the next. Full details are in our <a class="inline-link" href="/en/terms/">terms and conditions</a>.
+      pt: Preços sem impostos. A primeira versão é paga metade na contratação e metade na entrada em produção. A assinatura é cobrada no início de cada mês, sem fidelidade; você pode mudar de pacote de um mês para o outro. Os detalhes estão nos nossos <a class="inline-link" href="/pt/termos/">termos e condições</a>.
   - id: hebergement
     title:
       fr: Hébergement
@@ -253,9 +364,6 @@ promises:
   - fr: "<strong>Une fonctionnalité à la fois, les retouches en parallèle.</strong> Votre tableau de bord montre la feuille de route : vous la modifiez en temps réel pour choisir ce qui passe en premier."
     en: "<strong>One feature at a time, tweaks alongside.</strong> Your dashboard shows the roadmap: you change it in real time to choose what comes first."
     pt: "<strong>Uma funcionalidade por vez, os ajustes em paralelo.</strong> O seu painel mostra o roadmap: você o altera em tempo real para escolher o que vem primeiro."
-  - fr: "<strong>Retouche ou fonctionnalité&nbsp;?</strong> Une retouche change ce qui existe déjà : un libellé, une couleur, une colonne, un calcul qui ne donne pas le bon résultat. Une fonctionnalité ajoute quelque chose de nouveau : un écran, un import, un envoi automatique, une connexion à un autre logiciel."
-    en: "<strong>Tweak or feature?</strong> A tweak changes something that already exists: a label, a colour, a column, a calculation that gives the wrong result. A feature adds something new: a screen, an import, an automatic email, a connection to other software."
-    pt: "<strong>Ajuste ou funcionalidade?</strong> Um ajuste muda algo que já existe: um texto, uma cor, uma coluna, um cálculo que dá o resultado errado. Uma funcionalidade acrescenta algo novo: uma tela, uma importação, um envio automático, uma conexão com outro software."
   - fr: <strong>Nouvelles fonctionnalités selon leur taille.</strong> Chacune est testée à fond avant d'être mise en ligne. Vous connaissez la date à l'avance, et les gros projets sont découpés en étapes.
     en: <strong>New features based on their size.</strong> Each one is fully tested before going live. You know the date in advance, and big projects are split into steps.
     pt: <strong>Novas funcionalidades conforme o tamanho.</strong> Cada uma é testada a fundo antes de entrar no ar. Você sabe a data com antecedência, e os projetos grandes são divididos em etapas.
@@ -365,9 +473,9 @@ faq:
       en: Can I really ask for anything, even big projects?
       pt: Posso mesmo pedir qualquer coisa, até projetos grandes?
     a:
-      fr: Oui. Les gros projets sont découpés en étapes, livrées une par une. Si vous avez besoin d'un rythme plus soutenu, on vous propose une formule renforcée.
-      en: Yes. Big projects are split into steps, delivered one at a time. If you need a faster pace, we'll offer you a stepped-up plan.
-      pt: Sim. Os projetos grandes são divididos em etapas, entregues uma de cada vez. Se você precisar de um ritmo mais intenso, propomos um plano reforçado.
+      fr: Oui. Les gros projets sont découpés en étapes, livrées une par une. Chaque étape compte pour une demande fonctionnelle, et on vous dit combien avant de commencer. Si vous en avez beaucoup, un palier plus haut du forfait vous revient moins cher.
+      en: Yes. Big projects are split into steps, delivered one at a time. Each step counts as one feature request, and we tell you how many before we start. If you have a lot of them, a higher bundle works out cheaper.
+      pt: Sim. Os projetos grandes são divididos em etapas, entregues uma de cada vez. Cada etapa conta como um pedido de funcionalidade, e dizemos quantos serão antes de começar. Se forem muitos, um pacote maior sai mais barato.
   - roles: ceo pm
     q:
       fr: Que comprend exactement la première version ?
@@ -464,9 +572,9 @@ faq:
       en: What happens if I cancel the subscription?
       pt: E se eu cancelar a assinatura?
     a:
-      fr: "Vous avez le choix. Vous pouvez basculer sur une offre de maintenance seule, à <span data-price=\"maintenance\"></span>&nbsp;HT par mois hors hébergement : votre outil reste maintenu, sans nouvelle demande. Ou vous partez, et vous gardez vos données et votre outil, dont le code est à vous : on vous transfère le code et la base de données, ou on vous aide à les installer chez vous."
-      en: "It's up to you. You can switch to a maintenance-only plan, at <span data-price=\"maintenance\"></span> excl. VAT per month, hosting not included: your tool stays maintained, with no new requests. Or you leave, and you keep your data and your tool, whose code is yours: we hand over the code and the database, or help you install them on your side."
-      pt: "Você escolhe. Pode migrar para um plano só de manutenção, por <span data-price=\"maintenance\"></span> por mês sem impostos, hospedagem não incluída: a sua ferramenta continua mantida, sem novos pedidos. Ou você sai e fica com os seus dados e a sua ferramenta, cujo código é seu: transferimos o código e o banco de dados para você, ou ajudamos a instalá-los na sua própria infraestrutura."
+      fr: "Vous avez le choix. Vous pouvez revenir à l'abonnement de base, à <span data-price=\"base\"></span>&nbsp;HT par mois : votre outil reste hébergé, maintenu et retouché, et vous payez à l'unité les demandes fonctionnelles. Ou vous partez, et vous gardez vos données et votre outil, dont le code est à vous : on vous transfère le code et la base de données, ou on vous aide à les installer chez vous."
+      en: "It's up to you. You can drop back to the base subscription, at <span data-price=\"base\"></span> excl. VAT per month: your tool stays hosted, maintained and tweaked, and you pay for feature requests one by one. Or you leave, and you keep your data and your tool, whose code is yours: we hand over the code and the database, or help you install them on your side."
+      pt: "Você escolhe. Pode voltar para a assinatura básica, por <span data-price=\"base\"></span> por mês sem impostos: a sua ferramenta continua hospedada, mantida e ajustada, e você paga os pedidos de funcionalidade avulsos. Ou você sai e fica com os seus dados e a sua ferramenta, cujo código é seu: transferimos o código e o banco de dados para você, ou ajudamos a instalá-los na sua própria infraestrutura."
   - roles: it
     q:
       fr: Où sont stockées mes données ?

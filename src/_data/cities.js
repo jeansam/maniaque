@@ -1,6 +1,28 @@
 // Les villes : c'est ici, et seulement ici, qu'on change par ville le lien d'audit, les prix et la devise,
 // et la personne qui y répond. Ces données servent à la fois au site généré (valeurs affichées sans
 // JavaScript) et à city.js (ville choisie dans le navigateur). L'ordre est celui du menu des villes.
+
+// Paliers du forfait de demandes fonctionnelles : nombre de demandes par mois, et nombre de fois que
+// le palier (step) s'ajoute à l'abonnement de base. Les textes de chaque palier sont dans offer.yaml (tiers).
+const TIERS = [{ requests: 3, steps: 1 }, { requests: 6, steps: 2 }, { requests: 10, steps: 3 }, { requests: 20, steps: 6 }];
+
+// Les prix d'une ville, à partir de quelques montants ; chaque clé s'affiche avec data-price="<clé>"
+// - firstMin, firstMax : fourchette de la première version
+// - base : abonnement de base (hébergement, maintenance, retouches)
+// - request : une demande fonctionnelle à l'unité
+// - hosting : coûts d'hébergement inclus dans l'abonnement, par mois
+// - tier<n> : forfait mensuel jusqu'à n demandes ; perRequest<n> : ce que coûte alors une demande ;
+//   unitTotal<n> : ce que coûteraient le même mois l'abonnement de base et n demandes à l'unité
+function pricing({ firstMin, firstMax, base, step, request, hosting }) {
+  const prices = { firstMin, firstMax, base, request, hosting };
+  for (const { requests: n, steps } of TIERS) {
+    prices["tier" + n] = base + step * steps;
+    prices["perRequest" + n] = Math.round((step * steps) / n);
+    prices["unitTotal" + n] = base + request * n;
+  }
+  return prices;
+}
+
 module.exports = {
   marseille: {
     id: "marseille",
@@ -18,7 +40,7 @@ module.exports = {
     book: "https://calendar.app.google/vFyLbndCK2tUXYibA",
     currency: "EUR",
     currencyDisplay: "narrowSymbol",
-    prices: { monthly: 490, first: 2500, maintenance: 49, hosting: 50, none: 0 }
+    prices: pricing({ firstMin: 1000, firstMax: 4000, base: 109, step: 100, request: 89, hosting: 50 })
   },
   "sao-paulo": {
     id: "sao-paulo",
@@ -36,7 +58,7 @@ module.exports = {
     book: "https://wa.me/5511936207406", // WhatsApp, en attendant un agenda
     currency: "BRL",
     currencyDisplay: "narrowSymbol",
-    prices: { monthly: 2900, first: 15000, maintenance: 290, hosting: 300, none: 0 }
+    prices: pricing({ firstMin: 6000, firstMax: 24000, base: 649, step: 600, request: 539, hosting: 300 })
   },
   johannesburg: {
     id: "johannesburg",
@@ -54,6 +76,6 @@ module.exports = {
     book: "https://calendly.com/nmathaga/30min",
     currency: "ZAR",
     currencyDisplay: "code",
-    prices: { monthly: 9900, first: 50000, maintenance: 990, hosting: 1000, none: 0 }
+    prices: pricing({ firstMin: 20000, firstMax: 80000, base: 2190, step: 2000, request: 1790, hosting: 1000 })
   }
 };

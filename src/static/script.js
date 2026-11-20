@@ -49,6 +49,42 @@
   });
   if (roles.length) setRole("ceo");
 
+  // Tarifs : le curseur des demandes fonctionnelles montre le palier choisi (0 : à l'unité)
+  document.querySelectorAll("[data-tiers]").forEach(function (box) {
+    var range = box.querySelector(".tier-range");
+    var panels = box.querySelectorAll(".tier-panel");
+    var marks = box.querySelectorAll(".tier-mark");
+    function show(i) {
+      panels.forEach(function (p) { p.classList.toggle("is-active", p.getAttribute("data-tier") === String(i)); });
+      marks.forEach(function (m) { m.classList.toggle("is-active", m.getAttribute("data-tier-to") === String(i)); });
+      range.style.setProperty("--fill", (i / range.max) * 100 + "%");
+      range.setAttribute("aria-valuetext", panels[i].querySelector(".tier-name").textContent);
+    }
+    range.addEventListener("input", function () { show(Number(range.value)); });
+    marks.forEach(function (m) {
+      m.addEventListener("click", function () {
+        range.value = m.getAttribute("data-tier-to");
+        show(Number(range.value));
+        range.focus();
+      });
+    });
+    show(Number(range.value));
+  });
+
+  // Tarifs, « C'est quoi, une demande ? » : sur mobile, un onglet montre une seule colonne d'exemples
+  document.querySelectorAll("[data-kinds]").forEach(function (box) {
+    var tabs = box.querySelectorAll(".kind-tab");
+    tabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        tabs.forEach(function (t) {
+          var on = t === tab;
+          t.setAttribute("aria-pressed", on ? "true" : "false");
+          document.getElementById(t.getAttribute("aria-controls")).classList.toggle("is-active", on);
+        });
+      });
+    });
+  });
+
   // Étapes « Comment ça marche » et notes sous les tarifs : sur mobile, toucher un titre affiche ou masque son texte
   document.querySelectorAll(".step-toggle, .note-toggle").forEach(function (btn) {
     btn.addEventListener("click", function () {

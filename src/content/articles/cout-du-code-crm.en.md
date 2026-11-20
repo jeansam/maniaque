@@ -43,7 +43,7 @@ What do studies say about the time saved? They're more nuanced than the announce
 
 The lesson is clear: AI mostly speeds up work that is new, standard and well scoped. A basic CRM ticks every box. Contact records, forms, filterable lists, access rights: that's exactly the mundane code AI writes best, and it made up most of the bill in era 1.
 
-Public price lists haven't caught up with this change yet, and there is no reliable survey of agencies that build with AI. Our €2,500 to €5,000 range is therefore an estimate, not a market average. As a checkable reference point: at Maniaque, the first version of a custom tool like this CRM costs [€2,500 excl. VAT](/en/offer/#pricing), delivered in 2 to 8 weeks, in real code that belongs to you.
+Public price lists haven't caught up with this change yet, and there is no reliable survey of agencies that build with AI. Our €2,500 to €5,000 range is therefore an estimate, not a market average. As a checkable reference point: at Maniaque, the first version of a custom tool like this CRM costs [€1,000 to €4,000 excl. VAT](/en/offer/#pricing) depending on its scope, delivered in 2 to 8 weeks, in real code that belongs to you.
 
 ## The three eras side by side
 

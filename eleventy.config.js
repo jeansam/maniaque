@@ -44,7 +44,10 @@ module.exports = function (eleventyConfig) {
     const city = cities[m[2]];
     const fmt = new Intl.NumberFormat(m[1], { style: "currency", currency: city.currency, currencyDisplay: city.currencyDisplay, maximumFractionDigits: 0 });
     return html
-      .replace(/<span data-price="(\w+)"><\/span>/g, (_, key) => `<span data-price="${key}">${fmt.format(city.prices[key])}</span>`)
+      .replace(/<span data-price="(\w+)"><\/span>/g, (_, key) => {
+        if (city.prices[key] === undefined) throw new Error(`${this.page.inputPath} : prix inconnu data-price="${key}" (voir src/_data/cities.js)`);
+        return `<span data-price="${key}">${fmt.format(city.prices[key])}</span>`;
+      })
       .replace(/<a data-book /g, `<a data-book href="${city.book}" `);
   });
 
