@@ -43,7 +43,7 @@ Que disent les études sur le gain de temps ? Elles sont plus nuancées que les 
 
 La leçon est claire : l'IA accélère surtout ce qui est neuf, standard et bien délimité. Un CRM de base coche toutes ces cases. Les fiches contacts, les formulaires, les listes filtrables, les droits d'accès : c'est exactement le code banal que l'IA écrit le mieux, et celui qui représentait l'essentiel de la facture de l'époque 1.
 
-Les grilles de prix publiques n'ont pas encore rattrapé ce changement, et il n'existe pas encore de relevé fiable sur les agences qui développent avec l'IA. Notre fourchette de 2 500 à 5 000 € est donc une estimation, pas une moyenne de marché. Pour donner un point de repère vérifiable : chez Maniaque, la première version d'un outil sur mesure comme ce CRM coûte [2 500 € HT](/offre/#tarifs), livrée en 2 à 8 semaines, en vrai code qui vous appartient.
+Les grilles de prix publiques n'ont pas encore rattrapé ce changement, et il n'existe pas encore de relevé fiable sur les agences qui développent avec l'IA. Notre fourchette de 2 500 à 5 000 € est donc une estimation, pas une moyenne de marché. Pour donner un point de repère vérifiable : chez Maniaque, la première version d'un outil sur mesure comme ce CRM coûte [de 1 000 à 4 000 € HT](/offre/#tarifs) selon son périmètre, livrée en 2 à 8 semaines, en vrai code qui vous appartient.
 
 ## Les trois époques côte à côte
 
@@ -75,6 +75,6 @@ Autrement dit, la facture se déplace. Hier, vous payiez surtout des heures de f
 
 La question n'est plus « avons-nous les moyens d'un outil sur mesure ? ». Pour la plupart des PME, la réponse est désormais oui. La vraie question devient : « qui va comprendre notre façon de travailler, et l'accompagner dans la durée ? ».
 
-C'est pour ça que notre modèle repose sur une première version à prix fixe, puis un abonnement mensuel qui couvre les évolutions, l'hébergement et la maintenance. Le coût du code a chuté, nous le répercutons. Le temps passé à comprendre votre entreprise, lui, reste le cœur du travail.
+C'est pour ça que notre modèle repose sur une première version à prix fixe, puis un abonnement mensuel qui couvre l'hébergement, la maintenance et les retouches ; les évolutions se prennent à l'unité ou au forfait. Le coût du code a chuté, nous le répercutons. Le temps passé à comprendre votre entreprise, lui, reste le cœur du travail.
 
 Si vous avez un CRM, un tableur ou un outil métier qui vous agace, <a data-book="" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">réservez un audit gratuit de 45 minutes</a>. Vous saurez ce que coûterait votre outil aujourd'hui, et si ça vaut le coup.

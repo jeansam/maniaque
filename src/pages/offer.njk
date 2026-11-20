@@ -60,26 +60,75 @@ scripts: [script.js, nav.js]
       <h2 id="t-tarifs">{{ s.pricingTitle }}</h2>
       <p class="section-lede">{{ s.pricingLede }}</p>
       <div class="quote">
-        <table class="quote-table">
-          <caption class="visually-hidden">{{ s.plansCaption }}</caption>
-          <thead>
-            <tr>
-              <td></td>{% for plan in s.plans %}
-              <th scope="col">{{ plan }}</th>{% endfor %}
-            </tr>
-          </thead>
-          <tbody>{% for row in s.planRows %}
-            <tr><th scope="row">{{ row.label }}</th>{% for value in row.values %}<td{% if row.num %} class="num"{% endif %}>{{ value }}</td>{% endfor %}</tr>{% endfor %}
-          </tbody>
-        </table>
-{#- Sur mobile, le tableau devient une carte par formule : mêmes textes, lus de haut en bas (l'un ou l'autre est affiché, jamais les deux) #}
-        <div class="plans">{% for plan in s.plans %}{% set i = loop.index0 %}
-          <div class="plan">
-            <p class="plan-name">{{ plan }}</p>
-            <dl>{% for row in s.planRows %}
-              <div{% if row.num %} class="num"{% endif %}><dt>{{ row.label }}</dt><dd>{{ row.values[i] }}</dd></div>{% endfor %}
-            </dl>
-          </div>{% endfor %}
+{#- Les deux montants fixes : la première version, puis l'abonnement de base #}
+        <div class="price-cards">
+          <div class="price-card">
+            <h3 class="price-name">{{ s.first.title }}</h3>
+            <p class="price-amount">{{ s.first.price }}</p>
+            <p class="price-when">{{ s.first.when }}</p>
+            <p class="price-text">{{ s.first.text }}</p>
+          </div>
+          <div class="price-card">
+            <h3 class="price-name">{{ s.base.title }}</h3>
+            <p class="price-amount">{{ s.base.price }}</p>
+            <p class="price-when">{{ s.base.when }}</p>
+            <ul class="price-includes">{% for item in s.base.includes %}
+              <li>{{ item }}</li>{% endfor %}
+            </ul>
+          </div>
+        </div>
+{#- Demandes fonctionnelles : un curseur choisit entre l'unité et les paliers du forfait (script.js).
+    Sans JavaScript, le curseur est masqué et tous les paliers s'affichent, l'un sous l'autre #}
+        {% set r = s.requests %}{% set defaultTier = 1 %}
+        <div class="tiers" data-tiers>
+          <div class="tiers-head">
+            <h3>{{ r.title }}</h3>
+            <p>{{ r.text }}</p>
+          </div>
+          <div class="tiers-body">
+            <div class="tier-control" style="--stops: {{ r.tiers.length }}">
+              <label class="tier-label" for="tier-range">{{ r.label }}</label>
+              <input type="range" class="tier-range" id="tier-range" min="0" max="{{ r.tiers.length }}" step="1" value="{{ defaultTier }}" aria-valuetext="{{ r.tier.valueText | replace('{n}', r.tiers[defaultTier - 1]) }}">
+              <div class="tier-marks">
+                <button type="button" class="tier-mark" data-tier-to="0" style="--i: 0" tabindex="-1" aria-hidden="true">{{ r.unit.mark }}</button>{% for n in r.tiers %}
+                <button type="button" class="tier-mark" data-tier-to="{{ loop.index }}" style="--i: {{ loop.index }}" tabindex="-1" aria-hidden="true">{{ n }}</button>{% endfor %}
+              </div>
+            </div>
+            <div class="tier-panels" aria-live="polite">
+              <div class="tier-panel{% if defaultTier == 0 %} is-active{% endif %}" data-tier="0">
+                <p class="tier-name">{{ r.unit.valueText }}</p>
+                <p class="price-amount">{{ r.unit.price }}</p>
+                <p class="tier-what">{{ r.unit.what }}</p>
+                <p class="tier-note">{{ r.unit.note }}</p>
+              </div>{% for n in r.tiers %}
+              <div class="tier-panel{% if defaultTier == loop.index %} is-active{% endif %}" data-tier="{{ loop.index }}">
+                <p class="tier-name">{{ r.tier.valueText | replace('{n}', n) }}</p>
+                <p class="price-amount">{{ r.tier.price | replace('{n}', n) }}</p>
+                <p class="tier-what">{{ r.tier.what | replace('{n}', n) }}</p>
+                <p class="tier-note">{{ r.tier.note | replace('{n}', n) }}</p>
+              </div>{% endfor %}
+            </div>
+          </div>
+        </div>
+{#- Ce qui compte comme une demande : trois colonnes d'exemples ; sur mobile, une à la fois, choisie par onglet (script.js) #}
+        {% set k = s.kinds %}
+        <div class="kinds" data-kinds>
+          <h3>{{ k.title }}</h3>
+          <p class="kinds-rule">{{ k.rule }}</p>
+          <div class="kinds-tabs" role="group" aria-label="{{ k.tabsLabel }}">{% for col in k.columns %}
+            <button type="button" class="kind-tab" aria-controls="kind-{{ col.id }}" aria-pressed="{{ "true" if loop.first else "false" }}">{{ col.tab }}</button>{% endfor %}
+          </div>
+          <div class="kinds-cols">{% for col in k.columns %}
+            <div class="kind kind-{{ col.id }}{% if loop.first %} is-active{% endif %}" id="kind-{{ col.id }}">
+              <p class="kind-title">{{ col.title }}</p>
+              <p class="kind-tag">{{ col.tag }}</p>
+              <ul>{% for item in col.items %}
+                <li>{{ item }}</li>{% endfor %}
+              </ul>
+{% if col.note %}              <p class="kind-note">{{ col.note }}</p>
+{% endif %}            </div>{% endfor %}
+          </div>
+          <p class="kinds-doubt">{{ k.doubt }}</p>
         </div>
         <div class="quote-notes">{% for note in s.notes %}
           <p><button type="button" class="note-toggle" aria-expanded="false" aria-controls="note-{{ note.id }}">{{ note.title }}</button><span class="note-sep">{{ note.sep or t.colon }}</span><span class="note-body" id="note-{{ note.id }}">{{ note.text }}</span></p>{% endfor %}

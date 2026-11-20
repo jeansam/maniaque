@@ -11,13 +11,13 @@ ucFacts:
   - fr: Première version en 2 à 8&nbsp;semaines
     en: First version in 2 to 8&nbsp;weeks
     pt: Primeira versão em 2 a 8&nbsp;semanas
-  - fr: <span data-price="monthly"></span>&nbsp;HT par mois
-    en: <span data-price="monthly"></span> excl. VAT per month
-    pt: <span data-price="monthly"></span> por mês, sem impostos
+  - fr: Dès <span data-price="base"></span>&nbsp;HT par mois
+    en: From <span data-price="base"></span> excl. VAT per month
+    pt: A partir de <span data-price="base"></span> por mês, sem impostos
   - fr: Audit gratuit
     en: Free audit
     pt: Diagnóstico gratuito
 auditP:
-  fr: "45 minutes, gratuites et sans engagement. On repère où vous perdez le plus de temps, puis vous recevez une page claire : ce qu'on construirait en premier, le coût mensuel total et notre avis franc."
-  en: "45 minutes, free and with no commitment. We find where you lose the most time, then you get one clear page: what we'd build first, the total monthly cost and our honest opinion."
-  pt: "45 minutos, gratuitos e sem compromisso. Identificamos onde você perde mais tempo e, depois, você recebe uma página clara: o que construiríamos primeiro, o custo mensal total e a nossa opinião franca."
+  fr: "45 minutes, gratuites et sans engagement. On repère où vous perdez le plus de temps, puis vous recevez une page claire : ce qu'on construirait en premier, son prix, le coût mensuel et notre avis franc."
+  en: "45 minutes, free and with no commitment. We find where you lose the most time, then you get one clear page: what we'd build first, its price, the monthly cost and our honest opinion."
+  pt: "45 minutos, gratuitos e sem compromisso. Identificamos onde você perde mais tempo e, depois, você recebe uma página clara: o que construiríamos primeiro, o preço, o custo mensal e a nossa opinião franca."

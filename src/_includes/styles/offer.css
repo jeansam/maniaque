@@ -197,19 +197,146 @@
 /* ---------- Devis ---------- */
 
 .quote { margin-top: 3rem; }
-.quote-table { width: 100%; border-collapse: collapse; }
-.quote-table thead th {
-  text-align: left; vertical-align: bottom;
-  font-size: var(--t-h3); font-weight: 700; line-height: 1.2; letter-spacing: -0.015em;
-  padding: 0 1rem 1rem 0; border-bottom: 2px solid var(--ink);
+
+/* Les deux montants fixes : première version, abonnement de base */
+.price-cards { display: grid; gap: 1.25rem; }
+@media (min-width: 760px) { .price-cards { grid-template-columns: 1fr 1fr; gap: 1.5rem; } }
+.price-card {
+  padding: 1.5rem 1.75rem 1.75rem;
+  background: #fff; border: 1px solid var(--grid-strong); border-top: 3px solid var(--ink); border-radius: 4px;
 }
-.quote-table thead td { border-bottom: 2px solid var(--ink); }
-.quote-table tbody th { text-align: left; font-weight: 500; color: var(--pencil); }
-.quote-table tbody th, .quote-table tbody td {
-  padding: 1rem 1rem 1rem 0; border-bottom: 1px solid var(--grid-strong); vertical-align: top;
+.price-name { font-size: 1.25rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.015em; }
+.price-amount {
+  margin-top: .75rem;
+  font-size: clamp(1.75rem, 1.4rem + 1.2vw, 2.25rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
 }
-.quote-table .num { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; line-height: 1.1; }
-.quote-table th[scope="row"] { width: 28%; }
+.price-when { margin-top: .4rem; font-size: .875rem; font-weight: 500; line-height: 1.35; color: var(--pencil); }
+.price-text { margin-top: 1rem; font-size: 1rem; color: var(--pencil); }
+.price-includes { margin-top: 1rem; font-size: 1rem; color: var(--pencil); }
+.price-includes li { position: relative; padding: .6rem 0 .6rem 1.6rem; border-top: 1px solid var(--grid); }
+.price-includes li:last-child { padding-bottom: 0; }
+.price-includes li::before {
+  content: ""; position: absolute; left: .2rem; top: 1.05rem; width: .7rem; height: .4rem;
+  border: solid var(--red); border-width: 0 0 2px 2px; transform: rotate(-45deg);
+}
+.price-includes strong { color: var(--ink); font-weight: 700; }
+/* « à » entre les deux bornes d'une fourchette, « / mois » après un prix */
+.quote .range-sep, .quote .per { font-size: .5em; font-weight: 600; letter-spacing: 0; color: var(--pencil); }
+.quote .range-sep { margin-inline: .1em; }
+
+/* Demandes fonctionnelles : curseur entre l'unité et les paliers du forfait */
+.tiers {
+  margin-top: 1.5rem; padding: 1.75rem;
+  background: #fff; border: 1px solid var(--grid-strong); border-top: 3px solid var(--red); border-radius: 4px;
+}
+.tiers-head h3 { font-size: var(--t-h3); line-height: 1.2; letter-spacing: -0.015em; }
+.tiers-head p { margin-top: .6rem; max-width: 46rem; font-size: 1rem; color: var(--pencil); }
+.tiers-body { display: grid; gap: 1.75rem; margin-top: 1.75rem; }
+@media (min-width: 860px) { .tiers-body { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 3rem; align-items: center; } }
+
+.tier-control { display: none; }
+.js .tier-control { display: block; }
+.tier-label { display: block; margin-bottom: .75rem; font-weight: 600; font-size: 1rem; color: var(--pencil); }
+.tier-range {
+  --thumb: 1.75rem;
+  display: block; width: 100%; height: var(--thumb); margin: 0;
+  background: transparent; cursor: pointer;
+  -webkit-appearance: none; appearance: none;
+}
+.tier-range::-webkit-slider-runnable-track {
+  height: 6px; border-radius: 3px;
+  background: linear-gradient(to right, var(--red) var(--fill, 25%), var(--grid-strong) var(--fill, 25%));
+}
+.tier-range::-moz-range-track {
+  height: 6px; border-radius: 3px;
+  background: linear-gradient(to right, var(--red) var(--fill, 25%), var(--grid-strong) var(--fill, 25%));
+}
+.tier-range::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: var(--thumb); height: var(--thumb); margin-top: calc(3px - var(--thumb) / 2);
+  background: #fff; border: 3px solid var(--red); border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(20, 40, 80, .2);
+}
+.tier-range::-moz-range-thumb {
+  box-sizing: border-box; width: var(--thumb); height: var(--thumb);
+  background: #fff; border: 3px solid var(--red); border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(20, 40, 80, .2);
+}
+.tier-range:focus-visible { outline: none; }
+.tier-range:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 5px rgba(210, 37, 27, .2); }
+.tier-range:focus-visible::-moz-range-thumb { box-shadow: 0 0 0 5px rgba(210, 37, 27, .2); }
+/* Les repères sous le curseur, chacun sous la position du bouton (centre du bouton aux extrémités) */
+.tier-marks { position: relative; height: 2.25rem; margin: .4rem calc(1.75rem / 2) 0; }
+.tier-mark {
+  position: absolute; top: 0; left: calc(var(--i) / var(--stops) * 100%); transform: translateX(-50%);
+  padding: .25rem .35rem; background: none; border: 0; cursor: pointer; white-space: nowrap;
+  font: 600 .9375rem/1.2 var(--font); color: var(--pencil); font-variant-numeric: tabular-nums;
+}
+.tier-mark:first-child { transform: translateX(calc(-1.75rem / 2 - .35rem)); }
+.tier-mark:hover { color: var(--ink); }
+.tier-mark.is-active { color: var(--red-ink); }
+
+.tier-panels { padding: 1.25rem 1.5rem; background: var(--paper); border-radius: 4px; }
+.tier-panel .price-amount { margin-top: 0; font-size: clamp(2rem, 1.5rem + 1.6vw, 2.75rem); }
+.tier-what { margin-top: .5rem; }
+.tier-what strong { font-weight: 700; }
+.tier-note { margin-top: .5rem; font-size: 1rem; color: var(--pencil); }
+.tier-note s { text-decoration-color: var(--red); text-decoration-thickness: 2px; }
+/* Avec JavaScript, seul le palier choisi s'affiche ; sans, tous, chacun sous son nom */
+.tier-name { font-weight: 700; margin-bottom: .35rem; }
+.tier-panel + .tier-panel { margin-top: 1.25rem; padding-top: 1.25rem; border-top: 1px solid var(--grid-strong); }
+.js .tier-name { display: none; }
+.js .tier-panel:not(.is-active) { display: none; }
+.js .tier-panel + .tier-panel { margin-top: 0; padding-top: 0; border-top: 0; }
+@media (min-width: 860px) { .js .tier-panels { min-height: 11.5rem; display: flex; align-items: center; } }
+.js .tier-panel.is-active { animation: step-in .2s ease-out; }
+@media (prefers-reduced-motion: reduce) { .js .tier-panel.is-active { animation: none; } }
+/* « C'est quoi, une demande ? » : retouche, une demande, plusieurs demandes */
+.kinds {
+  margin-top: 1.5rem; padding: 1.75rem;
+  background: #fff; border: 1px solid var(--grid-strong); border-radius: 4px;
+}
+.kinds h3 { font-size: var(--t-h3); line-height: 1.2; letter-spacing: -0.015em; }
+.kinds-rule { margin-top: .6rem; max-width: 46rem; }
+.kinds-rule strong { font-weight: 700; }
+.kinds-cols { display: grid; gap: 1.25rem; margin-top: 1.5rem; }
+@media (min-width: 760px) { .kinds-cols { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.kind { padding: 1.25rem 1.25rem 1.4rem; background: var(--paper); border-top: 3px solid var(--grid-strong); border-radius: 0 0 4px 4px; }
+.kind-one { border-top-color: var(--red); }
+.kind-many { border-top-color: var(--ink); }
+.kind-title { font-size: 1.125rem; font-weight: 700; line-height: 1.25; }
+.kind-tag { margin-top: .25rem; font-size: .875rem; font-weight: 500; line-height: 1.35; color: var(--pencil); }
+.kind-one .kind-tag { color: var(--red-ink); }
+.kind ul { margin-top: .85rem; font-size: 1rem; color: var(--pencil); }
+.kind li { padding: .5rem 0; border-top: 1px solid var(--grid); line-height: 1.4; }
+.kind-note { margin-top: .9rem; padding-left: .75rem; border-left: 2px solid var(--red); font-size: .9375rem; line-height: 1.45; }
+.kinds-doubt { margin-top: 1.25rem; font-size: 1rem; color: var(--pencil); }
+.kinds-doubt strong { color: var(--ink); font-weight: 700; }
+/* Onglets : seulement sur mobile, avec JavaScript ; sans, les trois colonnes s'empilent */
+.kinds-tabs { display: none; }
+.kind-tab {
+  flex: 1 1 auto; min-height: 2.75rem; padding: 0 .7rem; white-space: nowrap;
+  font: 600 .9375rem/1 var(--font); color: var(--ink);
+  background: #fff; border: 1.5px solid var(--grid-strong); border-radius: 999px; cursor: pointer;
+  transition: background-color .15s, border-color .15s, color .15s;
+}
+.kind-tab:hover { border-color: var(--ink); }
+.kind-tab[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+@media (max-width: 759px) {
+  .js .kinds-tabs { display: flex; gap: .4rem; margin-top: 1.25rem; }
+  .js .kinds-cols { margin-top: .75rem; }
+  .js .kind:not(.is-active) { display: none; }
+  .js .kind.is-active { animation: step-in .2s ease-out; }
+}
+@media (prefers-reduced-motion: reduce) { .kind-tab { transition: none; } .js .kind.is-active { animation: none; } }
+
+@media (max-width: 480px) {
+  .price-card, .tiers, .kinds { padding: 1.25rem; }
+  .tier-panels { padding: 1rem 1.1rem; }
+  .tier-mark { font-size: .875rem; }
+}
+
 .quote-notes { margin-top: 1.5rem; display: grid; gap: .6rem; max-width: 46rem; font-size: 1rem; color: var(--pencil); }
 /* L'intitulé de chaque note, en gras ; sur ordinateur c'est du texte, sur mobile il ouvre la note */
 .note-toggle {
@@ -242,27 +369,10 @@
 
 .quote-btn { margin-top: 2rem; }
 
-/* Sur mobile, une carte par formule à la place du tableau, trop étroit pour deux colonnes de texte */
-.plans { display: none; }
-@media (max-width: 680px) {
-  .quote-table { display: none; }
-  .plans { display: grid; gap: 1rem; }
-  .plan { padding: 1.25rem; background: #fff; border: 1px solid var(--grid-strong); border-top: 3px solid var(--ink); border-radius: 4px; }
-  .plan-name { font-size: 1.25rem; font-weight: 700; line-height: 1.2; letter-spacing: -0.015em; }
-  .plan dl { margin-top: .5rem; }
-  .plan dl > div { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: .75rem; padding: .7rem 0; border-top: 1px solid var(--grid); }
-  .plan dl > div:first-child { border-top: 0; }
-  .plan dt { font-size: .9375rem; font-weight: 500; color: var(--pencil); }
-  .plan dd { margin: 0; font-size: 1rem; }
-  .plan .num dd { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; line-height: 1.1; }
-  .quote-btn { display: flex; justify-content: center; }
-}
+@media (max-width: 680px) { .quote-btn { display: flex; justify-content: center; } }
 
-/* « HT », à côté d'un prix du tableau */
+/* « HT », à côté d'un prix */
 .quote .ht { font-size: .5em; font-weight: 600; letter-spacing: 0; color: var(--pencil); }
-
-/* Point de départ de l'abonnement, à côté du prix */
-.quote .when { display: block; margin-top: .35rem; font-size: .8125rem; font-weight: 500; line-height: 1.3; letter-spacing: 0; color: var(--pencil); }
 
 /* ---------- Engagements ---------- */
 

@@ -43,7 +43,7 @@ What do studies say about the time saved? They're more nuanced than the announce
 
 The lesson is clear: AI mostly speeds up work that is new, standard and well scoped. A basic CRM ticks every box. Contact records, forms, filterable lists, access rights: that's exactly the mundane code AI writes best, and it made up most of the bill in era 1.
 
-Public price lists haven't caught up with this change yet, and there is no reliable survey of agencies that build with AI. Our €2,500 to €5,000 range is therefore an estimate, not a market average. As a checkable reference point: at Maniaque, the first version of a custom tool like this CRM costs [€2,500 excl. VAT](/en/offer/#pricing), delivered in 2 to 8 weeks, in real code that belongs to you.
+Public price lists haven't caught up with this change yet, and there is no reliable survey of agencies that build with AI. Our €2,500 to €5,000 range is therefore an estimate, not a market average. As a checkable reference point: at Maniaque, the first version of a custom tool like this CRM costs [€1,000 to €4,000 excl. VAT](/en/offer/#pricing) depending on its scope, delivered in 2 to 8 weeks, in real code that belongs to you.
 
 ## The three eras side by side
 
@@ -75,6 +75,6 @@ In other words, the bill is shifting. Yesterday, you mostly paid for hours of ty
 
 The question is no longer "can we afford custom software?". For most small businesses, the answer is now yes. The real question becomes: "who will understand the way we work, and stay with us over time?".
 
-That's why our model is a fixed-price first version, then a monthly subscription that covers changes, hosting and maintenance. The cost of code has dropped, and we pass that on. The time spent understanding your business remains the heart of the work.
+That's why our model is a fixed-price first version, then a monthly subscription that covers hosting, maintenance and tweaks; new features are paid one by one or through a bundle. The cost of code has dropped, and we pass that on. The time spent understanding your business remains the heart of the work.
 
 If you have a CRM, a spreadsheet or a business tool that bugs you, <a data-book="" href="https://calendar.app.google/vFyLbndCK2tUXYibA" target="_blank" rel="noopener">book a free 45-minute audit</a>. You'll find out what your tool would cost today, and whether it's worth it.
