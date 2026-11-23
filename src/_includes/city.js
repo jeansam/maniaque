@@ -30,14 +30,80 @@ var city = CITIES[id];
 // Posé tout de suite : les blocs propres à une autre ville ne s'affichent jamais, même un instant
 root.setAttribute("data-city", id);
 
-function apply() {
-  var fmt = new Intl.NumberFormat(root.lang || "fr", {
-    style: "currency", currency: city.currency, currencyDisplay: city.currencyDisplay, maximumFractionDigits: 0
-  });
+// Monnaie choisie (villes qui en proposent plusieurs : city.currencies) : les prix restent fixés
+// dans la devise de la ville et sont convertis au cours du jour, ou au taux de secours de cities.js
+var CURRENCY_KEY = "maniaque-currency";
+var rates = {};
+(city.currencies || []).forEach(function (c) { if (c.rate) rates[c.code] = c.rate; });
+rates[city.currency] = 1;
+var currency = (function () { try { return localStorage.getItem(CURRENCY_KEY); } catch (e) { return null; } })();
+if (!rates[currency]) currency = city.currency;
+
+function formatPrice(amount) {
+  var lang = root.lang || "fr";
+  if (currency === city.currency) {
+    return new Intl.NumberFormat(lang, {
+      style: "currency", currency: city.currency, currencyDisplay: city.currencyDisplay, maximumFractionDigits: 0
+    }).format(amount);
+  }
+  var converted = amount * rates[currency];
+  // Le bitcoin n'a pas de symbole dans Intl : son code, puis ₿ à sa place, à trois chiffres significatifs
+  if (currency === "BTC") {
+    return new Intl.NumberFormat(lang, {
+      style: "currency", currency: "BTC", currencyDisplay: "code", maximumSignificantDigits: 3
+    }).format(converted).replace("BTC", "₿");
+  }
+  return new Intl.NumberFormat(lang, {
+    style: "currency", currency: currency, currencyDisplay: "narrowSymbol", maximumFractionDigits: 0
+  }).format(Math.round(converted));
+}
+
+function renderPrices() {
   document.querySelectorAll("[data-price]").forEach(function (el) {
     var amount = city.prices[el.getAttribute("data-price")];
-    if (amount !== undefined) el.textContent = fmt.format(amount);
+    if (amount !== undefined) el.textContent = formatPrice(amount);
   });
+  document.querySelectorAll("[data-currencies] [data-currency]").forEach(function (b) {
+    var code = b.getAttribute("data-currency");
+    b.hidden = !rates[code];
+    b.setAttribute("aria-pressed", code === currency ? "true" : "false");
+  });
+}
+
+// Le sélecteur de monnaie de la ville (section Tarifs), seulement avec JavaScript
+function setupCurrencies() {
+  if (!city.currencies) return;
+  document.querySelectorAll('[data-currencies][data-city-only="' + id + '"]').forEach(function (group) {
+    group.hidden = false;
+    group.querySelectorAll("[data-currency]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        currency = b.getAttribute("data-currency");
+        try { localStorage.setItem(CURRENCY_KEY, currency); } catch (e) {}
+        renderPrices();
+      });
+    });
+  });
+  // Cours du jour : le prix d'un bitcoin dans chaque monnaie donne aussi les taux entre elles
+  var codes = city.currencies.map(function (c) { return c.code.toLowerCase(); }).filter(function (c) { return c !== "btc"; });
+  fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=" + codes.join(","))
+    .then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (data) {
+      var btc = data && data.bitcoin;
+      var base = btc && btc[city.currency.toLowerCase()];
+      if (!base) return;
+      city.currencies.forEach(function (c) {
+        var code = c.code.toLowerCase();
+        if (code === "btc") rates[c.code] = 1 / base;
+        else if (btc[code]) rates[c.code] = btc[code] / base;
+      });
+      renderPrices();
+    })
+    .catch(function () {});
+}
+
+function apply() {
+  setupCurrencies();
+  renderPrices();
   document.querySelectorAll("a[data-book]").forEach(function (a) { a.href = city.book; });
   // Changer de langue garde la ville, même si le navigateur n'a pas pu l'enregistrer
   document.querySelectorAll(".picker-lang .picker-menu a").forEach(function (a) {

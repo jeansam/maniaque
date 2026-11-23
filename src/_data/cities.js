@@ -40,6 +40,16 @@ module.exports = {
     book: "https://calendar.app.google/vFyLbndCK2tUXYibA",
     currency: "EUR",
     currencyDisplay: "narrowSymbol",
+    // Monnaies au choix du visiteur, au-dessus des tarifs (city.js). Les prix restent fixés en euros :
+    // les autres monnaies en sont la conversion au cours du jour (CoinGecko, lu par le navigateur).
+    // rate : combien vaut 1 €, taux de secours si le cours du jour ne se charge pas. Sans rate
+    // (bitcoin, trop variable), la monnaie n'apparaît qu'une fois le cours du jour connu.
+    currencies: [
+      { code: "EUR", label: "€" },
+      { code: "GBP", label: "£", rate: 0.83 },
+      { code: "USD", label: "$", rate: 1.1 },
+      { code: "BTC", label: "₿" }
+    ],
     prices: pricing({ firstMin: 1000, firstMax: 4000, base: 109, step: 100, request: 89, hosting: 50 })
   },
   "sao-paulo": {

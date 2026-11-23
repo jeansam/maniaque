@@ -59,7 +59,12 @@ scripts: [script.js, nav.js]
     <div class="wrap">
       <h2 id="t-tarifs">{{ s.pricingTitle }}</h2>
       <p class="section-lede">{{ s.pricingLede }}</p>
-      <div class="quote">
+{#- Monnaie au choix, pour les villes qui en proposent plusieurs (currencies dans cities.js) ; affiché par city.js #}
+{% for c in cities | values %}{% if c.currencies %}      <div class="currency" data-currencies data-city-only="{{ c.id }}" role="group" aria-labelledby="currency-label-{{ c.id }}" hidden>
+        <span class="currency-label" id="currency-label-{{ c.id }}">{{ s.currencyLabel }}</span>{% for m in c.currencies %}
+        <button type="button" data-currency="{{ m.code }}" aria-pressed="{{ "true" if m.code == c.currency else "false" }}"{% if not m.rate and m.code != c.currency %} hidden{% endif %}>{{ m.label }} {{ m.code }}</button>{% endfor %}
+      </div>
+{% endif %}{% endfor %}      <div class="quote">
 {#- Les deux montants fixes : la première version, puis l'abonnement de base #}
         <div class="price-cards">
           <div class="price-card">
