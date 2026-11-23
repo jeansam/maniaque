@@ -208,7 +208,6 @@
 }
 .currency button:hover { border-color: var(--ink); color: var(--ink); }
 .currency button[aria-pressed="true"] { border-color: var(--ink); color: var(--paper); background: var(--ink); }
-.currency button[hidden] { display: none; }
 
 /* Les deux montants fixes : première version, abonnement de base */
 .price-cards { display: grid; gap: 1.25rem; }

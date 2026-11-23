@@ -1,0 +1,44 @@
+# Chaque lundi matin : met à jour les taux de change (src/_data/rates.json, d'après CoinGecko), vérifie
+# que le site se génère, puis commite le fichier sur main s'il a changé ; Vercel remet alors le site en
+# ligne avec les nouveaux prix en livres, dollars et bitcoins. Se lance aussi à la main, depuis l'onglet
+# Actions de GitHub (« Taux de change », Run workflow). En cas d'échec, GitHub prévient par e-mail et
+# le site garde les taux de la semaine précédente.
+name: Taux de change
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rates
+  cancel-in-progress: false
+
+jobs:
+  rates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - run: node lib/update-rates.js
+      - run: npm run build
+      - name: Commit des nouveaux taux
+        run: |
+          if git diff --quiet -- src/_data/rates.json; then
+            echo "Taux inchangés"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/_data/rates.json
+          git commit -m "Taux de change du $(date -u +%F)"
+          git push origin HEAD:main

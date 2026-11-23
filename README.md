@@ -17,7 +17,7 @@ Node 22 (`.nvmrc`). `npm start` génère le site et le sert en local, rechargé 
 - avant, `npm run check` (`lib/check.js`) vérifie les sources : chaque texte traduit existe dans les trois langues, chaque cas d'usage a sa maquette et son icône, chaque maquette de la vitrine ses textes, chaque article son texte et son illustration dans chaque langue, et deux pages n'ont jamais la même adresse. Un texte absent exprès d'une langue s'écrit `fr: null` (comme l'explication du mot « maniaque », inutile en français)
 - après, `lib/check-links.js` vérifie que chaque lien, image ou script vers le site mène à un fichier qui existe, et à un `id` de la page quand il vise un endroit précis (`/offre/#tarifs`)
 
-La même génération tourne sur GitHub à chaque push et pull request (`.github/workflows/build.yml`).
+La même génération tourne sur GitHub à chaque push et pull request (`.github/workflows/build.yml`). Chaque lundi, une autre tâche met à jour les taux de change (`.github/workflows/rates.yml`, voir `data-price` plus bas).
 
 ## Où changer quoi
 
@@ -48,7 +48,7 @@ La même génération tourne sur GitHub à chaque push et pull request (`.github
   - `terms.njk` : les conditions générales, une section par intertitre dans `terms.yaml`
 - `src/city.njk` : donne `city.js`, fait des villes de `cities.js` et du code de `src/_includes/city.js` : la ville choisie dans l'en-tête (Marseille, São Paulo, Johannesbourg). La ville est gardée dans le navigateur et ne change pas quand on change de langue ; choisir une ville ouvre la page dans sa langue. Dans le HTML :
   - `data-book` sur un lien : il pointe vers le lien d'audit de la ville
-  - `data-price="base"` (etc.) : le montant, dans la devise de la ville, ou dans la monnaie choisie par le visiteur au-dessus des tarifs quand la ville en propose plusieurs (`currencies` dans `cities.js` : Marseille, en euros, livres, dollars ou bitcoins, convertis au cours du jour de CoinGecko). Les clés (`firstMin`, `firstMax`, `base`, `request`, `hosting`, et pour chaque palier du forfait `tier3`, `perRequest3`, `unitTotal3`…) sont calculées par `pricing()` dans `cities.js` ; une clé inconnue arrête la génération
+  - `data-price="base"` (etc.) : le montant, dans la devise de la ville, ou dans la monnaie choisie par le visiteur au-dessus des tarifs quand la ville en propose plusieurs (`currencies` dans `cities.js` : Marseille, en euros, livres, dollars ou bitcoins). Les prix restent fixés en euros ; les autres monnaies en sont la conversion aux taux de `src/_data/rates.json`, que `lib/update-rates.js` met à jour chaque lundi d'après CoinGecko (`.github/workflows/rates.yml`, qui commite le fichier sur `main` : Vercel remet alors le site en ligne). Pour forcer une mise à jour : onglet Actions de GitHub, « Taux de change », Run workflow, ou `node lib/update-rates.js` en local. Les clés (`firstMin`, `firstMax`, `base`, `request`, `hosting`, et pour chaque palier du forfait `tier3`, `perRequest3`, `unitTotal3`…) sont calculées par `pricing()` dans `cities.js` ; une clé inconnue arrête la génération
   - `data-city-only="sao-paulo"` (etc.) : le bloc ne s'affiche que pour cette ville (FAQ sur l'hébergement, personne de l'À propos)
   - un lien `?ville=sao-paulo` (ou `johannesburg`, `marseille`) choisit la ville
 
