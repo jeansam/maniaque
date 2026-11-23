@@ -9,6 +9,7 @@ const items = require("../../lib/items.js");
 const routes = require("./routes.js");
 const usecases = require("./usecases.js");
 const articles = require("./articles.js");
+const cities = require("./cities.js");
 
 const strings = (type) => yaml.load(fs.readFileSync(path.join(__dirname, "strings", type + ".yaml"), "utf8"));
 
@@ -23,15 +24,20 @@ function each(type, items) {
     return { type, key, id: item.id, item, lang, url: routes[key][lang], s: resolve({ ...shared, ...item.strings }, lang) };
   }));
 }
+// En plus, une page par ville et par langue (/en/offer/marseille/, /en/terms/marseille/) : c'est son adresse qui fixe la ville,
+// quel que soit le choix enregistré dans le navigateur ; un lien envoyé montre donc toujours la bonne ville
+function perCity(list) {
+  return [...list, ...list.flatMap((p) => Object.keys(cities).map((cityId) => ({ ...p, cityId, url: p.url + cityId + "/" })))];
+}
 
 module.exports = {
   home: single("home"),
-  offer: single("offer", { showcase: items.texts("showcase") }),
+  offer: perCity(single("offer", { showcase: items.texts("showcase") })),
   usecaseIndex: single("usecaseIndex"),
   usecase: each("usecase", usecases),
   about: single("about"),
   articleIndex: single("articleIndex"),
   article: each("article", articles),
   legal: single("legal"),
-  terms: single("terms")
+  terms: perCity(single("terms"))
 };

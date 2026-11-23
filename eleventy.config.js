@@ -35,11 +35,11 @@ module.exports = function (eleventyConfig) {
   // Fichiers servis tels quels (styles, scripts, images, favicon)
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });
 
-  // Sans JavaScript, la page montre les prix et le lien d'audit de sa ville par défaut (data-city) ;
-  // city.js les remplace ensuite par ceux de la ville choisie
+  // Sans JavaScript, la page montre les prix et le lien d'audit de sa ville (data-city : celle de son adresse,
+  // sinon celle de sa langue) ; city.js les remplace ensuite par ceux de la ville choisie
   eleventyConfig.addTransform("city-defaults", function (html) {
     if (!(this.page.outputPath || "").endsWith(".html")) return html;
-    const m = html.match(/<html lang="([^"]+)" data-city="([^"]+)">/);
+    const m = html.match(/<html lang="([^"]+)" data-city="([^"]+)"/);
     if (!m) return html;
     const city = cities[m[2]];
     const fmt = new Intl.NumberFormat(m[1], { style: "currency", currency: city.currency, currencyDisplay: city.currencyDisplay, maximumFractionDigits: 0 });

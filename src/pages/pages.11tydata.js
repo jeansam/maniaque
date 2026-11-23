@@ -9,7 +9,7 @@ module.exports = {
     s: (data) => data.p.s,
     t: (data) => resolve(data.ui, data.p.lang),
     language: (data) => data.langs.find((l) => l.code === data.p.lang),
-    // La ville par défaut d'une page est celle de sa langue
-    city: (data) => Object.values(data.cities).find((c) => c.lang === data.p.lang)
+    // La ville d'une page : celle de son adresse (/en/offer/marseille/), sinon, par défaut, celle de sa langue
+    city: (data) => data.cities[data.p.cityId] || Object.values(data.cities).find((c) => c.lang === data.p.lang)
   }
 };

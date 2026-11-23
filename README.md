@@ -52,7 +52,9 @@ La même génération tourne sur GitHub à chaque push et pull request (`.github
   - `data-city-only="sao-paulo"` (etc.) : le bloc ne s'affiche que pour cette ville (FAQ sur l'hébergement, personne de l'À propos)
   - un lien `?ville=sao-paulo` (ou `johannesburg`, `marseille`) choisit la ville
 
-  Sans JavaScript, chaque page montre les prix et le lien d'audit de sa ville par défaut (celle de sa langue) : la génération les remplit (`eleventy.config.js`)
+  L'offre et les conditions générales ont en plus une page par ville et par langue, faite pour être envoyée : `/en/offer/marseille/`, `/offre/johannesburg/`, `/pt/oferta/sao-paulo/`, `/en/terms/marseille/`… (`perCity()` dans `src/_data/pages.js`). Depuis une offre de ville, le lien des conditions générales mène à celles de la même ville. Sur ces pages, la ville vient de l'adresse (`data-city-fixed`) et l'emporte sur le choix enregistré dans le navigateur, puis devient ce choix pour le reste de la visite ; elles renvoient les moteurs de recherche vers la page sans ville (`rel="canonical"`). La carte de l'accueil et le menu des villes de l'offre y mènent.
+
+  Sans JavaScript, chaque page montre les prix et le lien d'audit de sa ville (celle de son adresse, sinon celle de sa langue) : la génération les remplit (`eleventy.config.js`)
 - `src/styles.njk` : donne `styles.css`, la charte (papier millimétré, encre bleue, rouge de correction), réunie en un seul fichier à partir des parties de `src/_includes/styles/` : `base.css` (couleurs, typographie, boutons, sections, encart d'audit), `header.css`, `footer.css`, `offer.css`, `showcase.css` (la vitrine de l'offre), `usecases.css`, `pages.css` (À propos, mentions légales), `articles.css`, `home.css`. L'ordre est celui de la liste dans `styles.njk`
 - `src/static/` : les fichiers servis tels quels
   - `script.js` : l'animation du titre de l'offre, le filtre de la FAQ par profil et les étapes repliables sur mobile
