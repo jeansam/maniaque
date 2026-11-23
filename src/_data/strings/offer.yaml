@@ -111,6 +111,11 @@ pricingLede:
   fr: Aucun frais caché, aucun engagement. La première version se paie une fois. L'abonnement de base garde ensuite votre outil en ligne et à jour, et les demandes fonctionnelles s'y ajoutent, à l'unité ou au forfait.
   en: No hidden fees, no minimum term. The first version is paid once. The base subscription then keeps your tool online and up to date, and feature requests come on top, one by one or as a bundle.
   pt: Nenhum custo oculto, nenhuma fidelidade. A primeira versão é paga uma única vez. Depois, a assinatura básica mantém a sua ferramenta no ar e atualizada, e os pedidos de funcionalidade se somam a ela, avulsos ou em pacote.
+# Le sélecteur de monnaie au-dessus des tarifs (villes qui en proposent plusieurs, voir cities.js)
+currencyLabel:
+  fr: "Monnaie :"
+  en: "Currency:"
+  pt: "Moeda:"
 # Les deux montants fixes : la première version, puis l'abonnement de base
 first:
   title:

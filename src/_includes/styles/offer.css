@@ -197,6 +197,18 @@
 /* ---------- Devis ---------- */
 
 .quote { margin-top: 3rem; }
+/* Monnaie au choix (Marseille) : une rangée de boutons au-dessus du devis, celle en cours à l'encre */
+.currency:not([hidden]) { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-top: 1.75rem; }
+.currency + .quote { margin-top: 2rem; }
+.currency-label { margin-right: .25rem; font-size: .9375rem; font-weight: 600; color: var(--pencil); }
+.currency button {
+  min-height: 2.5rem; padding: 0 .85rem;
+  font: inherit; font-size: .9375rem; font-weight: 600; color: var(--pencil); background: var(--paper); cursor: pointer;
+  border: 1.5px solid var(--grid-strong); border-radius: 3px;
+}
+.currency button:hover { border-color: var(--ink); color: var(--ink); }
+.currency button[aria-pressed="true"] { border-color: var(--ink); color: var(--paper); background: var(--ink); }
+.currency button[hidden] { display: none; }
 
 /* Les deux montants fixes : première version, abonnement de base */
 .price-cards { display: grid; gap: 1.25rem; }
