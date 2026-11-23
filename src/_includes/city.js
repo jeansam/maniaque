@@ -31,10 +31,10 @@ var city = CITIES[id];
 root.setAttribute("data-city", id);
 
 // Monnaie choisie (villes qui en proposent plusieurs : city.currencies) : les prix restent fixés
-// dans la devise de la ville et sont convertis au cours du jour, ou au taux de secours de cities.js
+// dans la devise de la ville et sont convertis aux taux de src/_data/rates.json, mis à jour chaque semaine
 var CURRENCY_KEY = "maniaque-currency";
 var rates = {};
-(city.currencies || []).forEach(function (c) { if (c.rate) rates[c.code] = c.rate; });
+(city.currencies || []).forEach(function (c) { rates[c.code] = c.rate; });
 rates[city.currency] = 1;
 var currency = (function () { try { return localStorage.getItem(CURRENCY_KEY); } catch (e) { return null; } })();
 if (!rates[currency]) currency = city.currency;
@@ -64,9 +64,7 @@ function renderPrices() {
     if (amount !== undefined) el.textContent = formatPrice(amount);
   });
   document.querySelectorAll("[data-currencies] [data-currency]").forEach(function (b) {
-    var code = b.getAttribute("data-currency");
-    b.hidden = !rates[code];
-    b.setAttribute("aria-pressed", code === currency ? "true" : "false");
+    b.setAttribute("aria-pressed", b.getAttribute("data-currency") === currency ? "true" : "false");
   });
 }
 
@@ -83,22 +81,6 @@ function setupCurrencies() {
       });
     });
   });
-  // Cours du jour : le prix d'un bitcoin dans chaque monnaie donne aussi les taux entre elles
-  var codes = city.currencies.map(function (c) { return c.code.toLowerCase(); }).filter(function (c) { return c !== "btc"; });
-  fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=" + codes.join(","))
-    .then(function (r) { return r.ok ? r.json() : null; })
-    .then(function (data) {
-      var btc = data && data.bitcoin;
-      var base = btc && btc[city.currency.toLowerCase()];
-      if (!base) return;
-      city.currencies.forEach(function (c) {
-        var code = c.code.toLowerCase();
-        if (code === "btc") rates[c.code] = 1 / base;
-        else if (btc[code]) rates[c.code] = btc[code] / base;
-      });
-      renderPrices();
-    })
-    .catch(function () {});
 }
 
 function apply() {

@@ -23,6 +23,19 @@ function pricing({ firstMin, firstMax, base, step, request, hosting }) {
   return prices;
 }
 
+// Monnaies au choix d'une ville : à chacune son taux, combien vaut 1 unité de la devise de la ville.
+// Les taux sont dans rates.json, mis à jour chaque semaine par lib/update-rates.js
+// (.github/workflows/rates.yml) ; une monnaie sans taux arrête la génération
+const RATES = require("./rates.json");
+function withRates(base, currencies) {
+  return currencies.map((c) => {
+    if (c.code === base) return { ...c, rate: 1 };
+    const rate = RATES.rates[base] && RATES.rates[base][c.code];
+    if (!rate) throw new Error(`Taux ${base} → ${c.code} absent de src/_data/rates.json (lancer node lib/update-rates.js)`);
+    return { ...c, rate };
+  });
+}
+
 module.exports = {
   marseille: {
     id: "marseille",
@@ -41,15 +54,13 @@ module.exports = {
     currency: "EUR",
     currencyDisplay: "narrowSymbol",
     // Monnaies au choix du visiteur, au-dessus des tarifs (city.js). Les prix restent fixés en euros :
-    // les autres monnaies en sont la conversion au cours du jour (CoinGecko, lu par le navigateur).
-    // rate : combien vaut 1 €, taux de secours si le cours du jour ne se charge pas. Sans rate
-    // (bitcoin, trop variable), la monnaie n'apparaît qu'une fois le cours du jour connu.
-    currencies: [
+    // les autres monnaies en sont la conversion aux taux de rates.json, mis à jour chaque semaine
+    currencies: withRates("EUR", [
       { code: "EUR", label: "€" },
-      { code: "GBP", label: "£", rate: 0.83 },
-      { code: "USD", label: "$", rate: 1.1 },
+      { code: "GBP", label: "£" },
+      { code: "USD", label: "$" },
       { code: "BTC", label: "₿" }
-    ],
+    ]),
     prices: pricing({ firstMin: 1000, firstMax: 4000, base: 109, step: 100, request: 89, hosting: 50 })
   },
   "sao-paulo": {
