@@ -12,9 +12,11 @@ function save(id) { try { localStorage.setItem(KEY, id); } catch (e) {} }
 // rediriger selon le pays du visiteur
 function saveLang(lang) { document.cookie = "maniaque-lang=" + lang.slice(0, 2) + "; path=/; max-age=31536000; SameSite=Lax"; }
 
-// Un lien partagé (?ville=sao-paulo) l'emporte, puis le choix enregistré, puis la ville par défaut de la page
+// La ville de l'adresse de la page (/en/offer/marseille/, data-city-fixed) l'emporte, puis un lien
+// partagé (?ville=sao-paulo), puis le choix enregistré, puis la ville par défaut de la page (celle de sa langue)
+var fixed = root.hasAttribute("data-city-fixed");
 var params = new URLSearchParams(location.search);
-var asked = params.get("ville") || params.get("city");
+var asked = fixed ? root.getAttribute("data-city") : params.get("ville") || params.get("city");
 if (asked && CITIES[asked]) {
   save(asked);
   params.delete("ville"); params.delete("city");
@@ -88,10 +90,13 @@ function apply() {
   renderPrices();
   document.querySelectorAll("a[data-book]").forEach(function (a) { a.href = city.book; });
   // Changer de langue garde la ville, même si le navigateur n'a pas pu l'enregistrer
+  // (sur une page de ville, le lien mène déjà à la même ville dans l'autre langue)
   document.querySelectorAll(".picker-lang .picker-menu a").forEach(function (a) {
-    var url = new URL(a.href, location.href);
-    url.searchParams.set("ville", id);
-    a.href = url.pathname + url.search + url.hash;
+    if (!fixed) {
+      var url = new URL(a.href, location.href);
+      url.searchParams.set("ville", id);
+      a.href = url.pathname + url.search + url.hash;
+    }
     a.addEventListener("click", function () { saveLang(a.getAttribute("hreflang")); });
   });
   document.querySelectorAll("[data-city-name]").forEach(function (el) { el.textContent = city.name[pageLang]; });

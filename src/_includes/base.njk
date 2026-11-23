@@ -1,7 +1,8 @@
 {#- Le squelette de toutes les pages : <head>, puis le corps donné par le gabarit de la page (layouts/page.njk,
     layouts/home.njk ou layouts/legal.njk), puis les scripts de la page -#}
 <!doctype html>
-<html lang="{{ language.htmlLang }}" data-city="{{ city.id }}">
+{#- data-city-fixed : la ville vient de l'adresse de la page (/en/offer/marseille/) et l'emporte sur le choix enregistré (city.js) #}
+<html lang="{{ language.htmlLang }}" data-city="{{ city.id }}"{% if p.cityId %} data-city-fixed{% endif %}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,6 +16,7 @@
 {% endif %}{% if og == "article" %}<meta property="og:image" content="{{ p.url }}illustration.png">
 <meta property="og:type" content="article">
 {% endif %}{% if not noindex %}<meta name="theme-color" content="#F6F8FA">
+{% endif %}{% if p.cityId %}<link rel="canonical" href="{{ routes[p.key][lang] }}">
 {% endif %}{% for l in langs %}<link rel="alternate" hreflang="{{ l.htmlLang }}" href="{{ routes[p.key][l.code] }}">
 {% endfor %}<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -16,7 +16,7 @@ noindex: true
     {% set small = true %}{% include "wordmark.njk" %}
     <span class="foot-links">
       <a href="{{ routes.home[lang] }}">{{ t.backHome }}</a>
-{% for l in langs %}{% if l.code != lang %}      <a href="{{ routes[p.key][l.code] }}" hreflang="{{ l.htmlLang }}" lang="{{ l.htmlLang }}" aria-label="{{ l.versionLabel }}">{{ l.short }}</a>
+{% for l in langs %}{% if l.code != lang %}      <a href="{{ routes[p.key][l.code] }}{{ p.cityId + '/' if p.cityId }}" hreflang="{{ l.htmlLang }}" lang="{{ l.htmlLang }}" aria-label="{{ l.versionLabel }}">{{ l.short }}</a>
 {% endif %}{% endfor %}    </span>
   </div>
 </footer>
