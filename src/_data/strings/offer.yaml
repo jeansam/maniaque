@@ -108,9 +108,9 @@ pricingTitle:
   en: One upfront price. Then a subscription at your pace.
   pt: Um preço inicial. Depois, uma assinatura no seu ritmo.
 pricingLede:
-  fr: Aucun frais caché, aucun engagement. La première version se paie une fois. L'abonnement de base garde ensuite votre outil en ligne et à jour, et les demandes fonctionnelles s'y ajoutent, à l'unité ou au forfait.
-  en: No hidden fees, no minimum term. The first version is paid once. The base subscription then keeps your tool online and up to date, and feature requests come on top, one by one or as a bundle.
-  pt: Nenhum custo oculto, nenhuma fidelidade. A primeira versão é paga uma única vez. Depois, a assinatura básica mantém a sua ferramenta no ar e atualizada, e os pedidos de funcionalidade se somam a ela, avulsos ou em pacote.
+  fr: Aucun frais caché, aucun engagement, aucun prix par utilisateur. La première version se paie une fois. L'abonnement de base garde ensuite votre outil en ligne et à jour, et les demandes fonctionnelles s'y ajoutent, à l'unité ou au forfait.
+  en: No hidden fees, no minimum term, no per-user pricing. The first version is paid once. The base subscription then keeps your tool online and up to date, and feature requests come on top, one by one or as a bundle.
+  pt: Nenhum custo oculto, nenhuma fidelidade, nenhum preço por usuário. A primeira versão é paga uma única vez. Depois, a assinatura básica mantém a sua ferramenta no ar e atualizada, e os pedidos de funcionalidade se somam a ela, avulsos ou em pacote.
 # Le sélecteur de monnaie au-dessus des tarifs (villes qui en proposent plusieurs, voir cities.js)
 currencyLabel:
   fr: "Monnaie :"
@@ -148,6 +148,9 @@ base:
     en: The minimum, from delivery of the first version
     pt: O mínimo, a partir da entrega da primeira versão
   includes:
+    - fr: "<strong>Utilisateurs illimités</strong>&nbsp;: toute votre équipe, et vos clients, sans payer par personne"
+      en: "<strong>Unlimited users</strong>: your whole team, and your customers, with no per-person fee"
+      pt: "<strong>Usuários ilimitados</strong>: toda a sua equipe, e os seus clientes, sem pagar por pessoa"
     - fr: <strong>Hébergement</strong>, jusqu'à <span data-price="hosting"></span>&nbsp;HT de coûts par mois
       en: <strong>Hosting</strong>, up to <span data-price="hosting"></span> of costs per month
       pt: <strong>Hospedagem</strong>, até <span data-price="hosting"></span> de custos por mês
@@ -334,9 +337,9 @@ notes:
       en: Hosting
       pt: Hospedagem
     text:
-      fr: votre outil est hébergé par nos soins ou par vos soins, selon votre préférence. Dans les deux cas, l'abonnement est le même, et le code est à vous, dès le départ.
-      en: your tool is hosted by us or by you, whichever you prefer. Either way, the subscription is the same, and the code is yours from day one.
-      pt: sua ferramenta é hospedada por nós ou por você, como preferir. Nos dois casos, a assinatura é a mesma, e o código é seu desde o início.
+      fr: votre outil est hébergé par nos soins ou par vos soins, selon votre préférence. Dans les deux cas, l'abonnement est le même, et le code est à vous, dès le départ. Si on l'héberge, les coûts sont inclus jusqu'à <span data-price="hosting"></span>&nbsp;HT par mois ; au-delà, le surplus vous est refacturé au coût réel, sans marge.
+      en: your tool is hosted by us or by you, whichever you prefer. Either way, the subscription is the same, and the code is yours from day one. If we host it, costs are included up to <span data-price="hosting"></span> per month; above that, the excess is passed on to you at cost, with no markup.
+      pt: sua ferramenta é hospedada por nós ou por você, como preferir. Nos dois casos, a assinatura é a mesma, e o código é seu desde o início. Se nós hospedarmos, os custos estão incluídos até <span data-price="hosting"></span> por mês; acima disso, o excedente é repassado a você pelo custo real, sem margem.
   - id: usage
     title:
       fr: Services payants à l'usage
@@ -472,6 +475,15 @@ faq:
       fr: "L'intelligence artificielle écrit aujourd'hui une grande partie du code. Notre temps va donc à ce qui compte : comprendre votre métier, vous répondre et vérifier chaque livraison. Une équipe classique (chef de projet, designer, développeur) coûte plus de dix fois ce prix chaque mois."
       en: "Artificial intelligence now writes a large part of the code. So our time goes to what matters: understanding your business, answering you and checking every delivery. A traditional team (project manager, designer, developer) costs more than ten times this price every month."
       pt: "Hoje, a inteligência artificial escreve grande parte do código. Assim, o nosso tempo vai para o que importa: entender o seu negócio, responder a você e verificar cada entrega. Uma equipe tradicional (gerente de projeto, designer, desenvolvedor) custa mais de dez vezes esse preço todo mês."
+  - roles: ceo it
+    q:
+      fr: Le prix dépend-il du nombre d'utilisateurs ?
+      en: Does the price depend on the number of users?
+      pt: O preço depende do número de usuários?
+    a:
+      fr: "Non, le nombre d'utilisateurs est illimité, quel que soit votre abonnement. La plupart des logiciels se paient par utilisateur et par mois : la facture grimpe à chaque embauche, et on finit par partager des comptes. Ici, vous ajoutez qui vous voulez, vos équipes, vos sous-traitants comme vos clients, sans que le prix change."
+      en: "No, the number of users is unlimited, whatever your subscription. Most software is paid per user per month: the bill goes up with every hire, and people end up sharing accounts. Here, you add whoever you want, your teams, your subcontractors and your customers, and the price stays the same."
+      pt: "Não, o número de usuários é ilimitado, qualquer que seja a sua assinatura. A maioria dos softwares é cobrada por usuário e por mês: a conta sobe a cada contratação, e as pessoas acabam compartilhando contas. Aqui, você adiciona quem quiser, as suas equipes, os seus terceirizados e os seus clientes, e o preço não muda."
   - roles: ceo pm
     q:
       fr: Je peux vraiment tout demander, même les gros projets ?
