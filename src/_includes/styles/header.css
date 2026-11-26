@@ -48,6 +48,8 @@
   border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg);
 }
 .picker-city.is-open .city-btn::after { vertical-align: -.05em; transform: rotate(-135deg); }
+/* Ville imposée par la page (portfolio) : même graisse, sans soulignement ni menu */
+.city-fixed { font-weight: 700; color: var(--ink); }
 
 /* Blocs propres à une ville : seuls ceux de la ville choisie s'affichent */
 html[data-city="marseille"] [data-city-only]:not([data-city-only~="marseille"]),
