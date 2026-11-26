@@ -34,11 +34,11 @@ meaningLabel:
   pt: Exigente em francês
 meaning:
   fr: null
-  en: Fussy is <em lang="fr">maniaque</em> in French. And yes, there's AI in it.
+  en: Fussy means <em lang="fr">maniaque</em> in French. And yes, there's AI in it.
   pt: Exigente, em francês, é <em lang="fr">maniaque</em>. E sim, tem IA no nome.
 lede:
   fr: Au lieu de toute une équipe, <strong>un spécialiste Produit et IA dédié crée un nouvel outil digital sur mesure</strong> pour votre entreprise. Vous lui expliquez ce qui vous fait perdre du temps, il construit l'outil, puis le fait évoluer à votre rythme. Première version de <span data-price="firstMin"></span> à <span data-price="firstMax"></span>&nbsp;HT, puis <strong>dès <span data-price="base"></span>&nbsp;HT par mois</strong>.
-  en: Instead of a whole team, <strong>one dedicated Product and AI specialist builds a new custom digital tool</strong> for your business. You tell them what's wasting your time, they build the tool, then keep improving it at your pace. First version from <span data-price="firstMin"></span> to <span data-price="firstMax"></span>, then <strong>from <span data-price="base"></span> excl. VAT per month</strong>.
+  en: Instead of a whole team, <strong>one dedicated Product &amp; AI specialist builds a custom digital tool</strong> for your business. You show them what's wasting your time. They build the tool and keep improving it with you. Your first version costs between <span data-price="firstMin"></span> and <span data-price="firstMax"></span>, followed by <strong>a monthly fee starting at <span data-price="base"></span></strong>, excluding VAT.
   pt: Em vez de uma equipe inteira, <strong>um especialista dedicado em Produto e IA cria uma nova ferramenta digital sob medida</strong> para a sua empresa. Você explica o que faz você perder tempo, ele constrói a ferramenta e depois a faz evoluir no seu ritmo. Primeira versão de <span data-price="firstMin"></span> a <span data-price="firstMax"></span> e, depois, <strong>a partir de <span data-price="base"></span> por mês, sem impostos</strong>.
 seePricing:
   fr: Voir les tarifs
