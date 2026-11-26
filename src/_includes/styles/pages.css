@@ -21,6 +21,12 @@
    logo du client, puis avant / après */
 .portfolio { border-top: 1px solid var(--grid-strong); }
 .portfolio .about-title + .section-lede { margin-top: 1.25rem; }
+/* Lien de retour vers l'À propos, au-dessus du titre du portfolio et de la page du mot de passe */
+.back-link {
+  display: inline-flex; align-items: center; gap: .4rem; margin-bottom: 1.5rem;
+  font-size: 1rem; font-weight: 600; color: var(--pencil); text-decoration: none;
+}
+.back-link:hover { color: var(--ink); text-decoration: underline; text-underline-offset: .2em; }
 .portfolio-see { margin-top: 2rem; }
 .access-ask { margin-top: 1rem; font-size: 1rem; color: var(--pencil); }
 .portfolio-private { margin-top: 1rem; font-size: 1rem; color: var(--pencil); font-style: italic; }
