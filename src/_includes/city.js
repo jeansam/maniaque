@@ -24,10 +24,14 @@ if (asked && CITIES[asked]) {
   history.replaceState(null, "", location.pathname + (qs ? "?" + qs : "") + location.hash);
 }
 var stored = read();
+// Une page qui impose sa ville (data-city-lock, le portfolio de Jean-Samuel) la montre toujours, mais ne change
+// pas le choix enregistré : sauf lien partagé (?ville=…), le visiteur retrouve sa ville sur les autres pages
+var lockedCity = root.hasAttribute("data-city-lock") ? root.getAttribute("data-city") : null;
 var id = CITIES[asked] ? asked : CITIES[stored] ? stored : root.getAttribute("data-city");
 if (!CITIES[id]) id = "marseille";
 // La langue ne fixe la ville qu'à la première page vue ; ensuite, seul le menu des villes la change
-if (id !== stored) save(id);
+if (id !== stored && (!lockedCity || CITIES[asked])) save(id);
+if (CITIES[lockedCity]) id = lockedCity;
 var city = CITIES[id];
 // Posé tout de suite : les blocs propres à une autre ville ne s'affichent jamais, même un instant
 root.setAttribute("data-city", id);
@@ -90,9 +94,10 @@ function apply() {
   renderPrices();
   document.querySelectorAll("a[data-book]").forEach(function (a) { a.href = city.book; });
   // Changer de langue garde la ville, même si le navigateur n'a pas pu l'enregistrer
-  // (sur une page de ville, le lien mène déjà à la même ville dans l'autre langue)
+  // (sur une page de ville, le lien mène déjà à la même ville dans l'autre langue ; une page qui impose sa
+  // ville ne la transmet pas, pour ne pas changer le choix du visiteur)
   document.querySelectorAll(".picker-lang .picker-menu a").forEach(function (a) {
-    if (!fixed) {
+    if (!fixed && !lockedCity) {
       var url = new URL(a.href, location.href);
       url.searchParams.set("ville", id);
       a.href = url.pathname + url.search + url.hash;
