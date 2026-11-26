@@ -8,7 +8,7 @@ var pageLang = (root.lang || "fr").slice(0, 2);
 
 function read() { try { return localStorage.getItem(KEY); } catch (e) { return null; } }
 function save(id) { try { localStorage.setItem(KEY, id); } catch (e) {} }
-// Langue choisie à la main : un cookie que Vercel lit sur l'accueil (vercel.json) pour ne plus
+// Langue choisie à la main : un cookie que worker.js lit sur l'accueil pour ne plus
 // rediriger selon le pays du visiteur
 function saveLang(lang) { document.cookie = "maniaque-lang=" + lang.slice(0, 2) + "; path=/; max-age=31536000; SameSite=Lax"; }
 
