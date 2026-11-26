@@ -1,5 +1,5 @@
 # À chaque push et pull request : vérifie les sources, génère le site et vérifie ses liens (npm run build),
-# comme Vercel avant chaque mise en ligne
+# comme Cloudflare avant chaque mise en ligne
 name: Génération du site
 
 on:
