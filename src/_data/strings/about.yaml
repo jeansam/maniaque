@@ -31,9 +31,9 @@ people:
       en: Portrait of Jean-Samuel Jéquier, founder of Maniaque
       pt: Retrato de Jean-Samuel Jéquier, fundador da Maniaque
     bio:
-      - fr: "Depuis 2019, Jean-Samuel Jéquier crée des applications pour des entrepreneurs comme pour des grands groupes : une centaine au total, dans le tourisme, le monde associatif, le commerce, le médical, la fintech, la comptabilité, et bien d'autres secteurs."
-        en: "Since 2019, Jean-Samuel Jéquier has been building applications for entrepreneurs and large companies alike: about a hundred in total, in tourism, non-profits, retail, healthcare, fintech, accounting and many other industries."
-        pt: "Desde 2019, Jean-Samuel Jéquier cria aplicativos tanto para empreendedores quanto para grandes empresas: cerca de cem no total, em turismo, terceiro setor, comércio, saúde, fintech, contabilidade e muitos outros setores."
+      - fr: "Depuis 2019, Jean-Samuel Jéquier crée des applications pour des entrepreneurs comme pour des grands groupes : plus de 80 au total, dans le tourisme, le monde associatif, le commerce, le médical, la fintech, la comptabilité, et bien d'autres secteurs. Comme product manager, il a dirigé des équipes allant jusqu'à 4 développeurs à plein temps."
+        en: "Since 2019, Jean-Samuel Jéquier has been building applications for entrepreneurs and large companies alike: more than 80 in total, in tourism, non-profits, retail, healthcare, fintech, accounting and many other industries. As a product manager, he has led teams of up to 4 full-time developers."
+        pt: "Desde 2019, Jean-Samuel Jéquier cria aplicativos tanto para empreendedores quanto para grandes empresas: mais de 80 no total, em turismo, terceiro setor, comércio, saúde, fintech, contabilidade e muitos outros setores. Como product manager, ele liderou equipes de até 4 desenvolvedores em tempo integral."
       - fr: "Il a fondé Maniaque parce que l'IA permet enfin d'offrir ce niveau de sur-mesure à toutes les entreprises, pas seulement aux plus grandes. Ce qui ne change pas : quelqu'un qui écoute, qui répond et qui tient ses dates."
         en: "He founded Maniaque because AI finally makes this level of custom software affordable for every business, not just the biggest ones. What doesn't change: someone who listens, answers and meets their deadlines."
         pt: "Ele fundou a Maniaque porque a IA finalmente permite oferecer esse nível de personalização a todas as empresas, não só às maiores. O que não muda: alguém que escuta, que responde e que cumpre os prazos."
@@ -73,6 +73,28 @@ people:
       fr: "À Johannesbourg, c'est Nthuseni Mathaga qui vous répond : la personne qui vous écoute est aussi celle qui construit votre outil et s'engage sur les dates."
       en: "In Johannesburg, Nthuseni Mathaga is the one who answers you: the person who listens to you is also the one who builds your tool and commits to the dates."
       pt: "Em Joanesburgo, quem responde a você é Nthuseni Mathaga: a pessoa que escuta você é a mesma que constrói a sua ferramenta e se compromete com os prazos."
+# Lien vers le portfolio de Jean-Samuel (page protégée par mot de passe) : affiché seulement pour Marseille
+portfolio:
+  anchor:
+    fr: portfolio
+    en: portfolio
+    pt: portfolio
+  heading:
+    fr: Quelques projets
+    en: Selected work
+    pt: Alguns projetos
+  text:
+    fr: "Des projets auxquels Jean-Samuel a participé, comme product manager ou comme développeur : un logiciel qui fait tourner une trentaine de musées aux États-Unis, la prise de rendez-vous d'une clinique, de l'aide à domicile, un site pour Lenovo, des séjours de golf, une plateforme de formation. Ils sont montrés sur demande, avec un mot de passe."
+    en: "Projects Jean-Samuel worked on, as a product manager or as a developer: software that runs around thirty museums in the United States, appointment booking for a clinic, home care, a site for Lenovo, golf trips, a training platform. They are shown on request, with a password."
+    pt: "Projetos dos quais Jean-Samuel participou, como product manager ou como desenvolvedor: um sistema com o qual funcionam cerca de trinta museus nos Estados Unidos, o agendamento de uma clínica, cuidados domiciliares, um site para a Lenovo, viagens de golfe, uma plataforma de formação. Eles são mostrados sob pedido, com uma senha."
+  see:
+    fr: Voir les projets
+    en: See the projects
+    pt: Ver os projetos
+  ask:
+    fr: "Pas de mot de passe ? Demandez-le à <a class=\"inline-link\" href=\"mailto:hello@maniaque.xyz?subject=Acc%C3%A8s%20au%20portfolio\">hello@maniaque.xyz</a>."
+    en: "No password? Ask for one at <a class=\"inline-link\" href=\"mailto:hello@maniaque.xyz?subject=Portfolio%20access\">hello@maniaque.xyz</a>."
+    pt: "Não tem senha? Peça em <a class=\"inline-link\" href=\"mailto:hello@maniaque.xyz?subject=Acesso%20ao%20portf%C3%B3lio\">hello@maniaque.xyz</a>."
 network:
   anchor:
     fr: maniaque

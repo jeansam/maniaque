@@ -16,3 +16,79 @@
   font-size: .875rem; font-weight: 600; letter-spacing: .02em; color: var(--ink);
 }
 .split-text .since { margin-top: 1rem; color: var(--ink); }
+
+/* Portfolio : sur l'À propos (Marseille), un lien vers la page protégée ; sur la page, capture de l'outil,
+   logo du client, puis avant / après */
+.portfolio { border-top: 1px solid var(--grid-strong); }
+.portfolio .about-title + .section-lede { margin-top: 1.25rem; }
+.portfolio-see { margin-top: 2rem; }
+.access-ask { margin-top: 1rem; font-size: 1rem; color: var(--pencil); }
+.portfolio-private { margin-top: 1rem; font-size: 1rem; color: var(--pencil); font-style: italic; }
+
+/* Vidéo du portfolio : miniature cliquable, puis lecteur dans une fenêtre (video.js) */
+/* Section centrée sous les projets, miniature de taille moyenne */
+.portfolio-video { text-align: center; }
+.portfolio-video h2, .portfolio-video .section-lede { margin-inline: auto; }
+.video-thumb {
+  position: relative; display: block; overflow: hidden; border-radius: 10px;
+  max-width: 36rem; margin: 2.5rem auto 0;
+  box-shadow: 0 1px 2px rgba(20, 40, 80, .08), 0 12px 32px -12px rgba(20, 40, 80, .25);
+}
+.video-thumb img { display: block; width: 100%; height: auto; transition: transform .3s ease; }
+.video-thumb:hover img { transform: scale(1.02); }
+.video-play {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .8rem 1.4rem .8rem 1.1rem; border-radius: 99px;
+  background: var(--red); color: #fff; font-weight: 600; font-size: 1.0625rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .3);
+  transition: background-color .15s;
+}
+.video-thumb:hover .video-play { background: var(--red-ink); }
+.video-dialog {
+  width: min(92vw, 70rem); padding: 0; border: 0; border-radius: 10px;
+  background: #000; overflow: visible;
+}
+.video-dialog::backdrop { background: rgba(11, 26, 56, .82); }
+.video-frame { aspect-ratio: 16 / 9; }
+.video-frame iframe { display: block; width: 100%; height: 100%; border: 0; border-radius: 10px; }
+.video-close {
+  position: absolute; right: 0; bottom: calc(100% + .6rem);
+  display: grid; place-items: center; width: 2.75rem; height: 2.75rem;
+  border: 0; border-radius: 50%; background: #fff; color: var(--ink); cursor: pointer;
+}
+.video-close:hover { background: var(--paper-alt); }
+@media (prefers-reduced-motion: reduce) { .video-thumb img { transition: none; } .video-thumb:hover img { transform: none; } }
+
+/* Page du mot de passe */
+.portfolio-access { padding-top: clamp(3rem, 2rem + 4vw, 5.5rem); }
+.access-form { margin-top: 2rem; max-width: 32rem; }
+.access-form label { display: block; font-weight: 600; margin-bottom: .5rem; }
+.access-row { display: flex; flex-wrap: wrap; gap: .75rem; }
+.access-row input {
+  flex: 1 1 14rem; min-height: 3.25rem; padding: 0 1rem;
+  font: inherit; color: var(--ink); background: #fff;
+  border: 1.5px solid var(--ink); border-radius: 3px;
+}
+.access-error { margin-top: .75rem; color: var(--red-ink); font-weight: 600; }
+.access-error[hidden] { display: none; }
+.portfolio-list { display: grid; gap: 3.5rem 3rem; margin-top: 3rem; }
+@media (min-width: 900px) { .portfolio-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.project { display: flex; flex-direction: column; }
+/* La capture est coupée en bas : elle se fond dans le papier plutôt que de finir net */
+.project-screen {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(20, 40, 80, .08), 0 12px 32px -12px rgba(20, 40, 80, .25);
+  -webkit-mask-image: linear-gradient(#000 78%, transparent);
+  mask-image: linear-gradient(#000 78%, transparent);
+}
+/* Toutes les captures au même format, pour que les projets d'une même ligne restent alignés */
+.project-screen img { display: block; width: 100%; height: auto; aspect-ratio: 1403 / 839; object-fit: cover; object-position: left top; }
+/* Capture sans cadre de navigateur : un filet pour la détacher du papier */
+.project-screen-bare { outline: 1px solid var(--grid-strong); outline-offset: -1px; }
+.project-name.project-name-text { margin-top: 1rem; line-height: 1.2; font-size: var(--t-h3); }
+.project-subtitle { margin-top: .35rem; font-size: 1rem; font-weight: 600; color: var(--pencil); }
+.project-text { margin-top: .75rem; max-width: 44rem; line-height: 1.5; }
+.project-name { margin-top: .5rem; line-height: 0; }
+.project-name img { width: auto; height: 2.75rem; }

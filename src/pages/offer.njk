@@ -8,17 +8,10 @@ scripts: [script.js, nav.js]
 
   <section class="hero grid-paper">
     <div class="wrap">
-      <div class="hero-head">
-        <h1 class="hero-title">
-          <span class="line">{{ s.heroLine1 }}</span>
-          <span class="line"><span class="target" id="target">man<span class="ia">ia</span>que</span>{% if s.meaning %}<a class="star" href="#meaning" aria-label="{{ s.meaningLabel }}">*</a>{% endif %}</span>
-          <span class="line">{{ s.heroLine3 }}</span>
-        </h1>
-        <div class="note" aria-hidden="true">
-          <p class="note-ask">{{ s.noteAsk }}</p>
-          <p class="note-next">{{ s.noteNext }}</p>
-        </div>
-      </div>
+      <h1 class="hero-title">
+        <span class="line">{{ s.heroLine1 }} <span class="hero-word">{{ s.heroWord }}</span>{% if s.meaning %}<a class="star" href="#meaning" aria-label="{{ s.meaningLabel }}">*</a>{% endif %}</span>
+        <span class="line">{{ s.heroLine3 }}</span>
+      </h1>
 {% if s.meaning %}      <p class="meaning" id="meaning"><span class="star-ref" aria-hidden="true">*</span>{{ s.meaning }}</p>
 {% endif %}      <div class="hero-foot">
         <p class="lede">{{ s.lede }}</p>

@@ -8,8 +8,8 @@ description:
   pt: "Um software sob medida para a sua empresa e, depois, evoluções no seu ritmo, do menor detalhe à maior funcionalidade. Primeira versão de R$\_6.000 a R$\_24.000 e, depois, a partir de R$\_649 por mês, sem impostos. Diagnóstico gratuito."
 ogTitle:
   fr: Maniaque, soyez aussi maniaque que vous voulez
-  en: Maniaque, be as maniaque as you want
-  pt: Maniaque, seja tão maniaque quanto quiser
+  en: Maniaque, be as fussy as you want
+  pt: Maniaque, seja tão exigente quanto quiser
 ogDescription:
   fr: "Outils sur mesure pour PME. Réponse sous 24\_h ouvrées, nouvelles fonctionnalités testées à fond, code à vous. Dès 109\_€ HT par mois."
   en: "Custom software for small businesses. A reply within 24 business hours, new features fully tested, and the code is yours. From ZAR\_2,190 excl. VAT per month."
@@ -18,26 +18,24 @@ heroLine1:
   fr: Soyez aussi
   en: Be as
   pt: Seja tão
+# Le mot encadré du titre : « maniaque » en français, sa traduction ailleurs (l'astérisque renvoie au mot français)
+heroWord:
+  fr: man<span class="ia">ia</span>que
+  en: fussy
+  pt: exigente
+# Le titre tient en deux lignes : heroLine1 et le mot, puis heroLine3
 heroLine3:
   fr: que vous voulez.
   en: as you want.
   pt: quanto quiser.
 meaningLabel:
-  fr: null # en français, le mot se comprend : ni astérisque ni explication
-  en: What maniaque means
-  pt: O que significa maniaque
-noteAsk:
-  fr: « Plus gras. Et un peu plus à gauche. »
-  en: “Bolder. And a bit more to the left.”
-  pt: “Mais negrito. E um pouco mais para a esquerda.”
-noteNext:
-  fr: « Maintenant, un espace client complet. »
-  en: “Now, a complete customer portal.”
-  pt: “Agora, uma área do cliente completa.”
+  fr: null # en français, le mot est le nom de la marque : ni astérisque ni explication
+  en: Fussy in French
+  pt: Exigente em francês
 meaning:
   fr: null
-  en: <em lang="fr">Maniaque</em> is French for fussy, not maniac 😅. And yes, there's AI in it.
-  pt: <em lang="fr">Maniaque</em> quer dizer “maníaco por detalhes” em francês 😅. E sim, tem IA no nome.
+  en: Fussy is <em lang="fr">maniaque</em> in French. And yes, there's AI in it.
+  pt: Exigente, em francês, é <em lang="fr">maniaque</em>. E sim, tem IA no nome.
 lede:
   fr: Au lieu de toute une équipe, <strong>un spécialiste Produit et IA dédié crée un nouvel outil digital sur mesure</strong> pour votre entreprise. Vous lui expliquez ce qui vous fait perdre du temps, il construit l'outil, puis le fait évoluer à votre rythme. Première version de <span data-price="firstMin"></span> à <span data-price="firstMax"></span>&nbsp;HT, puis <strong>dès <span data-price="base"></span>&nbsp;HT par mois</strong>.
   en: Instead of a whole team, <strong>one dedicated Product and AI specialist builds a new custom digital tool</strong> for your business. You tell them what's wasting your time, they build the tool, then keep improving it at your pace. First version from <span data-price="firstMin"></span> to <span data-price="firstMax"></span>, then <strong>from <span data-price="base"></span> excl. VAT per month</strong>.

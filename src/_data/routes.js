@@ -8,6 +8,10 @@ const routes = {
   offer: { fr: "/offre/", en: "/en/offer/", pt: "/pt/oferta/" },
   usecaseIndex: { fr: "/cas-d-usage/", en: "/en/use-cases/", pt: "/pt/casos-de-uso/" },
   about: { fr: "/a-propos/", en: "/en/about/", pt: "/pt/sobre/" },
+  // Portfolio protégé par mot de passe (worker.js) : tout ce qui commence par ces adresses, images comprises.
+  // La page du mot de passe est dessous, pour que worker.js la serve à la place de la page demandée
+  portfolio: { fr: "/portfolio/", en: "/en/portfolio/", pt: "/pt/portfolio/" },
+  portfolioAccess: { fr: "/portfolio/acces/", en: "/en/portfolio/access/", pt: "/pt/portfolio/acesso/" },
   articleIndex: { fr: "/articles/", en: "/en/articles/", pt: "/pt/artigos/" },
   legal: { fr: "/mentions-legales.html", en: "/en/legal-notice/", pt: "/pt/aviso-legal/" },
   terms: { fr: "/conditions-generales/", en: "/en/terms/", pt: "/pt/termos/" }

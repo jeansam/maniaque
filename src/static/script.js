@@ -2,13 +2,6 @@
   var root = document.documentElement;
   root.classList.add("js");
 
-  // La retouche demandée dans l'annotation du titre est « livrée » peu après l'affichage.
-  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  window.setTimeout(function () {
-    root.classList.add("is-fixed");
-    window.setTimeout(placeLeader, reduce ? 0 : 550);
-  }, reduce ? 0 : 1400);
-
   // Icônes des garanties : l'animation se rejoue au toucher (mobile) ou au clic
   document.querySelectorAll(".assurances > div").forEach(function (card) {
     card.addEventListener("click", function () {
@@ -18,21 +11,6 @@
       window.setTimeout(function () { card.classList.remove("is-anim"); }, 1300);
     });
   });
-
-  // Le trait de renvoi de l'annotation rejoint exactement le mot encadré
-  var target = document.getElementById("target");
-  var note = document.querySelector(".note");
-  function placeLeader() {
-    if (!target || !note) return;
-    // Le trait part après l'astérisque quand il y en a une (version anglaise)
-    var star = document.querySelector(".star");
-    var right = star ? Math.max(star.getBoundingClientRect().right, target.getBoundingClientRect().right) : target.getBoundingClientRect().right;
-    var gap = note.getBoundingClientRect().left - right;
-    note.style.setProperty("--leader", Math.max(0, gap - 28) + "px");
-  }
-  placeLeader();
-  window.addEventListener("resize", placeLeader);
-  if (document.fonts) document.fonts.ready.then(placeLeader);
 
   // FAQ : le profil choisi (« Je suis… ») filtre les questions, dirigeant par défaut
   var roles = document.querySelectorAll(".role");

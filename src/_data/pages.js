@@ -36,6 +36,8 @@ module.exports = {
   usecaseIndex: single("usecaseIndex"),
   usecase: each("usecase", usecases),
   about: single("about"),
+  portfolio: single("portfolio"),
+  portfolioAccess: single("portfolioAccess"),
   articleIndex: single("articleIndex"),
   article: each("article", articles),
   legal: single("legal"),

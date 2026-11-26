@@ -1,0 +1,45 @@
+---
+pagination: { data: pages.portfolio, size: 1, alias: p }
+section: about
+noindex: true
+scripts: [nav.js, video.js]
+---
+{#- Servie seulement après le mot de passe (worker.js) ; non indexée, et aucun lien public n'y mène sans passer par la page d'accès #}
+{% import "components.njk" as c %}
+
+  <section class="section portfolio" aria-labelledby="t-portfolio">
+    <div class="wrap">
+      <h1 class="about-title" id="t-portfolio">{{ s.heading }}</h1>
+      <p class="section-lede">{{ s.lede }}</p>
+      <p class="portfolio-private">{{ s.private }}</p>
+      <ul class="portfolio-list">
+{% for pr in s.projects %}        <li class="project">
+          <figure class="project-screen{% if not pr.logo %} project-screen-bare{% endif %}">
+            <img src="/portfolio/{{ pr.id }}.webp" width="{{ pr.screen.width if pr.screen else 1403 }}" height="{{ pr.screen.height if pr.screen else 839 }}" alt="{{ s.screenAlt | replace("{name}", pr.name) }}"{% if not loop.first %} loading="lazy"{% endif %}>
+          </figure>
+{% if pr.logo %}          <h2 class="project-name"><img src="/portfolio/{{ pr.id }}-logo.webp" width="{{ pr.logo.width }}" height="{{ pr.logo.height }}" alt="{{ pr.name }}"></h2>
+{% else %}          <h2 class="project-name project-name-text">{{ pr.name }}</h2>
+{% endif %}          <p class="project-subtitle">{{ pr.subtitle }}</p>
+          <p class="project-text">{{ pr.text }}</p>
+        </li>
+{% endfor %}      </ul>
+    </div>
+  </section>
+
+{#- La vidéo, sous les projets : miniature au centre ; video.js l'ouvre en grand dans une fenêtre #}
+  <section class="section section-alt portfolio-video" aria-labelledby="t-video">
+    <div class="wrap">
+      <h2 id="t-video">{{ s.video.heading }}</h2>
+      <p class="section-lede">{{ s.video.text }}</p>
+      <a class="video-thumb" href="https://www.youtube.com/watch?v={{ s.video.id }}" data-video="{{ s.video.id }}" target="_blank" rel="noopener">
+        <img src="https://i.ytimg.com/vi/{{ s.video.id }}/maxresdefault.jpg" width="1280" height="720" alt="" loading="lazy">
+        <span class="video-play"><svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg><span>{{ s.video.play }}</span></span>
+      </a>
+      <dialog class="video-dialog" aria-label="{{ s.video.play }}">
+        <button class="video-close" type="button" aria-label="{{ s.video.close }}"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+        <div class="video-frame"></div>
+      </dialog>
+    </div>
+  </section>
+
+  {{ c.cta(t.cta.title, t.cta.text, t.cta.button) }}

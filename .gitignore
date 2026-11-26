@@ -1,3 +1,5 @@
 node_modules/
 _site/
 .wrangler/
+# Secrets locaux de wrangler dev (PORTFOLIO_PASSWORD)
+.dev.vars

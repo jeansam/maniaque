@@ -1,0 +1,105 @@
+# Portfolio de Jean-Samuel, protégé par mot de passe (worker.js). Images dans src/static/portfolio/<id>.webp
+# (capture, taille dans screen si elle n'est pas de 1403 × 839) et <id>-logo.webp (logo, taille dans logo ;
+# sans logo, le nom s'écrit en texte). Pour chaque projet : subtitle, ce que c'est ; text, ce qu'y a fait Jean-Samuel.
+# Deux projets par ligne ; les captures sont recadrées au même format (haut gauche gardé)
+title:
+  fr: Portfolio
+  en: Portfolio
+  pt: Portfólio
+heading:
+  fr: Quelques projets
+  en: Selected work
+  pt: Alguns projetos
+lede:
+  fr: "Jean-Samuel a travaillé sur plus de 80 applications différentes, comme product manager ou comme développeur, et a dirigé des équipes allant jusqu'à 4 développeurs à plein temps. En voici une sélection."
+  en: "Jean-Samuel has worked on more than 80 different applications, as a product manager or as a developer, and has led teams of up to 4 full-time developers. Here is a selection."
+  pt: "Jean-Samuel trabalhou em mais de 80 aplicativos diferentes, como product manager ou como desenvolvedor, e liderou equipes de até 4 desenvolvedores em tempo integral. Aqui está uma seleção."
+private:
+  fr: Ces projets vous sont montrés à titre privé. Merci de ne pas les diffuser.
+  en: These projects are shared with you privately. Please don't pass them on.
+  pt: Estes projetos são mostrados a você de forma privada. Por favor, não os divulgue.
+# Vidéo YouTube : miniature cliquable ; video.js l'ouvre dans une fenêtre au milieu de la page (sans JavaScript,
+# le lien mène à YouTube)
+video:
+  id: 0nFLWq78ROE
+  heading:
+    fr: En vidéo
+    en: On video
+    pt: Em vídeo
+  text:
+    fr: "Un exemple de ce que Jean-Samuel a produit, en 3 minutes de vidéo (en anglais)."
+    en: "An example of what Jean-Samuel has built, in a 3-minute video."
+    pt: "Um exemplo do que Jean-Samuel produziu, em 3 minutos de vídeo (em inglês)."
+  play:
+    fr: Lire la vidéo
+    en: Play the video
+    pt: Assistir ao vídeo
+  close:
+    fr: Fermer la vidéo
+    en: Close the video
+    pt: Fechar o vídeo
+screenAlt:
+  fr: "Capture d'écran de l'application {name}"
+  en: "Screenshot of the {name} application"
+  pt: "Captura de tela do aplicativo {name}"
+projects:
+  - id: muse
+    name: Muse
+    subtitle: Management Software for Museums
+    screen: { width: 1985, height: 992 }
+    text:
+      fr: "Le logiciel de gestion sur lequel tourne, au quotidien, une trentaine de musées aux États-Unis. Ici, les ateliers : chaque séance d'un cours, et qui y était présent."
+      en: "The management system that around thirty museums across the United States run on, day to day. Shown here: classes, with every session and who attended."
+      pt: "O sistema de gestão com o qual cerca de trinta museus nos Estados Unidos funcionam no dia a dia. Aqui, as oficinas: cada sessão de um curso e quem estava presente."
+  - id: clinicyou
+    name: ClinicYou
+    logo: { width: 217, height: 76 }
+    subtitle:
+      fr: Prise de rendez-vous pour une clinique
+      en: Appointment booking for a clinic
+      pt: Agendamento de consultas para uma clínica
+    text:
+      fr: "Jean-Samuel a participé à l'amélioration du système : une interface plus simple à prendre en main, et une sécurité renforcée."
+      en: "Jean-Samuel helped improve the system: an interface that is easier to pick up, and stronger security."
+      pt: "Jean-Samuel participou da melhoria do sistema: uma interface mais fácil de usar e uma segurança reforçada."
+  - id: ilarna
+    name: iLarna
+    logo: { width: 217, height: 69 }
+    subtitle:
+      fr: Aide à domicile en Angleterre
+      en: Home care in England
+      pt: Cuidados domiciliares na Inglaterra
+    text:
+      fr: "iLarna mettait en relation des personnes avec des aidants qui venaient s'occuper d'elles à domicile. Jean-Samuel a participé à l'amélioration de la plateforme : entre autres, rendre plus simple pour l'aidant le compte rendu à remplir à la fin de chaque visite."
+      en: "iLarna matched people with carers who looked after them at home. Jean-Samuel helped improve the platform: among other things, making it easier for carers to fill in their report at the end of each visit."
+      pt: "A iLarna conectava pessoas a cuidadores que iam cuidar delas em casa. Jean-Samuel participou da melhoria da plataforma: entre outras coisas, tornar mais simples para o cuidador o relatório a preencher no fim de cada visita."
+  - id: lenovo
+    name: Lenovo
+    logo: { width: 226, height: 82 }
+    subtitle:
+      fr: Un programme de remises pour équiper les écoles en ordinateurs
+      en: A rewards programme to equip schools with computers
+      pt: Um programa de descontos para equipar escolas com computadores
+    text:
+      fr: "Une opération marketing de Lenovo pour vendre des ordinateurs en nombre à des structures comme les écoles, avec reprise des anciens appareils et récompenses. Comme product manager, Jean-Samuel a créé le site de zéro."
+      en: "A Lenovo marketing programme to sell computers in volume to organisations such as schools, with trade-ins and rewards. As product manager, Jean-Samuel built the site from scratch."
+      pt: "Uma ação de marketing da Lenovo para vender computadores em grande quantidade a instituições como escolas, com troca de aparelhos antigos e recompensas. Como product manager, Jean-Samuel criou o site do zero."
+  - id: golf-southwest
+    name: Golf SouthWest
+    logo: { width: 205, height: 77 }
+    subtitle:
+      fr: Réservation de séjours de golf
+      en: Golf trip bookings
+      pt: Reservas de viagens de golfe
+    text:
+      fr: "Comme développeur, Jean-Samuel a créé le système de réservation."
+      en: "As a developer, Jean-Samuel built the booking system."
+      pt: "Como desenvolvedor, Jean-Samuel criou o sistema de reservas."
+  - id: lms
+    name: LMS
+    screen: { width: 1905, height: 1068 }
+    subtitle: Learning Management System
+    text:
+      fr: "Une plateforme pour un centre de formation : créer des cohortes, leur proposer un matériel de formation sur mesure, et suivre les résultats grâce aux statistiques. Elle aussi a été créée de zéro par Jean-Samuel, comme product manager."
+      en: "A platform for a training centre: create cohorts, give them tailored training material, and follow progress with analytics. This one too was built from scratch by Jean-Samuel, as product manager."
+      pt: "Uma plataforma para um centro de formação: criar turmas, oferecer a elas um material de formação sob medida e acompanhar os resultados com estatísticas. Ela também foi criada do zero por Jean-Samuel, como product manager."
