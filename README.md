@@ -2,7 +2,7 @@
 
 Site vitrine de l'offre Maniaque : outils sur mesure pour PME : une première version à prix fixe, puis un abonnement mensuel (hébergement, maintenance, retouches) et des demandes fonctionnelles à l'unité ou au forfait.
 
-Site généré avec [Eleventy](https://www.11ty.dev/) : chaque page est écrite une seule fois, et générée dans les trois langues (français, anglais, portugais du Brésil). Cloudflare (Workers) lance la génération (`npm run build`) à chaque push sur `main`, puis met en ligne le dossier `_site/` (`npx wrangler deploy`).
+Site généré avec [Eleventy](https://www.11ty.dev/) : chaque page est écrite une seule fois, et générée dans les trois langues (français, anglais, portugais du Brésil). Cloudflare (Workers) lance la génération (`npm run build`) à chaque push sur `main`, puis met en ligne le dossier `_site/` (`npx wrangler deploy`). Cloudflare n'est prévenu des push que si l'application GitHub « Cloudflare Workers and Pages » a accès au dépôt : sans elle, la génération ne se lance qu'à la main, depuis le tableau de bord du Worker `maniaque`.
 
 ```bash
 npm install
