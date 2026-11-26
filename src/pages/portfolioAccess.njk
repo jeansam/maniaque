@@ -1,0 +1,23 @@
+---
+pagination: { data: pages.portfolioAccess, size: 1, alias: p }
+section: about
+noindex: true
+scripts: [nav.js]
+---
+{#- worker.js sert cette page à la place du portfolio tant que le mot de passe n'est pas donné. Le formulaire
+    renvoie le mot de passe à l'adresse du portfolio ; après une erreur, worker.js retire hidden du message -#}
+  <section class="section portfolio-access" aria-labelledby="t-access">
+    <div class="wrap">
+      <h1 class="about-title" id="t-access">{{ s.heading }}</h1>
+      <p class="section-lede">{{ s.text }}</p>
+      <form class="access-form" method="post" action="{{ routes.portfolio[lang] }}">
+        <label for="access-password">{{ s.label }}</label>
+        <div class="access-row">
+          <input id="access-password" name="password" type="password" autocomplete="current-password" required autofocus>
+          <button class="btn" type="submit">{{ s.submit }}</button>
+        </div>
+        <p class="access-error" role="alert" data-access-error hidden>{{ s.error }}</p>
+      </form>
+      <p class="access-ask">{{ s.ask }}</p>
+    </div>
+  </section>

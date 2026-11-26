@@ -1,0 +1,30 @@
+# La page du mot de passe du portfolio : worker.js la sert à la place du portfolio tant que le mot de passe
+# n'a pas été donné, et affiche le message d'erreur (data-access-error) après un mauvais mot de passe
+title:
+  fr: Accès au portfolio
+  en: Portfolio access
+  pt: Acesso ao portfólio
+heading:
+  fr: Portfolio sur demande
+  en: Portfolio on request
+  pt: Portfólio sob pedido
+text:
+  fr: "Les projets de Jean-Samuel sont montrés sur demande. Entrez le mot de passe qu'il vous a donné."
+  en: "Jean-Samuel's projects are shown on request. Enter the password he gave you."
+  pt: "Os projetos de Jean-Samuel são mostrados sob pedido. Digite a senha que ele passou a você."
+label:
+  fr: Mot de passe
+  en: Password
+  pt: Senha
+submit:
+  fr: Voir les projets
+  en: See the projects
+  pt: Ver os projetos
+error:
+  fr: Ce n'est pas le bon mot de passe.
+  en: That's not the right password.
+  pt: A senha não está correta.
+ask:
+  fr: "Pas encore de mot de passe ? Demandez-le à <a class=\"inline-link\" href=\"mailto:hello@maniaque.xyz?subject=Acc%C3%A8s%20au%20portfolio\">hello@maniaque.xyz</a>."
+  en: "No password yet? Ask for one at <a class=\"inline-link\" href=\"mailto:hello@maniaque.xyz?subject=Portfolio%20access\">hello@maniaque.xyz</a>."
+  pt: "Ainda não tem senha? Peça em <a class=\"inline-link\" href=\"mailto:hello@maniaque.xyz?subject=Acesso%20ao%20portf%C3%B3lio\">hello@maniaque.xyz</a>."

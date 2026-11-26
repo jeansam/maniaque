@@ -26,6 +26,16 @@ scripts: [nav.js]
 {% endfor %}    </div>
   </section>
 
+{#- Projets de Jean-Samuel : seulement quand la ville choisie est Marseille ; la page elle-même demande un mot de passe (worker.js) #}
+{% set pf = s.portfolio %}  <section class="section portfolio" id="{{ pf.anchor }}" aria-labelledby="t-portfolio" data-city-only="marseille">
+    <div class="wrap">
+      <h2 id="t-portfolio">{{ pf.heading }}</h2>
+      <p class="section-lede">{{ pf.text }}</p>
+      <a class="btn btn-ink portfolio-see" href="{{ routes.portfolio[lang] }}">{{ pf.see }}</a>
+      <p class="access-ask">{{ pf.ask }}</p>
+    </div>
+  </section>
+
   <section class="section section-alt about-network" id="{{ s.network.anchor }}" aria-labelledby="t-maniaque">
     <div class="wrap split">
       <div class="split-text">

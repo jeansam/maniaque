@@ -8,8 +8,9 @@
   "assets": {
     "directory": "./_site",
     "binding": "ASSETS",
-    // Seul l'accueil passe par worker.js (redirection selon la langue) ; le reste est servi directement, sans limite de requêtes
-    "run_worker_first": ["/"]
+    // Passent par worker.js : l'accueil (redirection selon la langue) et le portfolio (mot de passe, secret
+    // PORTFOLIO_PASSWORD) ; le reste est servi directement, sans limite de requêtes
+    "run_worker_first": ["/", "/portfolio", "/portfolio/*", "/en/portfolio", "/en/portfolio/*", "/pt/portfolio", "/pt/portfolio/*"]
   },
   "observability": { "enabled": true }
 }
