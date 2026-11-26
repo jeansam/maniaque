@@ -2,7 +2,7 @@
 
 Site vitrine de l'offre Maniaque : outils sur mesure pour PME : une première version à prix fixe, puis un abonnement mensuel (hébergement, maintenance, retouches) et des demandes fonctionnelles à l'unité ou au forfait.
 
-Site généré avec [Eleventy](https://www.11ty.dev/) : chaque page est écrite une seule fois, et générée dans les trois langues (français, anglais, portugais du Brésil). Vercel lance la génération (`npm run build`) et sert le dossier `_site/`.
+Site généré avec [Eleventy](https://www.11ty.dev/) : chaque page est écrite une seule fois, et générée dans les trois langues (français, anglais, portugais du Brésil). Cloudflare (Workers) lance la génération (`npm run build`) à chaque push sur `main`, puis met en ligne le dossier `_site/` (`npx wrangler deploy`).
 
 ```bash
 npm install
@@ -48,7 +48,7 @@ La même génération tourne sur GitHub à chaque push et pull request (`.github
   - `terms.njk` : les conditions générales, une section par intertitre dans `terms.yaml`
 - `src/city.njk` : donne `city.js`, fait des villes de `cities.js` et du code de `src/_includes/city.js` : la ville choisie dans l'en-tête (Marseille, São Paulo, Johannesbourg). La ville est gardée dans le navigateur et ne change pas quand on change de langue ; choisir une ville ouvre la page dans sa langue. Dans le HTML :
   - `data-book` sur un lien : il pointe vers le lien d'audit de la ville
-  - `data-price="base"` (etc.) : le montant, dans la devise de la ville, ou dans la monnaie choisie par le visiteur au-dessus des tarifs quand la ville en propose plusieurs (`currencies` dans `cities.js` : Marseille, en euros, livres, dollars ou bitcoins). Les prix restent fixés en euros ; les autres monnaies en sont la conversion aux taux de `src/_data/rates.json`, que `lib/update-rates.js` met à jour chaque lundi d'après CoinGecko (`.github/workflows/rates.yml`, qui commite le fichier sur `main` : Vercel remet alors le site en ligne). Pour forcer une mise à jour : onglet Actions de GitHub, « Taux de change », Run workflow, ou `node lib/update-rates.js` en local. Les clés (`firstMin`, `firstMax`, `base`, `request`, `hosting`, et pour chaque palier du forfait `tier3`, `perRequest3`, `unitTotal3`…) sont calculées par `pricing()` dans `cities.js` ; une clé inconnue arrête la génération
+  - `data-price="base"` (etc.) : le montant, dans la devise de la ville, ou dans la monnaie choisie par le visiteur au-dessus des tarifs quand la ville en propose plusieurs (`currencies` dans `cities.js` : Marseille, en euros, livres, dollars ou bitcoins). Les prix restent fixés en euros ; les autres monnaies en sont la conversion aux taux de `src/_data/rates.json`, que `lib/update-rates.js` met à jour chaque lundi d'après CoinGecko (`.github/workflows/rates.yml`, qui commite le fichier sur `main` : Cloudflare remet alors le site en ligne). Pour forcer une mise à jour : onglet Actions de GitHub, « Taux de change », Run workflow, ou `node lib/update-rates.js` en local. Les clés (`firstMin`, `firstMax`, `base`, `request`, `hosting`, et pour chaque palier du forfait `tier3`, `perRequest3`, `unitTotal3`…) sont calculées par `pricing()` dans `cities.js` ; une clé inconnue arrête la génération
   - `data-city-only="sao-paulo"` (etc.) : le bloc ne s'affiche que pour cette ville (FAQ sur l'hébergement, personne de l'À propos)
   - un lien `?ville=sao-paulo` (ou `johannesburg`, `marseille`) choisit la ville
 
@@ -63,7 +63,9 @@ La même génération tourne sur GitHub à chaque push et pull request (`.github
   - les images, et l'illustration de chaque article dans chaque langue (celles en portugais ont leurs montants en reais)
   - `en/index.html` : redirige `/en/` vers l'accueil anglais, à la racine
 - `.editorconfig` : les réglages communs des éditeurs (UTF-8, 2 espaces). Les fragments inclus au milieu d'une ligne de HTML (maquettes, icônes, drapeaux, logo) n'ont pas de retour à la ligne final, qui ajouterait un espace dans la page
-- `vercel.json` : la génération, et sur l'accueil (`/`), la redirection selon le pays du visiteur (France → `/fr/`, Brésil → `/pt/`, ailleurs : anglais). Dès qu'on choisit une langue ou une ville à la main, un cookie `maniaque-lang` (posé par `city.js`) l'emporte sur le pays
+- `wrangler.jsonc` : l'hébergement sur Cloudflare (dossier mis en ligne, nom du projet)
+- `worker.js` : sur l'accueil (`/`) seulement, la redirection selon le pays du visiteur (France → `/fr/`, Brésil → `/pt/`, ailleurs : anglais). Dès qu'on choisit une langue ou une ville à la main, un cookie `maniaque-lang` (posé par `city.js`) l'emporte sur le pays. Pour essayer le site comme sur Cloudflare : `npm run build`, puis `npx wrangler dev` (http://localhost:8787)
+- `vercel.json` : la même chose pour Vercel, l'ancien hébergement ; à supprimer une fois le domaine passé chez Cloudflare
 
 ## À compléter avant diffusion
 
