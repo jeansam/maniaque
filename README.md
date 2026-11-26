@@ -65,8 +65,6 @@ La même génération tourne sur GitHub à chaque push et pull request (`.github
 - `.editorconfig` : les réglages communs des éditeurs (UTF-8, 2 espaces). Les fragments inclus au milieu d'une ligne de HTML (maquettes, icônes, drapeaux, logo) n'ont pas de retour à la ligne final, qui ajouterait un espace dans la page
 - `wrangler.jsonc` : l'hébergement sur Cloudflare (dossier mis en ligne, nom du projet)
 - `worker.js` : sur l'accueil (`/`) seulement, la redirection selon le pays du visiteur (France → `/fr/`, Brésil → `/pt/`, ailleurs : anglais). Dès qu'on choisit une langue ou une ville à la main, un cookie `maniaque-lang` (posé par `city.js`) l'emporte sur le pays. Pour essayer le site comme sur Cloudflare : `npm run build`, puis `npx wrangler dev` (http://localhost:8787)
-- `vercel.json` : la même chose pour Vercel, l'ancien hébergement ; à supprimer une fois le domaine passé chez Cloudflare
-
 ## À compléter avant diffusion
 
 - Liens d'audit de São Paulo (WhatsApp pour l'instant) et de Johannesbourg (LinkedIn de Nthuseni pour l'instant), dans `src/_data/cities.js`
