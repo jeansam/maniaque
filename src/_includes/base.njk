@@ -1,8 +1,9 @@
 {#- Le squelette de toutes les pages : <head>, puis le corps donné par le gabarit de la page (layouts/page.njk,
     layouts/home.njk ou layouts/legal.njk), puis les scripts de la page -#}
 <!doctype html>
-{#- data-city-fixed : la ville vient de l'adresse de la page (/en/offer/marseille/) et l'emporte sur le choix enregistré (city.js) #}
-<html lang="{{ language.htmlLang }}" data-city="{{ city.id }}"{% if p.cityId %} data-city-fixed{% endif %}>
+{#- data-city-fixed : la ville vient de l'adresse de la page (/en/offer/marseille/) et l'emporte sur le choix enregistré (city.js).
+    data-city-lock : la page montre toujours sa ville (pageCity, le portfolio), sans changer le choix enregistré #}
+<html lang="{{ language.htmlLang }}" data-city="{{ city.id }}"{% if p.cityId %} data-city-fixed{% endif %}{% if pageCity %} data-city-lock{% endif %}>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
